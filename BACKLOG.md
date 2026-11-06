@@ -89,8 +89,25 @@ Tier 4: Williams, Amherst, Swarthmore
       why no institution named), one line per decision with date
 
 ## E. Later
-- [ ] E1 Monthly re-verification: re-check every official URL, re-date, log to changes.html
+- [ ] E1 Monthly re-verification: re-check every official URL, re-date, log to changes.html.
+      Not yet due: every URL was accessed 2026-11-07, so no access date is stale and no
+      「待重查」badge is showing. Becomes meaningful around 2027-02-05 (90 days).
 - [x] E2 UK scope approved by the maintainer 2026-11-07 → section F
+- [ ] E3 Apply Q002 once the maintainer pastes the twelve pages back: Princeton (graded
+      written paper, test policy, checklist, "not looking for perfect"), Northwestern (test
+      policy, program materials, letters, unsolicited supplements, touchpoints, InitialView),
+      Purdue (EA/RD dates, SAT/ACT/CLT, letters, English requirement). These three hosts
+      refuse every automated request at the TLS layer; retrying is pointless (V2).
+- [ ] E4 Three pages whose text a person can retrieve in seconds although scripts cannot:
+      Stanford's FAQ index (serves an empty body), UT Austin's FAQ (answers appear on click),
+      and the PDFs (Harvard's 2026–27 supplement, UC's PIQ guidance, the three Common App
+      webinar decks behind B19–B21). Lower priority than E3 because each is one claim.
+- [ ] E5 Re-check the two dead aid pages when the sites allow: the Amherst cost-of-attendance
+      page (404; the site asks for human verification, which this repo does not bypass) and
+      Harvey Mudd's cost page (404 at a guessed URL, A7-H18). The Johns Hopkins one was
+      fixed on 2026-11-07 by following the 404 page's own navigation — worth trying first.
+- [ ] E6 Make the research notes fully bilingual (rule 6). They are English-first with
+      Chinese summaries appended; the site data is bilingual, so this is notes-only debt.
 
 ## F. United Kingdom (approved 2026-11-07; after the US top 30)
 - [x] F1 UCAS system 2027 entry: application sections, the new personal-statement  ✓ 2026-11-07: research/2026-11-07_ucas-system-and-tests_v1.md
