@@ -36,7 +36,7 @@ window.ATLAS.log = {
    "file": "briefs/2026-11-07_run-5.md",
    "date": "2026-11-07",
    "unit": "E8, E9",
-   "status": "merged",
+   "status": "open PR, not merged",
    "title_zh": "",
    "title_en": "Run 5 (watchdog), 2026-11-07 06:45–07:45: the five recovered schools are now in the tables",
    "done": [],
