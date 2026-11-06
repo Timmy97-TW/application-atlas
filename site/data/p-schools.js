@@ -1343,10 +1343,10 @@ window.ATLAS.pages = window.ATLAS.pages || {};
             ]
           },
           {
-            t: s('**Northwestern（部分）**：時程與國際生研究時，northwestern.edu 全部頁面因 TLS 憑證被拒而無法直接讀取；逐校研究則讀得到申請頁。', '**Northwestern (partial)**: during the calendar and international runs every northwestern.edu page failed direct fetch (TLS certificate rejected); the roster run did read the apply pages.'),
+            t: s('**Northwestern（已解除）**：2026-11-07 約 05:45 起恢復正常回應，requirements、FAQ、deadlines 三頁已直接讀到（V4）；先前的 TLS 憑證錯誤是抓取路徑的暫時失敗，不是網站政策。Princeton 與 Purdue 同時解除。', '**Northwestern (cleared)**: from about 05:45 on 2026-11-07 the host answered normally and its requirements, FAQ and deadlines pages were read directly (V4); the earlier TLS certificate error was a transient failure of one fetching path, not a site policy. Princeton and Purdue cleared at the same time.'),
             tag: 'f', src: ['A3b-S16', 'A4-S84', 'A5b-S18'],
             sub: [
-              { t: s('缺（待瀏覽器確認）：國際生補助截止日、Bienen 音樂 supplement 的年度、期中成績、5/1 回覆日；英語、考試與補助格標 †。', 'Missing (to confirm in a browser): international aid deadlines, the cycle year of the Bienen music supplement, mid-year report, May 1 reply; the English, testing and aid cells are marked †.'), src: ['A3b-S19', 'A3b-S20'] }
+              f('已讀到（尚未寫進本頁表格，見 BACKLOG E8）：2026-27 日期（QuestBridge 2026-10-01、ED 2026-11-01 與補助 12/1、RD 2027-01-04 與補助 2/1）；兩封推薦信加選擇性額外推薦信；明文拒收未經要求的補充材料（含網站）；不再要求 Common App 主文書；寫作補充題目與 300／200 字上限；Glimpse（美國高中）與 InitialView（國際高中）ED 11/6、RD 1/16；Bienen 與 ISP 的額外材料。', 'Read (not yet written into this page\u2019s tables \u2014 BACKLOG E8): the 2026-27 dates (QuestBridge 1 Oct 2026, ED 1 Nov 2026 with aid 1 Dec, RD 4 Jan 2027 with aid 1 Feb); two letters plus an optional extra; unsolicited supplements refused in writing, websites included; the Common App personal essay no longer required; the supplement prompts with their 300/200-word limits; Glimpse (US high schools) and InitialView (international) due 6 Nov / 16 Jan; the Bienen and ISP extras.', ['V4-T5', 'V4-T6', 'V4-T7'])
             ]
           }
         ]

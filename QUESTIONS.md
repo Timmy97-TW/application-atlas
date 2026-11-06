@@ -7,7 +7,19 @@ Which three of the 30 schools should the two personas target, so the examples
 stay concrete? (Default if unanswered: MIT, Stanford, UC Berkeley.)
 A: Use the default (maintainer, 2026-11-07).
 
-Q002 · 2026-11-07 · A3/A5 · open (retried 2026-11-07 04:45 and 05:30, still blocked)
+Q002 · 2026-11-07 · A3/A5 · closed 2026-11-07 (no longer needs you — see below)
+RESOLVED at about 05:45 on 2026-11-07: the three hosts answered ordinary
+requests again (HTTP 200), and all ten pages below were fetched and read
+directly — see research/2026-11-07_three-blocked-hosts-read_v1.md (V4). You do
+not need to open anything. The earlier "refuses at the TLS layer, retrying is
+pointless" was a transient failure of one fetching path, written up as a
+permanent property of the sites; that correction is in the note. Applying the
+newly-read facts to the site tables is BACKLOG E8. What is still genuinely
+missing is small and named at the end of V4: Purdue's letters policy and
+English-proficiency minimums, Princeton's "not looking for perfect" wording, and
+Northwestern's ISP requirements.
+
+The original question, kept for the record:
 Michigan and Williams refuse automated reading (HTTP 403 or a
 human-verification page); Northwestern, Princeton and Purdue refuse at the TLS
 layer. Columbia was since read in a browser and is done (see V01–V19), and so
