@@ -304,3 +304,25 @@ Counts:
 - ApplyTexas term availability for UT Austin fall 2027 (site returned 403).
 - Michigan and Williams own-page confirmation (both returned 403); Locker history from an official source.
 - Year Georgetown began accepting Common App.
+
+## 中文摘要（本筆記重點）
+
+- [推論] 30 校的 2026–27 第一年申請中，除了 MIT 與三所 UC 分校，其餘學校都收 Common App。
+- [事實] MIT 只收自己的 application portal，報名費 $75 或 waiver；EA 11/1、RA 1/4 [S23]。
+- [事實] MIT 有四篇各約 100–200 字的短文，加四題各 40–50 字的短答 [S22]；活動表「只有四格」，並明說要用表格、不要用 resume [S22]。
+- [事實] MIT 的 Maker Portfolio、Research Supplement、Music & Theater、Visual Art & Architecture 都走 SlideRoom；Maker Portfolio 最多 25 個媒體項目，影片「整份合計」不超過 2 分鐘；creative writing 沒有作品集管道 [S25]。
+- [事實] MIT 若安排不到面試會直接 waive，申請不受影響 [S26]；Georgetown 則要求申請者在被分派校友面試時一定要完成 [S28]。
+- [事實] UC Application 一份表選多個分校，每校 $80，國際生 $95；PIQ 八選四、每題上限 350 字 [S9][S1]。申請期 10/1–11/30，UCOP 簡報寫明截止日為 2026-11-30 [S2][S4]。
+- [事實] UC 不採計 SAT/ACT，分數只能在送出後補報 [S3]；全系統考試政策檢討 2027 年 2 月出報告，fall 2028 以後的規定未定 [S4]。
+- [事實] UC 在 2026 年 9 月對輔導老師說，additional comments 欄「不該當成第五篇 PIQ，我們不會採計」[S5]。
+- [事實] UC 活動表 20 項、說明 350 字元的數字來自 UCSB 的頁面與工作表，全系統的填表頁兩者都沒寫 [S3][S6][S7]。
+- [事實] UC 新制 TOEFL（1–6 分）最低門檻為 4.5 [S4]；國際生不要隨 UC 申請附推薦信，部分分校可能在後續補件審查時才要求 [S8]。
+- [事實] Berkeley「受邀才交推薦信」的唯一官方說明，是一份沒有日期、寫「as of fall 2015」的舊指南 [S11]；現行頁面完全沒提 [S10][S12]。
+- [事實] Coalition 獨立平台改到 Scoir，是從 2022 年 8 月 1 日起開放申請，不是常被引用的 2023 年 [S19]。
+- [事實] Coalition 自稱成員「超過 150 所」[S14]，但 Scoir 截至 2026-10-20 只列 116 所透過 Scoir 收件 [S16]。[推論] 大約四分之一的成員並不收 Coalition 申請。
+- [事實] Harvard、Olin、Rice 是 Coalition 成員 [S17]，但第一年申請頁只列 Common App（和 QuestBridge）；Duke 出現在 Scoir 名單上，自己的頁面卻寫 Coalition 只限轉學生 [S16][S50]。
+- [事實] 2025–26 起的 Scoir + Common App 整合只同步校單與輔導老師表件，學生仍在 Common App 內送出 [S20]。[推論] 有 Scoir 帳號不代表走了 Coalition 路線。
+- [事實] Universal College Application 沒有關閉，2026/2027 版仍上線，但目錄只列 University of Charleston (WV) 一所 [S31][S32]。
+- [事實] UT Austin 新生頁叫夏季／秋季申請者用 Common App [S29]，短文頁卻仍寫「Common App 或 ApplyTexas」[S30]。[推論] 其中一頁可能過時，依賴 ApplyTexas 前要先向 UT 確認。
+- [事實] UC、UW（STARS）、UIUC 三者在申請階段收的是結構化自填成績，而不是成績單 [S3][S53][S46]。
+- 缺口：Coalition on Scoir 的活動數與字元上限、UC additional comments 的現行上限、Berkeley 2026–27 推薦信邀請日期、ApplyTexas 是否開放 fall 2027（網站回 403）、Georgetown 開始收 Common App 的年份，都還沒有官方答案。

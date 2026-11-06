@@ -378,3 +378,25 @@ The same page says junior-college diploma holders must apply as transfer student
 | S133 | https://apply.berkeley.edu/counselor/letter_of_recommendation_info.pdf | 2026-11-07 | official | Berkeley invited letters (undated) |
 | S134 | https://csb.utexas.edu/admissions-faq | 2026-11-07 | official | UT test requirement "Fall 2025 and later" (college page) |
 | S135 | https://admissions.purdue.edu/support-your-student/counselors/need-to-know/ | 2026-11-07 | official | Purdue test expected; letters not required |
+
+## 中文摘要（本筆記重點）
+
+- [事實] 以國際生身分看，need-blind 的只有六校：MIT、Harvard、Yale、Princeton、Brown、Amherst†；need-aware 的有 11 校；CMU、Olin、UIUC、UCLA、UW 完全不給國際生 need-based aid。
+- [事實] 2026–27 仍要求 SAT/ACT 的有 12 校（含 MIT、Caltech、Stanford、Harvard、Yale、Penn、Brown、Cornell 等）；Columbia [S28]、Princeton [S24]、Harvey Mudd [S76] 今年 test-optional，但已宣布 2027–28 改回必繳。
+- [推論] 對 2026–27 還在高一、高二的台灣學生來說，輪到自己申請時，test-optional 的學校只會更少。
+- [事實] Common App 允許「任何學校職員」擔任 counselor 角色，也可以走紙本路線，由學校逐校寄出 [S121]；國際生會自動觸發 International Supplement to the School Report [S127]。
+- [事實] Common App 欄位只收 latin1 字元，範圍外的字存進資料庫會變成無法閱讀 [S122]。[推論] 中文校名、姓名、課名最好一律用羅馬拼音填寫。
+- [事實] 30 校中只有 Princeton 明文接受非英文的推薦信表格，但送出前必須由學校職員或第三方正式翻譯，不必找付費翻譯 [S23]；其餘學校在已查頁面上都沒有說明。
+- [事實] MIT [S3]、Stanford [S11]、Harvard [S15]、Yale [S21] 不接受申請者自己翻譯成績單；Caltech、Harvard、Columbia、Brown、Georgetown、Rice、Duke、Swarthmore、UT Austin 要求原文加譯文一起交。
+- [事實] 已查的美國官方頁面中，只有 Purdue 有台灣專段：要交國三與高一、高二成績單，已畢業者交高一到高三加畢業證書；五專畢業要以轉學生身分申請 [S60]。
+- [事實] 學測、分科測驗在所有已查頁面上都沒有被點名。[推論] 學測是升學考試，不是畢業條件，Princeton「leaving exam 屬畢業要求才交」的寫法可能不適用，需向 Princeton 確認。
+- [事實] 學習歷程檔案在本次查閱的所有美國官方頁面中都沒有出現；這次也因搜尋額度用完而沒能專門搜尋。
+- [假設] 台灣學年約 8–9 月開始、第一學期約 1 月結束，若屬實，RD 截止前可能還沒有高三上成績；這點本筆記沒有來源，使用前要先查證。
+- [事實] Duolingo English Test 在 30 校中有 26 校接受；Michigan 明文不收 [S63]，Georgia Tech 說 DET 不符合 USG 要求，只做整體審查參考 [S53]。
+- [推論] 想申請 Michigan 或 Georgia Tech 的人，不論其他規劃如何，都得準備 TOEFL 或 IELTS。
+- [事實] JHU（Certification of Finances）[S80] 與 Rice（International Student Financial Statement 加銀行證明）[S87] 要所有國際生在申請時就交財力文件。[推論] 若沒在 ED/EA 截止前向銀行申請英文存款證明，這兩校的申請無法完成。
+- [事實] Princeton 不用 CSS Profile 或 IDOC，而是自己的 PFAA，EA 截止 11 月 9 日 [S26]；Penn 也不收 IDOC [S36]。
+- [事實] 助學金只能在申請時提出、之後補申請不受理的學校包括 Caltech、Stanford、Columbia、Penn、Cornell、Harvey Mudd、Rice；Georgetown 第一年沒給獎學金，之後也不會給 [S50]。
+- [事實] Duke 是唯一公開比較數字的學校：申請助學金的國際生錄取率「通常不到」整體的一半 [S82]。
+- [事實] Georgetown 從 2026 年 8 月起試辦三年接受 Common App，適用 2027 秋季入學 [S46][S47]。
+- 缺口：Northwestern、Williams、Amherst（† 列）只讀到搜尋引擎摘錄；Michigan 主站回 403；Duke 兩頁的 ED CSS Profile 日期不一致（11/2 與 11/3）[S82][S83]；DET 接受度沒有官方時間序列。

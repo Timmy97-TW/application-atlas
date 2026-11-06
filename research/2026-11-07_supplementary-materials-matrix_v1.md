@@ -389,3 +389,24 @@ sources:
 - Harvard and Brown SlideRoom limits: on SlideRoom/subpages not read.
 - Common App Honors slot count and level options: not verified; A1.
 - Regeneron STS eligibility and report length: rules page not reached.
+
+---
+
+## 中文摘要（本筆記重點）
+
+- [事實] 30 校都在 2026-11-07 直接讀取官方招生頁。Princeton、Columbia、Purdue、Michigan、Northwestern、Williams、Amherst 七校網站拒絕自動讀取，這是工具失敗，不是對學校政策的判斷，格子標為 not verified，需要人工用瀏覽器補查。
+- [事實] 研究成果送件有三種形式：附 mentor 推薦信的結構化表單（MIT、Caltech、Yale）、可自由上傳並註明合作者與貢獻（Harvard、Brown、JHU、Swarthmore）、只收摘要（Harvey Mudd）；Duke 明列不收 research abstract。(S1, S5, S15, S14, S22, S42, S58, S40, S43)
+- [事實] Caltech 的研究管道限於實驗室或大學機構的研究，且論文需已發表、已投稿或撰寫中；自己獨立做的研究改走 STEM portfolio。(S5)
+- [事實] 同一份全文論文，兩校指示相反：Yale 說完整論文「generally the most helpful」，Harvey Mudd 請學生不要上傳整篇。(S15, S40)
+- [事實] 連結的處理也相反：Olin 歡迎在 Additional Information 放網站連結；Stanford Art Practice 不審連結、UW 請申請者不要寄連結；Penn 接受 URL，但不接受 Google Docs 或 Box。(S38, S9, S55, S20)
+- [事實] CMU 工程申請者展示專案的唯一管道是錄製 VIVA 訪談，不能上傳檔案。(S30)
+- [事實] Caltech、Brown、Cornell、Swarthmore、JHU 的上傳管道要送出申請後才開；Caltech 的補充材料截止日比申請截止晚五、六天（11/6 對 11/1、1/10 對 1/4）。(S7, S22, S28, S58, S42)
+- [事實] 在讀到的頁面中，把 maker／工程作品集設為獨立類別的只有 MIT 與 Caltech；MIT 的影片上限最緊，整份合計 2 分鐘。(S1, S6)
+- [推論] 讀到的學校都沒有提到「lab record」（實驗紀錄本、原始資料）。學校指名的形式是論文、摘要、海報與 mentor 推薦信，實驗紀錄要先整理成其中一種才放得進現有管道。
+- [事實] Regeneron STS 2027：報名期間 2026-06-01 至 11-05，Top 300 於 2027-01-07 公布，Top 40 於 01-21 公布，決賽 03-11 至 03-17。(S59) [推論] Top 300 公布時多數 EA/ED 已放榜，Top 40 更晚於本表所有 RD 截止日，所以 STS 結果通常只能透過可更新資料的 portal 補報，進不了原本的 Honors 欄。
+- [事實] Regeneron ISEF 需先在附屬的地方、區域、州或全國科展獲勝才能參加；官網上的獎金總額出現兩個不同數字。(S60) 讀到的 23 校頁面都沒有提到 Regeneron STS 或 ISEF。
+- [事實] 論文發表：MIT 要求附上已發表作品的 citation（S1）；Harvard 要求列出合作者、指導者與本人貢獻（S14）。[推論] Harvard 的做法是本次看到最接近 CRediT 式作者貢獻標註的官方要求，但沒有學校提到 CRediT。
+- [推論] 一項競賽可以拆成兩處：獎牌放 Honors（結果與層級），專案本身放 Activities（時數與角色）；讀到的學校頁面沒有禁止，也沒有背書。
+- [假設] Common App Honors 欄有 5 格並附層級標籤，這是依任務說明寫入，本次未用官方頁面核實，交由 A1 處理。
+- [推論] 對生物申請者來說，有研究管道的學校和全面拒收補充材料的學校都在這份名單的前段，因此研究成果無法規劃成「一次上傳到處通用」；所有 Common App 學校共通的只有 Activities、Honors、Additional Information。
+- 缺口：七校需人工補查；Princeton 批改過報告的要求未驗證；Harvard 與 Brown 的 SlideRoom 上限未讀到；Common App Honors 格數未驗證；Regeneron STS 資格與報告長度的規則頁未讀到。

@@ -16,7 +16,9 @@ window.ATLAS.log = {
     "Site pages: overview, timeline (with the G9–G11 prerequisite graph, own SVG), fields, 30 schools, schools 31–50, portfolios matrix, outside record, insights, practice walkthrough, personas (bio, EE), UK, changes, log, sources, about (decisions rendered).",
     "Practice walkthrough (maintainer priority): Dashboard → My Colleges → seven common sections with field labels, types, required flags and limits from the 2026–27 data catalog → per-college questions and writing supplements (Stanford, Johns Hopkins, Cornell, CMU, Harvard) → recommenders and FERPA → fee/fee waiver and signature → UC tab with PIQs. Live counters, ticks, fictional prefill, outside-record annotations. Labelled under rule 9.",
     "Checks at every merge: `check-data.js` 0 problems; pages rendered in a browser with no console errors (zh and en; the walkthrough also at 375 px with no horizontal scroll).",
-    "Deep dives added after the first brief: Common Data Set numbers for 27 schools (admit rates, ED vs overall, waitlist, test submission, nonresident share — shown side by side, no multipliers), CDS H6 international aid for 24 schools, admissions offices in their own words across eight topics (about 190 cited items), and the counselor side plus Taiwan testing and fee logistics."
+    "Deep dives added after the first brief: Common Data Set numbers for 27 schools (admit rates, ED vs overall, waitlist, test submission, nonresident share — shown side by side, no multipliers), CDS H6 international aid for 24 schools, admissions offices in their own words across eight topics (about 190 cited items), and the counselor side plus Taiwan testing and fee logistics.",
+    "Browser verification of 43 claims that rested on search excerpts: 28 confirmed, 1 contradicted (Columbia abstract length, already correct on the site; note corrected), 4 not on the page, 10 still blocked (research/2026-11-07_browser-verification_v1.md).",
+    "Native Chinese summaries appended to 18 research notes (rule 6)."
    ],
    "notDone": [
     "E1 (monthly re-verification) is a standing unit; not due yet.",

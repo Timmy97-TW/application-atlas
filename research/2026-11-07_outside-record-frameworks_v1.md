@@ -278,3 +278,25 @@ Budgets are taken from C2.1. "Fit" entries are `[推論]` unless marked otherwis
 | S48 | https://credit.niso.org/ | 2026-11-07 | secondary | CRediT taxonomy |
 | S49 | https://www.slideroom.com/ | 2026-11-07 | official | SlideRoom |
 | S50 | https://apply.jhu.edu/hopkins-insider/additional-information/ | 2026-11-07 | official | JHU on Additional Information |
+
+## 中文摘要（本筆記重點）
+
+- `[事實]` 30 校已查的招生頁面，沒有一頁對 badge、CLR 或校外 programme 的紀錄表達立場；能抓到 sitemap 的 23 個網站、約 19,600 個網址中，找不到含 mastery、badge、competency、credential 的招生頁（checked 2026-11-07）。
+- `[事實]` Mastery Transcript Consortium 2017 年以 54 所創始學校成立，2024 年併入 ETS，2026 年 7 月由 Legend.org 從 ETS 買下，改以 Mastery.org 營運（S1, S6）。
+- `[事實]` Mastery 有兩種產品：可獨立使用的 Mastery Transcript，以及附在傳統成績單旁邊的 MTC Learning Record；能力指標由「會員學校定義並認證」，紀錄仍算學校的正式文件（S4）。
+- `[推論]` 校外 programme 本身無法簽發 Mastery Transcript（S4）；頂多是會員學校的學生，把校外作品當成學校紀錄裡的證據。會員學校實際是否這麼做，頁面沒寫。
+- `[事實]` MTC 自己的數字前後不一：創辦人信寫「超過 800 所」（S5），網頁寫 1,017 所（S2, S3），從頁面資料數出不重複網域為 997 個（S2；本筆記自行計算）。
+- `[事實]` 依 MTC 的定義，「Mastery Transcript Ready」只要錄取過持該紀錄的學生「或」參加過讀者訓練即可（S2）；30 校全被標成 Ready（S2）。`[推論]` 這個標記是廠商的說法，不能讀成學校政策。
+- `[事實]` 唯一找到的校方正式說法是 UC：UCOP 2023-01-05 的備忘錄依 BOARS 指引，無法以 GPA 制成績單支撐 A-G 課程的學生，只能走 admission by exception（S7）。`[推論]` 這與 MTC 把 Berkeley、UCLA、UCSD 列為 Ready 互相牴觸，應以官方的 S7 為準。
+- `[事實]` 1EdTech CLR 2.0 於 2025-03-04 公開，與 Open Badges 3.0 對齊、以 W3C Verifiable Credentials 實作，AACRAO 推薦採用；發布文沒有提到招生用途（S9）。`[推論]` CLR 目前是註冊組與職場用格式，不是 30 校的新生申請管道。
+- `[事實]` Open Badges 3.0 允許個人當 issuer，也有 self-assertion 的使用情境（S10）。`[推論]` 數位簽章只證明「誰發的、沒被改過」，不證明評量夠嚴謹；校外 badge 的分量取決於讀者是否了解發證單位。
+- `[事實]` Coalition 2015 年規劃的 Locker，現行 Coalition 頁面已完全不提（S13, S14）；何時停用、資料是否轉移，官方沒說。
+- `[推論]` 校外紀錄實際進入申請的路，是既有欄位（Activities、Honors、Additional Information、Other Recommender、作品集）加上具名的第三方證明人，而不是一種新的成績單格式。
+- `[推論]` 自帶查證者的欄位，只有附具名推薦人的那幾個（MIT Research Supplement、Caltech 研究推薦信、Other Recommender）；文字欄位只有申請者自己的陳述，而 UC 要求這些陳述「可由獨立第三方查證」（S41）。
+- `[事實]` UC Academic history 裡的 Additional comments 上限是 550 字元（S39）；網路上流傳的「550 words」和「活動 350 字元」在已查的 UC 頁面上都找不到（S39, S40）。
+- `[事實]` Common App 官方 PDF 證實活動欄位 150／100／50 字元與 honors 上限 5 項（S33, S34）；Honors 字元上限與 Additional Information 字數上限，本次在官方頁面上找不到（S38）。
+- `[事實]` iGEM 把 Attributions Form 列為 Bronze 門檻，Wiki 在截止時凍結並永久存檔（S42, S43）。`[推論]` 這是現成、由第三方保存、有時間戳記的貢獻紀錄。
+- `[事實]` ISEF Form 2C 由指導成人填寫，不是學生，內容要描述學生獨立完成的部分與具體程序（S45）。`[推論]` 這是目前最接近「第三方證明實驗時數與角色」的公開範本。
+- `[事實]` ICMJE 說決定作者資格「不是期刊編輯的職責」（S47）。`[推論]` 光有論文不能證明學生的貢獻比例，要靠導師推薦信或 CRediT 聲明。
+- `[事實]` 幾校的 homeschool 頁已要求類似作品集的證據：Penn 提到 mastery、課綱與實驗紀錄（S21），Swarthmore 要研究報告與獎項的日期和出處（S25），MIT 提到 portfolio evaluation（S18）。`[推論]` 這些頁面是「沒有分數的紀錄如何被閱讀」最有力的官方先例。
+- 缺口：Common App Honors、Additional Information、Other Recommender 的長度上限；UC 活動說明上限；Coalition Locker 停用日期；30 校中有 20 校的 homeschool／非傳統紀錄頁本次沒有逐一讀取。

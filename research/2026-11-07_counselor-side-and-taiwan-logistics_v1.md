@@ -374,3 +374,21 @@ Dates are for the 2026–27 cycle unless noted. Each line carries its own tag.
 | I33 | https://www.amherst.edu/admission/apply/firstyear | 2026-11-07 | official | Reused (part 2 S47): blocked |
 | I34 | https://www.swarthmore.edu/admissions-aid/application-materials-deadlines | 2026-11-07 | official | Reused (part 2 S49) |
 | I35 | https://www.swarthmore.edu/admissions-aid/international-students | 2026-11-07 | official | Reused (international note S96) |
+
+## 中文摘要（本筆記重點）
+
+- [事實] 國際學生應把「負責成績單的人」設為 counselor；學校沒有輔導老師時，可由校長或其他學校行政人員填寫 [C4][C1]。[推論] 在台灣公立高中，這可以是任何能核發正式成績單、代表學校簽名的人，是哪個處室由學校決定。
+- [事實] 帳號在八月 rollover，之前發出的推薦人邀請「不會延續」[C11]。高二就被告知的輔導老師，升高三後會收到一封新的邀請 [C11]。
+- [事實] 推薦人可以選擇不走線上系統，改由學生列印紙本、學校逐校直接寄出，表格上寫明不要寄給 Common App [C3][C1][C6]。但各校對寄送與 email 的規定不一：Stanford 收學校人員 email 的附件 [U1]，UT Austin 不收 email 成績單 [U3]，UW 說不要郵寄高中成績單 [U5]。沒有一種離線管道對所有學校都行得通。
+- [事實] Common App 文字欄位只接受 latin1 字元集，其他字元會變成無法辨識 [C16]。[推論] 在欄位裡打中文（校名、課名）可能會亂碼；上傳的 PDF 成績單是檔案，不受此限。
+- [事實] International Supplement 要求 counselor 把本校分數對應到美國 A–F [C7]；但 UCSD 說「不要自行換算，也不要請專業機構換算」[U4]，Princeton、Penn、Cornell 也禁止重新計算。[推論] 兩者要同時成立，A–F 那一行只能當作圖例，成績單本身維持原本的分數制。
+- [事實] 本筆記與沿用筆記查過的 30 校頁面，沒有一校要求 WES、ECE 等學歷認證機構；Cornell 明說不需要 [U2]。[推論] 除非某校明確要求，台灣家庭不必花這筆錢。
+- [事實] MIT、Stanford、Harvard、Yale 不接受學生自己翻譯 [U16][U17][U6b][U18]；Caltech、Harvard、Columbia、Brown、Georgetown、Rice、Duke、Swarthmore 與 UT Austin 要求原文加英譯 [U3]；Princeton 是唯一找到允許推薦人用其他語言填寫、送出前由學校職員或第三方正式翻譯的學校 [U13]。[推論] 「certified」、「official」在這些頁面上都沒有被定義成特定資格（例如法院或公證）。
+- [假設] 台灣學測（GSAT）是否算是表格上「決定升級的畢業考試」，需由學校判斷；本筆記沒有教育部的資料，不回答這個問題。
+- [事實] Final Report 必須等學生收到所有錄取結果才送；一旦送出，Counselor Recommendation、Mid-year、Optional Report 都不能再交 [C2]。每份 ED 協議都需要 counselor 共同簽名 [C2]。
+- [事實] 台灣的 SAT 考生除了 $68 報名費與 $43 國際費，還要多付 $24 考場費，每次合計 $135（不含逾期費）[L2]。台灣考場名單沒有靜態頁面，本次未取得 [L3]。
+- [事實] College Board 授權 AP 考場名單有香港、南韓、新加坡、越南、中國大陸等地，沒有台灣 [L8]。學校不開 AP 的學生要自己找願意收外校生的 AP coordinator，學校訂考大約在 11 月中截止 [L8][L9]。[推論] AP 要在高一、高二就決定，2027 年 5 月考的 AP 成績趕不上 RD 審查。
+- [事實] CSS Profile 第一所 $25、之後每所 $16 [L15]；fee waiver 只給監護父母住在美國或美國領地的家庭 [L16]。
+- [事實] 官方費用數字彼此不一致：ACT 非美國基本費 $188.50 [L6] 對 $186.50 [L7]；TOEFL 額外成績單 US$29 [L11] 對 US$25 [L12]。兩者都記下，以結帳頁為準。
+- [推論] 明說不論地點都可線上面試的學校（Yale Senior Interviewers、Duke、Harvey Mudd、Rice），對台灣申請者最可能面得到；MIT、Harvard、Princeton、Georgetown、Stanford 的校友面試依賴當地志工，沒有頁面提供台灣的數字。
+- 尚待補：申請端邀請 counselor 的確切步驟、Final Report PDF、台灣 SAT 與 IELTS 考場和費用、DET 價格、Stanford 國際面試地點是否含台灣、教育部的學年與畢業規定。

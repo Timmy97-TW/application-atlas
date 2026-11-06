@@ -13,6 +13,10 @@ window.ATLAS.sourceGroups = {
   "zh": "待查線索（未讀到頁面本身）",
   "en": "Leads only (pages not read)"
  },
+ "V": {
+  "zh": "瀏覽器複查（先前只靠搜尋摘要的項目）",
+  "en": "Browser verification of excerpt-only items"
+ },
  "B6": {
   "zh": "B5 補充：Common Data Set 數字",
   "en": "B5 supplement: Common Data Set numbers"

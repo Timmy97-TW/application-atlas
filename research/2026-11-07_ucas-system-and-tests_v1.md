@@ -295,3 +295,27 @@ Conventions: every bullet is tagged. "Read" means fetched with WebFetch on 2026-
 | S44 | https://www.ox.ac.uk/admissions/undergraduate/applying-to-oxford/guide/admissions-tests | 2026-11-07 | official | not readable (403) |
 | S45 | https://www.ucat.ac.uk/register/key-dates/ | 2026-11-07 | official | not readable (403) |
 | S46 | https://www.medsci.ox.ac.uk/study/medicine/pre-clinical/applying | 2026-11-07 | official | not readable (403) |
+
+---
+
+## 中文摘要（本筆記重點）
+
+- [事實] 2027 年入學的 January equal-consideration 日期是 **2027-01-13** 18:00（英國時間），不是 14 日（S1, S9）。Oxford、Cambridge 與多數醫、牙、獸醫課程則是 2026-10-15 18:00（S1, S9）。
+- [事實] UCAS 規定推薦信完成後申請才送得出去（S9）。[推論] 10 月 15 日實際上也是推薦人的截止日，學校可能另設更早的內部期限，但 UCAS 頁面沒有寫。
+- [事實] 五個 choices 中，醫學、牙醫、獸醫合計最多四個；Oxford 與 Cambridge 通常只能二選一、一個課程；報名費 £34.50，所有欄位完成並加上推薦信後才付款（S2）。
+- [事實] UCAS 要求填寫證書上的「實際學歷名稱與成績」，不要自行換算成英國等級（S2）。UCAS 的學歷清單是否收錄台灣高中畢業證書、學測或 AP，所讀頁面未寫；清單在登入後的 Hub 內，本次沒有進入（S2）。[推論] 台灣申請者大概會用「other」手動填入高中文憑與學測，此點尚未驗證。
+- [事實] Personal statement 自 2026 年入學起改為三題，三題合計 4,000 characters（含空格，題目本身不計），每題至少 350 characters（S3, S4）。UCAS 國際生建議把「為什麼來英國讀」寫在第三題（S6）。
+- [事實] 「Extra activities」欄涵蓋暑期學校、體驗課程等，UCAS 頁面未寫字數上限（S2）。[推論] 對長期在校外累積紀錄的申請者，這一欄和 personal statement 第三題是 UCAS 內可以呈現該紀錄的兩個位置。
+- [事實] Reference 分三段：學校背景、影響學業的特殊情況、針對申請者本人的補充資訊，三段合計 4,000 characters，建議控制在 3,800 以內，不支援粗體或條列（S8）。[推論] 只有第三段談申請者個人，校外紀錄也可以透過這一段讓審查者看到。
+- [事實] Cambridge 在 UCAS 送出後 48 小時內寄出 My Cambridge Application，截止 2026-10-22 18:00，成績單同日截止；多數英國、愛爾蘭以外的申請者另付 £60（部分國家可免）（S16, S23, S24）。Cambridge 不會下載 UCAS 上額外上傳的文件（S23）。[推論] 英文檢定證書等文件要透過兩個管道各交一次。
+- [事實] Cambridge 對台灣的說法是：僅有高中畢業證書「will not be competitive」，建議搭配 A Level、IB，或五科以上 AP 5 分（S25）。[推論] 學歷路徑要在高二結束前規劃好。
+- [事實] Cambridge 面試主要在 2026-12-07 至 12-18，多數學院對海外申請者採線上面試，12 月面試者於 2027-01-27 得知結果（S22, S16）。所讀頁面完全沒有提到 COPA（S15, S22, S23, S24, S25）。
+- [事實] ESAT 與 TMUA 由 UAT-UK 在 Pearson 考場辦理，2026-10-12 至 16 日應考，費用依考場所在地：英國與愛爾蘭 £78、其他地區 £133，每個申請季只能考一次（S27, S30）。成績 2026-11-16 才公布（S27）。[推論] 報考 Oxford、Cambridge 與 Imperial ESAT 課程的人，是在不知道分數的情況下選定五個志願。
+- [事實] ESAT 每個 module 40 分鐘、選擇題、Mathematics 1 必考；報名後 module「cannot be changed or added」，要改只能取消重報（S18, S32）。台灣有沒有可考 ESAT／TMUA 的 Pearson 考場，頁面未寫（S28, S30）。
+- [事實] 生物取向的課程也可能要考 ESAT：Oxford Biomedical Sciences 需考（S32）；Imperial 的 Biological Sciences、Biochemistry、Biotechnology、Microbiology 要考 Mathematics 1、Chemistry、Biology，而 Imperial Medical Biosciences 不用考（S32, S38）。
+- [事實] UCL Mechanical Engineering 考 TARA，UCL Electronic & Electrical Engineering 考 ESAT（S32）。[推論] 同時申請 UCL 與 Imperial 或 Oxford 工程的人可能要考兩種不同的 UAT-UK 測驗。
+- [事實] Oxford 已停辦 MAT，數學與資工改用 TMUA（S34）；工程改用 ESAT，標題仍寫「Physics Aptitude Test」的頁面內容其實在講 ESAT（S35, S36）。UAT-UK 2027 名單把 Oxford 工程拆成多個獨立代碼（S32），但 Oxford 工程 FAQ 仍寫單一學位（S37）。
+- [事實] Cambridge 與 UAT-UK 對 ESAT 報名、特殊安排、bursary 的日期寫法不一致（S16, S18, S27）。[推論] 以測驗主辦方 UAT-UK 為準。
+- [事實] BMAT 不在 UCAS、Cambridge、Imperial 的 2027 測驗清單中，Cambridge 與 Imperial 醫學改用 UCAT；Cambridge 2027 年只採計 UCAT 認知分測驗、不設最低分（S14, S17, S20, S21, S38）。BMAT 停辦的官方日期本次未找到（S33）。
+- [事實] 英國學生簽證：須持有 licensed sponsor 的錄取，最早開課前六個月申請，境外申請費 £558 另加健康附加費，通常三週有結果；需要 CAS，視課程與國籍可能需要 ATAS 與肺結核檢驗（S41, S42）。
+- 缺口：ox.ac.uk 與 ucat.ac.uk 回傳 403，Oxford 面試與放榜日期、Oxford Medicine 與 Biology 的考試、UCAT 費用與日期都未確認；Adjustment 是否已停辦沒有官方說法；2027 放榜日、IELTS 分數、LNAT 2026–27 費用、COPA 是否正式廢止皆待補。

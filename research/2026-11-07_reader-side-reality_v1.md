@@ -308,3 +308,29 @@ What these sources are: the September 2019 District of Massachusetts opinion (Do
 | C29 | https://www.williams.edu/institutional-research/common-data-set/ | 2026-11-07 | official | Williams: page returned 403 to automated access; C7 not retrieved |
 | C30 | https://www.amherst.edu/offices/institutional-research/cds | 2026-11-07 | official | Amherst: page returned 405 to automated access; C7 not retrieved |
 | C31 | https://www.swarthmore.edu/sites/default/files/assets/documents/institutional-effectiveness-research-assessment/Swarthmore-CDS-2025-26.pdf | 2026-11-07 | official | Swarthmore CDS 2025-26 C7 |
+
+## 中文摘要（本筆記重點）
+
+- [事實] MIT 現行說明頁：申請先由一位資深招生官閱讀，強的檔案再交給其他招生官摘要給選才委員會；錄取前「至少一打人」會認真討論一份申請，委員會成員包括招生人員與教授。頁面沒寫每份讀多久、怎麼計票。(S06)
+- [事實] Yale 2020 年 podcast 描述的委員會有五位投票者，包含一位教授與一位 Yale College 的 dean；以匿名按鈕投票，五票中要有四票同意才錄取；討論一個人可能「30 秒或 30 分鐘」。(S09) 主持人聲明這些是個人觀點，不一定代表 Yale。(S10)
+- [事實] Caltech 說在職員看過所有完整申請後，有「20 多位教授」完整閱讀，每位錄取生都得到一位教授的正面評價；這是 30 校中唯一明說教授讀完整新生檔案的說法。(S22)
+- [事實] 30 校中只有 Georgia Tech 以自己的口吻記錄過「Committee Based Evaluation」（2017 年，高峰期每組一天 50 份）(S11)，疫情期間又改成兩位讀者依序審閱的 LARP。(S12) [推論] 不能在沒有官方說法時，假設其他學校也用 CBE。
+- [事實] Georgia Tech 2017 年說，讀者曾漏看列在活動表後段的重要活動，之後改成兩頁都讀，並建議把最重要的活動放前面。(S11)
+- [推論] 30 校都沒有公布現行的「每份檔案閱讀時間」；看到的數字不是過時、片段，就是假設情境，撐不起「讀者花 N 分鐘看你的檔案」這種說法。
+- [事實] UCLA 說每份申請由受過訓練的讀者完整讀兩次 (S02)；UC 列出 13 項 comprehensive review 因素，各分校用法不同，且彼此不知道同一份申請在其他分校的狀態。(S01)
+- [事實] UC Regents Policy 2110 允許分校針對邊緣的最多 15% 申請者要求補件，可包含最多兩封推薦信或其他第三方意見。(S05) [推論] 在不收上傳檔案的 UC，「special projects」只能出現在活動／獎項、PIQ、Additional Comments，以及被要求補件時的推薦信。
+- [事實] CDS C7：Harvard 2025–26 把每個因素都標為 Considered 或 Not Considered，沒有任何 Very Important 或 Important；MIT 只把 Character 標為 Very Important。(C04, C01)
+- [推論] C7 是用標準表格做的自我描述，不是權重公式；把它讀成「每項占多少分」，超出任何學校對這份表的說法。
+- [事實] 2025–26 版 CDS 模板的 C7 已經沒有「Racial/ethnic status」這一列。(C01–C31)
+- [事實] Olin 2023–24 的 CDS 把面試與 Level of interest 都標為 Very Important，表中唯一 (C18)；CMU 是唯一把 Volunteer work 標為 Very Important 的學校。(C13)
+- [事實] SFFA v. Harvard 的判決書描述 2014–2019 年的程序：同一所高中的所有申請者由同一位讀者閱讀，以熟悉該校的評分方式與推薦信風格。(S26, p. 18) [推論] 對來自海外陌生學校的申請者，school profile 與 counselor 推薦信因此是讀者主要的校準工具；這是由舊程序推得，沒有現任招生辦公室這樣說過。
+- [事實] 同一份判決書記錄，當時讀者會為「任何額外推薦信」評分，學術評分也可參考「任何提交的學術作品」。(S26, pp. 18–19) 這些描述的是當年的流程，不是 Harvard 現況。
+- [事實] Columbia 說放在研究摘要指定欄位以外的連結「不會被審閱」(S20)；Yale 招生官 2020 年說他們「很少」看外部連結。(S10) [推論] GitHub 或個人網站連結應視為可能不會被點開的選填證據。
+- [事實] Princeton 藝術補充的內容「只會由藝術教授閱讀」，除非也放進 additional information (S17)；Princeton 規定的 graded written paper 不收科學研究，所以研究論文不能拿來充當。(S18)
+- [事實] Caltech 要求研究材料附導師推薦信，說明申請者的「具體貢獻」；Harvard 要列合作者，Brown 問是獨立完成還是團隊合作。三校各自都要求釐清個人貢獻。(S24, S16, S21)
+- [事實] 依 Caltech 自己的數字，錄取生中約 42% 有交研究材料。(S24, S28)
+- 缺口：Williams、Amherst 的 C7 沒取得；Olin 最新 CDS 只找到 2023–24；Penn、Rice、Swarthmore 的閱卷模式沒有官方描述；UCOP 的讀者訓練文件沒找到。
+
+## Correction (2026-11-07, browser verification)
+
+- [事實] Columbia's page describes research abstracts as "typically one page in length", not one to two pages; see research/2026-11-07_browser-verification_v1.md. The site already uses the one-page wording.

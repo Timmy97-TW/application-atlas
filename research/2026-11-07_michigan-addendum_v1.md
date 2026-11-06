@@ -40,3 +40,13 @@ Michigan page, and is marked so.
 
 A person needs to open these pages in an ordinary browser and record the
 2026–27 facts. Logged as a question in QUESTIONS.md.
+
+## 中文摘要（本筆記重點）
+
+- 2026-11-07 嘗試讀取的 Michigan 招生相關網域（admissions、finaid、engin、michigannow、michiganross）全部回傳 HTTP 403，瀏覽器也顯示「Access Denied」。以下內容沒有一條是直接讀到頁面本身，都是搜尋引擎對官方頁面的摘要。
+- [事實] Michigan 在 2025 年 7 月宣布，從 fall 2026 入學的申請季開始，一年級申請者多了一個具約束力的 Early Decision。[S2] [S4] [S5]
+- [事實] 依搜尋摘要，官方「Effective Fall 2026 Admissions Cycle」頁列出：ED 截止 11/1、financial aid 截止 11/15、12/24 前放榜、1/6 前確認入學。頁面本身打不開。[S1]
+- [事實] 依搜尋摘要，Early Action 申請者在高三（senior year）11/1 前送件，1 月下旬收到結果。同樣未能開啟頁面。[S3]
+- [推論] ED、EA、RD 三種方案很可能延續到 fall 2027 入學，但沒有任何一頁 2026–27 的官方頁面可以佐證。
+- Regular Decision 截止日：not stated（2026-11-07 查核，requirements-deadlines 頁回傳 403）。
+- Supplement 題目、推薦人規定、考試政策、國際生助學金政策：一律 not stated（2026-11-07 查核，admissions.umich.edu 回傳 403）。下一步要由人用一般瀏覽器打開這些頁面補記，已列入 QUESTIONS.md。
