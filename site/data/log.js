@@ -31,6 +31,28 @@ window.ATLAS.log = {
     "Some notes are English-first with Chinese summaries; the site data is written in both languages, but the notes themselves are not fully bilingual (rule 6)."
    ],
    "by": "run"
+  },
+  {
+   "file": "briefs/2026-11-07_run-2.md",
+   "date": "2026-11-07",
+   "unit": "insights (sequencing), tooling (source importer), Q002",
+   "status": "done",
+   "title_zh": "第二次執行：時序陷阱一節、來源匯入修正、被封鎖頁面的手抄清單",
+   "title_en": "Second run: sequencing traps section, source-importer fix, a hand-copy list for the blocked pages",
+   "done": [
+    "A portfolio's deadline is not the application's deadline. Stanford moves the",
+    "Research material travels a different channel at each school: inside",
+    "Test dates and system windows are hard edges: MIT EA and Caltech REA require",
+    "sources: 1387 → 1427. Keys lost: 0 (checked key-by-key against the previous",
+    "Both groups now render on sources.html: \"Browser verification of",
+    "The new insights section uses one of them (V02) for Columbia."
+   ],
+   "notDone": [
+    "E1 (monthly re-verification) is still the only open BACKLOG unit, and is not",
+    "Q003–Q005 are unanswered, so the walkthrough's five colleges, the UK",
+    "The research notes are still English-first with Chinese summaries appended,"
+   ],
+   "by": "run"
   }
  ],
  "questions": [
@@ -48,8 +70,8 @@ window.ATLAS.log = {
    "date": "2026-11-07",
    "unit": "A3/A5",
    "state": "open",
-   "stateNote": "",
-   "q": "Michigan, Williams and Amherst refuse automated reading (HTTP 403 or a\nhuman-verification page); Northwestern, Princeton, Columbia and Purdue partly.\nCan you open these pages in an ordinary browser and paste or save the 2026–27\ndeadlines, supplements and letter rules into private/ (or answer here), so the\nnext run can cite them? Until then their cells say \"not stated\".",
+   "stateNote": "(retried 2026-11-07 04:45, still blocked)",
+   "q": "Michigan, Williams and Amherst refuse automated reading (HTTP 403 or a\nhuman-verification page); Northwestern, Princeton and Purdue refuse at the TLS\nlayer. Columbia was since read in a browser and is done (see V01–V19).\nRetry on 2026-11-07 at 04:45 used both the built-in browser and a separate\nfetch path, four URLs per host: every attempt on admission.princeton.edu,\nadmissions.northwestern.edu and admissions.purdue.edu failed (\"navigation\ndenied\" in the browser, \"certificate rejected\" on fetch). It is not a\nhuman-verification page and no bypass was attempted. These three hosts cannot\nbe read from this machine's automated paths at all, so they will not resolve on\ntheir own in a later run.\n\nCan you open the pages below in your ordinary browser and paste the answers\nhere (or save the pages into private/)? Each line is one page and the exact\nthings the matrix still needs. Short quotes are enough; the access date will be\nthe day you paste it.\n\nPrinceton\n- https://admission.princeton.edu/apply/graded-written-paper\n  required or optional? type of paper, length, acceptable subjects, how it is\n  submitted, any separate deadline.\n- https://admission.princeton.edu/apply/standardized-testing\n  policy for entry in fall 2027, and whether a change is stated for 2027-28.\n- https://admission.princeton.edu/apply/application-checklist\n  interviews required or optional; number of teacher letters and counselor\n  forms; whether supplementary materials (research, portfolios) are accepted.\n- https://admission.princeton.edu/how-apply/what-we-look (or the equivalent page)\n  does a sentence beginning roughly \"We are not looking for perfect...\" appear?\n\nNorthwestern\n- https://admissions.northwestern.edu/apply/requirements.html\n  test policy for fall 2027; program-specific auditions or portfolios; number\n  of teacher letters and counselor forms.\n- https://admissions.northwestern.edu/faqs/application-process/\n  whether unsolicited supplementary materials are refused or not reviewed; any\n  wording about a \"tally of touchpoints\" or demonstrated interest; whether\n  InitialView or another video interview is named as optional.\n- the deadlines page: ED and RD dates for 2026-27.\n\nPurdue\n- https://admissions.purdue.edu/become-student/apply/\n  Early Action and Regular Decision dates for 2026-27; any priority or\n  scholarship deadline; which application systems it accepts.\n- https://admissions.purdue.edu/become-student/first-year-criteria/\n  SAT / ACT / CLT policy (does it name the CLT?); whether letters are required,\n  optional or not accepted.\n- https://admissions.purdue.edu/become-student/international/\n  English-proficiency requirement and any stated waiver.\n\nUntil these arrive, the affected cells stay \"not stated\" and the matching rows\nin research/2026-11-07_browser-verification_v1.md stay \"blocked\". The URLs are\nalso registered as leads under LEAD-* on the sources page, so nothing on them\nis cited as fact anywhere on the site.",
    "a": ""
   },
   {

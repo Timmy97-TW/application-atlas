@@ -12914,6 +12914,189 @@ window.ATLAS.pages['insights'] = {
      ]
     }
    ]
+  },
+  {
+   "id": "sequencing",
+   "h": {
+    "zh": "工程與生物申請者的時序陷阱",
+    "en": "Sequencing traps for engineering and biology applicants"
+   },
+   "judgment": {
+    "zh": "對要交作品集或研究材料的人來說，真正綁住你的日期往往不是申請截止日：最早的比申請日提前 17 天（Stanford REA 藝術作品集），最晚的比申請日延後 3 天（Brown），而 MIT EA 與 Caltech REA 的考試必須在 11-30 之前「考完」。",
+    "en": "For anyone submitting a portfolio or research material, the binding date is usually not the application deadline: the earliest falls 17 days before it (Stanford REA arts portfolio), the latest 3 days after it (Brown), and for MIT EA and Caltech REA the test must be taken before 30 November."
+   },
+   "intro": {
+    "zh": "這一節不是新的研究，而是把時程頁上已經逐條標註來源的日期，按「哪一個日期先到」重排一次，因為工程與生物申請者多出作品集、研究補充與指導者推薦三條線。每一則都重新引用時程頁與作品集頁用的同一份來源。要看完整按日排列的時程，請到時程頁。",
+    "en": "This section is not new research. It re-sorts dates that the timeline page already cites, one by one, by which date arrives first, because engineering and biology applicants carry three extra lines: the portfolio, the research supplement and the mentor's letter. Every item re-cites the same source the timeline and portfolio pages use. For the full date-ordered calendar, see the timeline page."
+   },
+   "subs": [
+    {
+     "h": {
+      "zh": "作品集的截止日不等於申請的截止日",
+      "en": "A portfolio's deadline is not the application's deadline"
+     },
+     "judgment": {
+      "zh": "同一個申請季裡，作品集的日期可能在申請日之前、同一天、或之後，三種都有。",
+      "en": "Within one cycle a portfolio date can fall before, on, or after the application date. All three happen."
+     },
+     "items": [
+      {
+       "t": {
+        "zh": "Stanford 要交藝術作品集的人，Common App 必須比別人早送：REA 的申請日是 11-01，但附作品集者 10-15 就要送出 Common App，作品本身 10-20 到期；RD 的申請日是 2027-01-05，附作品集者 12-05 送出。這是本站 30 校裡唯一一個「作品集把申請日本身往前推」的例子。",
+        "en": "At Stanford, an applicant with an arts portfolio files the Common App earlier than everyone else: the REA deadline is 1 Nov, but a portfolio applicant files the Common App by 15 Oct, with the materials due 20 Oct; for RD (5 Jan 2027) the Common App is due 5 Dec. Among the 30 schools this is the only case where a portfolio moves the application date itself forward."
+       },
+       "tag": "f",
+       "src": [
+        "A3a-S18"
+       ]
+      },
+      {
+       "t": {
+        "zh": "反方向也存在：11-01 申請截止之後才到期的補充材料有 Brown 的 SlideRoom 作品集（11-04）、Princeton 的藝術補充與 Cornell 的音樂補充（都是 11-06）。送出申請不等於這一輪結束。",
+        "en": "The opposite also happens: supplements due after the 1 Nov application deadline include Brown's SlideRoom portfolios (4 Nov) and Princeton's arts supplement and Cornell's music supplement (both 6 Nov). Submitting the application does not close the round."
+       },
+       "tag": "f",
+       "src": [
+        "A3a-S58",
+        "A3a-S41",
+        "A3a-S62"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT 走第三種：Maker Portfolio、Research Supplement 與藝術作品集都與申請同日截止，而且全部是“truly optional”。",
+        "en": "MIT is the third pattern: the Maker Portfolio, the Research Supplement and the arts portfolios all share the application deadline, and all are “truly optional”."
+       },
+       "tag": "f",
+       "src": [
+        "B3-S1",
+        "B3-S2"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Columbia 的補充材料截止日是 ED 11-01、RD 2027-01-01，和申請同日；同一頁也寫研究摘要「通常一頁」。這兩點是在瀏覽器裡直接讀頁面確認的，不是搜尋摘要。",
+        "en": "Columbia's supplement deadlines are 1 Nov (ED) and 1 Jan 2027 (RD), the same days as the application; the same page says a research abstract is “typically one page in length”. Both were read from the rendered page in a browser, not from a search excerpt."
+       },
+       "tag": "f",
+       "src": [
+        "V02"
+       ]
+      },
+      {
+       "t": {
+        "zh": "[推論] 因此對工程或生物申請者來說，真正要盯的是三個日期裡最早的那一個：申請本身、作品集上傳、以及在 SlideRoom 裡由指導者寫的那封信——最後一項不在申請者自己手上。",
+        "en": "[Inference] The date to plan against is therefore the earliest of three: the application itself, the portfolio upload, and, where a mentor's letter is requested inside SlideRoom, a letter the applicant does not control."
+       },
+       "tag": "i",
+       "src": [
+        "B3-S1",
+        "A3a-S18"
+       ]
+      }
+     ]
+    },
+    {
+     "h": {
+      "zh": "研究材料走哪個管道，每一校都不一樣",
+      "en": "Research material travels a different channel at each school"
+     },
+     "judgment": {
+      "zh": "同一份研究 PDF 沒辦法用同一個方式送到五所學校：管道、長度、要不要附指導者推薦，都是逐校決定的。",
+      "en": "One research PDF cannot be sent the same way to five schools: the channel, the length, and whether a mentor's letter is part of it are decided school by school."
+     },
+     "items": [
+      {
+       "t": {
+        "zh": "MIT 的 Research Supplement：每人限一份、一個專題，可附摘要或海報 PDF，已發表者附 citation，指導者的推薦信由系統透過 SlideRoom 邀請。",
+        "en": "MIT's Research Supplement: one per applicant and one project, with an abstract or poster PDF, a citation if published, and a mentor's recommendation requested through SlideRoom."
+       },
+       "tag": "f",
+       "src": [
+        "B3-S1",
+        "B3-S2"
+       ]
+      },
+      {
+       "t": {
+        "zh": "有兩校是「送出申請之後」才經自己的 portal 上傳摘要，不走 Common App：Johns Hopkins 與 Swarthmore。",
+        "en": "Two schools take an abstract only after the application is submitted, through their own portal rather than the Common App: Johns Hopkins and Swarthmore."
+       },
+       "tag": "f",
+       "src": [
+        "B2-S42",
+        "B1-P22",
+        "B2-S58",
+        "B1-P23"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Harvey Mudd 要摘要放在 Common App 的 Additional Information 裡，並且明說：“we ask that students do not upload entire research papers”。",
+        "en": "Harvey Mudd wants the abstract inside the Common App's Additional Information, and says: “we ask that students do not upload entire research papers”."
+       },
+       "tag": "f",
+       "src": [
+        "B2-S40"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Duke 三樣都不收：“Duke does not accept resumes, research abstracts, and media files.”",
+        "en": "Duke takes none of it: “Duke does not accept resumes, research abstracts, and media files.”"
+       },
+       "tag": "f",
+       "src": [
+        "B2-S43"
+       ]
+      }
+     ]
+    },
+    {
+     "h": {
+      "zh": "考試日與系統開放窗口是硬邊界",
+      "en": "Test dates and system windows are hard edges"
+     },
+     "judgment": {
+      "zh": "有些日期不能用「之後再補」解決：考試要在某日前考完，申請系統只在某段時間收件。",
+      "en": "Some dates cannot be solved by sending something later: a test must have been taken by a date, and one system accepts applications only inside a window."
+     },
+     "items": [
+      {
+       "t": {
+        "zh": "MIT EA 與 Caltech REA 的考試必須在 11-30 之前「考完」，不是之後補報分數就好。",
+        "en": "For MIT EA and Caltech REA the test must have been taken by 30 November, not merely reported afterwards."
+       },
+       "tag": "f",
+       "src": [
+        "A3a-S1",
+        "A3a-S6",
+        "A3a-S11"
+       ]
+      },
+      {
+       "t": {
+        "zh": "UC 沒有 ED 也沒有 EA：收件期是 2026-10-01 至 11-30，就只有這一段。對同時申請 UC 與早申學校的人，11 月是兩條線重疊的月份。",
+        "en": "UC has no ED and no EA: the filing period is 1 Oct to 30 Nov 2026 and that is the only window. For anyone applying to UC and to early-round schools, November is the month where both lines overlap."
+       },
+       "tag": "f",
+       "src": [
+        "A3b-S23"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Swarthmore 自己的 portal 要到 10 月中才開通，所以材料不可能更早上傳。",
+        "en": "Swarthmore's own portal opens by mid-October, so material cannot be uploaded before then."
+       },
+       "tag": "f",
+       "src": [
+        "B1-P23"
+       ]
+      }
+     ]
+    }
+   ]
   }
  ]
 };

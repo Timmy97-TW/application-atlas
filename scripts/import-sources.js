@@ -48,6 +48,32 @@ for (const f of fs.readdirSync(rdir).filter(f => f.endsWith('.md')).sort()) {
   const fmCode = (text.match(/^code:\s*(\S+)/m) || [])[1];
   const [code, label] = CODES[topic] || [fmCode || topic, { zh: topic, en: topic }];
   groups[code] = label;
+  // Clean key: ids that already carry their note's code (V01 under code V) keep it.
+  const key = id => id.toUpperCase().startsWith(code.toUpperCase()) ? id : `${code}-${id}`;
+  // Some notes list sources as YAML flow maps under front-matter `sources:`
+  // (`- {id: V01, url: "...", access_date: ..., class: ..., supports: "..."}`)
+  // instead of a markdown table. Parse those first.
+  const yml = text.match(/^sources:\s*\n((?:[ \t]*(?:#[^\n]*|-[ \t]*\{[^\n]*)\n)+)/m);
+  if (yml && /-[ \t]*\{/.test(yml[1])) {
+    let n = 0;
+    for (const l of yml[1].split('\n')) {
+      if (!/^[ \t]*-[ \t]*\{/.test(l)) continue;
+      const g = k => {
+        const m2 = l.match(new RegExp(k + '\\s*:\\s*(?:"([^"]*)"|\'([^\']*)\'|([^,}]*))'));
+        return m2 ? (m2[1] !== undefined ? m2[1] : m2[2] !== undefined ? m2[2] : m2[3]).trim() : '';
+      };
+      const id = g('id').replace(/[\[\]*`]/g, '');
+      const url = (g('url').match(/https?:\/\/[^\s)<>\]"]+/) || [])[0];
+      if (!id || !url) continue;
+      const cls = /official/i.test(g('class')) ? 'official' : 'secondary';
+      const accessed = (g('access_date').match(/\d{4}-\d{2}-\d{2}/) || ['2026-11-07'])[0];
+      const supports = g('supports').replace(/\s+/g, ' ').slice(0, 300);
+      out[key(id)] = { url, accessed, cls, group: code, title: { zh: supports || url, en: supports || url }, note: { zh: '研究筆記：' + f, en: 'Research note: ' + f } };
+      n++;
+    }
+    report.push(`${f}: ${n} sources as ${code}-* (yaml list)`);
+    continue;
+  }
   // "## Sources" section, or a table directly under a front-matter `sources:` line
   const m = text.match(/^##+\s*Sources[^\n]*\n([\s\S]*?)(?=^##\s|(?![\s\S]))/m) ||
     text.match(/^sources:\s*\n((?:\s*\|[^\n]*\n)+)/m);
@@ -68,7 +94,7 @@ for (const f of fs.readdirSync(rdir).filter(f => f.endsWith('.md')).sort()) {
     const cls = /official/i.test(c[iCls] || '') ? 'official' : 'secondary';
     const accessed = ((c[iDate] || '').match(/\d{4}-\d{2}-\d{2}/) || ['2026-11-07'])[0];
     const supports = (c[iSup] || '').replace(/\s+/g, ' ').slice(0, 300);
-    out[`${code}-${id}`] = { url, accessed, cls, group: code, title: { zh: supports || url, en: supports || url }, note: { zh: '研究筆記：' + f, en: 'Research note: ' + f } };
+    out[key(id)] = { url, accessed, cls, group: code, title: { zh: supports || url, en: supports || url }, note: { zh: '研究筆記：' + f, en: 'Research note: ' + f } };
     n++;
   }
   report.push(`${f}: ${n} sources as ${code}-*`);

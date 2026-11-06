@@ -42,8 +42,8 @@ window.ATLAS.status = {
   "notStated": 33
  },
  "sources": {
-  "total": 1387,
-  "official": 1347,
+  "total": 1427,
+  "official": 1387,
   "secondary": 40
  },
  "oldestAccess": "2026-11-07",
