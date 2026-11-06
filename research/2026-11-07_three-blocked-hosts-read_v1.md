@@ -1,8 +1,8 @@
 ---
-title: "Princeton, Northwestern and Purdue read at last: the three hosts that had refused every request"
+title: "Every blocked host read at last: Princeton, Northwestern, Purdue in one pass, then Williams and Michigan"
 date: 2026-11-07
 cycle: 2026-27 (US, fall 2027 entry)
-unit: E3, A3, A5, B2, B7
+unit: E3, A3, A5, B2, B7, E9
 review_by: Timmy
 status: draft
 code: V4
@@ -19,6 +19,9 @@ sources:
   | T8 | https://admissions.purdue.edu/become-student/apply/ | 2026-11-07 | official | Purdue: Common App for West Lafayette and Indianapolis, fall application window Aug 1 to Jan 15, Polytechnic Statewide on Purdue's own application |
   | T9 | https://admissions.purdue.edu/become-student/first-year-criteria/ | 2026-11-07 | official | Purdue: SAT, ACT and CLT accepted and no preference, scores within five years, Nov 1 Early Action deadline encompassing scholarship consideration, the factor list, no separate ACT Science score |
   | T10 | https://admissions.purdue.edu/become-student/international/ | 2026-11-07 | official | Purdue: admission is to a specific major; international curriculum requirements; no world-language requirement for applicants from non-English-speaking countries; no IB minimum |
+  | T11 | https://www.williams.edu/admission-aid/how-to-apply/first-year/ | 2026-11-07 | official | Williams: ED Nov 15 / RD Jan 4 with decision dates, three platforms incl. Coalition on Scoir, three recommendations, $65 fee, test optional with superscoring, optional academic writing supplement ("do not submit lab reports"), arts portfolio via SlideRoom, scientific research abstracts, VIVA, InitialView, no interviews, two officers per application |
+  | T12 | https://admissions.umich.edu/apply/first-year-applicants/essay-questions | 2026-11-07 | official | Michigan 2026-27 essays: Common App 250-650 words, Challenges and Circumstances 250 words, U-M question 1 100-300, question 2 100-550 |
+  | T13 | https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines | 2026-11-07 | official | Michigan: ED and EA both Nov 1, RD Feb 1, aid and notification dates, $75 fee, School Report, ONE teacher evaluation (core academic teacher or other non-relative), "Do not submit additional documents unless specifically requested" |
 ---
 
 # The three hosts that had refused everything
@@ -197,7 +200,79 @@ then fetched and read.
   CLT score by Nov 1 of senior year**; it does not apply to applicants from
   Taiwan but it shows the Nov 1 date doing double duty. (T9)
 
-## What is still missing from these three
+## 4. Williams — read in the browser the same morning
+
+- [事實] `curl` still returns HTTP 403 for every williams.edu and
+  admission.williams.edu URL tried. The built-in browser opened the first-year
+  page without a challenge of any kind. So Williams is a third category again:
+  blocked to a plain request, open to a browser. (T11)
+- [事實] Dates: Early Decision **Nov 15** with the Early Decision Agreement
+  Form, decision by **Dec 14**; Regular Decision **Jan 4**, non-binding,
+  decision **April 1**, reply by **May 1**. (T11)
+- [事實] Three platforms, no preference stated: Common App, **Apply Coalition
+  with Scoir** and QuestBridge. This settles a gap in the A2 note, where
+  Williams appeared only on Scoir's own list with no confirmation from its own
+  page. (T11)
+- [事實] **Three recommendations**: one counselor and two teachers. $65 fee or
+  waiver. School transcript and mid-year report. (T11)
+- [事實] "Williams is truly test optional", superscores the SAT and ACT, and
+  superscores **across the legacy and enhanced ACT**; the enhanced ACT's science
+  section is optional. Scores may be entered in the application, emailed as a
+  screenshot of the score report, or sent by the testing agency, and an
+  applicant "can change your mind about submitting scores at any point before
+  your application deadline". (T11)
+- [事實] Optional materials, four distinct channels: an **academic writing
+  supplement** ("submit a paper on any topic of your choice. It need not be
+  graded, and may be an in-class handwritten assignment… **Please do not submit
+  lab reports.**"); a **studio/performing arts portfolio** reviewed by faculty
+  through SlideRoom; **scientific research abstracts** — "If you've pursued
+  significant scientific or mathematical research and are considering a research
+  or academic career, we welcome a brief description of your work", on the
+  application or by email, and a **VIVA** recording may be shared so Williams
+  "can hear you speak about your research"; and an **InitialView** interview,
+  which international applicants are welcome to share although "Williams does
+  not offer interviews". (T11)
+- [事實] "Two admission officers work together to review everything in an
+  application", taking notes that are later shared with the Admission
+  Committee. (T11)
+
+## 5. Michigan — also read in the browser
+
+- [事實] `curl` returns 403 for admissions.umich.edu and engin.umich.edu. The
+  browser opened both the requirements page and the essay page without a
+  challenge. The repo's standing note that Michigan is "403 everywhere,
+  including the browser" no longer holds. (T12, T13)
+- [事實] **Michigan now has an Early Decision plan.** Its important-dates list
+  carries "Nov 1 — Early Decision for First-year Students Only / Early Action
+  for First-year Students Only", Early Decision aid by Nov 15, ED notifications
+  by Dec 24, an ED enrolment deposit deadline of Jan 6, and an Early Decision
+  Agreement that "the applicant, a parent or guardian, and the high school
+  counselor must sign… All three signatures must be together". The page also
+  warns: "We are modifying our admissions process and requirements." (T13)
+- [事實] Other dates: Regular Decision and summer half term **Feb 1**; test
+  self-report deadlines Nov 1 (ED/EA) and Feb 1 (RD), both optional; aid Mar 1
+  for EA and RD; EA notifications by Jan 29; RD notifications by April 2;
+  enrolment deposit May 1; School of Music, Theatre & Dance applications Dec 1;
+  winter term Oct 1. (T13)
+- [事實] Checklist: Common Application with a **$75** fee or an in-application
+  waiver; transcript; School Report; **one** teacher evaluation, from a "core
+  academic teacher **or other non-relative** who can speak directly to the
+  student's academic aptitude, potential, and classroom performance"; SAT or ACT
+  only if the applicant wants them considered; an English test for non-native
+  speakers. (T13)
+- [事實] "**Do not submit additional documents unless specifically requested**,
+  as this may delay your decision." (T13)
+- [事實] 2026-27 essay limits, which had been a named gap: the Common
+  Application essay is **250-650 words** ("650 words is your limit, not your
+  goal… The application won't accept a response shorter than 250 words"); the
+  Common App **Challenges and Circumstances** question is **limited to 250
+  words**; U-M question 1 (how you are prepared to contribute to developing
+  leaders and citizens) is **100-300 words, required**; U-M question 2 (the
+  qualities of the specific college or school you are applying to and how its
+  curriculum supports your interests) is **100-550 words, required**. (T12)
+
+## What is still missing from these five
+
 
 - Purdue's letters-of-recommendation policy, and its English-proficiency
   minimums, are not on the two pages read; both need the English-proficiency
@@ -237,6 +312,31 @@ then fetched and read.
   insights page lists portfolio dates that fall before the application; this is
   the opposite case and the dates are now sourced to the school's own page.
 
+- [事實] Two schools tell applicants in writing not to send the one document an
+  engineering or biology student is most likely to have: Princeton's required
+  graded paper is "most interested in… expository, thesis-driven analytical
+  writing rather than science research", and Williams's optional academic
+  writing supplement says "Please do not submit lab reports." Williams then
+  opens a **separate** channel for exactly that material — a brief description
+  of scientific or mathematical research, plus an optional VIVA recording — so
+  the rule is not "we do not want your science", it is "not in the writing slot".
+- [事實] Michigan allows its single teacher evaluation to come from a "core
+  academic teacher **or other non-relative** who can speak directly to the
+  student's academic aptitude, potential, and classroom performance". For a
+  student whose strongest academic witness is a mentor outside school, that
+  phrasing is the opening, and it sits in a checklist line rather than in any
+  guidance about recommenders.
+- [事實] Michigan has added an Early Decision plan and says its process is being
+  modified; the repo's Michigan cells were built from search extracts and a
+  college office's pages, so this is the first direct reading of the central
+  admissions office's own dates.
+- [推論] Five of five hosts that this repo had recorded as unreadable were read
+  on one morning: three by a plain request after a transient failure cleared,
+  two in a browser although a plain request still returns 403. The useful
+  distinction is not "blocked / not blocked" but **which client was tried**. A
+  single standing claim of "refuses automated access" should name the client and
+  the minute, or it will be wrong within hours.
+
 ## 中文摘要
 
 - [事實] 第一、二輪把 Princeton、Northwestern、Purdue 記成「TLS 層永久拒絕、只能靠維護者本人開頁」。到 2026-11-07 清晨這個結論已經不成立：05:40 的連結檢查把其中兩個網址報成 HTTP 404（能回 404 就表示連上了），直接測三個主機各一頁都回 HTTP 200，接著十頁全部抓到並讀完。
@@ -248,4 +348,7 @@ then fetched and read.
 - [事實] Northwestern 明文拒收未經要求的補充材料：「does not accept unsolicited supplemental items, such as artwork, portfolios, recordings (CDs, DVDs, etc.) or websites (including social media). These items will not be reviewed and therefore should not be submitted.」**連網站都點名在內**。
 - [事實] Northwestern 要兩封推薦信（輔導老師一封、核心科目老師一封），額外推薦信會收但要提供「新的或不同的資訊」；不辦校友面試，改成 'Cat Chats（與申請無關）；美國高中申請者可選 Glimpse 60-90 秒影片，國際高中申請者可用 InitialView，兩者都是 ED 11/6、RD 1/16 截止，InitialView 自己不評分。音樂（Bienen）、ISP、MMSS、音樂劇有各自的額外材料；ISP 是另外一份申請，錄不錄 ISP 與一般錄取互不影響。日期：QuestBridge 2026-10-01、ED 2026-11-01（補助 12/1）、RD 2027-01-04（補助 2/1）。去年約 50% 新生來自 ED。
 - [事實] Purdue：**11/1 Early Action 同時是獎學金考慮的截止日**（原文「the Nov. 1 Early Action deadline that encompasses scholarship consideration」）；West Lafayette 與 Indianapolis 的秋季申請期間是 8/1 至 1/15，走 Common App。**Purdue 收 CLT**，與 SAT、ACT 並列且沒有偏好，成績須在五年內。審查因素清單裡**沒有推薦信**，這兩頁也完全沒寫推薦信政策。所有主修都要四年數學、三年實驗科學；非英語國家的申請者免世界語言要求；IB 沒有最低分，HL 不優於 SL。申請時就是**申請某一個特定主修**。
+- [事實] Williams 也讀到了（curl 仍是 403，瀏覽器直接打開，沒有任何驗證頁）：ED 11/15（要簽 Early Decision Agreement）、12/14 放榜；RD 1/4、4/1 放榜、5/1 回覆。三個平台並列（Common App、Apply Coalition with Scoir、QuestBridge），這也補上 A2 筆記的缺口——先前 Williams 只出現在 Scoir 自己的名單上。三封推薦信（輔導老師一封、老師兩封）、$65 報名費、「truly test optional」且 SAT／ACT 都 superscore（新舊 ACT 之間也 superscore）。選繳材料有四種管道：學術寫作樣本（可以沒有分數、可以是課堂手寫作業，但**明文請不要交實驗報告**）、藝術作品集（SlideRoom，由教師審閱）、**科學研究摘要**（可寫在申請表或 email，另可附 VIVA 錄影讓他們「聽你講自己的研究」）、以及 InitialView（Williams 自己不辦面試，但歡迎分享）。每份申請由兩位招生人員共同審閱。
+- [事實] Michigan 也讀到了（curl 仍是 403）：**Michigan 新增了 Early Decision**，11/1 同時是 ED 與 EA 的截止日，ED 補助 11/15、12/24 前放榜、1/6 繳訂金，Early Decision Agreement 需要申請人、家長與輔導老師三個簽名「一起」完成；RD 2/1，EA 1/29 前放榜、RD 4/2 前放榜，EA／RD 補助 3/1，5/1 繳訂金；音樂戲劇舞蹈學院 12/1。報名費 $75；School Report；**只要一封老師推薦信**，而且可以是「核心學科老師**或其他非親屬**，能直接說明學生的學術能力、潛力與課堂表現」。頁面另寫「除非特別要求，不要補交其他文件，否則可能延後決定」。2026-27 文書字數（先前明列為缺口）：Common App 主文書 250–650 字、Challenges and Circumstances 250 字上限、U-M 第一題 100–300 字必答、第二題 100–550 字必答。
+- [推論] 本站記成「讀不到」的五個主機，在同一個早上全部讀到了：三個是暫時性失敗自己好了，兩個是 curl 仍 403、但瀏覽器打得開。真正該分的不是「有沒有被擋」，而是**用哪一個 client 試的**。寫「拒絕自動存取」這種結論，要同時寫下用什麼工具、哪一分鐘，否則幾個小時內就會變成錯的。
 - [事實] 仍缺：Purdue 的推薦信政策與英語能力最低標（要讀 English proficiency 專頁）、Princeton「We are not looking for perfect…」那句話（讀過的四頁都沒有）、Northwestern ISP 的詳細要求（在 ISP 自己的網站）。

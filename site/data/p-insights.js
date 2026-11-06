@@ -13232,6 +13232,27 @@ window.ATLAS.pages['insights'] = {
     },
     {
      "t": {
+      "zh": "兩所學校明文叫申請人不要交工程或生物學生最可能有的那份文件：Princeton 必交的 graded written paper「最想看論說、有主軸的分析寫作，而不是科學研究」，Williams 的選繳學術寫作樣本直接寫「Please do not submit lab reports.」。但 Williams 另外開了一條專門管道收那些材料——科學或數學研究的簡短說明，還可以附 VIVA 錄影讓他們「聽你講自己的研究」。所以規則不是「不想看你的科學」，而是「不要放在寫作那一格」。",
+      "en": "Two schools tell applicants in writing not to send the document an engineering or biology student is most likely to own. Princeton\u2019s required graded written paper is \u201cmost interested in\u2026 expository, thesis-driven analytical writing rather than science research\u201d; Williams\u2019s optional academic writing sample says \u201cPlease do not submit lab reports.\u201d Williams then opens a separate channel for exactly that material \u2014 a brief description of scientific or mathematical research, with an optional VIVA recording so it \u201ccan hear you speak about your research\u201d. The rule is not \u201cwe do not want your science\u201d; it is \u201cnot in the writing slot\u201d."
+     },
+     "tag": "f",
+     "src": [
+      "V4-T1",
+      "V4-T11"
+     ]
+    },
+    {
+     "t": {
+      "zh": "Michigan 的那一封老師推薦信，可以不是學校老師：清單上寫的是「核心學科老師**或其他非親屬**，能直接說明學生的學術能力、潛力與課堂表現」。對一個最強的學術見證人在校外的學生來說，這句話就是入口，而它只出現在申請清單的一行裡，不在任何關於推薦人的指引裡。",
+      "en": "Michigan\u2019s single teacher evaluation does not have to come from a schoolteacher: the checklist line reads \u201ccore academic teacher **or other non-relative** who can speak directly to the student\u2019s academic aptitude, potential, and classroom performance\u201d. For a student whose strongest academic witness is a mentor outside school, that phrasing is the opening \u2014 and it appears in a checklist line, not in any guidance about recommenders."
+     },
+     "tag": "f",
+     "src": [
+      "V4-T13"
+     ]
+    },
+    {
+     "t": {
       "zh": "[推論] 本站 logs/ 裡的 404 應該讀成「要重新定位」，不是「已消失」。Johns Hopkins、Harvey Mudd、Amherst 三校都是換了網址而內容還在；打開 404 頁、照著它自己給的導覽走一兩步就找到了。連結檢查器看不出這個差別。",
       "en": "[Inference] A 404 in this repo's link log should be read as “re-locate”, not “gone”. Johns Hopkins, Harvey Mudd and Amherst each moved a URL and kept the page; opening the 404 and following the navigation it offers found all three in one or two clicks. A link checker cannot tell the two cases apart."
      },

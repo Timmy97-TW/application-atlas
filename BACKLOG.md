@@ -99,6 +99,16 @@ Tier 4: Williams, Amherst, Swarthmore
       transient failure of one fetching path, reported as a permanent property. Q002 no
       longer needs the maintainer. Integration of the newly-read cells into the site tables
       is E8.
+- [ ] E9 Michigan and Williams were read too (V4, T11-T13): `curl` still gets 403 from both,
+      but the browser opened both with no challenge. Integrate the same way as E8 — Williams
+      (ED Nov 15 + Agreement, RD Jan 4, Coalition on Scoir confirmed from its own page, three
+      recommendations, $65, truly test optional with cross-ACT superscoring, the four optional
+      channels including "do not submit lab reports" and the research abstract + VIVA, no
+      interviews, two officers per file) and Michigan (the new Early Decision plan and all its
+      dates, $75, ONE teacher evaluation from a core teacher "or other non-relative", "do not
+      submit additional documents unless specifically requested", and the 2026-27 essay word
+      limits: 250-650 / 250 / 100-300 / 100-550). The schools page's blocked section now holds
+      these facts in prose; the matrix cells still say "not stated".
 - [ ] E8 Integrate the V4 facts into the site tables: Princeton (graded written paper as a
       required component with its subject and format rules, the two-cycle test policy, two
       teacher letters from higher-level courses in different areas, SR plus separate

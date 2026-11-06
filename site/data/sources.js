@@ -17335,6 +17335,48 @@ window.ATLAS.sources = {
    "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
   }
  },
+ "V4-T11": {
+  "url": "https://www.williams.edu/admission-aid/how-to-apply/first-year/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V4",
+  "title": {
+   "zh": "Williams: ED Nov 15 / RD Jan 4 with decision dates, three platforms incl. Coalition on Scoir, three recommendations, $65 fee, test optional with superscoring, optional academic writing supplement (\"do not submit lab reports\"), arts portfolio via SlideRoom, scientific research abstracts, VIVA, Initia",
+   "en": "Williams: ED Nov 15 / RD Jan 4 with decision dates, three platforms incl. Coalition on Scoir, three recommendations, $65 fee, test optional with superscoring, optional academic writing supplement (\"do not submit lab reports\"), arts portfolio via SlideRoom, scientific research abstracts, VIVA, Initia"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_three-blocked-hosts-read_v1.md",
+   "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
+  }
+ },
+ "V4-T12": {
+  "url": "https://admissions.umich.edu/apply/first-year-applicants/essay-questions",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V4",
+  "title": {
+   "zh": "Michigan 2026-27 essays: Common App 250-650 words, Challenges and Circumstances 250 words, U-M question 1 100-300, question 2 100-550",
+   "en": "Michigan 2026-27 essays: Common App 250-650 words, Challenges and Circumstances 250 words, U-M question 1 100-300, question 2 100-550"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_three-blocked-hosts-read_v1.md",
+   "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
+  }
+ },
+ "V4-T13": {
+  "url": "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V4",
+  "title": {
+   "zh": "Michigan: ED and EA both Nov 1, RD Feb 1, aid and notification dates, $75 fee, School Report, ONE teacher evaluation (core academic teacher or other non-relative), \"Do not submit additional documents unless specifically requested\"",
+   "en": "Michigan: ED and EA both Nov 1, RD Feb 1, aid and notification dates, $75 fee, School Report, ONE teacher evaluation (core academic teacher or other non-relative), \"Do not submit additional documents unless specifically requested\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_three-blocked-hosts-read_v1.md",
+   "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
+  }
+ },
  "F1-S1": {
   "url": "https://www.ucas.com/applying/applying-university/dates-and-deadlines-uni-applications",
   "accessed": "2026-11-07",

@@ -38,7 +38,7 @@ window.ATLAS.log = {
    "unit": "E3",
    "status": "merged",
    "title_zh": "",
-   "title_en": "Run 3b (watchdog), 2026-11-07 06:00–06:30: the three TLS-blocked hosts were read",
+   "title_en": "Run 3b (watchdog), 2026-11-07 05:45–06:15: every blocked host was read",
    "done": [],
    "notDone": [],
    "by": "run"
