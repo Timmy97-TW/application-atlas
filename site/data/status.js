@@ -3,7 +3,7 @@ window.ATLAS = window.ATLAS || {};
 window.ATLAS.status = {
  "generated": "2026-11-06",
  "units": {
-  "done": 33,
+  "done": 35,
   "total": 38
  },
  "sections": {
@@ -24,7 +24,7 @@ window.ATLAS.status = {
    "total": 8
   },
   "E": {
-   "done": 4,
+   "done": 6,
    "total": 9
   },
   "F": {
@@ -37,9 +37,9 @@ window.ATLAS.status = {
   }
  },
  "cells": {
-  "official": 117,
+  "official": 113,
   "secondary": 0,
-  "notStated": 33
+  "notStated": 37
  },
  "sources": {
   "total": 1461,

@@ -99,17 +99,20 @@ Tier 4: Williams, Amherst, Swarthmore
       transient failure of one fetching path, reported as a permanent property. Q002 no
       longer needs the maintainer. Integration of the newly-read cells into the site tables
       is E8.
-- [ ] E9 Michigan and Williams were read too (V4, T11-T13): `curl` still gets 403 from both,
-      but the browser opened both with no challenge. Integrate the same way as E8 — Williams
-      (ED Nov 15 + Agreement, RD Jan 4, Coalition on Scoir confirmed from its own page, three
-      recommendations, $65, truly test optional with cross-ACT superscoring, the four optional
-      channels including "do not submit lab reports" and the research abstract + VIVA, no
-      interviews, two officers per file) and Michigan (the new Early Decision plan and all its
-      dates, $75, ONE teacher evaluation from a core teacher "or other non-relative", "do not
-      submit additional documents unless specifically requested", and the 2026-27 essay word
-      limits: 250-650 / 250 / 100-300 / 100-550). The schools page's blocked section now holds
-      these facts in prose; the matrix cells still say "not stated".
-- [ ] E8 Integrate the V4 facts into the site tables: Princeton (graded written paper as a
+- [x] E9 Michigan and Williams integrated  ✓ 2026-11-07: site/data/p-schools.js, p-portfolios.js,
+      p-process.js, p-insights.js (from V4, T11-T13)
+      Williams: ED Nov 15 + Agreement with a Dec 14 decision, RD Jan 4 / April 1 / May 1, Apply
+      Coalition with Scoir confirmed from its own page, three recommendations, $65, "truly test
+      optional" with cross-ACT superscoring, and the four optional channels written into the
+      matrix (arts via SlideRoom, the writing sample that says "do not submit lab reports", the
+      scientific research abstract with VIVA, InitialView) plus "no interviews" and two officers
+      per file. Michigan: the new Early Decision plan and every date, $75, ONE teacher evaluation
+      from a core teacher "or other non-relative", "do not submit additional documents unless
+      specifically requested", and the 2026-27 essay limits 250-650 / 250 / 100-300 / 100-550.
+      `curl` still gets 403 from both hosts; both were read in a browser.
+- [x] E8 V4 facts integrated into the site tables  ✓ 2026-11-07: site/data/p-schools.js,
+      p-portfolios.js, p-process.js, p-insights.js
+      Written in for all three: Princeton (graded written paper as a
       required component with its subject and format rules, the two-cycle test policy, two
       teacher letters from higher-level courses in different areas, SR plus separate
       counselor letter, arts-supplement-only with portal submission after the application,
@@ -120,8 +123,12 @@ Tier 4: Williams, Amherst, Swarthmore
       Bienen and ISP, dated 2026-27 deadlines, ~50% of the class from ED), Purdue (Nov 1
       Early Action as the scholarship deadline, Aug 1 to Jan 15 window, CLT accepted, the
       factor list with no letters in it, four years of maths and three of lab science for
-      all majors, admission to a specific major). The schools, portfolios, timeline and
-      containers pages all have cells that currently read "not stated" for these three.
+      all majors, admission to a specific major). The schools, portfolios and timeline
+      pages now carry these facts; containers had no cells for these three schools. Still
+      genuinely not stated and therefore left empty: Purdue's letters-of-recommendation policy
+      (absent from all four pages read and from its review-factor list), Princeton's "not
+      looking for perfect" wording, and Northwestern's ISP requirements, which live on the ISP
+      site rather than the admissions site.
 - [x] E4 Pages that load but do not hand over their text  ✓ 2026-11-07: research/2026-11-07_recovered-pages-round-3_v1.md (V3)
       Stanford's FAQ index turned out to be retired, not gated (39-byte empty document, no
       FAQ link in the site navigation); its answers now live in accordions on each Apply
