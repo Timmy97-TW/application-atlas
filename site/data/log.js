@@ -11,6 +11,42 @@ window.ATLAS.log = {
    "stateNote": "2026-11-07",
    "q": "Which three of the 30 schools should the two personas target, so the examples\nstay concrete? (Default if unanswered: MIT, Stanford, UC Berkeley.)",
    "a": "Use the default (maintainer, 2026-11-07)."
+  },
+  {
+   "id": "Q002",
+   "date": "2026-11-07",
+   "unit": "A3/A5",
+   "state": "open",
+   "stateNote": "",
+   "q": "Michigan, Williams and Amherst refuse automated reading (HTTP 403 or a\nhuman-verification page); Northwestern, Princeton, Columbia and Purdue partly.\nCan you open these pages in an ordinary browser and paste or save the 2026–27\ndeadlines, supplements and letter rules into private/ (or answer here), so the\nnext run can cite them? Until then their cells say \"not stated\".",
+   "a": ""
+  },
+  {
+   "id": "Q003",
+   "date": "2026-11-07",
+   "unit": "D4/D5",
+   "state": "open",
+   "stateNote": "",
+   "q": "The practice walkthrough uses five Common App colleges (Stanford, Johns\nHopkins, Cornell, CMU, Harvard) because MIT and UC Berkeley do not use Common\nApp; MIT and UC are explained separately (UC has its own tab). Keep these five,\nor swap some?",
+   "a": ""
+  },
+  {
+   "id": "Q004",
+   "date": "2026-11-07",
+   "unit": "F3",
+   "state": "open",
+   "stateNote": "",
+   "q": "UK pages show the Taiwan Senior High School diploma alone is generally not\naccepted (Imperial lists it as not accepted; Warwick requires its foundation\nyear). Should section F add a unit on qualification routes for a Taiwan\npublic-school applicant (AP, IB, A-level, foundation years), or keep UK at\nthe current depth?",
+   "a": ""
+  },
+  {
+   "id": "Q005",
+   "date": "2026-11-07",
+   "unit": "G1",
+   "state": "open",
+   "stateNote": "",
+   "q": "The 20 schools for US 31–50 are listed in DECISIONS.md (2026-11-07). Change any?",
+   "a": ""
   }
  ]
 };

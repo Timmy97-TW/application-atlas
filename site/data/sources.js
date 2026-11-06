@@ -5,6 +5,14 @@ window.ATLAS.sourceGroups = {
   "zh": "C4 AI 政策",
   "en": "C4 AI policy"
  },
+ "blocked-pages-browser-pass": {
+  "zh": "blocked-pages-browser-pass",
+  "en": "blocked-pages-browser-pass"
+ },
+ "A1": {
+  "zh": "A1 Common App 申請表結構",
+  "en": "A1 Common App first-year anatomy"
+ },
  "A3a": {
   "zh": "A3 時程（1–15 校）",
   "en": "A3 Calendar (schools 1–15)"
@@ -29,17 +37,45 @@ window.ATLAS.sourceGroups = {
   "zh": "A2 其他申請系統",
   "en": "A2 Other application systems"
  },
+ "C1": {
+  "zh": "C1–C3 校外紀錄框架",
+  "en": "C1–C3 Outside-record frameworks"
+ },
  "B1": {
   "zh": "B1 上傳入口分類",
   "en": "B1 Portal taxonomy"
+ },
+ "B5": {
+  "zh": "B5 審查端（官方說法）",
+  "en": "B5 Reader side, official statements"
+ },
+ "A5a": {
+  "zh": "A5 逐校資料（1–15）",
+  "en": "A5 School roster (1–15)"
  },
  "A5b": {
   "zh": "A5 逐校資料（16–30）",
   "en": "A5 School roster (16–30)"
  },
+ "B2": {
+  "zh": "B2／B4 補充材料矩陣",
+  "en": "B2/B4 Supplementary-materials matrix"
+ },
  "F1": {
   "zh": "F1／F2 UCAS 與入學考試",
   "en": "F1/F2 UCAS and admissions tests"
+ },
+ "F3": {
+  "zh": "F3 英國十校",
+  "en": "F3 Ten UK universities"
+ },
+ "G1": {
+  "zh": "G 美國 31–40 校",
+  "en": "G US schools 31–40"
+ },
+ "G2": {
+  "zh": "G 美國 41–50 校",
+  "en": "G US schools 41–50"
  }
 };
 window.ATLAS.sources = {
@@ -685,6 +721,608 @@ window.ATLAS.sources = {
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
    "en": "Research note: 2026-11-07_ai-policy_v1.md"
+  }
+ },
+ "A1-S1": {
+  "url": "https://commonapp.org/files/webinar_decks/Whats-New-with-Common-App-First-Year-2026-2027.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Common App counselor webinar deck \"What's new… 2026–27 first-year app updates\", dated 2026-05-21: fee-waiver three-way policy, citizenship relabel, independent-learner Family changes, siblings 5→10, Activities renamed and position field optional, testing updates, essay prompts unchanged, ~30-questio",
+   "en": "Common App counselor webinar deck \"What's new… 2026–27 first-year app updates\", dated 2026-05-21: fee-waiver three-way policy, citizenship relabel, independent-learner Family changes, siblings 5→10, Activities renamed and position field optional, testing updates, essay prompts unchanged, ~30-questio"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S2": {
+  "url": "https://www.commonapp.org/apply/essay-prompts",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Full text of the seven 2026–27 essay prompts",
+   "en": "Full text of the seven 2026–27 essay prompts"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S3": {
+  "url": "https://www.commonapp.org/blog/announcing-2026-2027-common-app-essay-prompts",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Blog 2026-02-27: prompts unchanged for 2026–27; 2025–26 prompt-choice shares",
+   "en": "Blog 2026-02-27: prompts unchanged for 2026–27; 2025–26 prompt-choice shares"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S4": {
+  "url": "https://www.commonapp.org/blog/common-app-opens-application-launch-2026-27-season",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Blog 2026-07-31: launch on 2026-08-01; independent-learner changes; Activities renamed \"activities and experiences\"",
+   "en": "Blog 2026-07-31: launch on 2026-08-01; independent-learner changes; Activities renamed \"activities and experiences\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S5": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/Data-catalogs",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Help-center article listing the data catalogs and companion guides per cycle (2021–22 to 2026–27)",
+   "en": "Help-center article listing the data catalogs and companion guides per cycle (2021–22 to 2026–27)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S6": {
+  "url": "https://commonapp.my.salesforce.com/sfc/p/d0000000eEna/a/Vz000005enoj/cBNZN1if4YTD8FDtxpfOseyeIjxVF2CSAtCSFjKbcW4",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "2026–27 First-year Data Catalog (xlsx, file name dated 8-18-2026), linked from S5: every question, type, required flag, min/max, max length, choice lists, recommender-form questions",
+   "en": "2026–27 First-year Data Catalog (xlsx, file name dated 8-18-2026), linked from S5: every question, type, required flag, min/max, max length, choice lists, recommender-form questions"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S7": {
+  "url": "https://commonapp.my.salesforce.com/sfc/p/d0000000eEna/a/Vz000005ek66/QRQNWQl5viYFRmq2T_jddgcRJUOa4tXe1z87r18KtZQ",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "2026–27 FY Data Catalog Companion Guide (last updated 2026-08-18), linked from S5: new/changed/deleted questions and choices vs 2025–26",
+   "en": "2026–27 FY Data Catalog Companion Guide (last updated 2026-08-18), linked from S5: new/changed/deleted questions and choices vs 2025–26"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S8": {
+  "url": "https://commonapp.my.salesforce.com/sfc/p/d0000000eEna/a/Vz000001x2Rp/YOHCJsNOVQx8MG757keOL3VVqpsHotu8l0UtQ_yo0AQ",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "2025–26 First-year Data Catalog (file dated 07-25-2025), linked from S5: prior-cycle field labels incl. \"(Max characters: 50/100/150)\"",
+   "en": "2025–26 First-year Data Catalog (file dated 07-25-2025), linked from S5: prior-cycle field labels incl. \"(Max characters: 50/100/150)\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S9": {
+  "url": "https://commonapp.my.salesforce.com/sfc/p/d0000000eEna/a/Vz000001x2Wf/azQJiU95buPMU8MNM1whCT8.9e7yOjI6K0mg91Gu.p8",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "2025–26 FY Companion Guide (last updated July 2025), linked from S5: Challenges and circumstances (250) and Additional information (300) introduced as changed questions",
+   "en": "2025–26 FY Companion Guide (last updated July 2025), linked from S5: Challenges and circumstances (250) and Additional information (300) introduced as changed questions"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S10": {
+  "url": "https://commonapp.my.salesforce.com/sfc/p/d0000000eEna/a/Vz000000XfM9/y7BHRl1R_ea.UHVNFqyt9DHH3uEG2hZ512d1D3oOAgU",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "2024–25 First-year Data Catalog, linked from S5: community-disruption (COVID-19) question 250 words; Additional information 650 words",
+   "en": "2024–25 First-year Data Catalog, linked from S5: community-disruption (COVID-19) question 250 words; Additional information 650 words"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S11": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/Can-I-get-paper-or-PDF-versions-of-the-application-and-recommender-forms",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Help-center list of accessible PDFs: first-year application, fee waiver, ED agreement, school report (+homeschool and international supplements), counselor rec, optional, mid-year, final, teacher evaluation, other recommendation",
+   "en": "Help-center list of accessible PDFs: first-year application, fee waiver, ED agreement, school report (+homeschool and international supplements), counselor rec, optional, mid-year, final, teacher evaluation, other recommendation"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S12": {
+  "url": "https://commonapp.my.salesforce.com/sfc/p/d0000000eEna/a/Vz000005LXFp/_ZGBh2bPFMOoxQ8w3NTVTMls.RKhMK7Duqtu4Hu0ANg",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "First-year application PDF, © 2026 Common App (linked from S11): section order, Activities and experiences layout, Responsibilities and circumstances, Additional information word counts, signature/certification text",
+   "en": "First-year application PDF, © 2026 Common App (linked from S11): section order, Activities and experiences layout, Responsibilities and circumstances, Additional information word counts, signature/certification text"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S13": {
+  "url": "https://commonapp.my.salesforce.com/sfc/p/d0000000eEna/a/Vz000005LXfd/12x3J7xYW133uPf9164H9JxRAjkOaC_JDZ5z5dRJNS0",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Teacher evaluation (TE) PDF, © 2026 (linked from S11): 16 rating rows, 8-point scale, evaluation ≤1000 words",
+   "en": "Teacher evaluation (TE) PDF, © 2026 (linked from S11): 16 rating rows, 8-point scale, evaluation ≤1000 words"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S14": {
+  "url": "https://commonapp.my.salesforce.com/sfc/p/d0000000eEna/a/Vz000005LXMH/wzLfajMr_FCpINHhGLOVoipYEBbWk8FS6fDulA9SnuM",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "School report (SR) PDF, © 2026 (linked from S11): FERPA authorization text, school-profile fields, rank/GPA, rigor scale, 4 ratings, community-disruption box (500 words), \"I recommend this student\" scale",
+   "en": "School report (SR) PDF, © 2026 (linked from S11): FERPA authorization text, school-profile fields, rank/GPA, rigor scale, 4 ratings, community-disruption box (500 words), \"I recommend this student\" scale"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S15": {
+  "url": "https://commonapp.my.salesforce.com/sfc/p/d0000000eEna/a/Vz000005LXhF/S2rrjckR937Ll8NarWmk5Xw8qylgH6c3vkfGLDrSWjA",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Other recommendation (OE) PDF, © 2026 (linked from S11): relationship, length known, evaluation ≤1000 words",
+   "en": "Other recommendation (OE) PDF, © 2026 (linked from S11): relationship, length known, evaluation ≤1000 words"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S16": {
+  "url": "https://commonapp.my.salesforce.com/sfc/p/d0000000eEna/a/Vz000005LXUL/HnXF3M7GLD9Zq1QukYSSaId.i19cYeIfbaZEvuP2hCY",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Counselor recommendation (CR) PDF, © 2026 (linked from S11) — text read from an identical-footer copy, see Method note",
+   "en": "Counselor recommendation (CR) PDF, © 2026 (linked from S11) — text read from an identical-footer copy, see Method note"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S17": {
+  "url": "https://commonapp.my.salesforce.com/sfc/p/d0000000eEna/a/Vz000005LXan/vhwvnHql.oC3tD0oeM4ak.4hv9xhiE1J1zNga7owLjc",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Mid-year report (MR) PDF, © 2026 (linked from S11) — see Method note",
+   "en": "Mid-year report (MR) PDF, © 2026 (linked from S11) — see Method note"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S18": {
+  "url": "https://commonapp.my.salesforce.com/sfc/p/d0000000eEna/a/Vz000005LXcP/bFpYAJUsB6fsuld_xrTEuaLlD1rAN.8vzk_HzJ8ba4M",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Final report (FR) PDF, © 2026 (linked from S11) — see Method note",
+   "en": "Final report (FR) PDF, © 2026 (linked from S11) — see Method note"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S19": {
+  "url": "https://commonapp.my.salesforce.com/sfc/p/d0000000eEna/a/Vz000005LXZB/.AaLJNacYkl63zW3sJM54xd0uNP15ACz7nb1DbwipEI",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Optional report (OR) PDF, © 2026 (linked from S11) — see Method note",
+   "en": "Optional report (OR) PDF, © 2026 (linked from S11) — see Method note"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S20": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/Recommendation-Forms",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Every form a college may receive (SR, ST, homeschool/international supplements, CR, MR, MT, OR, OT, FR, FT, TE, OE, FW, ED); \"each college determines the number of required and allowed\" TE/OE; OE types; FW not technically required; OR once per year",
+   "en": "Every form a college may receive (SR, ST, homeschool/international supplements, CR, MR, MT, OR, OT, FR, FT, TE, OE, FW, ED); \"each college determines the number of required and allowed\" TE/OE; OE types; FW not technically required; OR once per year"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S21": {
+  "url": "https://www.commonapp.org/static/bd27e890c7338673cbde71a9ce883bef/Understanding-Rec-Process.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Student handout (Sept 2026): four recommender types; Other recommender types; advisors submit no forms; colleges choose accepted types and counts",
+   "en": "Student handout (Sept 2026): four recommender types; Other recommender types; advisors submit no forms; colleges choose accepted types and counts"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S22": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/Why-am-I-unable-to-assign-an-Other-Recommender-to-a-school",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Other Recommender assignable only if the college accepts at least one OR type, and only the accepted types",
+   "en": "Other Recommender assignable only if the college accepts at least one OR type, and only the accepted types"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S23": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/I-was-invited-as-a-Teacher-but-I-am-a-college-professor-What-do-I-do",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "A college professor invited as Teacher may complete the TE, marking \"college/university instructor\"",
+   "en": "A college professor invited as Teacher may complete the TE, marking \"college/university instructor\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S24": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/How-do-I-assign-my-recommenders",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Teachers and Other Recommenders must be assigned per college; assignment triggers the invitation email",
+   "en": "Teachers and Other Recommenders must be assigned per college; assignment triggers the invitation email"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S25": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/Can-I-submit-my-application-before-my-recommenders-submit-their-forms",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Recommendations may arrive after the application is submitted",
+   "en": "Recommendations may arrive after the application is submitted"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S26": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/What-is-the-FERPA-Waiver",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "FERPA waiver explanation",
+   "en": "FERPA waiver explanation"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S27": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/What-do-I-need-to-know-about-the-Common-App-fee-waiver",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Fee-waiver eligibility list; international applicants; how to request",
+   "en": "Fee-waiver eligibility list; international applicants; how to request"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S28": {
+  "url": "https://www.commonapp.org/files/webinar_decks/Counselor_Convo_International.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Counselor webinar deck, Feb 2026: required questions marked with red asterisk; international supplement / leaving exams (up to 10, 30 boards); one-and-done forms; international fee waiver; SR before MR/OR/FR; no reminders for MR",
+   "en": "Counselor webinar deck, Feb 2026: required questions marked with red asterisk; international supplement / leaving exams (up to 10, 30 boards); one-and-done forms; international fee waiver; SR before MR/OR/FR; no reminders for MR"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S29": {
+  "url": "https://www.commonapp.org/files/webinar_decks/Academic-Record-Reporting.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Counselor webinar deck, Nov 2025: where coursework is reported; 77 colleges used C&G and 38 used STARS in 2025–26; C&G required fields; up to 3 colleges attended",
+   "en": "Counselor webinar deck, Nov 2025: where coursework is reported; 77 colleges used C&G and 38 used STARS in 2025–26; C&G required fields; up to 3 colleges attended"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S30": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/Do-all-members-of-The-Common-Application-use-Courses-Grades-in-their-admissions-process",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Current list of colleges that require Courses & Grades (article last modified 2026-08-18 per help-center search listing)",
+   "en": "Current list of colleges that require Courses & Grades (article last modified 2026-08-18 per help-center search listing)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S31": {
+  "url": "https://www.commonapp.org/static/f45949473bb80a91c80aface729d83df/Approaching-Activities.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Student handout (Sept 2026): up to ten activities; 50 / 100 / 150 character limits; hours/week and weeks/year",
+   "en": "Student handout (Sept 2026): up to ten activities; 50 / 100 / 150 character limits; hours/week and weeks/year"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S32": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/Responsibilities-and-Circumstances-info-sheet-for-first-year-application",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Responsibilities and circumstances question is required; history (pilot as Student Context Inventory); 2024–25 pilot figures",
+   "en": "Responsibilities and circumstances question is required; history (pilot as Student Context Inventory); 2024–25 pilot figures"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S33": {
+  "url": "https://www.commonapp.org/fraud-policy",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Fraud Policy (last update August 2023): definition incl. AI clause; process; 10 + 14 business-day appeal timeline; possible disclosure to colleges",
+   "en": "Fraud Policy (last update August 2023): definition incl. AI clause; process; 10 + 14 business-day appeal timeline; possible disclosure to colleges"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S34": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/How-does-Common-App-handle-fraud",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Help-center summary of fraud policy; anyone (user, member, third party) can report via Fraud Allegation Form",
+   "en": "Help-center summary of fraud policy; anyone (user, member, third party) can report via Fraud Allegation Form"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S35": {
+  "url": "https://www.commonapp.org/apply/first-year-students",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "First-year application guide: max 20 colleges on list; recommender roles incl. parents (ED only) and advisors; writing in three places; what colleges vary",
+   "en": "First-year application guide: max 20 colleges on list; recommender roles incl. parents (ED only) and advisors; writing in three places; what colleges vary"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S36": {
+  "url": "https://www.commonapp.org/counselors-and-recommenders/recommender-guide",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Recommender guide: one person can be invited in more than one role; advisors cannot submit forms",
+   "en": "Recommender guide: one person can be invited in more than one role; advisors cannot submit forms"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S37": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/What-is-the-maximum-number-of-colleges-to-which-a-First-year-applicant-can-submit-a-Common-App",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "No more than 20 colleges per cycle",
+   "en": "No more than 20 colleges per cycle"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S38": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/When-is-the-deadline-for-my-application-submission",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Deadline = 11:59 pm applicant's local time",
+   "en": "Deadline = 11:59 pm applicant's local time"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S39": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/Can-I-make-a-change-to-a-submitted-application",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Submitted application or writing supplement cannot be changed",
+   "en": "Submitted application or writing supplement cannot be changed"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S40": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/Is-there-a-limit-to-the-number-of-edits-I-can-make-to-my-personal-essay-once-I-ve-submitted-an-application",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Unlimited edits to the personal essay after first submission (for later submissions)",
+   "en": "Unlimited edits to the personal essay after first submission (for later submissions)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S41": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/What-is-Score-Choice-and-how-does-it-impact-what-I-report",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Self-report best scores regardless of Score Choice; official reports remain the applicant's responsibility",
+   "en": "Self-report best scores regardless of Score Choice; official reports remain the applicant's responsibility"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S42": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/What-is-the-min-max-word-count-for-the-essays-on-the-Questions-page-or-Writing-Supplement",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "College-specific essay limits vary by college; system enforces them",
+   "en": "College-specific essay limits vary by college; system enforces them"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
+  }
+ },
+ "A1-S43": {
+  "url": "https://appsupport.commonapp.org/applicantsupport/s/article/Information-regarding-natural-disasters-and-other-disruptions",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A1",
+  "title": {
+   "zh": "Disruption support channel; self-report scores if official reports cannot be sent",
+   "en": "Disruption support channel; self-report scores if official reports cannot be sent"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_common-app-first-year-anatomy_v1.md",
+   "en": "Research note: 2026-11-07_common-app-first-year-anatomy_v1.md"
   }
  },
  "A3a-S1": {
@@ -5965,6 +6603,3240 @@ window.ATLAS.sources = {
    "en": "Research note: 2026-11-07_other-application-systems_v1.md"
   }
  },
+ "C1-S1": {
+  "url": "https://www.mastery.org/about",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "MTC history and rebrand",
+   "en": "MTC history and rebrand"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S2": {
+  "url": "https://www.mastery.org/college-acceptances",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "1,017 MT Ready; definition; per-school flags",
+   "en": "1,017 MT Ready; definition; per-school flags"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S3": {
+  "url": "https://www.mastery.org/what-we-do/higher-education",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "Products, single-link delivery, counts",
+   "en": "Products, single-link delivery, counts"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S4": {
+  "url": "https://mastery.org/what-we-do/",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "Member schools certify competencies",
+   "en": "Member schools certify competencies"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S5": {
+  "url": "https://www.mastery.org/documents/mastery-org-letter-from-the-founders.pdf",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "2026-07-22 letters; \"over 800 colleges\"",
+   "en": "2026-07-22 letters; \"over 800 colleges\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S6": {
+  "url": "https://www.financialcontent.com/article/gnwcq-2026-7-23-legendorg-acquires-mastery-transcript-consortium-from-ets",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "Acquisition release 2026-07-23",
+   "en": "Acquisition release 2026-07-23"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S7": {
+  "url": "https://admission.universityofcalifornia.edu/counselors/_files/documents/nontraditional-transcript-guidance-010523.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "UC BOARS mastery-transcript guidance",
+   "en": "UC BOARS mastery-transcript guidance"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S8": {
+  "url": "https://admission.universityofcalifornia.edu/counselors/connect-to-resources/resource-library.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "UC resource library",
+   "en": "UC resource library"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S9": {
+  "url": "https://www.1edtech.org/1edtech-article/latest-comprehensive-learner-record-standard-improves-security-portability-and",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "CLR 2.0 release",
+   "en": "CLR 2.0 release"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S10": {
+  "url": "https://www.imsglobal.org/spec/ob/v3p0",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "Open Badges 3.0",
+   "en": "Open Badges 3.0"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S11": {
+  "url": "https://www.w3.org/TR/vc-data-model-2.0/",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "VC 2.0 Recommendation",
+   "en": "VC 2.0 Recommendation"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S12": {
+  "url": "https://info.credly.com/",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "Credly",
+   "en": "Credly"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S13": {
+  "url": "https://coalitionforcollegeaccess.org/apply-coalition",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "Coalition on Scoir",
+   "en": "Coalition on Scoir"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S14": {
+  "url": "https://www.coalitionforcollegeaccess.org/apply-coalition-on-scoir",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "Previous platform discontinued",
+   "en": "Previous platform discontinued"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S15": {
+  "url": "https://www.insidehighered.com/admissions/article/2019/11/25/coalition-application-draws-significant-criticism",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "Locker in 2015 plan",
+   "en": "Locker in 2015 plan"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S16": {
+  "url": "https://www.insidehighered.com/index%2ephp/node/64491",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "2022 Scoir integration",
+   "en": "2022 Scoir integration"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S17": {
+  "url": "https://blog.prepscholar.com/coalition-application-college",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "Locker description",
+   "en": "Locker description"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S18": {
+  "url": "https://mitadmissions.org/apply/parents-educators/homeschool/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "MIT homeschool",
+   "en": "MIT homeschool"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S19": {
+  "url": "https://admission.stanford.edu/apply/first-year/home_school.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "Stanford homeschool",
+   "en": "Stanford homeschool"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S20": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/homeschooled-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "Caltech homeschool",
+   "en": "Caltech homeschool"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S21": {
+  "url": "https://admissions.upenn.edu/how-to-apply/first-year-applicants/homeschool",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "Penn homeschool",
+   "en": "Penn homeschool"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S22": {
+  "url": "https://admission.brown.edu/ask/home-schooled-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "Brown homeschool",
+   "en": "Brown homeschool"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S23": {
+  "url": "https://uadmissions.georgetown.edu/apply/home-schooled-applicants/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "Georgetown homeschool",
+   "en": "Georgetown homeschool"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S24": {
+  "url": "https://admit.washington.edu/apply/first-year/homeschool/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "UW homeschool",
+   "en": "UW homeschool"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S25": {
+  "url": "https://www.swarthmore.edu/admissions-aid/homeschooled-students",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "Swarthmore homeschool",
+   "en": "Swarthmore homeschool"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S26": {
+  "url": "https://admission.universityofcalifornia.edu/admission-requirements/first-year-requirements/home-schooled-students.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "UC homeschool",
+   "en": "UC homeschool"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S27": {
+  "url": "https://admissions.utexas.edu/apply/application-materials/transcript-info/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "UT Austin non-traditional",
+   "en": "UT Austin non-traditional"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S28": {
+  "url": "https://mitadmissions.org/apply/firstyear/transcripts/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "MIT transcripts",
+   "en": "MIT transcripts"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S29": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-materials/research-papers-and-publications",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "Caltech research",
+   "en": "Caltech research"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S30": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-materials/portfolio",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "Caltech portfolio",
+   "en": "Caltech portfolio"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S31": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "Caltech supplemental types",
+   "en": "Caltech supplemental types"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S32": {
+  "url": "https://mitadmissions.org/apply/firstyear/portfolios-additional-material/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "MIT portfolios",
+   "en": "MIT portfolios"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S33": {
+  "url": "https://www.commonapp.org/static/f45949473bb80a91c80aface729d83df/Approaching-Activities.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "CA activity char limits",
+   "en": "CA activity char limits"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S34": {
+  "url": "https://www.commonapp.org/static/72c7fb82f0c0c0b7832c341d2d5cb486/Gather-Materials-First-Year_3.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "CA 5 honors, 10 activities",
+   "en": "CA 5 honors, 10 activities"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S35": {
+  "url": "https://www.commonapp.org/static/eb936e0080b0c7535a04c720aabf4b75/Application-Dictionary_0.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "Optional report, Other recommender",
+   "en": "Optional report, Other recommender"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S36": {
+  "url": "https://www.commonapp.org/static/bd27e890c7338673cbde71a9ce883bef/Understanding-Rec-Process.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "Other Recommender types",
+   "en": "Other Recommender types"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S37": {
+  "url": "https://commonapp.org/files/recommender-resources/Writing-Guide.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "Counselor vs teacher letters",
+   "en": "Counselor vs teacher letters"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S38": {
+  "url": "https://www.commonapp.org/apply/first-year-students",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "No limits stated",
+   "en": "No limits stated"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S39": {
+  "url": "https://admission.universityofcalifornia.edu/counselors/_files/documents/presenting-yourself-on-the-uc-application-first-year.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "UC 20 activities; 550-char comments; PIQ 350 words",
+   "en": "UC 20 activities; 550-char comments; PIQ 350 words"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S40": {
+  "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-freshman/filling-out-the-application.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "UC categories; comments purpose",
+   "en": "UC categories; comments purpose"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S41": {
+  "url": "https://apply.universityofcalifornia.edu/docs/StatementOfIntegrity.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "Verifiable by independent party",
+   "en": "Verifiable by independent party"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S42": {
+  "url": "https://competition.igem.org/judging/medals",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "iGEM medals (text via site JS bundle)",
+   "en": "iGEM medals (text via site JS bundle)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S43": {
+  "url": "https://competition.igem.org/assets/deliverablesData-CsN011RQ.js",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "iGEM Wiki, Attributions, judging session",
+   "en": "iGEM Wiki, Attributions, judging session"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S44": {
+  "url": "https://sspcdn.blob.core.windows.net/files/Documents/SEP/ISEF/2027/Rules/Book.pdf",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "ISEF rules 2026–27",
+   "en": "ISEF rules 2026–27"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S45": {
+  "url": "https://sspcdn.blob.core.windows.net/files/Documents/SEP/ISEF/2027/Forms/All.pdf",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "ISEF Form 2C",
+   "en": "ISEF Form 2C"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S46": {
+  "url": "https://www.societyforscience.org/isef/international-rules/",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "ISEF rules index",
+   "en": "ISEF rules index"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S47": {
+  "url": "https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "ICMJE authorship",
+   "en": "ICMJE authorship"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S48": {
+  "url": "https://credit.niso.org/",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "C1",
+  "title": {
+   "zh": "CRediT taxonomy",
+   "en": "CRediT taxonomy"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S49": {
+  "url": "https://www.slideroom.com/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "SlideRoom",
+   "en": "SlideRoom"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "C1-S50": {
+  "url": "https://apply.jhu.edu/hopkins-insider/additional-information/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "C1",
+  "title": {
+   "zh": "JHU on Additional Information",
+   "en": "JHU on Additional Information"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
+   "en": "Research note: 2026-11-07_outside-record-frameworks_v1.md"
+  }
+ },
+ "B1-P1": {
+  "url": "https://help.liaisonedu.com/SlideRoom_Applicant_Help_Center",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "SlideRoom applicant help center index (support.slideroom.com 301-redirects here)",
+   "en": "SlideRoom applicant help center index (support.slideroom.com 301-redirects here)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P2": {
+  "url": "https://help.liaisonedu.com/SlideRoom_Applicant_Help_Center/Completing_Your_SlideRoom_Application/03_Working_with_Your_Portfolio",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "SlideRoom file types, size limits, Link to Media",
+   "en": "SlideRoom file types, size limits, Link to Media"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P3": {
+  "url": "https://help.liaisonedu.com/SlideRoom_Applicant_Help_Center/Completing_Your_SlideRoom_Application/05_Submitting_Your_Application",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "SlideRoom payment step, no edits after submit, Common App transfer mismatch",
+   "en": "SlideRoom payment step, no edits after submit, Common App transfer mismatch"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P4": {
+  "url": "https://help.liaisonedu.com/SlideRoom_Applicant_Help_Center/Starting_Your_SlideRoom_Application/Getting_Started_with_Your_SlideRoom_Application",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "Getting-started page (does not describe Common App link or fee)",
+   "en": "Getting-started page (does not describe Common App link or fee)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P5": {
+  "url": "https://www.commonapp.org/apply/first-year-students",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "Common App first-year overview: writing supplements, Activities, Honors; no mention of portfolios",
+   "en": "Common App first-year overview: writing supplements, Activities, Honors; no mention of portfolios"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P6": {
+  "url": "https://content.commonapp.org/Files/ReqGrid.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "2026–27 Requirements Grid exists (title metadata); column text not extractable in this run",
+   "en": "2026–27 Requirements Grid exists (title metadata); column text not extractable in this run"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P7": {
+  "url": "https://mitadmissions.org/apply/firstyear/portfolios-additional-material/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "MIT SlideRoom portfolios, $10 fee, limits, reviewers",
+   "en": "MIT SlideRoom portfolios, $10 fee, limits, reviewers"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P8": {
+  "url": "https://college.harvard.edu/admissions/application-process/application-requirements/supplemental-application-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "Harvard SlideRoom for arts; Applicant Portal \"Upload Materials\" for research/writing",
+   "en": "Harvard SlideRoom for arts; Applicant Portal \"Upload Materials\" for research/writing"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P9": {
+  "url": "https://college.harvard.edu/sites/default/files/2026-08/Harvard_FY_supplement_2026-2027.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "Harvard supplement: URL field for honors/awards; \"neither expected nor required\"",
+   "en": "Harvard supplement: URL field for honors/awards; \"neither expected nor required\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P10": {
+  "url": "https://admissions.yale.edu/supplementary",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "Yale Status Portal: Arts Portfolio Submission Tool, STEM Research Supplement form",
+   "en": "Yale Status Portal: Arts Portfolio Submission Tool, STEM Research Supplement form"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P11": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-materials/portfolio",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "Caltech post-submission portal upload, 5GB media, 75-page documents, \"Links and URLs\"",
+   "en": "Caltech post-submission portal upload, 5GB media, 75-page documents, \"Links and URLs\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P12": {
+  "url": "https://admission.brown.edu/first-year/supplementary-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "Brown SlideRoom (music, visual art) + Applicant Portal \"Academic Paper/Research\"; links in Brown questions",
+   "en": "Brown SlideRoom (music, visual art) + Applicant Portal \"Academic Paper/Research\"; links in Brown questions"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P13": {
+  "url": "https://admission.stanford.edu/apply/first-year/arts.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "Stanford arts portfolio in Stanford portal; no email/mail/other platform",
+   "en": "Stanford arts portfolio in Stanford portal; no email/mail/other platform"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P14": {
+  "url": "https://admission.stanford.edu/arts-portfolio/art-practice.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "\"Links and URLs will not be reviewed.\"",
+   "en": "\"Links and URLs will not be reviewed.\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P15": {
+  "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/submission-guidelines",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "Penn: no links to Google Docs/Box; email only from school officials/recommenders",
+   "en": "Penn: no links to Google Docs/Box; email only from school officials/recommenders"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P16": {
+  "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/supplementary-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "Penn: \"Upload Link or URL\"; 75-page docs, 5GB media; Penn Portal updates",
+   "en": "Penn: \"Upload Link or URL\"; 75-page docs, 5GB media; Penn Portal updates"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P17": {
+  "url": "https://admissions.duke.edu/apply/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "Duke SlideRoom arts only; no resumes/abstracts/media; Additional Information",
+   "en": "Duke SlideRoom arts only; no resumes/abstracts/media; Additional Information"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P18": {
+  "url": "https://www.olin.edu/admission/faq",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "Olin: links in Additional Information or email info@olin.edu; no videos by email; 1–2 pages",
+   "en": "Olin: links in Additional Information or email info@olin.edu; no videos by email; 1–2 pages"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P19": {
+  "url": "https://www.hmc.edu/admission/apply/faqs/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "HMC: Common App upload, abstract not full paper; Applicant Hub update form with no attachments",
+   "en": "HMC: Common App upload, abstract not full paper; Applicant Hub update form with no attachments"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P20": {
+  "url": "https://admission.rice.edu/apply/first-year-domestic-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "Rice Admission Student Portal portfolios; YouTube/Vimeo URLs inside portfolio only",
+   "en": "Rice Admission Student Portal portfolios; YouTube/Vimeo URLs inside portfolio only"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P21": {
+  "url": "https://admission.rice.edu/frequently-asked-questions",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "Rice: additional materials by email to riceapps@rice.edu",
+   "en": "Rice: additional materials by email to riceapps@rice.edu"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P22": {
+  "url": "https://apply.jhu.edu/frequently-asked-questions/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "JHU: applicant portal uploads after submission; examples incl. research abstracts",
+   "en": "JHU: applicant portal uploads after submission; examples incl. research abstracts"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P23": {
+  "url": "https://www.swarthmore.edu/admissions-aid/application-materials-deadlines",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "Swarthmore: portal uploads after submission, free arts samples, video response",
+   "en": "Swarthmore: portal uploads after submission, free arts samples, video response"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P24": {
+  "url": "https://admissions.utexas.edu/apply/frequently-asked-questions/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "UT Austin: Common App uploads or MyStatus; \"we cannot accept documents via email\"",
+   "en": "UT Austin: Common App uploads or MyStatus; \"we cannot accept documents via email\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P25": {
+  "url": "https://admit.washington.edu/apply/freshman/how-to-apply/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "UW: do not send supplemental materials incl. links to websites",
+   "en": "UW: do not send supplemental materials incl. links to websites"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P26": {
+  "url": "https://admissions.berkeley.edu/application-faqs/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "Berkeley: unable to accept portfolios or supplemental materials",
+   "en": "Berkeley: unable to accept portfolios or supplemental materials"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P27": {
+  "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-freshman/filling-out-the-application.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "UC application: Additional comments \"shouldn't be an essay\"; activities & awards categories",
+   "en": "UC application: Additional comments \"shouldn't be an essay\"; activities & awards categories"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P28": {
+  "url": "https://www.cmu.edu/admission/admission/undergraduate-admission-requirements",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "CMU: no supplemental submissions; Schoolhouse URL field; VIVA for engineering/CS",
+   "en": "CMU: no supplemental submissions; Schoolhouse URL field; VIVA for engineering/CS"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P29": {
+  "url": "https://www.cmu.edu/admission/admission/college-of-fine-arts-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "CMU CFA: SlideRoom (Architecture, Art, Design), Acceptd (Drama, Music)",
+   "en": "CMU CFA: SlideRoom (Architecture, Art, Design), Acceptd (Drama, Music)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P30": {
+  "url": "https://ah.ucsd.edu/students/undergraduate.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "UC San Diego arts portfolio via SlideRoom after UC application; faculty review",
+   "en": "UC San Diego arts portfolio via SlideRoom after UC application; faculty review"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P31": {
+  "url": "https://www.admissions.illinois.edu/first-year-apply-faq",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "UIUC: \"we don't accept ... unsolicited materials\"; locked sections after submit",
+   "en": "UIUC: \"we don't accept ... unsolicited materials\"; locked sections after submit"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P32": {
+  "url": "https://faq.enrollment.cornell.edu/kb/article/186-how-can-i-add-supplemental-information-to-my-application-file/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "Cornell Applicant Portal upload of supplemental materials",
+   "en": "Cornell Applicant Portal upload of supplemental materials"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B1-P33": {
+  "url": "https://admission.gatech.edu/apply/documents",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B1",
+  "title": {
+   "zh": "Georgia Tech portal used for documents (transcripts, residency), appdocs@ address",
+   "en": "Georgia Tech portal used for documents (transcripts, residency), appdocs@ address"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
+   "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "B5-S01": {
+  "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-freshman/how-applications-are-reviewed.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "UC 13 factors; campuses apply factors differently",
+   "en": "UC 13 factors; campuses apply factors differently"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S02": {
+  "url": "https://admission.ucla.edu/apply/first-year/first-year-requirements/application-review-process",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "UCLA two full reads, reader training, comprehensive score",
+   "en": "UCLA two full reads, reader training, comprehensive score"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S03": {
+  "url": "https://admissions.berkeley.edu/apply-to-berkeley/application-resources/selection-process/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Berkeley holistic definition; supporting materials not considered",
+   "en": "Berkeley holistic definition; supporting materials not considered"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S04": {
+  "url": "https://admissions.berkeley.edu/apply-to-berkeley/first-year-applicants-uc-berkeley/freshmen-requirements/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Berkeley criteria carry no pre-assigned weights; exclusions",
+   "en": "Berkeley criteria carry no pre-assigned weights; exclusions"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S05": {
+  "url": "https://regents.universityofcalifornia.edu/governance/policies/2110.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Augmented review, 15% cap, up to two letters",
+   "en": "Augmented review, 15% cap, up to two letters"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S06": {
+  "url": "https://mitadmissions.org/apply/process/selection/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "MIT senior reader first, dozen people discuss, faculty in committee",
+   "en": "MIT senior reader first, dozen people discuss, faculty in committee"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S07": {
+  "url": "https://mitadmissions.org/apply/firstyear/portfolios-additional-material/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "MIT portfolio types, reviewers, video cap, demo access",
+   "en": "MIT portfolio types, reviewers, video cap, demo access"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S08": {
+  "url": "https://mitadmissions.org/blogs/entry/the-rooms-where-it-happens/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "MIT committee days (archived 2019 post)",
+   "en": "MIT committee days (archived 2019 post)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S09": {
+  "url": "https://admissions.yale.edu/posts/2020-05-21-episode-2-committee",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Yale committee size, vote rule, schedule",
+   "en": "Yale committee size, vote rule, schedule"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S10": {
+  "url": "https://admissions.yale.edu/posts/2020-10-13-episode-10-supplementary-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Yale on supplements, links, blind faculty review, extra letters",
+   "en": "Yale on supplements, links, blind faculty review, extra letters"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S11": {
+  "url": "https://sites.gatech.edu/admission-blog/2017/10/12/freshman-application-review-the-nuts-and-bolts-part-2-of-2/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "GT Committee Based Evaluation, 50/day, activities list",
+   "en": "GT Committee Based Evaluation, 50/day, activities list"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S12": {
+  "url": "https://sites.gatech.edu/admission-blog/2021/09/10/how-does-the-admission-review-timeline-work/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "GT LARP two reviews, 500–1,300 files/day",
+   "en": "GT LARP two reviews, 500–1,300 files/day"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S13": {
+  "url": "https://sites.gatech.edu/admission-blog/2022/01/07/holistic-academic-review-more-than-a-gpa/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "GT context, school profile",
+   "en": "GT context, school profile"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S14": {
+  "url": "https://admissions.duke.edu/what-we-look-for/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Duke five primary factors, committee",
+   "en": "Duke five primary factors, committee"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S15": {
+  "url": "https://apply.jhu.edu/how-to-apply/what-we-look-for/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "JHU criteria groups",
+   "en": "JHU criteria groups"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S16": {
+  "url": "https://college.harvard.edu/admissions/apply/application-requirements",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Harvard reads all materials; faculty may evaluate; collaborators list",
+   "en": "Harvard reads all materials; faculty may evaluate; collaborators list"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S17": {
+  "url": "https://admission.princeton.edu/apply/optional-arts-supplement",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Princeton arts faculty-only reading; no personal websites; no guarantee of review",
+   "en": "Princeton arts faculty-only reading; no personal websites; no guarantee of review"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S18": {
+  "url": "https://admission.princeton.edu/apply/graded-written-paper",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Princeton graded paper requirement",
+   "en": "Princeton graded paper requirement"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S19": {
+  "url": "https://admission.stanford.edu/apply/first-year/arts.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Stanford arts portfolio only, faculty discretion",
+   "en": "Stanford arts portfolio only, faculty discretion"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S20": {
+  "url": "https://undergrad.admissions.columbia.edu/supplementary-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Columbia links not reviewed; abstract; no guarantee",
+   "en": "Columbia links not reviewed; abstract; no guarantee"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S21": {
+  "url": "https://admission.brown.edu/first-year/supplementary-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Brown research upload with context; link placement",
+   "en": "Brown research upload with context; link placement"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S22": {
+  "url": "https://www.admissions.caltech.edu/apply/what-we-look-for/faculty-the-admissions-process",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Caltech faculty read; 20+ faculty",
+   "en": "Caltech faculty read; 20+ faculty"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S23": {
+  "url": "https://www.admissions.caltech.edu/apply/what-we-look-for/how-we-review",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Caltech holistic review, supplements not required",
+   "en": "Caltech holistic review, supplements not required"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S24": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-materials/research-papers-and-publications",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Caltech research criteria, mentor letter, 42%",
+   "en": "Caltech research criteria, mentor letter, 42%"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S25": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-materials/portfolio",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Caltech portfolio guidance",
+   "en": "Caltech portfolio guidance"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S26": {
+  "url": "https://www.govinfo.gov/content/pkg/USCOURTS-mad-1_14-cv-14176/pdf/USCOURTS-mad-1_14-cv-14176-4.pdf",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "B5",
+  "title": {
+   "zh": "SFFA v. Harvard, D. Mass. 2019 (Doc. 672): reading procedures, ratings, dockets",
+   "en": "SFFA v. Harvard, D. Mass. 2019 (Doc. 672): reading procedures, ratings, dockets"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S27": {
+  "url": "https://www.supremecourt.gov/opinions/22pdf/20-1199_hgdj.pdf",
+  "accessed": "2026-11-07",
+  "cls": "secondary",
+  "group": "B5",
+  "title": {
+   "zh": "SFFA 2023: Harvard committee/lop; UNC 5 applications per hour",
+   "en": "SFFA 2023: Harvard committee/lop; UNC 5 applications per hour"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-S28": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Caltech supplements optional; 42% research",
+   "en": "Caltech supplements optional; 42% research"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C01": {
+  "url": "https://ir.mit.edu/projects/2025-26-common-data-set/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "MIT CDS 2025-26 C7",
+   "en": "MIT CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C02": {
+  "url": "https://iro.caltech.edu/documents/35129/Caltech_CDS_2025-26_August_2026.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Caltech CDS 2025-26 C7",
+   "en": "Caltech CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C03": {
+  "url": "https://drive.google.com/file/d/1GIPKgVj1d86dkmLkHI_mZVCk_iY6kiCp/view",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Stanford CDS 2025-26 C7",
+   "en": "Stanford CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C04": {
+  "url": "https://oira.harvard.edu/files/2026/07/CDS_2025-2026.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Harvard CDS 2025-26 C7",
+   "en": "Harvard CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C05": {
+  "url": "https://oir.yale.edu/sites/default/files/yale_cds_2025-26_md_20260616.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Yale CDS 2025-26 C7",
+   "en": "Yale CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C06": {
+  "url": "https://ir.princeton.edu/sites/g/files/toruqf2041/files/documents/CDS_2526_Princeton_v2.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Princeton CDS 2025-26 C7",
+   "en": "Princeton CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C07": {
+  "url": "https://opir.columbia.edu/sites/opir.columbia.edu/files/content/Common%20Data%20Set/2025-26_Columbia_College_and_Columbia_Enginnering_CDS.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Columbia CC+SEAS CDS 2025-26 C7",
+   "en": "Columbia CC+SEAS CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C08": {
+  "url": "https://opir.columbia.edu/sites/opir.columbia.edu/files/content/Common%20Data%20Set/2025-26_Columbia_General_Studies_CDS.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Columbia GS CDS 2025-26 C7",
+   "en": "Columbia GS CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C09": {
+  "url": "https://upenn.box.com/s/woo7d85yxpol6j9e2o121aucjc6dc1k5",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Penn CDS 2025-26 C7",
+   "en": "Penn CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C10": {
+  "url": "https://tableau.brown.edu/t/PublicContent/views/CommonDataSet/C-Admissions",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Brown CDS 2025-26 C7 (read from dashboard)",
+   "en": "Brown CDS 2025-26 C7 (read from dashboard)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C11": {
+  "url": "https://irp.cornell.edu/wp-content/uploads/2026/09/Cornell-Common-Data-Set-2025-26.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Cornell CDS 2025-26 C7",
+   "en": "Cornell CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C12": {
+  "url": "https://georgetown.box.com/s/0r8akn4cbm52zjkll6i7uttlb9k36px2",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Georgetown CDS 2025-26 C7",
+   "en": "Georgetown CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C13": {
+  "url": "https://www.cmu.edu/ira/CDS/pdf/cds_2025_26/cds_2025_full_pdf_updated_11jun26.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "CMU CDS 2025-26 C7 (2026-27 section C identical)",
+   "en": "CMU CDS 2025-26 C7 (2026-27 section C identical)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C14": {
+  "url": "https://irp.gatech.edu/sites/default/files/CDS/CDS_2025-2026_FINAL_R4_03JUN2026.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Georgia Tech CDS 2025-26 C7",
+   "en": "Georgia Tech CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C15": {
+  "url": "https://www.purdue.edu/idata/wp-content/uploads/2026/04/CDS-2025-2026.xlsx",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Purdue CDS 2025-26 C7 (system-wide)",
+   "en": "Purdue CDS 2025-26 C7 (system-wide)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C16": {
+  "url": "https://obp.umich.edu/wp-content/uploads/pubdata/cds/cds_2025-26_umaa.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Michigan CDS 2025-26 C7",
+   "en": "Michigan CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C17": {
+  "url": "https://uofi.box.com/shared/static/orx4vnmzkt2drmgoiksxpfs39pr42uor.xlsx",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "UIUC CDS 2025-26 C7",
+   "en": "UIUC CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C18": {
+  "url": "https://www.olin.edu/sites/default/files/2024-05/CDS_2023_2024%20(2",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Olin CDS 2023-24 C7",
+   "en": "Olin CDS 2023-24 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C19": {
+  "url": "https://www.hmc.edu/institutional-research/wp-content/uploads/sites/42/2026/03/CDS-HMC-2025.2026_shared.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Harvey Mudd CDS 2025-26 C7",
+   "en": "Harvey Mudd CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C20": {
+  "url": "https://oira.jhu.edu/wp-content/uploads/2025-2026-CDS-Johns-Hopkins-University-v2.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "JHU CDS 2025-26 C7",
+   "en": "JHU CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C21": {
+  "url": "https://ir.provost.duke.edu/sites/default/files/CDS_PDF_2025-2026-20260622-website-published-version.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Duke CDS 2025-26 C7",
+   "en": "Duke CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C22": {
+  "url": "https://www.enrollment.northwestern.edu/data/2025-2026.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Northwestern CDS 2025-26 C7",
+   "en": "Northwestern CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C23": {
+  "url": "https://ideas.rice.edu/wp-content/uploads/2026/08/CDS_2025-26_WEBSITE_Updated_8-3-2026.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Rice CDS 2025-26 C7",
+   "en": "Rice CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C24": {
+  "url": "https://docs.google.com/spreadsheets/d/1INsGFH6MhaO-MFMBZ1Dngcn84FeN-hc0BLS0-v8TL_k/edit",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "UC Berkeley CDS 2025-26 C7",
+   "en": "UC Berkeley CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C25": {
+  "url": "https://apb.ucla.edu/file/d1ab04b3-ee89-4cf2-9124-8dc0471b5e5a",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "UCLA CDS 2025-26 C7",
+   "en": "UCLA CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C26": {
+  "url": "https://ir.ucsd.edu/stats/undergrad/CDS-2025-2026-Final4.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "UC San Diego CDS 2025-26 C7",
+   "en": "UC San Diego CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C27": {
+  "url": "https://utexas.box.com/s/z5p8zzbr6yk4eluam3v3dt2wyaha3cja",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "UT Austin CDS 2025-26 C7",
+   "en": "UT Austin CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C28": {
+  "url": "https://finance.uw.edu/iads/files/docs/ipeds/common_data_set/cds_2025-2026_seattle.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "UW Seattle CDS 2025-26 C7",
+   "en": "UW Seattle CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C29": {
+  "url": "https://www.williams.edu/institutional-research/common-data-set/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Williams: page returned 403 to automated access; C7 not retrieved",
+   "en": "Williams: page returned 403 to automated access; C7 not retrieved"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C30": {
+  "url": "https://www.amherst.edu/offices/institutional-research/cds",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Amherst: page returned 405 to automated access; C7 not retrieved",
+   "en": "Amherst: page returned 405 to automated access; C7 not retrieved"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "B5-C31": {
+  "url": "https://www.swarthmore.edu/sites/default/files/assets/documents/institutional-effectiveness-research-assessment/Swarthmore-CDS-2025-26.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B5",
+  "title": {
+   "zh": "Swarthmore CDS 2025-26 C7",
+   "en": "Swarthmore CDS 2025-26 C7"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
+   "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "A5a-S1": {
+  "url": "https://mitadmissions.org/apply/firstyear/essays-activities-academics/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "MIT 2026–27 essays, short responses, activities form, coursework form",
+   "en": "MIT 2026–27 essays, short responses, activities form, coursework form"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S2": {
+  "url": "https://mitadmissions.org/apply/firstyear/deadlines-requirements/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "MIT system, $75 fee, components, deadlines",
+   "en": "MIT system, $75 fee, components, deadlines"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S3": {
+  "url": "https://mitadmissions.org/apply/firstyear/letters-of-recommendation/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "MIT teacher letters, counselor, supplemental letter",
+   "en": "MIT teacher letters, counselor, supplemental letter"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S4": {
+  "url": "https://mitadmissions.org/apply/firstyear/interview/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "MIT interview policy",
+   "en": "MIT interview policy"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S5": {
+  "url": "https://mitadmissions.org/apply/prepare/highschool/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "MIT recommended coursework",
+   "en": "MIT recommended coursework"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S6": {
+  "url": "https://mitadmissions.org/help/faq/application-fee-fee-waiver/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "MIT fee waiver for international applicants; need-blind",
+   "en": "MIT fee waiver for international applicants; need-blind"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S7": {
+  "url": "https://mitadmissions.org/apply/firstyear/international/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "MIT international applicant rules",
+   "en": "MIT international applicant rules"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S8": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-application-essays",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Caltech Fall 2027 essays and limits",
+   "en": "Caltech Fall 2027 essays and limits"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S9": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/application-requirements",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Caltech system, $85 fee, components, letters, counselor",
+   "en": "Caltech system, $85 fee, components, letters, counselor"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S10": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/letters-of-recommendation",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Caltech letter subjects, A-level exception, optional letters, research letter",
+   "en": "Caltech letter subjects, A-level exception, optional letters, research letter"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S11": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/academic-requirements-for-first-year-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Caltech required courses and substitutes",
+   "en": "Caltech required courses and substitutes"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S12": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/international-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Caltech fee waiver, need-aware, InitialView",
+   "en": "Caltech fee waiver, need-aware, InitialView"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S13": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/deadlines",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Caltech deadlines; \"Fall 2026\" label",
+   "en": "Caltech deadlines; \"Fall 2026\" label"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S14": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Caltech research/portfolio uploads, Beaver Breakroom",
+   "en": "Caltech research/portfolio uploads, Beaver Breakroom"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S15": {
+  "url": "https://admission.stanford.edu/apply/first-year/index.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Stanford system, $100 fee, required components",
+   "en": "Stanford system, $100 fee, required components"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S16": {
+  "url": "https://admission.stanford.edu/apply/first-year/apply.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Stanford short questions and essays; no admission by major",
+   "en": "Stanford short questions and essays; no admission by major"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S17": {
+  "url": "https://admission.stanford.edu/apply/first-year/forms.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Stanford counselor, two teachers, Other Recommender",
+   "en": "Stanford counselor, two teachers, Other Recommender"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S18": {
+  "url": "https://admission.stanford.edu/apply/first-year/interview.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Stanford alumni interview",
+   "en": "Stanford alumni interview"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S19": {
+  "url": "https://admission.stanford.edu/apply/first-year/fee.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Stanford fee and waiver incl. non-U.S.",
+   "en": "Stanford fee and waiver incl. non-U.S."
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S20": {
+  "url": "https://admission.stanford.edu/apply/first-year/prepare.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Stanford recommended coursework",
+   "en": "Stanford recommended coursework"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S21": {
+  "url": "https://college.harvard.edu/admissions/apply/application-requirements",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Harvard systems, letters, additional letters",
+   "en": "Harvard systems, letters, additional letters"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S22": {
+  "url": "https://college.harvard.edu/admissions/apply/first-year-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Harvard $95 fee, forms, possible alumni interview",
+   "en": "Harvard $95 fee, forms, possible alumni interview"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S23": {
+  "url": "https://college.harvard.edu/sites/default/files/2026-08/Harvard_FY_supplement_2026-2027.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Harvard Fall 2027 supplement: five 150-word questions, concentrations, demonstrated interest",
+   "en": "Harvard Fall 2027 supplement: five 150-word questions, concentrations, demonstrated interest"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S24": {
+  "url": "https://college.harvard.edu/admissions/apply/international-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Harvard international waiver, interview not guaranteed",
+   "en": "Harvard international waiver, interview not guaranteed"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S25": {
+  "url": "https://college.harvard.edu/resources/faq/paying-admissions-application-fee-hardship-my-family-can-i-get-waiver",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Harvard fee waiver",
+   "en": "Harvard fee waiver"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S26": {
+  "url": "https://admissions.yale.edu/essays",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Yale 2026–27 questions and limits by platform",
+   "en": "Yale 2026–27 questions and limits by platform"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S27": {
+  "url": "https://admissions.yale.edu/apply",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Yale platforms; STEM research supplement",
+   "en": "Yale platforms; STEM research supplement"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S28": {
+  "url": "https://admissions.yale.edu/requirements",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Yale fee waivers, teacher and counselor letters, supplemental letters",
+   "en": "Yale fee waivers, teacher and counselor letters, supplemental letters"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S29": {
+  "url": "https://admissions.yale.edu/interviews",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Yale evaluative invitation-only interviews",
+   "en": "Yale evaluative invitation-only interviews"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S30": {
+  "url": "https://admissions.yale.edu/course-selection",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Yale no required courses",
+   "en": "Yale no required courses"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S31": {
+  "url": "https://admission.princeton.edu/apply/application-checklist",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Princeton system, waivers, letters, testing, interview",
+   "en": "Princeton system, waivers, letters, testing, interview"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S32": {
+  "url": "https://admission.princeton.edu/apply/princeton-specific-questions",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Princeton essays (A.B./B.S.E.) and limits",
+   "en": "Princeton essays (A.B./B.S.E.) and limits"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S33": {
+  "url": "https://admission.princeton.edu/apply/before-you-apply",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Princeton recommended courses; A.B./B.S.E.",
+   "en": "Princeton recommended courses; A.B./B.S.E."
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S34": {
+  "url": "https://admission.princeton.edu/apply/graded-written-paper",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Princeton graded written paper rules",
+   "en": "Princeton graded written paper rules"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S35": {
+  "url": "https://admission.princeton.edu/apply/international-students",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Princeton need-blind, same aid policy for internationals",
+   "en": "Princeton need-blind, same aid policy for internationals"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S36": {
+  "url": "https://undergrad.admissions.columbia.edu/apply/firstyear",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Columbia systems, letters, Engineering rule, testing, no interviews, course advice",
+   "en": "Columbia systems, letters, Engineering rule, testing, no interviews, course advice"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S37": {
+  "url": "https://undergrad.admissions.columbia.edu/apply/process/columbia-questions",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Columbia 2026–27 questions and limits",
+   "en": "Columbia 2026–27 questions and limits"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S38": {
+  "url": "https://undergrad.admissions.columbia.edu/apply/process/application-fees",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Columbia $85 fee and waiver criteria",
+   "en": "Columbia $85 fee and waiver criteria"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S39": {
+  "url": "https://undergrad.admissions.columbia.edu/apply/process/supplementary-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Columbia research abstract, mentor letter, portfolios",
+   "en": "Columbia research abstract, mentor letter, portfolios"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S40": {
+  "url": "https://admissions.upenn.edu/how-to-apply/first-year-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Penn systems, plans, four schools",
+   "en": "Penn systems, plans, four schools"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S41": {
+  "url": "https://admissions.upenn.edu/how-to-apply/first-year-applicants/application-requirements",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Penn $75 fee, components, letters",
+   "en": "Penn $75 fee, components, letters"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S42": {
+  "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/letters-of-recommendation",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Penn one teacher + counselor; one optional letter and writers",
+   "en": "Penn one teacher + counselor; one optional letter and writers"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S43": {
+  "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/writing",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Penn 2026–27 prompts incl. school-specific and dual-degree",
+   "en": "Penn 2026–27 prompts incl. school-specific and dual-degree"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S44": {
+  "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/academics",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Penn course preparation by school",
+   "en": "Penn course preparation by school"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S45": {
+  "url": "https://admissions.upenn.edu/academics/four-schools",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Penn apply to one of four schools",
+   "en": "Penn apply to one of four schools"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S46": {
+  "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/supplementary-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Penn supplementary materials limited to VIC/Architecture transfer",
+   "en": "Penn supplementary materials limited to VIC/Architecture transfer"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S47": {
+  "url": "https://admission.brown.edu/apply/how-apply",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Brown 2026–27 essays, PLME/BRDD, $80 fee, waivers",
+   "en": "Brown 2026–27 essays, PLME/BRDD, $80 fee, waivers"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S48": {
+  "url": "https://admission.brown.edu/first-year/application-checklist",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Brown checklist, letters, testing",
+   "en": "Brown checklist, letters, testing"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S49": {
+  "url": "https://admission.brown.edu/first-year/school-forms",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Brown counselor, two teachers, Sc.B./PLME rule",
+   "en": "Brown counselor, two teachers, Sc.B./PLME rule"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S50": {
+  "url": "https://admission.brown.edu/first-year/supplementary-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Brown optional letter, research abstract, SlideRoom",
+   "en": "Brown optional letter, research abstract, SlideRoom"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S51": {
+  "url": "https://admission.brown.edu/first-year/video-introduction",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Brown video introduction, InitialView option",
+   "en": "Brown video introduction, InitialView option"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S52": {
+  "url": "https://admission.brown.edu/first-year/selecting-degree-programs-academic-fields",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Brown no admission by academic interest",
+   "en": "Brown no admission by academic interest"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S53": {
+  "url": "https://admissions.cornell.edu/how-to-apply/first-year-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Cornell system, $85 fee, letters, colleges, need-aware",
+   "en": "Cornell system, $85 fee, letters, colleges, need-aware"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S54": {
+  "url": "https://admissions.cornell.edu/first-year-duffield-engineering-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Cornell Engineering courses, recommender rule, essays",
+   "en": "Cornell Engineering courses, recommender rule, essays"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S55": {
+  "url": "https://admissions.cornell.edu/first-year-arts-sciences-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Cornell A&S courses, essay",
+   "en": "Cornell A&S courses, essay"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S56": {
+  "url": "https://admissions.cornell.edu/first-year-cals-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Cornell CALS courses by major, essays, recommenders",
+   "en": "Cornell CALS courses by major, essays, recommenders"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S57": {
+  "url": "https://admissions.cornell.edu/first-year-human-ecology-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Cornell Human Ecology courses, essay",
+   "en": "Cornell Human Ecology courses, essay"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S58": {
+  "url": "https://admissions.cornell.edu/first-year-sc-johnson-college-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Cornell SC Johnson courses, resume, essay limit",
+   "en": "Cornell SC Johnson courses, resume, essay limit"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S59": {
+  "url": "https://admissions.cornell.edu/first-year-brooks-school-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Cornell Brooks essay limits",
+   "en": "Cornell Brooks essay limits"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S60": {
+  "url": "https://admissions.cornell.edu/first-year-cornell-aap-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Cornell AAP essay limit, architecture math",
+   "en": "Cornell AAP essay limit, architecture math"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S61": {
+  "url": "https://admissions.cornell.edu/first-year-ilr-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Cornell ILR essay limit",
+   "en": "Cornell ILR essay limit"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S62": {
+  "url": "https://uadmissions.georgetown.edu/apply/first-year-applicants/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Georgetown systems, six schools, interviews, no Common App PS required",
+   "en": "Georgetown systems, six schools, interviews, no Common App PS required"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S63": {
+  "url": "https://uadmissions.georgetown.edu/apply/first-year-applicants/application-requirements-and-forms/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Georgetown essays, letters, subject rules, evaluative interview",
+   "en": "Georgetown essays, letters, subject rules, evaluative interview"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S64": {
+  "url": "https://uadmissions.georgetown.edu/apply/first-year-applicants/how-to-prepare/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Georgetown course preparation by school",
+   "en": "Georgetown course preparation by school"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S65": {
+  "url": "https://www.cmu.edu/admission/admission/undergraduate-admission-requirements",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "CMU $75 fee, components, Engineering direct admit, no supplemental submissions, VIVA",
+   "en": "CMU $75 fee, components, Engineering direct admit, no supplemental submissions, VIVA"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S65a": {
+  "url": "https://www.cmu.edu/admission/admission/apply",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "CMU uses Common App exclusively",
+   "en": "CMU uses Common App exclusively"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S66": {
+  "url": "https://www.cmu.edu/admission/admission/academic-requirements-college-level-work",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "CMU course requirements by college",
+   "en": "CMU course requirements by college"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S67": {
+  "url": "https://www.cmu.edu/admission/admission/admission-consideration",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "CMU short answers (300 w), one teacher + counselor, third letter",
+   "en": "CMU short answers (300 w), one teacher + counselor, third letter"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S68": {
+  "url": "https://www.cmu.edu/admission/admission/admission-faq",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "CMU ED deadline stated as Nov 3 and Nov 1; testing by college",
+   "en": "CMU ED deadline stated as Nov 3 and Nov 1; testing by college"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S69": {
+  "url": "https://www.cmu.edu/admission/admission/application-plans-deadlines",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "CMU ED Nov 2, RD Jan 4, one college in ED",
+   "en": "CMU ED Nov 2, RD Jan 4, one college in ED"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S70": {
+  "url": "https://www.cmu.edu/admission/admission/international-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "CMU InitialView/Vericant recommendation",
+   "en": "CMU InitialView/Vericant recommendation"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S71": {
+  "url": "https://admission.gatech.edu/first-year/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Georgia Tech Common App only",
+   "en": "Georgia Tech Common App only"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S72": {
+  "url": "https://admission.gatech.edu/first-year/application-fees",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Georgia Tech $75 / $85 international; waiver criteria",
+   "en": "Georgia Tech $75 / $85 international; waiver criteria"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S73": {
+  "url": "https://admission.gatech.edu/first-year/recommendations",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Georgia Tech up to 3 letters; no other community members",
+   "en": "Georgia Tech up to 3 letters; no other community members"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S74": {
+  "url": "https://admission.gatech.edu/first-year/interview",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Georgia Tech no alumni/staff interviews; third-party option",
+   "en": "Georgia Tech no alumni/staff interviews; third-party option"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S75": {
+  "url": "https://admission.gatech.edu/first-year/personal-essays",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Georgia Tech 2026–27 essay = Common App prompt only",
+   "en": "Georgia Tech 2026–27 essay = Common App prompt only"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S76": {
+  "url": "https://admission.gatech.edu/first-year/major-selection",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Georgia Tech primary/secondary major, portfolio",
+   "en": "Georgia Tech primary/secondary major, portfolio"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S77": {
+  "url": "https://admission.gatech.edu/first-year/academic-preparation",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Georgia Tech/USG required units",
+   "en": "Georgia Tech/USG required units"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S78": {
+  "url": "https://admission.gatech.edu/first-year/deadlines",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Georgia Tech EA1/EA2/RD dates",
+   "en": "Georgia Tech EA1/EA2/RD dates"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S79": {
+  "url": "https://admission.gatech.edu/apply/documents",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Georgia Tech \"Optional Recommendations\" label",
+   "en": "Georgia Tech \"Optional Recommendations\" label"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S80": {
+  "url": "https://admissions.purdue.edu/deadlines/first-year-college-student/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Purdue $60 fee, deadlines, priority majors",
+   "en": "Purdue $60 fee, deadlines, priority majors"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S81": {
+  "url": "https://admissions.purdue.edu/become-student/first-year-criteria/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Purdue course minimums, review factors",
+   "en": "Purdue course minimums, review factors"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S82": {
+  "url": "https://admissions.purdue.edu/become-student/guide/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Purdue complete application, essays, major/location choice",
+   "en": "Purdue complete application, essays, major/location choice"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S83": {
+  "url": "https://admissions.purdue.edu/become-student/course-requirements/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Purdue lab science rules by program",
+   "en": "Purdue lab science rules by program"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S84": {
+  "url": "https://www.engin.umich.edu/admissions/undergraduate-admissions/first-year-admissions/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Michigan Engineering first-year items, course emphasis, Ross portfolio",
+   "en": "Michigan Engineering first-year items, course emphasis, Ross portfolio"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S85": {
+  "url": "https://www.engin.umich.edu/admissions/international-admissions/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Michigan $75 fee, one teacher, counselor optional, aid for internationals",
+   "en": "Michigan $75 fee, one teacher, counselor optional, aid for internationals"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S86": {
+  "url": "https://www.engin.umich.edu/admissions/undergraduate-admissions/can-i-get-in/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Michigan Engineering advice on calculus, chemistry, physics",
+   "en": "Michigan Engineering advice on calculus, chemistry, physics"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S87": {
+  "url": "https://www.engin.umich.edu/admissions/undergraduate-admissions/admissions-faq/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Michigan Engineering first-years undeclared",
+   "en": "Michigan Engineering first-years undeclared"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
+ "A5a-S88": {
+  "url": "https://admissions.umich.edu/apply/first-year-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A5a",
+  "title": {
+   "zh": "Access denied (HTTP 403 / \"Access Denied\") on 2026-11-07; recorded as unreachable",
+   "en": "Access denied (HTTP 403 / \"Access Denied\") on 2026-11-07; recorded as unreachable"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_school-roster-part1_v1.md",
+   "en": "Research note: 2026-11-07_school-roster-part1_v1.md"
+  }
+ },
  "A5b-S1": {
   "url": "https://www.admissions.illinois.edu/essays/",
   "accessed": "2026-11-07",
@@ -6693,6 +10565,888 @@ window.ATLAS.sources = {
    "en": "Research note: 2026-11-07_school-roster-part2_v1.md"
   }
  },
+ "B2-S1": {
+  "url": "https://mitadmissions.org/apply/firstyear/portfolios-additional-material/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "MIT portfolios, Research Supplement, Maker Portfolio, limits, reviewers, $10 fee",
+   "en": "MIT portfolios, Research Supplement, Maker Portfolio, limits, reviewers, $10 fee"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S2": {
+  "url": "https://mitadmissions.org/apply/firstyear/deadlines-requirements/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "MIT EA Nov 1, RA Jan 4",
+   "en": "MIT EA Nov 1, RA Jan 4"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S3": {
+  "url": "https://mitadmissions.org/help/faq/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "MIT FAQ (no links policy found)",
+   "en": "MIT FAQ (no links policy found)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S4": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Caltech supplemental materials overview, \"not a required component\"",
+   "en": "Caltech supplemental materials overview, \"not a required component\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S5": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-materials/research-papers-and-publications",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Caltech research papers: eligibility, paper/abstract/poster, supervisor letter, form",
+   "en": "Caltech research papers: eligibility, paper/abstract/poster, supervisor letter, form"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S6": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-materials/portfolio",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Caltech portfolio: STEM + arts, 5GB, 75 pages, links",
+   "en": "Caltech portfolio: STEM + arts, 5GB, 75 pages, links"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S7": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/deadlines",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Caltech supplemental deadlines Nov 6, 2026 / Jan 10, 2027",
+   "en": "Caltech supplemental deadlines Nov 6, 2026 / Jan 10, 2027"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S8": {
+  "url": "https://admission.stanford.edu/apply/first-year/arts.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Stanford arts portfolio, portal, deadlines",
+   "en": "Stanford arts portfolio, portal, deadlines"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S9": {
+  "url": "https://admission.stanford.edu/arts-portfolio/art-practice.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Stanford Art Practice limits; links not reviewed",
+   "en": "Stanford Art Practice limits; links not reviewed"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S10": {
+  "url": "https://admission.stanford.edu/arts-portfolio/music.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Stanford music ≤10 min suggested",
+   "en": "Stanford music ≤10 min suggested"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S11": {
+  "url": "https://admission.stanford.edu/arts-portfolio/dance.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Stanford dance ≤7 min",
+   "en": "Stanford dance ≤7 min"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S12": {
+  "url": "https://admission.stanford.edu/apply/first-year/index.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Stanford requirements (no maker/research channel found)",
+   "en": "Stanford requirements (no maker/research channel found)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S13": {
+  "url": "https://college.harvard.edu/sites/default/files/2026-08/Harvard_FY_supplement_2026-2027.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Harvard supplement fall 2027: honors link field, \"neither expected nor required\"",
+   "en": "Harvard supplement fall 2027: honors link field, \"neither expected nor required\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S14": {
+  "url": "https://college.harvard.edu/admissions/application-process/application-requirements/supplemental-application-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Harvard SlideRoom arts; Applicant Portal research/writing upload",
+   "en": "Harvard SlideRoom arts; Applicant Portal research/writing upload"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S15": {
+  "url": "https://admissions.yale.edu/supplementary",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Yale arts tool, STEM Research Supplement, deadlines, reviewers",
+   "en": "Yale arts tool, STEM Research Supplement, deadlines, reviewers"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S16": {
+  "url": "https://admission.princeton.edu/apply/arts-supplement",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "fetch failed (\"certificate rejected\"); no content verified",
+   "en": "fetch failed (\"certificate rejected\"); no content verified"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S17": {
+  "url": "https://admission.princeton.edu/apply/graded-written-paper",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "fetch failed (\"certificate rejected\"); no content verified",
+   "en": "fetch failed (\"certificate rejected\"); no content verified"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S18": {
+  "url": "https://undergrad.admissions.columbia.edu/apply/process/supplementary-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "fetch failed (HTTP 403); no content verified",
+   "en": "fetch failed (HTTP 403); no content verified"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S19": {
+  "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/supplementary-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Penn: VIC portfolio, limits, \"most students ... do not submit\"",
+   "en": "Penn: VIC portfolio, limits, \"most students ... do not submit\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S20": {
+  "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/submission-guidelines",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Penn: no Google Docs/Box links; email only from officials",
+   "en": "Penn: no Google Docs/Box links; email only from officials"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S21": {
+  "url": "https://admissions.upenn.edu/how-to-apply/first-year-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Penn ED Nov 1, 2026; RD Jan 5, 2027",
+   "en": "Penn ED Nov 1, 2026; RD Jan 5, 2027"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S22": {
+  "url": "https://admission.brown.edu/first-year/supplementary-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Brown SlideRoom music/visual art; Academic Paper/Research upload; links in Brown questions",
+   "en": "Brown SlideRoom music/visual art; Academic Paper/Research upload; links in Brown questions"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S23": {
+  "url": "https://admission.brown.edu/first-year/video-introduction",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Brown video ≤90 s",
+   "en": "Brown video ≤90 s"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S24": {
+  "url": "https://admissions.cornell.edu/first-year-cornell-aap-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Cornell AAP portfolio required, SlideRoom, faculty review",
+   "en": "Cornell AAP portfolio required, SlideRoom, faculty review"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S25": {
+  "url": "https://admissions.cornell.edu/first-year-human-ecology-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Cornell Human Ecology design portfolio required, SlideRoom",
+   "en": "Cornell Human Ecology design portfolio required, SlideRoom"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S26": {
+  "url": "https://admissions.cornell.edu/first-year-duffield-engineering-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Cornell Engineering page (no portfolio channel stated)",
+   "en": "Cornell Engineering page (no portfolio channel stated)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S27": {
+  "url": "https://music.cornell.edu/submit-recordings",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Cornell Music optional recordings via Applicant Portal",
+   "en": "Cornell Music optional recordings via Applicant Portal"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S28": {
+  "url": "https://faq.enrollment.cornell.edu/kb/article/186-how-can-i-add-supplemental-information-to-my-application-file/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Cornell Applicant Portal supplemental upload",
+   "en": "Cornell Applicant Portal supplemental upload"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S29": {
+  "url": "https://uadmissions.georgetown.edu/apply/first-year-applicants/application-requirements-and-forms/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Georgetown requirements (no supplementary-material channel stated)",
+   "en": "Georgetown requirements (no supplementary-material channel stated)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S30": {
+  "url": "https://www.cmu.edu/admission/admission/undergraduate-admission-requirements",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "CMU: no supplemental submissions; VIVA option; Schoolhouse URL",
+   "en": "CMU: no supplemental submissions; VIVA option; Schoolhouse URL"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S31": {
+  "url": "https://www.cmu.edu/admission/admission/college-of-fine-arts-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "CMU CFA portfolios/auditions, SlideRoom/Acceptd, faculty review",
+   "en": "CMU CFA portfolios/auditions, SlideRoom/Acceptd, faculty review"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S32": {
+  "url": "https://admission.gatech.edu/first-year/application-review",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Georgia Tech review factors; no supplemental materials stated",
+   "en": "Georgia Tech review factors; no supplemental materials stated"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S33": {
+  "url": "https://admission.gatech.edu/apply/documents",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Georgia Tech document submission (no portfolios stated)",
+   "en": "Georgia Tech document submission (no portfolios stated)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S34": {
+  "url": "https://admissions.purdue.edu/apply/firstyear/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "fetch failed (\"certificate rejected\"); no content verified",
+   "en": "fetch failed (\"certificate rejected\"); no content verified"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S35": {
+  "url": "https://admissions.umich.edu/apply/first-year-applicants/portfolios-and-auditions",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "fetch failed (HTTP 403; path not confirmed to exist); no content verified",
+   "en": "fetch failed (HTTP 403; path not confirmed to exist); no content verified"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S36": {
+  "url": "https://www.admissions.illinois.edu/first-year-apply-faq",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "UIUC: no unsolicited materials; FAA audition/portfolio may be required",
+   "en": "UIUC: no unsolicited materials; FAA audition/portfolio may be required"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S37": {
+  "url": "https://www.olin.edu/admission/apply",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Olin deadline Dec 15, 2026; Common App",
+   "en": "Olin deadline Dec 15, 2026; Common App"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S38": {
+  "url": "https://www.olin.edu/admission/faq",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Olin portfolios welcome, links in Additional Information, email rules",
+   "en": "Olin portfolios welcome, links in Additional Information, email rules"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S39": {
+  "url": "https://www.hmc.edu/admission/apply/first-year/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "HMC requirements",
+   "en": "HMC requirements"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S40": {
+  "url": "https://www.hmc.edu/admission/apply/faqs/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "HMC: abstract not full paper; no music/art submissions",
+   "en": "HMC: abstract not full paper; no music/art submissions"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S41": {
+  "url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "JHU optional materials via applicant portal",
+   "en": "JHU optional materials via applicant portal"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S42": {
+  "url": "https://apply.jhu.edu/frequently-asked-questions/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "JHU: art pictures and research abstracts as examples",
+   "en": "JHU: art pictures and research abstracts as examples"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S43": {
+  "url": "https://admissions.duke.edu/apply/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Duke arts supplement SlideRoom; no resumes/abstracts/media; Glimpse",
+   "en": "Duke arts supplement SlideRoom; no resumes/abstracts/media; Glimpse"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S44": {
+  "url": "https://admissions.northwestern.edu/apply/first-year-applicants/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "fetch failed (\"certificate rejected\"); no content verified",
+   "en": "fetch failed (\"certificate rejected\"); no content verified"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S45": {
+  "url": "https://admission.rice.edu/apply/first-year-domestic-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Rice architecture/art portfolios, Shepherd, Glimpse, deadlines",
+   "en": "Rice architecture/art portfolios, Shepherd, Glimpse, deadlines"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S46": {
+  "url": "https://admission.rice.edu/frequently-asked-questions",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Rice: additional materials by email, \"not required or expected\"",
+   "en": "Rice: additional materials by email, \"not required or expected\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S47": {
+  "url": "https://admissions.berkeley.edu/application-faqs/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Berkeley: no portfolios or supplemental materials",
+   "en": "Berkeley: no portfolios or supplemental materials"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S48": {
+  "url": "https://admissions.berkeley.edu/apply-to-berkeley/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Berkeley: do not send awards, photographs, poetry",
+   "en": "Berkeley: do not send awards, photographs, poetry"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S49": {
+  "url": "https://admission.ucla.edu/apply/supplemental-applications",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "UCLA supplemental applications by major and deadline",
+   "en": "UCLA supplemental applications by major and deadline"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S50": {
+  "url": "https://admission.ucla.edu/apply/first-year/first-year-requirements",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "UCLA: no letters; supplemental only for specialty-school majors",
+   "en": "UCLA: no letters; supplemental only for specialty-school majors"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S51": {
+  "url": "https://admissions.ucsd.edu/first-year/application-requirements.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "UCSD: arts majors may submit portfolio/audition",
+   "en": "UCSD: arts majors may submit portfolio/audition"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S52": {
+  "url": "https://ah.ucsd.edu/students/undergraduate.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "UCSD arts SlideRoom, Oct 1–Dec 8, 2026, faculty review",
+   "en": "UCSD arts SlideRoom, Oct 1–Dec 8, 2026, faculty review"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S53": {
+  "url": "https://admissions.utexas.edu/apply/freshman/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "UT resume optional, deadlines Oct 15/22, Dec 1/10",
+   "en": "UT resume optional, deadlines Oct 15/22, Dec 1/10"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S54": {
+  "url": "https://admissions.utexas.edu/apply/frequently-asked-questions/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "UT: resume format, no email documents, MyStatus",
+   "en": "UT: resume format, no email documents, MyStatus"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S55": {
+  "url": "https://admit.washington.edu/apply/freshman/how-to-apply/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "UW: do not send supplemental materials, incl. links",
+   "en": "UW: do not send supplemental materials, incl. links"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S56": {
+  "url": "https://admission.williams.edu/apply/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "fetch failed (HTTP 403); no content verified",
+   "en": "fetch failed (HTTP 403); no content verified"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S57": {
+  "url": "https://www.amherst.edu/admission/apply/firstyear",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "fetch failed (HTTP 405); no content verified",
+   "en": "fetch failed (HTTP 405); no content verified"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S58": {
+  "url": "https://www.swarthmore.edu/admissions-aid/application-materials-deadlines",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Swarthmore arts samples, research abstracts, video, VIVA, deadlines",
+   "en": "Swarthmore arts samples, research abstracts, video, VIVA, deadlines"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S59": {
+  "url": "https://www.societyforscience.org/regeneron-sts/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Regeneron STS description, 2027 timeline, numbers",
+   "en": "Regeneron STS description, 2027 timeline, numbers"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S60": {
+  "url": "https://www.societyforscience.org/isef/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Regeneron ISEF description, affiliated-fair entry, numbers",
+   "en": "Regeneron ISEF description, affiliated-fair entry, numbers"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S61": {
+  "url": "https://www.commonapp.org/apply/first-year-students",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "Common App Activities/Honors described; no portfolio mention",
+   "en": "Common App Activities/Honors described; no portfolio mention"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S62": {
+  "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-freshman/filling-out-the-application.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "UC activities & awards six categories; Additional comments",
+   "en": "UC activities & awards six categories; Additional comments"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "B2-S63": {
+  "url": "https://help.liaisonedu.com/SlideRoom_Applicant_Help_Center/Completing_Your_SlideRoom_Application/03_Working_with_Your_Portfolio",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "B2",
+  "title": {
+   "zh": "SlideRoom platform limits (see B1 note)",
+   "en": "SlideRoom platform limits (see B1 note)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
+   "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
  "F1-S1": {
   "url": "https://www.ucas.com/applying/applying-university/dates-and-deadlines-uni-applications",
   "accessed": "2026-11-07",
@@ -7335,6 +12089,2498 @@ window.ATLAS.sources = {
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
    "en": "Research note: 2026-11-07_ucas-system-and-tests_v1.md"
+  }
+ },
+ "F3-S1": {
+  "url": "https://www.undergraduate.study.cam.ac.uk/courses/engineering",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Cambridge Engineering H100, ESAT, offers, no written work",
+   "en": "Cambridge Engineering H100, ESAT, offers, no written work"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S2": {
+  "url": "https://www.undergraduate.study.cam.ac.uk/courses/natural-sciences",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "NatSci BCF0, ESAT, offers, Maths now required (Bio)",
+   "en": "NatSci BCF0, ESAT, offers, Maths now required (Bio)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S3": {
+  "url": "https://www.undergraduate.study.cam.ac.uk/international-students/international-qualifications",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Cambridge US AP/SAT/ACT; Taiwan entry",
+   "en": "Cambridge US AP/SAT/ACT; Taiwan entry"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S4": {
+  "url": "https://www.undergraduate.study.cam.ac.uk/applying/interviews",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Cambridge interviews 2027 entry",
+   "en": "Cambridge interviews 2027 entry"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S5": {
+  "url": "https://www.undergraduate.study.cam.ac.uk/apply/application-dates-deadlines",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Cambridge dates, ESAT dates, MCA 22 Oct",
+   "en": "Cambridge dates, ESAT dates, MCA 22 Oct"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S6": {
+  "url": "https://www.undergraduate.study.cam.ac.uk/apply/before/entry-requirements",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Cambridge IELTS 7.5/7.0",
+   "en": "Cambridge IELTS 7.5/7.0"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S7": {
+  "url": "https://www.undergraduate.study.cam.ac.uk/apply/how/cambridge-application",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "My Cambridge Application contents, fee, statement",
+   "en": "My Cambridge Application contents, fee, statement"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S8": {
+  "url": "https://eng.ox.ac.uk/study/undergraduate/applications/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Oxford Engineering: ESAT, online interview",
+   "en": "Oxford Engineering: ESAT, online interview"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S9": {
+  "url": "https://eng.ox.ac.uk/study/undergraduate/common-questions/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Oxford Engineering offer A*A*A, two interviews",
+   "en": "Oxford Engineering offer A*A*A, two interviews"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S10": {
+  "url": "https://www.biology.ox.ac.uk/undergraduate",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Oxford Biology interviews online Dec, two colleges",
+   "en": "Oxford Biology interviews online Dec, two colleges"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S11": {
+  "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/engineering-science",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "HTTP 403 — not readable",
+   "en": "HTTP 403 — not readable"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S12": {
+  "url": "https://www.imperial.ac.uk/study/courses/undergraduate/mechanical-engineering/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Imperial Mech H301: ESAT, interview, offers, US",
+   "en": "Imperial Mech H301: ESAT, interview, offers, US"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S13": {
+  "url": "https://www.imperial.ac.uk/study/courses/undergraduate/biological-sciences/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Imperial Bio C100: ESAT, no interview, offers, higher English",
+   "en": "Imperial Bio C100: ESAT, no interview, offers, higher English"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S14": {
+  "url": "https://www.imperial.ac.uk/study/apply/undergraduate/entry-requirements/accepted-qualifications/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Imperial AP routes; no Taiwan row",
+   "en": "Imperial AP routes; no Taiwan row"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S15": {
+  "url": "https://www.imperial.ac.uk/study/international-students/information-by-region/east-asia/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Taiwan SHS cert \"not accepted for entry\"",
+   "en": "Taiwan SHS cert \"not accepted for entry\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S16": {
+  "url": "https://www.imperial.ac.uk/study/apply/english-language/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Imperial standard / higher IELTS",
+   "en": "Imperial standard / higher IELTS"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S17": {
+  "url": "https://www.ucl.ac.uk/prospective-students/undergraduate/international-applicants/country/taiwan",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "HTTP 403 — not readable",
+   "en": "HTTP 403 — not readable"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S18": {
+  "url": "https://study.ed.ac.uk/programmes/undergraduate/88-electronics-and-electrical-engineering/entry-requirements",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Edinburgh EEE offers, IELTS",
+   "en": "Edinburgh EEE offers, IELTS"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S19": {
+  "url": "https://study.ed.ac.uk/programmes/undergraduate-subjects/engineering",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Edinburgh EEE UCAS H600/H601",
+   "en": "Edinburgh EEE UCAS H600/H601"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S20": {
+  "url": "https://study.ed.ac.uk/undergraduate/degrees/index.php?action=programme&code=C100",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Edinburgh Biological Sciences C100, 2027",
+   "en": "Edinburgh Biological Sciences C100, 2027"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S21": {
+  "url": "https://study.ed.ac.uk/programmes/undergraduate/4-biological-sciences/entry-requirements",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Edinburgh Bio offers, IELTS",
+   "en": "Edinburgh Bio offers, IELTS"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S22": {
+  "url": "https://www.ed.ac.uk/studying/international/country/asia/taiwan",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Edinburgh Taiwan diploma, IFP, selection test",
+   "en": "Edinburgh Taiwan diploma, IFP, selection test"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S23": {
+  "url": "https://www.ed.ac.uk/studying/international/country/americas/united-states-of-america",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Edinburgh US AP/SAT/ACT",
+   "en": "Edinburgh US AP/SAT/ACT"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S24": {
+  "url": "https://science-engineering.ed.ac.uk/studying/undergraduate/applying/entrancerequirements/college-of-science-and-engineering-selection-test",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Edinburgh selection test pass marks",
+   "en": "Edinburgh selection test pass marks"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S25": {
+  "url": "https://www.kcl.ac.uk/study/undergraduate/courses/general-engineering-beng",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "KCL Engineering H100, AAA",
+   "en": "KCL Engineering H100, AAA"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S26": {
+  "url": "https://www.kcl.ac.uk/study/undergraduate/courses/biomedical-science-bsc",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "KCL Biomedical Science BC99, AAA",
+   "en": "KCL Biomedical Science BC99, AAA"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S27": {
+  "url": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/entry-requirements",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "KCL US routes; no non-UK foundations",
+   "en": "KCL US routes; no non-UK foundations"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S28": {
+  "url": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/english-language-requirements",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "KCL English bands",
+   "en": "KCL English bands"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S29": {
+  "url": "https://www.manchester.ac.uk/study/international/country-specific-information/taiwan/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Manchester Taiwan HSD, foundation",
+   "en": "Manchester Taiwan HSD, foundation"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S30": {
+  "url": "https://www.manchester.ac.uk/study/international/country-specific-information/usa/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Manchester US AP/SAT/ACT",
+   "en": "Manchester US AP/SAT/ACT"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S31": {
+  "url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/03894/meng-electrical-and-electronic-engineering/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Manchester EEE H605, offers, IELTS 7.0",
+   "en": "Manchester EEE H605, offers, IELTS 7.0"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S32": {
+  "url": "https://www.manchester.ac.uk/study/undergraduate/courses/2027/00524/bsc-biology/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Manchester Biology C100, offers, interview",
+   "en": "Manchester Biology C100, offers, interview"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S33": {
+  "url": "https://www.bristol.ac.uk/international/countries/taiwan.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Bristol Taiwan entry",
+   "en": "Bristol Taiwan entry"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S34": {
+  "url": "https://www.bristol.ac.uk/international/countries/usa.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Bristol US entry",
+   "en": "Bristol US entry"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S35": {
+  "url": "https://www.bristol.ac.uk/study/undergraduate/2027/electrical-electronic-engineering/meng-electrical-and-electronic-engineering/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Bristol EEE H606",
+   "en": "Bristol EEE H606"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S36": {
+  "url": "https://www.bristol.ac.uk/study/undergraduate/2027/biological-sciences/bsc-biology/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Bristol Biology C100",
+   "en": "Bristol Biology C100"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S37": {
+  "url": "https://warwick.ac.uk/study/international/countryinformation/eastasia/taiwan",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Warwick Taiwan: IFP required",
+   "en": "Warwick Taiwan: IFP required"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S38": {
+  "url": "https://warwick.ac.uk/study/international/countryinformation/northamerica/usa/usa-entry-requirements/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Warwick US AP routes, engineering AP rules",
+   "en": "Warwick US AP routes, engineering AP rules"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S39": {
+  "url": "https://warwick.ac.uk/study/undergraduate/courses/meng-engineering/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Warwick Engineering H102, no interview",
+   "en": "Warwick Engineering H102, no interview"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S40": {
+  "url": "https://warwick.ac.uk/study/undergraduate/courses/bsc-biological-sciences",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Warwick Bio C100",
+   "en": "Warwick Bio C100"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S41": {
+  "url": "https://warwick.ac.uk/study/undergraduate/applying/english-language-requirements/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Warwick IELTS bands",
+   "en": "Warwick IELTS bands"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S42": {
+  "url": "https://warwick.ac.uk/study/undergraduate/applying/admissions-tests/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Warwick TMUA courses",
+   "en": "Warwick TMUA courses"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S43": {
+  "url": "https://warwick.ac.uk/fac/sci/eng/study/ug/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "Warwick engineering UCAS codes",
+   "en": "Warwick engineering UCAS codes"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S44": {
+  "url": "https://www.st-andrews.ac.uk/subjects/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "St Andrews subject list (no engineering)",
+   "en": "St Andrews subject list (no engineering)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S45": {
+  "url": "https://www.st-andrews.ac.uk/subjects/biology/biology-bsc/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "St Andrews Biology C100",
+   "en": "St Andrews Biology C100"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S46": {
+  "url": "https://www.st-andrews.ac.uk/subjects/entry/taiwan/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "St Andrews Taiwan",
+   "en": "St Andrews Taiwan"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S47": {
+  "url": "https://www.st-andrews.ac.uk/subjects/entry/usa/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "St Andrews US, test optional",
+   "en": "St Andrews US, test optional"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S48": {
+  "url": "https://www.st-andrews.ac.uk/subjects/entry/language-requirements/profiles/7-d/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "St Andrews Science IELTS",
+   "en": "St Andrews Science IELTS"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S49": {
+  "url": "https://www.st-andrews.ac.uk/study/apply/ug/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "St Andrews routes incl. Common App, interviews",
+   "en": "St Andrews routes incl. Common App, interviews"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "F3-S50": {
+  "url": "https://www.ucas.com/applying/applying-to-university/dates-and-deadlines-for-uni-applications",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "F3",
+  "title": {
+   "zh": "UCAS 15 Oct 2026 / 13 Jan 2027",
+   "en": "UCAS 15 Oct 2026 / 13 Jan 2027"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_uk-universities-engineering-biology_v1.md",
+   "en": "Research note: 2026-11-07_uk-universities-engineering-biology_v1.md"
+  }
+ },
+ "G1-S01": {
+  "url": "https://collegeadmissions.uchicago.edu/apply/application/required-materials/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "UChicago systems, supplement structure, 2 teacher letters, supplemental rec, No Harm testing",
+   "en": "UChicago systems, supplement structure, 2 teacher letters, supplemental rec, No Harm testing"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S02": {
+  "url": "https://collegeadmissions.uchicago.edu/apply/application/optional-materials/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "video profile, art/creative/research supplements, intl aid",
+   "en": "video profile, art/creative/research supplements, intl aid"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S03": {
+  "url": "https://collegeadmissions.uchicago.edu/apply/application/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "EA/ED I Nov 2 2026; ED II/RD Jan 4 2027; plan switch dates",
+   "en": "EA/ED I Nov 2 2026; ED II/RD Jan 4 2027; plan switch dates"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S04": {
+  "url": "https://collegeadmissions.uchicago.edu/apply/essay/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "2026–2027 essay prompts",
+   "en": "2026–2027 essay prompts"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S05": {
+  "url": "https://collegeadmissions.uchicago.edu/apply/uchicago-admissions-faq/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "word-count guidance, supplemental-material examples, video profile, no interviews",
+   "en": "word-count guidance, supplemental-material examples, video profile, no interviews"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S06": {
+  "url": "https://collegeadmissions.uchicago.edu/apply/international-applicants/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "English proficiency, InitialView",
+   "en": "English proficiency, InitialView"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S07": {
+  "url": "https://collegeadmissions.uchicago.edu/financial-support/international-financial-aid/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "intl aid: 100% need, apply at admission",
+   "en": "intl aid: 100% need, apply at admission"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S08": {
+  "url": "https://admissions.dartmouth.edu/apply-dartmouth",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "Common App only, ED Nov 1, RD Jan 1 / Jan 2, required components, peer rec recommended",
+   "en": "Common App only, ED Nov 1, RD Jan 1 / Jan 2, required components, peer rec recommended"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S09": {
+  "url": "https://admissions.dartmouth.edu/apply/testing-policy",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "testing required; five options outside US",
+   "en": "testing required; five options outside US"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S10": {
+  "url": "https://admissions.dartmouth.edu/apply/reactivating-dartmouths-testing-policy",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "reactivation from Class of 2029",
+   "en": "reactivation from Class of 2029"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S11": {
+  "url": "https://admissions.dartmouth.edu/glossary-question/if-english-not-my-first-language-am-i-required-submit-language-proficiency-test",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "English tests and typical scores",
+   "en": "English tests and typical scores"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S12": {
+  "url": "https://admissions.dartmouth.edu/apply-dartmouth/universal-need-blind-policy",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "need-blind for international citizens",
+   "en": "need-blind for international citizens"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S13": {
+  "url": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "Class of 2031 prompts and limits",
+   "en": "Class of 2031 prompts and limits"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S14": {
+  "url": "https://admissions.dartmouth.edu/glossary-term/recommendations",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "3 required + 4th encouraged; Other Recommender",
+   "en": "3 required + 4th encouraged; Other Recommender"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S15": {
+  "url": "https://admissions.dartmouth.edu/glossary-term/peer-recommendation",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "peer recommendation definition and timing",
+   "en": "peer recommendation definition and timing"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S16": {
+  "url": "https://admissions.dartmouth.edu/glossary-term/portfolio",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "arts portfolio timing, review",
+   "en": "arts portfolio timing, review"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S17": {
+  "url": "https://admissions.dartmouth.edu/apply/portfolio-submission-instructions",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "per-discipline portfolio limits; no links for studio art",
+   "en": "per-discipline portfolio limits; no links for studio art"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S18": {
+  "url": "https://admissions.dartmouth.edu/glossary-term/supplemental-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "supplemental materials, abstracts only, upload/email",
+   "en": "supplemental materials, abstracts only, upload/email"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S19": {
+  "url": "https://admissions.dartmouth.edu/glossary-term/alumni-interview",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "alumni interview policy",
+   "en": "alumni interview policy"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S20": {
+  "url": "https://admissions.vanderbilt.edu/apply/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "systems; ED I/ED II/RD 2026–27 dates",
+   "en": "systems; ED I/ED II/RD 2026–27 dates"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S21": {
+  "url": "https://admissions.vanderbilt.edu/apply/first-year-process/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "required/optional materials, English, need-aware intl, interviews, Blair",
+   "en": "required/optional materials, English, need-aware intl, interviews, Blair"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S22": {
+  "url": "https://admissions.vanderbilt.edu/apply/testing-policies/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "optional fall 2027/2028, required fall 2029",
+   "en": "optional fall 2027/2028, required fall 2029"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S23": {
+  "url": "https://admissions.vanderbilt.edu/apply/personal-essay-and-short-answer-prompts/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "short answer ~250 words",
+   "en": "short answer ~250 words"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S24": {
+  "url": "https://admissions.washu.edu/how-to-apply/first-year-international-applicants/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "plans and dates, 1 teacher eval, 250-word response, intl testing options",
+   "en": "plans and dates, 1 teacher eval, 250-word response, intl testing options"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S25": {
+  "url": "https://admissions.washu.edu/how-to-apply/first-year-us-applicants/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "test-optional, optional supplements, Common App/Coalition",
+   "en": "test-optional, optional supplements, Common App/Coalition"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S26": {
+  "url": "https://admissions.washu.edu/how-to-apply/english-testing-requirements/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "English tests; SAT/ACT no longer in lieu from fall 2027; no interviews",
+   "en": "English tests; SAT/ACT no longer in lieu from fall 2027; no interviews"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S27": {
+  "url": "https://financialaid.washu.edu/how-washu-helps/need-blind-policy/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "need-blind excludes international applicants",
+   "en": "need-blind excludes international applicants"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S28": {
+  "url": "https://admissions.washu.edu/how-to-apply/optional-video-supplement/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "90-second optional video, due dates",
+   "en": "90-second optional video, due dates"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S29": {
+  "url": "https://admissions.washu.edu/how-to-apply/portfolio-reviews/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "SlideRoom portfolio, 10–20 pieces, 5 MB",
+   "en": "SlideRoom portfolio, 10–20 pieces, 5 MB"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S30": {
+  "url": "https://admissions.washu.edu/how-to-apply/what-were-looking-for/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "test-optional statement",
+   "en": "test-optional statement"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S31": {
+  "url": "https://admissions.nd.edu/apply/how-to-apply/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "REA Nov 1, RD Jan 4, writing supplement, test policy, letters",
+   "en": "REA Nov 1, RD Jan 4, writing supplement, test policy, letters"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S32": {
+  "url": "https://admissions.nd.edu/apply/decision-planning/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "REA restrictions",
+   "en": "REA restrictions"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S33": {
+  "url": "https://admissions.nd.edu/apply/application-considerations/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "2 letters (1 teacher), Glimpse/InitialView, SlideRoom portfolios, testing reinstatement",
+   "en": "2 letters (1 teacher), Glimpse/InitialView, SlideRoom portfolios, testing reinstatement"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S34": {
+  "url": "https://admissions.nd.edu/information-for/international-applicants/application-information/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "English tests and waivers, need-blind for all",
+   "en": "English tests and waivers, need-blind for all"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S35": {
+  "url": "https://admissions.nd.edu/apply/faqs/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "supplementary material only art/music/architecture; one teacher letter; no interviews",
+   "en": "supplementary material only art/music/architecture; one teacher letter; no interviews"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S36": {
+  "url": "https://admissions.nd.edu/information-for/international-applicants/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "need-blind for international applicants",
+   "en": "need-blind for international applicants"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S37": {
+  "url": "https://apply.emory.edu/apply/plans-deadlines",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "ED I Nov 1, ED II Jan 1, RD Jan 1",
+   "en": "ED I Nov 1, ED II Jan 1, RD Jan 1"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S38": {
+  "url": "https://apply.emory.edu/apply/first-year",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "Common App, two teacher evaluations, TOEFL/IELTS recommended",
+   "en": "Common App, two teacher evaluations, TOEFL/IELTS recommended"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S39": {
+  "url": "https://apply.emory.edu/apply/requirements/exams",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "test optional 2026–27 / fall 2027; English options",
+   "en": "test optional 2026–27 / fall 2027; English options"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S40": {
+  "url": "https://apply.emory.edu/apply/faqs",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "supplemental info via portal; no evaluative interviews; \"fall 2028\" wording",
+   "en": "supplemental info via portal; no evaluative interviews; \"fall 2028\" wording"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S41": {
+  "url": "https://blog.emoryadmission.com/2026/08/emorys-short-answer-questions-2026-27/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "2026–27 short answers and lengths",
+   "en": "2026–27 short answers and lengths"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S42": {
+  "url": "https://apply.emory.edu/apply/international",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "English proficiency; InitialView",
+   "en": "English proficiency; InitialView"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S43": {
+  "url": "https://studentaid.emory.edu/undergraduate/apply/new-students/international.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "aid to select intl students; apply RD for aid",
+   "en": "aid to select intl students; apply RD for aid"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S44": {
+  "url": "https://admission.usc.edu/prospective-students/how-to-apply/first-year-students/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "ED/EA Nov 1, RD Dec 1/Jan 10, one letter, major-specific materials, no interviews",
+   "en": "ED/EA Nov 1, RD Dec 1/Jan 10, one letter, major-specific materials, no interviews"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S45": {
+  "url": "https://admission.usc.edu/prospective-students/how-to-apply/international-students/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "test-optional 2027–28, English rules, no intl need aid, third-party interviews",
+   "en": "test-optional 2027–28, English rules, no intl need aid, third-party interviews"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S46": {
+  "url": "https://admission.usc.edu/test-optional-faq/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "official scores only; merit deadlines",
+   "en": "official scores only; merit deadlines"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S47": {
+  "url": "https://admission.usc.edu/prospective-students/how-to-apply/what-we-look-for/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "need-blind for domestic students",
+   "en": "need-blind for domestic students"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S48": {
+  "url": "https://viterbiadmission.usc.edu/apply/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "no extra documents; one letter; Supplemental Questions and Quick Takes",
+   "en": "no extra documents; one letter; Supplemental Questions and Quick Takes"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S49": {
+  "url": "https://viterbiadmission.usc.edu/interviews/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "no interviews since fall 2019",
+   "en": "no interviews since fall 2019"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S50": {
+  "url": "https://www.commonapp.org/explore/university-virginia",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "UVA on Common App; test-optional and self-report tags",
+   "en": "UVA on Common App; test-optional and self-report tags"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S51": {
+  "url": "https://www.nyu.edu/admissions/undergraduate-admissions/how-to-apply/all-freshmen-applicants.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "Common App, ED I/ED II/RD dates, recommendation rule, arts portfolios",
+   "en": "Common App, ED I/ED II/RD dates, recommendation rule, arts portfolios"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S52": {
+  "url": "https://www.nyu.edu/admissions/undergraduate-admissions/how-to-apply/standardized-tests.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "test-optional through 2027–28",
+   "en": "test-optional through 2027–28"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S53": {
+  "url": "https://www.nyu.edu/admissions/undergraduate-admissions/how-to-apply/standardized-tests/english-language-testing.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "English tests; no interviews",
+   "en": "English tests; no interviews"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S54": {
+  "url": "https://www.nyu.edu/admissions/undergraduate-admissions/how-to-apply/international-applicants.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "intl need-based scholarships available",
+   "en": "intl need-based scholarships available"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S55": {
+  "url": "https://admissions.tufts.edu/apply/applying-to-tufts/checklist-and-deadlines/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "checklist, 1 teacher rec, 2026–27 deadlines, portfolio dates",
+   "en": "checklist, 1 teacher rec, 2026–27 deadlines, portfolio dates"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S56": {
+  "url": "https://admissions.tufts.edu/apply/short-answer-questions/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "Class of 2031 short answers",
+   "en": "Class of 2031 short answers"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S57": {
+  "url": "https://admissions.tufts.edu/apply/applying-to-tufts/sat-and-act-tests/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "test-optional, score guidance",
+   "en": "test-optional, score guidance"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S58": {
+  "url": "https://admissions.tufts.edu/apply/applying-as-an-international-s/faqs/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "InitialView/Duolingo interviews for English; English tests",
+   "en": "InitialView/Duolingo interviews for English; English tests"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S59": {
+  "url": "https://admissions.tufts.edu/tuition-and-aid/applying-for-aid/international-student-aid/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "intl aid: 100% need, request at application, fee waiver",
+   "en": "intl aid: 100% need, request at application, fee waiver"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S60": {
+  "url": "https://admissions.tufts.edu/apply/applying-to-tufts/applying-to-smfa-at-tufts/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "BFA portfolio specs and portal",
+   "en": "BFA portfolio specs and portal"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S61": {
+  "url": "https://admissions.tufts.edu/apply/applying-to-tufts/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "systems, no preference",
+   "en": "systems, no preference"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S62": {
+  "url": "https://admissions.tufts.edu/apply/applying-to-tufts/application-faq/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "English waiver rule, late materials",
+   "en": "English waiver rule, late materials"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S63": {
+  "url": "https://admissions.tufts.edu/apply/applying-to-tufts/school-of-engineering/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "engineering applicants follow same process",
+   "en": "engineering applicants follow same process"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G1-S64": {
+  "url": "https://admissions.nd.edu/apply/standardized-testing-policy/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G1",
+  "title": {
+   "zh": "predicted IB/A-Level/French Bac in lieu of SAT/ACT outside US",
+   "en": "predicted IB/A-Level/French Bac in lieu of SAT/ACT outside US"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part1_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part1_v1.md"
+  }
+ },
+ "G2-S1": {
+  "url": "https://admissions.unc.edu/apply/types-of-applications/first-year/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UNC system, deadlines, testing, letter",
+   "en": "UNC system, deadlines, testing, letter"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S2": {
+  "url": "https://admissions.unc.edu/apply/types-of-applications/international-first-year-students/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UNC international first-year",
+   "en": "UNC international first-year"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S3": {
+  "url": "https://admissions.unc.edu/apply/international-students/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UNC ELP waiver, no need-based aid",
+   "en": "UNC ELP waiver, no need-based aid"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S4": {
+  "url": "https://admissions.unc.edu/faqs/how-does-unc-look-at-english-proficiency-exams-toefl-ielts-person/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UNC English typical scores",
+   "en": "UNC English typical scores"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S5": {
+  "url": "https://admissions.unc.edu/faqs/how-does-my-intended-major-affect-my-application/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UNC major/engineering later",
+   "en": "UNC major/engineering later"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S6": {
+  "url": "https://admissions.unc.edu/faqs/can-i-submit-an-art-or-music-supplement-with-my-application/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UNC arts supplements not reviewed",
+   "en": "UNC arts supplements not reviewed"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S7": {
+  "url": "https://admissions.unc.edu/faqs/can-i-submit-additional-letters-of-recommendation/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UNC additional letter",
+   "en": "UNC additional letter"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S8": {
+  "url": "https://admissions.unc.edu/faqs/can-i-interview-with-the-admissions-committee/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UNC no interviews",
+   "en": "UNC no interviews"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S9": {
+  "url": "https://admissions.unc.edu/faqs/can-i-submit-more-information-in-addition-to-what-i-share-on-the-application/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UNC additional info channel",
+   "en": "UNC additional info channel"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S10": {
+  "url": "https://admissions.unc.edu/application-prompts-for-2025-2026/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UNC 2026–27 prompts",
+   "en": "UNC 2026–27 prompts"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S11": {
+  "url": "https://admissions.unc.edu/apply/residency/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UNC reserves places for NC residents",
+   "en": "UNC reserves places for NC residents"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S12": {
+  "url": "https://www.northcarolina.edu/students/admission/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UNC System test rule",
+   "en": "UNC System test rule"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S13": {
+  "url": "https://admissions.wisc.edu/apply-as-a-freshman/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UW system, deadlines, tests, ELP, letters",
+   "en": "UW system, deadlines, tests, ELP, letters"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S14": {
+  "url": "https://admissions.wisc.edu/deadlines/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UW deadlines",
+   "en": "UW deadlines"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S15": {
+  "url": "https://admissions.wisc.edu/essays/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UW essays",
+   "en": "UW essays"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S16": {
+  "url": "https://admissions.wisc.edu/required-materials/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UW required materials",
+   "en": "UW required materials"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S17": {
+  "url": "https://admissions.wisc.edu/international/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UW international",
+   "en": "UW international"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S18": {
+  "url": "https://admissions.wisc.edu/direct-entry/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UW engineering direct entry",
+   "en": "UW engineering direct entry"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S19": {
+  "url": "https://admissions.rochester.edu/applying/first-year-students/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "Rochester requirements, media",
+   "en": "Rochester requirements, media"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S20": {
+  "url": "https://admissions.rochester.edu/applying/dates-and-deadlines/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "Rochester deadlines",
+   "en": "Rochester deadlines"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S21": {
+  "url": "https://admissions.rochester.edu/applying/testing-policies/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "Rochester test policy",
+   "en": "Rochester test policy"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S22": {
+  "url": "https://admissions.rochester.edu/applying/international-students/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "Rochester ELP, need-aware",
+   "en": "Rochester ELP, need-aware"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S23": {
+  "url": "https://admissions.rochester.edu/applying/interviewing/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "Rochester interview",
+   "en": "Rochester interview"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S24": {
+  "url": "https://case.edu/admission/apply",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "CWRU systems, deadlines",
+   "en": "CWRU systems, deadlines"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S25": {
+  "url": "https://case.edu/admission/apply/first-year-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "CWRU letters, arts supplement, PPSP",
+   "en": "CWRU letters, arts supplement, PPSP"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S26": {
+  "url": "https://case.edu/admission/apply/deadlines-and-requirements",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "CWRU deadlines, arts supplement",
+   "en": "CWRU deadlines, arts supplement"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S27": {
+  "url": "https://case.edu/admission/apply/deadlines-and-requirements/test-policy",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "CWRU test optional",
+   "en": "CWRU test optional"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S28": {
+  "url": "https://case.edu/admission/apply/international-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "CWRU ELP",
+   "en": "CWRU ELP"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S29": {
+  "url": "https://case.edu/admission/apply/application-tips",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "CWRU additional materials",
+   "en": "CWRU additional materials"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S30": {
+  "url": "https://case.edu/admission/academics",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "CWRU admitted to university",
+   "en": "CWRU admitted to university"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S31": {
+  "url": "https://admissions.northeastern.edu/apply/first-year-applicants/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "NEU systems, tests, letters",
+   "en": "NEU systems, tests, letters"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S32": {
+  "url": "https://admissions.northeastern.edu/academics/specialized-entry-programs/admissions-deadlines-decisions/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "NEU deadlines",
+   "en": "NEU deadlines"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S33": {
+  "url": "https://admissions.northeastern.edu/application-information/required-materials/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "NEU materials, interview, CAMD",
+   "en": "NEU materials, interview, CAMD"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S34": {
+  "url": "https://admissions.northeastern.edu/application-information/international-applicants/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "NEU ELP, intl aid",
+   "en": "NEU ELP, intl aid"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S35": {
+  "url": "https://admissions.northeastern.edu/cost-financial-aid/applying-for-financial-aid/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "NEU need-based eligibility",
+   "en": "NEU need-based eligibility"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S36": {
+  "url": "https://admissions.northeastern.edu/application-information/frequently-asked-admissions-questions/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "NEU engineering prereqs, undeclared",
+   "en": "NEU engineering prereqs, undeclared"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S37": {
+  "url": "https://admissions.umd.edu/apply/freshman-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UMD systems, tests, letters",
+   "en": "UMD systems, tests, letters"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S38": {
+  "url": "https://admissions.umd.edu/apply/application-deadlines",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UMD deadlines",
+   "en": "UMD deadlines"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S39": {
+  "url": "https://admissions.umd.edu/apply/essay-questions",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UMD essay",
+   "en": "UMD essay"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S40": {
+  "url": "https://admissions.umd.edu/academics/limited-enrollment-programs",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UMD LEP",
+   "en": "UMD LEP"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S41": {
+  "url": "https://admissions.umd.edu/apply/international-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UMD international",
+   "en": "UMD international"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S42": {
+  "url": "https://admissions.umd.edu/apply/english-language-proficiency",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UMD ELP minimums",
+   "en": "UMD ELP minimums"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S43": {
+  "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-freshman/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UC filing periods",
+   "en": "UC filing periods"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S44": {
+  "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-freshman/personal-insight-questions.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UC PIQs",
+   "en": "UC PIQs"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S45": {
+  "url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/english-language-proficiency-toefl-ielts.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UC ELP minimums",
+   "en": "UC ELP minimums"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S46": {
+  "url": "https://www.ucdavis.edu/admissions/undergraduate/first-year/requirements",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UCD test policy",
+   "en": "UCD test policy"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S47": {
+  "url": "https://www.ucdavis.edu/admissions/undergraduate/first-year/timeline",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UCD filing period",
+   "en": "UCD filing period"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S48": {
+  "url": "https://www.ucdavis.edu/admissions/undergraduate/first-year/application-tips",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UCD no letters/work samples; alternate major",
+   "en": "UCD no letters/work samples; alternate major"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S49": {
+  "url": "https://www.ucdavis.edu/admissions/undergraduate/international/exams-visas",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UCD ELP",
+   "en": "UCD ELP"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S50": {
+  "url": "https://www.ucdavis.edu/admissions/undergraduate/first-year",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UCD filing, colleges",
+   "en": "UCD filing, colleges"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S51": {
+  "url": "https://admissions.sa.ucsb.edu/deadlines",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UCSB fall 2027 filing",
+   "en": "UCSB fall 2027 filing"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S52": {
+  "url": "https://admissions.sa.ucsb.edu/freshman-eligibility-selection",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UCSB tests, engineering, CCS",
+   "en": "UCSB tests, engineering, CCS"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S53": {
+  "url": "https://admissions.sa.ucsb.edu/faq",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UCSB letters, supplements, ELP",
+   "en": "UCSB letters, supplements, ELP"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S54": {
+  "url": "https://admissions.sa.ucsb.edu/international",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UCSB intl aid, scores",
+   "en": "UCSB intl aid, scores"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S55": {
+  "url": "https://ccs.ucsb.edu/apply",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UCSB CCS supplemental application",
+   "en": "UCSB CCS supplemental application"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S56": {
+  "url": "https://undergrad.admissions.rpi.edu/undergraduate/apply",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "RPI systems, deadlines, essays, letters, interview, portfolio",
+   "en": "RPI systems, deadlines, essays, letters, interview, portfolio"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S57": {
+  "url": "https://undergrad.admissions.rpi.edu/apply/international-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "RPI ELP, intl aid",
+   "en": "RPI ELP, intl aid"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S58": {
+  "url": "https://undergrad.admissions.rpi.edu/apply/first-year-applicants/application-frequently-asked-questions",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "RPI majors, portfolio, résumé",
+   "en": "RPI majors, portfolio, résumé"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S59": {
+  "url": "https://www.arch.rpi.edu/apply/portfolio-guidelines/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "RPI architecture portfolio",
+   "en": "RPI architecture portfolio"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S60": {
+  "url": "https://www.pomona.edu/admissions/apply/first-year-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "Pomona systems, deadlines, essays, letters",
+   "en": "Pomona systems, deadlines, essays, letters"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S61": {
+  "url": "https://www.pomona.edu/admissions/apply/application-overview/supplements",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "Pomona arts supplements",
+   "en": "Pomona arts supplements"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S62": {
+  "url": "https://www.pomona.edu/admissions/apply/international-applicants/international-applicant-faqs",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "Pomona ELP, need-aware, interviews",
+   "en": "Pomona ELP, need-aware, interviews"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S63": {
+  "url": "https://www.pomona.edu/admissions/apply",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "Pomona optional recommendation",
+   "en": "Pomona optional recommendation"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "G2-S64": {
+  "url": "https://www.ucdavis.edu/admissions/undergraduate/apply/application-review-criteria",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "G2",
+  "title": {
+   "zh": "UCD review factors",
+   "en": "UCD review factors"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
+   "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
   }
  }
 };
