@@ -3,24 +3,24 @@ window.ATLAS = window.ATLAS || {};
 window.ATLAS.status = {
  "generated": "2026-11-06",
  "units": {
-  "done": 1,
+  "done": 29,
   "total": 31
  },
  "sections": {
   "A": {
-   "done": 0,
+   "done": 5,
    "total": 5
   },
   "B": {
-   "done": 0,
+   "done": 5,
    "total": 5
   },
   "C": {
-   "done": 0,
+   "done": 4,
    "total": 4
   },
   "D": {
-   "done": 0,
+   "done": 7,
    "total": 8
   },
   "E": {
@@ -28,11 +28,11 @@ window.ATLAS.status = {
    "total": 2
   },
   "F": {
-   "done": 0,
+   "done": 4,
    "total": 4
   },
   "G": {
-   "done": 0,
+   "done": 3,
    "total": 3
   }
  },
