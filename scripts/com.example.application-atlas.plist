@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Not loaded. Copy to ~/Library/LaunchAgents/, replace REPO_PATH, then
+     launchctl load it. Requires the claude CLI on PATH. Tue and Fri 02:00. -->
+<plist version="1.0"><dict>
+  <key>Label</key><string>com.example.application-atlas</string>
+  <key>ProgramArguments</key><array>
+    <string>/bin/zsh</string><string>-lc</string>
+    <string>REPO_PATH/scripts/run-unit.sh</string>
+  </array>
+  <key>StartCalendarInterval</key><array>
+    <dict><key>Weekday</key><integer>2</integer><key>Hour</key><integer>2</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Weekday</key><integer>5</integer><key>Hour</key><integer>2</integer><key>Minute</key><integer>0</integer></dict>
+  </array>
+  <key>StandardOutPath</key><string>/tmp/application-atlas.out</string>
+  <key>StandardErrorPath</key><string>/tmp/application-atlas.err</string>
+</dict></plist>
