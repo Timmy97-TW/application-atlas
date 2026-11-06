@@ -104,7 +104,10 @@
         var cls = '';
         if (c && c.state === 'not-stated') cls = 'c-ns';
         else if (c && c.src) { var k = clsOf(c.src); cls = k ? 'c-' + k : ''; rowCls.push(k); }
-        r.appendChild(el('td', { 'class': cls || null }, itemHtml(c)));
+        var html = itemHtml(c);
+        // secondary-only cell in a mixed row: keep the column, hide the content in official-only mode
+        if (cls === 'c-secondary') html = '<span data-cls="secondary">' + html + '</span>';
+        r.appendChild(el('td', { 'class': cls || null }, html));
       });
       if (row.filter) r.setAttribute('data-filter', row.filter);
       if (rowCls.length && rowCls.every(function (k) { return k === 'secondary'; })) r.setAttribute('data-cls', 'secondary');
@@ -303,8 +306,8 @@
     if (PAGE === 'sources') sourcesList(main);
     if (window.ATLAS_PAGE_HOOK) window.ATLAS_PAGE_HOOK(main, { L: L, ui: ui, md: md, esc: esc, cites: cites, el: el, lang: lang, store: store });
     footer();
+    if (location.hash) { var t = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (t) t.scrollIntoView(); }
     motion();
-    if (location.hash) { var t = document.getElementById(location.hash.slice(1)); if (t) t.scrollIntoView(); }
   }
 
   function motion() {
@@ -312,6 +315,11 @@
     var els = document.querySelectorAll('.reveal');
     if (reduce || !('IntersectionObserver' in window)) { [].forEach.call(els, function (e) { e.classList.add('in'); }); }
     else {
+      // anything already in or above the viewport (e.g. opened at #hash) shows at once
+      els = [].filter.call(els, function (e) {
+        if (e.getBoundingClientRect().top < window.innerHeight) { e.classList.add('in'); return false; }
+        return true;
+      });
       var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -5% 0px' });
       [].forEach.call(els, function (e) { io.observe(e); });
     }
