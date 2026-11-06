@@ -30,6 +30,7 @@ const CODES = {
   'international-aid-numbers': ['A7', { zh: 'A4 補充：國際生財務補助數字', en: 'A4 supplement: international aid numbers' }],
   'major-level-admission': ['A8', { zh: 'A5 補充：工程與生物科系層級的錄取規則', en: 'A5 supplement: major-level admission for engineering and biology' }],
   'browser-verification': ['V', { zh: '瀏覽器複查（先前只靠搜尋摘要的項目）', en: 'Browser verification of excerpt-only items' }],
+  'verification-round-2': ['V2', { zh: '瀏覽器複查第二輪（仍讀不到的頁面）', en: 'Browser verification round 2 (pages still unreadable)' }],
   'blocked-pages-browser-pass': ['LEAD', { zh: '待查線索（未讀到頁面本身）', en: 'Leads only (pages not read)' }],
   'michigan-addendum':['MI', { zh: 'Michigan 補充（網頁拒絕自動存取）', en: 'Michigan addendum (pages refuse automated access)' }],
   'us-schools-31-50-part2':['G2', { zh: 'G 美國 41–50 校', en: 'G US schools 41–50' }]

@@ -100,6 +100,10 @@ window.ATLAS.sourceGroups = {
  "G2": {
   "zh": "G 美國 41–50 校",
   "en": "G US schools 41–50"
+ },
+ "V2": {
+  "zh": "瀏覽器複查第二輪（仍讀不到的頁面）",
+  "en": "Browser verification round 2 (pages still unreadable)"
  }
 };
 window.ATLAS.sources = {
@@ -20079,6 +20083,48 @@ window.ATLAS.sources = {
   "note": {
    "zh": "研究筆記：2026-11-07_us-schools-31-50-part2_v1.md",
    "en": "Research note: 2026-11-07_us-schools-31-50-part2_v1.md"
+  }
+ },
+ "V2-S1": {
+  "url": "https://www.cornell.edu/visit/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V2",
+  "title": {
+   "zh": "Cornell public visit page: no demonstrated-interest wording (O74 replacement attempt)",
+   "en": "Cornell public visit page: no demonstrated-interest wording (O74 replacement attempt)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_verification-round-2_v1.md",
+   "en": "Research note: 2026-11-07_verification-round-2_v1.md"
+  }
+ },
+ "V2-S2": {
+  "url": "https://admission.stanford.edu/faqs/index.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V2",
+  "title": {
+   "zh": "Stanford FAQ index: served an empty document to the browser (O53)",
+   "en": "Stanford FAQ index: served an empty document to the browser (O53)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_verification-round-2_v1.md",
+   "en": "Research note: 2026-11-07_verification-round-2_v1.md"
+  }
+ },
+ "V2-S3": {
+  "url": "https://admissions.utexas.edu/apply/frequently-asked-questions/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V2",
+  "title": {
+   "zh": "UT Austin FAQ: question list only; answers not present in the page source (O85)",
+   "en": "UT Austin FAQ: question list only; answers not present in the page source (O85)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_verification-round-2_v1.md",
+   "en": "Research note: 2026-11-07_verification-round-2_v1.md"
   }
  }
 };
