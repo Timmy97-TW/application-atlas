@@ -22,7 +22,201 @@ window.ATLAS.pages = window.ATLAS.pages || {};
       {
         id: 'leadin',
         h: s('G9–G11：12 年級 8 月 1 日之前必須存在的東西', 'G9–G11: what must exist before 1 August of G12'),
-        pending: true
+        judgment: s(
+          'Common App 在 8 月 1 日開放時，能填進去的只有早已存在的東西：帶日期的紀錄、修過的課、願意寫信的老師、有效的考試成績、一位負責成績單的校方人員。最長的鏈是研究與作品集；最容易錯過的是財務補助，因為 Penn、Cornell 不接受錄取後才申請。',
+          'When Common App opens on 1 August, it can only hold what already exists: dated records, completed courses, teachers willing to write, valid test scores, and a school official who owns the transcript. The longest chains run through research and portfolios. The easiest to miss is aid, because Penn and Cornell do not take a request after admission.'
+        ),
+        intro: s(
+          '下圖與清單是同一份內容：每個節點寫「是什麼」、它最終要趕上的截止（引用本申請季 2026–27 的官方頁面），以及它依賴哪些更早的節點。「最早合理起點」一律是本站的推論，沒有任何學校規定幾年級開始。讀者設定為在台灣念書的國際申請者。現在讀 9–11 年級的人會在之後的申請季申請，規則可能已變，例如 Princeton、Columbia、Harvey Mudd 已宣布下一季恢復必考；請把這裡的日期當成結構示範，而不是你的截止日。',
+          'The diagram and the list below carry the same content. Each node states what it is, the deadline it ultimately feeds (cited from official pages for the 2026–27 cycle), and which earlier nodes it depends on. Every "earliest sensible start" is this site\'s inference: no school says which grade to begin in. The reader is assumed to be an international applicant at school in Taiwan. A student now in G9–G11 will apply in a later cycle whose rules may differ; Princeton, Columbia and Harvey Mudd have already announced required testing from the next cycle. Read the dates as the shape of the problem, not as your deadlines.'
+        ),
+        graph: {
+          caption: s('G9–G11 前置條件圖：箭頭由「必須先存在」指向「依賴它」', 'G9–G11 prerequisite graph: arrows point from what must exist first to what depends on it'),
+          cols: [s('9 年級', 'G9'), s('10 年級', 'G10'), s('11 年級', 'G11'), s('12 年級 8/1 前', 'G12, by 1 Aug')],
+          nodes: [
+            { id: 'log', col: 0, label: s('活動紀錄：日期、每週時數', 'Activity log with dates and hours'), src: ['A1-S6', 'A1-S31'] },
+            { id: 'courses', col: 0, label: s('數理課程序列：微積分、物理、化學', 'Course sequence: calculus, physics, chemistry'), src: ['A5a-S11', 'A5a-S54'] },
+            { id: 'build', col: 1, label: s('專題製作紀錄與版本控制', 'Build log and version control'), src: ['B3-S1'] },
+            { id: 'research', col: 1, label: s('有指導者的研究專題', 'Research project with a mentor'), src: ['B3-S12', 'B2-S14'] },
+            { id: 'paper', col: 1, label: s('留存批改過的英文報告', 'Keep graded English papers'), src: ['A5a-S34'] },
+            { id: 'ap', col: 1, label: s('AP 等科目考試（如採用）', 'AP or subject exams, if used'), src: ['A4-S52', 'A5a-S11'] },
+            { id: 'mentor', col: 2, label: s('研究指導者願意寫信', 'Mentor willing to write'), src: ['A1-S22', 'A5a-S39'] },
+            { id: 'teachers', col: 2, label: s('兩位任課老師：理工 + 人文', 'Two teachers: STEM + humanities'), src: ['A5a-S3', 'A5a-S10', 'A5b-S12'] },
+            { id: 'official', col: 2, label: s('確定負責成績單的校方人員', 'School official who owns the transcript'), src: ['A4-S121', 'A4-S127'] },
+            { id: 'sat', col: 2, label: s('SAT／ACT 首次應考', 'First SAT/ACT sitting'), src: ['A3a-S19', 'A3a-S52'] },
+            { id: 'english', col: 2, label: s('TOEFL／IELTS／Duolingo', 'TOEFL / IELTS / Duolingo'), src: ['A4-S32', 'A4-S51', 'A4-S53'] },
+            { id: 'aiddecide', col: 2, label: s('家庭決定是否申請補助', 'Family decides on aid'), src: ['A4-S36', 'A4-S45'] },
+            { id: 'activities', col: 3, label: s('Activities 草稿（10 項 × 150 字元）', 'Activities draft (10 × 150 chars)'), src: ['A1-S4', 'A1-S6'] },
+            { id: 'maker', col: 3, label: s('MIT Maker Portfolio 素材（SlideRoom）', 'MIT Maker Portfolio material (SlideRoom)'), src: ['B3-S1'] },
+            { id: 'researchpack', col: 3, label: s('研究摘要、海報、指導者信', 'Research abstract, poster, mentor letter'), src: ['B3-S1', 'B3-S13'] },
+            { id: 'recmap', col: 3, label: s('逐校推薦人對照表', 'Recommender map per school'), src: ['A1-S24'] },
+            { id: 'counselor', col: 3, label: s('英文成績單、翻譯、school profile', 'English transcript, translation, school profile'), src: ['A4-S43', 'A4-S125'] },
+            { id: 'testplan', col: 3, label: s('成績與送分計畫', 'Scores in hand, sending plan'), src: ['A1-S41'] },
+            { id: 'aidpack', col: 3, label: s('補助文件：CSS Profile、稅單、銀行證明', 'Aid documents: CSS Profile, tax, bank'), src: ['A4-S77', 'A4-S80', 'A4-S87'] }
+          ],
+          edges: [
+            ['log', 'build'], ['log', 'activities'], ['build', 'activities'], ['build', 'maker'],
+            ['courses', 'ap'], ['courses', 'teachers'], ['courses', 'counselor'],
+            ['research', 'mentor'], ['research', 'researchpack'], ['mentor', 'researchpack'], ['mentor', 'recmap'],
+            ['teachers', 'recmap'], ['official', 'recmap'], ['official', 'counselor'],
+            ['ap', 'testplan'], ['sat', 'testplan'], ['english', 'testplan'],
+            ['aiddecide', 'aidpack']
+          ]
+        },
+        items: [
+          { t: s(
+              '**活動紀錄（G9）**：Common App 的 Activities 每項要勾參與年級（9–12 年級）、每週時數、每年週數，再用 150 字元描述；最多 10 項，自學或不屬於正式團體的活動也可以填。這份表在 2026-08-01 開放；UIUC 送出後不能再改 activities。',
+              '**Activity log (G9)**: each Common App activity asks which grades (9th–12th), hours per week, weeks per year, and a 150-character description; up to 10, and self-taught activities outside any official group are welcome. The form opened on 2026-08-01; UIUC does not allow activity edits after submission.'),
+            tag: 'f', src: ['A1-S6', 'A1-S31', 'A1-S4', 'B3-S35'],
+            sub: [
+              inf('最早合理起點：9 年級開學。表格逐年級問時數，事後回推只能估。', 'Earliest sensible start: the first week of G9. The form asks for hours by grade, and hours rebuilt years later are guesses.', ['A1-S6']),
+              { t: s('依賴：無（圖中最早的節點）。', 'Depends on: nothing earlier in this graph.'), tag: 'i' }
+            ] },
+          { t: s(
+              '**數理課程序列（G9）**：Caltech 規定 4 年數學（含 1 年微積分）、1 年物理、1 年化學，課程不開時只接受 AP 5 分、IB 6–7 分或 Schoolhouse.world 認證替代；Cornell Duffield Engineering 也要求微積分、物理、化學。這些課要在送件時已出現在成績單上（Caltech REA 2026-11-01）。',
+              '**Course sequence (G9)**: Caltech requires 4 years of math including a year of calculus, a year of physics and a year of chemistry, and accepts only AP 5, IB 6–7 or a Schoolhouse.world certification where a course was not offered. Cornell Duffield Engineering also requires calculus, physics and chemistry. These courses have to be on the transcript by the application date (Caltech REA, 2026-11-01).'),
+            tag: 'f', src: ['A5a-S11', 'A5a-S54', 'A3a-S10'],
+            sub: [
+              inf('最早合理起點：9 年級選課時。微積分要排在 12 年級之前，前面的數學課就得先排好。', 'Earliest sensible start: G9 course selection. Calculus before or during G12 needs the earlier math courses in place first.', ['A5a-S11']),
+              { t: s('依賴：無。', 'Depends on: nothing earlier in this graph.'), tag: 'i' }
+            ] },
+          { t: s(
+              '**專題製作紀錄與版本控制（G10）**：MIT Maker Portfolio 看重製作過程多於成品；過程證據不足的專題「無法審查」；程式專題必須附 codebase（最好有版本控制）和可運作的 demo；只審已完成的作品。截止同申請：EA 11/1、RA 1/4。',
+              '**Build log and version control (G10)**: MIT\'s Maker Portfolio weighs the build process over the end result; projects without enough build-process evidence cannot be reviewed; code projects must include the codebase (ideally version-controlled) and a working demo; only completed work is reviewed. Due with the application: EA 1 Nov, RA 4 Jan.'),
+            tag: 'f', src: ['B3-S1', 'B3-S2'],
+            sub: [
+              inf('最早合理起點：第一個有份量的專題開工時（多半 10 年級）。過程照片與 commit 紀錄無法事後補。', 'Earliest sensible start: when the first substantial project begins, often G10. Process photos and commit history cannot be made after the fact.', ['B3-S1']),
+              { t: s('依賴：活動紀錄（同一套記日期的習慣）。', 'Depends on: activity log (the same habit of dating things).'), tag: 'i' }
+            ] },
+          { t: s(
+              '**有指導者的研究專題（G10）**：Caltech 的 Research Papers and Publications 只收實驗室或大學相關、已發表、已投稿或撰寫中的研究，並要求指導者的信；Harvard 的上傳要寫明合作者、指導者與自己的貢獻。',
+              '**Research project with a mentor (G10)**: Caltech\'s Research Papers and Publications route takes lab- or university-affiliated work with a paper published, submitted or in preparation, and requires a supervisor letter. Harvard\'s upload asks for collaborators, the mentor, and the applicant\'s own contribution.'),
+            tag: 'f', src: ['B3-S12', 'A5a-S10', 'B2-S14'],
+            sub: [
+              inf('最早合理起點：10 年級。要在 12 年級 11 月前有「撰寫中」的論文與一位認識你一年以上的指導者，時間不能更短。', 'Earliest sensible start: G10. A paper "in preparation" and a mentor who has known you for a year by November of G12 leave little room for a later start.', ['B3-S12']),
+              { t: s('依賴：無。', 'Depends on: nothing earlier in this graph.'), tag: 'i' }
+            ] },
+          { t: s(
+              '**留存批改過的英文報告（G10）**：Princeton 要求一篇近三年內、英文或社會／歷史課的批改報告，至少一頁，附題目、分數與老師評語，原文須為英文；SCEA 截止 2026-11-01。',
+              '**Keep graded English papers (G10)**: Princeton requires a graded paper from English, social studies or history in the last three years, at least one page, with the prompt, grade and teacher comments, written in English; due with SCEA on 2026-11-01.'),
+            tag: 'f', src: ['A5a-S34', 'A3a-S41'],
+            sub: [
+              inf('最早合理起點：10 年級。老師的手寫評語不會被重做，所以每篇都留原件。', 'Earliest sensible start: G10. Teacher comments are not rewritten later, so keep every original.', ['A5a-S34']),
+              { t: s('依賴：無（但要有用英文寫作的課）。', 'Depends on: nothing in this graph, but it needs a course taught in English.'), tag: 'i' }
+            ] },
+          { t: s(
+              '**AP 等科目考試（如採用）（G10–G11）**：CMU 多數學院採 test flexible，接受 AP、IB、A-level；Caltech 課程不開時以 AP 5 分替代；Yale 自本季起 AP 不再能滿足考試要求。Common App 可自填最多 15 科 AP；UC 的 AP／IB 正式成績 2027-07-15 前送。',
+              '**AP or subject exams, if used (G10–G11)**: most CMU colleges are test-flexible and accept AP, IB or A-level; Caltech takes AP 5 where a course was not offered; from this cycle Yale no longer counts AP toward testing. Common App takes up to 15 self-reported AP scores; UC wants official AP/IB reports by 2027-07-15.'),
+            tag: 'f', src: ['A4-S52', 'A5a-S11', 'A3a-S35', 'A1-S6', 'A3b-S23'],
+            sub: [
+              inf('最早合理起點：修完對應課程的那年。AP 考試日期不在本站筆記範圍，未查。', 'Earliest sensible start: the year the matching course ends. AP exam dates are outside these notes and were not checked.', ['A4-S52']),
+              { t: s('依賴：數理課程序列。', 'Depends on: course sequence.'), tag: 'i' }
+            ] },
+          { t: s(
+              '**研究指導者願意寫信（G11）**：Other Recommender 只有在該校接受某類型時才能指派；大學教授被以 Teacher 身分邀請時，可註明為大學教師；Columbia 只在附研究摘要時歡迎指導者的信；Georgia Tech 不收社群其他成員的信。',
+              '**Mentor willing to write (G11)**: an Other Recommender can be assigned only to a college that accepts that type; a professor invited as a Teacher marks themselves as a college instructor; Columbia welcomes a mentor letter only alongside a research abstract; Georgia Tech does not take letters from other community members.'),
+            tag: 'f', src: ['A1-S22', 'A1-S23', 'A5a-S39', 'A5a-S73'],
+            sub: [
+              inf('最早合理起點：11 年級，指導者已看過你一年的工作時再開口。', 'Earliest sensible start: G11, once the mentor has seen a year of your work.', ['A1-S22']),
+              { t: s('依賴：有指導者的研究專題。', 'Depends on: research project with a mentor.'), tag: 'i' }
+            ] },
+          { t: s(
+              '**兩位任課老師（G11）**：MIT 建議一位數理、一位人文／社會／語言；Caltech 要最後兩年的一位 STEM、一位寫作量大的人文或社會課老師；Harvey Mudd 要一位 STEM、一位人文／社會／藝術；Columbia Engineering、Brown Sc.B.、Cornell Duffield、Duke Pratt 至少一位數理。Penn、CMU、Georgetown 只要求一位老師。推薦信可在申請送出後才到。',
+              '**Two teachers (G11)**: MIT recommends one math/science and one humanities/social science/language teacher; Caltech wants one STEM and one writing-heavy humanities or social science teacher from the last two years; Harvey Mudd wants one STEM and one humanities, social science or arts teacher; Columbia Engineering, Brown Sc.B., Cornell Duffield and Duke Pratt need at least one math or science teacher. Penn, CMU and Georgetown require only one teacher. Letters may arrive after the application is submitted.'),
+            tag: 'f', src: ['A5a-S3', 'A5a-S10', 'A5b-S12', 'A5a-S36', 'A5a-S49', 'A5a-S54', 'A5b-S16', 'A5a-S42', 'A5a-S67', 'A5a-S63', 'A1-S25'],
+            sub: [
+              inf('最早合理起點：11 年級上課期間。Caltech 限最後兩年、Stanford 偏好 11 或 12 年級，所以 11 年級的老師最常被用到。', 'Earliest sensible start: during G11 classes. Caltech limits letters to the last two years and Stanford prefers G11 or G12, so G11 teachers are the usual pick.', ['A5a-S10', 'A5a-S17']),
+              { t: s('依賴：數理課程序列（STEM 老師要有課可教你）。', 'Depends on: course sequence (the STEM teacher needs a course to have taught you).'), tag: 'i' }
+            ] },
+          { t: s(
+              '**確定負責成績單的校方人員（G11）**：國際生應把「負責成績單的人」邀請為 counselor，對方會收到 International Supplement to the School Report；學校沒有 counselor 時，任何校方職員都可擔任；選擇紙本時，要把表格逐校寄出。',
+              '**School official who owns the transcript (G11)**: international students invite the person responsible for their transcripts as the counselor, who then answers the International Supplement to the School Report; where a school has no counselor, any school official can serve; choosing paper means mailing a set of forms to each college.'),
+            tag: 'f', src: ['A4-S127', 'A4-S121'],
+            sub: [
+              inf('最早合理起點：11 年級下學期。台灣學校未必有人處理過 Common App，提早確認誰負責、會不會線上送。', 'Earliest sensible start: second semester of G11. A school in Taiwan may have no one who has handled Common App, so settle who owns it and whether they will submit online.', ['A4-S121']),
+              { t: s('依賴：無。', 'Depends on: nothing earlier in this graph.'), tag: 'i' }
+            ] },
+          { t: s(
+              '**SAT／ACT 首次應考（G11）**：本季 30 校中 12 校必繳。Stanford REA 最晚接受 10 月底的 SAT、9 月底的 ACT；Penn ED 最晚 11 月 SAT；MIT EA 要在 11/30 前考完。Princeton、Columbia、Harvey Mudd 已宣布下一季恢復必考。',
+              '**First SAT/ACT sitting (G11)**: 12 of the 30 schools require it this cycle. Stanford REA accepts SAT through end of October and ACT through end of September; Penn ED takes the November SAT at the latest; MIT EA needs tests before 30 Nov. Princeton, Columbia and Harvey Mudd have announced required testing from the next cycle.'),
+            tag: 'f', src: ['A3a-S19', 'A3a-S52', 'A3a-S1', 'A3a-S42', 'A3a-S47', 'A3b-S8'],
+            sub: [
+              inf('最早合理起點：11 年級。這樣 12 年級 8–10 月的場次可以當重考，而不是唯一機會。', 'Earliest sensible start: G11, so the August–October sittings of G12 serve as retakes rather than the only chance.', ['A3a-S19']),
+              { t: s('依賴：無（但送分計畫依賴它）。', 'Depends on: nothing earlier; the sending plan depends on it.'), tag: 'i' }
+            ] },
+          { t: s(
+              '**TOEFL／IELTS／Duolingo（G11）**：Penn 本季只收 2025-04-01 以後的英語成績；CMU 要兩年內；UCLA 所有考試要在 11/30 前完成；UW 12/31。Georgia Tech 的 Duolingo 不滿足 USG 要求；Michigan 不收 Duolingo，台灣也不在其豁免國家名單。Stanford、Harvard 不要求英語考試。',
+              '**TOEFL / IELTS / Duolingo (G11)**: Penn accepts English scores only from tests on or after 2025-04-01 this cycle; CMU wants them no more than two years old; UCLA needs all tests by 30 Nov; UW by 31 Dec. At Georgia Tech, Duolingo does not satisfy the USG requirement; Michigan does not accept Duolingo, and Taiwan is not on its exemption list. Stanford and Harvard do not require an English test.'),
+            tag: 'f', src: ['A4-S32', 'A4-S51', 'A4-S107', 'A4-S117', 'A4-S53', 'A4-S63', 'A4-S11', 'A4-S15'],
+            sub: [
+              inf('最早合理起點：11 年級。太早考會落在 Penn 或 CMU 的有效期外；考哪一種要看名單裡是否有 Georgia Tech 或 Michigan。', 'Earliest sensible start: G11. Testing much earlier risks falling outside Penn\'s or CMU\'s window; which test to take depends on whether Georgia Tech or Michigan is on the list.', ['A4-S32', 'A4-S51']),
+              { t: s('依賴：無。', 'Depends on: nothing earlier in this graph.'), tag: 'i' }
+            ] },
+          { t: s(
+              '**家庭決定是否申請補助（G11）**：對國際生 need-blind 的只有 MIT、Harvard、Yale、Princeton、Brown、Amherst；CMU、UIUC、Olin、UW、UCLA 完全不給國際生補助。Penn 錄取後不能再申請補助，Cornell 也沒有事後申請，Columbia 的補助意向送出後不能改。',
+              '**Family decides on aid (G11)**: only MIT, Harvard, Yale, Princeton, Brown and Amherst are need-blind for international applicants; CMU, UIUC, Olin, UW and UCLA give international students no aid. Penn takes no aid request after admission, Cornell has no later application, and Columbia\'s aid answer cannot be changed after submission.'),
+            tag: 'f', src: ['A4-S5', 'A4-S15', 'A4-S21', 'A4-S23', 'A4-S38', 'A4-S93', 'A4-S51', 'A4-S71', 'A4-S74', 'A4-S118', 'A4-S106', 'A4-S36', 'A4-S45', 'A4-S31'],
+            sub: [
+              inf('最早合理起點：11 年級，在定校單之前。這個決定會改變名單本身。', 'Earliest sensible start: G11, before the school list is set, because the answer changes the list itself.', ['A4-S36']),
+              { t: s('依賴：無。', 'Depends on: nothing earlier in this graph.'), tag: 'i' }
+            ] },
+          { t: s(
+              '**Activities 草稿（8/1 前）**：Common App 2026-08-01 開放；10 項、每項描述 150 字元、角色 50 字元、組織 100 字元。',
+              '**Activities draft (by 1 Aug)**: Common App opened on 2026-08-01; 10 entries, 150 characters for each description, 50 for the role, 100 for the organisation.'),
+            tag: 'f', src: ['A1-S4', 'A1-S6', 'A1-S31'],
+            sub: [
+              inf('最早合理起點：12 年級暑假，從活動紀錄濃縮。', 'Earliest sensible start: the summer before G12, condensed from the activity log.', ['A1-S6']),
+              { t: s('依賴：活動紀錄、專題製作紀錄。', 'Depends on: activity log; build log.'), tag: 'i' }
+            ] },
+          { t: s(
+              '**MIT Maker Portfolio 素材（8/1 前）**：在 SlideRoom 先填問卷，最多 25 個附件、每件附說明，全份影片合計 2 分鐘，每份 $10，每人一份，截止同申請（EA 11/1、RA 1/4）。Caltech 的作品集收連結與 URL（75 頁／5GB）；CMU 非藝術申請者不收作品集或網站；Duke 不收 media 與研究摘要。',
+              '**MIT Maker Portfolio material (by 1 Aug)**: a SlideRoom questionnaire first, then up to 25 attachments each with an explanation, 2 minutes of video across the whole portfolio, $10, one per applicant, due with the application (EA 1 Nov, RA 4 Jan). Caltech\'s portfolio takes links and URLs (75 pages / 5 GB); CMU takes no portfolios or websites from non-arts applicants; Duke takes no media files or research abstracts.'),
+            tag: 'f', src: ['B3-S1', 'B3-S2', 'B3-S11', 'B3-S23', 'B2-S43'],
+            sub: [
+              inf('最早合理起點：12 年級暑假整理；素材本身要來自 10–11 年級的製作紀錄。', 'Earliest sensible start: assemble in the summer before G12; the material itself comes from the G10–G11 build log.', ['B3-S1']),
+              { t: s('依賴：專題製作紀錄。', 'Depends on: build log.'), tag: 'i' }
+            ] },
+          { t: s(
+              '**研究摘要、海報、指導者信（8/1 前）**：MIT Research Supplement 在 SlideRoom，含問卷、摘要或海報 PDF、由指導者寫的推薦；Caltech REA 補充材料截止 2026-11-06；Yale 說完整論文「通常最有幫助」；Harvey Mudd 只收摘要。',
+              '**Research abstract, poster, mentor letter (by 1 Aug)**: MIT\'s Research Supplement in SlideRoom has a questionnaire, an abstract or poster PDF, and a recommendation from the research mentor; Caltech REA materials are due 2026-11-06; Yale says full papers are "generally the most helpful"; Harvey Mudd takes an abstract only.'),
+            tag: 'f', src: ['B3-S1', 'B3-S13', 'B2-S15', 'B2-S40'],
+            sub: [
+              inf('最早合理起點：12 年級暑假定稿。', 'Earliest sensible start: final drafts in the summer before G12.', ['B3-S1']),
+              { t: s('依賴：研究專題、研究指導者。', 'Depends on: research project; mentor.'), tag: 'i' }
+            ] },
+          { t: s(
+              '**逐校推薦人對照表（8/1 前）**：Common App 的 Teacher 與 Other Recommender 要逐校指派，指派時才寄出邀請；每位老師寫一封通用信給所有學校。',
+              '**Recommender map per school (by 1 Aug)**: in Common App, Teachers and Other Recommenders are assigned college by college, and assignment sends the invitation; each teacher writes one letter for all colleges.'),
+            tag: 'f', src: ['A1-S24', 'A4-S127'],
+            sub: [
+              inf('最早合理起點：12 年級暑假。對照表列出每校要幾位、哪一科、收不收 Other Recommender。', 'Earliest sensible start: the summer before G12. The map lists, per school, how many letters, which subjects, and whether an Other Recommender is accepted.', ['A1-S24']),
+              { t: s('依賴：兩位任課老師、研究指導者、校方人員。', 'Depends on: two teachers; mentor; school official.'), tag: 'i' }
+            ] },
+          { t: s(
+              '**英文成績單、翻譯、school profile（8/1 前）**：Cornell 要由校方人員送出英譯成績單；MIT 與 Stanford 不准申請者自己翻譯；Harvard、Columbia、Rice 要譯本附原文；UT Austin 申請時就要。Common App 上 school profile 為選填，但 Georgetown 與 Olin 要求、JHU 列為 counselor 文件之一。',
+              '**English transcript, translation, school profile (by 1 Aug)**: Cornell wants the translated transcript sent by a school official; MIT and Stanford do not allow applicants to translate their own; Harvard, Columbia and Rice want the original with the translation; UT Austin wants it at application. A school profile is optional in Common App but required by Georgetown and Olin, and JHU lists it among counselor materials.'),
+            tag: 'f', src: ['A4-S43', 'A4-S3', 'A4-S11', 'A4-S15', 'A4-S29', 'A4-S87', 'A4-S113', 'A4-S125', 'A4-S47', 'A4-S72', 'A4-S81'],
+            sub: [
+              inf('最早合理起點：12 年級暑假，等 11 年級成績確定後。', 'Earliest sensible start: the summer before G12, once G11 grades are final.', ['A4-S43']),
+              { t: s('依賴：數理課程序列、校方人員。', 'Depends on: course sequence; school official.'), tag: 'i' }
+            ] },
+          { t: s(
+              '**成績與送分計畫（8/1 前）**：Common App 建議自填最佳成績，不受 Score Choice 影響；學校要求的正式成績單仍由申請者自行寄送。',
+              '**Scores in hand, sending plan (by 1 Aug)**: Common App asks for the best scores to be self-reported regardless of Score Choice; sending official reports where a college requires them stays the applicant\'s job.'),
+            tag: 'f', src: ['A1-S41'],
+            sub: [
+              inf('最早合理起點：12 年級暑假，列出每校要正式成績還是自填。', 'Earliest sensible start: the summer before G12, listing which schools want official reports and which take self-report.', ['A1-S41']),
+              { t: s('依賴：SAT／ACT、英語考試、AP。', 'Depends on: SAT/ACT; English test; AP.'), tag: 'i' }
+            ] },
+          { t: s(
+              '**補助文件（8/1 前開始收集）**：Stanford 的 CSS Profile 10/1 開放；Harvard 補助與申請同日截止，Cornell 國際生 CSS 11/1，MIT EA 11/30。JHU 要所有國際生在申請時交 Certification of Finances；Rice 要所有國際生交財力聲明加銀行證明；Harvey Mudd 經 IDOC 收財力證明、翻譯過的稅單與銀行對帳單；Penn 的稅單要原文加譯本、以美元計。Princeton 用自己的 PFAA，不用 CSS Profile。',
+              '**Aid documents (start gathering by 1 Aug)**: Stanford\'s CSS Profile opened on 1 Oct; Harvard\'s aid deadline equals the application deadline, Cornell\'s international CSS Profile is due 1 Nov, MIT EA\'s 30 Nov. JHU wants a Certification of Finances from every international applicant at application; Rice wants a financial statement plus bank statements from every international applicant; Harvey Mudd collects a certification of finances, translated tax return and bank statements through IDOC; Penn wants tax documents in the original plus translation, in US dollars. Princeton uses its own PFAA, not the CSS Profile.'),
+            tag: 'f', src: ['A3a-S22', 'A4-S18', 'A3a-S67', 'A3a-S6', 'A4-S80', 'A4-S87', 'A4-S77', 'A4-S36', 'A4-S26'],
+            sub: [
+              inf('最早合理起點：12 年級暑假，等最近一年度的家庭報稅完成。即使不申請補助，JHU 與 Rice 仍要財力文件。', 'Earliest sensible start: the summer before G12, after the family\'s latest tax filing. JHU and Rice want financial documents even from applicants not seeking aid.', ['A4-S80', 'A4-S87']),
+              { t: s('依賴：家庭決定是否申請補助。', 'Depends on: family decision on aid.'), tag: 'i' }
+            ] }
+        ]
       },
 
       {

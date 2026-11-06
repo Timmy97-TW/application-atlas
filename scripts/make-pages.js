@@ -5,9 +5,11 @@ const fs = require('fs');
 const path = require('path');
 const site = path.join(__dirname, '..', 'site');
 const common = ['ui.js', 'sources.js', 'status.js', 'log.js'];
+// Cache-busting stamp so readers get fresh data after each deploy.
+const V = Date.now().toString(36);
 const pages = [
   ['index.html', 'index', ['p-index.js']],
-  ['process.html', 'process', ['p-process.js']],
+  ['process.html', 'process', ['p-process.js'], ['graph.js']],
   ['containers.html', 'containers', ['p-containers.js']],
   ['schools.html', 'schools', ['p-schools.js']],
   ['more.html', 'more', ['p-more.js']],
@@ -28,20 +30,20 @@ for (const [file, page, data, extraJs = []] of pages) {
   const depth = file.split('/').length - 1;
   const root = '../'.repeat(depth);
   const scripts = [...common, ...data].filter(d => fs.existsSync(path.join(site, 'data', d)))
-    .map(d => `<script src="${root}data/${d}"></script>`)
-    .concat(extraJs.map(j => `<script src="${root}assets/js/${j}"></script>`));
+    .map(d => `<script src="${root}data/${d}?v=${V}"></script>`)
+    .concat(extraJs.map(j => `<script src="${root}assets/js/${j}?v=${V}"></script>`));
   const html = `<!doctype html>
 <html lang="zh-Hant-TW">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Application Atlas</title>
-<link rel="stylesheet" href="${root}assets/css/site.css">
+<link rel="stylesheet" href="${root}assets/css/site.css?v=${V}">
 </head>
 <body data-page="${page}" data-root="${root}">
 <main id="main"></main>
 ${scripts.join('\n')}
-<script src="${root}assets/js/app.js"></script>
+<script src="${root}assets/js/app.js?v=${V}"></script>
 </body>
 </html>
 `;
