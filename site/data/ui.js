@@ -46,6 +46,7 @@ window.ATLAS.nav = [
   { page: 'process', href: 'process.html', label: { zh: '時程', en: 'Timeline' } },
   { page: 'containers', href: 'containers.html', label: { zh: '欄位', en: 'Fields' } },
   { page: 'schools', href: 'schools.html', label: { zh: '30 校', en: '30 schools' } },
+  { page: 'more', href: 'more.html', label: { zh: '31–50 校', en: 'Schools 31–50' } },
   { page: 'portfolios', href: 'portfolios.html', label: { zh: '作品集', en: 'Portfolios' } },
   { page: 'record', href: 'record.html', label: { zh: '校外紀錄', en: 'Outside record' } },
   { page: 'insights', href: 'insights.html', label: { zh: '洞察', en: 'Insights' } },

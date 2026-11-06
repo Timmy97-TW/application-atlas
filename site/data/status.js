@@ -37,9 +37,9 @@ window.ATLAS.status = {
   }
  },
  "cells": {
-  "official": 0,
+  "official": 117,
   "secondary": 0,
-  "notStated": 0
+  "notStated": 33
  },
  "sources": {
   "total": 1036,

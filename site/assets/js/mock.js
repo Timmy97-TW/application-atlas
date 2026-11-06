@@ -30,7 +30,7 @@
     }
     function shown(f, ctx) {
       if (!f.showIf) return true;
-      var v = S.v[ctx + f.showIf.field];
+      var v = f.showIf.path ? S.v[f.showIf.path] : S.v[ctx + f.showIf.field];
       if (f.showIf.equals != null) return v === f.showIf.equals;
       if (f.showIf.any) return filled({}, v);
       return true;
