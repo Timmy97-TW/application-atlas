@@ -3,7 +3,7 @@ window.ATLAS = window.ATLAS || {};
 window.ATLAS.status = {
  "generated": "2026-11-06",
  "units": {
-  "done": 29,
+  "done": 30,
   "total": 31
  },
  "sections": {
@@ -20,7 +20,7 @@ window.ATLAS.status = {
    "total": 4
   },
   "D": {
-   "done": 7,
+   "done": 8,
    "total": 8
   },
   "E": {
