@@ -41,6 +41,8 @@ window.ATLAS.pages['index'] = {
       cards: [
         { h: { zh: '模擬練習', en: 'Practice walkthrough' }, href: 'mock/index.html', p: { zh: '照 2026–27 一年級申請表的結構，一步步填一次：欄位、字數上限、推薦人、送出前檢查。資料只存在你的瀏覽器。', en: 'Fill in the 2026–27 first-year application structure step by step: fields, limits, recommenders, the pre-submit check. Data stays in your browser.' } },
         { h: { zh: '不容易查到的發現', en: 'Hard-to-find findings' }, href: 'insights.html', p: { zh: '各校 Common Data Set 的審查因素權重、招生辦公室自己說過的閱讀方式、各類意外的規定。', en: 'Common Data Set factor weights per school, what admissions offices have said about how they read, and rules that surprise.' } },
+        { h: { zh: '作品集的時序陷阱', en: 'Sequencing traps' }, href: 'insights.html#sequencing', src: ['A3a-S18', 'A3a-S58'],
+          p: { zh: '要交作品集或研究材料的人，綁住你的日期常常不是申請截止日。Stanford 的藝術作品集申請者要比別人早 17 天送出 Common App；Brown、Princeton、Cornell 的補充材料反而在申請截止之後才到期。', en: 'If you are sending a portfolio or research material, the date that binds you is often not the application deadline. Stanford\u2019s arts-portfolio applicants file the Common App 17 days early; Brown\u2019s, Princeton\u2019s and Cornell\u2019s supplements fall due after it.' } },
         { h: { zh: '30 校逐校資料', en: 'The 30 schools' }, href: 'schools.html', p: { zh: '申請系統、補充文書、推薦信規定、國際申請者的英文與財力證明。', en: 'Systems, supplements, letter rules, English tests and financial documents for international applicants.' } },
         { h: { zh: '英國（UCAS）', en: 'UK (UCAS)' }, href: 'uk/index.html', p: { zh: 'UCAS 系統、入學考試、十所大學的工程與生物科系。', en: 'The UCAS system, admissions tests, ten universities\' engineering and biology courses.' } }
       ]
