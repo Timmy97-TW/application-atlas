@@ -377,3 +377,26 @@ All accessed 2026-11-07. Class `official` unless marked. "index-excerpt" = wordi
 | O97 | https://uadmissions.georgetown.edu/alumni-interview/ | 2026-11-07 | official (partly index-excerpt via /faq/faq-alumni-interview/) | Georgetown interview "key part"; required where assigned |
 | O98 | https://uadmissions.georgetown.edu/faq/faq-international-applicants/ | 2026-11-07 | official | Georgetown international aid, InitialView |
 | O99 | https://admissions.utexas.edu/apply/review-decision-process/waitlist/ | 2026-11-07 | official (index-excerpt) | UT waitlist extras not reviewed |
+
+## 中文摘要（本筆記重點）
+
+- 讀法提醒：Princeton、Northwestern、Columbia、Michigan、Williams、Purdue 與 Amherst 職員頁拒絕直接抓取，相關條目的字句來自搜尋引擎對官方頁的節錄（標 index-excerpt），上網站前要用瀏覽器重查。Yale podcast 主持人聲明節目觀點不代表 Yale；MIT 2020 年前的封存文章依 MIT 自己的說明，不算現行政策。
+- [事實] MIT 要求用它自己的表格列活動、不要附 resume，而且只有四格，請申請者挑最有意義的四項（O01）；Harvard 說填活動表本身就是在排優先順序，重質不重量（O47）。
+- [事實] Penn、Johns Hopkins、Georgia Tech、Rice、CMU、UW 都明說打工、照顧家人、社區經驗算活動（O61, O25, O20, O67, O75, O83）；Penn 的具體建議是寫出縮寫全名、列出職責、交代規模（O61）。
+- [推論] 談到活動表的學校說法一致：深度勝過數量、工作與家庭責任也是活動、寫你做了什麼而不是頭銜；沒有任何學校公布「理想的項目數」。
+- [事實] 主文書方面，MIT 說文書不是寫作測驗，若在盤算怎麼「看起來最好」就是方向錯了（O01）；Johns Hopkins 建議寫過程而非結果，不必當故事裡的英雄（O27）；Caltech 說對打磨過的表現比較沒興趣（O55）。
+- [事實] Yale podcast 勸申請者不要讀太多「成功文書」範例，並說「脫穎而出」不是目標（O34）；Harvey Mudd 提醒不要拿文書來列活動和成就（O91）。
+- [推論] 「why us」類補充文書，Rice、Penn、Duke、Michigan 都要求寫到該校的具體細節；Rice 直說只寫地點或校園大小不代表做過功課（O70）。MIT、Yale、Princeton 三校都叫申請者不要過度經營，顯示這種情形常見，但沒有學校說多常見，所以只是推論。
+- [事實] 推薦信方面，MIT 要的是具體、有故事的信，形容詞要有例子撐（O05）；Yale 說具體細節比最高級形容詞有力（O33）；Caltech 請推薦人寫學生遇到困難時是什麼樣子，例如一次失敗的實驗（O54）。
+- [事實] 多數學校明說不需要額外推薦信：MIT 說大部分申請者與錄取者都沒交（O06）、Yale 只要兩封老師推薦（O33）、Rice 說既不要求也不期待（O68）；Illinois 會在審閱前把未要求的推薦信移出檔案（O86），UC 則說除非校區或科系要求，不要交（O81）。
+- [推論] 額外推薦信只有在寫信人能補上必交推薦信給不了的證據時才值得送，例如研究指導者；Stanford（「new insights」，O49）與 Columbia（只考慮研究指導者或大學課程老師，O73）講得最清楚。
+- [事實] Additional Information：Georgia Tech 說留白沒關係（O21）；Yale 請大家別在這裡再寫一篇文章（O34）；UW 建議用來說明不尋常的修課進度、課程開設限制，或其他地方沒呈現的學業成果（O82）。
+- [事實] 面試大多是「選擇性、沒被安排也不扣分」：MIT、Yale、Harvard、Stanford、Duke、Swarthmore 都這樣寫（O07, O36, O44, O51, O42, O93）；Johns Hopkins、Michigan、Williams、Amherst 不辦一年級面試（O29, O79, O96, O95）。
+- [事實] 例外是 Olin，必須參加 Candidates' Weekend 才會被考慮，美國本土以外的學生改線上面試（O89）；Georgetown 規定能安排面試的地區都要面試（O97, O98）。
+- [推論] InitialView（有時加上 Vericant）是 Duke、Harvey Mudd、Penn、Georgetown、Caltech、Swarthmore 點名的替代管道，但沒有一校說一年級申請者必須做。對人在台灣的申請者，能不能排到面試取決於當地校友志工人數。
+- [事實] 明說不追蹤 demonstrated interest 的有 MIT、Yale、Duke、Johns Hopkins、Harvey Mudd、Swarthmore（O11, O38, O41, O29, O91, O93），經搜尋節錄確認的還有 Columbia、Cornell、Amherst、Northwestern（O73, O74, O94, O77）。Rice 是反例：請申請者填 prospective-student 表單，並把「對 Rice 的了解」列為考量因素（O66）。
+- [事實] 國際生助學金：MIT、Harvard、Yale 表示對國際生 need-blind（O13, O44, O39）；Stanford、Caltech、Penn、Rice、Harvey Mudd 表示 need-aware 或申請助學金會影響審查（O52, O57, O64, O69, O91）。
+- [事實] 翻譯規則各校一致：不能自己翻，要由學校職員或正式譯者翻，並附原件（O13, O44, O39, O52, O57, O69）。[推論] 審查者靠 school profile 理解非美國體系的成績單（O63, O52, O22），因此台灣學校的 profile 格外重要；但沒有招生辦公室針對台灣這樣說過。
+- [事實] 補充材料：MIT Maker Portfolio 說比起成品更在意製作過程，影片合計上限 2 分鐘，證據不足的專案無法審（O09）；Yale 說完整研究論文通常最有幫助（O32）；Caltech 指出錄取生中只有 42% 入學前做過研究（O56）。
+- [推論] 30 校大致分三群：收補充材料並交給教授審的（MIT、Yale、Harvard、Brown、Duke、Caltech、Johns Hopkins）、只收很窄範圍或完全不收的（Stanford、CMU 藝術以外、Harvey Mudd 只收 abstract、Illinois）、以及 UC（明說審查者不點連結，O80）。收補充材料的學校也都說大部分錄取者什麼都沒交。
+- 缺口：Brown 的活動與文書建議、Cornell 與 UIUC 對 Additional Information 的說法、Penn 招生部落格等這次都沒找到；也沒有任何招生辦公室說額外推薦信會扣分，這點維持 not stated。

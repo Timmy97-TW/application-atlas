@@ -224,3 +224,24 @@ Formula: international admit rate = international admitted ÷ international appl
 | N30 | https://www.amherst.edu/offices/institutional-research/cds | 2026-11-07 | official | Amherst: HTTP 404/405 to automated access; not retrieved |
 | N31 | https://www.swarthmore.edu/sites/default/files/assets/documents/institutional-effectiveness-research-assessment/Swarthmore-CDS-2025-26.pdf | 2026-11-07 | official | Swarthmore CDS 2025-26 B2, C1, C2, C8A, C9, C21, C22 (form fields) |
 | N32 | https://tableau.brown.edu/t/PublicContent/views/CommonDataSet/C-Admissions.csv | 2026-11-07 | official | Brown CDS 2025-26 C9 ACT score-range distribution (only sheet retrieved) |
+
+## 中文摘要（本筆記重點）
+
+- [事實] 所有數字都直接從各校自己的 CDS 檔案讀出（PDF 表單欄位、PDF 文字、xlsx 儲存格、MIT 的 HTML 表格），勾選欄位看不清楚的就把頁面轉成圖片人工判讀，沒有使用 WebFetch 摘要。除 Olin 只找到 2023-24 版（N18）外，其餘都是 2025-26 版（Fall 2025 入學班）。
+- [事實] 有幾所學校 C1 的「Total」列留白、只填性別分列，本筆記以性別列加總並標「Σ」：Caltech、Yale、Duke、Northwestern、Michigan、UCLA、Swarthmore。(N02, N05, N21, N22, N16, N25, N31)
+- [事實] Brown 的 CDS 只以 Tableau dashboard 公開，這次只成功匯出 C9 的 ACT 分布（送分者 94% 落在 30–36），其他欄位逾時沒拿到；Williams（403）與 Amherst（404/405）的 CDS 頁面拒絕自動存取，三校欄位都留空。(N10, N32, N29, N30)
+- [事實] 有 ED 數字的 9 校，ED 錄取率全部高於整體錄取率；差距最大的是 Columbia、Penn、Northwestern（兩者相除約 2.7–2.8），最小的是 Rice、Harvey Mudd（1.4–1.5）。Penn 的 ED 錄取者占全部錄取者 35.5%，Cornell 31.1%、Northwestern 30.8%。
+- [推論] 上面那個相除結果只是兩個不同申請池公開錄取率的商，不代表任何一位申請者走 ED 的個人機率。ED 池的組成可能和 RD 池不同（例如體育特招、legacy，或不需比較助學金就能承諾入學的家庭），但 CDS 沒有把 ED 池拆開，這點無法用本筆記的來源驗證。依 CLAUDE.md 規則 5，本筆記不寫「ED 機會是 N 倍」。
+- [事實] 讀到的 27 份檔案中，11 校有不具約束力的 EA（MIT、Caltech、Stanford、Harvard、Yale、Princeton、Georgetown、Georgia Tech、Purdue、Michigan、UIUC），其中 Caltech、Stanford、Harvard、Yale、Princeton、Georgetown 六校標為 restrictive。有 EA 的學校都沒有 ED；公立的 Georgia Tech、Michigan、Purdue、UIUC 在 1 月中下旬公布 EA 結果，私校多在 12 月中。
+- [事實] 「接受候補後最終被錄取」的比例差異極大：Caltech、Carnegie Mellon、UIUC、Harvey Mudd、UC Berkeley 都不到 1%；MIT、Penn、Rice、Princeton、Cornell、Yale 在 2–5%；Michigan、Stanford、UCLA、Georgia Tech、Georgetown、JHU、UCSD、UW 在 9–27%；Purdue 高達 96.76%（3,916/4,047）。
+- [推論] Purdue 的候補名單看起來比較像例行的第二階段，而不是備取名單，但 Purdue 的檔案沒有解釋，這個解讀未經證實。另外 Purdue 的數字是整個系統（含 Indianapolis 等校區），不是只有 West Lafayette。(N15)
+- [事實] C8A 標「Required」的學校，入學新生送 SAT 的比例多在 78–84%（MIT、Caltech、Harvard、Georgetown、Georgia Tech、Purdue），但 Stanford 只有 55.57%、Penn 52%。標「Considered if submitted」的九校中，有五校在 55% 以下：Swarthmore 40.14%、UIUC 42.59%、Duke 48%、Northwestern 48%、Columbia 50%。
+- [推論] Stanford、Penn 送分比例偏低，可能是因為 C9 統計的 Fall 2025 這一班錄取時，新恢復的考試要求還沒生效；Stanford C8F 提到恢復要求，但起始年份這次沒讀到，未經證實。
+- [推論] C9 只統計有送分的人，所以 test-optional 學校公布的 SAT 中間 50%，描述的是送分的那一群，不是整個班。
+- [事實] SAT Composite 中位數從 Purdue 的 1360 到 MIT、Stanford、Duke、JHU 的 1550；JHU 的第 25 百分位（1530）最高。Caltech、Harvard 只填單科分數，Penn 的 C9 沒有 Composite 列。(N02, N04, N09)
+- [事實] 非居民（B2 nonresident）占一年級新生的比例，從 UT Austin 的 3.83% 到 UC San Diego 的 18.06%；最高三名是 UCSD、UIUC、Columbia，最低三名是 Purdue、Michigan、UT Austin 三所公立旗艦。
+- [事實] 有填 C1 居住地分項的 12 校中，11 校的國際申請者錄取率低於整體錄取率，唯一例外是 UC San Diego（30.91% 對 28.56%）。Princeton、Columbia、Cornell 的國際申請者約占申請總數四分之一。
+- [推論] 國際生錄取率低於整體，本身不足以證明國際生受到不同對待；need-aware 助學金政策、申請池組成、預估報到率都可能有影響，而 CDS 都沒有衡量這些。
+- [推論] 同一份檔案裡 C1 的國際生入學人數和 B2 的非居民人數略有出入，是因為 C1 依申請時的實際住址、B2 依公民或簽證身分；UT Austin 差距最大（184 對 379）。
+- [事實] 幾個個別欄位需要人工再看：Carnegie Mellon 的 C2、C9 區塊標成「Fall 2024」，與 C1 的 Fall 2025 不一致（N13）；Duke 回答有 ED 和候補，但人數留空，C8F 寫 2026-27 申請季 test optional（N21）；UC Berkeley 回答 C8A「Y」卻把 SAT/ACT 標為「不予考量」，UW 回答「N」卻填了 C9（N24, N28）；Olin 的 B2 欄位順序可疑（N18）。
+- 待補：Brown 重試 Tableau CSV 匯出；Williams、Amherst 用瀏覽器開 CDS 頁；Olin 確認欄位並查是否有較新版本；Yale、Princeton、Duke、Stanford、Penn 的 C8A 標記，在網站寫出考試政策前，要先和各校目前的考試政策頁核對。

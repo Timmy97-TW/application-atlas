@@ -383,3 +383,22 @@ Method and limits (read first):
 | S86 | https://www.engin.umich.edu/admissions/undergraduate-admissions/can-i-get-in/ | 2026-11-07 | official | Michigan Engineering advice on calculus, chemistry, physics |
 | S87 | https://www.engin.umich.edu/admissions/undergraduate-admissions/admissions-faq/ | 2026-11-07 | official | Michigan Engineering first-years undeclared |
 | S88 | https://admissions.umich.edu/apply/first-year-applicants | 2026-11-07 | official | Access denied (HTTP 403 / "Access Denied") on 2026-11-07; recorded as unreachable |
+
+---
+
+## 中文摘要（本筆記重點）
+
+- [事實] 本批 15 校所引頁面都在 2026-11-07 讀取，全部是學校自己的招生網站（official），沒有使用 secondary 來源。admissions.umich.edu 對所有讀取方式都回傳 403，Michigan 的資料只來自工學院自己的招生頁 [S88]。
+- [事實] 申請系統：MIT 用自己的申請表，來源頁沒有提到 Common App [S2]；CMU 與 Georgia Tech 只收 Common App [S65a][S71]；Georgetown 可用自家 Georgetown App 或 Common App [S62]；Harvard 還接受郵寄紙本申請 [S21][S22]。
+- [事實] 「每校都要兩封老師推薦信」並不成立：Penn [S42]、CMU [S67]、Georgetown [S63] 只要一封；Michigan 國際生 checklist 也只列一封老師評量 [S85]；Georgia Tech 一封都不強制，全部標為選填 [S73][S79]。
+- [事實] Cornell 工程的規定是兩封中有一封來自數學、科學或 CS 老師即可，第二封不限科目，不是「數學、科學各一封」[S54]。
+- [事實] 額外推薦人的範圍差很多：Caltech 明列教練、mentor、雇主都可以，交研究論文時則「必須」附研究指導者的信 [S10]；Penn 的一封選填信可找 supervisor、mentor、coach [S42]；Georgia Tech 明文拒收老師與 counselor 以外的人 [S73]；CMU 收第三封但委員會「只看兩封」[S67]。
+- [事實] 面試三種型態都有：Yale 只限受邀且全部列入評估 [S29]；Georgetown 一旦分派就必須完成，並提交評估報告 [S63]；Columbia 沒有面試 [S36]；Georgia Tech、Caltech、CMU 不自辦面試，而是建議非英語母語者交 InitialView 或 Vericant 等付費第三方錄影 [S74][S12][S70]。
+- [事實] Princeton 要求一份英文、社會或歷史課的批改過書面報告，並明說偏好分析性寫作「而非科學研究」[S34]。[推論] 即使申請 B.S.E.，理工取向的申請者手上也要準備一篇人文報告。
+- [事實] Princeton 在 fall 2026 與 fall 2027 入學維持 test-optional，2027–28 申請季起恢復要求 [S31]；Columbia 也在 2027–28 起要求 SAT/ACT [S36]。
+- [事實] 補充材料的開放程度落差很大：Penn 只在 VIC（與轉學 Architecture）收作品集 [S46]；CMU 除 Fine Arts 外不收補充材料，但提供 Schoolhouse.world 連結與 Engineering/SCS 的 VIVA 專案影片 [S65]；Caltech [S14]、Columbia [S39]、Brown [S50]、Yale [S27] 則主動接受研究類材料。
+- [事實] 「必修」而非「建議」的課程規定只出現在：Caltech（微積分、物理、化學，替代方案只有三種且「no exceptions」）[S11]、Cornell Duffield Engineering [S54]、Cornell CALS [S56]、Purdue Engineering 與 Nursing [S81]。MIT、Stanford、Yale、Princeton、Columbia 寫的都是建議 [S5][S20][S30][S33][S36]。
+- [事實] 官網自相矛盾的例子：CMU 同一天在不同頁面寫出 11 月 1、2、3 日三個 ED 截止日 [S68][S69]；Caltech 截止日頁標「Fall 2026 entry」卻列 2026–27 申請季日期 [S13][S8]；Columbia 寫「six short answer questions」實際列出五題加一份清單 [S37]。[推論] CMU 在官網統一之前，以 11 月 1 日為準較保險。
+- [事實] Harvard 2026–27 補充題頁說明「不考慮 demonstrated interest」[S23]；Georgia Tech 則把所填主修與「對此主修興趣的證據」列為審查因素 [S76]；Purdue 把申請時間點與科系名額列為審查因素 [S81]。
+- [事實] 國際生財務：Georgia Tech 國際生報名費 $85、本國生 $75 [S72]；Caltech 與 Cornell 對國際生 need-aware [S12][S53]；Michigan 持暫時簽證者不能申請 need-based aid [S85]；Princeton 說不論國籍助學金政策相同，且 need-blind [S35]。
+- 缺口：Michigan 中央招生網站的文書、fee waiver、Other Recommender、面試均未核實 [S88]；Yale、Princeton、Georgetown 的報名費金額頁面未寫；Penn、Cornell、Purdue 的面試政策在所讀頁面中 not stated；Purdue 是否收選填推薦信未知。

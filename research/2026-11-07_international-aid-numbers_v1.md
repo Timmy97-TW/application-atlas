@@ -130,3 +130,23 @@ Notes on individual cells:
 | H33 | https://finaid.brown.edu/estimate-cost-aid/cost | 2026-11-07 | official | Brown 2026-27 cost of attendance (incoming first-year) |
 | H34 | https://sfs.jhu.edu/tuition-and-fees/ | 2026-11-07 | official | JHU cost page: HTTP 404; not retrieved |
 | H35 | https://www.admission.ucla.edu/tuition-aid/tuition-fees | 2026-11-07 | official | UCLA on-campus cost; "Total – Nonresidents" $84,770; "Updated July 2026"; no year named |
+
+## 中文摘要（本筆記重點）
+
+- [事實] 本筆記讀的是各校 CDS 的 H6（是否給 degree-seeking nonresidents 校方獎助學金、人數、平均、總額），對照 G1／G5 組成的校內 cost of attendance。24 校讀到檔案；Brown、Purdue、Michigan、Johns Hopkins、Williams、Amherst 六校的 H6 本次未讀到 (H09, H14, H15, H19, H28, H29)。
+- [事實] 時間不同步：2025-26 CDS 範本的 G1 填的是 2026-27 學年費用，H6 則是 2025-26 的獎助；Olin 兩者都是 2023-24 (H02–H31, H17)。[推論] 因此各校的「平均獎助 ÷ COA」比例會比同一年度計算的略低，差多少從檔案看不出來。
+- [事實] MIT 的數字是透過 WebFetch 摘要讀到的，讀法比其他學校弱，用於網站前應先在瀏覽器重查 (H01)。
+- [事實] 以人數算，受助 nonresident 最多的是 UT Austin 832 人，其次 Harvard 805、Princeton 597、Yale 459、Penn 448、MIT 411 (table)。UT Austin 人數最多，但平均只有 $21,343；Harvard 平均 $83,013 (table)。
+- [事實] 以總金額算：Harvard $66.8M、Princeton $51.8M、Yale $38.6M、Penn $36.1M、MIT $33.7M、Cornell $28.1M (table)。
+- [事實] 平均獎助占 CDS COA 的比例，由高到低：Swarthmore 93.8%、Columbia 92.9%、Princeton 90.7%、Cornell 88.5%、MIT 88.4%、Duke 88.2%、Stanford 87.6%、Harvard 87.3%（以官網區間低端計）、Caltech 86.4%、Yale 85.1%、Penn 81.4%、Rice 81.0%、Northwestern 74.7%、Georgetown 74.4% (table)。
+- [事實] 比例偏低的一組：Olin 34.8%（2023-24）、Harvey Mudd 33.5%（COA 不完整）、UT Austin 32.1%、UC San Diego 12.5%、UIUC 8.9% (table)。[推論] 在這幾校，受助的 nonresident 平均仍要自己負擔大部分費用；H6 只給一個合併人數，看不出其中多少是 merit、多少是 need。
+- [推論] 在 74–94% 那一組，受助 nonresident 平均拿到的校方獎助涵蓋了大部分公告費用。但這只是「受助者」的平均，不代表有多少國際申請者申請補助、被錄取或被拒，也不代表任何一位申請者會拿到多少；H6 不報這些數字。
+- [事實] CDS 勾選「nonresidents 沒有校方獎助學金」的是 Carnegie Mellon、Georgia Tech、UW Seattle (H12, H13, H27)。
+- [事實] UC Berkeley 與 UCLA 的 H6 完全空白，這是空格，不等於宣稱沒有補助 (H23, H24)。
+- [事實] 有報告 nonresident 獎助的公立大學：UT Austin（NB + NN，832 人，$21,343）、UC San Diego（未勾選任何框，214 人，$10,290）、UIUC（只勾 NN，45 人，$5,176）(H16, H25, H26)。
+- [事實] 只勾 need-based 的有 MIT、Caltech、Harvard、Yale、Princeton、Columbia、Penn、Cornell、Georgetown、Swarthmore；need-based 與 non-need-based 都勾的有 Stanford、Duke、Northwestern、Rice、Olin、Harvey Mudd、UT Austin (table)。
+- [事實] Harvard 的 CDS G1／G5 空白，改用官網 2026-2027 費用 $95,134–$100,134；該頁寫國際生「eligible for exactly the same aid as American students」(H04, H32)。
+- [推論] H6 的人數涵蓋四個年級所有受助的 degree-seeking nonresident 大學部學生，不是新生人數，不能直接和 cds-numbers 筆記裡 B2 的新生 nonresident 人數相比。
+- [事實] 用 H6「人數 × 平均」對照「總額」做一致性檢查，所有三項都填的學校都在四捨五入範圍內吻合，差距最大的是 Harvard (table)。
+- [事實] H6 填的是 nonresident（簽證身分），不是「台灣學生」；本筆記不推估任何個人能拿到多少。
+- 尚待補：六校未讀到的 CDS 要用瀏覽器開；MIT 重讀；Duke G5 交通費 $778 屬哪一欄待確認；只查了 Harvard、Brown、UCLA 三校官網的 2026-27 COA；Olin 是否有較新的 CDS。

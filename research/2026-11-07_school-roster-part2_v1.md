@@ -521,3 +521,25 @@ How to read this note:
 | S50 | https://www.swarthmore.edu/admissions-aid/apply-a-first-year-student | 2026-11-07 | official | Swarthmore 2026–27 prompts, 250 words |
 | S51 | https://www.swarthmore.edu/admissions-aid/international-students | 2026-11-07 | official | Swarthmore need-aware internationals, video options, letterhead |
 | S52 | https://admissions.berkeley.edu/apply-to-berkeley/application-resources/ | 2026-11-07 | official | Berkeley does not ask for supporting documents |
+
+---
+
+## 中文摘要（本筆記重點）
+
+- [事實] 本批 15 校的來源都在 2026-11-07 讀取。Williams 回傳 HTTP 403，Amherst 跳出自動的「Human Verification」頁，兩校只能依靠 Common App「explore」頁，資料較少且可能過時 [S45][S46][S47][S48]。
+- [事實] 申請系統：三所 UC 用 UC Application，四題 PIQ 從八題中選、每題 350 字 [S31]；UT Austin 可用 Common App 或 ApplyTexas [S38]；JHU、Northwestern、Swarthmore 也接受 Coalition on Scoir [S13][S18][S49]。
+- [事實] Northwestern 2026–27 必寫的只有一篇 300 字補充文書，Common App personal essay 變成選填，但有交仍會審閱 [S18][S19]。[推論] 已經為其他學校寫好主文書的人，可以自己決定要不要交給 Northwestern。
+- [事實] 推薦信政策差異：UIUC、UW、UCLA 不收 [S3][S42][S34]；UT Austin 選填、最多兩封、鼓勵校外人士寫 [S38]；Northwestern 只要一封老師信加 counselor [S18]。[推論] 對主要證據來自校外 mentor 的申請者，這四校不是沒有管道，就是要和老師信搶兩個名額。
+- [事實] 可收額外推薦人（Other Recommender 類）的學校：Olin（任何人皆可，但提醒別過量）[S9]、Harvey Mudd（一封，supervisor、mentor、employer）[S12]、Duke（一封 Personal Recommendation）[S16]、Rice（employer、coach、mentor、其他老師）[S22]、JHU（透過 portal）[S13]。
+- [事實] Harvey Mudd 的兩封老師信是一封 STEM、一封 HASS（人文、社會或藝術），只有課表全是 STEM 的學生才能改要第二封 STEM 信；counselor 信寫的是「when available」[S10][S12]。
+- [事實] Berkeley 目前的 freshman requirements、checklist、FAQ、counselor 頁都沒有提到受邀繳推薦信，站內搜尋「recommendation」也沒有結果 [S28][S29][S25][S30]；Berkeley 也明說不收補充材料 [S25][S52]。[推論] 這項政策可能已撤除或移出招生網站，重查前網站格子維持「not stated」。
+- [事實] 研究證據的收件方式：Harvey Mudd 只收摘要、放在 Additional Information [S12]；JHU 送件後在 portal 上傳摘要 [S14]；Swarthmore 收論文、簡報、研究專案或作品影片 [S49]；Duke 明文不收 research abstract [S16]；UIUC 與 Berkeley 不收未要求的材料 [S3][S25]。
+- [事實] 公立大學的主修選擇直接影響錄取：UCLA 只審一個主修 [S33]；Berkeley 只保證審第一志願主修 [S25]，L&S 熱門主修也只保證給以它為第一志願的人 [S27]；UCSD 可能把熱門主修落選者改錄到第二志願 [S37]；UW Allen School 沒有直接錄取的人日後轉入「unlikely」[S43]。[推論] 對這幾校的工程或 CS 申請者，第一志願主修欄的份量大於任何一篇文書。
+- [事實] 面試正在減少：JHU 沒有面試 [S14]，Northwestern 已不辦校友面試 [S18]，UCLA、Berkeley、UW 都沒有 [S34][S26][S42]；Duke、Northwestern、Rice、Berkeley、Swarthmore 則把國際生導向 InitialView 等第三方影片 [S16][S18][S23][S26][S51]。
+- [事實] Olin 的 Candidates' Weekend 是留在審查名單的必要條件，美國本土 48 州以外的申請者改線上面試 [S8]。[推論] 在台灣的申請者應預留 2 月底或 3 月初、以台灣時間進行的線上面試。
+- [事實] Swarthmore 要求就讀非美國高中的學生，從影片、英文檢定、InitialView 三者中至少交一項 [S49][S51]。
+- [事實] 先修課程：Harvey Mudd 必修微積分、化學、物理 [S10]；Olin 必修微積分與物理 [S7]；Duke Pratt 必修微積分 [S16]；Rice 理學院與工學院必修化學、物理但不要求微積分 [S22]；Northwestern McCormick 只是建議 [S21]；UIUC Grainger 設數學至少 3.5 年 [S4]。
+- [事實] Rice Box 的圖片「is not used for evaluative purposes」[S23]。
+- [事實] UT Austin 國際生頁寫報名費 $90，freshman 頁寫 $75 [S40][S38]。[推論] 非美國申請者適用國際生的金額，實際以申請系統內顯示為準。
+- [事實] 國際生報名費減免：Rice、UC、UT Austin、UW 明文不提供 [S23][S24][S40][S42]；Northwestern 有國際生可適用的類別（國際 CBO、經濟困難）[S20]；UIUC、Olin、Harvey Mudd、JHU、Duke（first-year）、Swarthmore 頁面 not stated。
+- 缺口：Williams、Amherst 需要人工讀取；Olin 專屬文書的題目與字數未公開；UW 是否在 Common App 內有自己的短答題看不到；Berkeley 受邀推薦信政策待確認；UIUC 文書題目沒有標年度，需等 2026–27 Common App 畫面再核對。

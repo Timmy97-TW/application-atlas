@@ -454,3 +454,23 @@ Rows with a year come from pages that print one; others are month-day dates on c
 11. Purdue's own pages do not say whether SAT/ACT is required for Fall 2027; the criteria page reads "(if provided)" [S82] `[事實]`. Purdue also states a 2026 Indiana-law review step for applicants holding citizenship of listed countries, including China (with Hong Kong and Macau) [S83] `[事實]`.
 12. Georgetown's EA is non-binding but bars applying to any binding ED program elsewhere [S69] `[事實]`, so it is not an unrestricted EA.
 13. Michigan could not be read: four umich.edu hosts returned HTTP 403 on 2026-11-07 [S84][S85] `[事實]`. Nothing about Michigan is recorded here.
+
+## 中文摘要（本筆記重點）
+
+- [事實] 本筆記涵蓋 15 校、2027 年秋季入學。早申截止大多落在 11 月 1 日前後：MIT EA、Caltech REA、Stanford REA、Harvard REA、Yale SCEA、Princeton SCEA、Columbia ED、Penn ED、Brown ED、Cornell ED、Georgetown EA、Purdue EA 都是 Nov 1；CMU ED 與 Georgia Tech EA2 是 Nov 2 [S1][S10][S18][S26][S33][S41][S46][S51][S56][S62][S69][S71][S76][S80]。
+- [事實] Georgia Tech 的 EA1（Oct 15）只給喬治亞州學生；國際申請者只能走 EA2（Nov 2），EA2 結果要到 1 月下旬才出來，已經晚於好幾校的 RD 截止日 [S76]。
+- [事實] Stanford 的藝術作品集申請者要提早：REA 版 Common App 須在 Oct 15 送出、作品 Oct 20；RD 版是 Dec 5 與 Dec 10 [S18]。
+- [事實] 反過來，好幾校的作品集截止日比申請截止日晚，容易漏看：Brown SlideRoom Nov 4 / Jan 7 [S58]、Princeton 藝術 Nov 6 / Jan 8 [S41]、Cornell 音樂 Nov 6 / Jan 7 [S62]、CMU RD 建築／藝術／設計 Jan 11 [S72]。
+- [事實] 2026–27 仍為 test optional、但已宣布下一輪恢復要求考試的有兩校：Columbia（2027 年 8 月起，2027–28 申請季）[S47] 與 Princeton（2028 年秋季入學起）[S42]。其餘取得政策頁的學校本季都要求 SAT/ACT 或指定考試組合。
+- [事實] Yale 是本批唯一有出處的 2026–27 考試變動：AP 與 IB 不再能滿足考試要求，只收 ACT 或 SAT [S34][S35][S36]。CMU 多數學院仍是 test flexible，但 School of Computer Science 要求 SAT 或 ACT [S73]。
+- [事實] 國際生財務補助截止不一定比申請晚：Cornell 國際生的 CSS Profile 截止日就是申請截止日（Nov 1 / Jan 2），國內優先日則是 Nov 15 / Feb 15 [S62][S67]；Yale 相反，國際生 EA 補助優先截止是 Dec 1 [S37]。
+- [事實] Caltech 把國際生補助文件分成三個時點：錄取前交 CSS Profile、錄取決定後交海外 Non-Tax Filer's Statement、入學後（2027-07-15）交本國報稅資料 [S13][S14]。
+- [事實] MIT 的 EA 錄取在 12 月中，補助方案則在 1 月中才發 [S1][S6]。[推論] MIT EA 錄取者拿到錄取信時，還看不到補助金額。
+- [事實] 各校自述的國際生 need 政策：need-blind 有 Harvard [S30]、Yale [S38]、Princeton [S45]、MIT [S8][S9]（[推論] 對國際生適用）、Brown（頁面文字仍寫 2025 年秋季入學）[S59]；need-aware 有 Caltech [S12]、Stanford [S24]、Columbia [S50]、Penn [S54]、Cornell [S62]；CMU 不提供國際生補助 [S74]。
+- [事實] Columbia 的國際 ED 申請者若申請補助，「may be deferred to Regular Decision」[S49]。
+- [事實] 官方頁面自相矛盾的例子：Brown RD 放榜「early April」[S57] 對「Late March」[S58]；Cornell「late March」[S62][S63] 對「early April」[S64]；Harvard 同一頁 REA 成績期限寫 10 月底也寫 11 月底 [S26]。[推論] 讀者應以兩者中較晚的為準來預期。
+- [事實] Columbia ED 錄取者回覆期限是 1 月中 [S46]，CMU ED 錄取者須在 Feb 1 前註冊 [S71]。[推論] 兩者都比 RD 的 May 1 早。
+- [事實] Georgetown 的 EA 不具約束力，但不能同時申請任何有約束力的 ED [S69]，所以不是無限制的 EA。
+- [事實] Purdue 自己的頁面沒說 2027 秋季入學是否要求 SAT/ACT，標準頁寫「(if provided)」[S82]；另有 2026 年起依 Indiana 州法、對持特定國家公民身分（含中國、香港、澳門）申請者的額外審查步驟 [S83]。
+- [事實] Michigan 四個 umich.edu 網域在 2026-11-07 對自動擷取回傳 HTTP 403，本筆記對 Michigan 不記錄任何資料，也不推估 [S84][S85]。
+- 尚待補：Caltech、Yale、Penn、Georgetown 等多校的期中成績單、面試或作品集截止日在頁面上 not stated（checked 2026-11-07），Georgia Tech 與 Purdue 的國際生補助也是 not stated [S76][S81]。

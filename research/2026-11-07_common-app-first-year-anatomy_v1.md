@@ -328,3 +328,25 @@ Unresolved points:
 13. [事實] The two Responsibilities and circumstances checklists are required for every applicant (S32, S6).
 14. [事實] The 2026 application PDF still tells students with "more than 3 siblings" to use Additional information, while the live 2026–27 catalog allows 10 siblings (S12, S6).
 15. [事實] The final report goes only to the one college the student will attend (or a waitlist college), and once sent, the counselor can no longer submit the counselor recommendation, mid-year, or optional reports (S20).
+
+## 中文摘要（本筆記重點）
+
+- [事實] 2026–27 版 Common App 於 2026-08-01 開放，每位申請者一個申請季最多送 20 所學校（S4, S37, S35）。截止時間以申請者「自己所在時區」的當天 11:59 pm 計算，不是學校所在地的時間（S38）。
+- [事實] Activities 改名為「Activities and experiences」，最多 10 項；字數上限沒變：角色 50 字元、組織 100 字元、描述 150 字元（S6, S31, S1）。「position/leadership」改為選填，高中畢業後的經歷可填實際起訖日期，並新增「Hobby」類別（S1, S7, S6）。
+- [事實] 新的說明文字明講：自學、不屬於任何正式團體的活動也可以填（S6, S12）。
+- [事實] Additional information 目前上限是 300 字，不是許多指南還在引用的 650 字；650 字是 2024–25 的舊欄位。另有一題 250 字的「Challenges and circumstances」（S10, S9, S6, S12）。[推論] 還寫「650 words」的資料描述的是舊版欄位。
+- [事實] 主文書 250–650 字，七個題目與 2025–26 相同；2025–26 選題比例最高的是自選題 28%（S6, S1, S3）。主文書在第一次送出後可以再改，供之後的學校使用，但已送出的申請不能修改（S40, S39）。
+- [事實] 「Responsibilities and circumstances」兩份勾選清單（每週 4 小時以上的家庭責任、通勤 60 分鐘以上等處境）對所有申請者都是必填（S32, S6）。
+- [事實] 推薦人分四種：Counselor、Teacher、Other Recommender、Advisor；Advisor 只能追蹤進度，不能交任何表格（S21, S28, S36）。每位推薦人只交一份通用表格，分享給學生指派的所有學校，送出後不能修改，也不應針對單一學校改寫（S20, S28, S6）。
+- [事實] Teacher evaluation 有 16 個評分項目、8 級量表，最高一級是「One of the top few encountered in my career」；評分不是必填，老師的個人資料還會問他是否填評分（S13, S6）。Counselor 只評四項，另有五級課程難度與五級「I recommend this student」（S14）。
+- [事實] 大學教授若教過學生，可在 Teacher evaluation 勾選「college/university instructor」身分填寫（S23, S13）。
+- [事實] Other Recommender 有八種類型（Arts Teacher、Clergy、Coach、College Access Counselor、Employer、Family Member、Peer、Other）；如果某校不收任何一種，或不收被邀請的那一種，系統根本無法把該推薦人指派給這所學校（S20, S21, S22）。
+- [事實] 校外研究指導者算不算 Other Recommender，Common App 沒有任何頁面寫明（checked 2026-11-07, S20, S21, S22）。[推論] 只能用八種類型之一邀請（最可能是「Other」或「Employer」），收不收由各校設定決定（S22）。
+- [事實] Courses & Grades 只有名單上的 76 個單位要求，其中一個是獎學金基金會；2025–26 有 77 所學校使用，另 38 所使用 Common App 以外的 STARS（S30, S29）。
+- [事實] Final Report 只送到學生要就讀的那一所（或候補錄取後要去的學校）；Final Report 送出後，counselor 就不能再交 Counselor Recommendation、Mid-year 或 Optional Report（S20）。Optional Report 每個申請年度只能交一次（S19, S20）。
+- [事實] 2026–27 新增：學校的補充題可依約 30 題 My Common Application 的答案決定顯示或隱藏；新帳號要驗證 email（S1）。
+- [事實] Counselor 的 Fee Waiver 表格不是技術上必需；學生自己勾選符合資格才是唯一的技術條件。每所收費學校現在會標示 fee waiver 是對所有學生、只對美國學生、或對任何人都不接受（S20, S1, S7）。
+- [事實] Common App 的舞弊定義包括把 AI 產出的實質內容當成自己的作品；任何第三方都能提出檢舉，調查結果可能通知學生名單上的每一所學校（S33, S34）。
+- [事實] 2026 版申請 PDF 仍寫「兄弟姊妹超過 3 位請用 Additional information」，但線上的 2026–27 data catalog 已允許填到 10 位（S12, S6）。
+- [推論] 論文、專案紀錄、作品集這類「不是推薦信」的材料，在 Common App 通用部分沒有對應欄位；只能透過各校自己的補充題、上傳或作品集連結進來，或寫進 Activities（150 字元）與 Additional information（300 字）。這是從欄位清單推得的，不是 Common App 的說法（S6）。
+- 尚待確認：上傳欄位的「2000」單位、平台對可邀請老師與 Other Recommender 的總數上限、「community leader」fee waiver 聲明如何傳送，皆 not stated（checked 2026-11-07, S6, S20, S21, S27, S35）。

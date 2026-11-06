@@ -238,3 +238,23 @@ application is submitted. Observed in this run:
 - Common App help-center articles (Additional Information, Honors) returned
   404 at guessed URLs; web search budget was exhausted in this run, so the
   correct article URLs were not found. Defer to A1.
+
+## 中文摘要（本筆記重點）
+
+- [事實] 每所學校都有自己的 SlideRoom 子網域（例如 mitadmissions.slideroom.com、brown.slideroom.com），SlideRoom 說明中心現在掛在 Liaison 網域下。(P1, P7, P8, P12, P17, P30)
+- [事實] 明說 SlideRoom 連結就在 Common App 裡的只有 Brown (P12)；SlideRoom 自己的入門頁沒有說明怎麼從 Common App 進入 (P4)。[推論] 申請者應該到各校招生頁或該校的 Common App 區塊找連結，不要期待 Common App 有統一入口。
+- [事實] UC San Diego 要先完成 UC 申請、拿到 ID 號碼，才能在 SlideRoom 上填寫 (P30)。
+- [事實] SlideRoom 的平台預設上限：圖片 <5 MB、影片 <250 MB、音訊 <30 MB、PDF <10 MB；件數上限由學校自訂，例如 MIT Maker 最多 25 個媒體、影片合計 2 分鐘，CMU Art 10–20 件。(P2, P7, P29)
+- [事實] SlideRoom 的 Link to Media 只收 YouTube、Vimeo、SoundCloud、Sketchfab 上的「單一公開項目」，不收播放清單；一般網站連結不是 SlideRoom 的媒體類型。(P2)
+- [事實] SlideRoom 送出後就不能再修改，要改得請學校先退回 (P3)；審閱者由各校自己指定，例如 MIT Maker Portfolio 由有 maker 經驗的教職員與校友組成的小組審閱。(P3, P7)
+- [事實] 作品集平台不只一個：CMU 戲劇與音樂學院用 Acceptd，12 月 1 日截止 (P29)；Duke、Rice、Swarthmore 提到 InitialView 的 Glimpse 或 VIVA 影片，CMU 則讓工程與資工申請者用 VIVA 介紹研究或專題。(P17, P20, P23, P28)
+- [事實] 很多學校在送出申請後才開通自己的 applicant portal：Yale Status Portal 收 STEM Research Supplement (P10)，Caltech portal 媒體上限 5 GB、文件 75 頁且不限件數 (P11)，Brown portal 有「Academic Paper/Research」類別與 90 秒內的影片自介 (P12)。
+- [事實] Harvey Mudd 的 Applicant Hub 寫明「不要附加檔案」(P19)；UIUC 的 myIllini 送出後活動、honors 與寫作答案都會鎖住 (P31)。
+- [事實] 接受申請者 email 補充資料的只有少數：Rice (P21)、Olin（不收影片與音樂作品集）(P18)、JHU 只限被 defer 的 ED 申請者 (P22)。Stanford 藝術、Duke、UT Austin、Penn 都明說不收或不審申請者的 email。(P13, P17, P24, P15) [推論] email 是例外，預設應走學校指定的 portal。
+- [事實] Common App 裡的網址欄位各校規定不同：Harvard 請申請者為 honors 附上連結 (P9)；Brown 的 YouTube 連結放在 Brown University Questions (P12)；CMU 只收 Schoolhouse.world 的作品網址 (P28)；Penn 不處理 Google Docs、Box 等雲端資料夾連結。(P15, P16)
+- [事實] 同樣是連結，學校態度相反：Caltech 作品集接受「Links and URLs」(P11)；Rice 藝術作品集接受 YouTube／Vimeo，但多件作品的網站「不會審閱」(P20)；Stanford Art Practice 說連結不審 (P14)；UW 請申請者不要送網站連結 (P25)。
+- [事實] 指定 Additional Information 作為補充內容去處的學校：Duke (P17)、Olin（放網站或部落格連結，控制在一到兩頁）(P18)、Penn (P16)、Harvey Mudd（只收摘要、不收全文）(P19)。UC 的對應欄位 Additional comments「不該寫成一篇文章」。(P27)
+- [推論] Additional Information 是所有 Common App 學校都會收到的唯一欄位，因此是唯一能送到「沒有補充材料管道」學校的路；但放在那裡的連結會不會被點開，只有少數學校表態。
+- [事實] Common App 的第一年概覽頁沒有提到作品集、SlideRoom 或藝術補充 (P5)；收藝術作品集的學校全都走 SlideRoom、Acceptd 或自家 portal。(P7, P8, P10, P12, P13, P17, P20, P29, P30)
+- [假設] Common App 已不再有自己的藝術補充表格；這與上述頁面一致，但沒有任何一頁明說。
+- 缺口：Slate 的 Status Portal 廠商文件本次連不上 (404)；2026–27 Requirements Grid PDF 的欄位標題沒能讀出 (P6)；Common App 說明中心的 Additional Information、Honors 文章網址未找到。

@@ -83,3 +83,18 @@ Consequence: every item below is a **lead** taken from web-search result summari
 ## Next step
 
 A run with a free browser tab should open B1–B21 directly and promote verified items to `[事實]`, replacing these leads.
+
+## 中文摘要（本筆記重點）
+
+- [事實] 這一輪原本要用內建瀏覽器重讀先前被擋的頁面，但瀏覽器以「tab cap reached」拒絕開新分頁；既有分頁屬於其他工作，沒有動（2026-11-07 查核）。
+- [事實] 改用 WebFetch 也失敗：Princeton、Purdue、Northwestern 回「certificate rejected」；Columbia、Oxford、UCAT 回 HTTP 403；Common App help center 只回一個前端載入殼（「CSS Error」）。換 browser user-agent 的指令被權限層視為繞過 bot 檢查而拒絕，沒有再試。
+- 結論：本筆記所有條目都只是從搜尋摘要得來的「線索」，一律標 `[假設]`，在之後的 run 真正讀到頁面前，不得進入 site data；對應格子維持 not stated。
+- [假設] Princeton：所有一年級申請者都要交一篇有評分的書面作業（英文、社會或歷史科，近三年內、至少一頁，附題目、分數與評語，原文須為英文）。fall 2027 入學 test optional，2027–28 申請季起恢復要求考試。(B1, B2)
+- [假設] Columbia：補充材料選交；research abstract 一至兩頁，透過 Common App 裡的 Columbia 題目提交；藝術類作品集（含 maker）走 SlideRoom；不保證每份都會審。搜尋摘要提醒其 FAQ 對研究材料的說法可能前後不一，需核對。(B5)
+- [假設] Purdue：EA 11/1（1/15 放榜）、RD 1/15；要被納入 merit scholarship 考量須在 11/1 前送齊。接受 SAT、ACT 或 CLT，可 superscore；究竟算「必繳」還是「test optional」尚未釐清。頁面都沒標 2026–27 年度。(B7, B8)
+- [假設] Northwestern：一年級與轉學生皆 test optional；不收未被要求的補充材料（作品、作品集、錄音、網站），例外是 Bienen、ISP、MMSS、Musical Theater 等特定學程。該 FAQ 可能已約 3.5 年未更新。(B10/B11)
+- [假設] Oxford Engineering Science 2027 入學：UCAS code H100（四年 MEng），須考 ESAT（Mathematics 1、Mathematics 2、Physics），入圍者線上面試，11 月底起篩選、12 月上中旬面試。舊的學院頁仍寫 PAT，應忽略。Biology 的考試、面試與 UCAS code：not stated。(B13/B15)
+- [假設] UCAT 2026：6/23 開放報名，7/13–9/24 應考，9/16 報名截止。£70／£115 的費用出自摘要自己都說較舊的 FAQ，未讀 B17 前不要採用。(B16)
+- [假設] Common App Activities：職位 50 字元、組織名稱 100、描述 150；2026–27 據稱改名為「Activities and experiences」、職位改為選填、字數上限不變。Honors 每項字數上限 not stated，摘要裡的「honors 150」看起來是在講 activity 描述，不予記錄。(B21, B19)
+- [假設] Additional Information 從 2025–26 起由 650 字縮為 300 字；「Challenges and circumstances」取代「Community disruption」，上限 250 字。(B20)
+- [推論] Common App help center 是 Salesforce Experience 網站，必須跑 JavaScript 才會出內容，要用真正的瀏覽器分頁；Other Recommender 的說明文章這次找不到，下一輪應直接讀 B18，並在 help center 搜尋「Other Recommender」與「Honors」。
