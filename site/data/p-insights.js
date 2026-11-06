@@ -10059,6 +10059,2165 @@ window.ATLAS.pages['insights'] = {
    ]
   },
   {
+   "id": "voice",
+   "h": {
+    "zh": "招生辦公室自己怎麼說：八個主題",
+    "en": "What admissions offices themselves say: eight topics"
+   },
+   "judgment": {
+    "zh": "八個主題上，各校說法高度一致：重深度不重數量、額外資料多半不需要、面試沒安排到不扣分；真正分歧的是國際生補助是否影響錄取，以及收不收補充資料。",
+    "en": "Across eight topics the offices largely agree: depth over count, extras mostly unnecessary, no penalty for a missing interview; they genuinely differ on whether an international aid request affects admission and on whether supplements are accepted."
+   },
+   "intro": {
+    "zh": "來源全是招生辦公室自己的頁面、部落格、FAQ 與 podcast；職員只寫職稱。學生部落客與學生面試官標為「學生」，他們的文章掛在官網上，但不是政策。2020 年前的文章標 ⚠ 2020 年前；MIT 自己把 2020 年前的部落格標為 archived，說明不代表現行政策。「未標日期」表示頁面沒有日期。Yale podcast 主持人說節目觀點是個人的，不必然代表 Yale University，這個但書適用於本節所有 Yale podcast 條目。引文保留英文原句，各在 15 字以內，其餘是轉述。每個主題最後的 [推論] 是跨校歸納，不是任何招生辦公室的說法。只能從搜尋引擎摘錄取得原文、沒有在頁面上直接讀到的條目，這裡一律不列。",
+    "en": "Every source is an admissions office's own page, blog, FAQ or podcast; staff appear by role only. Student bloggers and student interviewers are labelled as students: their posts are hosted by the office but are not policy. Posts from before 2020 are flagged ⚠ pre-2020; MIT marks its pre-2020 blog posts as archived and not current policy. \"Undated\" means the page shows no date. The Yale podcast hosts say the views are their own and not necessarily Yale University's; that caveat applies to every Yale podcast item here. Quotes stay in the original English, each under 15 words; the rest is paraphrase. The inference lines at the end of each topic are cross-school synthesis, not anything an office said. Items whose wording came only from a search-engine excerpt, not from the page itself, are left out."
+   },
+   "items": [
+    {
+     "t": {
+      "zh": "尚待瀏覽器確認、因此本節未收錄的學校說法（官方頁面拒絕自動存取，用語只來自搜尋引擎摘錄）：Princeton（文書與 AI 部落格、面試、graded written paper）、Northwestern（表現興趣、國際生面試）、Columbia（額外推薦信、表現興趣）、Michigan（why us、面試）、Williams 與 Amherst（面試、表現興趣）、Cornell（表現興趣）、Stanford FAQ（Additional Information）、UC（PIQ 連結、推薦信）、UT Austin FAQ 與候補頁、Harvard 2026–27 supplement PDF、Duke FAQ 的表現興趣與「demonstrated knowledge」用語、Penn 的 InitialView 問答、Georgetown 面試 FAQ、CMU 推薦老師的用語。",
+      "en": "School statements still awaiting a browser check and therefore not shown here (the official pages refused automated access; the wording comes only from search-engine excerpts): Princeton (essays-and-AI blog, interviews, graded written paper), Northwestern (demonstrated interest, international interviews), Columbia (extra letters, demonstrated interest), Michigan (why us, interviews), Williams and Amherst (interviews, demonstrated interest), Cornell (demonstrated interest), Stanford FAQ (Additional Information), UC (PIQ links, letters), UT Austin FAQ and waitlist page, the Harvard 2026–27 supplement PDF, Duke's FAQ wording on demonstrated interest and \"demonstrated knowledge\", Penn's InitialView answer, Georgetown's interview FAQ, and CMU's wording on choosing the teacher recommender."
+     },
+     "tag": "a"
+    }
+   ],
+   "subs": [
+    {
+     "h": {
+      "zh": "活動表",
+      "en": "The activities list"
+     },
+     "judgment": {
+      "zh": "談到活動表的招生辦公室說法一致：深度勝過數量，打工與照顧家人也算活動，要寫做了什麼而不是頭銜；沒有學校公布理想的項目數。",
+      "en": "Every office that addresses the list says the same: depth over count, jobs and family care count, describe what you did rather than your title; none publishes an ideal number of entries."
+     },
+     "items": [
+      {
+       "t": {
+        "zh": "MIT：「Please use our form, not a resume, to list your activities.」——請用申請表列活動，不要附履歷；只有四格，挑「對你最有意義」的四項。（申請頁，未標日期）",
+        "en": "MIT: \"Please use our form, not a resume, to list your activities.\" The form has four slots; pick \"the four that mean the most to you\". (apply page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O01"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT：「We don't expect applicants to do a million things.」——不期待申請人什麼都做。（what we look for 頁，未標日期）",
+        "en": "MIT: \"We don't expect applicants to do a million things.\" (what-we-look-for page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O02"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT：「We don't want a laundry list of a million activities.」——不要一長串流水帳。（家長與教育者頁，未標日期）",
+        "en": "MIT: \"We don't want a laundry list of a million activities.\" (parents and educators page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O04"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT：選讓你「delight, intrigue, and challenge you」的活動，而不是看起來厲害的；花在「family, work, or other obligations」的時間同樣正當。（prepare: activities 頁，未標日期）",
+        "en": "MIT: choose activities that \"delight, intrigue, and challenge you\", not ones that look impressive; time spent on \"family, work, or other obligations\" is legitimate. (prepare: activities page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O18"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT：「long lists of activities and awards are most often not useful.」——長串活動與獎項清單多半沒有幫助；額外附頁的用處在「depth, not breadth」。（職員部落格，2007，MIT 已標為 archived，⚠ 2020 年前）",
+        "en": "MIT: \"long lists of activities and awards are most often not useful.\" Extra sheets help with \"depth, not breadth.\" (staff blog, 2007, archived by MIT, ⚠ pre-2020)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O14"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Harvard：「Filling out the grid is an act of prioritization.」——填活動表本身就是排優先順序。（application tips 頁，2026-09-23 更新）",
+        "en": "Harvard: \"Filling out the grid is an act of prioritization.\" (application tips page, updated 2026-09-23)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O47"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Harvard：在意的是「the quality of students' activities than their quantity」——看品質多於數量。（同上，2026）",
+        "en": "Harvard: the office is more interested in \"the quality of students' activities than their quantity\". (same page, 2026)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O47"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Penn：家庭責任、暑期活動與社區經驗「all count as activities」，都算活動。（preparing your application: activities 頁，未標日期）",
+        "en": "Penn: family responsibilities, summer activities and community experiences \"all count as activities\". (preparing your application: activities, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O61"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Penn：「we don't value one kind of activity more than others!」——不偏好任何一種活動。（同上，未標日期）",
+        "en": "Penn: \"we don't value one kind of activity more than others!\" (same page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O61"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Penn 的實務建議：「Spell out any acronyms.」縮寫要寫全名；每項寫出具體職責；交代規模（「Give us a sense of scope.」）。（同上，未標日期）",
+        "en": "Penn, practical tips: \"Spell out any acronyms.\" \"Include specific responsibilities for each activity.\" \"Give us a sense of scope.\" (same page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O61"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Johns Hopkins：凡是「Anything that meaningfully takes up your time outside of class」都可以列。（Hopkins Insider 部落格，2026，作者僅標為投稿者）",
+        "en": "Johns Hopkins: count \"Anything that meaningfully takes up your time outside of class\". (Hopkins Insider blog, 2026; author shown only as a contributor)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O25"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Johns Hopkins：「Be specific and use action words.」文中把只寫「Worked at a grocery store」的條目改寫成完整描述作為示範。（同上，2026）",
+        "en": "Johns Hopkins: \"Be specific and use action words.\" The post rewrites a bare \"Worked at a grocery store\" into a fuller entry as its example. (same post, 2026)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O25"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Johns Hopkins：「There isn't a magic number of activities we're looking for」——沒有神奇的項目數。（同上，2026）",
+        "en": "Johns Hopkins: \"There isn't a magic number of activities we're looking for\". (same post, 2026)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O25"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Georgia Tech：問申請人有沒有想過把「farm work or taking care of siblings」列進去；讀者看重「you earning a position of trust in your community」。（招生部落格，負責新生招募的招生人員，2026）",
+        "en": "Georgia Tech: asks whether applicants considered listing \"farm work or taking care of siblings\"; readers value \"you earning a position of trust in your community\". (admission blog, a first-year recruitment professional, 2026)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O20"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Georgia Tech：「Focus on what you've contributed to your school, community, or family.」——寫你對學校、社區或家庭的貢獻。（招生部落格，職員段落，2020）",
+        "en": "Georgia Tech: \"Focus on what you've contributed to your school, community, or family.\" (admission blog, staff section, 2020)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O21"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Georgia Tech：AI 可以協助「construct your resume in the Activities portion」，也就是整理 Common App 活動欄的內容。（application review 頁，未標日期）",
+        "en": "Georgia Tech: AI may help \"construct your resume in the Activities portion\" of the Common App. (application review page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O22"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Rice：「Provide detailed descriptions and quantify your impact within your activities.」打工與家務責任「are just as important as school activities」。（部落格，招生官，2023 更新）",
+        "en": "Rice: \"Provide detailed descriptions and quantify your impact within your activities.\" Work and family duties \"are just as important as school activities\". (blog, admission officers, updated 2023)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O67"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Olin：「Anything is an activity!」「Quality over Quantity!」——什麼都可以是活動，重質不重量；寫出你在每個團體帶來的影響。（部落格，招生職員，2023）",
+        "en": "Olin: \"Anything is an activity!\" and \"Quality over Quantity!\" Describe the impact you made in each group. (blog, admission staff, 2023)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O88"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Duke：「we appreciate well-rounded and well-lopsided students」——全面型與偏科型都欣賞。（what we look for 頁，未標日期）",
+        "en": "Duke: \"we appreciate well-rounded and well-lopsided students\". (what-we-look-for page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O40"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：學業強「should not be a reason to try to present a spike」，不該因此刻意營造單一尖峰。（官方 podcast，招生官，2026）",
+        "en": "Yale: academic strength \"should not be a reason to try to present a spike.\" (official podcast, admissions officers, 2026)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O37"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：「you certainly do not need a passion project to get into Yale」——不需要 passion project。（官方 podcast 第 35 集，2023）",
+        "en": "Yale: \"you certainly do not need a passion project to get into Yale\". (official podcast ep. 35, 2023)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O34"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：更重要的是看到「you're building sustainable habits」，也就是能持續的習慣。（官方 podcast 第 52 集，2026）",
+        "en": "Yale: it matters more to see \"you're building sustainable habits.\" (official podcast ep. 52, 2026)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O38"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Caltech：「We do not evaluate these experiences by counting activities」——不以活動數量評估。（how we review 頁，未標日期）",
+        "en": "Caltech: \"We do not evaluate these experiences by counting activities\". (how-we-review page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O55"
+       ]
+      },
+      {
+       "t": {
+        "zh": "CMU：課外活動、工作與家庭責任「play a very important role in the admission process」。（admission consideration 頁，未標日期）",
+        "en": "CMU: activities, jobs and family commitments \"play a very important role in the admission process\". (admission consideration page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O75"
+       ]
+      },
+      {
+       "t": {
+        "zh": "UW：把「Exercising significant responsibility in a family, community, employment situation」列為審查因素之一。（holistic review 頁，未標日期）",
+        "en": "UW: lists \"Exercising significant responsibility in a family, community, employment situation\" as a factor. (holistic review page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O83"
+       ]
+      },
+      {
+       "t": {
+        "zh": "談到活動表的學校都說三件事：深度勝過數量；打工與照顧家人算活動；寫你做了什麼，不是寫頭銜。沒有任何學校公布理想項目數。",
+        "en": "Every office that addresses the list says three things: depth beats count; jobs and family care are activities; describe what you did, not your title. None publishes an ideal number of entries."
+       },
+       "tag": "i"
+      },
+      {
+       "t": {
+        "zh": "最具體的格式建議來自 Penn（縮寫、規模、職責）與 Hopkins 的改寫範例；MIT 只給四格，等於把同樣的偏好直接做進表單。",
+        "en": "Penn's tips (acronyms, scope, responsibilities) and Hopkins's before-and-after rewrite are the most concrete formatting guidance found. MIT's four-slot form builds the same preference into the form itself."
+       },
+       "tag": "i"
+      }
+     ]
+    },
+    {
+     "h": {
+      "zh": "主文書與補充文書",
+      "en": "Personal essay and supplements"
+     },
+     "judgment": {
+      "zh": "各校要的是具體、誠實、寫過程與反思的文章；「why us」要寫得只適用於這一所學校；有三所學校直接叫申請人別再刻意包裝。",
+      "en": "Offices ask for specific, honest essays about process and reflection; \"why us\" answers must fit one school only; three offices tell applicants outright to stop optimising."
+     },
+     "items": [
+      {
+       "t": {
+        "zh": "MIT：文書「not a writing test」，不是寫作測驗；「Be honest, be open, be authentic.」如果你在「stressing or strategizing about what makes you 'look best'」，那就「you're doing it wrong」。（申請頁，未標日期）",
+        "en": "MIT: the essays are \"not a writing test\". \"Be honest, be open, be authentic.\" If you are \"stressing or strategizing about what makes you 'look best'\", \"you're doing it wrong\". (apply page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O01"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT：「College isn't a costume party; you're not supposed to come dressed as someone else.」——大學不是變裝派對，不要扮成別人。（be yourself 頁，未標日期）",
+        "en": "MIT: \"College isn't a costume party; you're not supposed to come dressed as someone else.\" (be-yourself page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O03"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT：「Specificity, clarity, and brevity are your keys.」「Keep it simple.」——具體、清楚、簡短。（職員部落格，2012 撰、2023 編修，已標 archived，⚠ 2020 年前）",
+        "en": "MIT: \"Specificity, clarity, and brevity are your keys.\" \"Keep it simple.\" (staff blog, 2012, edited 2023, archived, ⚠ pre-2020)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O17"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT（學生部落客）：「Don't apply as a fictional character.」——別用虛構角色的身分申請。（學生部落格，2015，已標 archived，⚠ 2020 年前）",
+        "en": "MIT (student blogger): \"Don't apply as a fictional character.\" (student blog, 2015, archived, ⚠ pre-2020)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O12"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Johns Hopkins：Essays That Worked 頁的主要建議是「be original」；文章由招生委員會挑選。（Essays That Worked，Class of 2030，頁面未標日期）",
+        "en": "Johns Hopkins: the office's main advice on its Essays That Worked page is to \"be original\"; the essays were nominated by the admissions committee. (Essays That Worked, Class of 2030, page undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O24"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Johns Hopkins：「Focus on the process, rather than the outcome, in your essay.」「You don't need to be the hero of the story!」——寫過程不寫結果，你不必是故事的英雄。（Hopkins Insider 部落格，辦公室口吻，2026）",
+        "en": "Johns Hopkins: \"Focus on the process, rather than the outcome, in your essay.\" \"You don't need to be the hero of the story!\" (Hopkins Insider blog, office voice, 2026)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O27"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Johns Hopkins：申請的每一部分應該「complement, rather than repeat, other sections」，互補而不重複。（Hopkins Insider 部落格，2023）",
+        "en": "Johns Hopkins: each part should \"complement, rather than repeat, other sections.\" (Hopkins Insider blog, 2023)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O26"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Caltech：「We are less interested in polished performance」——對打磨過的表現比較沒興趣。（how we review 頁，未標日期）",
+        "en": "Caltech: \"We are less interested in polished performance\". (how-we-review page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O55"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：「we are not looking for pieces of publishable work」——不是在找可以出版的作品。（官方 podcast 第 35 集，2023）",
+        "en": "Yale: \"we are not looking for pieces of publishable work\". (official podcast ep. 35, 2023)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O34"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：「We learn a lot more about your achievements from your essays」——從文章更能了解你的成就。（官方 podcast 第 29 集，2022）",
+        "en": "Yale: \"We learn a lot more about your achievements from your essays\". (official podcast ep. 29, 2022)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O35"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：「These essays are not meant to be academic in their nature.」——這些文章本來就不是學術文章。（官方 podcast，2026）",
+        "en": "Yale: \"These essays are not meant to be academic in their nature.\" (official podcast, 2026)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O37"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Georgia Tech：「Essays should be personal and detailed.」——文章要個人化、有細節。（招生部落格，職員，2020）",
+        "en": "Georgia Tech: \"Essays should be personal and detailed.\" (admission blog, staff, 2020)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O21"
+       ]
+      },
+      {
+       "t": {
+        "zh": "UW：讀者想「see the person behind the transcripts and the numbers」；題目之間沒有偏好。（writing section 頁，未標日期）",
+        "en": "UW: readers want to \"see the person behind the transcripts and the numbers.\" There is no preferred prompt. (writing section page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O82"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Olin：「Through your essays, we get to hear your voice in the application.」——文章是申請裡聽得到你聲音的地方。（部落格，招生職員，2022）",
+        "en": "Olin: \"Through your essays, we get to hear your voice in the application.\" (blog, admission staff, 2022)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O90"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：「Don't read too many examples of successful college essays.」「Standing out is not the goal.」——別讀太多成功範文；脫穎而出不是目的。（官方 podcast 第 35 集，2023）",
+        "en": "Yale: \"Don't read too many examples of successful college essays.\" \"Standing out is not the goal.\" (official podcast ep. 35, 2023)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O34"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Johns Hopkins：「try to avoid generic language or takeaways」，避免空泛的用語與結論；文章不該是在「winning an argument」。（Hopkins Insider 部落格，2026）",
+        "en": "Johns Hopkins: \"try to avoid generic language or takeaways.\" The essay should not be about \"winning an argument\". (Hopkins Insider blog, 2026)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O27"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Harvey Mudd：「Avoid using your essay to list your activities and achievements.」——別把文章寫成活動與成就清單。（FAQ，未標日期）",
+        "en": "Harvey Mudd: \"Avoid using your essay to list your activities and achievements.\" (FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O91"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT（學生部落客）：「Don't indulge in exquisite words.」——別堆砌華麗字眼。（學生部落格，2015，已標 archived，⚠ 2020 年前）",
+        "en": "MIT (student blogger): \"Don't indulge in exquisite words.\" (student blog, 2015, archived, ⚠ pre-2020)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O12"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Penn：「Be sure you're answering the question or prompt being asked.」要回答題目本身，也別趕，留時間修改。（writing 頁，未標日期）",
+        "en": "Penn: \"Be sure you're answering the question or prompt being asked.\" Do not rush, so there is time to revise. (writing page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O62"
+       ]
+      },
+      {
+       "t": {
+        "zh": "UW：「Write like it matters, not like you're texting.」——當成重要的事來寫，不是傳訊息。（writing section 頁，未標日期）",
+        "en": "UW: \"Write like it matters, not like you're texting.\" (writing section page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O82"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Penn：「Show us why you're applying here.」——告訴我們為什麼申請這裡。（writing 頁，未標日期）",
+        "en": "Penn: \"Show us why you're applying here.\" (writing page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O62"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Rice：要從一般描述走向「specific experiences, interests and thoughts」；只寫地點或校園大小「doesn't necessarily reflect deep exploration」。（部落格，招生顧問，2025）",
+        "en": "Rice: move \"beyond general descriptions towards specific experiences, interests and thoughts\"; writing about location or campus size \"doesn't necessarily reflect deep exploration\". (blog, admission counselor, 2025)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O70"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Rice：「You can't just copy and paste your responses」——不能把答案複製貼上到各校。（部落格，招生官，2023 更新）",
+        "en": "Rice: \"You can't just copy and paste your responses\" across schools. (blog, admission officers, updated 2023)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O67"
+       ]
+      },
+      {
+       "t": {
+        "zh": "CMU：第三題短答「Tell us, don't show us (no websites please).」——用文字說，不要貼網站。（admission consideration 頁，未標日期）",
+        "en": "CMU: for the third short answer, \"Tell us, don't show us (no websites please).\" (admission consideration page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O75"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Georgia Tech：關於 AI，「your ultimate submission should be your own」——最後交出的必須是你自己的。（application review 頁，未標日期）",
+        "en": "Georgia Tech: on AI, \"your ultimate submission should be your own.\" (application review page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O22"
+       ]
+      },
+      {
+       "t": {
+        "zh": "補充文書的建議有兩類反覆出現：「why us」必須只適用於那一所學校（本頁已直接讀過的有 Rice、Penn）；主文書寫過程與反思而非成就（Hopkins、Caltech、Yale）。",
+        "en": "Two kinds of advice recur. \"Why us\" answers must be specific to that school (among pages read directly here: Rice and Penn). Personal essays should be about process and reflection rather than achievement (Hopkins, Caltech, Yale)."
+       },
+       "tag": "i"
+      },
+      {
+       "t": {
+        "zh": "MIT（「doing it wrong」）與 Yale（「Standing out is not the goal」）都直接叫申請人別再刻意經營，這可能表示過度包裝的文章是他們常見的情況；但沒有學校說有多常見，所以只是推論。",
+        "en": "MIT (\"doing it wrong\") and Yale (\"Standing out is not the goal\") both tell applicants to stop optimising. That suggests over-engineered essays are a pattern they see often. No office says how often, so this stays an inference."
+       },
+       "tag": "i"
+      }
+     ]
+    },
+    {
+     "h": {
+      "zh": "推薦信（含額外推薦信與 Other Recommender）",
+      "en": "Recommendations (including extra letters and Other Recommender)"
+     },
+     "judgment": {
+      "zh": "有用的推薦信是具體、有事例的；多數學校直接說額外推薦信不需要，只有寫信人能補上必交推薦信給不了的證據時才值得送。",
+      "en": "A useful letter is specific and built on episodes; most offices say outright that an extra letter is not needed, and it is worth sending only when the writer adds evidence the required letters cannot."
+     },
+     "items": [
+      {
+       "t": {
+        "zh": "MIT：推薦信「most helpful when they are specific and storied」，最好具體、有故事；「glowing superlatives」只有在「backed up with examples」時才有用。（推薦信寫作指南，辦公室口吻，未標日期）",
+        "en": "MIT: letters are \"most helpful when they are specific and storied\"; \"glowing superlatives\" help only \"if they are backed up with examples.\" (how to write good letters, office voice, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O05"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT：推薦信應該「go beyond a student's grades and academic performance」；空泛的信會讓人覺得「this teacher did not give much effort to the recommendation」。（同上，未標日期）",
+        "en": "MIT: letters should \"go beyond a student's grades and academic performance\"; a vague letter suggests \"this teacher did not give much effort to the recommendation.\" (same page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O05"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：「the specifics are so much more powerful than the superlatives」——細節比最高級形容詞有力得多。（官方 podcast 第 9 集，2020）",
+        "en": "Yale: \"the specifics are so much more powerful than the superlatives.\" (official podcast ep. 9, 2020)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O33"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：「Pick some teachers who know you and who like you.」——找了解你、也喜歡你的老師。（官方 podcast 第 9 集，2020）",
+        "en": "Yale: \"Pick some teachers who know you and who like you.\" (official podcast ep. 9, 2020)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O33"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：「Don't underestimate the power of these recommendations.」——別低估推薦信的分量。（官方 podcast，2026）",
+        "en": "Yale: \"Don't underestimate the power of these recommendations.\" (official podcast, 2026)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O37"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：談到和推薦老師見面：「Set up the meeting. Go there, even if it's 15 minutes.」——約時間，哪怕只有 15 分鐘也要去。（官方 podcast 第 52 集，2026）",
+        "en": "Yale: on meeting your recommender, \"Set up the meeting. Go there, even if it's 15 minutes.\" (official podcast ep. 52, 2026)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O38"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Caltech：請推薦人回答「Who is this student when the work becomes difficult?」——事情變難時，這位學生是什麼樣的人。（給推薦人的寫作建議，未標日期）",
+        "en": "Caltech: asks recommenders \"Who is this student when the work becomes difficult?\" (writing advice for recommenders, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O54"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Caltech：請推薦人舉出毅力的證據，例如「such as a failed lab trial」；來自寫作份量重的課的推薦信也很重要。（同上，未標日期）",
+        "en": "Caltech: asks for evidence of perseverance, \"such as a failed lab trial\"; letters from a class with a strong writing component are important. (same page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O54"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Georgia Tech：「A recommendation letter should highlight something new.」——推薦信應該帶出新東西。（招生部落格，招生顧問，2018，⚠ 2020 年前）",
+        "en": "Georgia Tech: \"A recommendation letter should highlight something new.\" (admission blog, admission counselor, 2018, ⚠ pre-2020)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O23"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Georgia Tech：「Good recommendations showcase your character/compliment your story.」——好的推薦信呈現品格、補強你的故事。（招生部落格，職員段落，2020）",
+        "en": "Georgia Tech: \"Good recommendations showcase your character/compliment your story.\" (admission blog, staff section, 2020)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O21"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Johns Hopkins：「Prioritize those who know you best.」——優先找最了解你的人。（Hopkins Insider 部落格，2026）",
+        "en": "Johns Hopkins: \"Prioritize those who know you best.\" (Hopkins Insider blog, 2026)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O28"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Johns Hopkins：官方的升學顧問推薦信範例會說明學校的限制（例如每年可修的 AP 門數上限），用來提供脈絡。（counselor letter samples 頁，未標日期）",
+        "en": "Johns Hopkins: the sample counselor letters explain school limits, such as a cap on AP courses per year, to give context. (counselor letter samples page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O30"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Rice：建議找和「your major of interest」相關的老師寫信。（部落格，招生官，2023）",
+        "en": "Rice: recommends a teacher related to \"your major of interest\". (blog, admission officers, 2023)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O67"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Stanford：「Letters from classroom teachers are strongly preferred.」——強烈偏好任課老師的信。（forms 頁，未標日期）",
+        "en": "Stanford: \"Letters from classroom teachers are strongly preferred.\" (forms page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O49"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT：接受一封選交的補充推薦信，但「Most applicants and most admitted students do not submit any supplemental recommendations.」——多數申請人與錄取者都沒交。（推薦信頁，未標日期）",
+        "en": "MIT: an optional supplemental letter is accepted, but \"Most applicants and most admitted students do not submit any supplemental recommendations.\" (letters page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O06"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：「We do not need a third teacher. We only want two.」「More is not necessarily better in this case」——不需要第三位老師，只要兩位。（官方 podcast 第 9 集，2020）",
+        "en": "Yale: \"We do not need a third teacher. We only want two.\" \"More is not necessarily better in this case\". (official podcast ep. 9, 2020)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O33"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Brown：必交的推薦信「provide all we need to make a thoughtful, informed admission decision」，已經足夠。（supplementary materials 頁，未標日期）",
+        "en": "Brown: the required letters \"provide all we need to make a thoughtful, informed admission decision.\" (supplementary materials page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O72"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Stanford：可以有一位 Other Recommender，前提是能「provide new insights about you」；除此之外「We only accept required documents.」（forms 頁、after you apply 頁，未標日期）",
+        "en": "Stanford: one Other Recommender may write if they can \"provide new insights about you\"; beyond that, \"We only accept required documents.\" (forms page and after-you-apply page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O49",
+        "B7-O50"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Rice：「A supplemental letter is not required or expected.」——補充推薦信既非必要，也不在預期之中。（FAQ，未標日期）",
+        "en": "Rice: \"A supplemental letter is not required or expected.\" (FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O68"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Duke：接受「one additional letter of recommendation」；沒有被安排面試的人，仍可另交一封選交的 Personal Recommendation。（apply 頁與校友面試頁，未標日期）",
+        "en": "Duke: will accept \"one additional letter of recommendation\"; applicants not offered an interview may still send one optional Personal Recommendation. (apply page and alumni interviews page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O43",
+        "B7-O42"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Harvey Mudd：建議額外推薦信最多一封。（FAQ，未標日期）",
+        "en": "Harvey Mudd: advises submitting at most one additional recommendation. (FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O91"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Harvard：額外推薦信可在送件後，透過確認信裡的個人連結補交。（application requirements 頁，未標日期）",
+        "en": "Harvard: extra letters may be sent after applying, through the personalised link in the confirmation email. (application requirements page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O46"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Johns Hopkins：額外推薦信可以當作選交資料上傳；候補中的學生不該再寄額外推薦信。（FAQ，未標日期）",
+        "en": "Johns Hopkins: extra recommendations may be uploaded as optional material; waitlisted students should not send additional letters. (FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O29"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Illinois：「No, we don't accept letter of recommendation or other unsolicited materials.」——不收推薦信，未要求的資料會在審查前從檔案移除。（first-year FAQ，未標日期）",
+        "en": "Illinois: \"No, we don't accept letter of recommendation or other unsolicited materials.\" Unsolicited letters are removed from the file before review. (first-year FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O86"
+       ]
+      },
+      {
+       "t": {
+        "zh": "UT Austin：推薦信「although not required」，不是必交，但交了會被審閱。（review 頁，未標日期）",
+        "en": "UT Austin: recommendations are reviewed \"although not required\". (review page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O84"
+       ]
+      },
+      {
+       "t": {
+        "zh": "多數學校直接說額外推薦信不需要；本頁直接讀到的來源中，只有 Illinois 會把它移除。額外推薦信只有在寫信人能補上必交推薦信給不了的證據（例如研究指導者）時才值得送；Stanford 的「new insights」說得最清楚。",
+        "en": "Most offices say directly that an extra letter is not needed; among the pages read directly here, only Illinois removes them. An extra letter is worth sending only when the writer adds evidence the required letters cannot, such as a research mentor. Stanford's \"new insights\" says this most plainly."
+       },
+       "tag": "i"
+      },
+      {
+       "t": {
+        "zh": "MIT、Caltech、Georgia Tech 三校都給了寫信人一個判斷好信的標準：要看到的事例，不是形容詞。申請人可以把這些頁面直接轉給老師，不必自己加註解。",
+        "en": "MIT, Caltech and Georgia Tech each give writers a test for a strong letter: observed episodes rather than adjectives. An applicant can pass these pages to a teacher without editorialising."
+       },
+       "tag": "i"
+      }
+     ]
+    },
+    {
+     "h": {
+      "zh": "Additional Information 欄",
+      "en": "The Additional Information section"
+     },
+     "judgment": {
+      "zh": "各校對用途的說法一致：放沒有其他地方可放的脈絡與事實；對誤用的說法也一致：別再寫一篇文章。留白也可以。",
+      "en": "Offices agree on the use (context and facts with no other place) and on the misuse (a second essay); leaving it blank is fine."
+     },
+     "items": [
+      {
+       "t": {
+        "zh": "MIT：申請最後有「one final, open-ended, additional-information text box」，一個開放的補充說明框。（申請頁，未標日期）",
+        "en": "MIT: the application ends with \"one final, open-ended, additional-information text box\". (apply page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O01"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT：「there are designated spaces to provide additional context」——補充脈絡有指定的欄位。（FAQ，未標日期）",
+        "en": "MIT: \"there are designated spaces to provide additional context\". (FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O10"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Georgia Tech：「It's okay to leave this section blank.」——這欄留白沒關係。（招生部落格，職員段落，2020）",
+        "en": "Georgia Tech: \"It's okay to leave this section blank.\" (admission blog, staff section, 2020)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O21"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：「please don't write an extra essay there」——請別在那裡再寫一篇文章。（官方 podcast 第 35 集，2023）",
+        "en": "Yale: \"please don't write an extra essay there\". (official podcast ep. 35, 2023)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O34"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：用這欄寫校內層級的獎項是「absolutely appropriate」，完全合適。（官方 podcast 第 29 集，2022）",
+        "en": "Yale: using it for a school-level award is \"absolutely appropriate\". (official podcast ep. 29, 2022)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O35"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Johns Hopkins：用來放「doesn't fit in the essays or activities list」的內容，也就是文章與活動表放不下的東西。（Hopkins Insider 部落格，2023）",
+        "en": "Johns Hopkins: use it for content that \"doesn't fit in the essays or activities list.\" (Hopkins Insider blog, 2023)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O26"
+       ]
+      },
+      {
+       "t": {
+        "zh": "UW：建議用途包括「Unusual academic progression」、「Course availability issues」，以及其他地方看不到的學業成果。（writing section 頁，未標日期）",
+        "en": "UW: suggested uses are \"Unusual academic progression\", \"Course availability issues\", and academic work shown nowhere else. (writing section page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O82"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Harvey Mudd：沒有交任何額外資料的申請人不會因此吃虧。（FAQ，未標日期）",
+        "en": "Harvey Mudd: applicants are not disadvantaged for submitting nothing extra. (FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O91"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Penn：選填欄位的用意是讓申請人「To be your own best advocate」，替自己說話。（writing 頁，未標日期）",
+        "en": "Penn: the stated purpose of the optional spaces is for applicants \"To be your own best advocate\". (writing page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O62"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT：「None of the below is required or even expected.」——以下都不是必要、甚至不在預期之中。（職員部落格，2007，已標 archived，⚠ 2020 年前）",
+        "en": "MIT: \"None of the below is required or even expected.\" (staff blog, 2007, archived, ⚠ pre-2020)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O14"
+       ]
+      },
+      {
+       "t": {
+        "zh": "各校對用途的說法一致：放沒有其他地方可放的脈絡與事實，例如課程開設狀況、非典型的修課進度、校內獎項或中斷；對誤用的說法也一致：別寫成第二篇文章。Georgia Tech 的「okay to leave this section blank」是找到最明確的留白許可。",
+        "en": "The offices agree on the use: context and facts with no other place, such as course availability, unusual progression, a school-level award, or a disruption. They agree on the misuse: a second essay. Georgia Tech's \"okay to leave this section blank\" is the clearest permission found."
+       },
+       "tag": "i"
+      }
+     ]
+    },
+    {
+     "h": {
+      "zh": "面試",
+      "en": "Interviews"
+     },
+     "judgment": {
+      "zh": "有面試的學校幾乎都說「選擇性、沒安排到不扣分」；Olin 的 Candidates' Weekend 是必須參加的例外；台灣申請人能不能面試，取決於當地有沒有志工。",
+      "en": "Where interviews exist they are almost always optional with no penalty if not offered; Olin's required Candidates' Weekend is the exception, and for applicants abroad availability depends on local volunteers."
+     },
+     "items": [
+      {
+       "t": {
+        "zh": "MIT：若無法安排面試，「it will be waived, and your application will not be adversely affected」——會豁免，申請不受影響。（面試頁，未標日期）",
+        "en": "MIT: if no interview can be offered, \"it will be waived, and your application will not be adversely affected.\" (interview page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O07"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT：準備「stories or examples that will give your interviewer a vivid sense」，讓面試官具體認識你；面試通常約一小時。（面試頁，未標日期）",
+        "en": "MIT: prepare \"stories or examples that will give your interviewer a vivid sense\" of you. Interviews typically last an hour. (interview page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O07"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：「Interviews are not required, and many successful applicants are not interviewed.」「Interviews are by invitation only.」「All Yale interviews are evaluative.」——非必要、僅限受邀、都會計入評估。（interviews 頁，未標日期）",
+        "en": "Yale: \"Interviews are not required, and many successful applicants are not interviewed.\" \"Interviews are by invitation only.\" \"All Yale interviews are evaluative.\" (interviews page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O36"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：「Not receiving an interview invitation is not an indication that your application is not competitive.」——沒收到邀請不代表申請沒競爭力。（同上，未標日期）",
+        "en": "Yale: \"Not receiving an interview invitation is not an indication that your application is not competitive.\" (same page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O36"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：「An interviewer is someone who didn't see the rest of the application.」——面試官沒看過你其他申請資料。（官方 podcast 第 35 集，2023）",
+        "en": "Yale: \"An interviewer is someone who didn't see the rest of the application.\" (official podcast ep. 35, 2023)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O34"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：「We aren't asking the interviewer to evaluate your academic preparation.」——不請面試官評估學業準備。（官方 podcast，2026）",
+        "en": "Yale: \"We aren't asking the interviewer to evaluate your academic preparation.\" (official podcast, 2026)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O37"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Harvard：「The absence of an interview will not adversely affect your candidacy.」——沒有面試不會對申請不利。（國際申請人頁與 FAQ，未標日期）",
+        "en": "Harvard: \"The absence of an interview will not adversely affect your candidacy.\" (international applicants page and FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O44",
+        "B7-O45"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Stanford：「Your application will be considered complete with or without an interview.」邀請取決於「alumni availability in your high school area」。（面試頁，未標日期）",
+        "en": "Stanford: \"Your application will be considered complete with or without an interview.\" Invitations follow \"alumni availability in your high school area.\" (interview page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O51"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Duke：「not receiving an interview will not affect your chances of admission」；國際申請人可用 InitialView，中國的申請人「are particularly encouraged」。（校友面試頁，未標日期）",
+        "en": "Duke: \"not receiving an interview will not affect your chances of admission.\" International applicants may use InitialView; applicants in China \"are particularly encouraged\" to. (alumni interviews page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O42"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Georgetown：面試是「a key part of Georgetown's application process」。（校友面試頁，未標日期）",
+        "en": "Georgetown: interviews are \"a key part of Georgetown's application process\". (alumni interview page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O97"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Johns Hopkins：「we do not offer interviews as part of our admissions process」——不提供面試。（FAQ，未標日期）",
+        "en": "Johns Hopkins: \"we do not offer interviews as part of our admissions process\". (FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O29"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Swarthmore：「Applicants who do not interview are not at a disadvantage.」面試只開放給美國高中的學生；國際學生「are strongly encouraged to submit a Video Response」。（request an interview 頁，未標日期）",
+        "en": "Swarthmore: \"Applicants who do not interview are not at a disadvantage.\" Interviews are open only to students at US high schools; international students \"are strongly encouraged to submit a Video Response.\" (request-an-interview page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O93"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Harvey Mudd：「All interviews are conducted online.」國際申請人被鼓勵使用 InitialView 或 Vericant，這兩項服務沒有費用減免。（interviews 頁，未標日期）",
+        "en": "Harvey Mudd: \"All interviews are conducted online.\" International applicants are encouraged to use InitialView or Vericant; there are no fee waivers for those services. (interviews page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O92"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Rice：校友面試與學生面試「weighted equally in the evaluation process」；沒配對到面試不影響結果。（國際申請人頁，未標日期）",
+        "en": "Rice: alumni and student interviews are \"weighted equally in the evaluation process\"; not being matched does not affect the decision. (international applicants page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O69"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Rice（學生面試官）：「research Rice and know why you want to go to school here」——先研究 Rice，知道你為何想來。（學生面試官部落格，2023 更新）",
+        "en": "Rice (student interviewers): \"research Rice and know why you want to go to school here.\" (senior interviewers' blog, updated 2023)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O71"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Olin：參加 Candidates' Weekend「is required to be considered for admission」，且有「evaluative components」；美國本土以外的學生以線上方式面試。（what we look for 頁，未標日期）",
+        "en": "Olin: Candidates' Weekend attendance \"is required to be considered for admission\" and has \"evaluative components\". Students outside the continental US interview virtually. (what-we-look-for page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O89"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Georgia Tech：把「Interview for International Applicants」列為審查因素之一，沒有進一步說明。（application review 頁，未標日期）",
+        "en": "Georgia Tech: lists \"Interview for International Applicants\" as a review factor, without detail. (application review page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O22"
+       ]
+      },
+      {
+       "t": {
+        "zh": "CMU：提供選交的 VIVA 影片評估（在 InitialView 平台上），只限 Engineering 與 Computer Science 申請人。（requirements 頁，未標日期）",
+        "en": "CMU: an optional VIVA video assessment on InitialView's platform, for Engineering and Computer Science applicants only. (requirements page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O76"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Georgetown：「Georgetown accepts InitialView interviews, but they are not required」——接受 InitialView，但非必要。（國際申請人 FAQ，未標日期）",
+        "en": "Georgetown: \"Georgetown accepts InitialView interviews, but they are not required\". (international FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O98"
+       ]
+      },
+      {
+       "t": {
+        "zh": "有面試的學校幾乎都是「選擇性、沒安排到不扣分」；Olin（必須參加 Candidates' Weekend）是例外。對台灣的申請人來說，能不能面試取決於當地志工人數，Stanford 直接這樣說。",
+        "en": "Where interviews exist they are almost always \"optional, no penalty if not offered\". Olin is the exception (required Candidates' Weekend). For a Taiwan-based applicant, availability depends on volunteer supply, which Stanford says outright."
+       },
+       "tag": "i"
+      },
+      {
+       "t": {
+        "zh": "InitialView（有時加上 Vericant）是 Duke、Harvey Mudd、Georgetown 官方點名的替代管道，Swarthmore 則有自己的影片回覆；沒有任何一校說新生申請必須使用。",
+        "en": "InitialView, and sometimes Vericant, is the official substitute named by Duke, Harvey Mudd and Georgetown; Swarthmore offers its own video response. None says it is required for first-year applicants."
+       },
+       "tag": "i"
+      }
+     ]
+    },
+    {
+     "h": {
+      "zh": "Demonstrated interest（是否追蹤「表現興趣」）",
+      "en": "Demonstrated interest"
+     },
+     "judgment": {
+      "zh": "直接讀過頁面的學校中，MIT、Yale、Hopkins、Harvey Mudd、Swarthmore 都說不追蹤；Rice 是最明顯的反例；Georgia Tech 看的是對科系的興趣。",
+      "en": "Among pages read directly, MIT, Yale, Hopkins, Harvey Mudd and Swarthmore say interest is not tracked; Rice is the clearest counter-example; Georgia Tech looks at interest in the major."
+     },
+     "items": [
+      {
+       "t": {
+        "zh": "MIT：「we don't consider demonstrated interest」——不考慮表現興趣。（about 頁，未標日期）",
+        "en": "MIT: \"we don't consider demonstrated interest\". (about page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O11"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT：「we do not consider demonstrated interest as part of your application」。（院長部落格，2020，MIT 已標為 archived）",
+        "en": "MIT: \"we do not consider demonstrated interest as part of your application\". (dean's blog, 2020, archived by MIT)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O15"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Duke：「Students don't need to visit the campus」——不必參觀校園。（resources／FAQ 頁，未標日期；此句為直接讀取，頁上其他用語待確認）",
+        "en": "Duke: \"Students don't need to visit the campus\". (resources/FAQ page, undated; this sentence was read directly, other wording on the page is unconfirmed)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O41"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：「We do not track demonstrated interest at all.」——完全不追蹤。（官方 podcast 第 52 集，2026）",
+        "en": "Yale: \"We do not track demonstrated interest at all.\" (official podcast ep. 52, 2026)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O38"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Johns Hopkins：「we do not track demonstrated interest」。（FAQ，未標日期）",
+        "en": "Johns Hopkins: \"we do not track demonstrated interest\". (FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O29"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Harvey Mudd：「We assume that you've applied to Harvey Mudd」是因為你有興趣，所以不另外考慮興趣。（FAQ，未標日期）",
+        "en": "Harvey Mudd: \"We assume that you've applied to Harvey Mudd\" because you are interested; interest is not considered. (FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O91"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Swarthmore：「Swarthmore does not practice 'demonstrated interest' in its application review process.」（面試頁，未標日期）",
+        "en": "Swarthmore: \"Swarthmore does not practice 'demonstrated interest' in its application review process.\" (interview page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O93"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Rice：沒有用這個詞，但請申請人登記或填寫潛在學生表單；補充文書要寫「specific aspects of Rice excite you」；「Knowledge about Rice」列在審查因素中。（application philosophy 頁，未標日期）",
+        "en": "Rice: never uses the phrase, but asks applicants to register or complete a prospective-student form; the supplement should say which \"specific aspects of Rice excite you\"; \"Knowledge about Rice\" is listed among the factors. (application philosophy page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O66"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Georgia Tech：「evidence of your interest in this major is an indicator」——看的是對科系的興趣，不是對學校。（application review 頁，未標日期）",
+        "en": "Georgia Tech: \"evidence of your interest in this major is an indicator\". The interest meant is in the major, not in the school. (application review page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O22"
+       ]
+      },
+      {
+       "t": {
+        "zh": "在本頁直接讀過的來源中，MIT、Yale、Hopkins、Harvey Mudd、Swarthmore 的說法是「不追蹤」；Rice 是最明顯的反例：要求登記表單，並把對 Rice 的了解列為因素。Rice 也說，契合度應該寫在「why us」文書裡，而不是靠接觸次數。",
+        "en": "Among the sources read directly here, MIT, Yale, Hopkins, Harvey Mudd and Swarthmore state \"not tracked\". Rice is the clearest counter-example: it asks for a form registration and lists knowledge of Rice as a factor. Rice also says fit should show in the \"why us\" essay rather than in contact counts."
+       },
+       "tag": "i"
+      },
+      {
+       "t": {
+        "zh": "本輪沒找到兩方說法的學校：Stanford、Harvard、Princeton、Penn、Brown、CMU、Michigan、UIUC、Purdue、UC、UW、Williams、Olin、Georgetown。這是「未說明（2026-11-07 查）」，不是任何一方的證據。",
+        "en": "Schools not found saying anything either way in this run: Stanford, Harvard, Princeton, Penn, Brown, CMU, Michigan, UIUC, Purdue, UC, UW, Williams, Olin, Georgetown. That is \"not stated (checked 2026-11-07)\", not evidence either way."
+       },
+       "tag": "i"
+      }
+     ],
+     "table": {
+      "cols": [
+       {
+        "zh": "學校",
+        "en": "School"
+       },
+       {
+        "zh": "是否追蹤表現興趣（學校自己的說法）",
+        "en": "Tracks interest? (as the school states it)"
+       },
+       {
+        "zh": "來源",
+        "en": "Source"
+       }
+      ],
+      "rows": [
+       {
+        "cells": [
+         {
+          "zh": "MIT",
+          "en": "MIT"
+         },
+         {
+          "t": {
+           "zh": "不考慮：「we don't consider demonstrated interest」",
+           "en": "No: \"we don't consider demonstrated interest\""
+          },
+          "tag": "f",
+          "src": [
+           "B7-O11",
+           "B7-O15"
+          ]
+         },
+         "B7-O11, B7-O15"
+        ]
+       },
+       {
+        "cells": [
+         {
+          "zh": "Yale",
+          "en": "Yale"
+         },
+         {
+          "t": {
+           "zh": "不追蹤：「We do not track demonstrated interest at all.」",
+           "en": "No: \"We do not track demonstrated interest at all.\""
+          },
+          "tag": "f",
+          "src": [
+           "B7-O38"
+          ]
+         },
+         "B7-O38"
+        ]
+       },
+       {
+        "cells": [
+         {
+          "zh": "Johns Hopkins",
+          "en": "Johns Hopkins"
+         },
+         {
+          "t": {
+           "zh": "不追蹤：「we do not track demonstrated interest」",
+           "en": "No: \"we do not track demonstrated interest\""
+          },
+          "tag": "f",
+          "src": [
+           "B7-O29"
+          ]
+         },
+         "B7-O29"
+        ]
+       },
+       {
+        "cells": [
+         {
+          "zh": "Harvey Mudd",
+          "en": "Harvey Mudd"
+         },
+         {
+          "t": {
+           "zh": "不考慮（假定申請就代表有興趣）",
+           "en": "Not considered (applying is taken as interest)"
+          },
+          "tag": "f",
+          "src": [
+           "B7-O91"
+          ]
+         },
+         "B7-O91"
+        ]
+       },
+       {
+        "cells": [
+         {
+          "zh": "Swarthmore",
+          "en": "Swarthmore"
+         },
+         {
+          "t": {
+           "zh": "不採用：「does not practice 'demonstrated interest'」",
+           "en": "No: \"does not practice 'demonstrated interest'\""
+          },
+          "tag": "f",
+          "src": [
+           "B7-O93"
+          ]
+         },
+         "B7-O93"
+        ]
+       },
+       {
+        "cells": [
+         {
+          "zh": "Duke",
+          "en": "Duke"
+         },
+         {
+          "t": {
+           "zh": "僅直接讀到「Students don't need to visit the campus」；完整說法待瀏覽器確認",
+           "en": "Only \"Students don't need to visit the campus\" read directly; full wording awaits a browser check"
+          },
+          "tag": "f",
+          "src": [
+           "B7-O41"
+          ]
+         },
+         "B7-O41"
+        ]
+       },
+       {
+        "cells": [
+         {
+          "zh": "Rice",
+          "en": "Rice"
+         },
+         {
+          "t": {
+           "zh": "沒有用這個詞；請申請人登記表單，並把「Knowledge about Rice」列為因素",
+           "en": "Term not used; asks for a prospective-student form and lists \"Knowledge about Rice\" as a factor"
+          },
+          "tag": "f",
+          "src": [
+           "B7-O66"
+          ]
+         },
+         "B7-O66"
+        ]
+       },
+       {
+        "cells": [
+         {
+          "zh": "Georgia Tech",
+          "en": "Georgia Tech"
+         },
+         {
+          "t": {
+           "zh": "看的是對科系的興趣：「evidence of your interest in this major is an indicator」",
+           "en": "Interest in the major: \"evidence of your interest in this major is an indicator\""
+          },
+          "tag": "f",
+          "src": [
+           "B7-O22"
+          ]
+         },
+         "B7-O22"
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "h": {
+      "zh": "國際申請人",
+      "en": "International applicants"
+     },
+     "judgment": {
+      "zh": "就學校自己的說法，MIT、Harvard、Yale 對國際生不看支付能力；Stanford、Caltech、Penn、Rice、Harvey Mudd 說國際生的補助申請會影響錄取；翻譯一律不能自己做。",
+      "en": "As stated by the schools, MIT, Harvard and Yale do not weigh international applicants' ability to pay; Stanford, Caltech, Penn, Rice and Harvey Mudd say an international aid request affects admission; translations are never self-made."
+     },
+     "items": [
+      {
+       "t": {
+        "zh": "MIT：「MIT practices need-blind admissions.」國際生申請約占申請總數的四分之一。（國際申請 FAQ，未標日期）",
+        "en": "MIT: \"MIT practices need-blind admissions.\" Almost one quarter of applications come from international students. (international FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O13"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT：「we do not have caps or quotas for countries」——沒有國家名額上限。（新生國際申請人頁，未標日期）",
+        "en": "MIT: \"we do not have caps or quotas for countries\". (first-year international page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O08"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT：所有資料必須是英文，且「you can't translate the material yourself」——不能自己翻譯。（國際申請 FAQ，未標日期）",
+        "en": "MIT: all materials must be in English, and \"you can't translate the material yourself.\" (international FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O13"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT（學生部落客）：曾寫 MIT 是「only five need-blind admissions schools」之一；現行 FAQ 的數字不同，這個數字不應採用。（學生部落格，2018，已標 archived，⚠ 2020 年前）",
+        "en": "MIT (student blogger): described MIT as one of \"only five need-blind admissions schools\". The current FAQ gives a different count, so the student's number should not be used. (student blog, 2018, archived, ⚠ pre-2020)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O16"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Harvard：「Our admissions and financial aid processes are the same for all applicants」——招生與補助流程對所有申請人相同。（國際申請人頁，未標日期）",
+        "en": "Harvard: \"Our admissions and financial aid processes are the same for all applicants\". (international applicants page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O44"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Harvard：原文文件「should always accompany the translated version」；老師可以翻譯，申請人本人不行。（同上，未標日期）",
+        "en": "Harvard: a copy of the original document \"should always accompany the translated version\". A teacher may translate; the applicant may not. (same page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O44"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Harvard：非美國學校的文件「may differ substantially from that submitted by an American high school」，可能和美國高中交的很不一樣。（同上，未標日期）",
+        "en": "Harvard: non-US school documents \"may differ substantially from that submitted by an American high school\". (same page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O44"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：申請人的審查「without regard to their ability to pay」；不接受自己翻譯的文件。（國際申請人頁，未標日期）",
+        "en": "Yale: applicants are considered \"without regard to their ability to pay\". Self-made translations are not accepted. (international page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O39"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Stanford：對國際公民而言，補助申請「will be a factor in our admission evaluation」，會成為錄取評估的因素。（國際申請人頁，未標日期）",
+        "en": "Stanford: for international citizens, an aid request \"will be a factor in our admission evaluation.\" (international page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O52"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Stanford：「applicants are reviewed in the context and country where they attend high school」；「Transcripts and teacher recommendations must be translated into English.」（同上，未標日期）",
+        "en": "Stanford: \"applicants are reviewed in the context and country where they attend high school.\" \"Transcripts and teacher recommendations must be translated into English.\" (same page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O52"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Caltech：因補助經費有限，「need-aware for international students」。（國際申請人頁，未標日期）",
+        "en": "Caltech: \"need-aware for international students\" because aid funds are limited. (international page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O57"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Caltech：「We will not review your application if any part is not translated in English.」成績單不必換算成美國制。（同上，未標日期）",
+        "en": "Caltech: \"We will not review your application if any part is not translated in English.\" The transcript does not need converting to US grades. (same page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O57"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Penn：「Penn is need-aware for international students who are not from Canada and Mexico.」（Ask Penn，2025-08-01 修改）",
+        "en": "Penn: \"Penn is need-aware for international students who are not from Canada and Mexico.\" (Ask Penn, modified 2025-08-01)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O64"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Penn：招生官用學校簡介「evaluate each applicant within their context」；簡介應寫出「what classes and extra-curricular opportunities were available」。（school profile 頁，未標日期）",
+        "en": "Penn: officers use school profiles to \"evaluate each applicant within their context\". Profiles should show \"what classes and extra-curricular opportunities were available\". (school profile page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O63"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Duke：外國公民必須「in the original first-year application」就申請補助；同一頁寫明美國公民不受影響的規則，暗示外國公民的規則不同。（apply 頁，未標日期）",
+        "en": "Duke: foreign citizens must apply for aid \"in the original first-year application\". The same page states the no-disadvantage rule for US citizens, which implies a different rule for foreign citizens. (apply page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O43"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Duke：「14% of students are international」——14% 學生是國際生。（what we look for 頁，Class of 2027 統計）",
+        "en": "Duke: \"14% of students are international\". (what-we-look-for page, Class of 2027 statistics)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O40"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Rice：國際申請人以「need-aware basis」審查；非英文文件需由學校或「authorized/official translator in the country of study」翻譯。（國際申請人頁，未標日期）",
+        "en": "Rice: international applicants are considered on a \"need-aware basis\". Non-English documents need translation by the school or an \"authorized/official translator in the country of study.\" (international page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O69"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Harvey Mudd：「We are need aware in the admission process for international students」。（FAQ，未標日期）",
+        "en": "Harvey Mudd: \"We are need aware in the admission process for international students\". (FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O91"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Georgetown：錄取的國際生若申請補助，會被考慮「a limited number of need-based scholarship awards」，名額有限。（國際申請人 FAQ，未標日期）",
+        "en": "Georgetown: admitted international students who request aid are considered for \"a limited number of need-based scholarship awards\". (international FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O98"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Georgia Tech：申請人在「within the context of the high school they attend」的脈絡下評估。（application review 頁，未標日期）",
+        "en": "Georgia Tech: applicants are evaluated \"within the context of the high school they attend.\" (application review page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O22"
+       ]
+      },
+      {
+       "t": {
+        "zh": "紙面上分成兩群：MIT、Harvard、Yale 說國際申請人不看支付能力；Stanford、Caltech、Penn、Rice、Harvey Mudd 說、Duke 明顯暗示，國際生的補助申請會影響錄取。需要補助的申請人在兩群學校面對不同的決定；家庭如何權衡不在本頁範圍。",
+        "en": "On paper there are two groups. MIT, Harvard and Yale say they are need-blind for international applicants. Stanford, Caltech, Penn, Rice and Harvey Mudd say, and Duke clearly implies, that an international aid request can affect admission. An applicant who needs aid faces a different decision at each group; how families weigh that is outside this page."
+       },
+       "tag": "i"
+      },
+      {
+       "t": {
+        "zh": "有寫到翻譯規則的學校（MIT、Harvard、Yale、Stanford、Caltech、Rice）說法一致：不能自己翻、由學校人員或正式譯者翻、附上原文。讀者靠學校簡介來定位非美國成績單（Penn、Stanford、Georgia Tech），因此升學顧問的簡介對美國體系以外的學校特別重要。最後這一點是推論，沒有學校針對台灣這樣說。",
+        "en": "Where stated (MIT, Harvard, Yale, Stanford, Caltech, Rice), the translation rule is consistent: never self-translated; a school official or official translator; the original attached. The school profile is how readers place a non-US transcript (Penn, Stanford, Georgia Tech), which makes the counselor's profile unusually important for schools outside the US system. That last point is an inference; no office said it about Taiwan."
+       },
+       "tag": "i"
+      }
+     ],
+     "table": {
+      "cols": [
+       {
+        "zh": "學校",
+        "en": "School"
+       },
+       {
+        "zh": "對國際生 need-blind 或 need-aware（學校原話）",
+        "en": "Need-blind or need-aware for internationals (as stated)"
+       },
+       {
+        "zh": "來源",
+        "en": "Source"
+       }
+      ],
+      "rows": [
+       {
+        "cells": [
+         {
+          "zh": "MIT",
+          "en": "MIT"
+         },
+         {
+          "t": {
+           "zh": "need-blind：「MIT practices need-blind admissions.」",
+           "en": "Need-blind: \"MIT practices need-blind admissions.\""
+          },
+          "tag": "f",
+          "src": [
+           "B7-O13"
+          ]
+         },
+         "B7-O13"
+        ]
+       },
+       {
+        "cells": [
+         {
+          "zh": "Harvard",
+          "en": "Harvard"
+         },
+         {
+          "t": {
+           "zh": "「Our admissions and financial aid processes are the same for all applicants」——所有申請人流程相同",
+           "en": "\"Our admissions and financial aid processes are the same for all applicants\""
+          },
+          "tag": "f",
+          "src": [
+           "B7-O44"
+          ]
+         },
+         "B7-O44"
+        ]
+       },
+       {
+        "cells": [
+         {
+          "zh": "Yale",
+          "en": "Yale"
+         },
+         {
+          "t": {
+           "zh": "「without regard to their ability to pay」——不考慮支付能力",
+           "en": "Considered \"without regard to their ability to pay\""
+          },
+          "tag": "f",
+          "src": [
+           "B7-O39"
+          ]
+         },
+         "B7-O39"
+        ]
+       },
+       {
+        "cells": [
+         {
+          "zh": "Stanford",
+          "en": "Stanford"
+         },
+         {
+          "t": {
+           "zh": "國際生的補助申請「will be a factor in our admission evaluation」",
+           "en": "For international citizens, an aid request \"will be a factor in our admission evaluation\""
+          },
+          "tag": "f",
+          "src": [
+           "B7-O52"
+          ]
+         },
+         "B7-O52"
+        ]
+       },
+       {
+        "cells": [
+         {
+          "zh": "Caltech",
+          "en": "Caltech"
+         },
+         {
+          "t": {
+           "zh": "「need-aware for international students」",
+           "en": "\"need-aware for international students\""
+          },
+          "tag": "f",
+          "src": [
+           "B7-O57"
+          ]
+         },
+         "B7-O57"
+        ]
+       },
+       {
+        "cells": [
+         {
+          "zh": "Penn",
+          "en": "Penn"
+         },
+         {
+          "t": {
+           "zh": "對加拿大、墨西哥以外的國際生 need-aware",
+           "en": "Need-aware for international students not from Canada or Mexico"
+          },
+          "tag": "f",
+          "src": [
+           "B7-O64"
+          ]
+         },
+         "B7-O64"
+        ]
+       },
+       {
+        "cells": [
+         {
+          "zh": "Rice",
+          "en": "Rice"
+         },
+         {
+          "t": {
+           "zh": "國際申請人採「need-aware basis」",
+           "en": "International applicants on a \"need-aware basis\""
+          },
+          "tag": "f",
+          "src": [
+           "B7-O69"
+          ]
+         },
+         "B7-O69"
+        ]
+       },
+       {
+        "cells": [
+         {
+          "zh": "Harvey Mudd",
+          "en": "Harvey Mudd"
+         },
+         {
+          "t": {
+           "zh": "「We are need aware in the admission process for international students」",
+           "en": "\"We are need aware in the admission process for international students\""
+          },
+          "tag": "f",
+          "src": [
+           "B7-O91"
+          ]
+         },
+         "B7-O91"
+        ]
+       },
+       {
+        "cells": [
+         {
+          "zh": "Duke",
+          "en": "Duke"
+         },
+         {
+          "t": {
+           "zh": "未直接用 need-blind/aware 字眼；外籍生須在首次申請時申請補助，頁上「不吃虧」規則只針對美國公民",
+           "en": "Neither term used; foreign citizens must request aid in the original application, and the no-disadvantage rule on the page is stated for US citizens"
+          },
+          "tag": "f",
+          "src": [
+           "B7-O43"
+          ]
+         },
+         "B7-O43"
+        ]
+       },
+       {
+        "cells": [
+         {
+          "zh": "Georgetown",
+          "en": "Georgetown"
+         },
+         {
+          "t": {
+           "zh": "未直接用 need-blind/aware 字眼；錄取後申請補助者可獲考慮「a limited number of need-based scholarship awards」",
+           "en": "Neither term used; admitted students who request aid are considered for \"a limited number of need-based scholarship awards\""
+          },
+          "tag": "f",
+          "src": [
+           "B7-O98"
+          ]
+         },
+         "B7-O98"
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "h": {
+      "zh": "研究、創客、藝術補充資料與連結",
+      "en": "Research, maker and arts supplements, and links"
+     },
+     "judgment": {
+      "zh": "收補充資料的學校都說多數錄取者沒交；Stanford、CMU（Fine Arts 以外）、Harvey Mudd（只收摘要）、Illinois 基本上不收；MIT 與 Yale 的說法都偏向「證據勝過包裝」。",
+      "en": "Every school that accepts supplements says most admits send none; Stanford, CMU (outside Fine Arts), Harvey Mudd (abstract only) and Illinois mostly do not accept them; MIT and Yale both favour documentation over polish."
+     },
+     "items": [
+      {
+       "t": {
+        "zh": "MIT：「Creative portfolios are truly optional」；只交「both significant to you」且品質高的作品。（作品集頁，未標日期）",
+        "en": "MIT: \"Creative portfolios are truly optional\". Submit only work \"both significant to you\" and of high quality. (creative portfolios page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O09"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT（Maker Portfolio）：「We are more interested in your build process than your end results.」——比起成品，更在意製作過程。（同上，未標日期）",
+        "en": "MIT (Maker Portfolio): \"We are more interested in your build process than your end results.\" (same page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O09"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT：「There is no bonus for submitting a video reel or showing yourself on camera.」「We are not looking for flashy influencer content.」影片整份合計上限 2 分鐘。（同上，未標日期）",
+        "en": "MIT: \"There is no bonus for submitting a video reel or showing yourself on camera.\" \"We are not looking for flashy influencer content.\" Video is capped at 2 minutes in total. (same page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O09"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT：「We can only review projects where you have provided sufficient evidence」；Maker Portfolio 在 SlideRoom 上由 MIT 教授與校友審閱。（同上，未標日期）",
+        "en": "MIT: \"We can only review projects where you have provided sufficient evidence\". Maker Portfolios are reviewed in SlideRoom by MIT faculty and alumni. (same page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O09"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT（Research Supplement）：「focus on one project that is most significant to you」，並提名你的 PI 或指導者寫信。（同上，未標日期）",
+        "en": "MIT (Research Supplement): \"focus on one project that is most significant to you\". Nominate your PI or mentor to write. (same page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O09"
+       ]
+      },
+      {
+       "t": {
+        "zh": "MIT：「we do not currently offer a portfolio to review creative writing」——目前沒有創意寫作作品集。（同上，未標日期）",
+        "en": "MIT: \"we do not currently offer a portfolio to review creative writing\". (same page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O09"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Caltech：「Many applicants are admitted without submitting supplemental materials.」只在「only if they meaningfully add to your application」時才交。（supplemental materials 頁，未標日期）",
+        "en": "Caltech: \"Many applicants are admitted without submitting supplemental materials.\" Submit \"only if they meaningfully add to your application.\" (supplemental materials page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O56"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Caltech：「only 42% of admitted students have participated in research prior to Caltech」——入學前做過研究的錄取者只有 42%。（同上，未標日期）",
+        "en": "Caltech: \"only 42% of admitted students have participated in research prior to Caltech.\" (same page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O56"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Caltech：補充資料「are not required to prove scientific interest or potential」，不需要靠它證明科學興趣或潛力。（how we review 頁，未標日期）",
+        "en": "Caltech: supplements \"are not required to prove scientific interest or potential.\" (how-we-review page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O55"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：「Most successful Yale applicants submit only the required application materials.」——多數錄取者只交必要資料。（supplementary 頁，未標日期）",
+        "en": "Yale: \"Most successful Yale applicants submit only the required application materials.\" (supplementary page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O32"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：「Full research papers are generally the most helpful.」視覺藝術作品集 5 到 8 件。（同上，未標日期）",
+        "en": "Yale: \"Full research papers are generally the most helpful.\" Visual art portfolios: 5 to 8 pieces. (same page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O32"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Yale：「It's pretty unlikely that a weak review would truly hurt an application.」——評語偏弱也不太可能真的傷到申請。（官方 podcast 第 29 集，2022）",
+        "en": "Yale: \"It's pretty unlikely that a weak review would truly hurt an application.\" (official podcast ep. 29, 2022)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O35"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Harvard：「Our standard application materials typically give us ample information」；補充資料「may be evaluated by faculty」。（application requirements 頁，未標日期）",
+        "en": "Harvard: \"Our standard application materials typically give us ample information\". Supplements \"may be evaluated by faculty\". (application requirements page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O46"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Harvard：「You absolutely do not have to include anything supplementary to gain acceptance」——不交任何補充資料也能錄取。（application tips 頁，2026）",
+        "en": "Harvard: \"You absolutely do not have to include anything supplementary to gain acceptance\". (application tips page, 2026)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O47"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Stanford：「we do not offer an option for applicants to upload supplementary materials」；寫作樣本與研究論文不會加入檔案，連結可能不會被看。（after you apply 頁，未標日期）",
+        "en": "Stanford: \"we do not offer an option for applicants to upload supplementary materials\". Writing samples and research papers are not added; links may not be reviewed. (after-you-apply page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O50"
+       ]
+      },
+      {
+       "t": {
+        "zh": "CMU：「Carnegie Mellon doesn't accept supplemental submissions」，包括履歷、藝術作品、作品集、錄音或網站；Fine Arts 作品集是例外。（requirements 頁，未標日期）",
+        "en": "CMU: \"Carnegie Mellon doesn't accept supplemental submissions\", meaning résumés, artwork, portfolios, recordings or websites; Fine Arts portfolios are the exception. (requirements page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O76"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Harvey Mudd：「we ask that students do not upload entire research papers」，改交摘要；音樂與藝術作品不另外收。（FAQ，未標日期）",
+        "en": "Harvey Mudd: \"we ask that students do not upload entire research papers\"; send an abstract instead. Music and artwork are not accepted separately. (FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O91"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Brown：藝術與音樂作品集「reviewed for us by faculty members」，由教授審閱；研究特別相關時可交摘要。（supplementary materials 頁，未標日期）",
+        "en": "Brown: art and music portfolios are \"reviewed for us by faculty members\". Applicants may send a research abstract if it is especially relevant. (supplementary materials page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O72"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Duke：一份選交的藝術補充資料，「evaluated by a Duke University faculty member」，限打算在 Duke 繼續該藝術的學生。（apply 頁，未標日期）",
+        "en": "Duke: one optional arts supplement, \"evaluated by a Duke University faculty member\" in that department, for students who will continue the art at Duke. (apply page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O43"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Johns Hopkins：額外資料「may include pictures of art, research abstracts」；只有在「contribute in a substantive way or provide new information」時才送。（FAQ，未標日期）",
+        "en": "Johns Hopkins: additional materials \"may include pictures of art, research abstracts\". Send them only if they \"contribute in a substantive way or provide new information\". (FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O29"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Illinois：作品集與試演只限部分 Fine and Applied Arts 申請人；未要求的資料會被移除。（first-year FAQ，未標日期）",
+        "en": "Illinois: portfolios and auditions are required only for some Fine and Applied Arts applicants; unsolicited materials are removed. (first-year FAQ, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O86"
+       ]
+      },
+      {
+       "t": {
+        "zh": "Olin：Schoolhouse.world 作品集是選交的補充資料。（what we look for 頁，未標日期）",
+        "en": "Olin: a Schoolhouse.world portfolio is an optional supplement. (what-we-look-for page, undated)"
+       },
+       "tag": "f",
+       "src": [
+        "B7-O89"
+       ]
+      },
+      {
+       "t": {
+        "zh": "在本頁直接讀過的學校可分成兩群：收補充資料並交給教授看的（MIT、Yale、Harvard、Brown、Duke、Caltech、Hopkins），以及只收很窄範圍或不收的（Stanford、CMU 的 Fine Arts 以外、Harvey Mudd 只收摘要、Illinois）。所有收補充資料的學校也都說多數錄取者沒交。",
+        "en": "Among schools read directly here there are two groups. Some accept supplements and route them to faculty: MIT, Yale, Harvard, Brown, Duke, Caltech and Hopkins. Some accept only narrowly or not at all: Stanford, CMU (outside Fine Arts), Harvey Mudd (abstract only) and Illinois. Every school that accepts supplements also says most admits send none."
+       },
+       "tag": "i"
+      },
+      {
+       "t": {
+        "zh": "對品質最具體的兩則官方說法是 MIT 的「build process」與「sufficient evidence」，以及 Yale 的「full research papers are generally the most helpful」。兩者都偏向留存證據而非包裝，和主文書那一節的建議一致。",
+        "en": "The two most specific official statements on quality are MIT's \"build process\" and \"sufficient evidence\" rule and Yale's \"full research papers are generally the most helpful\". Both reward documentation over polish, which agrees with the essay guidance above."
+       },
+       "tag": "i"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "surprises",
    "h": {
     "zh": "不容易查到的發現",
