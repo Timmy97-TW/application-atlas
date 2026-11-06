@@ -18,7 +18,9 @@ window.ATLAS.log = {
     "Checks at every merge: `check-data.js` 0 problems; pages rendered in a browser with no console errors (zh and en; the walkthrough also at 375 px with no horizontal scroll).",
     "Deep dives added after the first brief: Common Data Set numbers for 27 schools (admit rates, ED vs overall, waitlist, test submission, nonresident share — shown side by side, no multipliers), CDS H6 international aid for 24 schools, admissions offices in their own words across eight topics (about 190 cited items), and the counselor side plus Taiwan testing and fee logistics.",
     "Browser verification of 43 claims that rested on search excerpts: 28 confirmed, 1 contradicted (Columbia abstract length, already correct on the site; note corrected), 4 not on the page, 10 still blocked (research/2026-11-07_browser-verification_v1.md).",
-    "Native Chinese summaries appended to 18 research notes (rule 6)."
+    "Native Chinese summaries appended to 18 research notes (rule 6).",
+    "Major-level admission for engineering and biology at all 30 schools (direct admit, capped majors, internal transfer, second choice), added to schools.html.",
+    "Site-wide QA in zh and en: fixed horizontal scroll at 375 px on seven pages, hash jumps leaving content hidden, and the official-only toggle missing secondary cells."
    ],
    "notDone": [
     "E1 (monthly re-verification) is a standing unit; not due yet.",

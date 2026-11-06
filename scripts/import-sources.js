@@ -28,6 +28,7 @@ const CODES = {
   'admissions-own-voice': ['B7', { zh: 'B5 補充：招生辦公室自己的說法', en: 'B5 supplement: admissions offices in their own words' }],
   'counselor-side-and-taiwan-logistics': ['A6', { zh: 'A4 補充：輔導老師端與台灣考試實務', en: 'A4 supplement: counselor side and Taiwan logistics' }],
   'international-aid-numbers': ['A7', { zh: 'A4 補充：國際生財務補助數字', en: 'A4 supplement: international aid numbers' }],
+  'major-level-admission': ['A8', { zh: 'A5 補充：工程與生物科系層級的錄取規則', en: 'A5 supplement: major-level admission for engineering and biology' }],
   'browser-verification': ['V', { zh: '瀏覽器複查（先前只靠搜尋摘要的項目）', en: 'Browser verification of excerpt-only items' }],
   'blocked-pages-browser-pass': ['LEAD', { zh: '待查線索（未讀到頁面本身）', en: 'Leads only (pages not read)' }],
   'michigan-addendum':['MI', { zh: 'Michigan 補充（網頁拒絕自動存取）', en: 'Michigan addendum (pages refuse automated access)' }],
