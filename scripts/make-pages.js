@@ -39,6 +39,7 @@ for (const [file, page, data, extraJs = []] of pages) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Application Atlas</title>
 <link rel="stylesheet" href="${root}assets/css/site.css?v=${V}">
+<link rel="icon" href="${root}assets/favicon.svg" type="image/svg+xml">
 </head>
 <body data-page="${page}" data-root="${root}">
 <main id="main"></main>

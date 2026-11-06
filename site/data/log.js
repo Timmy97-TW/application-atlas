@@ -48,7 +48,8 @@ window.ATLAS.log = {
     "The new insights section uses one of them (V02) for Columbia."
    ],
    "notDone": [
-    "E1 (monthly re-verification) is still the only open BACKLOG unit, and is not",
+    "E1 (monthly re-verification) is not yet due: every URL on the site was",
+    "Four new units were written into BACKLOG for what this run found but could",
     "Q003–Q005 are unanswered, so the walkthrough's five colleges, the UK",
     "The research notes are still English-first with Chinese summaries appended,"
    ],

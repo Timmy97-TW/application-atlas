@@ -115,3 +115,9 @@ site/                      static site; .github/workflows/pages.yml deploys it f
   `scripts/check-links.js` over all cited URLs (log dead links in the brief, do
   not delete them), run `scripts/build-log.js`, and open each touched page in a
   headless browser to confirm it renders with no console errors.
+- If any file under `site/data/` or `site/assets/` changed, also run
+  `scripts/make-pages.js`. The HTML shells carry a `?v=` cache-busting stamp
+  that only changes when that script runs, so a data change shipped without it
+  can be served from a returning reader's cache while the new file sits unread
+  on the server. Verify a data change in a browser with a cache-busting query,
+  not a plain reload, or you will be reading the cached copy too.

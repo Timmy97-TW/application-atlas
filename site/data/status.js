@@ -4,7 +4,7 @@ window.ATLAS.status = {
  "generated": "2026-11-06",
  "units": {
   "done": 30,
-  "total": 31
+  "total": 35
  },
  "sections": {
   "A": {
@@ -25,7 +25,7 @@ window.ATLAS.status = {
   },
   "E": {
    "done": 1,
-   "total": 2
+   "total": 6
   },
   "F": {
    "done": 4,
@@ -42,11 +42,11 @@ window.ATLAS.status = {
   "notStated": 33
  },
  "sources": {
-  "total": 1427,
-  "official": 1387,
+  "total": 1430,
+  "official": 1390,
   "secondary": 40
  },
  "oldestAccess": "2026-11-07",
  "openQuestions": 4,
- "notes": 25
+ "notes": 26
 };

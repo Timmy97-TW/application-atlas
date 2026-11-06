@@ -10075,10 +10075,15 @@ window.ATLAS.pages['insights'] = {
    "items": [
     {
      "t": {
-      "zh": "尚待瀏覽器確認、因此本節未收錄的學校說法（官方頁面拒絕自動存取，用語只來自搜尋引擎摘錄）：Princeton（文書與 AI 部落格、面試、graded written paper）、Northwestern（表現興趣、國際生面試）、Columbia（額外推薦信、表現興趣）、Michigan（why us、面試）、Williams 與 Amherst（面試、表現興趣）、Cornell（表現興趣）、Stanford FAQ（Additional Information）、UC（PIQ 連結、推薦信）、UT Austin FAQ 與候補頁、Harvard 2026–27 supplement PDF、Duke FAQ 的表現興趣與「demonstrated knowledge」用語、Penn 的 InitialView 問答、Georgetown 面試 FAQ、CMU 推薦老師的用語。",
-      "en": "School statements still awaiting a browser check and therefore not shown here (the official pages refused automated access; the wording comes only from search-engine excerpts): Princeton (essays-and-AI blog, interviews, graded written paper), Northwestern (demonstrated interest, international interviews), Columbia (extra letters, demonstrated interest), Michigan (why us, interviews), Williams and Amherst (interviews, demonstrated interest), Cornell (demonstrated interest), Stanford FAQ (Additional Information), UC (PIQ links, letters), UT Austin FAQ and waitlist page, the Harvard 2026–27 supplement PDF, Duke's FAQ wording on demonstrated interest and \"demonstrated knowledge\", Penn's InitialView answer, Georgetown's interview FAQ, and CMU's wording on choosing the teacher recommender."
+      "zh": "尚待確認、因此本節未收錄的學校說法，依障礙種類分三類（用語目前只來自搜尋引擎摘錄）。一、TLS 層被拒，兩條獨立請求路徑、十二個網址全部沒有回應，重試不會好，只能人工開頁：Princeton（文書與 AI 部落格、面試、graded written paper）、Northwestern（表現興趣、國際生面試）、Purdue（推薦信）。二、頁面拒絕自動存取或要求人工驗證（本站不嘗試繞過）：Michigan（why us、面試）、Williams 與 Amherst（面試、表現興趣）。三、頁面會載入但讀不到那段文字——Stanford FAQ 回傳空白內容、UT Austin FAQ 的答案要點擊才出現、Harvard 2026–27 supplement 與 UC 的 PIQ 指引是 PDF、Penn 的 InitialView 在客服知識庫文章裡、UC 推薦信頁與 CMU 推薦老師的用語同屬此類；這一類文字其實存在，人工開頁幾秒就能讀到。Cornell 的「不追蹤表現興趣」是另一種情況：原始網址在不對外的開發用子網域，已無法解析，公開頁面上沒有這句話，所以這條說法不成立。Columbia 的額外推薦信規定、Duke 的 FAQ 用語、Georgetown 的面試 FAQ 已在第一輪瀏覽器複查確認，已從本清單移出、收進本頁其他各節。",
+      "en": "School statements still unconfirmed and therefore not shown here, grouped by the kind of obstacle, because \"refused automated access\" covers three different problems with three different prognoses. The wording for all of them so far comes only from search-engine excerpts. (1) Refused at the TLS layer — two independent request paths, twelve URLs, no response at all, so retrying will not clear it and only a person opening the page can settle it: Princeton (essays-and-AI blog, interviews, graded written paper), Northwestern (demonstrated interest, international interviews), Purdue (letters). (2) Refused automated reading or asked for human verification, which this site does not attempt to bypass: Michigan (why us, interviews), Williams and Amherst (interviews, demonstrated interest). (3) The page loads but the text cannot be read from it: Stanford's FAQ returns an empty body, UT Austin's FAQ reveals its answers only on click, the Harvard 2026–27 supplement and UC's PIQ guidance are PDFs, Penn's InitialView answer sits in a help-desk article, and UC's letters page and CMU's wording on choosing a teacher recommender are the same case. For this group the text exists and a person can retrieve it in seconds. Cornell's \"does not track demonstrated interest\" is a separate case: the original URL was on a non-public development subdomain that no longer resolves, and the public page carries no such wording, so the claim does not stand. Columbia's extra-letters rule, Duke's FAQ wording and Georgetown's interview FAQ were confirmed in the first browser pass and have moved out of this list into the sections above."
      },
-     "tag": "a"
+     "tag": "f",
+     "src": [
+      "V2-S1",
+      "V2-S2",
+      "V2-S3"
+     ]
     }
    ],
    "subs": [
