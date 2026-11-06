@@ -73,6 +73,10 @@ window.ATLAS.sourceGroups = {
   "zh": "B5 審查端（官方說法）",
   "en": "B5 Reader side, official statements"
  },
+ "V3": {
+  "zh": "瀏覽器複查第三輪（救回來的頁面）",
+  "en": "Browser verification round 3 (pages recovered)"
+ },
  "A5a": {
   "zh": "A5 逐校資料（1–15）",
   "en": "A5 School roster (1–15)"
@@ -14091,6 +14095,244 @@ window.ATLAS.sources = {
   "note": {
    "zh": "研究筆記：2026-11-07_reader-side-reality_v1.md",
    "en": "Research note: 2026-11-07_reader-side-reality_v1.md"
+  }
+ },
+ "V3-R1": {
+  "url": "https://www.hmc.edu/admission/afford/cost-of-attendance/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V3",
+  "title": {
+   "zh": "Harvey Mudd published 2026-27 cost of attendance, itemised, three residence columns",
+   "en": "Harvey Mudd published 2026-27 cost of attendance, itemised, three residence columns"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_recovered-pages-round-3_v1.md",
+   "en": "Research note: 2026-11-07_recovered-pages-round-3_v1.md"
+  }
+ },
+ "V3-R2": {
+  "url": "https://www.hmc.edu/admission/afford/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V3",
+  "title": {
+   "zh": "Harvey Mudd aid statistics as of 2025-09-02; the page that links the cost page",
+   "en": "Harvey Mudd aid statistics as of 2025-09-02; the page that links the cost page"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_recovered-pages-round-3_v1.md",
+   "en": "Research note: 2026-11-07_recovered-pages-round-3_v1.md"
+  }
+ },
+ "V3-R3": {
+  "url": "https://www.amherst.edu/tuition",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V3",
+  "title": {
+   "zh": "Amherst 2026-27 direct and indirect costs; books inside the comprehensive fee; health insurance excluded from the aid budget",
+   "en": "Amherst 2026-27 direct and indirect costs; books inside the comprehensive fee; health insurance excluded from the aid budget"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_recovered-pages-round-3_v1.md",
+   "en": "Research note: 2026-11-07_recovered-pages-round-3_v1.md"
+  }
+ },
+ "V3-R4": {
+  "url": "https://www.amherst.edu/offices/financialaid/forms_links/fees_2026-2027_academic_year",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V3",
+  "title": {
+   "zh": "Amherst 2026-27 schedule of fees by term; health insurance $3,627 waivable; last updated 2026-09-21",
+   "en": "Amherst 2026-27 schedule of fees by term; health insurance $3,627 waivable; last updated 2026-09-21"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_recovered-pages-round-3_v1.md",
+   "en": "Research note: 2026-11-07_recovered-pages-round-3_v1.md"
+  }
+ },
+ "V3-R5": {
+  "url": "https://www.amherst.edu/about/facts/common_data_sets/2025",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V3",
+  "title": {
+   "zh": "Amherst CDS 2025-26 is published, split into eleven section PDFs (served as downloads)",
+   "en": "Amherst CDS 2025-26 is published, split into eleven section PDFs (served as downloads)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_recovered-pages-round-3_v1.md",
+   "en": "Research note: 2026-11-07_recovered-pages-round-3_v1.md"
+  }
+ },
+ "V3-R6": {
+  "url": "https://www.amherst.edu/admission/apply/firstyear",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V3",
+  "title": {
+   "zh": "Amherst ED 2026-11-09 / RD 2027-01-05, reply by 2027-05-01; test-optional; arts supplement; Optional Research Questions; two deans read every file",
+   "en": "Amherst ED 2026-11-09 / RD 2027-01-05, reply by 2027-05-01; test-optional; arts supplement; Optional Research Questions; two deans read every file"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_recovered-pages-round-3_v1.md",
+   "en": "Research note: 2026-11-07_recovered-pages-round-3_v1.md"
+  }
+ },
+ "V3-R7": {
+  "url": "https://admission.stanford.edu/faqs/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V3",
+  "title": {
+   "zh": "Stanford FAQ index serves a 39-byte empty document; no FAQ link in the site navigation",
+   "en": "Stanford FAQ index serves a 39-byte empty document; no FAQ link in the site navigation"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_recovered-pages-round-3_v1.md",
+   "en": "Research note: 2026-11-07_recovered-pages-round-3_v1.md"
+  }
+ },
+ "V3-R8": {
+  "url": "https://admission.stanford.edu/apply/first-year/submitted.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V3",
+  "title": {
+   "zh": "Stanford: no supplementary materials added to the file, no upload option, links not guaranteed to be read; grace period for recommenders; Update Application Form in the portal",
+   "en": "Stanford: no supplementary materials added to the file, no upload option, links not guaranteed to be read; grace period for recommenders; Update Application Form in the portal"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_recovered-pages-round-3_v1.md",
+   "en": "Research note: 2026-11-07_recovered-pages-round-3_v1.md"
+  }
+ },
+ "V3-R9": {
+  "url": "https://admission.stanford.edu/apply/first-year/testing.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V3",
+  "title": {
+   "zh": "Stanford ACT/SAT required, self-reported at application, official on enrolment; AP self-report required if taken",
+   "en": "Stanford ACT/SAT required, self-reported at application, official on enrolment; AP self-report required if taken"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_recovered-pages-round-3_v1.md",
+   "en": "Research note: 2026-11-07_recovered-pages-round-3_v1.md"
+  }
+ },
+ "V3-R10": {
+  "url": "https://admission.stanford.edu/apply/first-year/apply.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V3",
+  "title": {
+   "zh": "Stanford Questions: five short questions 3-50 words, three short essays 100-250 words",
+   "en": "Stanford Questions: five short questions 3-50 words, three short essays 100-250 words"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_recovered-pages-round-3_v1.md",
+   "en": "Research note: 2026-11-07_recovered-pages-round-3_v1.md"
+  }
+ },
+ "V3-R11": {
+  "url": "https://admissions.utexas.edu/apply/frequently-asked-questions/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V3",
+  "title": {
+   "zh": "UT Austin: up to two optional letters and what they should cover; no demonstrated interest; no admission interviews; optional resume with no format; no documents by email",
+   "en": "UT Austin: up to two optional letters and what they should cover; no demonstrated interest; no admission interviews; optional resume with no format; no documents by email"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_recovered-pages-round-3_v1.md",
+   "en": "Research note: 2026-11-07_recovered-pages-round-3_v1.md"
+  }
+ },
+ "V3-R12": {
+  "url": "https://admissions.utexas.edu/apply/review-decision-process/waitlist/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V3",
+  "title": {
+   "zh": "UT Austin waitlist: academic update of 200 words or less on the form; other materials \"will not be accepted or reviewed\"",
+   "en": "UT Austin waitlist: academic update of 200 words or less on the form; other materials \"will not be accepted or reviewed\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_recovered-pages-round-3_v1.md",
+   "en": "Research note: 2026-11-07_recovered-pages-round-3_v1.md"
+  }
+ },
+ "V3-R13": {
+  "url": "https://www.amherst.edu/admission/financial_aid",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V3",
+  "title": {
+   "zh": "Amherst need-blind for all students, domestic and international; 59% receive aid; average offer $76k",
+   "en": "Amherst need-blind for all students, domestic and international; 59% receive aid; average offer $76k"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_recovered-pages-round-3_v1.md",
+   "en": "Research note: 2026-11-07_recovered-pages-round-3_v1.md"
+  }
+ },
+ "V3-R14": {
+  "url": "https://www.amherst.edu/alumni/events/alumni-admission-workshops",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V3",
+  "title": {
+   "zh": "Amherst: the Office of Admission \"does not conduct interviews or one-on-one evaluative sessions with students\"",
+   "en": "Amherst: the Office of Admission \"does not conduct interviews or one-on-one evaluative sessions with students\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_recovered-pages-round-3_v1.md",
+   "en": "Research note: 2026-11-07_recovered-pages-round-3_v1.md"
+  }
+ },
+ "V3-R15": {
+  "url": "https://www.amherst.edu/alumni/volunteer/admission",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V3",
+  "title": {
+   "zh": "Amherst ended alumni interviewing over a dozen years ago; alumni may still write supporting letters",
+   "en": "Amherst ended alumni interviewing over a dozen years ago; alumni may still write supporting letters"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_recovered-pages-round-3_v1.md",
+   "en": "Research note: 2026-11-07_recovered-pages-round-3_v1.md"
+  }
+ },
+ "V3-R16": {
+  "url": "https://ask.admissions.upenn.edu/support/solutions/articles/157000361217-i-am-an-international-student-can-i-submit-an-initialview-interview-",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V3",
+  "title": {
+   "zh": "Penn: InitialView not required, submitted as supplemental information, fee waivers available from InitialView, not a replacement for English testing",
+   "en": "Penn: InitialView not required, submitted as supplemental information, fee waivers available from InitialView, not a replacement for English testing"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_recovered-pages-round-3_v1.md",
+   "en": "Research note: 2026-11-07_recovered-pages-round-3_v1.md"
+  }
+ },
+ "V3-R17": {
+  "url": "https://admission.universityofcalifornia.edu/counselors/preparing-freshman-students/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V3",
+  "title": {
+   "zh": "UC to counselors: \"Do not submit letters of recommendation (unless specifically asked by a campus)\"; transcripts only to the enrolling campus, before July 1; apply to more than one campus",
+   "en": "UC to counselors: \"Do not submit letters of recommendation (unless specifically asked by a campus)\"; transcripts only to the enrolling campus, before July 1; apply to more than one campus"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_recovered-pages-round-3_v1.md",
+   "en": "Research note: 2026-11-07_recovered-pages-round-3_v1.md"
   }
  },
  "A5a-S1": {

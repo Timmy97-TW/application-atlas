@@ -98,14 +98,25 @@ Tier 4: Williams, Amherst, Swarthmore
       policy, program materials, letters, unsolicited supplements, touchpoints, InitialView),
       Purdue (EA/RD dates, SAT/ACT/CLT, letters, English requirement). These three hosts
       refuse every automated request at the TLS layer; retrying is pointless (V2).
-- [ ] E4 Three pages whose text a person can retrieve in seconds although scripts cannot:
-      Stanford's FAQ index (serves an empty body), UT Austin's FAQ (answers appear on click),
-      and the PDFs (Harvard's 2026–27 supplement, UC's PIQ guidance, the three Common App
-      webinar decks behind B19–B21). Lower priority than E3 because each is one claim.
-- [ ] E5 Re-check the two dead aid pages when the sites allow: the Amherst cost-of-attendance
-      page (404; the site asks for human verification, which this repo does not bypass) and
-      Harvey Mudd's cost page (404 at a guessed URL, A7-H18). The Johns Hopkins one was
-      fixed on 2026-11-07 by following the 404 page's own navigation — worth trying first.
+- [x] E4 Pages that load but do not hand over their text  ✓ 2026-11-07: research/2026-11-07_recovered-pages-round-3_v1.md (V3)
+      Stanford's FAQ index turned out to be retired, not gated (39-byte empty document, no
+      FAQ link in the site navigation); its answers now live in accordions on each Apply
+      page and were read there. UT Austin's FAQ answers were read from the live DOM. Both
+      claims (O53, O85, O99) are settled. What is left is one obstacle only, moved to E7:
+      servers that send a file instead of a page.
+- [x] E5 The two dead aid pages  ✓ 2026-11-07: research/2026-11-07_recovered-pages-round-3_v1.md (V3)
+      Both recovered by following each 404 page's own navigation and the site's own search.
+      Harvey Mudd publishes an itemised 2026-27 cost of attendance ($104,512 on campus), so
+      its aid cell is no longer partial (31.2%, was 33.5% against an incomplete denominator).
+      Amherst publishes a 2026-27 student expense budget ($98,160 on this site's basis) and
+      was never behind a human-verification wall: every page of its site opens in a browser,
+      which also cleared its interview, deadline, test-policy and need-blind cells.
+- [ ] E7 Five sets of official documents that are published but served as file downloads,
+      so a script is handed a file instead of a page: Amherst's CDS 2025-26 (eleven section
+      PDFs at /about/facts/common_data_sets/2025 — would fill its H6, C and G cells),
+      Harvard's 2026-27 supplement PDF, UC's PIQ guidance PDF, and the three Common App
+      webinar decks (LEAD-B19 to B21). Nothing is cited from any of them. This needs one
+      download decision from the maintainer, not more research — see Q006.
 - [ ] E6 Make the research notes fully bilingual (rule 6). They are English-first with
       Chinese summaries appended; the site data is bilingual, so this is notes-only debt.
 

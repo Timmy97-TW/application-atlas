@@ -33,6 +33,17 @@ window.ATLAS.log = {
    "by": "run"
   },
   {
+   "file": "briefs/2026-11-07_run-3.md",
+   "date": "2026-11-07",
+   "unit": "E4, E5, A7, B7",
+   "status": "merged",
+   "title_zh": "",
+   "title_en": "Run 3 (watchdog), 2026-11-07 05:16–06:00: five unreadable pages recovered",
+   "done": [],
+   "notDone": [],
+   "by": "run"
+  },
+  {
    "file": "briefs/2026-11-07_run-2.md",
    "date": "2026-11-07",
    "unit": "insights (sequencing), tooling (source importer), Q002",
@@ -71,8 +82,8 @@ window.ATLAS.log = {
    "date": "2026-11-07",
    "unit": "A3/A5",
    "state": "open",
-   "stateNote": "(retried 2026-11-07 04:45, still blocked)",
-   "q": "Michigan, Williams and Amherst refuse automated reading (HTTP 403 or a\nhuman-verification page); Northwestern, Princeton and Purdue refuse at the TLS\nlayer. Columbia was since read in a browser and is done (see V01–V19).\nRetry on 2026-11-07 at 04:45 used both the built-in browser and a separate\nfetch path, four URLs per host: every attempt on admission.princeton.edu,\nadmissions.northwestern.edu and admissions.purdue.edu failed (\"navigation\ndenied\" in the browser, \"certificate rejected\" on fetch). It is not a\nhuman-verification page and no bypass was attempted. These three hosts cannot\nbe read from this machine's automated paths at all, so they will not resolve on\ntheir own in a later run.\n\nCan you open the pages below in your ordinary browser and paste the answers\nhere (or save the pages into private/)? Each line is one page and the exact\nthings the matrix still needs. Short quotes are enough; the access date will be\nthe day you paste it.\n\nPrinceton\n- https://admission.princeton.edu/apply/graded-written-paper\n  required or optional? type of paper, length, acceptable subjects, how it is\n  submitted, any separate deadline.\n- https://admission.princeton.edu/apply/standardized-testing\n  policy for entry in fall 2027, and whether a change is stated for 2027-28.\n- https://admission.princeton.edu/apply/application-checklist\n  interviews required or optional; number of teacher letters and counselor\n  forms; whether supplementary materials (research, portfolios) are accepted.\n- https://admission.princeton.edu/how-apply/what-we-look (or the equivalent page)\n  does a sentence beginning roughly \"We are not looking for perfect...\" appear?\n\nNorthwestern\n- https://admissions.northwestern.edu/apply/requirements.html\n  test policy for fall 2027; program-specific auditions or portfolios; number\n  of teacher letters and counselor forms.\n- https://admissions.northwestern.edu/faqs/application-process/\n  whether unsolicited supplementary materials are refused or not reviewed; any\n  wording about a \"tally of touchpoints\" or demonstrated interest; whether\n  InitialView or another video interview is named as optional.\n- the deadlines page: ED and RD dates for 2026-27.\n\nPurdue\n- https://admissions.purdue.edu/become-student/apply/\n  Early Action and Regular Decision dates for 2026-27; any priority or\n  scholarship deadline; which application systems it accepts.\n- https://admissions.purdue.edu/become-student/first-year-criteria/\n  SAT / ACT / CLT policy (does it name the CLT?); whether letters are required,\n  optional or not accepted.\n- https://admissions.purdue.edu/become-student/international/\n  English-proficiency requirement and any stated waiver.\n\nUntil these arrive, the affected cells stay \"not stated\" and the matching rows\nin research/2026-11-07_browser-verification_v1.md stay \"blocked\". The URLs are\nalso registered as leads under LEAD-* on the sources page, so nothing on them\nis cited as fact anywhere on the site.",
+   "stateNote": "(retried 2026-11-07 04:45 and 05:30, still blocked)",
+   "q": "Michigan and Williams refuse automated reading (HTTP 403 or a\nhuman-verification page); Northwestern, Princeton and Purdue refuse at the TLS\nlayer. Columbia was since read in a browser and is done (see V01–V19), and so\nwas Amherst on 2026-11-07 at about 05:30 — its site had been misdiagnosed: every\npage opens in a browser, and the earlier HTTP 405 came from guessed URLs and\nautomated requests (see V3). Amherst is therefore no longer part of this\nquestion; only its CDS section PDFs are still unread, which is Q006.\nRetry on 2026-11-07 at 04:45 used both the built-in browser and a separate\nfetch path, four URLs per host: every attempt on admission.princeton.edu,\nadmissions.northwestern.edu and admissions.purdue.edu failed (\"navigation\ndenied\" in the browser, \"certificate rejected\" on fetch). It is not a\nhuman-verification page and no bypass was attempted. These three hosts cannot\nbe read from this machine's automated paths at all, so they will not resolve on\ntheir own in a later run.\n\nCan you open the pages below in your ordinary browser and paste the answers\nhere (or save the pages into private/)? Each line is one page and the exact\nthings the matrix still needs. Short quotes are enough; the access date will be\nthe day you paste it.\n\nPrinceton\n- https://admission.princeton.edu/apply/graded-written-paper\n  required or optional? type of paper, length, acceptable subjects, how it is\n  submitted, any separate deadline.\n- https://admission.princeton.edu/apply/standardized-testing\n  policy for entry in fall 2027, and whether a change is stated for 2027-28.\n- https://admission.princeton.edu/apply/application-checklist\n  interviews required or optional; number of teacher letters and counselor\n  forms; whether supplementary materials (research, portfolios) are accepted.\n- https://admission.princeton.edu/how-apply/what-we-look (or the equivalent page)\n  does a sentence beginning roughly \"We are not looking for perfect...\" appear?\n\nNorthwestern\n- https://admissions.northwestern.edu/apply/requirements.html\n  test policy for fall 2027; program-specific auditions or portfolios; number\n  of teacher letters and counselor forms.\n- https://admissions.northwestern.edu/faqs/application-process/\n  whether unsolicited supplementary materials are refused or not reviewed; any\n  wording about a \"tally of touchpoints\" or demonstrated interest; whether\n  InitialView or another video interview is named as optional.\n- the deadlines page: ED and RD dates for 2026-27.\n\nPurdue\n- https://admissions.purdue.edu/become-student/apply/\n  Early Action and Regular Decision dates for 2026-27; any priority or\n  scholarship deadline; which application systems it accepts.\n- https://admissions.purdue.edu/become-student/first-year-criteria/\n  SAT / ACT / CLT policy (does it name the CLT?); whether letters are required,\n  optional or not accepted.\n- https://admissions.purdue.edu/become-student/international/\n  English-proficiency requirement and any stated waiver.\n\nUntil these arrive, the affected cells stay \"not stated\" and the matching rows\nin research/2026-11-07_browser-verification_v1.md stay \"blocked\". The URLs are\nalso registered as leads under LEAD-* on the sources page, so nothing on them\nis cited as fact anywhere on the site.",
    "a": ""
   },
   {
@@ -100,6 +111,15 @@ window.ATLAS.log = {
    "state": "open",
    "stateNote": "",
    "q": "The 20 schools for US 31–50 are listed in DECISIONS.md (2026-11-07). Change any?",
+   "a": ""
+  },
+  {
+   "id": "Q006",
+   "date": "2026-11-07",
+   "unit": "E7",
+   "state": "open",
+   "stateNote": "",
+   "q": "Five sets of official documents are published but their servers send a file\ninstead of a page, so this repo cannot read them and cites nothing from them.\nDownloading a file is a decision for you, not for a scheduled run. Would you\ndownload these and drop them into private/ (or paste the figures here)?\n- Amherst CDS 2025-26, section PDFs at\n  https://www.amherst.edu/about/facts/common_data_sets/2025\n  Wanted: section H (H6: aid to degree-seeking nonresidents — recipients,\n  average, total), section G (G1 tuition/fees/housing/food, G5 books,\n  transportation, other), section C (C1, C2, C9, C21) and section B (B2\n  nonresident first-years). This would fill Amherst's row in three tables.\n- Harvard's 2026-27 writing supplement PDF (the exact prompts and limits).\n- UC's PIQ guidance PDF (what UC itself tells applicants about the four\n  questions).\n- The three Common App webinar decks at LEAD-B19, LEAD-B20 and LEAD-B21\n  (2026-27 changes to Activities; the Additional Information 650→300 word\n  change; Activities field character limits).\nUntil then every cell they would fill stays \"not stated\", and the Common App\nlimits on the practice walkthrough rest on the help-centre articles only.",
    "a": ""
   }
  ]

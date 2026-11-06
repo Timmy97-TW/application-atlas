@@ -7,10 +7,14 @@ Which three of the 30 schools should the two personas target, so the examples
 stay concrete? (Default if unanswered: MIT, Stanford, UC Berkeley.)
 A: Use the default (maintainer, 2026-11-07).
 
-Q002 · 2026-11-07 · A3/A5 · open (retried 2026-11-07 04:45, still blocked)
-Michigan, Williams and Amherst refuse automated reading (HTTP 403 or a
+Q002 · 2026-11-07 · A3/A5 · open (retried 2026-11-07 04:45 and 05:30, still blocked)
+Michigan and Williams refuse automated reading (HTTP 403 or a
 human-verification page); Northwestern, Princeton and Purdue refuse at the TLS
-layer. Columbia was since read in a browser and is done (see V01–V19).
+layer. Columbia was since read in a browser and is done (see V01–V19), and so
+was Amherst on 2026-11-07 at about 05:30 — its site had been misdiagnosed: every
+page opens in a browser, and the earlier HTTP 405 came from guessed URLs and
+automated requests (see V3). Amherst is therefore no longer part of this
+question; only its CDS section PDFs are still unread, which is Q006.
 Retry on 2026-11-07 at 04:45 used both the built-in browser and a separate
 fetch path, four URLs per host: every attempt on admission.princeton.edu,
 admissions.northwestern.edu and admissions.purdue.edu failed ("navigation
@@ -79,4 +83,25 @@ A:
 
 Q005 · 2026-11-07 · G1 · open
 The 20 schools for US 31–50 are listed in DECISIONS.md (2026-11-07). Change any?
+A:
+
+Q006 · 2026-11-07 · E7 · open
+Five sets of official documents are published but their servers send a file
+instead of a page, so this repo cannot read them and cites nothing from them.
+Downloading a file is a decision for you, not for a scheduled run. Would you
+download these and drop them into private/ (or paste the figures here)?
+- Amherst CDS 2025-26, section PDFs at
+  https://www.amherst.edu/about/facts/common_data_sets/2025
+  Wanted: section H (H6: aid to degree-seeking nonresidents — recipients,
+  average, total), section G (G1 tuition/fees/housing/food, G5 books,
+  transportation, other), section C (C1, C2, C9, C21) and section B (B2
+  nonresident first-years). This would fill Amherst's row in three tables.
+- Harvard's 2026-27 writing supplement PDF (the exact prompts and limits).
+- UC's PIQ guidance PDF (what UC itself tells applicants about the four
+  questions).
+- The three Common App webinar decks at LEAD-B19, LEAD-B20 and LEAD-B21
+  (2026-27 changes to Activities; the Additional Information 650→300 word
+  change; Activities field character limits).
+Until then every cell they would fill stays "not stated", and the Common App
+limits on the practice walkthrough rest on the help-centre articles only.
 A:
