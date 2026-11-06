@@ -8018,13 +8018,13 @@ window.ATLAS.sources = {
   }
  },
  "A7-H34": {
-  "url": "https://sfs.jhu.edu/tuition-and-fees/",
+  "url": "https://sfs.jhu.edu/cost-tuition/",
   "accessed": "2026-11-07",
   "cls": "official",
   "group": "A7",
   "title": {
-   "zh": "JHU cost page: HTTP 404; not retrieved",
-   "en": "JHU cost page: HTTP 404; not retrieved"
+   "zh": "JHU published cost of attendance, 2026-27 academic year (the former /tuition-and-fees/ path returns HTTP 404; this is where the page now lives)",
+   "en": "JHU published cost of attendance, 2026-27 academic year (the former /tuition-and-fees/ path returns HTTP 404; this is where the page now lives)"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",

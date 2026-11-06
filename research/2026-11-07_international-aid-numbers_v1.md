@@ -46,7 +46,7 @@ Columns: **H6 policy** NB = "Institutional need-based scholarship or grant aid i
 | UIUC | 2025-26 | NN only | 45 | $5,176 | $232,934 | nonresident $34,338 / $5,054 / $15,184 | $1,200 / $500 / $2,000 | 34,338+5,054+15,184+1,200+500+2,000 = **$58,276** | not checked | 5,176 ÷ 58,276 = **8.9%** | H16 |
 | Olin | **2023-24** | NB + NN | 29 | $30,069 | $871,994 | $59,972 / $4,486 / $19,820 (2023-24) | $216 / $1,508 / $472 | 59,972+4,486+19,820+216+1,508+472 = **$86,474** (2023-24) | not checked | 30,069 ÷ 86,474 = **34.8%** (both 2023-24) | H17 |
 | Harvey Mudd | 2025-26 | NB + NN | 38 | $32,564 | $1,237,421 | $72,669 / $401 / $23,434 | $800 / blank / blank | 72,669+401+23,434+800 = **$97,304** (partial) | not retrieved (HTTP 404 at guessed URL) | 32,564 ÷ 97,304 = **33.5%** (COA partial) | H18 |
-| Johns Hopkins | not retrieved | not stated | not stated | not stated | not stated | not retrieved | not retrieved | — | not retrieved (HTTP 404 at sfs.jhu.edu/tuition-and-fees/) | — | H19, H34 |
+| Johns Hopkins | not retrieved | not stated | not stated | not stated | not stated | not retrieved | not retrieved | — | **$94,858** published COA 2026-27, on-campus first-year (H34) | — | H19, H34 |
 | Duke | 2025-26 | NB + NN | 215 | $87,841 | $18,885,746 | $73,740 / $2,635 / $20,222 | $536 / $778 (one value printed; column not confirmed) / $1,637 | 73,740+2,635+20,222+536+778+1,637 = **$99,548** | not checked | 87,841 ÷ 99,548 = **88.2%** | H20 |
 | Northwestern | 2025-26 | NB + NN | 297 | $74,186 | $22,033,357 | $71,802 / $1,260 / $22,941 | $1,239 / varies / $2,079 | 71,802+1,260+22,941+1,239+2,079 = **$99,321** | not checked | 74,186 ÷ 99,321 = **74.7%** | H21 |
 | Rice | 2025-26 | NB + NN | 164 | $79,444 | $13,028,832 | $71,170 / $984 / $20,530 | $1,540 / $700 / $3,115 | 71,170+984+20,530+1,540+700+3,115 = **$98,039** | not checked | 79,444 ÷ 98,039 = **81.0%** | H22 |
@@ -128,8 +128,34 @@ Notes on individual cells:
 | H31 | https://ir.ucsd.edu/stats/undergrad/CDS-2025-2026-Final4.pdf (same wording in H02–H30 files read) | 2026-11-07 | official | 2025-26 template wording: G1 = "FULL 2026-2027 academic year"; H6 = "same academic year checked in item H1" |
 | H32 | https://college.harvard.edu/financial-aid/how-aid-works/cost-attendance | 2026-11-07 | official | Harvard 2026-27 cost of attendance; international aid eligibility statement |
 | H33 | https://finaid.brown.edu/estimate-cost-aid/cost | 2026-11-07 | official | Brown 2026-27 cost of attendance (incoming first-year) |
-| H34 | https://sfs.jhu.edu/tuition-and-fees/ | 2026-11-07 | official | JHU cost page: HTTP 404; not retrieved |
+| H34 | https://sfs.jhu.edu/cost-tuition/ | 2026-11-07 | official | JHU published cost of attendance, 2026-27 academic year (the former /tuition-and-fees/ path returns HTTP 404; this is where the page now lives) |
 | H35 | https://www.admission.ucla.edu/tuition-aid/tuition-fees | 2026-11-07 | official | UCLA on-campus cost; "Total – Nonresidents" $84,770; "Updated July 2026"; no year named |
+
+## Addendum 2026-11-07: Johns Hopkins published cost retrieved
+
+- [事實] The URL recorded for H34, `sfs.jhu.edu/tuition-and-fees/`, returns
+  HTTP 404. The page now lives at `sfs.jhu.edu/cost-tuition/`, reached from the
+  404 page's own "Cost & Tuition" navigation link, and was read in a browser on
+  2026-11-07.
+- [事實] Its table headed "2026-27 Academic Year / On-Campus Living (Freshman)"
+  gives: tuition $68,670; matriculation fee (one-time only) $500; living
+  expenses, housing (on-campus) $13,073; living expenses, meals (on-campus)
+  $8,894; miscellaneous personal expenses $1,606; books, course materials,
+  supplies and equipment $1,377; transportation $738; TOTAL $94,858. The
+  tuition figure carries an asterisk on the page.
+- [事實] The page states a separate, lower cost of attendance for students
+  living off campus, and a sophomore on-campus figure with a higher housing
+  line ($14,444) and no matriculation fee.
+- [推論] This number is **not** on the same basis as the cost-of-attendance
+  column for the other schools in the table above. Those are computed from the
+  school's Common Data Set G1 and G5 lines for 2025-26; this one is the school's
+  own published 2026-27 COA and includes a one-time $500 matriculation fee that
+  a CDS G1/G5 sum would not. It is recorded as a published figure for 2026-27
+  and labelled as such on the site, and it is not used to compute an
+  average-award share, because the matching H6 aid numbers were never retrieved.
+- [事實] Johns Hopkins' other cells in the table stay "not stated": its Common
+  Data Set was not retrieved (H19), so the H6 aid counts and averages are still
+  unknown.
 
 ## 中文摘要（本筆記重點）
 
