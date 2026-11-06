@@ -93,11 +93,35 @@ Tier 4: Williams, Amherst, Swarthmore
       Not yet due: every URL was accessed 2026-11-07, so no access date is stale and no
       「待重查」badge is showing. Becomes meaningful around 2027-02-05 (90 days).
 - [x] E2 UK scope approved by the maintainer 2026-11-07 → section F
-- [ ] E3 Apply Q002 once the maintainer pastes the twelve pages back: Princeton (graded
-      written paper, test policy, checklist, "not looking for perfect"), Northwestern (test
-      policy, program materials, letters, unsolicited supplements, touchpoints, InitialView),
-      Purdue (EA/RD dates, SAT/ACT/CLT, letters, English requirement). These three hosts
-      refuse every automated request at the TLS layer; retrying is pointless (V2).
+- [x] E3 Princeton, Northwestern and Purdue read directly  ✓ 2026-11-07: research/2026-11-07_three-blocked-hosts-read_v1.md (V4)
+      The hosts had stopped refusing by about 05:45: ten pages fetched, all HTTP 200, no
+      bypass of anything. V2's "refuses at the TLS layer, retrying is pointless" was a
+      transient failure of one fetching path, reported as a permanent property. Q002 no
+      longer needs the maintainer. Integration of the newly-read cells into the site tables
+      is E8.
+- [ ] E9 Michigan and Williams were read too (V4, T11-T13): `curl` still gets 403 from both,
+      but the browser opened both with no challenge. Integrate the same way as E8 — Williams
+      (ED Nov 15 + Agreement, RD Jan 4, Coalition on Scoir confirmed from its own page, three
+      recommendations, $65, truly test optional with cross-ACT superscoring, the four optional
+      channels including "do not submit lab reports" and the research abstract + VIVA, no
+      interviews, two officers per file) and Michigan (the new Early Decision plan and all its
+      dates, $75, ONE teacher evaluation from a core teacher "or other non-relative", "do not
+      submit additional documents unless specifically requested", and the 2026-27 essay word
+      limits: 250-650 / 250 / 100-300 / 100-550). The schools page's blocked section now holds
+      these facts in prose; the matrix cells still say "not stated".
+- [ ] E8 Integrate the V4 facts into the site tables: Princeton (graded written paper as a
+      required component with its subject and format rules, the two-cycle test policy, two
+      teacher letters from higher-level courses in different areas, SR plus separate
+      counselor letter, arts-supplement-only with portal submission after the application,
+      opt-out alumni interview and the no-recording rule, SCEA/RD dates, three-application
+      limit), Northwestern (personal essay no longer required, the 2026-27 supplement
+      prompts and 300/200-word limits, unsolicited supplements refused including websites,
+      two letters plus optional extra, Glimpse and InitialView with Nov 6 / Jan 16 dates,
+      Bienen and ISP, dated 2026-27 deadlines, ~50% of the class from ED), Purdue (Nov 1
+      Early Action as the scholarship deadline, Aug 1 to Jan 15 window, CLT accepted, the
+      factor list with no letters in it, four years of maths and three of lab science for
+      all majors, admission to a specific major). The schools, portfolios, timeline and
+      containers pages all have cells that currently read "not stated" for these three.
 - [x] E4 Pages that load but do not hand over their text  ✓ 2026-11-07: research/2026-11-07_recovered-pages-round-3_v1.md (V3)
       Stanford's FAQ index turned out to be retired, not gated (39-byte empty document, no
       FAQ link in the site navigation); its answers now live in accordions on each Apply

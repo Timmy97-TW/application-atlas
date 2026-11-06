@@ -10075,8 +10075,8 @@ window.ATLAS.pages['insights'] = {
    "items": [
     {
      "t": {
-      "zh": "尚待確認、因此本節未收錄的學校說法，依障礙種類分三類（用語目前只來自搜尋引擎摘錄）。一、TLS 層被拒，兩條獨立請求路徑、十二個網址全部沒有回應，重試不會好，只能人工開頁：Princeton（文書與 AI 部落格、面試、graded written paper）、Northwestern（表現興趣、國際生面試）、Purdue（推薦信）。二、頁面拒絕自動存取或要求人工驗證（本站不嘗試繞過）：Michigan（why us、面試）、Williams（面試、表現興趣）。Amherst 原本在這一類，現在不是了：2026-11-07 稍晚用瀏覽器一頁一頁都打得開，面試政策、申請日期、考試政策、寫作補充裡的研究欄位、2026–27 費用都已寫進上面各節。三、頁面會載入但讀不到那段文字——2026-11-07 大部分已解決。Stanford 的 FAQ 首頁根本不是被擋，是已經撤掉（回傳 39 bytes 的空白文件），內容搬進各 Apply 子頁的摺疊區塊，已在那裡讀到；UT Austin 的 FAQ 答案在它自己的腳本填好後，從頁面 DOM 讀到。剩下的只有一種障礙：伺服器丟檔案而不是網頁——Harvard 2026–27 supplement、UC 的 PIQ 指引、三份 Common App 簡報、Amherst 的 CDS 分節檔都是以下載方式送出的 PDF。Penn 的 InitialView 客服文章與 UC 給輔導老師的頁面在同一輪讀到了，這一類只剩 CMU 關於挑選推薦老師的用語，它放在分頁面板裡。Cornell 的「不追蹤表現興趣」是另一種情況：原始網址在不對外的開發用子網域，已無法解析，公開頁面上沒有這句話，所以這條說法不成立。Columbia 的額外推薦信規定、Duke 的 FAQ 用語、Georgetown 的面試 FAQ 已在第一輪瀏覽器複查確認，已從本清單移出、收進本頁其他各節。",
-      "en": "School statements still unconfirmed and therefore not shown here, grouped by the kind of obstacle, because \"refused automated access\" covers three different problems with three different prognoses. The wording for all of them so far comes only from search-engine excerpts. (1) Refused at the TLS layer — two independent request paths, twelve URLs, no response at all, so retrying will not clear it and only a person opening the page can settle it: Princeton (essays-and-AI blog, interviews, graded written paper), Northwestern (demonstrated interest, international interviews), Purdue (letters). (2) Refused automated reading or asked for human verification, which this site does not attempt to bypass: Michigan (why us, interviews), Williams (interviews, demonstrated interest). Amherst was in this group and is no longer: every page of its site opened in a browser later on 2026-11-07, and its interview policy, deadlines, test policy, writing-supplement research section and 2026–27 costs are now in the sections above. (3) The page loads but the text cannot be read from it — mostly cleared on 2026-11-07. Stanford's FAQ index was not gated at all but retired (it serves a 39-byte empty document), and its answers now live in accordions on each Apply page, where they were read; UT Austin's FAQ answers were read from the live DOM after its own script filled them. What remains is one kind of obstacle only: a server that hands over a file instead of a page — the Harvard 2026–27 supplement, UC's PIQ guidance, the three Common App decks and Amherst's CDS sections are all PDFs offered as downloads. Penn's InitialView help-desk article and UC's counselor page were read in the same pass, so the only item left in this group is CMU's wording on choosing a teacher recommender, which sits in a tab panel. Cornell's \"does not track demonstrated interest\" is a separate case: the original URL was on a non-public development subdomain that no longer resolves, and the public page carries no such wording, so the claim does not stand. Columbia's extra-letters rule, Duke's FAQ wording and Georgetown's interview FAQ were confirmed in the first browser pass and have moved out of this list into the sections above."
+      "zh": "尚待確認、因此本節未收錄的學校說法，依障礙種類分三類（用語目前只來自搜尋引擎摘錄）。一、TLS 層被拒——**2026-11-07 約 05:45 已解除**。Princeton、Northwestern、Purdue 先前十二個網址、兩條請求路徑全無回應，本站因此判定「重試不會好、只能維護者本人開頁」。那其實是某一條抓取路徑的暫時性失敗，被寫成網站的永久屬性：05:45 時三個主機都正常回應，十頁已抓到並讀完（V4）。事實都在研究筆記裡；本站表格的這些格子要到下一輪才會填上，目前仍寫「未載明」。二、頁面拒絕自動存取或要求人工驗證（本站不嘗試繞過）：Michigan（why us、面試）、Williams（面試、表現興趣）。Amherst 原本在這一類，現在不是了：2026-11-07 稍晚用瀏覽器一頁一頁都打得開，面試政策、申請日期、考試政策、寫作補充裡的研究欄位、2026–27 費用都已寫進上面各節。三、頁面會載入但讀不到那段文字——2026-11-07 大部分已解決。Stanford 的 FAQ 首頁根本不是被擋，是已經撤掉（回傳 39 bytes 的空白文件），內容搬進各 Apply 子頁的摺疊區塊，已在那裡讀到；UT Austin 的 FAQ 答案在它自己的腳本填好後，從頁面 DOM 讀到。剩下的只有一種障礙：伺服器丟檔案而不是網頁——Harvard 2026–27 supplement、UC 的 PIQ 指引、三份 Common App 簡報、Amherst 的 CDS 分節檔都是以下載方式送出的 PDF。Penn 的 InitialView 客服文章與 UC 給輔導老師的頁面在同一輪讀到了，這一類只剩 CMU 關於挑選推薦老師的用語，它放在分頁面板裡。Cornell 的「不追蹤表現興趣」是另一種情況：原始網址在不對外的開發用子網域，已無法解析，公開頁面上沒有這句話，所以這條說法不成立。Columbia 的額外推薦信規定、Duke 的 FAQ 用語、Georgetown 的面試 FAQ 已在第一輪瀏覽器複查確認，已從本清單移出、收進本頁其他各節。",
+      "en": "School statements still unconfirmed and therefore not shown here, grouped by the kind of obstacle, because \"refused automated access\" covers three different problems with three different prognoses. The wording for all of them so far comes only from search-engine excerpts. (1) Refused at the TLS layer — **cleared on 2026-11-07 at about 05:45**. Princeton, Northwestern and Purdue had refused twelve URLs across two request paths with no response body, and this site concluded that retrying was pointless and only the maintainer could settle them. That was a transient failure of one fetching path reported as a permanent property of the sites: by 05:45 all three answered ordinary requests, and ten of their pages were fetched and read (V4). Their facts are in the research note; the site tables still carry “not stated” in these cells until the next run writes them in. (2) Refused automated reading or asked for human verification, which this site does not attempt to bypass: Michigan (why us, interviews), Williams (interviews, demonstrated interest). Amherst was in this group and is no longer: every page of its site opened in a browser later on 2026-11-07, and its interview policy, deadlines, test policy, writing-supplement research section and 2026–27 costs are now in the sections above. (3) The page loads but the text cannot be read from it — mostly cleared on 2026-11-07. Stanford's FAQ index was not gated at all but retired (it serves a 39-byte empty document), and its answers now live in accordions on each Apply page, where they were read; UT Austin's FAQ answers were read from the live DOM after its own script filled them. What remains is one kind of obstacle only: a server that hands over a file instead of a page — the Harvard 2026–27 supplement, UC's PIQ guidance, the three Common App decks and Amherst's CDS sections are all PDFs offered as downloads. Penn's InitialView help-desk article and UC's counselor page were read in the same pass, so the only item left in this group is CMU's wording on choosing a teacher recommender, which sits in a tab panel. Cornell's \"does not track demonstrated interest\" is a separate case: the original URL was on a non-public development subdomain that no longer resolves, and the public page carries no such wording, so the claim does not stand. Columbia's extra-letters rule, Duke's FAQ wording and Georgetown's interview FAQ were confirmed in the first browser pass and have moved out of this list into the sections above."
      },
      "tag": "f",
      "src": [
@@ -13198,6 +13198,57 @@ window.ATLAS.pages['insights'] = {
      "tag": "f",
      "src": [
       "V3-R3"
+     ]
+    },
+    {
+     "t": {
+      "zh": "Northwestern 把「網站」點名在拒收名單裡：「does not accept unsolicited supplemental items, such as artwork, portfolios, recordings (CDs, DVDs, etc.) or websites (including social media). These items will not be reviewed and therefore should not be submitted.」對一份校外長期紀錄來說，Northwestern 的答案是：連結進不去、作品集進不去，只有活動表、文書與一封額外推薦信進得去。",
+      "en": "Northwestern names websites in what it refuses: \u201cdoes not accept unsolicited supplemental items, such as artwork, portfolios, recordings (CDs, DVDs, etc.) or websites (including social media). These items will not be reviewed and therefore should not be submitted.\u201d For a multi-year outside record, Northwestern\u2019s answer is that a link does not get in and a portfolio does not get in; the activity chart, the essays and one supplemental letter do."
+     },
+     "tag": "f",
+     "src": [
+      "V4-T6"
+     ]
+    },
+    {
+     "t": {
+      "zh": "Princeton 要求每一位申請人交一份有成績的課堂作業，並且明說比較想看「論說、有主軸的分析寫作」，而不是科學研究、創意寫作、個人敘事或以資料分析為主的報告。對工程或生物申請者來說，自己最強的那份寫作（實驗報告、研究紀錄）正好是這份必交文件不想看的類型。",
+      "en": "Princeton requires a graded written paper from every applicant and says it is \u201cmost interested in seeing expository, thesis-driven analytical writing rather than science research, creative writing, personal narratives or papers mostly focused on data analysis\u201d. For an engineering or biology applicant, the strongest piece of writing they own \u2014 a lab report, a research write-up \u2014 is the kind this required document explicitly does not want."
+     },
+     "tag": "f",
+     "src": [
+      "V4-T1"
+     ]
+    },
+    {
+     "t": {
+      "zh": "Northwestern 已經不要求 Common App 的主文書（頁面原文「the Common/Coalition Application personal essay, which we no longer require」）。Common App 的介面不會告訴你這件事，只有 Northwestern 自己的頁面寫了。",
+      "en": "Northwestern no longer requires the Common App personal essay \u2014 its own page says so: \u201cthe Common/Coalition Application personal essay, which we no longer require\u201d. Nothing in the Common App interface signals this; only Northwestern\u2019s page states it."
+     },
+     "tag": "f",
+     "src": [
+      "V4-T5"
+     ]
+    },
+    {
+     "t": {
+      "zh": "兩所學校明文叫申請人不要交工程或生物學生最可能有的那份文件：Princeton 必交的 graded written paper「最想看論說、有主軸的分析寫作，而不是科學研究」，Williams 的選繳學術寫作樣本直接寫「Please do not submit lab reports.」。但 Williams 另外開了一條專門管道收那些材料——科學或數學研究的簡短說明，還可以附 VIVA 錄影讓他們「聽你講自己的研究」。所以規則不是「不想看你的科學」，而是「不要放在寫作那一格」。",
+      "en": "Two schools tell applicants in writing not to send the document an engineering or biology student is most likely to own. Princeton\u2019s required graded written paper is \u201cmost interested in\u2026 expository, thesis-driven analytical writing rather than science research\u201d; Williams\u2019s optional academic writing sample says \u201cPlease do not submit lab reports.\u201d Williams then opens a separate channel for exactly that material \u2014 a brief description of scientific or mathematical research, with an optional VIVA recording so it \u201ccan hear you speak about your research\u201d. The rule is not \u201cwe do not want your science\u201d; it is \u201cnot in the writing slot\u201d."
+     },
+     "tag": "f",
+     "src": [
+      "V4-T1",
+      "V4-T11"
+     ]
+    },
+    {
+     "t": {
+      "zh": "Michigan 的那一封老師推薦信，可以不是學校老師：清單上寫的是「核心學科老師**或其他非親屬**，能直接說明學生的學術能力、潛力與課堂表現」。對一個最強的學術見證人在校外的學生來說，這句話就是入口，而它只出現在申請清單的一行裡，不在任何關於推薦人的指引裡。",
+      "en": "Michigan\u2019s single teacher evaluation does not have to come from a schoolteacher: the checklist line reads \u201ccore academic teacher **or other non-relative** who can speak directly to the student\u2019s academic aptitude, potential, and classroom performance\u201d. For a student whose strongest academic witness is a mentor outside school, that phrasing is the opening \u2014 and it appears in a checklist line, not in any guidance about recommenders."
+     },
+     "tag": "f",
+     "src": [
+      "V4-T13"
      ]
     },
     {

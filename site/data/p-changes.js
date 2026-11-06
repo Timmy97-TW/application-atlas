@@ -166,13 +166,13 @@ window.ATLAS.pages = window.ATLAS.pages || {};
               "WashU: from fall 2027 applicants, SAT/ACT is no longer accepted in place of an English-proficiency test.",
               ["G1-S26"]), "english"),
             row(L("2026-01-21 起考的 TOEFL", "TOEFL tests from 2026-01-21"), F(
-              "TOEFL iBT 改用 1–6 級分後，學校門檻開始用新分數表示，例如 UC San Diego 4.5（2026 年 1 月起生效，舊制 83）、UNC「強的申請者通常」5 以上。這是 TOEFL 的變更，不是學校政策變更。",
-              "After TOEFL iBT moved to a 1–6 band scale, schools restate thresholds on it, e.g. UC San Diego 4.5 (effective January 2026; 83 on the old scale) and UNC \"strong applicants typically\" 5+. This is a TOEFL change, not a school policy change.",
-              ["A3b-S31", "G2-S4"]), "english"),
+              "TOEFL iBT 改用 1–6 級分後，學校門檻開始用新分數表示，例如 UC San Diego 4.5（2026 年 1 月起生效，舊制 83）、UNC「強的申請者通常」5 以上。Purdue 把兩套標準並列在同一頁：2026-01-21 之前考的要 iBT 88、各部分 20 以上；之後考的要 4.5、各部分 4.0。跨過這個日期考試的人要先確認學校講的是哪一套。這是 TOEFL 的變更，不是學校政策變更。",
+              "After TOEFL iBT moved to a 1–6 band scale, schools restate thresholds on it, e.g. UC San Diego 4.5 (effective January 2026; 83 on the old scale) and UNC \"strong applicants typically\" 5+. Purdue prints both standards on one page: iBT 88 with 20 per section for tests taken before 2026-01-21, and 4.5 with 4.0 per section for tests taken on or after it. Anyone testing across that date has to check which scale a school is quoting. This is a TOEFL change, not a school policy change.",
+              ["A3b-S31", "G2-S4", "V4-T14"]), "english"),
             row(C2728, F(
-              "Princeton：2027 秋入學仍 test-optional；2027–28 季（2028 秋入學）起要求 SAT/ACT。",
-              "Princeton: test-optional for fall 2027 entry; SAT/ACT required from the 2027–28 cycle (fall 2028 entry).",
-              ["A3a-S42", "A4-S24"]), "reinstated"),
+              "Princeton：2027 秋入學仍 test-optional；2027–28 季（2028 秋入學）起要求 SAT/ACT。學校自己的頁面已在 2026-11-07 直接讀到（先前只有搜尋摘錄），並載明現役軍人不受新規定限制，以及這個決定來自對五年 test-optional 資料的檢視。",
+              "Princeton: test-optional for fall 2027 entry; SAT/ACT required from the 2027–28 cycle (fall 2028 entry). Read directly from the school\u2019s own page on 2026-11-07 (previously a search extract only), which adds that active military personnel are exempt from the new requirement and that the decision followed a review of five years of test-optional data.",
+              ["A3a-S42", "A4-S24", "V4-T2"]), "reinstated"),
             row(C2728, F(
               "Columbia：2026–27 test-optional（ED 收到 2026 年 11 月、RD 收到 2027 年 2 月的考試）；2027–28 起恢復要求，2027 年 8 月生效。",
               "Columbia: test-optional in 2026–27 (tests through November 2026 for ED, February 2027 for RD); requirement returns for 2027–28, effective August 2027.",

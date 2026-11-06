@@ -89,6 +89,10 @@ window.ATLAS.sourceGroups = {
   "zh": "B2／B4 補充材料矩陣",
   "en": "B2/B4 Supplementary-materials matrix"
  },
+ "V4": {
+  "zh": "Princeton／Northwestern／Purdue 終於讀到",
+  "en": "Princeton, Northwestern and Purdue finally read"
+ },
  "F1": {
   "zh": "F1／F2 UCAS 與入學考試",
   "en": "F1/F2 UCAS and admissions tests"
@@ -17189,6 +17193,202 @@ window.ATLAS.sources = {
   "note": {
    "zh": "研究筆記：2026-11-07_supplementary-materials-matrix_v1.md",
    "en": "Research note: 2026-11-07_supplementary-materials-matrix_v1.md"
+  }
+ },
+ "V4-T1": {
+  "url": "https://admission.princeton.edu/apply/graded-written-paper",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V4",
+  "title": {
+   "zh": "Princeton graded written paper: required of all applicants, subjects, length, what to include, two submission routes",
+   "en": "Princeton graded written paper: required of all applicants, subjects, length, what to include, two submission routes"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_three-blocked-hosts-read_v1.md",
+   "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
+  }
+ },
+ "V4-T2": {
+  "url": "https://admission.princeton.edu/apply/standardized-testing",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V4",
+  "title": {
+   "zh": "Princeton test optional for fall 2027 entry; required from the 2027-28 cycle (fall 2028); score choice, ACT sections, codes",
+   "en": "Princeton test optional for fall 2027 entry; required from the 2027-28 cycle (fall 2028); score choice, ACT sections, codes"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_three-blocked-hosts-read_v1.md",
+   "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
+  }
+ },
+ "V4-T3": {
+  "url": "https://admission.princeton.edu/apply/application-checklist",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V4",
+  "title": {
+   "zh": "Princeton checklist: Common App only, two teacher letters, SR plus separate counselor letter, midyear report, arts supplement, optional alumni interview, three-application limit",
+   "en": "Princeton checklist: Common App only, two teacher letters, SR plus separate counselor letter, midyear report, arts supplement, optional alumni interview, three-application limit"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_three-blocked-hosts-read_v1.md",
+   "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
+  }
+ },
+ "V4-T4": {
+  "url": "https://admission.princeton.edu/apply/first-year-application-dates-deadlines",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V4",
+  "title": {
+   "zh": "Princeton SCEA Nov 1 / RD Jan 1, arts supplement Nov 6 / Jan 8, aid Nov 9 / Feb 1, reply May 1",
+   "en": "Princeton SCEA Nov 1 / RD Jan 1, arts supplement Nov 6 / Jan 8, aid Nov 9 / Feb 1, reply May 1"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_three-blocked-hosts-read_v1.md",
+   "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
+  }
+ },
+ "V4-T5": {
+  "url": "https://admissions.northwestern.edu/apply/requirements.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V4",
+  "title": {
+   "zh": "Northwestern: test optional, two letters, 2026-27 writing supplement prompts and word limits, personal essay no longer required, Glimpse and InitialView, programme-specific supplements",
+   "en": "Northwestern: test optional, two letters, 2026-27 writing supplement prompts and word limits, personal essay no longer required, Glimpse and InitialView, programme-specific supplements"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_three-blocked-hosts-read_v1.md",
+   "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
+  }
+ },
+ "V4-T6": {
+  "url": "https://admissions.northwestern.edu/faqs/application-process/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V4",
+  "title": {
+   "zh": "Northwestern: unsolicited supplemental items not accepted and not reviewed, including websites; no alumni interviews; deadlines",
+   "en": "Northwestern: unsolicited supplemental items not accepted and not reviewed, including websites; no alumni interviews; deadlines"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_three-blocked-hosts-read_v1.md",
+   "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
+  }
+ },
+ "V4-T7": {
+  "url": "https://admissions.northwestern.edu/apply/application-deadlines.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V4",
+  "title": {
+   "zh": "Northwestern dated deadlines for 2026-27: QuestBridge Oct 1 2026, ED Nov 1 2026, RD Jan 4 2027, aid dates",
+   "en": "Northwestern dated deadlines for 2026-27: QuestBridge Oct 1 2026, ED Nov 1 2026, RD Jan 4 2027, aid dates"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_three-blocked-hosts-read_v1.md",
+   "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
+  }
+ },
+ "V4-T8": {
+  "url": "https://admissions.purdue.edu/become-student/apply/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V4",
+  "title": {
+   "zh": "Purdue: Common App for West Lafayette and Indianapolis, fall application window Aug 1 to Jan 15, Polytechnic Statewide on Purdue's own application",
+   "en": "Purdue: Common App for West Lafayette and Indianapolis, fall application window Aug 1 to Jan 15, Polytechnic Statewide on Purdue's own application"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_three-blocked-hosts-read_v1.md",
+   "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
+  }
+ },
+ "V4-T9": {
+  "url": "https://admissions.purdue.edu/become-student/first-year-criteria/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V4",
+  "title": {
+   "zh": "Purdue: SAT, ACT and CLT accepted and no preference, scores within five years, Nov 1 Early Action deadline encompassing scholarship consideration, the factor list, no separate ACT Science score",
+   "en": "Purdue: SAT, ACT and CLT accepted and no preference, scores within five years, Nov 1 Early Action deadline encompassing scholarship consideration, the factor list, no separate ACT Science score"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_three-blocked-hosts-read_v1.md",
+   "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
+  }
+ },
+ "V4-T10": {
+  "url": "https://admissions.purdue.edu/become-student/international/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V4",
+  "title": {
+   "zh": "Purdue: admission is to a specific major; international curriculum requirements; no world-language requirement for applicants from non-English-speaking countries; no IB minimum",
+   "en": "Purdue: admission is to a specific major; international curriculum requirements; no world-language requirement for applicants from non-English-speaking countries; no IB minimum"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_three-blocked-hosts-read_v1.md",
+   "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
+  }
+ },
+ "V4-T11": {
+  "url": "https://www.williams.edu/admission-aid/how-to-apply/first-year/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V4",
+  "title": {
+   "zh": "Williams: ED Nov 15 / RD Jan 4 with decision dates, three platforms incl. Coalition on Scoir, three recommendations, $65 fee, test optional with superscoring, optional academic writing supplement (\"do not submit lab reports\"), arts portfolio via SlideRoom, scientific research abstracts, VIVA, Initia",
+   "en": "Williams: ED Nov 15 / RD Jan 4 with decision dates, three platforms incl. Coalition on Scoir, three recommendations, $65 fee, test optional with superscoring, optional academic writing supplement (\"do not submit lab reports\"), arts portfolio via SlideRoom, scientific research abstracts, VIVA, Initia"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_three-blocked-hosts-read_v1.md",
+   "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
+  }
+ },
+ "V4-T12": {
+  "url": "https://admissions.umich.edu/apply/first-year-applicants/essay-questions",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V4",
+  "title": {
+   "zh": "Michigan 2026-27 essays: Common App 250-650 words, Challenges and Circumstances 250 words, U-M question 1 100-300, question 2 100-550",
+   "en": "Michigan 2026-27 essays: Common App 250-650 words, Challenges and Circumstances 250 words, U-M question 1 100-300, question 2 100-550"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_three-blocked-hosts-read_v1.md",
+   "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
+  }
+ },
+ "V4-T13": {
+  "url": "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V4",
+  "title": {
+   "zh": "Michigan: ED and EA both Nov 1, RD Feb 1, aid and notification dates, $75 fee, School Report, ONE teacher evaluation (core academic teacher or other non-relative), \"Do not submit additional documents unless specifically requested\"",
+   "en": "Michigan: ED and EA both Nov 1, RD Feb 1, aid and notification dates, $75 fee, School Report, ONE teacher evaluation (core academic teacher or other non-relative), \"Do not submit additional documents unless specifically requested\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_three-blocked-hosts-read_v1.md",
+   "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
+  }
+ },
+ "V4-T14": {
+  "url": "https://admissions.purdue.edu/become-student/english-proficiency/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V4",
+  "title": {
+   "zh": "Purdue English proficiency minimums: DET, IELTS, TOEFL (both scales), ACT English, SAT EBRW; two-year validity; official scores on acceptance",
+   "en": "Purdue English proficiency minimums: DET, IELTS, TOEFL (both scales), ACT English, SAT EBRW; two-year validity; official scores on acceptance"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_three-blocked-hosts-read_v1.md",
+   "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
   }
  },
  "F1-S1": {

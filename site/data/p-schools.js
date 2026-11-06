@@ -1314,23 +1314,23 @@ window.ATLAS.pages = window.ATLAS.pages || {};
       {
         id: 'blocked',
         h: s('無法讀取的學校頁面與缺口', 'School pages that refused automated reading, and the gaps'),
-        judgment: s('Michigan 與 Williams 的官網在 2026-11-07 拒絕自動讀取，Northwestern 部分研究也受影響；這些格子需要有人用一般瀏覽器補讀。Amherst 當天晚一點已經讀到，留在本節是為了記錄它原本被誤判成「拒絕存取」。',
-          'The Michigan and Williams sites refused automated reading on 2026-11-07, and Northwestern was affected in part; these cells need a person to read the pages in an ordinary browser. Amherst was read later the same day and stays in this section only to record that it had been misdiagnosed as refusing access.'),
+        judgment: s('本節原本列的五個「讀不到」的學校，在 2026-11-07 清晨全部讀到了：Princeton、Northwestern、Purdue 的拒絕是某條抓取路徑的暫時失敗，Williams 與 Michigan 則是 curl 仍 403、瀏覽器打得開。本節現在記的是「哪一個 client 試過、什麼時候」，以及這些事實還沒寫進表格（BACKLOG E8）。',
+          'All five schools this section listed as unreadable were read in the early hours of 2026-11-07: the Princeton, Northwestern and Purdue refusals were a transient failure of one fetching path, while Williams and Michigan still return 403 to `curl` but open in a browser. What this section now records is which client was tried and when, and that these facts are not yet in the tables (BACKLOG E8).'),
         items: [
           {
-            t: s('**Michigan**：admissions.umich.edu 對 fetch、curl 與瀏覽器全部回傳 HTTP 403／「Access Denied」；finaid.umich.edu 也是 403。', '**Michigan**: admissions.umich.edu returned HTTP 403 / "Access Denied" to fetch, curl and a browser pane; finaid.umich.edu also returned 403.'),
-            tag: 'f', src: ['A5a-S88', 'A3a-S84', 'A3a-S85'],
+            t: s('**Michigan（已解除）**：curl 仍然回 HTTP 403，但 2026-11-07 約 05:55 用瀏覽器直接打開了 requirements 與 essay 兩頁，沒有任何驗證頁。本站先前寫「連瀏覽器也 403」已不成立。', '**Michigan (cleared)**: `curl` still returns HTTP 403, but the requirements and essay pages opened in a browser at about 05:55 on 2026-11-07 with no challenge of any kind. This repo\u2019s earlier note that even a browser got 403 no longer holds.'),
+            tag: 'f', src: ['V4-T12', 'V4-T13'],
             sub: [
-              { t: s('缺：2026–27 文書題目與字數、報名費減免、Other Recommender 政策、面試、學院清單與規則、RD 截止日、2026–27 各方案日期。', 'Missing: 2026–27 essay prompts and limits, fee waiver, Other Recommender policy, interview, the list of schools/colleges and their rules, the RD deadline, 2026–27 plan dates.'), src: ['A5a-S88', 'MI-S1'] },
+              f('已讀到（尚未寫進本頁表格，見 BACKLOG E8）：**Michigan 新增 Early Decision**，11/1 同時是 ED 與 EA 截止日（ED 補助 11/15、12/24 前放榜、1/6 繳訂金，Agreement 需申請人／家長／輔導老師三個簽名一起完成），RD 2/1，EA 1/29 前、RD 4/2 前放榜，EA／RD 補助 3/1，5/1 繳訂金；報名費 $75；**只要一封老師推薦信，可以是核心學科老師「或其他非親屬」**；「除非特別要求，不要補交其他文件」；文書字數：Common App 主文書 250–650、Challenges and Circumstances 250、U-M 第一題 100–300、第二題 100–550。頁面並註明招生流程正在修改。', 'Read (not yet written into this page\u2019s tables \u2014 BACKLOG E8): **Michigan has added an Early Decision plan**; Nov 1 is the deadline for both ED and EA (ED aid Nov 15, notifications by Dec 24, deposit Jan 6, and an Agreement that the applicant, a parent or guardian and the counselor must all sign together), RD Feb 1, EA notifications by Jan 29 and RD by April 2, EA/RD aid Mar 1, deposit May 1; a $75 fee; **one teacher evaluation only, which may come from a core academic teacher \u201cor other non-relative\u201d**; "Do not submit additional documents unless specifically requested"; essay limits: Common App 250\u2013650, Challenges and Circumstances 250, U-M question 1 100\u2013300, question 2 100\u2013550. The page also states that the admissions process is being modified.', ['V4-T12', 'V4-T13']),
               f('現有資料來源：Michigan Engineering 招生頁（學院辦公室，非中央招生處）、U-M 招生處在 teamdynamix.umich.edu 的知識庫文章、以及官方頁面的搜尋結果摘要（ED／EA 日期為 fall 2026 季）。', 'What is available: Michigan Engineering admissions pages (a college office, not central admissions), U-M admissions knowledge-base articles on teamdynamix.umich.edu, and search-result summaries of official pages (ED/EA dates for the fall 2026 cycle).', ['A5a-S84', 'A4-S63', 'MI-S1', 'MI-S3'])
             ]
           },
           {
-            t: s('**Williams**：admission.williams.edu 對自動請求回傳 HTTP 403。', '**Williams**: admission.williams.edu returned HTTP 403 to automated requests.'),
-            tag: 'f', src: ['A5b-S45', 'A3b-S48'],
+            t: s('**Williams（已解除）**：curl 仍然回 HTTP 403，但 2026-11-07 約 05:50 用瀏覽器直接讀到 first-year 頁，沒有人工驗證頁。', '**Williams (cleared)**: `curl` still returns HTTP 403, but the first-year page was read in a browser at about 05:50 on 2026-11-07, with no human-verification page.'),
+            tag: 'f', src: ['V4-T11'],
             sub: [
-              { t: s('缺：補充文書、推薦信、Other Recommender、面試、2026–27 申請日期。', 'Missing: supplements, letters, Other Recommender, interview, 2026–27 dates.'), src: ['A5b-S45', 'A5b-S46'] },
-              f('Common App 名錄在 2026-11-07 仍顯示 2025–26 的日期（ED 2025/11/15、RD 2026/1/5）。', 'The Common App listing still showed 2025–26 dates on 2026-11-07 (ED Nov 15, 2025; RD Jan 5, 2026).', ['A5b-S46', 'A3b-S39']),
+              f('已讀到（尚未寫進本頁表格，見 BACKLOG E8）：ED 11/15（要簽 Agreement）、12/14 放榜；RD 1/4、4/1 放榜、5/1 回覆；三個平台並列（Common App、**Apply Coalition with Scoir**、QuestBridge），補上先前只有 Scoir 名單、官網無法確認的缺口；三封推薦信（輔導老師＋兩位老師）；$65 報名費；「truly test optional」，SAT／ACT 都 superscore，新舊 ACT 之間也 superscore；選繳四種管道——學術寫作樣本（可無分數、可手寫，**明文請勿交實驗報告**）、藝術作品集（SlideRoom、教師審閱）、**科學研究摘要**（可附 VIVA 錄影）、InitialView（學校自己不辦面試）；每份申請兩位招生人員共同審閱。', 'Read (not yet written into this page\u2019s tables \u2014 BACKLOG E8): ED Nov 15 with an Agreement, decision Dec 14; RD Jan 4, decision April 1, reply May 1; three platforms with no preference (Common App, **Apply Coalition with Scoir**, QuestBridge), which closes the gap where Williams appeared only on Scoir\u2019s own list; three recommendations (counselor plus two teachers); a $65 fee; "truly test optional" with SAT/ACT superscoring, including across the legacy and enhanced ACT; four optional channels \u2014 an academic writing sample (ungraded and handwritten are fine, but "**Please do not submit lab reports**"), an arts portfolio through SlideRoom reviewed by faculty, **scientific research abstracts** with an optional VIVA recording, and InitialView although Williams holds no interviews; two admission officers review every application together.', ['V4-T11']),
+              f('Common App 名錄在 2026-11-07 仍顯示 2025–26 的日期（ED 2025/11/15、RD 2026/1/5），學校自己的頁面則是 ED 11/15、RD 1/4。', 'The Common App listing still showed 2025\u201326 dates on 2026-11-07 (ED Nov 15, 2025; RD Jan 5, 2026), while the school\u2019s own page gives ED Nov 15 and RD Jan 4.', ['A5b-S46', 'A3b-S39', 'V4-T11']),
               f('英語、考試、補助等國際生資料取自搜尋引擎對官方網址的摘錄（†）。', 'International facts (English, testing, aid) come from search-engine extracts of official URLs (†).', ['A4-S89', 'A4-S90', 'A4-S91'])
             ]
           },
@@ -1343,10 +1343,10 @@ window.ATLAS.pages = window.ATLAS.pages || {};
             ]
           },
           {
-            t: s('**Northwestern（部分）**：時程與國際生研究時，northwestern.edu 全部頁面因 TLS 憑證被拒而無法直接讀取；逐校研究則讀得到申請頁。', '**Northwestern (partial)**: during the calendar and international runs every northwestern.edu page failed direct fetch (TLS certificate rejected); the roster run did read the apply pages.'),
+            t: s('**Northwestern（已解除）**：2026-11-07 約 05:45 起恢復正常回應，requirements、FAQ、deadlines 三頁已直接讀到（V4）；先前的 TLS 憑證錯誤是抓取路徑的暫時失敗，不是網站政策。Princeton 與 Purdue 同時解除。', '**Northwestern (cleared)**: from about 05:45 on 2026-11-07 the host answered normally and its requirements, FAQ and deadlines pages were read directly (V4); the earlier TLS certificate error was a transient failure of one fetching path, not a site policy. Princeton and Purdue cleared at the same time.'),
             tag: 'f', src: ['A3b-S16', 'A4-S84', 'A5b-S18'],
             sub: [
-              { t: s('缺（待瀏覽器確認）：國際生補助截止日、Bienen 音樂 supplement 的年度、期中成績、5/1 回覆日；英語、考試與補助格標 †。', 'Missing (to confirm in a browser): international aid deadlines, the cycle year of the Bienen music supplement, mid-year report, May 1 reply; the English, testing and aid cells are marked †.'), src: ['A3b-S19', 'A3b-S20'] }
+              f('已讀到（尚未寫進本頁表格，見 BACKLOG E8）：2026-27 日期（QuestBridge 2026-10-01、ED 2026-11-01 與補助 12/1、RD 2027-01-04 與補助 2/1）；兩封推薦信加選擇性額外推薦信；明文拒收未經要求的補充材料（含網站）；不再要求 Common App 主文書；寫作補充題目與 300／200 字上限；Glimpse（美國高中）與 InitialView（國際高中）ED 11/6、RD 1/16；Bienen 與 ISP 的額外材料。', 'Read (not yet written into this page\u2019s tables \u2014 BACKLOG E8): the 2026-27 dates (QuestBridge 1 Oct 2026, ED 1 Nov 2026 with aid 1 Dec, RD 4 Jan 2027 with aid 1 Feb); two letters plus an optional extra; unsolicited supplements refused in writing, websites included; the Common App personal essay no longer required; the supplement prompts with their 300/200-word limits; Glimpse (US high schools) and InitialView (international) due 6 Nov / 16 Jan; the Bienen and ISP extras.', ['V4-T5', 'V4-T6', 'V4-T7'])
             ]
           }
         ]
