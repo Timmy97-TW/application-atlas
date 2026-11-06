@@ -182,3 +182,8 @@ body.brief h2 { margin-top: 18px; }
   .mk { grid-template-columns: 1fr; }
   .mk-side { position: static; max-height: none; }
 }
+
+/* wide data tables: keep cells readable, let the wrapper scroll */
+.tablewrap td { min-width: 11em; max-width: 28em; }
+.tablewrap td:first-child { min-width: 7em; font-weight: 600; }
+.tablewrap td sup.cite { white-space: normal; }

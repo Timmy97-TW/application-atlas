@@ -68,7 +68,8 @@
   function itemHtml(it) {
     if (it == null) return '';
     if (it.state === 'not-stated') {
-      return '<span class="ns">' + esc(ui('notStated')) + (it.checked ? ' (' + esc(ui('checked')) + ' ' + esc(it.checked) + ')' : '') + '</span>' + cites(it.src);
+      return '<span class="ns">' + esc(ui('notStated')) + (it.checked ? ' (' + esc(ui('checked')) + ' ' + esc(it.checked) + ')' : '') + '</span>' +
+        (it.t ? ' ' + md(L(it.t)) : '') + cites(it.src);
     }
     if (typeof it === 'string' || it.zh != null || it.en != null) return md(L(it));
     return tagHtml(it.tag) + md(L(it.t)) + cites(it.src);
