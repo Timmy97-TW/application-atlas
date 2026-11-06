@@ -17377,6 +17377,20 @@ window.ATLAS.sources = {
    "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
   }
  },
+ "V4-T14": {
+  "url": "https://admissions.purdue.edu/become-student/english-proficiency/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V4",
+  "title": {
+   "zh": "Purdue English proficiency minimums: DET, IELTS, TOEFL (both scales), ACT English, SAT EBRW; two-year validity; official scores on acceptance",
+   "en": "Purdue English proficiency minimums: DET, IELTS, TOEFL (both scales), ACT English, SAT EBRW; two-year validity; official scores on acceptance"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_three-blocked-hosts-read_v1.md",
+   "en": "Research note: 2026-11-07_three-blocked-hosts-read_v1.md"
+  }
+ },
  "F1-S1": {
   "url": "https://www.ucas.com/applying/applying-university/dates-and-deadlines-uni-applications",
   "accessed": "2026-11-07",

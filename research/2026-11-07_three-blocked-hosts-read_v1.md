@@ -22,6 +22,7 @@ sources:
   | T11 | https://www.williams.edu/admission-aid/how-to-apply/first-year/ | 2026-11-07 | official | Williams: ED Nov 15 / RD Jan 4 with decision dates, three platforms incl. Coalition on Scoir, three recommendations, $65 fee, test optional with superscoring, optional academic writing supplement ("do not submit lab reports"), arts portfolio via SlideRoom, scientific research abstracts, VIVA, InitialView, no interviews, two officers per application |
   | T12 | https://admissions.umich.edu/apply/first-year-applicants/essay-questions | 2026-11-07 | official | Michigan 2026-27 essays: Common App 250-650 words, Challenges and Circumstances 250 words, U-M question 1 100-300, question 2 100-550 |
   | T13 | https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines | 2026-11-07 | official | Michigan: ED and EA both Nov 1, RD Feb 1, aid and notification dates, $75 fee, School Report, ONE teacher evaluation (core academic teacher or other non-relative), "Do not submit additional documents unless specifically requested" |
+  | T14 | https://admissions.purdue.edu/become-student/english-proficiency/ | 2026-11-07 | official | Purdue English proficiency minimums: DET, IELTS, TOEFL (both scales), ACT English, SAT EBRW; two-year validity; official scores on acceptance |
 ---
 
 # The three hosts that had refused everything
@@ -271,12 +272,33 @@ then fetched and read.
   qualities of the specific college or school you are applying to and how its
   curriculum supports your interests) is **100-550 words, required**. (T12)
 
+- [事實] Purdue's English-proficiency minimums, the other named gap, are now
+  read: **DET** generally 115 with 110 or higher in every subscore; **IELTS**
+  generally 6.5 with at least 6.0 per section, Online Academic and Indicator
+  versions accepted, **General Training not accepted**; **TOEFL iBT 88** with at
+  least 20 per section for exams taken **before 21 January 2026**, and **4.5
+  overall with 4.0 per section** for exams taken on or after that date;
+  **ACT English 26** or higher; **SAT EBRW 600** or higher. Results must be from
+  a test taken within the past two years; self-reported scores are accepted at
+  review but official scores must follow from the testing organisation if the
+  applicant is admitted and accepts. "Meeting the minimum English proficiency
+  score does not guarantee admission." A completed English-speaking curriculum
+  can be used instead of an exam, and students admitted without one may face an
+  English placement exam on enrolment. (T14)
+- [事實] TOEFL changed its scale: Purdue states two different minimums for the
+  same test depending on whether it was taken before or on/after 21 January
+  2026 (88/20 on the old scale, 4.5/4.0 on the new). An applicant sitting the
+  TOEFL across that date needs to know which number their school is quoting.
+  This belongs on the cycle-changes page. (T14)
+
 ## What is still missing from these five
 
 
-- Purdue's letters-of-recommendation policy, and its English-proficiency
-  minimums, are not on the two pages read; both need the English-proficiency
-  page itself. Not stated here, not guessed.
+
+- Purdue's letters-of-recommendation policy: still not stated. It appears on
+  none of the four Purdue pages read, and recommendations are absent from the
+  criteria page's factor list. That is informative but it is not a policy
+  statement, so the cell stays "not stated".
 - Princeton's "what we look for" wording (the "not looking for perfect"
   sentence) was not found on the four pages read.
 - Northwestern's ISP requirements live on the ISP site, not the admissions site.
@@ -351,4 +373,5 @@ then fetched and read.
 - [事實] Williams 也讀到了（curl 仍是 403，瀏覽器直接打開，沒有任何驗證頁）：ED 11/15（要簽 Early Decision Agreement）、12/14 放榜；RD 1/4、4/1 放榜、5/1 回覆。三個平台並列（Common App、Apply Coalition with Scoir、QuestBridge），這也補上 A2 筆記的缺口——先前 Williams 只出現在 Scoir 自己的名單上。三封推薦信（輔導老師一封、老師兩封）、$65 報名費、「truly test optional」且 SAT／ACT 都 superscore（新舊 ACT 之間也 superscore）。選繳材料有四種管道：學術寫作樣本（可以沒有分數、可以是課堂手寫作業，但**明文請不要交實驗報告**）、藝術作品集（SlideRoom，由教師審閱）、**科學研究摘要**（可寫在申請表或 email，另可附 VIVA 錄影讓他們「聽你講自己的研究」）、以及 InitialView（Williams 自己不辦面試，但歡迎分享）。每份申請由兩位招生人員共同審閱。
 - [事實] Michigan 也讀到了（curl 仍是 403）：**Michigan 新增了 Early Decision**，11/1 同時是 ED 與 EA 的截止日，ED 補助 11/15、12/24 前放榜、1/6 繳訂金，Early Decision Agreement 需要申請人、家長與輔導老師三個簽名「一起」完成；RD 2/1，EA 1/29 前放榜、RD 4/2 前放榜，EA／RD 補助 3/1，5/1 繳訂金；音樂戲劇舞蹈學院 12/1。報名費 $75；School Report；**只要一封老師推薦信**，而且可以是「核心學科老師**或其他非親屬**，能直接說明學生的學術能力、潛力與課堂表現」。頁面另寫「除非特別要求，不要補交其他文件，否則可能延後決定」。2026-27 文書字數（先前明列為缺口）：Common App 主文書 250–650 字、Challenges and Circumstances 250 字上限、U-M 第一題 100–300 字必答、第二題 100–550 字必答。
 - [推論] 本站記成「讀不到」的五個主機，在同一個早上全部讀到了：三個是暫時性失敗自己好了，兩個是 curl 仍 403、但瀏覽器打得開。真正該分的不是「有沒有被擋」，而是**用哪一個 client 試的**。寫「拒絕自動存取」這種結論，要同時寫下用什麼工具、哪一分鐘，否則幾個小時內就會變成錯的。
-- [事實] 仍缺：Purdue 的推薦信政策與英語能力最低標（要讀 English proficiency 專頁）、Princeton「We are not looking for perfect…」那句話（讀過的四頁都沒有）、Northwestern ISP 的詳細要求（在 ISP 自己的網站）。
+- [事實] Purdue 的英語能力最低標也讀到了：DET 一般 115、各分項 110 以上；IELTS 一般 6.5、各部分至少 6.0，收 Online Academic 與 Indicator，**不收 General Training**；TOEFL iBT 在 **2026-01-21 之前**考的要 88、各部分 20 以上，在那天之後考的要 **4.5、各部分 4.0**（TOEFL 改了計分方式，同一個考試因日期而有兩套標準，這點該進 changes 頁）；ACT 英文 26 以上；SAT EBRW 600 以上。成績須為兩年內，審查時可自填，錄取並接受後必須由考試機構直送。學校明寫「達到最低分不保證錄取」。(T14)
+- [事實] 仍缺：Purdue 的推薦信政策（讀過的四頁都沒寫，審查因素清單裡也沒有推薦信，所以格子維持「未載明」）、Princeton「We are not looking for perfect…」那句話（讀過的四頁都沒有）、Northwestern ISP 的詳細要求（在 ISP 自己的網站）。
