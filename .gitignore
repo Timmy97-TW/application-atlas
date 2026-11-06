@@ -1,0 +1,5 @@
+private/
+logs/
+.run.lock
+.DS_Store
+node_modules/
