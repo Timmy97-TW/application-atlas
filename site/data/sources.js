@@ -1495,8 +1495,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "Common App AI clause and affirmation (quoted); Brown policy; random verification",
-   "en": "Common App AI clause and affirmation (quoted); Brown policy; random verification"
+   "zh": "Common App fraud definition (AI clause) and affirmation as quoted by Brown; Brown AI policy; Brown random credential verification",
+   "en": "Common App fraud definition (AI clause) and affirmation as quoted by Brown; Brown AI policy; Brown random credential verification"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1509,8 +1509,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "Harvard FAQ; Common App clause; Honor Code; authenticity contact",
-   "en": "Harvard FAQ; Common App clause; Honor Code; authenticity contact"
+   "zh": "Harvard essay-help FAQ; Common App AI clause as quoted by Harvard; Honor Code; consequences; committee may contact applicants about authenticity",
+   "en": "Harvard essay-help FAQ; Common App AI clause as quoted by Harvard; Honor Code; consequences; committee may contact applicants about authenticity"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1523,8 +1523,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "Fraud Policy page (headings only retrievable)",
-   "en": "Fraud Policy page (headings only retrievable)"
+   "zh": "Common App Fraud Policy page exists; section headings only were retrievable (body text not extractable this run)",
+   "en": "Common App Fraud Policy page exists; section headings only were retrievable (body text not extractable this run)"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1537,8 +1537,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "Fraud Policy PDF (body not extractable)",
-   "en": "Fraud Policy PDF (body not extractable)"
+   "zh": "Common App Fraud Policy PDF exists; body text not extractable this run",
+   "en": "Common App Fraud Policy PDF exists; body text not extractable this run"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1551,8 +1551,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "UC Statement of Application Integrity, Aug 2023",
-   "en": "UC Statement of Application Integrity, Aug 2023"
+   "zh": "UC Statement of Application Integrity, last updated August 2023: generative AI for readability permitted; authentication may be requested; activities verifiable by independent party",
+   "en": "UC Statement of Application Integrity, last updated August 2023: generative AI for readability permitted; authentication may be requested; activities verifiable by independent party"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1565,8 +1565,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "UC PIQ page",
-   "en": "UC PIQ page"
+   "zh": "UC PIQ page: answers written by you alone; no AI-specific text",
+   "en": "UC PIQ page: answers written by you alone; no AI-specific text"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1579,8 +1579,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "UC news 2025-10-23, Using AI",
-   "en": "UC news 2025-10-23, Using AI"
+   "zh": "UC news 2025-10-23: 'Using AI' section, UC Davis admissions director quoted",
+   "en": "UC news 2025-10-23: 'Using AI' section, UC Davis admissions director quoted"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1593,8 +1593,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "UC does not use AI in review",
-   "en": "UC does not use AI in review"
+   "zh": "UC does not use AI in application review; fully AI-generated PIQ treated as academic dishonesty",
+   "en": "UC does not use AI in application review; fully AI-generated PIQ treated as academic dishonesty"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1607,8 +1607,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "Caltech AI guidelines",
-   "en": "Caltech AI guidelines"
+   "zh": "Caltech AI guidelines (labelled Fall 2026): permitted and prohibited uses; rescission",
+   "en": "Caltech AI guidelines (labelled Fall 2026): permitted and prohibited uses; rescission"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1621,8 +1621,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "Caltech supplemental essays (Fall 2027)",
-   "en": "Caltech supplemental essays (Fall 2027)"
+   "zh": "Caltech supplemental essays page (labelled Fall 2027): applicants asked to review AI guidelines",
+   "en": "Caltech supplemental essays page (labelled Fall 2027): applicants asked to review AI guidelines"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1649,8 +1649,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "Penn AI policy and own use",
-   "en": "Penn AI policy and own use"
+   "zh": "Penn AI policy; explain-in-conversation test; Penn's administrative use of AI with staff confirmation",
+   "en": "Penn AI policy; explain-in-conversation test; Penn's administrative use of AI with staff confirmation"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1663,8 +1663,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "Cornell AI policy",
-   "en": "Cornell AI policy"
+   "zh": "Cornell AI policy incl. portfolio and translation prohibitions",
+   "en": "Cornell AI policy incl. portfolio and translation prohibitions"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1677,8 +1677,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "Swarthmore AI guidance",
-   "en": "Swarthmore AI guidance"
+   "zh": "Swarthmore AI guidance; acknowledgement/citation requirement; committee does not use AI in decisions; counselor translation",
+   "en": "Swarthmore AI guidance; acknowledgement/citation requirement; committee does not use AI in decisions; counselor translation"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1691,8 +1691,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "MIT no generative AI in reading",
-   "en": "MIT no generative AI in reading"
+   "zh": "MIT Admissions 2026-08-25: no plans to adopt generative AI in reading; information protection policies would not permit it",
+   "en": "MIT Admissions 2026-08-25: no plans to adopt generative AI in reading; information protection policies would not permit it"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1705,8 +1705,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "MIT archived 2023 post",
-   "en": "MIT archived 2023 post"
+   "zh": "MIT 2023-01-24 archived post; not admissions policy",
+   "en": "MIT 2023-01-24 archived post; not admissions policy"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1719,8 +1719,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "MIT essays page, no AI text",
-   "en": "MIT essays page, no AI text"
+   "zh": "MIT essays page: no AI text",
+   "en": "MIT essays page: no AI text"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1747,8 +1747,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "JHU AI policy",
-   "en": "JHU AI policy"
+   "zh": "Johns Hopkins AI policy",
+   "en": "Johns Hopkins AI policy"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1789,8 +1789,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "Georgia Tech blog 2023",
-   "en": "Georgia Tech blog 2023"
+   "zh": "Georgia Tech admission blog 2023-07-27",
+   "en": "Georgia Tech admission blog 2023-07-27"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1803,8 +1803,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "Georgetown page, alumni interviews",
-   "en": "Georgetown page, alumni interviews"
+   "zh": "Georgetown first-year application page: no AI text; alumni interviews",
+   "en": "Georgetown first-year application page: no AI text; alumni interviews"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1817,8 +1817,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C4",
   "title": {
-   "zh": "Georgetown portal AI prohibition",
-   "en": "Georgetown portal AI prohibition"
+   "zh": "Georgetown AI prohibition quoted from application portal",
+   "en": "Georgetown AI prohibition quoted from application portal"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1831,8 +1831,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "UT Austin essays, no AI text",
-   "en": "UT Austin essays, no AI text"
+   "zh": "UT Austin essays page: no AI text",
+   "en": "UT Austin essays page: no AI text"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1845,8 +1845,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "UIUC essays, no AI text",
-   "en": "UIUC essays, no AI text"
+   "zh": "UIUC essays page: no AI text",
+   "en": "UIUC essays page: no AI text"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1859,8 +1859,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "UW writing section",
-   "en": "UW writing section"
+   "zh": "UW writing section AI text",
+   "en": "UW writing section AI text"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1873,8 +1873,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "Harvey Mudd FAQ",
-   "en": "Harvey Mudd FAQ"
+   "zh": "Harvey Mudd FAQ: no formal AI policy plus guidance",
+   "en": "Harvey Mudd FAQ: no formal AI policy plus guidance"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1887,8 +1887,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "Harvey Mudd optional interview",
-   "en": "Harvey Mudd optional interview"
+   "zh": "Harvey Mudd optional interview deadline",
+   "en": "Harvey Mudd optional interview deadline"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1901,8 +1901,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "Olin AI text; Candidates' Weekend",
-   "en": "Olin AI text; Candidates' Weekend"
+   "zh": "Olin AI use text; required Candidates' Weekend with interview, group exercise, design challenge; virtual interview",
+   "en": "Olin AI use text; required Candidates' Weekend with interview, group exercise, design challenge; virtual interview"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1915,8 +1915,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "Stanford essays, no AI text",
-   "en": "Stanford essays, no AI text"
+   "zh": "Stanford application and essays page: no AI text",
+   "en": "Stanford application and essays page: no AI text"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1929,8 +1929,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C4",
   "title": {
-   "zh": "Stanford policies, no AI text",
-   "en": "Stanford policies, no AI text"
+   "zh": "Stanford admission policies page: no AI text",
+   "en": "Stanford admission policies page: no AI text"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1943,8 +1943,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C4",
   "title": {
-   "zh": "Duke essay ratings dropped",
-   "en": "Duke essay ratings dropped"
+   "zh": "Duke stopped numeric essay ratings; AI cited as a reason",
+   "en": "Duke stopped numeric essay ratings; AI cited as a reason"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1957,8 +1957,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C4",
   "title": {
-   "zh": "Duke: no official AI text found",
-   "en": "Duke: no official AI text found"
+   "zh": "Duke Chronicle 2025-08-29 quotes on AI; no official Duke AI text found",
+   "en": "Duke Chronicle 2025-08-29 quotes on AI; no official Duke AI text found"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1971,8 +1971,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C4",
   "title": {
-   "zh": "Cross-check list; MIT not on Common App",
-   "en": "Cross-check list; MIT not on Common App"
+   "zh": "Cross-check of school list; MIT not a Common App member; Northwestern official URL",
+   "en": "Cross-check of school list; MIT not a Common App member; Northwestern official URL"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1985,8 +1985,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C4",
   "title": {
-   "zh": "Princeton, Caltech question, Penn dean",
-   "en": "Princeton, Caltech question, Penn dean"
+   "zh": "Princeton dean blog quote; Caltech application AI-assistance question; Penn dean quote",
+   "en": "Princeton dean blog quote; Caltech application AI-assistance question; Penn dean quote"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -1999,8 +1999,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C4",
   "title": {
-   "zh": "Columbia AI text",
-   "en": "Columbia AI text"
+   "zh": "Columbia first-year page AI text",
+   "en": "Columbia first-year page AI text"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -2013,8 +2013,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C4",
   "title": {
-   "zh": "Princeton no formal policy",
-   "en": "Princeton no formal policy"
+   "zh": "Princeton: no formal policy; dean blog",
+   "en": "Princeton: no formal policy; dean blog"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -2027,8 +2027,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C4",
   "title": {
-   "zh": "Northwestern AI page quotes",
-   "en": "Northwestern AI page quotes"
+   "zh": "Northwestern AI page quotes, updated 2025-09-23",
+   "en": "Northwestern AI page quotes, updated 2025-09-23"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -2041,8 +2041,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C4",
   "title": {
-   "zh": "Michigan AI text",
-   "en": "Michigan AI text"
+   "zh": "Michigan essay-questions page AI text",
+   "en": "Michigan essay-questions page AI text"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -2055,8 +2055,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C4",
   "title": {
-   "zh": "Williams no policy found",
-   "en": "Williams no policy found"
+   "zh": "Williams: no AI-specific admissions policy found",
+   "en": "Williams: no AI-specific admissions policy found"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -2069,8 +2069,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C4",
   "title": {
-   "zh": "Amherst no policy found",
-   "en": "Amherst no policy found"
+   "zh": "Amherst: no AI-specific admissions policy found",
+   "en": "Amherst: no AI-specific admissions policy found"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -2083,8 +2083,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C4",
   "title": {
-   "zh": "Claimed AI-clause date; Coalition claim",
-   "en": "Claimed AI-clause date; Coalition claim"
+   "zh": "Claimed date of Common App AI clause (August 2023, unsourced); Coalition claim (unsourced)",
+   "en": "Claimed date of Common App AI clause (August 2023, unsourced); Coalition claim (unsourced)"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -2097,8 +2097,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C4",
   "title": {
-   "zh": "UC campus screening claims",
-   "en": "UC campus screening claims"
+   "zh": "UC campuses' plagiarism-screening claims; no school in its set reported using AI to read",
+   "en": "UC campuses' plagiarism-screening claims; no school in its set reported using AI to read"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -2111,8 +2111,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C4",
   "title": {
-   "zh": "UT Austin cross-check",
-   "en": "UT Austin cross-check"
+   "zh": "UT Austin: pages checked, no AI policy",
+   "en": "UT Austin: pages checked, no AI policy"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
@@ -2125,12 +2125,572 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C4",
   "title": {
-   "zh": "UIUC cross-check",
-   "en": "UIUC cross-check"
+   "zh": "UIUC: pages checked, no AI policy",
+   "en": "UIUC: pages checked, no AI policy"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ai-policy_v1.md",
    "en": "Research note: 2026-11-07_ai-policy_v1.md"
+  }
+ },
+ "LEAD-B1": {
+  "url": "https://admission.princeton.edu/apply/graded-written-paper",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: graded written paper requirement (page not read; WebFetch certificate rejected)",
+   "en": "LEAD ONLY: graded written paper requirement (page not read; WebFetch certificate rejected)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B2": {
+  "url": "https://admission.princeton.edu/apply/standardized-testing",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: test policy fall 2027 entry vs 2027-28 cycle (page not read)",
+   "en": "LEAD ONLY: test policy fall 2027 entry vs 2027-28 cycle (page not read)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B3": {
+  "url": "https://admission.princeton.edu/apply/first-year-application-dates-deadlines",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: SCEA/RD deadlines (page not read)",
+   "en": "LEAD ONLY: SCEA/RD deadlines (page not read)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B4": {
+  "url": "https://admission.princeton.edu/apply/application-checklist",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: letters, supplementary materials (page not read)",
+   "en": "LEAD ONLY: letters, supplementary materials (page not read)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B5": {
+  "url": "https://undergrad.admissions.columbia.edu/apply/process/supplementary-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: arts (SlideRoom) and research abstract policy (page not read; site returned 403)",
+   "en": "LEAD ONLY: arts (SlideRoom) and research abstract policy (page not read; site returned 403)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B6": {
+  "url": "https://undergrad.admissions.columbia.edu/apply/firstyear",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: deadlines, letters (page not read; 403)",
+   "en": "LEAD ONLY: deadlines, letters (page not read; 403)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B7": {
+  "url": "https://admissions.purdue.edu/become-student/apply/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: EA Nov 1 / RD Jan 15 (page not read; certificate rejected)",
+   "en": "LEAD ONLY: EA Nov 1 / RD Jan 15 (page not read; certificate rejected)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B8": {
+  "url": "https://admissions.purdue.edu/become-student/first-year-criteria/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: test policy (SAT/ACT/CLT), criteria (page not read)",
+   "en": "LEAD ONLY: test policy (SAT/ACT/CLT), criteria (page not read)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B9": {
+  "url": "https://admissions.purdue.edu/majors/engineering-first-year/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: First-Year Engineering admission (page not read)",
+   "en": "LEAD ONLY: First-Year Engineering admission (page not read)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B10": {
+  "url": "https://admissions.northwestern.edu/apply/requirements.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: test policy, program-specific materials, letters (page not read; certificate rejected)",
+   "en": "LEAD ONLY: test policy, program-specific materials, letters (page not read; certificate rejected)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B11": {
+  "url": "https://admissions.northwestern.edu/faqs/application-process/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: unsolicited supplemental materials policy (page not read)",
+   "en": "LEAD ONLY: unsolicited supplemental materials policy (page not read)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B12": {
+  "url": "https://admissions.northwestern.edu/apply/application-deadlines.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: ED/RD deadlines (page not read)",
+   "en": "LEAD ONLY: ED/RD deadlines (page not read)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B13": {
+  "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/engineering-science",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: H100, ESAT, interview (page not read; 403)",
+   "en": "LEAD ONLY: H100, ESAT, interview (page not read; 403)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B14": {
+  "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/biology",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: Biology 2027 entry test/interview/UCAS code (page not read; 403)",
+   "en": "LEAD ONLY: Biology 2027 entry test/interview/UCAS code (page not read; 403)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B15": {
+  "url": "https://assets-oxweb.admin.ox.ac.uk/2026-03/Admissions%20Timeline%20portrait%202027-entry%20FINAL.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: Oxford 2027-entry timeline incl. interview window (not opened)",
+   "en": "LEAD ONLY: Oxford 2027-entry timeline incl. interview window (not opened)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B16": {
+  "url": "https://www.ucat.ac.uk/about-ucat/ucat-test-dates/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: UCAT 2026 dates (page not read; 403)",
+   "en": "LEAD ONLY: UCAT 2026 dates (page not read; 403)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B17": {
+  "url": "https://www.ucat.ac.uk/faqs/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: UCAT fees (page not read)",
+   "en": "LEAD ONLY: UCAT fees (page not read)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B18": {
+  "url": "https://appsupport.commonapp.org/s/article/are-there-word-limits-kudeoeos",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: Common App word limits article (not read; help center renders client-side, WebFetch got only a 'CSS Error' shell)",
+   "en": "LEAD ONLY: Common App word limits article (not read; help center renders client-side, WebFetch got only a 'CSS Error' shell)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B19": {
+  "url": "https://www.commonapp.org/files/webinar_decks/Whats-New-with-Common-App-First-Year-2026-2027.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: 2026-27 changes to Activities section (not opened)",
+   "en": "LEAD ONLY: 2026-27 changes to Activities section (not opened)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B20": {
+  "url": "https://www.commonapp.org/files/Whats-New-25-26.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: Additional Information 650 to 300 words; Challenges and circumstances (not opened)",
+   "en": "LEAD ONLY: Additional Information 650 to 300 words; Challenges and circumstances (not opened)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "LEAD-B21": {
+  "url": "https://www.commonapp.org/static/f45949473bb80a91c80aface729d83df/Approaching-Activities.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "LEAD",
+  "title": {
+   "zh": "LEAD ONLY: Activities field character limits (not opened)",
+   "en": "LEAD ONLY: Activities field character limits (not opened)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_blocked-pages-browser-pass_v1.md",
+   "en": "Research note: 2026-11-07_blocked-pages-browser-pass_v1.md"
+  }
+ },
+ "V01": {
+  "url": "https://ir.mit.edu/projects/2025-26-common-data-set/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "MIT CDS G1, G5, H6 (re-read of H01)",
+   "en": "MIT CDS G1, G5, H6 (re-read of H01)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
+  }
+ },
+ "V02": {
+  "url": "https://undergrad.admissions.columbia.edu/apply/process/supplementary-materials",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "Columbia research abstract, SlideRoom portfolios, supplement deadlines (B5)",
+   "en": "Columbia research abstract, SlideRoom portfolios, supplement deadlines (B5)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
+  }
+ },
+ "V03": {
+  "url": "https://undergrad.admissions.columbia.edu/faq",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "Columbia extra letters (O73)",
+   "en": "Columbia extra letters (O73)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
+  }
+ },
+ "V04": {
+  "url": "https://undergrad.admissions.columbia.edu/apply/firstyear",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "Columbia deadlines, letters, test policy (B6)",
+   "en": "Columbia deadlines, letters, test policy (B6)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
+  }
+ },
+ "V05": {
+  "url": "https://appsupport.commonapp.org/s/article/are-there-word-limits-kudeoeos",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "B18 article content (UChicago-specific)",
+   "en": "B18 article content (UChicago-specific)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
+  }
+ },
+ "V06": {
+  "url": "https://appsupport.commonapp.org/s/article/Why-am-I-unable-to-assign-an-Other-Recommender-to-a-school",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "Other Recommender types set per college",
+   "en": "Other Recommender types set per college"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
+  }
+ },
+ "V07": {
+  "url": "https://appsupport.commonapp.org/s/global-search/honors%20character%20limit",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "help-center search: no Honors character-limit article in results (also searched 'honors section')",
+   "en": "help-center search: no Honors character-limit article in results (also searched 'honors section')"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
+  }
+ },
+ "V08": {
+  "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/engineering-science",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "Oxford Engineering Science H100, ESAT, interview (B13)",
+   "en": "Oxford Engineering Science H100, ESAT, interview (B13)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
+  }
+ },
+ "V09": {
+  "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/biology",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "Oxford Biology C100, no test, interview (B14)",
+   "en": "Oxford Biology C100, no test, interview (B14)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
+  }
+ },
+ "V10": {
+  "url": "https://www.ucat.ac.uk/about-ucat/ucat-test-dates/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "UCAT 2026 dates (B16)",
+   "en": "UCAT 2026 dates (B16)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
+  }
+ },
+ "V11": {
+  "url": "https://www.ucat.ac.uk/faqs/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "UCAT fees (B17)",
+   "en": "UCAT fees (B17)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
+  }
+ },
+ "V12": {
+  "url": "https://admissions.duke.edu/resources/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "Duke demonstrated interest / knowledge (O41)",
+   "en": "Duke demonstrated interest / knowledge (O41)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
+  }
+ },
+ "V13": {
+  "url": "https://uadmissions.georgetown.edu/apply/first-year-applicants/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "Georgetown interview 'key part' (O97 URL /alumni-interview/ redirects here); EA/RD dates; SAT/ACT required",
+   "en": "Georgetown interview 'key part' (O97 URL /alumni-interview/ redirects here); EA/RD dates; SAT/ACT required"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
+  }
+ },
+ "V14": {
+  "url": "https://uadmissions.georgetown.edu/faq/faq-alumni-interview/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "Georgetown alumni-interview FAQ (no requirement/waiver wording)",
+   "en": "Georgetown alumni-interview FAQ (no requirement/waiver wording)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
+  }
+ },
+ "V15": {
+  "url": "https://uadmissions.georgetown.edu/faq/faq-international-applicants/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "Georgetown interview waiver, InitialView, international aid (O98)",
+   "en": "Georgetown interview waiver, InitialView, international aid (O98)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
+  }
+ },
+ "V16": {
+  "url": "https://admission.princeton.edu/apply/graded-written-paper",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "BLOCKED: browser navigation denied or failed (also /apply/standardized-testing)",
+   "en": "BLOCKED: browser navigation denied or failed (also /apply/standardized-testing)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
+  }
+ },
+ "V17": {
+  "url": "https://admissions.northwestern.edu/apply/requirements.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "BLOCKED: browser navigation denied or failed (also /faqs/application-process/)",
+   "en": "BLOCKED: browser navigation denied or failed (also /faqs/application-process/)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
+  }
+ },
+ "V18": {
+  "url": "https://admissions.purdue.edu/become-student/apply/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "BLOCKED: browser navigation denied or failed (also /become-student/first-year-criteria/)",
+   "en": "BLOCKED: browser navigation denied or failed (also /become-student/first-year-criteria/)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
+  }
+ },
+ "V19": {
+  "url": "https://www.commonapp.org/files/webinar_decks/Whats-New-with-Common-App-First-Year-2026-2027.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V",
+  "title": {
+   "zh": "NOT OPENED: server sent a file download; not downloaded (B19; B20/B21 PDFs not attempted for the same reason)",
+   "en": "NOT OPENED: server sent a file download; not downloaded (B19; B20/B21 PDFs not attempted for the same reason)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_browser-verification_v1.md",
+   "en": "Research note: 2026-11-07_browser-verification_v1.md"
   }
  },
  "B6-N01": {
@@ -11547,8 +12107,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "MTC history and rebrand",
-   "en": "MTC history and rebrand"
+   "zh": "MTC history: 2014 idea, 2017 launch with 54 schools, joined ETS 2024, new owner 2026, now 'Mastery.org'",
+   "en": "MTC history: 2014 idea, 2017 launch with 54 schools, joined ETS 2024, new owner 2026, now 'Mastery.org'"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11561,8 +12121,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "1,017 MT Ready; definition; per-school flags",
-   "en": "1,017 MT Ready; definition; per-school flags"
+   "zh": "'1,017 MT Ready Institutions'; definition of 'Mastery Transcript Ready'; per-institution mtReady/acceptedSince fields in page data",
+   "en": "'1,017 MT Ready Institutions'; definition of 'Mastery Transcript Ready'; per-institution mtReady/acceptedSince fields in page data"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11575,8 +12135,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "Products, single-link delivery, counts",
-   "en": "Products, single-link delivery, counts"
+   "zh": "Mastery Transcript vs MTC Learning Record; single-link delivery; outreach to colleges; self-reported counts",
+   "en": "Mastery Transcript vs MTC Learning Record; single-link delivery; outreach to colleges; self-reported counts"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11589,8 +12149,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "Member schools certify competencies",
-   "en": "Member schools certify competencies"
+   "zh": "Competencies 'defined and certified by member schools'; record 'remains an official school record'",
+   "en": "Competencies 'defined and certified by member schools'; record 'remains an official school record'"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11603,8 +12163,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "2026-07-22 letters; \"over 800 colleges\"",
-   "en": "2026-07-22 letters; \"over 800 colleges\""
+   "zh": "Letters dated 2026-07-22: Legend.org acquired MTC from ETS; 'over 800 colleges'; 'Almost three thousand students'",
+   "en": "Letters dated 2026-07-22: Legend.org acquired MTC from ETS; 'over 800 colleges'; 'Almost three thousand students'"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11617,8 +12177,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "Acquisition release 2026-07-23",
-   "en": "Acquisition release 2026-07-23"
+   "zh": "GlobeNewswire release 2026-07-23: Legend.org acquires MTC from ETS, operates as Mastery.org; 'immediate focus will be continuity'",
+   "en": "GlobeNewswire release 2026-07-23: Legend.org acquires MTC from ETS, operates as Mastery.org; 'immediate focus will be continuity'"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11631,8 +12191,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "UC BOARS mastery-transcript guidance",
-   "en": "UC BOARS mastery-transcript guidance"
+   "zh": "UCOP memo 2023-01-05: BOARS guidance on competency-based/mastery transcripts -> admission by exception only",
+   "en": "UCOP memo 2023-01-05: BOARS guidance on competency-based/mastery transcripts -> admission by exception only"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11645,8 +12205,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "UC resource library",
-   "en": "UC resource library"
+   "zh": "UC counselor resource library lists the nontraditional-transcript memo and the 'Presenting yourself' guide",
+   "en": "UC counselor resource library lists the nontraditional-transcript memo and the 'Presenting yourself' guide"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11659,8 +12219,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "CLR 2.0 release",
-   "en": "CLR 2.0 release"
+   "zh": "CLR 2.0 public release 2025-03-04; aligned with Open Badges 3.0; built as W3C Verifiable Credentials; AACRAO recommends",
+   "en": "CLR 2.0 public release 2025-03-04; aligned with Open Badges 3.0; built as W3C Verifiable Credentials; AACRAO recommends"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11673,8 +12233,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "Open Badges 3.0",
-   "en": "Open Badges 3.0"
+   "zh": "Open Badges 3.0 Final Release, document dated 2026-06-29; aligns with VCDM v2.0; issuer/evidence definitions; issuer may be an individual; self-assertion use case",
+   "en": "Open Badges 3.0 Final Release, document dated 2026-06-29; aligns with VCDM v2.0; issuer/evidence definitions; issuer may be an individual; self-assertion use case"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11687,8 +12247,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "VC 2.0 Recommendation",
-   "en": "VC 2.0 Recommendation"
+   "zh": "W3C Verifiable Credentials Data Model 2.0 is a W3C Recommendation, 15 May 2025",
+   "en": "W3C Verifiable Credentials Data Model 2.0 is a W3C Recommendation, 15 May 2025"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11701,8 +12261,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "Credly",
-   "en": "Credly"
+   "zh": "Credly by Pearson; issuers are certification/assessment/training providers and employers; no verification mechanism described on page",
+   "en": "Credly by Pearson; issuers are certification/assessment/training providers and employers; no verification mechanism described on page"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11715,8 +12275,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "Coalition on Scoir",
-   "en": "Coalition on Scoir"
+   "zh": "Students apply Coalition via Scoir; 'discontinued our use of our previous technology platform'; no Locker mention",
+   "en": "Students apply Coalition via Scoir; 'discontinued our use of our previous technology platform'; no Locker mention"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11729,8 +12289,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "Previous platform discontinued",
-   "en": "Previous platform discontinued"
+   "zh": "Redirect target of the 2022 partnership FAQ; same statements; no Locker, portfolio or file-attachment mention",
+   "en": "Redirect target of the 2022 partnership FAQ; same statements; no Locker, portfolio or file-attachment mention"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11743,8 +12303,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "Locker in 2015 plan",
-   "en": "Locker in 2015 plan"
+   "zh": "2019-11-24: 2015 plan included a 'locker' for student materials; no usage data",
+   "en": "2019-11-24: 2015 plan included a 'locker' for student materials; no usage data"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11757,8 +12317,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "2022 Scoir integration",
-   "en": "2022 Scoir integration"
+   "zh": "2022-01-30 'Coalition Plans New Application': integration into Scoir; 165 member colleges",
+   "en": "2022-01-30 'Coalition Plans New Application': integration into Scoir; 165 member colleges"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11771,8 +12331,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "Locker description",
-   "en": "Locker description"
+   "zh": "Describes Locker: private by default; start 9th grade; colleges see only items attached to an application (page last updated 2024-08-28)",
+   "en": "Describes Locker: private by default; start 9th grade; colleges see only items attached to an application (page last updated 2024-08-28)"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11785,8 +12345,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "MIT homeschool",
-   "en": "MIT homeschool"
+   "zh": "MIT homeschool: no separate requirements; outside-course transcripts and portfolio evaluation 'very helpful'; mentors/supervisors as recommenders; max four letters",
+   "en": "MIT homeschool: no separate requirements; outside-course transcripts and portfolio evaluation 'very helpful'; mentors/supervisors as recommenders; max four letters"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11799,8 +12359,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "Stanford homeschool",
-   "en": "Stanford homeschool"
+   "zh": "Stanford homeschool: transcript plus encouraged curriculum description; teacher letters preferably from outside instructors",
+   "en": "Stanford homeschool: transcript plus encouraged curriculum description; teacher letters preferably from outside instructors"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11813,8 +12373,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "Caltech homeschool",
-   "en": "Caltech homeschool"
+   "zh": "Caltech homeschool: parent-made transcript allowed; outside courses need official grades; extra letter if all instructors were parents",
+   "en": "Caltech homeschool: parent-made transcript allowed; outside courses need official grades; extra letter if all instructors were parents"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11827,8 +12387,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "Penn homeschool",
-   "en": "Penn homeschool"
+   "zh": "Penn homeschool: consolidated transcript; syllabi, lab work, reading lists; 'demonstrate mastery across the curriculum'",
+   "en": "Penn homeschool: consolidated transcript; syllabi, lab work, reading lists; 'demonstrate mastery across the curriculum'"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11841,8 +12401,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "Brown homeschool",
-   "en": "Brown homeschool"
+   "zh": "Brown homeschool: self-designed four-year record; syllabus; outside transcripts; one extra letter",
+   "en": "Brown homeschool: self-designed four-year record; syllabus; outside transcripts; one extra letter"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11855,8 +12415,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "Georgetown homeschool",
-   "en": "Georgetown homeschool"
+   "zh": "Georgetown homeschool: detailed curriculum outline if no traditional transcript; official transcripts for outside courses",
+   "en": "Georgetown homeschool: detailed curriculum outline if no traditional transcript; official transcripts for outside courses"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11869,8 +12429,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "UW homeschool",
-   "en": "UW homeschool"
+   "zh": "UW homeschool: detailed coursework account in application; SAT/ACT required unless one year of college coursework",
+   "en": "UW homeschool: detailed coursework account in application; SAT/ACT required unless one year of college coursework"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11883,8 +12443,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "Swarthmore homeschool",
-   "en": "Swarthmore homeschool"
+   "zh": "Swarthmore homeschool: descriptive course listings, research projects/papers, documentation of internships, dates and sources for awards",
+   "en": "Swarthmore homeschool: descriptive course listings, research projects/papers, documentation of internships, dates and sources for awards"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11897,8 +12457,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "UC homeschool",
-   "en": "UC homeschool"
+   "zh": "UC homeschool: non-accredited/no official transcript -> admission by exception",
+   "en": "UC homeschool: non-accredited/no official transcript -> admission by exception"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11911,8 +12471,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "UT Austin non-traditional",
-   "en": "UT Austin non-traditional"
+   "zh": "UT Austin: non-traditional secondary education -> assigned percentile rank (SB 1543); homeschool transcript signed by responsible adult",
+   "en": "UT Austin: non-traditional secondary education -> assigned percentile rank (SB 1543); homeschool transcript signed by responsible adult"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11925,8 +12485,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "MIT transcripts",
-   "en": "MIT transcripts"
+   "zh": "MIT transcripts page: must be sent by counselor/official; no mention of non-traditional or mastery transcripts",
+   "en": "MIT transcripts page: must be sent by counselor/official; no mention of non-traditional or mastery transcripts"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11939,8 +12499,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "Caltech research",
-   "en": "Caltech research"
+   "zh": "Caltech research: full paper preferred; Beaver Breakroom upload; Research Description Form; letter must speak to specific contributions",
+   "en": "Caltech research: full paper preferred; Beaver Breakroom upload; Research Description Form; letter must speak to specific contributions"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11953,8 +12513,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "Caltech portfolio",
-   "en": "Caltech portfolio"
+   "zh": "Caltech portfolio: optional; 5GB media; 75-page documents; links accepted; group projects need individual role",
+   "en": "Caltech portfolio: optional; 5GB media; 75-page documents; links accepted; group projects need individual role"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11967,8 +12527,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "Caltech supplemental types",
-   "en": "Caltech supplemental types"
+   "zh": "Caltech supplemental materials: research and portfolio types; no excluded types listed",
+   "en": "Caltech supplemental materials: research and portfolio types; no excluded types listed"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11981,8 +12541,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "MIT portfolios",
-   "en": "MIT portfolios"
+   "zh": "MIT: SlideRoom, $10; Maker Portfolio up to 25 media, 2 min video total; Research Supplement one per applicant with mentor letter",
+   "en": "MIT: SlideRoom, $10; Maker Portfolio up to 25 media, 2 min video total; Research Supplement one per applicant with mentor letter"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -11995,8 +12555,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "CA activity char limits",
-   "en": "CA activity char limits"
+   "zh": "Common App activities: up to 10; position 50, organization 100, description 150 characters; Additional Information for more space (dated September 2026)",
+   "en": "Common App activities: up to 10; position 50, organization 100, description 150 characters; Additional Information for more space (dated September 2026)"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -12009,8 +12569,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "CA 5 honors, 10 activities",
-   "en": "CA 5 honors, 10 activities"
+   "zh": "Common App: up to 5 academic honors (title, date, level); up to 10 activities",
+   "en": "Common App: up to 5 academic honors (title, date, level); up to 10 activities"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -12023,8 +12583,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "Optional report, Other recommender",
-   "en": "Optional report, Other recommender"
+   "zh": "Definitions: Optional report = 'just in case' form; Other recommender; Portfolio",
+   "en": "Definitions: Optional report = 'just in case' form; Other recommender; Portfolio"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -12037,8 +12597,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "Other Recommender types",
-   "en": "Other Recommender types"
+   "zh": "Other Recommender types: arts teacher, clergy, coach, college access counselor, employer, family member, peer, other",
+   "en": "Other Recommender types: arts teacher, clergy, coach, college access counselor, employer, family member, peer, other"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -12051,8 +12611,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "Counselor vs teacher letters",
-   "en": "Counselor vs teacher letters"
+   "zh": "Counselor letters: view within entire graduating class; teachers: classroom vantage point",
+   "en": "Counselor letters: view within entire graduating class; teachers: classroom vantage point"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -12065,8 +12625,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "No limits stated",
-   "en": "No limits stated"
+   "zh": "First-year page: no character/word limits stated for Honors or Additional Information",
+   "en": "First-year page: no character/word limits stated for Honors or Additional Information"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -12079,8 +12639,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "UC 20 activities; 550-char comments; PIQ 350 words",
-   "en": "UC 20 activities; 550-char comments; PIQ 350 words"
+   "zh": "UC 2026-27 guide: up to 20 activities in 6 categories; Additional comments (Academic history) 550-character limit; PIQ 350 words",
+   "en": "UC 2026-27 guide: up to 20 activities in 6 categories; Additional comments (Academic history) 550-character limit; PIQ 350 words"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -12093,8 +12653,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "UC categories; comments purpose",
-   "en": "UC categories; comments purpose"
+   "zh": "UC: six activity categories; additional comments 'shouldn't be an essay'; no character/word limits stated",
+   "en": "UC: six activity categories; additional comments 'shouldn't be an essay'; no character/word limits stated"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -12107,8 +12667,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "Verifiable by independent party",
-   "en": "Verifiable by independent party"
+   "zh": "UC: awards/activities 'must be true and verifiable by an independent party'; last updated August 2023",
+   "en": "UC: awards/activities 'must be true and verifiable by an independent party'; last updated August 2023"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -12121,8 +12681,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "iGEM medals (text via site JS bundle)",
-   "en": "iGEM medals (text via site JS bundle)"
+   "zh": "iGEM medal criteria 2026 (client-rendered; text read from https://competition.igem.org/assets/Awards-8seAmtcC.js): no cap on medals; Attributions Form is a Bronze criterion; Gold judging new in 2026; 1-6 rubric",
+   "en": "iGEM medal criteria 2026 (client-rendered; text read from https://competition.igem.org/assets/Awards-8seAmtcC.js): no cap on medals; Attributions Form is a Bronze criterion; Gold judging new in 2026; 1-6 rubric"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -12135,8 +12695,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "iGEM Wiki, Attributions, judging session",
-   "en": "iGEM Wiki, Attributions, judging session"
+   "zh": "iGEM deliverables text: Wiki 'permanently hosted as a public archive', 'freezes at the deadline'; Attributions Form; 25-minute judging session, recorded",
+   "en": "iGEM deliverables text: Wiki 'permanently hosted as a public archive', 'freezes at the deadline'; Attributions Form; 25-minute judging session, recorded"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -12149,8 +12709,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "ISEF rules 2026–27",
-   "en": "ISEF rules 2026–27"
+   "zh": "ISEF International Rules 2026-27: one project, 12 months, no research before Jan 2026; continuation Form 7; Form 2C; 250-word abstract must describe student's research",
+   "en": "ISEF International Rules 2026-27: one project, 12 months, no research before Jan 2026; continuation Form 7; Form 2C; 250-word abstract must describe student's research"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -12163,8 +12723,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "ISEF Form 2C",
-   "en": "ISEF Form 2C"
+   "zh": "ISEF Form 2C: completed by supervising adult, not student; describes student's independent work and role",
+   "en": "ISEF Form 2C: completed by supervising adult, not student; describes student's independent work and role"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -12177,8 +12737,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "ISEF rules index",
-   "en": "ISEF rules index"
+   "zh": "ISEF rules index page linking the 2027 rules book and forms",
+   "en": "ISEF rules index page linking the 2027 rules book and forms"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -12191,8 +12751,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "ICMJE authorship",
-   "en": "ICMJE authorship"
+   "zh": "ICMJE four authorship criteria; not the role of editors to determine authorship",
+   "en": "ICMJE four authorship criteria; not the role of editors to determine authorship"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -12205,8 +12765,8 @@ window.ATLAS.sources = {
   "cls": "secondary",
   "group": "C1",
   "title": {
-   "zh": "CRediT taxonomy",
-   "en": "CRediT taxonomy"
+   "zh": "CRediT: 14 contributor roles; ANSI/NISO Z39.104-2022",
+   "en": "CRediT: 14 contributor roles; ANSI/NISO Z39.104-2022"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -12219,8 +12779,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "SlideRoom",
-   "en": "SlideRoom"
+   "zh": "SlideRoom by Liaison: institutions customise requirements; media limits not stated on page",
+   "en": "SlideRoom by Liaison: institutions customise requirements; media limits not stated on page"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -12233,8 +12793,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "C1",
   "title": {
-   "zh": "JHU on Additional Information",
-   "en": "JHU on Additional Information"
+   "zh": "JHU 2023-08-03: Additional Information is for information 'not previously discussed'; no word limit stated",
+   "en": "JHU 2023-08-03: Additional Information is for information 'not previously discussed'; no word limit stated"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_outside-record-frameworks_v1.md",
@@ -16391,8 +16951,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "2027 entry cycle dates",
-   "en": "2027 entry cycle dates"
+   "zh": "2027 entry dates: 12 May 2026 open, 1 Sep 2026 submit, 15 Oct 2026 18:00, 13 Jan 2027 18:00, Extra 25 Feb to 1 Jul 2027, 30 Jun 2027 18:00, Clearing 2 Jul to 18 Oct 2027, reply swaps 22 Jul 2027, final 23 Sep 2027",
+   "en": "2027 entry dates: 12 May 2026 open, 1 Sep 2026 submit, 15 Oct 2026 18:00, 13 Jan 2027 18:00, Extra 25 Feb to 1 Jul 2027, 30 Jun 2027 18:00, Clearing 2 Jul to 18 Oct 2027, reply swaps 22 Jul 2027, final 23 Sep 2027"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16405,8 +16965,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "sections, fee £34.50, choices, med limit, Oxbridge rule, international qualifications, ELT upload",
-   "en": "sections, fee £34.50, choices, med limit, Oxbridge rule, international qualifications, ELT upload"
+   "zh": "13 application sections; fee GBP 34.50 for 2027 entry; 5 choices; max 4 medicine/dentistry/vet; Oxford or Cambridge rule; 'other' for unlisted qualifications; ELT certificate upload for 2027 entry; employment = paid only",
+   "en": "13 application sections; fee GBP 34.50 for 2027 entry; 5 choices; max 4 medicine/dentistry/vet; Oxford or Cambridge rule; 'other' for unlisted qualifications; ELT certificate upload for 2027 entry; employment = paid only"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16419,8 +16979,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "three questions, 4,000 total, 350 minimum",
-   "en": "three questions, 4,000 total, 350 minimum"
+   "zh": "Three question wordings; 4,000 overall incl. spaces; 350-character minimum per answer",
+   "en": "Three question wordings; 4,000 overall incl. spaces; 350-character minimum per answer"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16433,8 +16993,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "three questions from 2026 entry",
-   "en": "three questions from 2026 entry"
+   "zh": "Three questions apply to 2026 entry applications onward; 4,000-character limit across the three answers",
+   "en": "Three questions apply to 2026 entry applications onward; 4,000-character limit across the three answers"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16447,8 +17007,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "PS hub, AI guidance link",
-   "en": "PS hub, AI guidance link"
+   "zh": "Personal statement hub; AI-use guidance exists (linked); no similarity-detection text",
+   "en": "Personal statement hub; AI-use guidance exists (linked); no similarity-detection text"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16461,8 +17021,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "international PS tips",
-   "en": "international PS tips"
+   "zh": "International tips: Q3 suggested for why study in the UK; no separate per-question limits stated",
+   "en": "International tips: Q3 suggested for why study in the UK; no separate per-question limits stated"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16475,8 +17035,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "reference rules, independent applicants",
-   "en": "reference rules, independent applicants"
+   "zh": "One reference; written online by referee; independent applicants; no family/friends; application cannot be submitted until reference added",
+   "en": "One reference; written online by referee; independent applicants; no family/friends; application cannot be submitted until reference added"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16489,8 +17049,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "three-section reference, 4,000 chars",
-   "en": "three-section reference, 4,000 chars"
+   "zh": "Reference: three sections, prompts, 4,000 characters total incl. headings, no per-section limit, no formatting",
+   "en": "Reference: three sections, prompts, 4,000 characters total incl. headings, no per-section limit, no formatting"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16503,8 +17063,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "adviser timeline 2027 entry",
-   "en": "adviser timeline 2027 entry"
+   "zh": "Adviser timeline for 2027 entry incl. decision-by and decline-by-default dates; reference must be complete before sending",
+   "en": "Adviser timeline for 2027 entry incl. decision-by and decline-by-default dates; reference must be complete before sending"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16517,8 +17077,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "offers, replies, 2027 deadlines",
-   "en": "offers, replies, 2027 deadlines"
+   "zh": "Conditional/unconditional; firm/insurance; 2027 reply deadlines 5 May, 2 Jun, 21 Jul 2027; no reply swaps after 22 Jul 2027",
+   "en": "Conditional/unconditional; firm/insurance; 2027 reply deadlines 5 May, 2 Jun, 21 Jul 2027; no reply swaps after 22 Jul 2027"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16531,8 +17091,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "Extra 2027",
-   "en": "Extra 2027"
+   "zh": "Extra eligibility; one course at a time; 25 Feb to 1 Jul 2027; providers decide by 15 Jul; 21-day rule",
+   "en": "Extra eligibility; one course at a time; 25 Feb to 1 Jul 2027; providers decide by 15 Jul; 21-day rule"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16545,8 +17105,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "Clearing, decline my place",
-   "en": "Clearing, decline my place"
+   "zh": "Decline my place button to enter Clearing; page still shows 2026 Clearing dates; no Adjustment text",
+   "en": "Decline my place button to enter Clearing; page still shows 2026 Clearing dates; no Adjustment text"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16559,8 +17119,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "no Adjustment text",
-   "en": "no Adjustment text"
+   "zh": "No Adjustment text (checked)",
+   "en": "No Adjustment text (checked)"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16573,8 +17133,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "UCAS test list",
-   "en": "UCAS test list"
+   "zh": "UCAS list of tests (LNAT, UCAT, GAMSAT, ESAT, TMUA, TARA); no BMAT text",
+   "en": "UCAS list of tests (LNAT, UCAT, GAMSAT, ESAT, TMUA, TARA); no BMAT text"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16587,8 +17147,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "Cambridge steps",
-   "en": "Cambridge steps"
+   "zh": "Cambridge steps: assessment registration, UCAS, My Cambridge Application; no COPA text",
+   "en": "Cambridge steps: assessment registration, UCAS, My Cambridge Application; no COPA text"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16601,8 +17161,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "Cambridge 2027 dates",
-   "en": "Cambridge 2027 dates"
+   "zh": "Cambridge 2027 entry dates: UCAT 16/24 Sep, LNAT 15 Sep/15 Oct, ESAT/TMUA 28 Sep and 12-16 Oct, MCA 22 Oct 2026, interviews December, outcome 27 Jan 2027",
+   "en": "Cambridge 2027 entry dates: UCAT 16/24 Sep, LNAT 15 Sep/15 Oct, ESAT/TMUA 28 Sep and 12-16 Oct, MCA 22 Oct 2026, interviews December, outcome 27 Jan 2027"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16615,8 +17175,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "Cambridge course-test map",
-   "en": "Cambridge course-test map"
+   "zh": "Cambridge course-to-test map (ESAT, TMUA, UCAT, LNAT, college assessments, CSAT)",
+   "en": "Cambridge course-to-test map (ESAT, TMUA, UCAT, LNAT, college assessments, CSAT)"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16629,8 +17189,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "Cambridge ESAT",
-   "en": "Cambridge ESAT"
+   "zh": "Cambridge ESAT page: modules by course; registration opens 20 Jul 2026 (as stated there); bursary/access dates",
+   "en": "Cambridge ESAT page: modules by course; registration opens 20 Jul 2026 (as stated there); bursary/access dates"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16643,8 +17203,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "Cambridge TMUA",
-   "en": "Cambridge TMUA"
+   "zh": "Cambridge TMUA page: courses, format 2h30, sittings",
+   "en": "Cambridge TMUA page: courses, format 2h30, sittings"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16657,8 +17217,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "Cambridge UCAT dates",
-   "en": "Cambridge UCAT dates"
+   "zh": "Cambridge UCAT: A100/A101; register by 16 Sep, sit by 24 Sep 2026; window 13 Jul to 24 Sep 2026",
+   "en": "Cambridge UCAT: A100/A101; register by 16 Sep, sit by 24 Sep 2026; window 13 Jul to 24 Sep 2026"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16671,8 +17231,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "UCAT cognitive score only",
-   "en": "UCAT cognitive score only"
+   "zh": "Cambridge uses UCAT cognitive subtest score, not SJT, for 2027 entry; no minimum threshold",
+   "en": "Cambridge uses UCAT cognitive subtest score, not SJT, for 2027 entry; no minimum threshold"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16685,8 +17245,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "interview period and format",
-   "en": "interview period and format"
+   "zh": "Main interview period 7-18 Dec 2026; online vs in-person by College; many Colleges interview overseas applicants online",
+   "en": "Main interview period 7-18 Dec 2026; online vs in-person by College; many Colleges interview overseas applicants online"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16699,8 +17259,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "My Cambridge Application",
-   "en": "My Cambridge Application"
+   "zh": "My Cambridge Application: link within 48h of UCAS submission; GBP 60 fee for most non-UK; transcript; optional 1,200-char statement; photo; deadline 22 Oct 2026 18:00; Cambridge will not review documents uploaded to UCAS",
+   "en": "My Cambridge Application: link within 48h of UCAS submission; GBP 60 fee for most non-UK; transcript; optional 1,200-char statement; photo; deadline 22 Oct 2026 18:00; Cambridge will not review documents uploaded to UCAS"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16713,8 +17273,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "international fee, no COPA",
-   "en": "international fee, no COPA"
+   "zh": "International applications via UCAS; GBP 60 fee with waiver list; no COPA text",
+   "en": "International applications via UCAS; GBP 60 fee with waiver list; no COPA text"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16727,8 +17287,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "Taiwan qualification note",
-   "en": "Taiwan qualification note"
+   "zh": "Taiwan: Senior High School Leaving Certificate alone not competitive; A Levels, IB or 5+ AP at 5 suggested; no IELTS figure on this page",
+   "en": "Taiwan: Senior High School Leaving Certificate alone not competitive; A Levels, IB or 5+ AP at 5 suggested; no IELTS figure on this page"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16741,8 +17301,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "winter pool, outcomes",
-   "en": "winter pool, outcomes"
+   "zh": "Winter pool; outcomes late January",
+   "en": "Winter pool; outcomes late January"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16755,8 +17315,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "UAT-UK 2027 dates, fees",
-   "en": "UAT-UK 2027 dates, fees"
+   "zh": "UAT-UK 2027 entry dates for ESAT/TMUA; results 16 Nov 2026 and 8 Feb 2027; fees GBP 78/133; one sitting per cycle",
+   "en": "UAT-UK 2027 entry dates for ESAT/TMUA; results 16 Nov 2026 and 8 Feb 2027; fees GBP 78/133; one sitting per cycle"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16769,8 +17329,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "ESAT users, Pearson centres",
-   "en": "ESAT users, Pearson centres"
+   "zh": "ESAT used by Imperial, Cambridge, Oxford, UCL; booking at Pearson test centres; fees",
+   "en": "ESAT used by Imperial, Cambridge, Oxford, UCL; booking at Pearson test centres; fees"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16783,8 +17343,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "TMUA users",
-   "en": "TMUA users"
+   "zh": "TMUA users; fees; Pearson test centres",
+   "en": "TMUA users; fees; Pearson test centres"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16797,8 +17357,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "registration, fee by centre location",
-   "en": "registration, fee by centre location"
+   "zh": "Registration steps; fee depends on test-centre location; email must match UCAS",
+   "en": "Registration steps; fee depends on test-centre location; email must match UCAS"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16811,8 +17371,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "UAT-UK membership, course list link",
-   "en": "UAT-UK membership, course list link"
+   "zh": "UAT-UK is a collaboration of Imperial and Cambridge; link to 2027 course list",
+   "en": "UAT-UK is a collaboration of Imperial and Cambridge; link to 2027 course list"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16825,8 +17385,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "UAT-UK Course List 2027 Entry",
-   "en": "UAT-UK Course List 2027 Entry"
+   "zh": "UAT-UK Course List 2027 Entry (last updated April 2026): every course at Durham, Imperial, LSE, Cambridge, Oxford, Warwick, UCL requiring ESAT/TMUA/TARA, with modules; module selection cannot be changed after booking",
+   "en": "UAT-UK Course List 2027 Entry (last updated April 2026): every course at Durham, Imperial, LSE, Cambridge, Oxford, Warwick, UCL requiring ESAT/TMUA/TARA, with modules; module selection cannot be changed after booking"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16839,8 +17399,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "former test owner closure",
-   "en": "former test owner closure"
+   "zh": "Former test owner (Cambridge Assessment Admissions Testing): 'no longer delivering any tests'; ENGAA/NSAA replaced by ESAT; TMUA to UAT-UK from 2024; no BMAT text",
+   "en": "Former test owner (Cambridge Assessment Admissions Testing): 'no longer delivering any tests'; ENGAA/NSAA replaced by ESAT; TMUA to UAT-UK from 2024; no BMAT text"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16853,8 +17413,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "MAT replaced by TMUA",
-   "en": "MAT replaced by TMUA"
+   "zh": "From 2026 Oxford uses TMUA; MAT will not take place; Maths and CS incl. joint honours",
+   "en": "From 2026 Oxford uses TMUA; MAT will not take place; Maths and CS incl. joint honours"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16867,8 +17427,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "Oxford Engineering ESAT, online interview",
-   "en": "Oxford Engineering ESAT, online interview"
+   "zh": "Oxford Engineering Science uses ESAT; shortlisted candidates attend an online interview",
+   "en": "Oxford Engineering Science uses ESAT; shortlisted candidates attend an online interview"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16881,8 +17441,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "PAT page describes ESAT",
-   "en": "PAT page describes ESAT"
+   "zh": "Page titled Physics Aptitude Test but content describes ESAT; 2027 prep from April 2026",
+   "en": "Page titled Physics Aptitude Test but content describes ESAT; 2027 prep from April 2026"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16895,8 +17455,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "interview day, single degree",
-   "en": "interview day, single degree"
+   "zh": "Interview day features two interviews; single degree description; no interview month",
+   "en": "Interview day features two interviews; single degree description; no interview month"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16909,8 +17469,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "Imperial tests",
-   "en": "Imperial tests"
+   "zh": "Imperial: ESAT departments, TMUA departments, UCAT for Medicine; GAMSAT or UCAT for Graduate Entry; Medical Biosciences no test",
+   "en": "Imperial: ESAT departments, TMUA departments, UCAT for Medicine; GAMSAT or UCAT for Graduate Entry; Medical Biosciences no test"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16923,8 +17483,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "LNAT 2026–27 dates",
-   "en": "LNAT 2026–27 dates"
+   "zh": "LNAT 2026-27: register from 1 Aug 2026; test from 1 Sep 2026; Oxford/Cambridge book by 15 Sep, sit by 15 Oct 2026; other deadlines Jan 2027",
+   "en": "LNAT 2026-27: register from 1 Aug 2026; test from 1 Sep 2026; Oxford/Cambridge book by 15 Sep, sit by 15 Oct 2026; other deadlines Jan 2027"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16937,8 +17497,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "LNAT fees (prior-cycle heading)",
-   "en": "LNAT fees (prior-cycle heading)"
+   "zh": "LNAT fees GBP 75 UK/EU, GBP 120 outside EU, under a heading for the previous cycle",
+   "en": "LNAT fees GBP 75 UK/EU, GBP 120 outside EU, under a heading for the previous cycle"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16951,8 +17511,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "Student visa headline",
-   "en": "Student visa headline"
+   "zh": "Student visa: licensed sponsor offer; apply up to 6 months before; GBP 558 outside UK plus healthcare surcharge; usually 3 weeks",
+   "en": "Student visa: licensed sponsor offer; apply up to 6 months before; GBP 558 outside UK plus healthcare surcharge; usually 3 weeks"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16965,8 +17525,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "CAS, ATAS, TB",
-   "en": "CAS, ATAS, TB"
+   "zh": "CAS required; ATAS if course and nationality require; TB test may be needed",
+   "en": "CAS required; ATAS if course and nationality require; TB test may be needed"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16979,8 +17539,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "not readable (403)",
-   "en": "not readable (403)"
+   "zh": "Not readable: HTTP 403 to automated fetch on 2026-11-07",
+   "en": "Not readable: HTTP 403 to automated fetch on 2026-11-07"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -16993,8 +17553,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "not readable (403)",
-   "en": "not readable (403)"
+   "zh": "Not readable: HTTP 403 to automated fetch on 2026-11-07",
+   "en": "Not readable: HTTP 403 to automated fetch on 2026-11-07"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -17007,8 +17567,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "not readable (403)",
-   "en": "not readable (403)"
+   "zh": "Not readable: HTTP 403 to automated fetch on 2026-11-07 (ucat.ac.uk home and universities page also 403)",
+   "en": "Not readable: HTTP 403 to automated fetch on 2026-11-07 (ucat.ac.uk home and universities page also 403)"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",
@@ -17021,8 +17581,8 @@ window.ATLAS.sources = {
   "cls": "official",
   "group": "F1",
   "title": {
-   "zh": "not readable (403)",
-   "en": "not readable (403)"
+   "zh": "Not readable: HTTP 403 to automated fetch on 2026-11-07",
+   "en": "Not readable: HTTP 403 to automated fetch on 2026-11-07"
   },
   "note": {
    "zh": "研究筆記：2026-11-07_ucas-system-and-tests_v1.md",

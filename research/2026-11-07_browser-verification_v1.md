@@ -96,3 +96,28 @@ sources:
 - [推論] Row 5: MIT's CDS 2025-26 reports 2026-27 G1 costs; the 88.4% ratio in international-aid-numbers mixes 2025-26 aid with 2026-27 COA.
 
 Site data was not edited in this run.
+
+## Second attempt on the three blocked hosts (2026-11-07, 04:45)
+
+- [事實] The three hosts recorded as blocked above were retried on 2026-11-07 at
+  about 04:45, with two independent request paths and four URLs per host
+  (twelve URLs in all): the built-in browser, and a fetch path separate from
+  the one used earlier in the night.
+- [事實] Every attempt failed. The browser reported that navigation to
+  `admission.princeton.edu` was "denied or failed". The fetch path returned
+  "certificate rejected" for all four Princeton URLs, all four Northwestern
+  URLs and all four Purdue URLs, on the first attempt, with no response body.
+- [事實] No human-verification page, CAPTCHA or bot challenge appeared, because
+  no response was received at all. No bypass was attempted.
+- [推論] The failure is at the TLS layer and is identical across two request
+  paths and three hosts, so it is a property of this machine's network path to
+  these hosts, not of a single tool or a transient outage. A later unattended
+  run on the same machine should not be expected to resolve it.
+- Consequence: rows 28 and 35–43 above stay **blocked**. Nothing from
+  `admission.princeton.edu`, `admissions.northwestern.edu` or
+  `admissions.purdue.edu` is cited as fact anywhere on the site; their URLs are
+  registered as leads only (LEAD-*). QUESTIONS.md Q002 now lists these twelve
+  URLs with the exact question each one answers, so the pages can be read by
+  hand once and pasted back.
+- [事實] Columbia, listed as partly blocked in earlier notes, is no longer
+  blocked: it was read in the browser in this note's main pass (V02–V04).
