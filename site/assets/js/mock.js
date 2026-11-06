@@ -54,7 +54,7 @@
         if (!confirm(t('prefillConfirm'))) return;
         S = fresh(); S.annotate = true;
         var P = M.persona || {};
-        for (var k in P.values) S.v[k] = P.values[k];
+        for (var k in P.values) S.v[k] = JSON.parse(JSON.stringify(P.values[k]));
         S.colleges = (P.colleges || []).slice();
         save(); location.hash = '#/dashboard'; route();
       });
@@ -265,7 +265,7 @@
       if (!part) {
         view.appendChild(el('p', { 'class': 'mk-help' }, md(L(c.blurb || '')) + (c.src ? cites(c.src) : '')));
         var ul = el('ul', { 'class': 'items' });
-        (c.facts || []).forEach(function (x) { ul.appendChild(el('li', null, U.itemHtml ? window.ATLAS_UTIL.itemHtml(x) : '')); });
+        (c.facts || []).forEach(function (x) { ul.appendChild(el('li', null, (window.ATLAS_UTIL && window.ATLAS_UTIL.itemHtml) ? window.ATLAS_UTIL.itemHtml(x) : '')); });
         view.appendChild(ul);
         var nav = el('div', { 'class': 'grid' });
         ['questions', 'supplement', 'recommenders', 'review'].forEach(function (p) {

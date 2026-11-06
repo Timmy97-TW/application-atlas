@@ -41,7 +41,9 @@ for (const f of fs.readdirSync(rdir).filter(f => f.endsWith('.md')).sort()) {
   const fmCode = (text.match(/^code:\s*(\S+)/m) || [])[1];
   const [code, label] = CODES[topic] || [fmCode || topic, { zh: topic, en: topic }];
   groups[code] = label;
-  const m = text.match(/^##+\s*Sources[^\n]*\n([\s\S]*?)(?=^##\s|(?![\s\S]))/m);
+  // "## Sources" section, or a table directly under a front-matter `sources:` line
+  const m = text.match(/^##+\s*Sources[^\n]*\n([\s\S]*?)(?=^##\s|(?![\s\S]))/m) ||
+    text.match(/^sources:\s*\n((?:\s*\|[^\n]*\n)+)/m);
   if (!m) { report.push(`${f}: no Sources section`); continue; }
   const lines = m[1].split('\n').filter(l => /^\s*\|/.test(l));
   if (lines.length < 2) { report.push(`${f}: empty Sources table`); continue; }
