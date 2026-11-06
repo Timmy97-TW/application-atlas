@@ -10075,8 +10075,8 @@ window.ATLAS.pages['insights'] = {
    "items": [
     {
      "t": {
-      "zh": "尚待確認、因此本節未收錄的學校說法，依障礙種類分三類（用語目前只來自搜尋引擎摘錄）。一、TLS 層被拒，兩條獨立請求路徑、十二個網址全部沒有回應，重試不會好，只能人工開頁：Princeton（文書與 AI 部落格、面試、graded written paper）、Northwestern（表現興趣、國際生面試）、Purdue（推薦信）。二、頁面拒絕自動存取或要求人工驗證（本站不嘗試繞過）：Michigan（why us、面試）、Williams 與 Amherst（面試、表現興趣）。三、頁面會載入但讀不到那段文字——Stanford FAQ 回傳空白內容、UT Austin FAQ 的答案要點擊才出現、Harvard 2026–27 supplement 與 UC 的 PIQ 指引是 PDF、Penn 的 InitialView 在客服知識庫文章裡、UC 推薦信頁與 CMU 推薦老師的用語同屬此類；這一類文字其實存在，人工開頁幾秒就能讀到。Cornell 的「不追蹤表現興趣」是另一種情況：原始網址在不對外的開發用子網域，已無法解析，公開頁面上沒有這句話，所以這條說法不成立。Columbia 的額外推薦信規定、Duke 的 FAQ 用語、Georgetown 的面試 FAQ 已在第一輪瀏覽器複查確認，已從本清單移出、收進本頁其他各節。",
-      "en": "School statements still unconfirmed and therefore not shown here, grouped by the kind of obstacle, because \"refused automated access\" covers three different problems with three different prognoses. The wording for all of them so far comes only from search-engine excerpts. (1) Refused at the TLS layer — two independent request paths, twelve URLs, no response at all, so retrying will not clear it and only a person opening the page can settle it: Princeton (essays-and-AI blog, interviews, graded written paper), Northwestern (demonstrated interest, international interviews), Purdue (letters). (2) Refused automated reading or asked for human verification, which this site does not attempt to bypass: Michigan (why us, interviews), Williams and Amherst (interviews, demonstrated interest). (3) The page loads but the text cannot be read from it: Stanford's FAQ returns an empty body, UT Austin's FAQ reveals its answers only on click, the Harvard 2026–27 supplement and UC's PIQ guidance are PDFs, Penn's InitialView answer sits in a help-desk article, and UC's letters page and CMU's wording on choosing a teacher recommender are the same case. For this group the text exists and a person can retrieve it in seconds. Cornell's \"does not track demonstrated interest\" is a separate case: the original URL was on a non-public development subdomain that no longer resolves, and the public page carries no such wording, so the claim does not stand. Columbia's extra-letters rule, Duke's FAQ wording and Georgetown's interview FAQ were confirmed in the first browser pass and have moved out of this list into the sections above."
+      "zh": "尚待確認、因此本節未收錄的學校說法，依障礙種類分三類（用語目前只來自搜尋引擎摘錄）。一、TLS 層被拒，兩條獨立請求路徑、十二個網址全部沒有回應，重試不會好，只能人工開頁：Princeton（文書與 AI 部落格、面試、graded written paper）、Northwestern（表現興趣、國際生面試）、Purdue（推薦信）。二、頁面拒絕自動存取或要求人工驗證（本站不嘗試繞過）：Michigan（why us、面試）、Williams（面試、表現興趣）。Amherst 原本在這一類，現在不是了：2026-11-07 稍晚用瀏覽器一頁一頁都打得開，面試政策、申請日期、考試政策、寫作補充裡的研究欄位、2026–27 費用都已寫進上面各節。三、頁面會載入但讀不到那段文字——2026-11-07 大部分已解決。Stanford 的 FAQ 首頁根本不是被擋，是已經撤掉（回傳 39 bytes 的空白文件），內容搬進各 Apply 子頁的摺疊區塊，已在那裡讀到；UT Austin 的 FAQ 答案在它自己的腳本填好後，從頁面 DOM 讀到。剩下的只有一種障礙：伺服器丟檔案而不是網頁——Harvard 2026–27 supplement、UC 的 PIQ 指引、三份 Common App 簡報、Amherst 的 CDS 分節檔都是以下載方式送出的 PDF。Penn 的 InitialView 客服文章與 UC 給輔導老師的頁面在同一輪讀到了，這一類只剩 CMU 關於挑選推薦老師的用語，它放在分頁面板裡。Cornell 的「不追蹤表現興趣」是另一種情況：原始網址在不對外的開發用子網域，已無法解析，公開頁面上沒有這句話，所以這條說法不成立。Columbia 的額外推薦信規定、Duke 的 FAQ 用語、Georgetown 的面試 FAQ 已在第一輪瀏覽器複查確認，已從本清單移出、收進本頁其他各節。",
+      "en": "School statements still unconfirmed and therefore not shown here, grouped by the kind of obstacle, because \"refused automated access\" covers three different problems with three different prognoses. The wording for all of them so far comes only from search-engine excerpts. (1) Refused at the TLS layer — two independent request paths, twelve URLs, no response at all, so retrying will not clear it and only a person opening the page can settle it: Princeton (essays-and-AI blog, interviews, graded written paper), Northwestern (demonstrated interest, international interviews), Purdue (letters). (2) Refused automated reading or asked for human verification, which this site does not attempt to bypass: Michigan (why us, interviews), Williams (interviews, demonstrated interest). Amherst was in this group and is no longer: every page of its site opened in a browser later on 2026-11-07, and its interview policy, deadlines, test policy, writing-supplement research section and 2026–27 costs are now in the sections above. (3) The page loads but the text cannot be read from it — mostly cleared on 2026-11-07. Stanford's FAQ index was not gated at all but retired (it serves a 39-byte empty document), and its answers now live in accordions on each Apply page, where they were read; UT Austin's FAQ answers were read from the live DOM after its own script filled them. What remains is one kind of obstacle only: a server that hands over a file instead of a page — the Harvard 2026–27 supplement, UC's PIQ guidance, the three Common App decks and Amherst's CDS sections are all PDFs offered as downloads. Penn's InitialView help-desk article and UC's counselor page were read in the same pass, so the only item left in this group is CMU's wording on choosing a teacher recommender, which sits in a tab panel. Cornell's \"does not track demonstrated interest\" is a separate case: the original URL was on a non-public development subdomain that no longer resolves, and the public page carries no such wording, so the claim does not stand. Columbia's extra-letters rule, Duke's FAQ wording and Georgetown's interview FAQ were confirmed in the first browser pass and have moved out of this list into the sections above."
      },
      "tag": "f",
      "src": [
@@ -13099,6 +13099,116 @@ window.ATLAS.pages['insights'] = {
         "B1-P23"
        ]
       }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "outside-record-places",
+   "h": {
+    "zh": "校外做的事進得了哪裡：三校自己的界線",
+    "en": "Where work done outside school is allowed in: three schools' own boundaries"
+   },
+   "judgment": {
+    "zh": "同一份校外長期紀錄，Amherst 的寫作補充有專門欄位收它、UT Austin 請推薦人寫「校內與校外的主修準備」、Stanford 則一概不收，連附上的連結都不保證會看。",
+    "en": "For the same multi-year record built outside school, Amherst's writing supplement has a field for it, UT Austin asks recommenders to cover “preparation for your first-choice major, both in school and out”, and Stanford accepts nothing extra and does not guarantee that links will be read."
+   },
+   "intro": {
+    "zh": "這一節的三校在 2026-11-07 之前都被記成「頁面讀不到」。頁面其實讀得到，只是網址換了、答案要點擊、或 FAQ 已撤站搬進各子頁。每一則都是學校自己頁面上的原文。",
+    "en": "All three schools here were recorded as unreadable before 2026-11-07. The pages were readable: a URL had moved, answers loaded on click, or a retired FAQ had been folded into the individual Apply pages. Every item below is the school's own wording."
+   },
+   "items": [
+    {
+     "t": {
+      "zh": "Amherst 的寫作補充有一節叫「Optional Research Questions」，收的是「undertaken independently of the high school curriculum」的研究——自然科學、數學、資訊、社會科學或人文都算。這是本站讀到的 30 校中，少數在申請表內設有專門欄位、明文點名「校外、與高中課程無關」的研究的學校。",
+      "en": "Amherst's writing supplement has a section called “Optional Research Questions” for research “undertaken independently of the high school curriculum” — natural sciences, mathematics, computer science, social sciences or humanities. Among the 30 schools read here, few give work done outside the school curriculum a named field of its own inside the application."
+     },
+     "tag": "f",
+     "src": [
+      "V3-R6"
+     ]
+    },
+    {
+     "t": {
+      "zh": "Amherst 另外寫明每份申請「至少兩位 admission dean」讀過才送進委員會，並列出最看重的五項：成績單、老師與輔導老師推薦信、文書與寫作補充呈現的寫作品質、課內外投入與領導、以及（若有送的）標準化考試成績。",
+      "en": "Amherst also states that every application is read by “at least two admission deans” before going to committee, and lists what it pays closest attention to: the transcript, teacher and counselor recommendations, the quality of writing across essays and the writing supplement, extra- and co-curricular involvement and leadership, and standardized test results if the applicant submitted them."
+     },
+     "tag": "f",
+     "src": [
+      "V3-R6"
+     ]
+    },
+    {
+     "t": {
+      "zh": "UT Austin 把推薦信要寫什麼列成五點，其中一點是「Your preparation for your selected first-choice major, both in school and out」——官方文件裡少見地把「校外」寫進推薦信的任務清單。信件選繳、最多兩封、不能是親屬，而且學校「鼓勵校外的推薦人」。",
+      "en": "UT Austin lists five things it wants letters to cover, one of which is “Your preparation for your selected first-choice major, both in school and out” — an unusually explicit invitation, in an official document, for a letter to speak to work done outside school. Letters are optional, at most two, not from a relative, and UT “encourage[s] letters from sources outside of your high school”."
+     },
+     "tag": "f",
+     "src": [
+      "V3-R11"
+     ]
+    },
+    {
+     "t": {
+      "zh": "UT Austin 的候補名單表單只留「200 字以內的學業更新」這一個欄位；除此之外「Additional materials, such as letters of recommendation, continued letters of interest or other items ... will not be accepted or reviewed」。想在候補階段補東西的人，能用的就是那 200 字。",
+      "en": "UT Austin's waitlist form has exactly one field for new information: “any academic updates in 200 words or less”. Beyond it, “Additional materials, such as letters of recommendation, continued letters of interest or other items ... will not be accepted or reviewed”. Those 200 words are the whole channel."
+     },
+     "tag": "f",
+     "src": [
+      "V3-R12"
+     ]
+    },
+    {
+     "t": {
+      "zh": "Stanford 的界線在另一端：「We do not add supplementary materials like writing samples, research papers, or other special work to your application file, and we do not offer an option for applicants to upload supplementary materials to their file.」送出後要補的資訊走學校 portal 的 Update Application Form，不是 Common App 的 Additional Information；同一段還說，放在申請表或那個欄位裡的連結「不保證審查者會去看」。",
+      "en": "Stanford draws the line at the other end: “We do not add supplementary materials like writing samples, research papers, or other special work to your application file, and we do not offer an option for applicants to upload supplementary materials to their file.” New information after submission goes through the Update Application Form in the Stanford portal, not the Common App Additional Information field, and the same answer adds that links included in the application or in that box carry “no guarantee that readers will review” them."
+     },
+     "tag": "f",
+     "src": [
+      "V3-R8"
+     ]
+    },
+    {
+     "t": {
+      "zh": "Stanford 把推薦人的寬限期寫進 FAQ：「As a standard practice, we offer a grace period after the application deadline during which teachers and counselors may submit application materials.」學生自己的部分沒有寬限期，老師那一段有。",
+      "en": "Stanford puts a recommender grace period in writing: “As a standard practice, we offer a grace period after the application deadline during which teachers and counselors may submit application materials.” The applicant's own parts get no such grace; the teachers' parts do."
+     },
+     "tag": "f",
+     "src": [
+      "V3-R8"
+     ]
+    },
+    {
+     "t": {
+      "zh": "[推論] 三校放在一起看，「校外長期紀錄」能不能進入申請，取決於學校有沒有替它留欄位，而不是材料本身夠不夠好。Amherst 留了欄位、UT Austin 把它寫進推薦信的任務、Stanford 完全不留——同一份東西在三校的命運不同，而這三件事都只寫在各校自己的頁面上，沒有一處出現在通用建議裡。",
+      "en": "[Inference] Read together, whether a multi-year outside record can enter an application depends on whether the school left a field for it, not on how good the material is. Amherst left a field, UT Austin wrote it into the letter-writer's job, Stanford left none — and all three statements live only on each school's own pages."
+     },
+     "tag": "i",
+     "src": [
+      "V3-R6",
+      "V3-R11",
+      "V3-R8"
+     ]
+    },
+    {
+     "t": {
+      "zh": "Amherst 的費用頁上有一件與別校都不同的事：必修課程教材包含在 comprehensive fee 裡（「All required course materials are covered as part of the comprehensive fee」），所以它的費用表根本沒有書籍那一列。目前讀過的學校中只有這一所。",
+      "en": "Amherst's cost page contains something no other school's does: required course materials are inside the comprehensive fee (“All required course materials are covered as part of the comprehensive fee”), so its cost table has no books line at all. It is the only one so far."
+     },
+     "tag": "f",
+     "src": [
+      "V3-R3"
+     ]
+    },
+    {
+     "t": {
+      "zh": "[推論] 本站 logs/ 裡的 404 應該讀成「要重新定位」，不是「已消失」。Johns Hopkins、Harvey Mudd、Amherst 三校都是換了網址而內容還在；打開 404 頁、照著它自己給的導覽走一兩步就找到了。連結檢查器看不出這個差別。",
+      "en": "[Inference] A 404 in this repo's link log should be read as “re-locate”, not “gone”. Johns Hopkins, Harvey Mudd and Amherst each moved a URL and kept the page; opening the 404 and following the navigation it offers found all three in one or two clicks. A link checker cannot tell the two cases apart."
+     },
+     "tag": "i",
+     "src": [
+      "V3-R1",
+      "V3-R3"
      ]
     }
    ]

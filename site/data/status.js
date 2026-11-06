@@ -3,8 +3,8 @@ window.ATLAS = window.ATLAS || {};
 window.ATLAS.status = {
  "generated": "2026-11-06",
  "units": {
-  "done": 30,
-  "total": 35
+  "done": 32,
+  "total": 36
  },
  "sections": {
   "A": {
@@ -24,8 +24,8 @@ window.ATLAS.status = {
    "total": 8
   },
   "E": {
-   "done": 1,
-   "total": 6
+   "done": 3,
+   "total": 7
   },
   "F": {
    "done": 4,
@@ -42,11 +42,11 @@ window.ATLAS.status = {
   "notStated": 33
  },
  "sources": {
-  "total": 1430,
-  "official": 1390,
+  "total": 1447,
+  "official": 1407,
   "secondary": 40
  },
  "oldestAccess": "2026-11-07",
- "openQuestions": 4,
- "notes": 26
+ "openQuestions": 5,
+ "notes": 27
 };
