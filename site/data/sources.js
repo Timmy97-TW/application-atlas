@@ -37,6 +37,10 @@ window.ATLAS.sourceGroups = {
   "zh": "B3 工程作品集",
   "en": "B3 Engineering portfolios"
  },
+ "A7": {
+  "zh": "A4 補充：國際生財務補助數字",
+  "en": "A4 supplement: international aid numbers"
+ },
  "A4": {
   "zh": "A4 國際申請者",
   "en": "A4 International applicants"
@@ -6977,6 +6981,496 @@ window.ATLAS.sources = {
   "note": {
    "zh": "研究筆記：2026-11-07_engineering-portfolios_v1.md",
    "en": "Research note: 2026-11-07_engineering-portfolios_v1.md"
+  }
+ },
+ "A7-H01": {
+  "url": "https://ir.mit.edu/projects/2025-26-common-data-set/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "MIT CDS 2025-26 H6, G1, G5 (via WebFetch summary)",
+   "en": "MIT CDS 2025-26 H6, G1, G5 (via WebFetch summary)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H02": {
+  "url": "https://iro.caltech.edu/documents/35129/Caltech_CDS_2025-26_August_2026.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Caltech CDS 2025-26 H6 (pp. 35–36), G1/G5 (pp. 29–30)",
+   "en": "Caltech CDS 2025-26 H6 (pp. 35–36), G1/G5 (pp. 29–30)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H03": {
+  "url": "https://drive.google.com/file/d/1GIPKgVj1d86dkmLkHI_mZVCk_iY6kiCp/view",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Stanford CDS 2025-26 H6 (p. 32), G1/G5 (pp. 26–27)",
+   "en": "Stanford CDS 2025-26 H6 (p. 32), G1/G5 (pp. 26–27)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H04": {
+  "url": "https://oira.harvard.edu/files/2026/07/CDS_2025-2026.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Harvard CDS 2025-26 H6 (p. 24); G1/G5 blank (pp. 19–20)",
+   "en": "Harvard CDS 2025-26 H6 (p. 24); G1/G5 blank (pp. 19–20)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H05": {
+  "url": "https://oir.yale.edu/sites/default/files/yale_cds_2025-26_md_20260616.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Yale CDS 2025-26 H6 (p. 28), G1/G5 (pp. 22–23)",
+   "en": "Yale CDS 2025-26 H6 (p. 28), G1/G5 (pp. 22–23)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H06": {
+  "url": "https://ir.princeton.edu/sites/g/files/toruqf2041/files/documents/CDS_2526_Princeton_v2.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Princeton CDS 2025-26 H6 (p. 25), G1/G5 (pp. 20–21)",
+   "en": "Princeton CDS 2025-26 H6 (p. 25), G1/G5 (pp. 20–21)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H07": {
+  "url": "https://opir.columbia.edu/sites/opir.columbia.edu/files/content/Common%20Data%20Set/2025-26_Columbia_College_and_Columbia_Enginnering_CDS.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Columbia CC+SEAS CDS 2025-26 H6 (p. 34), G1/G5 (pp. 27–28)",
+   "en": "Columbia CC+SEAS CDS 2025-26 H6 (p. 34), G1/G5 (pp. 27–28)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H08": {
+  "url": "https://upenn.box.com/s/woo7d85yxpol6j9e2o121aucjc6dc1k5",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Penn CDS 2025-26 H6 (p. 22), G1/G5 (pp. 18–19)",
+   "en": "Penn CDS 2025-26 H6 (p. 22), G1/G5 (pp. 18–19)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H09": {
+  "url": "https://tableau.brown.edu/t/PublicContent/views/CommonDataSet/H-FinancialAid.csv",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Brown: H sheet export has no H6 rows; H6 not retrieved",
+   "en": "Brown: H sheet export has no H6 rows; H6 not retrieved"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H10": {
+  "url": "https://irp.cornell.edu/wp-content/uploads/2026/09/Cornell-Common-Data-Set-2025-26.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Cornell CDS 2025-26 H6, G1, G5 (form fields INTL_*, TUIT_*, FEES_*, RM_BD_*, BOOKS_RES_D, OTH_RES_D)",
+   "en": "Cornell CDS 2025-26 H6, G1, G5 (form fields INTL_*, TUIT_*, FEES_*, RM_BD_*, BOOKS_RES_D, OTH_RES_D)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H11": {
+  "url": "https://georgetown.box.com/s/0r8akn4cbm52zjkll6i7uttlb9k36px2",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Georgetown CDS 2025-26 H6 (pp. 27–28), G1/G5 (pp. 22–23)",
+   "en": "Georgetown CDS 2025-26 H6 (pp. 27–28), G1/G5 (pp. 22–23)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H12": {
+  "url": "https://www.cmu.edu/ira/CDS/pdf/cds_2025_26/cds_2025_full_pdf_updated_11jun26.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "CMU CDS 2025-26 H6 (p. 25), G1/G5 (pp. 20–21)",
+   "en": "CMU CDS 2025-26 H6 (p. 25), G1/G5 (pp. 20–21)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H13": {
+  "url": "https://irp.gatech.edu/sites/default/files/CDS/CDS_2025-2026_FINAL_R4_03JUN2026.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Georgia Tech CDS 2025-26 H6 (p. 26), G1/G5 (pp. 20–21)",
+   "en": "Georgia Tech CDS 2025-26 H6 (p. 26), G1/G5 (pp. 20–21)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H14": {
+  "url": "https://www.purdue.edu/idata/wp-content/uploads/2026/04/CDS-2025-2026.xlsx",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Purdue: file not retrieved (HTML returned / certificate rejected)",
+   "en": "Purdue: file not retrieved (HTML returned / certificate rejected)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H15": {
+  "url": "https://obp.umich.edu/wp-content/uploads/pubdata/cds/cds_2025-26_umaa.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Michigan: HTTP 403; not retrieved",
+   "en": "Michigan: HTTP 403; not retrieved"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H16": {
+  "url": "https://uofi.box.com/shared/static/orx4vnmzkt2drmgoiksxpfs39pr42uor.xlsx",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "UIUC CDS 2025-26 H6 (H.601–H.606), G1 (G.101–G.118), G5 (G.501–G.503), Answer Sheet tab",
+   "en": "UIUC CDS 2025-26 H6 (H.601–H.606), G1 (G.101–G.118), G5 (G.501–G.503), Answer Sheet tab"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H17": {
+  "url": "https://www.olin.edu/sites/default/files/2024-05/CDS_2023_2024%20(2",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Olin CDS 2023-24 H6 (pp. 53–54), G1/G5 (pp. 42–44)",
+   "en": "Olin CDS 2023-24 H6 (pp. 53–54), G1/G5 (pp. 42–44)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H18": {
+  "url": "https://www.hmc.edu/institutional-research/wp-content/uploads/sites/42/2026/03/CDS-HMC-2025.2026_shared.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Harvey Mudd CDS 2025-26 H6, G1, G5 (form fields)",
+   "en": "Harvey Mudd CDS 2025-26 H6, G1, G5 (form fields)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H19": {
+  "url": "https://oira.jhu.edu/wp-content/uploads/2025-2026-CDS-Johns-Hopkins-University-v2.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "JHU: HTTP 403; not retrieved",
+   "en": "JHU: HTTP 403; not retrieved"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H20": {
+  "url": "https://ir.provost.duke.edu/sites/default/files/CDS_PDF_2025-2026-20260622-website-published-version.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Duke CDS 2025-26 H6 (p. 24), G1/G5 (p. 19)",
+   "en": "Duke CDS 2025-26 H6 (p. 24), G1/G5 (p. 19)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H21": {
+  "url": "https://www.enrollment.northwestern.edu/data/2025-2026.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Northwestern CDS 2025-26 H6 (p. 44), G1/G5 (pp. 34–36)",
+   "en": "Northwestern CDS 2025-26 H6 (p. 44), G1/G5 (pp. 34–36)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H22": {
+  "url": "https://ideas.rice.edu/wp-content/uploads/2026/08/CDS_2025-26_WEBSITE_Updated_8-3-2026.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Rice CDS 2025-26 H6 (p. 29), G1/G5 (pp. 23–24)",
+   "en": "Rice CDS 2025-26 H6 (p. 29), G1/G5 (pp. 23–24)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H23": {
+  "url": "https://docs.google.com/spreadsheets/d/1INsGFH6MhaO-MFMBZ1Dngcn84FeN-hc0BLS0-v8TL_k/edit",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "UC Berkeley CDS 2025-26 H6 blank (CDS-H rows 119–129), G1/G5 (CDS-G rows 24–54)",
+   "en": "UC Berkeley CDS 2025-26 H6 blank (CDS-H rows 119–129), G1/G5 (CDS-G rows 24–54)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H24": {
+  "url": "https://apb.ucla.edu/file/d1ab04b3-ee89-4cf2-9124-8dc0471b5e5a",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "UCLA CDS 2025-26 H6 blank (pp. 35–36), G blank (pp. 29–30)",
+   "en": "UCLA CDS 2025-26 H6 blank (pp. 35–36), G blank (pp. 29–30)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H25": {
+  "url": "https://ir.ucsd.edu/stats/undergrad/CDS-2025-2026-Final4.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "UC San Diego CDS 2025-26 H6 (p. 23), G1/G5 (pp. 18–19)",
+   "en": "UC San Diego CDS 2025-26 H6 (p. 23), G1/G5 (pp. 18–19)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H26": {
+  "url": "https://utexas.box.com/s/z5p8zzbr6yk4eluam3v3dt2wyaha3cja",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "UT Austin CDS 2025-26 H6 (pp. 35–36), G1/G5 (pp. 29–30)",
+   "en": "UT Austin CDS 2025-26 H6 (pp. 35–36), G1/G5 (pp. 29–30)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H27": {
+  "url": "https://finance.uw.edu/iads/files/docs/ipeds/common_data_set/cds_2025-2026_seattle.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "UW Seattle CDS 2025-26 H6 (INTL_NO), G1, G5 (form fields)",
+   "en": "UW Seattle CDS 2025-26 H6 (INTL_NO), G1, G5 (form fields)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H28": {
+  "url": "https://www.williams.edu/institutional-research/common-data-set/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Williams: HTTP 403; not retrieved. Cost page https://www.williams.edu/admission-aid/financial-aid/cost-of-attendance/ also 403",
+   "en": "Williams: HTTP 403; not retrieved. Cost page https://www.williams.edu/admission-aid/financial-aid/cost-of-attendance/ also 403"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H29": {
+  "url": "https://www.amherst.edu/offices/institutional-research/cds",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Amherst: HTTP 405; not retrieved. Cost page https://www.amherst.edu/admission/financial_aid/cost-of-attendance also 405",
+   "en": "Amherst: HTTP 405; not retrieved. Cost page https://www.amherst.edu/admission/financial_aid/cost-of-attendance also 405"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H30": {
+  "url": "https://www.swarthmore.edu/sites/default/files/assets/documents/institutional-effectiveness-research-assessment/Swarthmore-CDS-2025-26.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Swarthmore CDS 2025-26 H6, G1, G5 (form fields)",
+   "en": "Swarthmore CDS 2025-26 H6, G1, G5 (form fields)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H31": {
+  "url": "https://ir.ucsd.edu/stats/undergrad/CDS-2025-2026-Final4.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "2025-26 template wording: G1 = \"FULL 2026-2027 academic year\"; H6 = \"same academic year checked in item H1\"",
+   "en": "2025-26 template wording: G1 = \"FULL 2026-2027 academic year\"; H6 = \"same academic year checked in item H1\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H32": {
+  "url": "https://college.harvard.edu/financial-aid/how-aid-works/cost-attendance",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Harvard 2026-27 cost of attendance; international aid eligibility statement",
+   "en": "Harvard 2026-27 cost of attendance; international aid eligibility statement"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H33": {
+  "url": "https://finaid.brown.edu/estimate-cost-aid/cost",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "Brown 2026-27 cost of attendance (incoming first-year)",
+   "en": "Brown 2026-27 cost of attendance (incoming first-year)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H34": {
+  "url": "https://sfs.jhu.edu/tuition-and-fees/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "JHU cost page: HTTP 404; not retrieved",
+   "en": "JHU cost page: HTTP 404; not retrieved"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
+  }
+ },
+ "A7-H35": {
+  "url": "https://www.admission.ucla.edu/tuition-aid/tuition-fees",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A7",
+  "title": {
+   "zh": "UCLA on-campus cost; \"Total – Nonresidents\" $84,770; \"Updated July 2026\"; no year named",
+   "en": "UCLA on-campus cost; \"Total – Nonresidents\" $84,770; \"Updated July 2026\"; no year named"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_international-aid-numbers_v1.md",
+   "en": "Research note: 2026-11-07_international-aid-numbers_v1.md"
   }
  },
  "A4-S1": {
