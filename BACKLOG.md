@@ -68,7 +68,7 @@ Tier 4: Williams, Amherst, Swarthmore
 ## D. Site pages that depend on A–C
 - [x] D1 portfolios.html from B1–B4 (filterable matrix, source-class dots)  ✓ 2026-11-07: site/data/p-portfolios.js
 - [x] D2 record.html from C1–C3  ✓ 2026-11-07: site/data/p-record.js
-- [ ] D3 mock/index.html: practice walkthrough with the field names, limits and
+- [x] D3 mock/index.html: practice walkthrough with the field names, limits and  ✓ 2026-11-07: site/data/p-mock.js + assets/js/mock.js
       live counters of A1 plus a UC PIQ tab from A2, prefilled with the bio
       persona, with a toggle annotating each field with "where a multi-year
       outside record could enter here" from C2

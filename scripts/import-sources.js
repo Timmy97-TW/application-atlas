@@ -24,7 +24,11 @@ const CODES = {
   'ucas-system-and-tests': ['F1', { zh: 'F1／F2 UCAS 與入學考試', en: 'F1/F2 UCAS and admissions tests' }],
   'uk-universities-engineering-biology': ['F3', { zh: 'F3 英國十校', en: 'F3 Ten UK universities' }],
   'us-schools-31-50-part1': ['G1', { zh: 'G 美國 31–40 校', en: 'G US schools 31–40' }],
-  'michigan-addendum': ['MI', { zh: 'Michigan 補充（網頁拒絕自動存取）', en: 'Michigan addendum (pages refuse automated access)' }],
+  'cds-numbers': ['B6', { zh: 'B5 補充：Common Data Set 數字', en: 'B5 supplement: Common Data Set numbers' }],
+  'admissions-own-voice': ['B7', { zh: 'B5 補充：招生辦公室自己的說法', en: 'B5 supplement: admissions offices in their own words' }],
+  'counselor-side-and-taiwan-logistics': ['A6', { zh: 'A4 補充：輔導老師端與台灣考試實務', en: 'A4 supplement: counselor side and Taiwan logistics' }],
+  'blocked-pages-browser-pass': ['LEAD', { zh: '待查線索（未讀到頁面本身）', en: 'Leads only (pages not read)' }],
+  'michigan-addendum':['MI', { zh: 'Michigan 補充（網頁拒絕自動存取）', en: 'Michigan addendum (pages refuse automated access)' }],
   'us-schools-31-50-part2':['G2', { zh: 'G 美國 41–50 校', en: 'G US schools 41–50' }]
 };
 
