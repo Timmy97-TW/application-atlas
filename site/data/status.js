@@ -42,11 +42,11 @@ window.ATLAS.status = {
   "notStated": 33
  },
  "sources": {
-  "total": 1296,
-  "official": 1256,
+  "total": 1387,
+  "official": 1347,
   "secondary": 40
  },
  "oldestAccess": "2026-11-07",
  "openQuestions": 4,
- "notes": 24
+ "notes": 25
 };

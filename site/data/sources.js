@@ -49,6 +49,10 @@ window.ATLAS.sourceGroups = {
   "zh": "A4 國際申請者",
   "en": "A4 International applicants"
  },
+ "A8": {
+  "zh": "A5 補充：工程與生物科系層級的錄取規則",
+  "en": "A5 supplement: major-level admission for engineering and biology"
+ },
  "MI": {
   "zh": "Michigan 補充（網頁拒絕自動存取）",
   "en": "Michigan addendum (pages refuse automated access)"
@@ -9365,6 +9369,1280 @@ window.ATLAS.sources = {
   "note": {
    "zh": "研究筆記：2026-11-07_international-applicant-specifics_v1.md",
    "en": "Research note: 2026-11-07_international-applicant-specifics_v1.md"
+  }
+ },
+ "A8-M01": {
+  "url": "https://engineering.mit.edu/undergraduate/admissions",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "MIT admits to entire Institute; declare later; ~70% engineering",
+   "en": "MIT admits to entire Institute; declare later; ~70% engineering"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M02": {
+  "url": "https://mitadmissions.org/apply/prepare/highschool/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "MIT recommended coursework (roster S5)",
+   "en": "MIT recommended coursework (roster S5)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M03": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-application-essays",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Caltech declare at end of first year; areas of interest",
+   "en": "Caltech declare at end of first year; areas of interest"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M04": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/academic-requirements-for-first-year-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Caltech required courses (roster S11)",
+   "en": "Caltech required courses (roster S11)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M05": {
+  "url": "https://admission.stanford.edu/apply/first-year/apply.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Stanford apply to university, not major",
+   "en": "Stanford apply to university, not major"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M06": {
+  "url": "https://admission.stanford.edu/apply/first-year/prepare.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Stanford recommended courses (roster S20)",
+   "en": "Stanford recommended courses (roster S20)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M07": {
+  "url": "https://seas.harvard.edu/prospective-students/prospective-undergraduate-students",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Harvard SEAS: apply to Harvard College; declare sophomore year",
+   "en": "Harvard SEAS: apply to Harvard College; declare sophomore year"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M08": {
+  "url": "https://college.harvard.edu/sites/default/files/2026-08/Harvard_FY_supplement_2026-2027.pdf",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Harvard does not admit to programs (roster S23)",
+   "en": "Harvard does not admit to programs (roster S23)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M09": {
+  "url": "https://admissions.yale.edu/essays",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Yale academic areas, up to three",
+   "en": "Yale academic areas, up to three"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M10": {
+  "url": "https://admissions.yale.edu/course-selection",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Yale no prescribed courses (roster S30)",
+   "en": "Yale no prescribed courses (roster S30)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M11": {
+  "url": "https://admission.princeton.edu/apply/before-you-apply",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Princeton A.B./B.S.E. once enrolled; course recommendations",
+   "en": "Princeton A.B./B.S.E. once enrolled; course recommendations"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M12": {
+  "url": "https://engineering.princeton.edu/undergraduate-studies/undergraduate-affairs-office/changing-your-degree-candidacy",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Princeton degree-candidacy change process",
+   "en": "Princeton degree-candidacy change process"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M13": {
+  "url": "https://undergrad.admissions.columbia.edu/apply/firstyear",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Columbia two schools; Engineering course advice; teacher rule",
+   "en": "Columbia two schools; Engineering course advice; teacher rule"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M14": {
+  "url": "https://undergrad.admissions.columbia.edu/faq",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Columbia must choose CC or Engineering",
+   "en": "Columbia must choose CC or Engineering"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M14b": {
+  "url": "https://www.cc-seas.columbia.edu/csa/transferfaqs",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "CC/SEAS major declaration timing",
+   "en": "CC/SEAS major declaration timing"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M15": {
+  "url": "https://admissions.upenn.edu/academics/four-schools",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Penn apply to one of four schools; Engineering calculus/physics",
+   "en": "Penn apply to one of four schools; Engineering calculus/physics"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M16": {
+  "url": "https://academics.engineering.upenn.edu/ugrad/student-handbook/academic-policies/transfer-options/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Penn internal transfer into Engineering: 8 c.u., GPA 3.0, deadlines",
+   "en": "Penn internal transfer into Engineering: 8 c.u., GPA 3.0, deadlines"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M17": {
+  "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/academics",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Penn course preparation by school (roster S44)",
+   "en": "Penn course preparation by school (roster S44)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M18": {
+  "url": "https://admission.brown.edu/first-year/selecting-degree-programs-academic-fields",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Brown no quotas; no admission by interest",
+   "en": "Brown no quotas; no admission by interest"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M19": {
+  "url": "https://admission.brown.edu/first-year/school-forms",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Brown Sc.B. math/science letter (roster S49)",
+   "en": "Brown Sc.B. math/science letter (roster S49)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M20": {
+  "url": "https://admissions.cornell.edu/how-to-apply/first-year-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Cornell apply directly to a college",
+   "en": "Cornell apply directly to a college"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M21": {
+  "url": "https://admissions.cornell.edu/first-year-duffield-engineering-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Duffield common curriculum; affiliation in year 2; required courses",
+   "en": "Duffield common curriculum; affiliation in year 2; required courses"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M22": {
+  "url": "https://admissions.cornell.edu/first-year-cals-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "CALS direct to major; course requirements by major",
+   "en": "CALS direct to major; course requirements by major"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M23": {
+  "url": "https://admissions.cornell.edu/first-year-arts-sciences-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "A&S two areas of interest; declare by end of sophomore year",
+   "en": "A&S two areas of interest; declare by end of sophomore year"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M24": {
+  "url": "https://www.duffield.cornell.edu/advising/incoming-internal-transfers/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Duffield internal transfer eligibility, timing, majors incl. CS",
+   "en": "Duffield internal transfer eligibility, timing, majors incl. CS"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M25": {
+  "url": "https://www.duffield.cornell.edu/advising/incoming-internal-transfers/internal-transfer-faqs/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Duffield internal transfer FAQs; department decides; conditional transfer",
+   "en": "Duffield internal transfer FAQs; department decides; conditional transfer"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M26": {
+  "url": "https://uadmissions.georgetown.edu/apply/first-year-applicants/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Georgetown apply to one of six schools",
+   "en": "Georgetown apply to one of six schools"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M27": {
+  "url": "https://uadmissions.georgetown.edu/apply/first-year-applicants/how-to-prepare/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Georgetown course prep (roster S64)",
+   "en": "Georgetown course prep (roster S64)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M28": {
+  "url": "https://www.cmu.edu/admission/admission/undergraduate-admission-requirements",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "CMU Engineering direct to major; change after year 1 not guaranteed; BME additional major",
+   "en": "CMU Engineering direct to major; change after year 1 not guaranteed; BME additional major"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M28b": {
+  "url": "https://www.cmu.edu/admission/admission/admission-faq",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "CMU SCS requires SAT/ACT",
+   "en": "CMU SCS requires SAT/ACT"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M29": {
+  "url": "https://www.cmu.edu/admission/admission/academic-requirements-college-level-work",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "CMU course requirements by college (roster S66)",
+   "en": "CMU course requirements by college (roster S66)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M30": {
+  "url": "https://www.cmu.edu/admission/admission/application-plans-deadlines",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "CMU ED one college (roster S69)",
+   "en": "CMU ED one college (roster S69)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M31": {
+  "url": "https://admission.gatech.edu/first-year/major-selection",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "GT no college/major application; primary/secondary major",
+   "en": "GT no college/major application; primary/secondary major"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M31b": {
+  "url": "https://admission.gatech.edu/first-year/academic-preparation",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "GT USG minimum units (roster S77)",
+   "en": "GT USG minimum units (roster S77)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M32": {
+  "url": "https://admission.gatech.edu/first-year/major-confirmation",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "GT major confirmation by May 15; Music Technology restricted",
+   "en": "GT major confirmation by May 15; Music Technology restricted"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M33": {
+  "url": "https://catalog.gatech.edu/rules/6/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "GT change-of-major rule; capacity limits",
+   "en": "GT change-of-major rule; capacity limits"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M34": {
+  "url": "https://www.cc.gatech.edu/prospective-undergraduate-faq",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "GT CS change of major \"limited basis\"; summer 2024 split",
+   "en": "GT CS change of major \"limited basis\"; summer 2024 split"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M35": {
+  "url": "https://www.cc.gatech.edu/create-application-changing-majors-computer-science",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "GT CS change of major page (timeline in image, not read)",
+   "en": "GT CS change of major page (timeline in image, not read)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M36": {
+  "url": "https://admissions.purdue.edu/become-student/guide/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Purdue primary/alternate major; available space; changes not guaranteed",
+   "en": "Purdue primary/alternate major; available space; changes not guaranteed"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M37": {
+  "url": "https://admissions.purdue.edu/become-student/first-year-criteria/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Purdue review factors (roster S81)",
+   "en": "Purdue review factors (roster S81)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M38": {
+  "url": "https://admissions.purdue.edu/deadlines/first-year-college-student/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Purdue Nov 1 priority; \"only if space allows\" (roster S80)",
+   "en": "Purdue Nov 1 priority; \"only if space allows\" (roster S80)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M39": {
+  "url": "https://admissions.purdue.edu/become-student/course-requirements/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Purdue engineering chemistry expectation (roster S83)",
+   "en": "Purdue engineering chemistry expectation (roster S83)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M40": {
+  "url": "https://catalog.purdue.edu/preview_program.php?catoid=19&poid=35464",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Purdue 2026-27 FYE CODO: GPA 2.7, CODO GPA 2.5, space available only (read in browser pane)",
+   "en": "Purdue 2026-27 FYE CODO: GPA 2.7, CODO GPA 2.5, space available only (read in browser pane)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M41": {
+  "url": "https://catalog.purdue.edu/preview_program.php?catoid=19&poid=35513",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Purdue 2026-27 CS CODO: GPA 2.75, space available only (read in browser pane)",
+   "en": "Purdue 2026-27 CS CODO: GPA 2.75, space available only (read in browser pane)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M42": {
+  "url": "https://www.engin.umich.edu/admissions/undergraduate-admissions/first-year-admissions/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Michigan Engineering course emphasis (roster S84; 403 in this run)",
+   "en": "Michigan Engineering course emphasis (roster S84; 403 in this run)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M43": {
+  "url": "https://www.engin.umich.edu/admissions/undergraduate-admissions/admissions-faq/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Michigan Engineering first-years undeclared (roster S87; 403 in this run)",
+   "en": "Michigan Engineering first-years undeclared (roster S87; 403 in this run)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M44": {
+  "url": "https://www.engin.umich.edu/admissions/undergraduate-admissions/can-i-get-in/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Michigan Engineering course advice (roster S86)",
+   "en": "Michigan Engineering course advice (roster S86)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M44b": {
+  "url": "https://www.engin.umich.edu/admissions-aid/undergraduate/apply/current-u-m-students/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Michigan cross-campus admissions; seen only as a search result (403); not used for facts",
+   "en": "Michigan cross-campus admissions; seen only as a search result (403); not used for facts"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M45": {
+  "url": "https://admissions.illinois.edu/first-year-apply-faq/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UIUC second-choice rules; majors excluded as second choice; admit rates vary by college",
+   "en": "UIUC second-choice rules; majors excluded as second choice; admit rates vary by college"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M46": {
+  "url": "https://admissions.illinois.edu/first-year-requirements/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UIUC Grainger math and lab-science requirements",
+   "en": "UIUC Grainger math and lab-science requirements"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M47": {
+  "url": "https://siebelschool.illinois.edu/admissions/undergraduate/transfer-students",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UIUC Grainger CS direct admit only, closed to on-campus transfer",
+   "en": "UIUC Grainger CS direct admit only, closed to on-campus transfer"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M48": {
+  "url": "https://studentsuccess.illinois.edu/advisor-resources/advising-illinois/intercollegiate-transfer-process/engineering-all-majors/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UIUC ICT into Grainger; CS closed; B grades expected",
+   "en": "UIUC ICT into Grainger; CS closed; B grades expected"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M49": {
+  "url": "https://grainger.illinois.edu/academics/undergraduate/engineering-undeclared/transferring-to-eu",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UIUC EU ICT: limited, 2nd/3rd semester, GPA 3.30",
+   "en": "UIUC EU ICT: limited, 2nd/3rd semester, GPA 3.30"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M50": {
+  "url": "https://transferhandbook.illinois.edu/eng/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UIUC off-campus transfers to other colleges ineligible for Grainger",
+   "en": "UIUC off-campus transfers to other colleges ineligible for Grainger"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M51": {
+  "url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "JHU BME first choice; space available; other majors if not admitted",
+   "en": "JHU BME first choice; space available; other majors if not admitted"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M52": {
+  "url": "https://apply.jhu.edu/academics/special-programs/biomedical-engineering/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "JHU BME admission by credentials and space",
+   "en": "JHU BME admission by credentials and space"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M53": {
+  "url": "https://apply.jhu.edu/frequently-asked-questions/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "JHU BME FAQ",
+   "en": "JHU BME FAQ"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M54": {
+  "url": "https://admissions.duke.edu/apply/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Duke choose Trinity or Pratt; Pratt calculus requirement",
+   "en": "Duke choose Trinity or Pratt; Pratt calculus requirement"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M55": {
+  "url": "https://trinity.duke.edu/undergraduate/academic-policies/transfer-to-from-pratt",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Duke transfer between schools after one semester",
+   "en": "Duke transfer between schools after one semester"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M56": {
+  "url": "https://pratt.duke.edu/academics/undergrad/policies/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Duke transfer deadlines; good standing; undeclared on entry to Pratt",
+   "en": "Duke transfer deadlines; good standing; undeclared on entry to Pratt"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M57": {
+  "url": "https://admissions.northwestern.edu/apply/advice/academic-path.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Northwestern apply to one of six schools; no strategic advantage; Undecided",
+   "en": "Northwestern apply to one of six schools; no strategic advantage; Undecided"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M58": {
+  "url": "https://admissions.northwestern.edu/faqs/high-school-courses/index.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "McCormick recommended coursework (roster part 2 S21)",
+   "en": "McCormick recommended coursework (roster part 2 S21)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M59": {
+  "url": "https://www.weinberg.northwestern.edu/undergraduate/courses-registration-grades/transferring-northwestern-school.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Northwestern Interschool Transfer; not always approved",
+   "en": "Northwestern Interschool Transfer; not always approved"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M60": {
+  "url": "https://admission.rice.edu/apply/first-year-domestic-applicants",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Rice music one-year rule; science/engineering course requirements",
+   "en": "Rice music one-year rule; science/engineering course requirements"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M61": {
+  "url": "https://admissions.berkeley.edu/application-faqs/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Berkeley primary major only (roster S25)",
+   "en": "Berkeley primary major only (roster S25)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M62": {
+  "url": "https://admissions.berkeley.edu/academics/ls-high-demand-major/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Berkeley L&S high-demand major policy",
+   "en": "Berkeley L&S high-demand major policy"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M63": {
+  "url": "https://engineering.berkeley.edu/admissions/undergraduate-admissions/prospective-freshman-faqs/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Berkeley CoE spaces available; change of major unlikely for EECS",
+   "en": "Berkeley CoE spaces available; change of major unlikely for EECS"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M64": {
+  "url": "https://engineering.berkeley.edu/admissions/undergraduate-admissions/change-of-college/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Berkeley change of college into CoE: rules, EECS excluded",
+   "en": "Berkeley change of college into CoE: rules, EECS excluded"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M65": {
+  "url": "https://admission.ucla.edu/apply/first-year/choosing-major",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UCLA one major reviewed; change deadlines",
+   "en": "UCLA one major reviewed; change deadlines"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M66": {
+  "url": "https://www.seasoasa.ucla.edu/change-of-major-2/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UCLA Samueli change of major rules 2026-27",
+   "en": "UCLA Samueli change of major rules 2026-27"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M67": {
+  "url": "https://www.seasoasa.ucla.edu/undergraduate-admissions/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UCLA severely impacted majors; transfer restrictions",
+   "en": "UCLA severely impacted majors; transfer restrictions"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M68": {
+  "url": "https://admissions.ucsd.edu/first-year/application-requirements.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UCSD selective majors; alternate major",
+   "en": "UCSD selective majors; alternate major"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M69": {
+  "url": "https://admissions.ucsd.edu/why/majors/index.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UCSD majors marked selective",
+   "en": "UCSD majors marked selective"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M70": {
+  "url": "https://undergrad.ucsd.edu/academics/selective-major-process/selective-major-faq.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UCSD continuing-student process, point system, selection numbers",
+   "en": "UCSD continuing-student process, point system, selection numbers"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M71": {
+  "url": "https://undergrad.ucsd.edu/academics/selective-major-process/index.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UCSD selective-major application windows",
+   "en": "UCSD selective-major application windows"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M72": {
+  "url": "https://admissions.utexas.edu/apply/review-decision-process/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UT major competitiveness; waitlist for different major",
+   "en": "UT major competitiveness; waitlist for different major"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M73": {
+  "url": "https://admissions.utexas.edu/explore/colleges-degrees/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UT Cockrell majors; CNS entry-level status",
+   "en": "UT Cockrell majors; CNS entry-level status"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M73b": {
+  "url": "https://admissions.utexas.edu/apply/freshman",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UT first- and second-choice majors",
+   "en": "UT first- and second-choice majors"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M74": {
+  "url": "https://admissions.utexas.edu/apply/application-materials/high-school-prerequisites/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UT calculus readiness requirement",
+   "en": "UT calculus readiness requirement"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M75": {
+  "url": "https://cockrell.utexas.edu/admissions/undergraduate/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Cockrell Dec 1 deadline",
+   "en": "Cockrell Dec 1 deadline"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M76": {
+  "url": "https://cockrell.utexas.edu/admissions/undergraduate/internal-transfer/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Cockrell internal transfer: GPA 3.0, space available, no standard GPA",
+   "en": "Cockrell internal transfer: GPA 3.0, space available, no standard GPA"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M77": {
+  "url": "https://cns.utexas.edu/info-undergraduate-students/academics-advising-policies/internal-transfer",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UT CNS internal transfer incl. CS; GPA 3.0",
+   "en": "UT CNS internal transfer incl. CS; GPA 3.0"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M78": {
+  "url": "https://admit.washington.edu/apply/admission-to-majors/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "UW major types, direct-to-major list, Allen School, second choice",
+   "en": "UW major types, direct-to-major list, Allen School, second choice"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M79": {
+  "url": "https://www.olin.edu/admission/apply",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Olin calculus and physics requirement (roster part 2 S7)",
+   "en": "Olin calculus and physics requirement (roster part 2 S7)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M79b": {
+  "url": "https://www.olin.edu/academics/majors-concentrations",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Olin three degrees; E:Bio concentration",
+   "en": "Olin three degrees; E:Bio concentration"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M80": {
+  "url": "https://www.hmc.edu/admission/apply/first-year-students/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "HMC calculus/chemistry/physics for enrollment; conditional admission",
+   "en": "HMC calculus/chemistry/physics for enrollment; conditional admission"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M81": {
+  "url": "https://www.hmc.edu/academics/majors/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "HMC majors built on common Core",
+   "en": "HMC majors built on common Core"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M82": {
+  "url": "https://www.swarthmore.edu/engineering",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Swarthmore Engineering Department",
+   "en": "Swarthmore Engineering Department"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M83": {
+  "url": "https://admission.williams.edu/apply/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "HTTP 403; not read",
+   "en": "HTTP 403; not read"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M84": {
+  "url": "https://www.amherst.edu/admission/apply/firstyear",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Amherst first-year application; no major selection described",
+   "en": "Amherst first-year application; no major selection described"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
+  }
+ },
+ "A8-M85": {
+  "url": "https://www.amherst.edu/academiclife/departments",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "A8",
+  "title": {
+   "zh": "Amherst departments list; no engineering listed",
+   "en": "Amherst departments list; no engineering listed"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_major-level-admission_v1.md",
+   "en": "Research note: 2026-11-07_major-level-admission_v1.md"
   }
  },
  "MI-S1": {
