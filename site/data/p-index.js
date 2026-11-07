@@ -6,7 +6,17 @@ window.ATLAS.pages['index'] = {
     zh: '一份附來源的研究：30 所美國大學的申請內容、期限與入口，深入整理工程與生物申請者的作品集和補充材料，以及校外多年紀錄能放進申請的哪些位置。',
     en: 'A sourced study of what 30 US universities ask for, by when, and through which portal, with depth on portfolios and supplementary materials for engineering and biology applicants, and on where a multi-year record built outside school can enter the application.'
   },
+  viz: { type: 'stats' },
   sections: [
+    {
+      id: 'next',
+      h: { zh: '接下來的截止日', en: 'The next deadlines' },
+      viz: {
+        type: 'upcoming', count: 4, lanes: ['apply'],
+        title: { zh: '從今天起，最近的四個申請截止日', en: 'The four nearest application deadlines from today' },
+        subtitle: { zh: '依各校官方頁面整理；點卡片看是哪些學校與來源。完整一年請看時程頁。', en: 'From each school\'s own pages; tap a card for the schools and sources. The full year is on the timeline page.' }
+      }
+    },
     {
       id: 'four',
       h: { zh: '學生要交的四類東西', en: 'The four things a student submits' },

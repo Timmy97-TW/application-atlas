@@ -262,3 +262,71 @@
     return { table: { cols: [{ zh: '日期', en: 'Date' }, { zh: '事項', en: 'Milestone' }, { zh: '來源', en: 'Sources' }], rows: (spec.points || []).map(function (p) { return [p.date + (p.end ? ' – ' + p.end : ''), L(p.label), { html: V.cites(p.src || []) }]; }) } };
   });
 })();
+
+/* Upcoming: the next application deadlines after today, as countdown cards.
+   Stats: headline numbers from status.js with a short count-up. */
+(function () {
+  'use strict';
+  if (!window.ATLAS_VIZ) return;
+  var T = {
+    days: { zh: '天後', en: 'days' }, today: { zh: '今天', en: 'today' }, tomorrow: { zh: '明天', en: 'tomorrow' },
+    more: { zh: '所學校', en: 'schools' }, none: { zh: '本季已無申請截止', en: 'No application deadlines left this cycle' }
+  };
+  ATLAS_VIZ.register('upcoming', function (el, spec, V, ctx) {
+    var D = V.data().deadlines; if (!D) return;
+    var L = V.L, fmt = V.fmt;
+    var today = V.dateNum(D.today || new Date().toISOString().slice(0, 10));
+    var lanes = spec.lanes || ['apply'];
+    var byDay = {};
+    D.events.forEach(function (e) {
+      if (lanes.indexOf(e.lane) < 0 || e.approx) return;
+      var d = e.end || e.start, t = V.dateNum(d);
+      if (t < today) return;
+      (byDay[d] = byDay[d] || []).push(e);
+    });
+    var days = Object.keys(byDay).sort().slice(0, spec.count || 4);
+    var row = V.h('div', { 'class': 'vz-up' }, null, el);
+    if (!days.length) { V.h('p', { 'class': 'vz-sub' }, L(T.none), el); return; }
+    var cards = days.map(function (d) {
+      var list = byDay[d], n = Math.round((V.dateNum(d) - today) / V.day);
+      var c = V.h('div', { 'class': 'vz-up-card', tabindex: '0' }, null, row);
+      var top = V.h('div', { 'class': 'vz-up-n' }, null, c);
+      V.h('span', { 'class': 'vz-up-big' }, n === 0 ? L(T.today) : n === 1 ? L(T.tomorrow) : String(n), top);
+      if (n > 1) V.h('span', { 'class': 'vz-up-unit' }, L(T.days), top);
+      V.h('div', { 'class': 'vz-up-date' }, fmt.date(d), c);
+      var names = list.map(function (e) { return e.school; }).filter(Boolean);
+      var uniq = names.filter(function (s, i) { return names.indexOf(s) === i; });
+      V.h('div', { 'class': 'vz-up-who' }, uniq.slice(0, 4).join(' · ') + (uniq.length > 4 ? ' +' + (uniq.length - 4) : ''), c);
+      V.tip(c, function () { return { title: fmt.date(d), rows: list.map(function (e) { return { value: e.school, label: L(e.label), color: 'var(--c1)', src: e.src }; }) }; });
+      return c;
+    });
+    if (ctx.first) V.stagger(cards, { from: 'translateY(10px)', step: 80 });
+    return { table: { cols: [{ zh: '日期', en: 'Date' }, { zh: '學校', en: 'Schools' }], rows: days.map(function (d) { return [d, byDay[d].map(function (e) { return e.school + ' (' + L(e.label) + ')'; }).join('; ')]; }) } };
+  });
+
+  ATLAS_VIZ.register('stats', function (el, spec, V, ctx) {
+    var st = (window.ATLAS || {}).status; if (!st) return;
+    var L = V.L;
+    var items = [
+      { v: 30, l: { zh: '所美國學校（完整深度）', en: 'US schools at full depth' } },
+      { v: st.sources.total, l: { zh: '筆引用來源', en: 'cited sources' } },
+      { v: Math.round(100 * st.sources.official / Math.max(st.sources.total, 1)), suffix: '%', l: { zh: '來自官方', en: 'from official pages' } },
+      { v: st.notes, l: { zh: '份研究筆記', en: 'research notes' } }
+    ];
+    var row = V.h('div', { 'class': 'vz-stats' }, null, el);
+    items.forEach(function (it) {
+      var c = V.h('div', { 'class': 'vz-stat' }, null, row);
+      var big = V.h('div', { 'class': 'vz-stat-v' }, (ctx.first && !V.reduced ? '0' : it.v.toLocaleString('en-US')) + (it.suffix || ''), c);
+      V.h('div', { 'class': 'vz-stat-l' }, L(it.l), c);
+      if (ctx.first && !V.reduced) {
+        var t0 = null, dur = 900;
+        (function step(ts) {
+          if (!t0) t0 = ts;
+          var p = Math.min(1, (ts - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+          big.textContent = Math.round(it.v * e).toLocaleString('en-US') + (it.suffix || '');
+          if (p < 1) requestAnimationFrame(step);
+        })(performance.now());
+      }
+    });
+  });
+})();
