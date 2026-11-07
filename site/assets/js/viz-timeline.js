@@ -96,12 +96,25 @@
     var marks = [];
     var lastX = {}, dodge = {};
     var picked = state.pick;
-    Object.keys(groups).sort(function (a, b) { return a.split('|')[1] < b.split('|')[1] ? -1 : 1; }).forEach(function (k) {
+    // In the Year view, point marks closer than 10px in one lane merge into a
+    // single counted cluster; the Season view keeps one mark per day.
+    var keysSorted = Object.keys(groups).sort(function (a, b) { return a.split('|')[1] < b.split('|')[1] ? -1 : 1; });
+    if (state.zoom === 'fit') {
+      var lastPt = {};
+      keysSorted.forEach(function (k) {
+        var e0 = groups[k][0]; if (e0.end) return;
+        var px = x(V.dateNum(e0.start)), lp = lastPt[e0.lane];
+        if (lp && px - lp.x < 10) { groups[lp.k] = groups[lp.k].concat(groups[k]); groups[lp.k].lastDate = e0.start; delete groups[k]; }
+        else lastPt[e0.lane] = { x: px, k: k };
+      });
+      keysSorted = keysSorted.filter(function (k) { return groups[k]; });
+    }
+    keysSorted.forEach(function (k) {
       var list = groups[k], e = list[0];
       var li = lanes.findIndex(function (l) { return l.id === e.lane; }); if (li < 0) return;
       var cy = top + li * laneH + laneH / 2;
       // dodge: a point mark within 12px of the previous point in its lane steps up or down
-      if (!e.end) {
+      if (!e.end && state.zoom !== 'fit') {
         var px0 = x(V.dateNum(e.start)), last = lastX[li];
         if (last != null && px0 - last.x < 12) { dodge[li] = (dodge[li] || 0) + 1; cy += [0, -11, 11][dodge[li] % 3]; } else dodge[li] = 0;
         lastX[li] = { x: px0 };
@@ -123,11 +136,12 @@
       }
       V.tip(gg, function () {
         var rows = list.filter(function (v) { return !picked.length || v.school == null || picked.indexOf(v.school) >= 0; }).slice(0, 12).map(function (v) {
-          return { value: v.school || L(T.shared), label: L(v.label) + (v.approx ? ' · ' + L(T.approx) : '') + (v.noYear ? ' · ' + L(T.noYear) : ''), color: col, src: v.src };
+          return { value: v.school || L(T.shared), label: (list.lastDate ? fmt.date(v.start) + ' · ' : '') + L(v.label) + (v.approx ? ' · ' + L(T.approx) : '') + (v.noYear ? ' · ' + L(T.noYear) : ''), color: col, src: v.src };
         });
         var more = list.length - rows.length;
         if (more > 0) rows.push({ value: '+' + more, label: '' });
-        return { title: fmt.date(e.start) + (e.end ? ' – ' + fmt.date(e.end) : '') + ' · ' + L(lanes[li].label), rows: rows };
+        var endD = e.end || list.lastDate;
+        return { title: fmt.date(e.start) + (endD ? ' – ' + fmt.date(endD) : '') + ' · ' + L(lanes[li].label), rows: rows };
       });
       marks.push(gg);
     });
