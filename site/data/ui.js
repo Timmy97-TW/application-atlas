@@ -2,6 +2,7 @@ window.ATLAS = window.ATLAS || {};
 window.ATLAS.ui = {
   brand: { zh: '申請地圖', en: 'Application Atlas' },
   navLabel: { zh: '主選單', en: 'Main navigation' },
+  tocLabel: { zh: '本頁段落', en: 'On this page' },
   langLabel: { zh: '切換語言', en: 'Switch language' },
   officialOnly: { zh: '只看官方來源', en: 'Official sources only' },
   briefMode: { zh: '摘要模式', en: 'Brief mode' },
