@@ -249,6 +249,1262 @@ window.ATLAS.pages = window.ATLAS.pages || {};
           "要考試、要面試的集中在 Cambridge、Oxford、Imperial；其他學校多半只看成績與英文。AP 要求從「3 科 4 分」到「5 科 5 分」都有。",
           "Tests and interviews cluster at Cambridge, Oxford and Imperial; the others mostly assess grades and English. AP requirements range from three at 4+ to five at 5."
         ),
+        viz: {
+         "type": "feature-matrix",
+         "title": {
+          "zh": "19 個科系沒有一個只憑台灣高中畢業證書就收：7 個明確不收，4 個要另加 AP 或考試",
+          "en": "None of the 19 courses takes a Taiwan senior high diploma on its own: 7 rule it out and 4 accept it only with APs or a test on top"
+         },
+         "subtitle": {
+          "zh": "每列一個科系（St Andrews 沒有工程學位，不列），每格取自下表同一格。實心＝有或有寫明；半實心＝部分或附條件；空心斜線＝沒有，或在「台灣高中學歷路徑」欄表示不能直接入學；虛線＝頁面未載明；斜線底＝官方頁拒絕自動讀取，未讀到（Oxford、UCL，2026-11-07）。",
+          "en": "One row per course (St Andrews has no engineering degree, so it has one row). Every mark comes from the same cell of the table below. Filled = yes or stated; half = partly or with conditions; hollow with a slash = no, which in the Taiwan column means no direct entry; dashed = not stated on the page; hatched = the official page refused automated reading and was not read (Oxford, UCL, 2026-11-07)."
+         },
+         "corner": {
+          "zh": "科系",
+          "en": "Course"
+         },
+         "legend": {
+          "yes": {
+           "zh": "有／有寫明",
+           "en": "Yes / stated"
+          },
+          "partial": {
+           "zh": "部分／附條件",
+           "en": "Partly / with conditions"
+          },
+          "no": {
+           "zh": "沒有／不能直接入學",
+           "en": "No / no direct entry"
+          },
+          "ns": {
+           "zh": "頁面未載明",
+           "en": "Not stated on the page"
+          },
+          "blocked": {
+           "zh": "網頁拒絕自動讀取，未讀到",
+           "en": "Page refused automated reading; not read"
+          }
+         },
+         "cols": [
+          {
+           "label": {
+            "zh": "入學考試",
+            "en": "Admissions test"
+           }
+          },
+          {
+           "label": {
+            "zh": "面試",
+            "en": "Interview"
+           }
+          },
+          {
+           "label": {
+            "zh": "AP／SAT 路徑",
+            "en": "AP / SAT route"
+           }
+          },
+          {
+           "label": {
+            "zh": "台灣高中學歷路徑",
+            "en": "Taiwan diploma route"
+           }
+          },
+          {
+           "label": {
+            "zh": "英文門檻有寫明",
+            "en": "English requirement stated"
+           }
+          }
+         ],
+         "rows": [
+          {
+           "label": {
+            "zh": "Cambridge · Engineering",
+            "en": "Cambridge · Engineering"
+           },
+           "sub": {
+            "zh": "H100",
+            "en": "H100"
+           }
+          },
+          {
+           "label": {
+            "zh": "Cambridge · Natural Sciences（Biological）",
+            "en": "Cambridge · Natural Sciences (Biological)"
+           },
+           "sub": {
+            "zh": "BCF0",
+            "en": "BCF0"
+           }
+          },
+          {
+           "label": {
+            "zh": "Oxford · Engineering Science",
+            "en": "Oxford · Engineering Science"
+           },
+           "sub": {
+            "zh": "UAT-UK 名單為 H100；Oxford 官方頁未能讀取",
+            "en": "H100 on the UAT-UK list; Oxford's own page unreadable"
+           }
+          },
+          {
+           "label": {
+            "zh": "Oxford · Biology（MBiol）",
+            "en": "Oxford · Biology (MBiol)"
+           },
+           "sub": null
+          },
+          {
+           "label": {
+            "zh": "Imperial · Mechanical Engineering MEng",
+            "en": "Imperial · Mechanical Engineering MEng"
+           },
+           "sub": {
+            "zh": "H301",
+            "en": "H301"
+           }
+          },
+          {
+           "label": {
+            "zh": "Imperial · Biological Sciences BSc",
+            "en": "Imperial · Biological Sciences BSc"
+           },
+           "sub": {
+            "zh": "C100",
+            "en": "C100"
+           }
+          },
+          {
+           "label": {
+            "zh": "UCL · Electronic & Electrical Engineering",
+            "en": "UCL · Electronic & Electrical Engineering"
+           },
+           "sub": null
+          },
+          {
+           "label": {
+            "zh": "UCL · Biological Sciences",
+            "en": "UCL · Biological Sciences"
+           },
+           "sub": null
+          },
+          {
+           "label": {
+            "zh": "Edinburgh · Electronics and Electrical Engineering BEng",
+            "en": "Edinburgh · Electronics and Electrical Engineering BEng"
+           },
+           "sub": {
+            "zh": "H600（MEng H601）",
+            "en": "H600 (MEng H601)"
+           }
+          },
+          {
+           "label": {
+            "zh": "Edinburgh · Biological Sciences BSc",
+            "en": "Edinburgh · Biological Sciences BSc"
+           },
+           "sub": {
+            "zh": "C100",
+            "en": "C100"
+           }
+          },
+          {
+           "label": {
+            "zh": "KCL · General Engineering BEng",
+            "en": "KCL · General Engineering BEng"
+           },
+           "sub": {
+            "zh": "H100",
+            "en": "H100"
+           }
+          },
+          {
+           "label": {
+            "zh": "KCL · Biomedical Science BSc",
+            "en": "KCL · Biomedical Science BSc"
+           },
+           "sub": {
+            "zh": "BC99",
+            "en": "BC99"
+           }
+          },
+          {
+           "label": {
+            "zh": "Manchester · Electrical and Electronic Engineering MEng",
+            "en": "Manchester · Electrical and Electronic Engineering MEng"
+           },
+           "sub": {
+            "zh": "H605",
+            "en": "H605"
+           }
+          },
+          {
+           "label": {
+            "zh": "Manchester · Biology BSc",
+            "en": "Manchester · Biology BSc"
+           },
+           "sub": {
+            "zh": "C100",
+            "en": "C100"
+           }
+          },
+          {
+           "label": {
+            "zh": "Bristol · Electrical and Electronic Engineering MEng",
+            "en": "Bristol · Electrical and Electronic Engineering MEng"
+           },
+           "sub": {
+            "zh": "H606",
+            "en": "H606"
+           }
+          },
+          {
+           "label": {
+            "zh": "Bristol · Biology BSc",
+            "en": "Bristol · Biology BSc"
+           },
+           "sub": {
+            "zh": "C100",
+            "en": "C100"
+           }
+          },
+          {
+           "label": {
+            "zh": "Warwick · Engineering MEng",
+            "en": "Warwick · Engineering MEng"
+           },
+           "sub": {
+            "zh": "H102（BEng H100）",
+            "en": "H102 (BEng H100)"
+           }
+          },
+          {
+           "label": {
+            "zh": "Warwick · Biological Sciences BSc",
+            "en": "Warwick · Biological Sciences BSc"
+           },
+           "sub": {
+            "zh": "C100",
+            "en": "C100"
+           }
+          },
+          {
+           "label": {
+            "zh": "St Andrews · Biology BSc（四年制）",
+            "en": "St Andrews · Biology BSc (four years)"
+           },
+           "sub": {
+            "zh": "C100",
+            "en": "C100"
+           }
+          }
+         ],
+         "cells": [
+          [
+           {
+            "v": "yes",
+            "t": {
+             "zh": "ESAT：Maths 1 + Maths 2 + Physics",
+             "en": "ESAT: Maths 1 + Maths 2 + Physics"
+            },
+            "src": [
+             "F3-S1",
+             "F3-S5"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "有；拿到 offer 者都面試過，形式由 College 決定",
+             "en": "Yes; everyone offered a place is interviewed; College sets the format"
+            },
+            "src": [
+             "F3-S4"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "5 科相關 AP 5 分；理科 SAT 1500（數學 750+）或 ACT 33",
+             "en": "Five related APs at 5; science courses SAT 1500 (Maths 750+) or ACT 33"
+            },
+            "src": [
+             "F3-S3"
+            ]
+           },
+           {
+            "v": "partial",
+            "t": {
+             "zh": "台灣有列；高中畢業證書「單獨不具競爭力」，需另有 5 科以上 AP 5 分；未提學測、分科",
+             "en": "Taiwan listed; Senior High certificate alone \"will not be competitive\"; add 5+ APs at 5; GSAT/AST not mentioned"
+            },
+            "src": [
+             "F3-S3"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "IELTS 7.5／7.0",
+             "en": "IELTS 7.5 / 7.0"
+            },
+            "src": [
+             "F3-S6"
+            ]
+           }
+          ],
+          [
+           {
+            "v": "yes",
+            "t": {
+             "zh": "ESAT（課程頁未列 module；UAT-UK 名單：Maths 1 加任兩科）",
+             "en": "ESAT (course page lists no modules; UAT-UK list: Maths 1 plus any two)"
+            },
+            "src": [
+             "F3-S2",
+             "F1-S32"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "有，同 Engineering",
+             "en": "Yes, as Engineering"
+            },
+            "src": [
+             "F3-S4"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "同 Engineering：5 科相關 AP 5 分；理科 SAT 1500（數學 750+）或 ACT 33",
+             "en": "As Engineering: Five related APs at 5; science courses SAT 1500 (Maths 750+) or ACT 33"
+            },
+            "src": [
+             "F3-S3"
+            ]
+           },
+           {
+            "v": "partial",
+            "t": {
+             "zh": "同 Engineering：台灣有列；高中畢業證書「單獨不具競爭力」，需另有 5 科以上 AP 5 分；未提學測、分科",
+             "en": "As Engineering: Taiwan listed; Senior High certificate alone \"will not be competitive\"; add 5+ APs at 5; GSAT/AST not mentioned"
+            },
+            "src": [
+             "F3-S3"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "IELTS 7.5／7.0",
+             "en": "IELTS 7.5 / 7.0"
+            },
+            "src": [
+             "F3-S6"
+            ]
+           }
+          ],
+          [
+           {
+            "v": "yes",
+            "t": {
+             "zh": "ESAT",
+             "en": "ESAT"
+            },
+            "src": [
+             "F3-S8",
+             "F3-S9"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "入圍者線上面試；同一天兩場、兩個 college",
+             "en": "Shortlisted candidates interviewed online; two interviews on one day at two colleges"
+            },
+            "src": [
+             "F3-S8",
+             "F3-S9"
+            ]
+           },
+           {
+            "v": "blocked",
+            "t": {
+             "zh": "2026-11-07 自動讀取時官方頁回應 HTTP 403",
+             "en": "The official page answered HTTP 403 to automated reading on 2026-11-07"
+            },
+            "src": [
+             "F3-S11"
+            ]
+           },
+           {
+            "v": "blocked",
+            "t": {
+             "zh": "2026-11-07 自動讀取時官方頁回應 HTTP 403",
+             "en": "The official page answered HTTP 403 to automated reading on 2026-11-07"
+            },
+            "src": [
+             "F3-S11"
+            ]
+           },
+           {
+            "v": "blocked",
+            "t": {
+             "zh": "2026-11-07 自動讀取時官方頁回應 HTTP 403",
+             "en": "The official page answered HTTP 403 to automated reading on 2026-11-07"
+            },
+            "src": [
+             "F3-S11"
+            ]
+           }
+          ],
+          [
+           {
+            "v": "blocked",
+            "t": {
+             "zh": "2026-11-07 自動讀取時官方頁回應 HTTP 403",
+             "en": "The official page answered HTTP 403 to automated reading on 2026-11-07"
+            },
+            "src": [
+             "F3-S11",
+             "F1-S44"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "12 月線上面試，一定在兩個 college",
+             "en": "Online in December, always at two colleges"
+            },
+            "src": [
+             "F3-S10"
+            ]
+           },
+           {
+            "v": "blocked",
+            "t": {
+             "zh": "2026-11-07 自動讀取時官方頁回應 HTTP 403",
+             "en": "The official page answered HTTP 403 to automated reading on 2026-11-07"
+            },
+            "src": [
+             "F3-S11"
+            ]
+           },
+           {
+            "v": "blocked",
+            "t": {
+             "zh": "2026-11-07 自動讀取時官方頁回應 HTTP 403",
+             "en": "The official page answered HTTP 403 to automated reading on 2026-11-07"
+            },
+            "src": [
+             "F3-S11"
+            ]
+           },
+           {
+            "v": "blocked",
+            "t": {
+             "zh": "2026-11-07 自動讀取時官方頁回應 HTTP 403",
+             "en": "The official page answered HTTP 403 to automated reading on 2026-11-07"
+            },
+            "src": [
+             "F3-S11"
+            ]
+           }
+          ],
+          [
+           {
+            "v": "yes",
+            "t": {
+             "zh": "ESAT：Maths 1 + Maths 2 + Physics",
+             "en": "ESAT: Maths 1 + Maths 2 + Physics"
+            },
+            "src": [
+             "F3-S12"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "有；線上 25–30 分鐘，11 月至 3 月週三下午",
+             "en": "Yes; online, 25–30 min, Wednesday afternoons Nov–Mar"
+            },
+            "src": [
+             "F3-S12"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "一般：AP 5,5,5,4,4，或 AP 5,5,4 + 高中文憑 + SAT 1460／ACT 31；本科系：含 Calculus BC 與 Physics C (Mechanics) 5 分，SAT 1480 或 ACT 33",
+             "en": "General: APs 5,5,5,4,4, or 5,5,4 + diploma + SAT 1460 / ACT 31. This course: 5s incl. Calculus BC and Physics C (Mechanics); SAT 1480 or ACT 33"
+            },
+            "src": [
+             "F3-S12",
+             "F3-S14"
+            ]
+           },
+           {
+            "v": "no",
+            "t": {
+             "zh": "台灣高中畢業證書列於「not accepted for entry」；需讀認可的 foundation 或外部認可學歷",
+             "en": "Taiwan Senior High School Graduation Certificate listed as \"not accepted for entry\"; route is an accepted foundation or external qualification"
+            },
+            "src": [
+             "F3-S15",
+             "F3-S14"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "IELTS 6.5／6.0（standard）",
+             "en": "IELTS 6.5 / 6.0 (standard)"
+            },
+            "src": [
+             "F3-S12",
+             "F3-S16"
+            ]
+           }
+          ],
+          [
+           {
+            "v": "yes",
+            "t": {
+             "zh": "ESAT：Maths 1 + Chemistry + Biology",
+             "en": "ESAT: Maths 1 + Chemistry + Biology"
+            },
+            "src": [
+             "F3-S13"
+            ]
+           },
+           {
+            "v": "no",
+            "t": {
+             "zh": "一般不面試",
+             "en": "Generally no interviews"
+            },
+            "src": [
+             "F3-S13"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "一般路徑：AP 5,5,5,4,4，或 AP 5,5,4 + 高中文憑 + SAT 1460／ACT 31",
+             "en": "General route: APs 5,5,5,4,4, or 5,5,4 + diploma + SAT 1460 / ACT 31"
+            },
+            "src": [
+             "F3-S14"
+            ]
+           },
+           {
+            "v": "no",
+            "t": {
+             "zh": "同 Mechanical Engineering：台灣高中畢業證書列於「not accepted for entry」；需讀認可的 foundation 或外部認可學歷",
+             "en": "As Mechanical Engineering: Taiwan Senior High School Graduation Certificate listed as \"not accepted for entry\"; route is an accepted foundation or external qualification"
+            },
+            "src": [
+             "F3-S15"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "IELTS 7.0／6.5（higher）",
+             "en": "IELTS 7.0 / 6.5 (higher)"
+            },
+            "src": [
+             "F3-S13",
+             "F3-S16"
+            ]
+           }
+          ],
+          [
+           {
+            "v": "yes",
+            "t": {
+             "zh": "ESAT（UAT-UK 2027 名單；UCL 官網未能讀取）",
+             "en": "ESAT (UAT-UK 2027 list; UCL site unreadable)"
+            },
+            "src": [
+             "F1-S32"
+            ]
+           },
+           {
+            "v": "blocked",
+            "t": {
+             "zh": "2026-11-07 自動讀取時官方頁回應 HTTP 403",
+             "en": "The official page answered HTTP 403 to automated reading on 2026-11-07"
+            },
+            "src": [
+             "F3-S17"
+            ]
+           },
+           {
+            "v": "blocked",
+            "t": {
+             "zh": "2026-11-07 自動讀取時官方頁回應 HTTP 403",
+             "en": "The official page answered HTTP 403 to automated reading on 2026-11-07"
+            },
+            "src": [
+             "F3-S17"
+            ]
+           },
+           {
+            "v": "blocked",
+            "t": {
+             "zh": "2026-11-07 自動讀取時官方頁回應 HTTP 403",
+             "en": "The official page answered HTTP 403 to automated reading on 2026-11-07"
+            },
+            "src": [
+             "F3-S17"
+            ]
+           },
+           {
+            "v": "blocked",
+            "t": {
+             "zh": "2026-11-07 自動讀取時官方頁回應 HTTP 403",
+             "en": "The official page answered HTTP 403 to automated reading on 2026-11-07"
+            },
+            "src": [
+             "F3-S17"
+            ]
+           }
+          ],
+          [
+           {
+            "v": "blocked",
+            "t": {
+             "zh": "2026-11-07 自動讀取時官方頁回應 HTTP 403",
+             "en": "The official page answered HTTP 403 to automated reading on 2026-11-07"
+            },
+            "src": [
+             "F3-S17"
+            ]
+           },
+           {
+            "v": "blocked",
+            "t": {
+             "zh": "2026-11-07 自動讀取時官方頁回應 HTTP 403",
+             "en": "The official page answered HTTP 403 to automated reading on 2026-11-07"
+            },
+            "src": [
+             "F3-S17"
+            ]
+           },
+           {
+            "v": "blocked",
+            "t": {
+             "zh": "2026-11-07 自動讀取時官方頁回應 HTTP 403",
+             "en": "The official page answered HTTP 403 to automated reading on 2026-11-07"
+            },
+            "src": [
+             "F3-S17"
+            ]
+           },
+           {
+            "v": "blocked",
+            "t": {
+             "zh": "2026-11-07 自動讀取時官方頁回應 HTTP 403",
+             "en": "The official page answered HTTP 403 to automated reading on 2026-11-07"
+            },
+            "src": [
+             "F3-S17"
+            ]
+           },
+           {
+            "v": "blocked",
+            "t": {
+             "zh": "2026-11-07 自動讀取時官方頁回應 HTTP 403",
+             "en": "The official page answered HTTP 403 to automated reading on 2026-11-07"
+            },
+            "src": [
+             "F3-S17"
+            ]
+           }
+          ],
+          [
+           {
+            "v": "ns",
+            "t": {
+             "zh": "2026-11-07 查核，頁面沒有這一項",
+             "en": "Checked 2026-11-07; the page has no line on this"
+            },
+            "src": [
+             "F3-S18"
+            ]
+           },
+           {
+            "v": "ns",
+            "t": {
+             "zh": "2026-11-07 查核，頁面沒有這一項",
+             "en": "Checked 2026-11-07; the page has no line on this"
+            },
+            "src": [
+             "F3-S18"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "三項不同科目的標準化成績，例：3 科 AP 4+，或 ACT 27 + 2 科 AP 4+；SAT 可 superscore，ACT 不行",
+             "en": "Three standardised tests in different subjects, e.g. three APs at 4+, or ACT 27 plus two APs at 4+; SAT superscored, ACT not"
+            },
+            "src": [
+             "F3-S23"
+            ]
+           },
+           {
+            "v": "partial",
+            "t": {
+             "zh": "高中畢業證書「通常不符合最低要求」；自家 IFP 也不直接接受；理工學院 selection test 為有限例外，將逐步取消",
+             "en": "Senior High diploma \"does not normally meet\" the minimum; Edinburgh's own IFP does not accept it for direct entry; a limited College of Science & Engineering selection test, to be phased out"
+            },
+            "src": [
+             "F3-S22",
+             "F3-S24"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "IELTS 6.5／5.5",
+             "en": "IELTS 6.5 / 5.5"
+            },
+            "src": [
+             "F3-S18"
+            ]
+           }
+          ],
+          [
+           {
+            "v": "ns",
+            "t": {
+             "zh": "2026-11-07 查核，頁面沒有這一項",
+             "en": "Checked 2026-11-07; the page has no line on this"
+            },
+            "src": [
+             "F3-S21"
+            ]
+           },
+           {
+            "v": "ns",
+            "t": {
+             "zh": "2026-11-07 查核，頁面沒有這一項",
+             "en": "Checked 2026-11-07; the page has no line on this"
+            },
+            "src": [
+             "F3-S21"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "同 EEE：三項不同科目的標準化成績，例：3 科 AP 4+，或 ACT 27 + 2 科 AP 4+；SAT 可 superscore，ACT 不行",
+             "en": "As EEE: Three standardised tests in different subjects, e.g. three APs at 4+, or ACT 27 plus two APs at 4+; SAT superscored, ACT not"
+            },
+            "src": [
+             "F3-S23"
+            ]
+           },
+           {
+            "v": "partial",
+            "t": {
+             "zh": "同 EEE：高中畢業證書「通常不符合最低要求」；自家 IFP 也不直接接受；理工學院 selection test 為有限例外，將逐步取消",
+             "en": "As EEE: Senior High diploma \"does not normally meet\" the minimum; Edinburgh's own IFP does not accept it for direct entry; a limited College of Science & Engineering selection test, to be phased out"
+            },
+            "src": [
+             "F3-S22"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "IELTS 6.5／5.5",
+             "en": "IELTS 6.5 / 5.5"
+            },
+            "src": [
+             "F3-S21"
+            ]
+           }
+          ],
+          [
+           {
+            "v": "ns",
+            "t": {
+             "zh": "2026-11-07 查核，頁面沒有這一項",
+             "en": "Checked 2026-11-07; the page has no line on this"
+            },
+            "src": [
+             "F3-S25"
+            ]
+           },
+           {
+            "v": "ns",
+            "t": {
+             "zh": "2026-11-07 查核，頁面沒有這一項",
+             "en": "Checked 2026-11-07; the page has no line on this"
+            },
+            "src": [
+             "F3-S25"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "AAA 課程：3 科 AP 5 + ACT 28，或 3 門 Honors／雙學籍課 A/A- + SAT 1380；或 5 科 AP 5,5,5,4,4；不採 superscore",
+             "en": "AAA courses: three APs at 5 + ACT 28, or three Honors/Dual Enrolment classes at A/A- + SAT 1380; or five APs 5,5,5,4,4; no superscores"
+            },
+            "src": [
+             "F3-S27"
+            ]
+           },
+           {
+            "v": "ns",
+            "t": {
+             "zh": "一般入學頁未見台灣說明；King's 不接受非英國的 foundation 課程",
+             "en": "No Taiwan entry on the general page; King's \"cannot accept Non-UK Foundation courses\""
+            },
+            "src": [
+             "F3-S27"
+            ]
+           },
+           {
+            "v": "ns",
+            "t": {
+             "zh": "2026-11-07 查核，頁面沒有這一項",
+             "en": "Checked 2026-11-07; the page has no line on this"
+            },
+            "src": [
+             "F3-S25",
+             "F3-S28"
+            ]
+           }
+          ],
+          [
+           {
+            "v": "ns",
+            "t": {
+             "zh": "2026-11-07 查核，頁面沒有這一項",
+             "en": "Checked 2026-11-07; the page has no line on this"
+            },
+            "src": [
+             "F3-S26"
+            ]
+           },
+           {
+            "v": "ns",
+            "t": {
+             "zh": "2026-11-07 查核，頁面沒有這一項",
+             "en": "Checked 2026-11-07; the page has no line on this"
+            },
+            "src": [
+             "F3-S26"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "同 Engineering（AAA 課程）：AAA 課程：3 科 AP 5 + ACT 28，或 3 門 Honors／雙學籍課 A/A- + SAT 1380；或 5 科 AP 5,5,5,4,4；不採 superscore",
+             "en": "As Engineering (AAA courses): AAA courses: three APs at 5 + ACT 28, or three Honors/Dual Enrolment classes at A/A- + SAT 1380; or five APs 5,5,5,4,4; no superscores"
+            },
+            "src": [
+             "F3-S27"
+            ]
+           },
+           {
+            "v": "ns",
+            "t": {
+             "zh": "同 Engineering：一般入學頁未見台灣說明；King's 不接受非英國的 foundation 課程",
+             "en": "As Engineering: No Taiwan entry on the general page; King's \"cannot accept Non-UK Foundation courses\""
+            },
+            "src": [
+             "F3-S27"
+            ]
+           },
+           {
+            "v": "ns",
+            "t": {
+             "zh": "2026-11-07 查核，頁面沒有這一項",
+             "en": "Checked 2026-11-07; the page has no line on this"
+            },
+            "src": [
+             "F3-S26",
+             "F3-S28"
+            ]
+           }
+          ],
+          [
+           {
+            "v": "ns",
+            "t": {
+             "zh": "2026-11-07 查核，頁面沒有這一項",
+             "en": "Checked 2026-11-07; the page has no line on this"
+            },
+            "src": [
+             "F3-S31"
+            ]
+           },
+           {
+            "v": "ns",
+            "t": {
+             "zh": "2026-11-07 查核，頁面沒有這一項",
+             "en": "Checked 2026-11-07; the page has no line on this"
+            },
+            "src": [
+             "F3-S31"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "高中文憑（GPA 3.0+）+ 3 科 AP；A*AA = 5,5,5；SAT 1290／ACT 27 當作 GCSE 等級",
+             "en": "Diploma (GPA 3.0+) plus three APs; A*AA = 5,5,5; SAT 1290 / ACT 27 accepted as GCSE equivalents"
+            },
+            "src": [
+             "F3-S30"
+            ]
+           },
+           {
+            "v": "no",
+            "t": {
+             "zh": "高中文憑持有者須完成學校認可的 foundation；理工整合預科需總平均與數學、物理各 80% 以上",
+             "en": "Diploma holders must complete a University-recognised foundation; the integrated foundation year needs 80%+ overall and in Maths and Physics"
+            },
+            "src": [
+             "F3-S29"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "IELTS 7.0（Writing 7.0）／其他 6.5",
+             "en": "IELTS 7.0 (Writing 7.0) / 6.5 other skills"
+            },
+            "src": [
+             "F3-S31"
+            ]
+           }
+          ],
+          [
+           {
+            "v": "ns",
+            "t": {
+             "zh": "2026-11-07 查核，頁面沒有這一項",
+             "en": "Checked 2026-11-07; the page has no line on this"
+            },
+            "src": [
+             "F3-S32"
+            ]
+           },
+           {
+            "v": "partial",
+            "t": {
+             "zh": "部分申請者可能線上或電話面試，或另寫 alternative admissions statement",
+             "en": "Some candidates may be interviewed online or by phone, or asked for an alternative admissions statement"
+            },
+            "src": [
+             "F3-S32"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "高中文憑 + 3 科 AP；AAB = 5,5,4",
+             "en": "Diploma plus three APs; AAB = 5,5,4"
+            },
+            "src": [
+             "F3-S30"
+            ]
+           },
+           {
+            "v": "no",
+            "t": {
+             "zh": "須讀 foundation；生物類個案審查",
+             "en": "Foundation required; biosciences case by case"
+            },
+            "src": [
+             "F3-S29"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "IELTS 6.5，各項不低於 6.5",
+             "en": "IELTS 6.5, no component below 6.5"
+            },
+            "src": [
+             "F3-S32"
+            ]
+           }
+          ],
+          [
+           {
+            "v": "ns",
+            "t": {
+             "zh": "2026-11-07 查核，頁面沒有這一項",
+             "en": "Checked 2026-11-07; the page has no line on this"
+            },
+            "src": [
+             "F3-S35"
+            ]
+           },
+           {
+            "v": "ns",
+            "t": {
+             "zh": "2026-11-07 查核，頁面沒有這一項",
+             "en": "Checked 2026-11-07; the page has no line on this"
+            },
+            "src": [
+             "F3-S35"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "高中文憑 GPA 3.2（競爭科系 3.4）+ 三項額外成績（如 SAT EBRW 650+、ACT 28、AP 4+）；數學類科系需 AP Calculus BC 5",
+             "en": "Diploma GPA 3.2 (3.4 for competitive courses) plus three further qualifications (e.g. SAT EBRW 650+, ACT 28, APs at 4+); maths courses need AP Calculus BC at 5"
+            },
+            "src": [
+             "F3-S34"
+            ]
+           },
+           {
+            "v": "ns",
+            "t": {
+             "zh": "台灣頁只寫完成台灣大學一年級，或五專畢業平均 80%；未提高中畢業證書、學測、分科；可走 IFP（Kaplan）",
+             "en": "Taiwan page covers one completed year at a Taiwanese university or a five-year junior college diploma at 80%; Senior High diploma, GSAT, AST not mentioned; IFP (Kaplan) route"
+            },
+            "src": [
+             "F3-S33"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "IELTS 6.5／6.0（Profile E）",
+             "en": "IELTS 6.5 / 6.0 (Profile E)"
+            },
+            "src": [
+             "F3-S35"
+            ]
+           }
+          ],
+          [
+           {
+            "v": "ns",
+            "t": {
+             "zh": "2026-11-07 查核，頁面沒有這一項",
+             "en": "Checked 2026-11-07; the page has no line on this"
+            },
+            "src": [
+             "F3-S36"
+            ]
+           },
+           {
+            "v": "ns",
+            "t": {
+             "zh": "2026-11-07 查核，頁面沒有這一項",
+             "en": "Checked 2026-11-07; the page has no line on this"
+            },
+            "src": [
+             "F3-S36"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "同 EEE：高中文憑 GPA 3.2（競爭科系 3.4）+ 三項額外成績（如 SAT EBRW 650+、ACT 28、AP 4+）；數學類科系需 AP Calculus BC 5",
+             "en": "As EEE: Diploma GPA 3.2 (3.4 for competitive courses) plus three further qualifications (e.g. SAT EBRW 650+, ACT 28, APs at 4+); maths courses need AP Calculus BC at 5"
+            },
+            "src": [
+             "F3-S34"
+            ]
+           },
+           {
+            "v": "ns",
+            "t": {
+             "zh": "同 EEE：台灣頁只寫完成台灣大學一年級，或五專畢業平均 80%；未提高中畢業證書、學測、分科；可走 IFP（Kaplan）",
+             "en": "As EEE: Taiwan page covers one completed year at a Taiwanese university or a five-year junior college diploma at 80%; Senior High diploma, GSAT, AST not mentioned; IFP (Kaplan) route"
+            },
+            "src": [
+             "F3-S33"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "IELTS 6.5／6.0（Profile E）",
+             "en": "IELTS 6.5 / 6.0 (Profile E)"
+            },
+            "src": [
+             "F3-S36"
+            ]
+           }
+          ],
+          [
+           {
+            "v": "no",
+            "t": {
+             "zh": "未列考試；TMUA 只用於 CS 與 Mathematics",
+             "en": "No test listed; TMUA applies to CS and Mathematics only"
+            },
+            "src": [
+             "F3-S39",
+             "F3-S42"
+            ]
+           },
+           {
+            "v": "no",
+            "t": {
+             "zh": "通常不面試",
+             "en": "\"Warwick does not typically interview applicants\""
+            },
+            "src": [
+             "F3-S39"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "（僅限 2027 入學）有文憑：3 科 AP，A*AA = GPA 3.3+ 與 5,5,5；無文憑：4–5 科 AP；工程需 AP Calculus BC 5（不收 AB）與物理 AP 5；SAT 1340／ACT 28–29 當作 GCSE 等級",
+             "en": "(2027 entry only) With diploma: three APs, A*AA = GPA 3.3+ and 5,5,5; without: four or five APs. Engineering: AP Calculus BC at 5 (AB not accepted) and a Physics AP at 5. SAT 1340 / ACT 28–29 as GCSE equivalents"
+            },
+            "src": [
+             "F3-S38"
+            ]
+           },
+           {
+            "v": "no",
+            "t": {
+             "zh": "「Warwick IFP required」，或改以 IB、A-level、歐美學制申請",
+             "en": "\"Warwick IFP required\"; alternatively IB, A Levels or a European or North American system"
+            },
+            "src": [
+             "F3-S37"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "IELTS 6.0／5.5（Band A）",
+             "en": "IELTS 6.0 / 5.5 (Band A)"
+            },
+            "src": [
+             "F3-S41"
+            ]
+           }
+          ],
+          [
+           {
+            "v": "no",
+            "t": {
+             "zh": "未列考試",
+             "en": "No test listed"
+            },
+            "src": [
+             "F3-S40"
+            ]
+           },
+           {
+            "v": "no",
+            "t": {
+             "zh": "通常不面試",
+             "en": "Not typically"
+            },
+            "src": [
+             "F3-S40",
+             "F3-S41"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "（僅限 2027 入學）有文憑 3 科 AP，或無文憑 4–5 科 AP",
+             "en": "(2027 entry only) Three APs with diploma, or four or five without"
+            },
+            "src": [
+             "F3-S38"
+            ]
+           },
+           {
+            "v": "no",
+            "t": {
+             "zh": "同 Engineering：「Warwick IFP required」，或改以 IB、A-level、歐美學制申請",
+             "en": "As Engineering: \"Warwick IFP required\"; alternatively IB, A Levels or a European or North American system"
+            },
+            "src": [
+             "F3-S37"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "IELTS 6.0／5.5（Band A）",
+             "en": "IELTS 6.0 / 5.5 (Band A)"
+            },
+            "src": [
+             "F3-S41"
+            ]
+           }
+          ],
+          [
+           {
+            "v": "ns",
+            "t": {
+             "zh": "2026-11-07 查核，頁面沒有這一項",
+             "en": "Checked 2026-11-07; the page has no line on this"
+            },
+            "src": [
+             "F3-S45"
+            ]
+           },
+           {
+            "v": "no",
+            "t": {
+             "zh": "多數申請者不需面試",
+             "en": "\"Most students who apply ... will not be required to attend an interview\""
+            },
+            "src": [
+             "F3-S49"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "3 科 AP 4+；SAT 1320+／ACT 28+，2026–27 與 2027–28 兩輪 test optional",
+             "en": "Three APs at 4+; SAT 1320+ / ACT 28+, test optional for the 2026–27 and 2027–28 cycles"
+            },
+            "src": [
+             "F3-S47"
+            ]
+           },
+           {
+            "v": "no",
+            "t": {
+             "zh": "台灣有列；持高中畢業證書者需另有 foundation、美式課程、IB 36–38、A-level AAB–A*A*A 或 SQA Highers；未提學測、分科",
+             "en": "Taiwan listed; school-leaving certificate holders need a foundation, a US curriculum profile, IB 36–38, A-levels AAB–A*A*A or SQA Highers; GSAT/AST not mentioned"
+            },
+            "src": [
+             "F3-S46"
+            ]
+           },
+           {
+            "v": "yes",
+            "t": {
+             "zh": "IELTS 6.5／6.0（Profile 7-D）",
+             "en": "IELTS 6.5 / 6.0 (Profile 7-D)"
+            },
+            "src": [
+             "F3-S48"
+            ]
+           }
+          ]
+         ]
+        },
         intro: s(
           "每列一個科系。可用篩選切換工程／生物，或只看需要入學考試、會面試的科系。截止日：Oxford、Cambridge 為 2026-10-15，其餘八校依 UCAS「most undergraduate courses」為 2027-01-13（本次讀到的科系頁沒有寫個別截止日，屬推論）。IELTS 寫法為「總分／各項」。",
           "One row per course. Use the filter to switch between engineering and biology, or to show only courses with a test or an interview. Deadlines: 15 October 2026 for Oxford and Cambridge; for the other eight, 13 January 2027 under UCAS's \"most undergraduate courses\" wording (an inference: the course pages read give no course-specific date). IELTS is shown as overall / each component."
