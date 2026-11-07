@@ -11291,6 +11291,250 @@ window.ATLAS.pages['insights'] = {
       "zh": "直接讀過頁面的學校中，MIT、Yale、Hopkins、Harvey Mudd、Swarthmore 都說不追蹤；Rice 是最明顯的反例；Georgia Tech 看的是對科系的興趣。",
       "en": "Among pages read directly, MIT, Yale, Hopkins, Harvey Mudd and Swarthmore say interest is not tracked; Rice is the clearest counter-example; Georgia Tech looks at interest in the major."
      },
+     "viz": {
+      "type": "waffle-inline",
+      "title": {
+       "zh": "查過的 22 校沒有一校說會追蹤表現興趣：5 校明說不追蹤，15 校兩方都沒說",
+       "en": "Of the 22 schools checked, none says it tracks demonstrated interest; 5 say they do not, and 15 say nothing either way"
+      },
+      "subtitle": {
+       "zh": "一格一校，依學校自己的說法分組（B7 研究筆記，2026-11-07）。虛線格是「未說明」，不是任何一方的證據。滑過或點一下方格可看原文與出處。",
+       "en": "One square per school, grouped by what the school itself says (B7 research note, accessed 2026-11-07). Dashed squares mean not stated, which is not evidence either way. Hover or tap a square for the wording and its source."
+      },
+      "groups": [
+       {
+        "v": "tracks",
+        "color": 1,
+        "label": {
+         "zh": "說會追蹤",
+         "en": "Says it tracks interest"
+        },
+        "items": []
+       },
+       {
+        "v": "no",
+        "color": 0,
+        "label": {
+         "zh": "說不追蹤或不考慮",
+         "en": "Says it does not track or consider it"
+        },
+        "items": [
+         {
+          "name": "MIT",
+          "t": {
+           "zh": "不考慮：「we don't consider demonstrated interest」",
+           "en": "No: \"we don't consider demonstrated interest\""
+          },
+          "src": [
+           "B7-O11",
+           "B7-O15"
+          ]
+         },
+         {
+          "name": "Yale",
+          "t": {
+           "zh": "不追蹤：「We do not track demonstrated interest at all.」",
+           "en": "No: \"We do not track demonstrated interest at all.\""
+          },
+          "src": [
+           "B7-O38"
+          ]
+         },
+         {
+          "name": "Johns Hopkins",
+          "t": {
+           "zh": "不追蹤：「we do not track demonstrated interest」",
+           "en": "No: \"we do not track demonstrated interest\""
+          },
+          "src": [
+           "B7-O29"
+          ]
+         },
+         {
+          "name": "Harvey Mudd",
+          "t": {
+           "zh": "不考慮（假定申請就代表有興趣）",
+           "en": "Not considered (applying is taken as interest)"
+          },
+          "src": [
+           "B7-O91"
+          ]
+         },
+         {
+          "name": "Swarthmore",
+          "t": {
+           "zh": "不採用：「does not practice 'demonstrated interest'」",
+           "en": "No: \"does not practice 'demonstrated interest'\""
+          },
+          "src": [
+           "B7-O93"
+          ]
+         }
+        ]
+       },
+       {
+        "v": "signals",
+        "color": 3,
+        "label": {
+         "zh": "沒用這個詞，但要求或看興趣訊號",
+         "en": "Term not used, but asks for or reads interest signals"
+        },
+        "items": [
+         {
+          "name": "Rice",
+          "t": {
+           "zh": "沒有用這個詞；請申請人登記表單，並把「Knowledge about Rice」列為因素",
+           "en": "Term not used; asks for a prospective-student form and lists \"Knowledge about Rice\" as a factor"
+          },
+          "src": [
+           "B7-O66"
+          ]
+         },
+         {
+          "name": "Georgia Tech",
+          "t": {
+           "zh": "看的是對科系的興趣：「evidence of your interest in this major is an indicator」",
+           "en": "Interest in the major: \"evidence of your interest in this major is an indicator\""
+          },
+          "src": [
+           "B7-O22"
+          ]
+         }
+        ]
+       },
+       {
+        "v": "ns",
+        "label": {
+         "zh": "未說明或說法不完整",
+         "en": "Not stated, or wording incomplete"
+        },
+        "items": [
+         {
+          "name": "Duke",
+          "t": {
+           "zh": "僅直接讀到「Students don't need to visit the campus」；完整說法待瀏覽器確認",
+           "en": "Only \"Students don't need to visit the campus\" read directly; full wording awaits a browser check"
+          },
+          "src": [
+           "B7-O41"
+          ]
+         },
+         {
+          "name": "Stanford",
+          "t": {
+           "zh": "本輪沒找到任何一方的說法（2026-11-07 查）",
+           "en": "No statement found either way in this run (checked 2026-11-07)"
+          },
+          "src": []
+         },
+         {
+          "name": "Harvard",
+          "t": {
+           "zh": "本輪沒找到任何一方的說法（2026-11-07 查）",
+           "en": "No statement found either way in this run (checked 2026-11-07)"
+          },
+          "src": []
+         },
+         {
+          "name": "Princeton",
+          "t": {
+           "zh": "本輪沒找到任何一方的說法（2026-11-07 查）",
+           "en": "No statement found either way in this run (checked 2026-11-07)"
+          },
+          "src": []
+         },
+         {
+          "name": "Penn",
+          "t": {
+           "zh": "本輪沒找到任何一方的說法（2026-11-07 查）",
+           "en": "No statement found either way in this run (checked 2026-11-07)"
+          },
+          "src": []
+         },
+         {
+          "name": "Brown",
+          "t": {
+           "zh": "本輪沒找到任何一方的說法（2026-11-07 查）",
+           "en": "No statement found either way in this run (checked 2026-11-07)"
+          },
+          "src": []
+         },
+         {
+          "name": "CMU",
+          "t": {
+           "zh": "本輪沒找到任何一方的說法（2026-11-07 查）",
+           "en": "No statement found either way in this run (checked 2026-11-07)"
+          },
+          "src": []
+         },
+         {
+          "name": "Michigan",
+          "t": {
+           "zh": "本輪沒找到任何一方的說法（2026-11-07 查）",
+           "en": "No statement found either way in this run (checked 2026-11-07)"
+          },
+          "src": []
+         },
+         {
+          "name": "UIUC",
+          "t": {
+           "zh": "本輪沒找到任何一方的說法（2026-11-07 查）",
+           "en": "No statement found either way in this run (checked 2026-11-07)"
+          },
+          "src": []
+         },
+         {
+          "name": "Purdue",
+          "t": {
+           "zh": "本輪沒找到任何一方的說法（2026-11-07 查）",
+           "en": "No statement found either way in this run (checked 2026-11-07)"
+          },
+          "src": []
+         },
+         {
+          "name": "UC",
+          "t": {
+           "zh": "本輪沒找到任何一方的說法（2026-11-07 查）",
+           "en": "No statement found either way in this run (checked 2026-11-07)"
+          },
+          "src": []
+         },
+         {
+          "name": "UW",
+          "t": {
+           "zh": "本輪沒找到任何一方的說法（2026-11-07 查）",
+           "en": "No statement found either way in this run (checked 2026-11-07)"
+          },
+          "src": []
+         },
+         {
+          "name": "Williams",
+          "t": {
+           "zh": "本輪沒找到任何一方的說法（2026-11-07 查）",
+           "en": "No statement found either way in this run (checked 2026-11-07)"
+          },
+          "src": []
+         },
+         {
+          "name": "Olin",
+          "t": {
+           "zh": "本輪沒找到任何一方的說法（2026-11-07 查）",
+           "en": "No statement found either way in this run (checked 2026-11-07)"
+          },
+          "src": []
+         },
+         {
+          "name": "Georgetown",
+          "t": {
+           "zh": "本輪沒找到任何一方的說法（2026-11-07 查）",
+           "en": "No statement found either way in this run (checked 2026-11-07)"
+          },
+          "src": []
+         }
+        ]
+       }
+      ]
+     },
      "items": [
       {
        "t": {
@@ -11577,6 +11821,148 @@ window.ATLAS.pages['insights'] = {
      "judgment": {
       "zh": "就學校自己的說法，MIT、Harvard、Yale 對國際生不看支付能力；Stanford、Caltech、Penn、Rice、Harvey Mudd 說國際生的補助申請會影響錄取；翻譯一律不能自己做。",
       "en": "As stated by the schools, MIT, Harvard and Yale do not weigh international applicants' ability to pay; Stanford, Caltech, Penn, Rice and Harvey Mudd say an international aid request affects admission; translations are never self-made."
+     },
+     "viz": {
+      "type": "waffle-inline",
+      "title": {
+       "zh": "10 所有說明的學校中，5 校表示國際生申請補助可能影響錄取，3 校說不看支付能力",
+       "en": "Of the 10 schools that address it, 5 say an international aid request can affect admission and 3 say ability to pay is not weighed"
+      },
+      "subtitle": {
+       "zh": "一格一校，依學校原話分組（B7 研究筆記，2026-11-07）。虛線格：頁面沒用 need-blind 或 need-aware 字眼。滑過或點一下方格可看原文與出處。",
+       "en": "One square per school, grouped by the school's own wording (B7 research note, accessed 2026-11-07). Dashed squares: the page uses neither need-blind nor need-aware. Hover or tap a square for the wording and its source."
+      },
+      "groups": [
+       {
+        "v": "blind",
+        "color": 0,
+        "label": {
+         "zh": "Need-blind，或說所有申請人流程相同",
+         "en": "Need-blind, or the same process for every applicant"
+        },
+        "items": [
+         {
+          "name": "MIT",
+          "t": {
+           "zh": "need-blind：「MIT practices need-blind admissions.」",
+           "en": "Need-blind: \"MIT practices need-blind admissions.\""
+          },
+          "src": [
+           "B7-O13"
+          ]
+         },
+         {
+          "name": "Harvard",
+          "t": {
+           "zh": "「Our admissions and financial aid processes are the same for all applicants」——所有申請人流程相同",
+           "en": "\"Our admissions and financial aid processes are the same for all applicants\""
+          },
+          "src": [
+           "B7-O44"
+          ]
+         },
+         {
+          "name": "Yale",
+          "t": {
+           "zh": "「without regard to their ability to pay」——不考慮支付能力",
+           "en": "Considered \"without regard to their ability to pay\""
+          },
+          "src": [
+           "B7-O39"
+          ]
+         }
+        ]
+       },
+       {
+        "v": "aware",
+        "color": 1,
+        "label": {
+         "zh": "Need-aware：補助申請可能影響錄取",
+         "en": "Need-aware: an aid request can affect admission"
+        },
+        "items": [
+         {
+          "name": "Stanford",
+          "t": {
+           "zh": "國際生的補助申請「will be a factor in our admission evaluation」",
+           "en": "For international citizens, an aid request \"will be a factor in our admission evaluation\""
+          },
+          "src": [
+           "B7-O52"
+          ]
+         },
+         {
+          "name": "Caltech",
+          "t": {
+           "zh": "「need-aware for international students」",
+           "en": "\"need-aware for international students\""
+          },
+          "src": [
+           "B7-O57"
+          ]
+         },
+         {
+          "name": "Penn",
+          "t": {
+           "zh": "對加拿大、墨西哥以外的國際生 need-aware",
+           "en": "Need-aware for international students not from Canada or Mexico"
+          },
+          "src": [
+           "B7-O64"
+          ]
+         },
+         {
+          "name": "Rice",
+          "t": {
+           "zh": "國際申請人採「need-aware basis」",
+           "en": "International applicants on a \"need-aware basis\""
+          },
+          "src": [
+           "B7-O69"
+          ]
+         },
+         {
+          "name": "Harvey Mudd",
+          "t": {
+           "zh": "「We are need aware in the admission process for international students」",
+           "en": "\"We are need aware in the admission process for international students\""
+          },
+          "src": [
+           "B7-O91"
+          ]
+         }
+        ]
+       },
+       {
+        "v": "ns",
+        "label": {
+         "zh": "兩個詞都沒用",
+         "en": "Neither term used"
+        },
+        "items": [
+         {
+          "name": "Duke",
+          "t": {
+           "zh": "未直接用 need-blind/aware 字眼；外籍生須在首次申請時申請補助，頁上「不吃虧」規則只針對美國公民",
+           "en": "Neither term used; foreign citizens must request aid in the original application, and the no-disadvantage rule on the page is stated for US citizens"
+          },
+          "src": [
+           "B7-O43"
+          ]
+         },
+         {
+          "name": "Georgetown",
+          "t": {
+           "zh": "未直接用 need-blind/aware 字眼；錄取後申請補助者可獲考慮「a limited number of need-based scholarship awards」",
+           "en": "Neither term used; admitted students who request aid are considered for \"a limited number of need-based scholarship awards\""
+          },
+          "src": [
+           "B7-O98"
+          ]
+         }
+        ]
+       }
+      ]
      },
      "items": [
       {

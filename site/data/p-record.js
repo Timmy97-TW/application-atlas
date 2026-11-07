@@ -35,6 +35,64 @@ window.ATLAS.pages = window.ATLAS.pages || {};
           zh: "Mastery Transcript 只能由會員高中簽發，CLR 與 Open Badges 是登記與職場格式，Coalition Locker 已隨平台更換消失；沒有一個是 outside programme 能直接送進申請的管道。",
           en: "A Mastery Transcript can only be issued by a member high school, CLR and Open Badges are registrar and workforce formats, and the Coalition Locker went away with the platform change; none is a channel an outside programme can use to send a record into an application."
         },
+        viz: {
+          type: "feature-matrix",
+          title: L("五種框架，沒有一種有目標學校書面表示接受；唯一的表態來自 UC：mastery transcript 只能走 admission by exception", "None of the five frameworks is accepted in writing by a target school; the one statement, UC's, admits mastery transcripts only by exception"),
+          subtitle: L("每列一種紀錄格式，每欄一個問題。實心＝是，半實心＝部分或有條件，空心斜線＝否，虛線＝查過的來源沒有說明（C1 研究筆記，2026-11-07）。欄頂數字是「是」的數量。滑過或點一下符號可看原文與出處。", "One record format per row, one question per column. Filled = yes, half = partly or with conditions, hollow with a slash = no, dashed = not stated in the sources read (C1 research note, accessed 2026-11-07). The count under each heading is the number of yeses. Hover or tap a mark for the wording and its source."),
+          corner: L("框架", "Framework"),
+          legend: { yes: L("是", "Yes"), partial: L("部分／有條件", "Partly / with conditions"), no: L("否", "No"), ns: L("查過的來源未說明", "Not stated in the sources read") },
+          cols: [
+            { label: L("Outside programme 能簽發", "An outside programme can issue it") },
+            { label: L("目標學校書面表示接受", "A target college states it accepts it") },
+            { label: L("可用密碼學驗證", "Cryptographically verifiable") },
+            { label: L("可附證據連結", "Can carry evidence links") },
+            { label: L("2026 年仍在運作", "Still operating in 2026") }
+          ],
+          rows: [
+            { label: L("Mastery Transcript", "Mastery Transcript"), sub: L("MTC，現為 Mastery.org", "MTC, now Mastery.org") },
+            { label: L("1EdTech CLR 2.0", "1EdTech CLR 2.0"), sub: L("Comprehensive Learner Record", "Comprehensive Learner Record") },
+            { label: L("Open Badges 3.0／VC", "Open Badges 3.0 / VC"), sub: L("W3C Verifiable Credentials", "W3C Verifiable Credentials") },
+            { label: L("Credly 類型的 badge", "Credly-type badges"), sub: L("Credly by Pearson", "Credly by Pearson") },
+            { label: L("Coalition Locker", "Coalition Locker"), sub: L("Coalition 申請系統內的作品庫", "Archive inside the Coalition application") }
+          ],
+          cells: [
+            [
+              { v: "no", t: L("只有會員高中能簽發；competencies 由會員學校定義並認證。", "Member high schools only; they define and certify the competencies."), src: ["C1-S4"] },
+              { v: "partial", t: L("只有 UC 表態：無 GPA 的 mastery transcript 只能走 admission by exception。MTC 的「MT Ready」名單（30 校全列）是供應商自己的說法。", "Only UC states a position: GPA-less mastery transcripts go to admission by exception only. MTC's \"MT Ready\" list, which flags all 30, is the vendor's own claim."), src: ["C1-S7", "C1-S2"] },
+              { v: "ns", t: L("查過的頁面沒有說明；以單一連結寄送給閱讀者。", "Not described on the pages read; the reader opens it from a single link."), src: ["C1-S3"] },
+              { v: "yes", t: L("上層供快速瀏覽，證據在下一層。", "A scannable top layer, with evidence one click down."), src: ["C1-S3"] },
+              { v: "yes", t: L("2026 年 7 月起由 Legend.org 以 Mastery.org 營運；約兩年內第二次換東家。", "Run as Mastery.org by Legend.org since July 2026; the second change of owner in about two years."), src: ["C1-S6", "C1-S5"] }
+            ],
+            [
+              { v: "ns", t: L("查過的來源沒有說明誰可以簽發。", "The sources read do not say who may issue one."), src: ["C1-S9"] },
+              { v: "ns", t: L("30 校的招生頁都沒提到 CLR（sitemap 掃描，2026-11-07）。", "None of the 30 schools' admissions pages mentions CLR (sitemap scan, 2026-11-07)."), src: ["C1-S9"] },
+              { v: "yes", t: L("以 W3C Verifiable Credentials 建構，經密碼學簽章、不可竄改。", "Built as W3C Verifiable Credentials; cryptographically signed and tamper-evident."), src: ["C1-S9"] },
+              { v: "ns", t: L("發布文章沒有說明。", "Not described in the release article."), src: ["C1-S9"] },
+              { v: "yes", t: L("CLR 2.0 於 2025-03-04 公開。", "CLR 2.0 public since 2025-03-04."), src: ["C1-S9"] }
+            ],
+            [
+              { v: "yes", t: L("Issuer 可以是組織，也可以是個人；規格包含 self-assertion 用例。", "The issuer can be an organisation or an individual; the spec includes a self-assertion use case."), src: ["C1-S10"] },
+              { v: "ns", t: L("30 校的頁面都沒提到 digital badge（sitemap 掃描，2026-11-07）。", "None of the 30 schools' pages mentions digital badges (sitemap scan, 2026-11-07)."), src: ["C1-S12"] },
+              { v: "yes", t: L("遵循 W3C Verifiable Credentials Data Model 2.0（2025-05-15 成為 W3C Recommendation）。", "Follows the W3C Verifiable Credentials Data Model 2.0, a W3C Recommendation since 15 May 2025."), src: ["C1-S10", "C1-S11"] },
+              { v: "yes", t: L("Evidence 定義為支持主張的資訊，例如指向學習者作品的 URL。", "Evidence is information supporting a claim, such as a URL to something the learner made."), src: ["C1-S10"] },
+              { v: "yes", t: L("Final Release，目前文件版本日期 2026-06-29。", "Final Release; the current document is dated 2026-06-29."), src: ["C1-S10"] }
+            ],
+            [
+              { v: "partial", t: L("發證者是認證、評量與訓練機構及雇主（頁面稱超過 3,700 個組織）。", "Issuers are certification, assessment and training providers and employers (the page reports more than 3,700)."), src: ["C1-S12"] },
+              { v: "ns", t: L("30 校的頁面都沒提到 Credly（sitemap 掃描，2026-11-07）。", "None of the 30 schools' pages mentions Credly (sitemap scan, 2026-11-07)."), src: ["C1-S12"] },
+              { v: "ns", t: L("頁面沒有說明驗證機制，也沒提到 Open Badges。", "The page describes no verification mechanism and does not mention Open Badges."), src: ["C1-S12"] },
+              { v: "ns", t: L("頁面沒有說明。", "Not described on the page."), src: ["C1-S12"] },
+              { v: "yes", t: L("以「Credly by Pearson」營運。", "Operating as \"Credly by Pearson\"."), src: ["C1-S12"] }
+            ],
+            [
+              { v: "ns", t: L("學生自己上傳項目；沒有描述第三方簽發（第三方指南，2024）。", "Students uploaded their own items; no third-party issuer is described (secondary guide, 2024)."), src: ["C1-S17"] },
+              { v: "ns", t: L("Coalition 現行官方頁沒有提到 Locker。", "The Coalition's current pages do not mention the Locker."), src: ["C1-S13", "C1-S14"] },
+              { v: "ns", t: L("沒有說明。", "Not described."), src: ["C1-S17"] },
+              { v: "partial", t: L("存放上傳的項目；大學只看得到學生附加到申請的那些（第三方指南）。", "Held uploaded items; colleges saw only those a student attached to an application (secondary guide)."), src: ["C1-S17"] },
+              { v: "no", t: L("Coalition 2022 年宣布改用 Scoir，並已停用先前的技術平台。", "The Coalition announced its move to Scoir in 2022 and has discontinued its previous platform."), src: ["C1-S16", "C1-S13", "C1-S14"] }
+            ]
+          ]
+        },
         subs: [
           {
             h: { zh: "Mastery Transcript（MTC，現為 Mastery.org）", en: "Mastery Transcript (MTC, now Mastery.org)" },
