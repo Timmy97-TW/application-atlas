@@ -172,6 +172,7 @@
     if (s.judgment) sec.appendChild(el('p', { 'class': 'judgment' }, md(L(s.judgment))));
     if (s.intro) sec.appendChild(el('p', { 'class': 'lead' }, md(L(s.intro))));
     if (s.pending) sec.appendChild(el('p', { 'class': 'notice' }, esc(ui('notYetWritten'))));
+    if (s.viz && window.ATLAS_VIZ) [].concat(s.viz).forEach(function (v) { window.ATLAS_VIZ.mount(sec, v); });
     if (s.cards) sec.appendChild(renderCards(s.cards));
     if (s.timeline) sec.appendChild(renderTimeline(s.timeline));
     if (s.items) sec.appendChild(renderItems(s.items));
@@ -180,6 +181,7 @@
       var h = el('h3', null, esc(L(x.h))); sec.appendChild(h);
       if (x.judgment) sec.appendChild(el('p', { 'class': 'judgment' }, md(L(x.judgment))));
       if (x.intro) sec.appendChild(el('p', { 'class': 'lead' }, md(L(x.intro))));
+      if (x.viz && window.ATLAS_VIZ) [].concat(x.viz).forEach(function (v) { window.ATLAS_VIZ.mount(sec, v); });
       if (x.items) sec.appendChild(renderItems(x.items));
       if (x.table) sec.appendChild(renderTable(x.table));
     });
@@ -291,6 +293,7 @@
       if (P.judgment) main.appendChild(el('p', { 'class': 'judgment' }, md(L(P.judgment))));
       if (P.intro) main.appendChild(el('p', { 'class': 'lead' }, md(L(P.intro))));
       if (P.pending) main.appendChild(el('p', { 'class': 'notice' }, esc(ui('notYetWritten'))));
+      if (P.viz && window.ATLAS_VIZ) [].concat(P.viz).forEach(function (v) { window.ATLAS_VIZ.mount(main, v); });
     }
     if (PAGE === 'index') {
       var sh = el('section', { 'class': 'reveal' }); sh.appendChild(el('h2', null, esc(ui('statusH')))); statusStrip(sh); main.appendChild(sh);

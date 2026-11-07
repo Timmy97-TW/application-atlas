@@ -222,6 +222,18 @@ window.ATLAS.pages = window.ATLAS.pages || {};
       {
         id: 'year',
         h: s('12 年級這一年：跨校里程碑', 'The G12 year: milestones across schools'),
+        viz: [
+          {
+            type: 'timeline', wide: true, from: '2026-08-01', to: '2027-07-31',
+            title: s('一整年的五條線：申請、補助文件、作品集、放榜、錄取後', 'One year, five lines: applications, aid documents, portfolios, decisions, after admission'),
+            subtitle: s('每個點是某一天的截止或發布；點越大代表同一天的學校越多。點選學校只看它的日期；切到「申請季」放大 10 月到 1 月。', 'Each dot is a deadline or release on one day; larger dots mean more schools on that day. Pick schools to see only their dates; switch to Season to zoom into October–January.')
+          },
+          {
+            type: 'density', from: '2026-10-01', to: '2027-01-31',
+            title: s('申請截止集中在兩個高峰：11 月 1 日前後與 1 月第一週', 'Application deadlines cluster in two peaks: around 1 November and the first week of January'),
+            subtitle: s('每根柱子是一天，高度是當天截止的學校數（只計申請截止，不含補件與補助文件）。', 'Each bar is one day; its height is the number of schools whose application is due that day (applications only, not materials or aid).')
+          }
+        ],
         judgment: s(
           '同一天截止的學校併成一列；國際生要多盯三條線：財務補助文件（多在申請截止之後）、期中成績（多在 2 月中）、錄取後的 I-20 與簽證。',
           'Schools with the same deadline share one entry. An international applicant tracks three extra lines: aid documents (usually after the application deadline), mid-year grades (mostly mid-February), and the I-20 and visa steps after admission.'

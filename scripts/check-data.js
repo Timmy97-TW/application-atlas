@@ -20,11 +20,12 @@ function walk(o, where) {
   if (Array.isArray(o)) return o.forEach((x, i) => walk(x, where));
   if (!o || typeof o !== 'object') return;
   if (Array.isArray(o.src)) for (const id of o.src) if (!S[id]) missing.set(id, where);
+  else if (o.src && typeof o.src === 'object') for (const arr of Object.values(o.src)) if (Array.isArray(arr)) for (const id of arr) if (!S[id]) missing.set(id, where);
   if (o.tag === 'f' && !(o.src && o.src.length)) factNoSrc++;
   for (const k in o) walk(o[k], where);
 }
 for (const [k, v] of Object.entries(A.pages || {})) walk(v, 'page:' + k);
-walk(A.mock, 'mock'); walk(A.matrix, 'matrix');
+walk(A.mock, 'mock'); walk(A.matrix, 'matrix'); walk(A.viz, 'viz');
 for (const [id, w] of missing) { console.log('MISSING SOURCE', id, 'in', w); bad++; }
 if (factNoSrc) console.log('facts without source:', factNoSrc);
 const banned = /頂尖|卓越|打造|賦能|一站式|量身訂做|empower|cutting-edge|world-class|tailor-made|one-stop|unlock potential/i;

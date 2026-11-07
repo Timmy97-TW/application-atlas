@@ -29,9 +29,12 @@ const pages = [
 for (const [file, page, data, extraJs = []] of pages) {
   const depth = file.split('/').length - 1;
   const root = '../'.repeat(depth);
-  const scripts = [...common, ...data].filter(d => fs.existsSync(path.join(site, 'data', d)))
+  const vizData = fs.readdirSync(path.join(site, 'data')).filter(f => f.startsWith('viz-') && f.endsWith('.js')).sort();
+  const vizJs = fs.readdirSync(path.join(site, 'assets/js')).filter(f => f.startsWith('viz-') && f.endsWith('.js'))
+    .sort((a, b) => (a === 'viz-core.js' ? -1 : b === 'viz-core.js' ? 1 : a.localeCompare(b)));
+  const scripts = [...common, ...vizData, ...data].filter(d => fs.existsSync(path.join(site, 'data', d)))
     .map(d => `<script src="${root}data/${d}?v=${V}"></script>`)
-    .concat(extraJs.map(j => `<script src="${root}assets/js/${j}?v=${V}"></script>`));
+    .concat([...vizJs, ...extraJs].map(j => `<script src="${root}assets/js/${j}?v=${V}"></script>`));
   const html = `<!doctype html>
 <html lang="zh-Hant-TW">
 <head>
