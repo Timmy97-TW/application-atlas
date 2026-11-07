@@ -228,6 +228,8 @@
     svg: svg, h: h, scale: scale, band: band, tip: tip, showTip: showTip, hideTip: hideTip, legend: legend,
     onEnter: onEnter, stagger: stagger, tableView: tableView, reduced: reduced, fmt: fmt, dateNum: dateNum, day: day,
     L: L, lang: lang, data: data, ui: UI, ease: EASE,
+    // the reader's local date, so the today marker and countdowns stay current
+    todayISO: function () { var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); },
     cites: function (s) { return U().cites(s); }, md: function (s) { return U().md(s); },
     color: function (i) { return 'var(--c' + ((i % 5) + 1) + ')'; }
   };

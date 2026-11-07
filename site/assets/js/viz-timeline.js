@@ -79,7 +79,7 @@
     }
 
     // today
-    var today = V.dateNum(D.today || new Date().toISOString().slice(0, 10));
+    var today = V.dateNum(V.todayISO());
     if (today >= from && today <= to) {
       var tx = Math.round(x(today)) + 0.5;
       V.svg('line', { x1: tx, x2: tx, y1: top - 4, y2: H - bottom, stroke: 'var(--accent)', 'stroke-width': 1.5, 'stroke-dasharray': '3 3' }, s);
@@ -233,7 +233,7 @@
     V.svg('stop', { offset: '1', 'stop-color': '#1f5fbf' }, gr);
     // track
     V.svg('rect', { x: x(from), y: ty - 5, width: x(to) - x(from), height: 10, rx: 5, fill: '#eceef2' }, s);
-    var today = V.dateNum(D.today || new Date().toISOString().slice(0, 10));
+    var today = V.dateNum(V.todayISO());
     var fillW = Math.max(0, Math.min(x(today), x(to)) - x(from));
     var fill = V.svg('rect', { x: x(from), y: ty - 5, width: fillW, height: 10, rx: 5, fill: 'url(#vzRib)' }, s);
     if (ctx.first && !V.reduced) {
@@ -289,7 +289,7 @@
   ATLAS_VIZ.register('upcoming', function (el, spec, V, ctx) {
     var D = V.data().deadlines; if (!D) return;
     var L = V.L, fmt = V.fmt;
-    var today = V.dateNum(D.today || new Date().toISOString().slice(0, 10));
+    var today = V.dateNum(V.todayISO());
     var lanes = spec.lanes || ['apply'];
     var byDay = {};
     D.events.forEach(function (e) {
@@ -366,7 +366,7 @@
       V.svg('line', { x1: x(md), x2: x(md), y1: cy - 3, y2: cy + 3, stroke: 'var(--viz-base)' }, s);
       if (m % (W < 460 ? 2 : 1) === 0) { var t = V.svg('text', { x: x(md), y: H - 6, 'text-anchor': 'middle', style: 'font-size:10.5px' }, s); t.textContent = fmt.month(new Date(md).getUTCMonth()); }
     }
-    var today = V.dateNum(D.today);
+    var today = V.dateNum(V.todayISO());
     V.svg('line', { x1: x(today), x2: x(today), y1: cy - 12, y2: cy + 12, stroke: 'var(--accent)', 'stroke-width': 1.5, 'stroke-dasharray': '2 2' }, s);
     var marks = [];
     var li = function (id) { return D.lanes.findIndex(function (l) { return l.id === id; }); };

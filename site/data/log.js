@@ -3,6 +3,31 @@ window.ATLAS = window.ATLAS || {};
 window.ATLAS.log = {
  "entries": [
   {
+   "file": "briefs/2026-11-08_design.md",
+   "date": "2026-11-08",
+   "unit": "design (interactive figures)",
+   "status": "done",
+   "title_zh": "設計之夜：把邏輯畫出來（時間軸、流程圖、熱度圖、比較器）",
+   "title_en": "Design night: drawing the logic (timelines, flows, heatmaps, comparator)",
+   "done": [
+    "Design system v2 (docs/design-system.md): tokens, figure frame, one shared tooltip (hover, keyboard focus, tap; Escape closes), legends, a table view under every figure, enter animation once per figure with reduced-motion support, debounced re-render on resize. Categorical palette validated with the dataviz validator (adjacent CVD ΔE 9.1, normal-vision 19.6; sub-3:1 slots relieved by labels and table view).",
+    "Datasets with source ids: site/data/viz-deadlines.js (312 dated items), viz-cds.js (C7 for 28 schools, CDS numbers for 27, aid for 24), viz-schools.js (20 fields × 30 schools), viz-more.js (US 31–50). check-data.js now validates them.",
+    "Timeline: five swimlanes for the whole year, school filter, Year/Season zoom, today marker, clusters in the Year view; deadline-density chart (two peaks: 1 November, first week of January); per-school deadline strips on the schools page.",
+    "Overview: stat tiles, the four nearest deadlines as countdown cards, a year ribbon filled to today; the UK page has its own UCAS ribbon.",
+    "Insights: Common Data Set C7 heatmap with sortable columns; ED vs overall admit-rate dumbbell (rates side by side, never divided); nonresident share bars.",
+    "Schools: international aid small multiples (two charts, no dual axis); test-policy and need-policy waffles; major-entry strip; Compare page (three schools side by side, differences only toggle).",
+    "Portfolios: 30 × 5 materials dot grid with row drawers. Olin recoded from \"yes\" to \"limited\" for maker and arts (link or email, review not promised); page judgment and title corrected to two schools with a dedicated maker channel.",
+    "Flow diagrams: who submits into which container and system; outside-record evidence → container → verifier; Taiwan qualification routes → UK outcomes. Field-budget bars with separate character and word axes.",
+    "Other pages: changes board with category filter; persona character meters; source-mix chart; run timeline on the log page; AI-policy waffle; prerequisite graph lights up upstream and downstream chains; walkthrough completion rings and step bar.",
+    "Site chrome: compact one-row header, on-page section index with scroll-spy, cross-page view transitions, each chart dataset loaded only on pages that use it."
+   ],
+   "notDone": [
+    "Dark mode: not built; the site rules specify a white background.",
+    "Figures for the 31–50 page cover roster and materials only (that page's depth)."
+   ],
+   "by": "run"
+  },
+  {
    "file": "briefs/2026-11-07_run.md",
    "date": "2026-11-07",
    "unit": "final brief for the night of 2026-11-07 (runs 1-7)",
