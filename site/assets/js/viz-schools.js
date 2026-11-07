@@ -1,6 +1,7 @@
 /* School figures: comparator ('compare'), enum waffle ('waffle'), supplementary-materials
    glyph matrix ('matrix-grid') and major-entry strip ('entry-strip').
-   Data: window.ATLAS.viz.schools; full cell text for the matrix: window.ATLAS.matrix.
+   Data: window.ATLAS.viz[spec.dataset || 'schools'] (same shape: viz-schools.js, viz-more.js); full cell text for
+   the matrix: window.ATLAS.matrix when it has the school, else the dataset's own note['materials.*'], else none.
    Styles: site.css, block "School figures (viz-schools.js)". */
 (function () {
   'use strict';
@@ -36,27 +37,27 @@
   };
   function fmtT(x, o) { var t = window.ATLAS_UTIL.L(x); for (var k in o) t = t.split('{' + k + '}').join(o[k]); return t; }
   function esc(x) { return window.ATLAS_UTIL.esc(x == null ? '' : x); }
-  function D() { return ((window.ATLAS || {}).viz || {}).schools; }
+  function D(spec) { return ((window.ATLAS || {}).viz || {})[(spec && spec.dataset) || 'schools']; }
   function srcCls(ids) {
     var S = (window.ATLAS || {}).sources || {}, c = (ids || []).map(function (i) { return S[i] && S[i].cls; });
     return c.indexOf('official') >= 0 ? 'official' : (c.indexOf('secondary') >= 0 ? 'secondary' : '');
   }
   function get(rec, id) { return id.split('.').reduce(function (a, k) { return a == null ? a : a[k]; }, rec); }
-  function fieldOf(id) { var d = D(); for (var i = 0; i < d.fields.length; i++) if (d.fields[i].id === id) return d.fields[i]; return null; }
-  function enumLabel(f, v) {
-    var d = D(), E = f.enum ? d.enums[f.enum] : null;
+  function fieldOf(d, id) { for (var i = 0; i < d.fields.length; i++) if (d.fields[i].id === id) return d.fields[i]; return null; }
+  function enumLabel(d, f, v) {
+    var E = f.enum ? d.enums[f.enum] : null;
     return E && E[String(v)] ? E[String(v)] : String(v);
   }
   var NS_KEYS = { ns: 1, unclear: 1 };
   // one value as {text, key, ns, src, cls}
-  function cell(school, f, L) {
-    var rec = D().data[school]; if (!rec) return null;
+  function cell(d, school, f, L) {
+    var rec = d.data[school]; if (!rec) return null;
     var v = get(rec, f.id), src = (rec.src || {})[f.id] || [];
     var out = { src: src, cls: srcCls(src), ns: false, key: '' };
     if (v == null || v === '') { out.ns = true; out.text = L(T.notStated); out.key = 'null'; return out; }
     if (f.type === 'enum') {
       var arr = [].concat(v);
-      out.text = arr.map(function (x) { return L(enumLabel(f, x)); }).join(' · ');
+      out.text = arr.map(function (x) { return L(enumLabel(d, f, x)); }).join(' · ');
       out.key = arr.map(String).sort().join('+');
       if (arr.length === 1 && NS_KEYS[arr[0]]) out.ns = true;
       if (arr.length === 1 && arr[0] === 'blocked') out.blocked = true;
@@ -76,7 +77,7 @@
   // =====================================================================
   var KEY = 'atlas.compare.v1';
   function compare(el, spec, V, ctx) {
-    var d = D(); if (!d) return;
+    var d = D(spec); if (!d) return;
     var L = V.L;
     var st = el._state;
     if (!st) {
@@ -145,7 +146,7 @@
           var cs = [];
           for (var j = 0; j < 3; j++) {
             var c = V.h('div', { 'class': 'cmp-c', role: 'cell', 'data-col': j }, null, r);
-            c.innerHTML = st.picks[j] ? valueHtml(cell(st.picks[j], f, L)) : '';
+            c.innerHTML = st.picks[j] ? valueHtml(cell(d, st.picks[j], f, L)) : '';
             cs.push(c);
           }
           rows.push({ f: f, el: r, cells: cs, gh: gh });
@@ -177,7 +178,7 @@
           g.fields.forEach(function (f) {
             var r = V.h('div', { 'class': 'cmp-r' }, null, cd);
             V.h('div', { 'class': 'cmp-l' }, L(f.label), r);
-            var c = V.h('div', { 'class': 'cmp-c' }, null, r); c.innerHTML = valueHtml(cell(k, f, L));
+            var c = V.h('div', { 'class': 'cmp-c' }, null, r); c.innerHTML = valueHtml(cell(d, k, f, L));
             rows.push({ f: f, el: r, cells: [], gh: gh, col: ci });
           });
         });
@@ -190,7 +191,7 @@
 
     // differences
     function diffKeys(f) {
-      var ks = st.picks.filter(Boolean).map(function (k) { return cell(k, f, L).key; });
+      var ks = st.picks.filter(Boolean).map(function (k) { return cell(d, k, f, L).key; });
       return ks.length >= 2 && ks.some(function (x) { return x !== ks[0]; });
     }
     function applyDiff() {
@@ -219,7 +220,7 @@
       var targets = [heads[i]].concat(rows.map(function (r) { return r.cells[i]; }));
       function fill() {
         heads[i].innerHTML = nameHtml(k);
-        rows.forEach(function (r) { r.cells[i].innerHTML = k ? valueHtml(cell(k, r.f, L)) : ''; });
+        rows.forEach(function (r) { r.cells[i].innerHTML = k ? valueHtml(cell(d, k, r.f, L)) : ''; });
         applyDiff();
       }
       if (V.reduced) { fill(); return; }
@@ -237,7 +238,7 @@
       var cols = [T.field].concat(st.picks.filter(Boolean).map(function (k) { return d.data[k].name; }));
       var rowsT = d.fields.map(function (f) {
         return [L(f.label)].concat(st.picks.filter(Boolean).map(function (k) {
-          var c = cell(k, f, L); return { html: esc(c.text) + ' ' + V.cites(c.src) };
+          var c = cell(d, k, f, L); return { html: esc(c.text) + ' ' + V.cites(c.src) };
         }));
       });
       return { cols: cols, rows: rowsT };
@@ -252,8 +253,8 @@
   // 2. waffle
   // =====================================================================
   ATLAS_VIZ.register('waffle', function (el, spec, V, ctx) {
-    var d = D(); if (!d) return;
-    var L = V.L, f = fieldOf(spec.field); if (!f) return;
+    var d = D(spec); if (!d) return;
+    var L = V.L, f = fieldOf(d, spec.field); if (!f) return;
     var E = d.enums[f.enum] || {}, keys = Object.keys(E);
     var groups = {}, gOrder = [];
     d.order.forEach(function (k) {
@@ -269,7 +270,7 @@
     gOrder.sort(function (a, b) { return rank(a) - rank(b); });
     var colorIdx = {}, ci = 0;
     gOrder.forEach(function (gk) { if (gk !== '__null' && !NS_KEYS[gk]) colorIdx[gk] = f.multi ? (ci++ % 5) : (keys.indexOf(gk) % 5); });
-    function gLabel(gk) { return gk === '__null' ? L(T.unknown) : gk.split('+').map(function (x) { return L(enumLabel(f, x)); }).join(' + '); }
+    function gLabel(gk) { return gk === '__null' ? L(T.unknown) : gk.split('+').map(function (x) { return L(enumLabel(d, f, x)); }).join(' + '); }
 
     var wrap = V.h('div', { 'class': 'wf', role: 'list' }, null, el);
     var marks = [];
@@ -318,21 +319,25 @@
     else p = '<circle cx="10" cy="10" r="5.4" fill="none" stroke="var(--viz-muted)" stroke-width="1.3" stroke-dasharray="2.1 2.1"/>';
     return '<svg class="mg-gl" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">' + p + '</svg>';
   }
-  function matrixText(i, j, L) {
-    var M = (window.ATLAS || {}).matrix; if (!M || !M.rows[i]) return null;
+  function matrixText(i, j, L, rec, c) {
+    var M = (window.ATLAS || {}).matrix;
+    if (!M || i < 0 || !M.rows[i]) {
+      var n = rec && rec.note && rec.note['materials.' + c]; if (!n) return null;
+      return { text: L(n), src: (rec.src || {})['materials.' + c] || [], ns: rec.materials[c] === 'ns' };
+    }
     var c = M.rows[i].cells[j]; if (!c) return null;
     if (c.state === 'not-stated') return { text: L(T.notStated) + ' (' + (c.checked || '') + ')', src: c.src || [], ns: true };
     return { text: L(c.t), src: c.src || [] };
   }
   ATLAS_VIZ.register('matrix-grid', function (el, spec, V, ctx) {
-    var d = D(); if (!d) return;
+    var d = D(spec); if (!d) return;
     var L = V.L; ensureHatch(V);
     var cols = ['arts', 'maker', 'research', 'video', 'links'];
-    var fs = cols.map(function (c) { return fieldOf('materials.' + c); });
+    var fs = cols.map(function (c) { return fieldOf(d, 'materials.' + c); });
     var M = (window.ATLAS || {}).matrix || { rows: [] };
     // matrix rows follow the same order as viz-schools order; map by index, fall back to name
     function mIndex(k, i) {
-      if (M.rows[i] && (M.rows[i].school === k || M.rows.length === d.order.length)) return i;
+      if (M.rows[i] && (M.rows[i].school === k || (M.rows.length === d.order.length && !spec.dataset))) return i;
       for (var q = 0; q < M.rows.length; q++) if (M.rows[q].school === k) return q;
       return -1;
     }
@@ -363,18 +368,18 @@
     d.order.forEach(function (k, i) {
       var rec = d.data[k], mi = mIndex(k, i);
       var row = V.h('div', { 'class': 'mg-row', role: 'button', tabindex: '0', 'aria-expanded': 'false' }, null, body);
-      V.h('div', { 'class': 'mg-lab' }, k, row);
+      V.h('div', { 'class': 'mg-lab', title: k }, k, row);
       cols.forEach(function (c, j) {
         var v = rec.materials[c];
         var g = V.h('div', { 'class': 'mg-c' }, null, row);
-        var sp = V.h('span', { 'class': 'mg-g', 'aria-label': k + ' · ' + L(fs[j].label) + ' · ' + L(enumLabel(fs[j], v)) }, null, g);
+        var sp = V.h('span', { 'class': 'mg-g', 'aria-label': k + ' · ' + L(fs[j].label) + ' · ' + L(enumLabel(d, fs[j], v)) }, null, g);
         sp.innerHTML = glyph(v);
         sp.setAttribute('tabindex', '-1');
         V.tip(sp, function () {
-          var mt = matrixText(mi, j, L);
+          var mt = matrixText(mi, j, L, rec, c);
           var txt = mt ? mt.text : '';
           if (txt.length > 280) txt = txt.slice(0, 278) + '…';
-          return { title: k + ' · ' + L(fs[j].label), rows: [{ value: L(enumLabel(fs[j], v)), label: '' }, { value: '', label: txt, src: (mt && mt.src.length ? mt.src : (rec.src || {})['materials.' + c]) }] };
+          return { title: k + ' · ' + L(fs[j].label), rows: [{ value: L(enumLabel(d, fs[j], v)), label: '' }, { value: '', label: txt, src: (mt && mt.src.length ? mt.src : (rec.src || {})['materials.' + c]) }] };
         });
         sp.setAttribute('tabindex', '-1');
         marks.push(sp);
@@ -384,10 +389,10 @@
       function fillDrawer() {
         if (inner.childNodes.length) return;
         cols.forEach(function (c, j) {
-          var mt = matrixText(mi, j, L) || { text: '', src: [] };
+          var mt = matrixText(mi, j, L, rec, c) || { text: '', src: [] };
           var b = V.h('div', { 'class': 'mg-dc' }, null, inner);
           var h = V.h('div', { 'class': 'mg-dh' }, null, b);
-          h.innerHTML = glyph(rec.materials[c]) + '<span>' + esc(L(fs[j].label)) + '</span><span class="mg-dv">' + esc(L(enumLabel(fs[j], rec.materials[c]))) + '</span>';
+          h.innerHTML = glyph(rec.materials[c]) + '<span>' + esc(L(fs[j].label)) + '</span><span class="mg-dv">' + esc(L(enumLabel(d, fs[j], rec.materials[c]))) + '</span>';
           var p = V.h('p', { 'class': mt.ns ? 'ns' : null }, null, b);
           var cls = srcCls(mt.src);
           if (cls === 'secondary') p.setAttribute('data-cls', 'secondary');
@@ -430,7 +435,7 @@
       table: {
         cols: [T.cList].concat(fs.map(function (f) { return f.label; })),
         rows: d.order.map(function (k) {
-          return [k].concat(cols.map(function (c) { return { html: esc(L(enumLabel(fieldOf('materials.' + c), d.data[k].materials[c]))) + V.cites((d.data[k].src || {})['materials.' + c] || []) }; }));
+          return [k].concat(cols.map(function (c) { return { html: esc(L(enumLabel(d, fieldOf(d, 'materials.' + c), d.data[k].materials[c]))) + V.cites((d.data[k].src || {})['materials.' + c] || []) }; }));
         })
       }
     };
@@ -440,7 +445,7 @@
   // 4. entry-strip
   // =====================================================================
   ATLAS_VIZ.register('entry-strip', function (el, spec, V, ctx) {
-    var d = D(); if (!d) return;
+    var d = D(spec); if (!d) return;
     var L = V.L;
     var segs = ['school', 'direct', 'capped', null];
     var bars = [{ id: 'engEntry', label: T.eng }, { id: 'bioEntry', label: T.bio }];
@@ -448,7 +453,7 @@
     var marks = [], tableRows = [];
     var n = d.order.length;
     bars.forEach(function (b) {
-      var f = fieldOf(b.id);
+      var f = fieldOf(d, b.id); if (!f) return;
       var row = V.h('div', { 'class': 'es-row' }, null, root);
       V.h('div', { 'class': 'es-lab' }, L(b.label), row);
       var bar = V.h('div', { 'class': 'es-bar', role: 'img', 'aria-label': L(b.label) }, null, row);
@@ -456,7 +461,7 @@
       segs.forEach(function (sk, si) {
         var list = d.order.filter(function (k) { var v = d.data[k][b.id]; return sk == null ? v == null : v === sk; });
         if (!list.length) return;
-        var lab = sk == null ? L(T.entryUnknown) : L(enumLabel(f, sk));
+        var lab = sk == null ? L(T.entryUnknown) : L(enumLabel(d, f, sk));
         aria.push(lab + ' ' + list.length);
         var sg = V.h('div', { 'class': 'es-seg' + (sk == null ? ' unk' : ''), 'aria-label': lab + ': ' + list.length + ' ' + L(T.schools) }, null, bar);
         sg.style.flexGrow = list.length;
@@ -479,7 +484,7 @@
     });
     // legend: all four entry kinds, including any with zero schools
     V.legend(segs.map(function (sk, si) {
-      return sk == null ? { label: T.entryUnknown, shape: 'dash' } : { label: enumLabel(fieldOf('engEntry'), sk), color: V.color(si) };
+      return sk == null ? { label: T.entryUnknown, shape: 'dash' } : { label: enumLabel(d, fieldOf(d, 'engEntry'), sk), color: V.color(si) };
     }), el);
     if (ctx.first) V.stagger(marks, { from: 'scaleX(.2)', origin: 'left center', step: 60 });
     return { table: { cols: [T.cField, T.cEntry, T.cCount, T.cList], rows: tableRows } };

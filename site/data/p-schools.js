@@ -1392,3 +1392,15 @@ window.ATLAS.pages = window.ATLAS.pages || {};
     ]
   };
 })();
+
+/* Each school's profile opens with a mini strip of its own dated items
+   (site/data/viz-deadlines.js). Headings map to the dataset's short names. */
+(function () {
+  var P = window.ATLAS.pages.schools, sec = P && P.sections.filter(function (x) { return x.id === 'perschool'; })[0];
+  if (!sec) return;
+  var alias = { 'UPenn': 'Penn', 'Carnegie Mellon': 'CMU', 'U Washington': 'UW' };
+  sec.subs.forEach(function (sub) {
+    var name = alias[sub.h.en] || sub.h.en;
+    sub.viz = { type: 'school-mini', school: name };
+  });
+})();

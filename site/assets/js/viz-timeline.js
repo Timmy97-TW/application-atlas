@@ -75,11 +75,17 @@
       V.svg('line', { x1: xx, x2: xx, y1: top - 6, y2: H - bottom }, g);
       var mo = new Date(md).getUTCMonth();
       var t = V.svg('text', { x: xx + 6, y: top - 12, 'class': mo === 0 ? 'strong' : null }, s);
-      t.textContent = fmt.month(mo) + (mo === 0 ? ' ' + new Date(md).getUTCFullYear() : '');
+      var mGap = x(Date.UTC(d0.getUTCFullYear(), d0.getUTCMonth() + m + 1, 1)) - x(md);
+      if (mo === 0 && mGap < 70) {
+        // narrow months: the year sits on its own line above January instead of running into February
+        t.textContent = fmt.month(mo);
+        var yt = V.svg('text', { x: xx + 6, y: top - 26, 'class': 'strong' }, s);
+        yt.textContent = String(new Date(md).getUTCFullYear());
+      } else t.textContent = fmt.month(mo) + (mo === 0 ? ' ' + new Date(md).getUTCFullYear() : '');
     }
 
     // today
-    var today = V.dateNum(D.today || new Date().toISOString().slice(0, 10));
+    var today = V.dateNum(V.todayISO());
     if (today >= from && today <= to) {
       var tx = Math.round(x(today)) + 0.5;
       V.svg('line', { x1: tx, x2: tx, y1: top - 4, y2: H - bottom, stroke: 'var(--accent)', 'stroke-width': 1.5, 'stroke-dasharray': '3 3' }, s);
@@ -96,12 +102,25 @@
     var marks = [];
     var lastX = {}, dodge = {};
     var picked = state.pick;
-    Object.keys(groups).sort(function (a, b) { return a.split('|')[1] < b.split('|')[1] ? -1 : 1; }).forEach(function (k) {
+    // In the Year view, point marks closer than 10px in one lane merge into a
+    // single counted cluster; the Season view keeps one mark per day.
+    var keysSorted = Object.keys(groups).sort(function (a, b) { return a.split('|')[1] < b.split('|')[1] ? -1 : 1; });
+    if (state.zoom === 'fit') {
+      var lastPt = {};
+      keysSorted.forEach(function (k) {
+        var e0 = groups[k][0]; if (e0.end) return;
+        var px = x(V.dateNum(e0.start)), lp = lastPt[e0.lane];
+        if (lp && px - lp.x < 10) { groups[lp.k] = groups[lp.k].concat(groups[k]); groups[lp.k].lastDate = e0.start; delete groups[k]; }
+        else lastPt[e0.lane] = { x: px, k: k };
+      });
+      keysSorted = keysSorted.filter(function (k) { return groups[k]; });
+    }
+    keysSorted.forEach(function (k) {
       var list = groups[k], e = list[0];
       var li = lanes.findIndex(function (l) { return l.id === e.lane; }); if (li < 0) return;
       var cy = top + li * laneH + laneH / 2;
       // dodge: a point mark within 12px of the previous point in its lane steps up or down
-      if (!e.end) {
+      if (!e.end && state.zoom !== 'fit') {
         var px0 = x(V.dateNum(e.start)), last = lastX[li];
         if (last != null && px0 - last.x < 12) { dodge[li] = (dodge[li] || 0) + 1; cy += [0, -11, 11][dodge[li] % 3]; } else dodge[li] = 0;
         lastX[li] = { x: px0 };
@@ -123,11 +142,12 @@
       }
       V.tip(gg, function () {
         var rows = list.filter(function (v) { return !picked.length || v.school == null || picked.indexOf(v.school) >= 0; }).slice(0, 12).map(function (v) {
-          return { value: v.school || L(T.shared), label: L(v.label) + (v.approx ? ' · ' + L(T.approx) : '') + (v.noYear ? ' · ' + L(T.noYear) : ''), color: col, src: v.src };
+          return { value: v.school || L(T.shared), label: (list.lastDate ? fmt.date(v.start) + ' · ' : '') + L(v.label) + (v.approx ? ' · ' + L(T.approx) : '') + (v.noYear ? ' · ' + L(T.noYear) : ''), color: col, src: v.src };
         });
         var more = list.length - rows.length;
         if (more > 0) rows.push({ value: '+' + more, label: '' });
-        return { title: fmt.date(e.start) + (e.end ? ' – ' + fmt.date(e.end) : '') + ' · ' + L(lanes[li].label), rows: rows };
+        var endD = e.end || list.lastDate;
+        return { title: fmt.date(e.start) + (endD ? ' – ' + fmt.date(endD) : '') + ' · ' + L(lanes[li].label), rows: rows };
       });
       marks.push(gg);
     });
@@ -219,12 +239,12 @@
     V.svg('stop', { offset: '1', 'stop-color': '#1f5fbf' }, gr);
     // track
     V.svg('rect', { x: x(from), y: ty - 5, width: x(to) - x(from), height: 10, rx: 5, fill: '#eceef2' }, s);
-    var today = V.dateNum(D.today || new Date().toISOString().slice(0, 10));
+    var today = V.dateNum(V.todayISO());
     var fillW = Math.max(0, Math.min(x(today), x(to)) - x(from));
     var fill = V.svg('rect', { x: x(from), y: ty - 5, width: fillW, height: 10, rx: 5, fill: 'url(#vzRib)' }, s);
     if (ctx.first && !V.reduced) {
       fill.setAttribute('width', 0);
-      requestAnimationFrame(function () { fill.style.transition = 'width 900ms ' + V.ease; fill.setAttribute('width', fillW); });
+      requestAnimationFrame(function () { fill.style.transition = 'width 600ms ' + V.ease; fill.setAttribute('width', fillW); });
     }
     // months
     var d0 = new Date(from);
@@ -239,7 +259,7 @@
       V.svg('circle', { cx: x(today), cy: ty, r: 9, fill: '#fff', stroke: 'var(--accent)', 'stroke-width': 3 }, s);
     }
     // pins, alternating above / below; on narrow screens labels shorten to dates
-    var pins = [];
+    var pins = [], placed = { up: [], down: [] }, extra = 0;
     (spec.points || []).forEach(function (p, i) {
       var px = x(V.dateNum(p.date)), up = i % 2 === 0;
       var g = V.svg('g', null, s);
@@ -249,15 +269,33 @@
       V.svg('circle', { cx: px, cy: ty, r: 5, fill: V.dateNum(p.date) <= today ? 'var(--accent)' : '#fff', stroke: 'var(--accent)', 'stroke-width': 2 }, g);
       V.svg('rect', { x: px - 36, y: Math.min(y1, y2) - 30, width: 72, height: Math.abs(y2 - y1) + 44, fill: 'transparent' }, g);
       var anchor = px < 60 ? 'start' : (px > W - 60 ? 'end' : 'middle');
+      var stem = g.querySelector('line');
       var lt = V.svg('text', { x: px, y: up ? y2 - 18 : y2 + 14, 'text-anchor': anchor, 'class': 'strong', style: 'font-size:13px' }, g);
       lt.textContent = L(p.big || { zh: fmt.date(p.date), en: fmt.date(p.date) });
+      var st = null;
       if (!narrow) {
-        var st = V.svg('text', { x: px, y: up ? y2 - 4 : y2 + 28, 'text-anchor': anchor, style: 'font-size:11.5px' }, g);
+        st = V.svg('text', { x: px, y: up ? y2 - 4 : y2 + 28, 'text-anchor': anchor, style: 'font-size:11.5px' }, g);
         st.textContent = L(p.label);
+      }
+      // a label that would run into the previous label on the same side moves one step further out
+      var lw = 0; [lt, st].forEach(function (t) { if (t) { try { lw = Math.max(lw, t.getComputedTextLength()); } catch (e) { lw = Math.max(lw, 60); } } });
+      var lx0 = anchor === 'start' ? px : anchor === 'end' ? px - lw : px - lw / 2, lx1 = lx0 + lw;
+      var side = placed[up ? 'up' : 'down'], level = 0;
+      while (side.some(function (b) { return b.level === level && lx0 < b.x1 + 6 && lx1 > b.x0 - 6; }) && level < 2) level++;
+      side.push({ x0: lx0, x1: lx1, level: level });
+      if (level) {
+        var dy = level * (narrow ? 17 : 32) * (up ? -1 : 1);
+        [lt, st].forEach(function (t) { if (t) t.setAttribute('y', +t.getAttribute('y') + dy); });
+        stem.setAttribute('y2', y2 + dy);
+        extra = Math.max(extra, Math.abs(dy));
       }
       V.tip(g, function () { return { title: L(p.label), rows: [{ value: fmt.date(p.date) + (p.end ? ' – ' + fmt.date(p.end) : ''), label: L(p.sub || ''), src: p.src }] }; });
       pins.push(g);
     });
+    if (extra) {
+      // grow the canvas evenly so shifted labels stay inside it
+      H += 2 * extra; s.setAttribute('height', H); s.setAttribute('viewBox', '0 ' + (-extra) + ' ' + W + ' ' + H);
+    }
     if (ctx.first) V.stagger(pins, { from: 'translateY(4px)', step: 70 });
     return { table: { cols: [{ zh: '日期', en: 'Date' }, { zh: '事項', en: 'Milestone' }, { zh: '來源', en: 'Sources' }], rows: (spec.points || []).map(function (p) { return [p.date + (p.end ? ' – ' + p.end : ''), L(p.label), { html: V.cites(p.src || []) }]; }) } };
   });
@@ -275,7 +313,7 @@
   ATLAS_VIZ.register('upcoming', function (el, spec, V, ctx) {
     var D = V.data().deadlines; if (!D) return;
     var L = V.L, fmt = V.fmt;
-    var today = V.dateNum(D.today || new Date().toISOString().slice(0, 10));
+    var today = V.dateNum(V.todayISO());
     var lanes = spec.lanes || ['apply'];
     var byDay = {};
     D.events.forEach(function (e) {
@@ -319,7 +357,7 @@
       var big = V.h('div', { 'class': 'vz-stat-v' }, (ctx.first && !V.reduced ? '0' : it.v.toLocaleString('en-US')) + (it.suffix || ''), c);
       V.h('div', { 'class': 'vz-stat-l' }, L(it.l), c);
       if (ctx.first && !V.reduced) {
-        var t0 = null, dur = 900;
+        var t0 = null, dur = 600;
         (function step(ts) {
           if (!t0) t0 = ts;
           var p = Math.min(1, (ts - t0) / dur), e = 1 - Math.pow(1 - p, 3);
@@ -328,5 +366,44 @@
         })(performance.now());
       }
     });
+  });
+})();
+
+/* School mini strip: one school's dated items on a compact Aug–Jul line,
+   coloured by swimlane, with today. spec.school = short name in viz.deadlines. */
+(function () {
+  'use strict';
+  if (!window.ATLAS_VIZ) return;
+  ATLAS_VIZ.register('school-mini', function (el, spec, V, ctx) {
+    var D = V.data().deadlines; if (!D) return;
+    var L = V.L, fmt = V.fmt;
+    var evs = D.events.filter(function (e) { return e.school === spec.school; });
+    if (!evs.length) { V.h('p', { 'class': 'vz-sub' }, L({ zh: '沒有讀到這所學校的日期。', en: 'No dates were read for this school.' }), el); return; }
+    var from = V.dateNum('2026-08-01'), to = V.dateNum('2027-06-30');
+    var W = Math.max(el.clientWidth, 280), H = 58, cy = 22;
+    var x = V.scale(from, to, 10, W - 10);
+    var s = V.svg('svg', { width: W, height: H, viewBox: '0 0 ' + W + ' ' + H, role: 'img', 'aria-label': spec.school }, el);
+    V.svg('line', { x1: x(from), x2: x(to), y1: cy + .5, y2: cy + .5, 'class': 'vz-base' }, s);
+    var d0 = new Date(from);
+    for (var m = 0; m < 11; m++) {
+      var md = Date.UTC(d0.getUTCFullYear(), d0.getUTCMonth() + m, 1);
+      V.svg('line', { x1: x(md), x2: x(md), y1: cy - 3, y2: cy + 3, stroke: 'var(--viz-base)' }, s);
+      if (m % (W < 460 ? 2 : 1) === 0) { var t = V.svg('text', { x: x(md), y: H - 6, 'text-anchor': 'middle', style: 'font-size:10.5px' }, s); t.textContent = fmt.month(new Date(md).getUTCMonth()); }
+    }
+    var today = V.dateNum(V.todayISO());
+    V.svg('line', { x1: x(today), x2: x(today), y1: cy - 12, y2: cy + 12, stroke: 'var(--accent)', 'stroke-width': 1.5, 'stroke-dasharray': '2 2' }, s);
+    var marks = [];
+    var li = function (id) { return D.lanes.findIndex(function (l) { return l.id === id; }); };
+    evs.sort(function (a, b) { return a.start < b.start ? -1 : 1; }).forEach(function (e) {
+      var i = li(e.lane), c = V.color(i < 0 ? 0 : i), x0 = x(V.dateNum(e.start));
+      var g = V.svg('g', null, s);
+      V.svg('rect', { x: x0 - 9, y: cy - 12, width: 18 + (e.end ? x(V.dateNum(e.end)) - x0 : 0), height: 24, fill: 'transparent' }, g);
+      if (e.end) V.svg('rect', { x: x0, y: cy - 2.5, width: Math.max(4, x(V.dateNum(e.end)) - x0), height: 5, rx: 2.5, fill: c, opacity: e.approx ? .35 : .8 }, g);
+      else V.svg('circle', { cx: x0, cy: cy, r: 4.5, fill: c, stroke: 'var(--viz-surface)', 'stroke-width': 1.5, opacity: e.approx ? .55 : 1 }, g);
+      V.tip(g, function () { return { title: fmt.date(e.start) + (e.end ? ' – ' + fmt.date(e.end) : ''), rows: [{ value: L(D.lanes[i].label), label: L(e.label), color: c, src: e.src }] }; });
+      marks.push(g);
+    });
+    if (ctx.first) V.stagger(marks, { from: 'scale(.3)', origin: 'center', step: 25 });
+    return { table: { cols: [{ zh: '日期', en: 'Date' }, { zh: '事項', en: 'Item' }, { zh: '來源', en: 'Sources' }], rows: evs.map(function (e) { return [e.start + (e.end ? ' – ' + e.end : ''), L(e.label), { html: V.cites(e.src || []) }]; }) } };
   });
 })();

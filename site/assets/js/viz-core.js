@@ -66,7 +66,13 @@
     if (tipEl) return tipEl;
     tipEl = h('div', { 'class': 'vz-tip', role: 'tooltip', 'aria-hidden': 'true' }, null, document.body);
     document.addEventListener('pointerdown', function (e) { if (tipOwner && !tipOwner.contains(e.target)) hideTip(); }, true);
-    window.addEventListener('scroll', function () { if (tipEl && tipEl.dataset.sticky !== '1') hideTip(); }, { passive: true });
+    window.addEventListener('scroll', function () {
+      if (!tipEl || !tipOwner) return;
+      // a keyboard-focused mark keeps its tooltip (focus itself may scroll the page); pointer tooltips close
+      if (tipOwner === document.activeElement) placeTip(tipOwner, null, null);
+      else if (tipEl.dataset.sticky !== '1') hideTip();
+    }, { passive: true });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && tipOwner) hideTip(); });
     return tipEl;
   }
   // rows: [{value, label, color, src}] ; title: string
@@ -87,13 +93,19 @@
     t.classList.add('on');
     t.setAttribute('aria-hidden', 'false');
     tipOwner = target;
+    placeTip(target, x, y);
+  }
+  function placeTip(target, x, y) {
+    var t = tipEl;
     var r = target.getBoundingClientRect ? target.getBoundingClientRect() : null;
     var px = x != null ? x : (r ? r.left + r.width / 2 : 0);
     var py = y != null ? y : (r ? r.top : 0);
-    var w = t.offsetWidth, hh = t.offsetHeight, vw = document.documentElement.clientWidth;
+    var w = t.offsetWidth, hh = t.offsetHeight, vw = document.documentElement.clientWidth, vh = window.innerHeight;
     var left = Math.max(8, Math.min(vw - w - 8, px - w / 2));
+    var below = (x != null || !r) ? py + 18 : r.bottom + 10;
     var top = py - hh - 12;
-    if (top < 8) top = py + 18;
+    if (top < 8) top = below;
+    if (top + hh > vh - 8) top = Math.max(8, vh - hh - 8);
     t.style.transform = 'translate(' + Math.round(left) + 'px,' + Math.round(top + window.scrollY) + 'px)';
   }
   function hideTip() { if (!tipEl) return; tipEl.classList.remove('on'); tipEl.setAttribute('aria-hidden', 'true'); tipOwner = null; }
@@ -109,7 +121,7 @@
       showTip(mark, c.title, c.rows, x, y, sticky);
     }
     mark.addEventListener('pointerenter', function (e) { if (e.pointerType !== 'touch') open(e); });
-    mark.addEventListener('pointermove', function (e) { if (e.pointerType !== 'touch') open(e); });
+    mark.addEventListener('pointermove', function (e) { if (e.pointerType === 'touch') return; if (tipOwner === mark && tipEl.classList.contains('on')) placeTip(mark, e.clientX, e.clientY); else open(e); });
     mark.addEventListener('pointerleave', function (e) { if (e.pointerType !== 'touch') hideTip(); });
     mark.addEventListener('focus', function () { open(null); });
     mark.addEventListener('blur', hideTip);
@@ -141,7 +153,7 @@
   // animate a list of elements in: opacity + translate, staggered
   function stagger(els, opts) {
     opts = opts || {};
-    var step = Math.min(opts.step || 12, 500 / Math.max(els.length, 1));
+    var step = Math.min(opts.step || 12, 200 / Math.max(els.length, 1));
     els.forEach(function (e, i) {
       if (reduced) return;
       e.style.opacity = '0';
@@ -149,7 +161,7 @@
       e.style.transformBox = 'fill-box';
       e.style.transformOrigin = opts.origin || 'center bottom';
       requestAnimationFrame(function () {
-        e.style.transition = 'opacity 480ms ' + EASE + ' ' + Math.round(i * step) + 'ms, transform 560ms ' + EASE + ' ' + Math.round(i * step) + 'ms';
+        e.style.transition = 'opacity 360ms ' + EASE + ' ' + Math.round(i * step) + 'ms, transform 400ms ' + EASE + ' ' + Math.round(i * step) + 'ms';
         e.style.opacity = '';
         e.style.transform = '';
       });
@@ -184,7 +196,7 @@
     if (spec.subtitle) h('p', { 'class': 'vz-sub' }, L(spec.subtitle), fig);
     var stage = h('div', { 'class': 'vz-stage' }, null, fig);
     var foot = h('div', { 'class': 'vz-foot' }, null, fig);
-    var tb = null, tableBtn = null;
+    var tb = null, tableBtn = null, lastOut = {};
     function draw(first) {
       stage.innerHTML = '';
       var out = R(stage, spec, V, { first: first, foot: foot, redraw: function () { draw(false); } }) || {};
@@ -195,19 +207,26 @@
           tableBtn.setAttribute('aria-expanded', String(!open));
           tableBtn.textContent = L(open ? UI.table : UI.hideTable);
           if (open) { if (tb) tb.remove(); tb = null; }
-          else { var o = R.lastTable || out.table; tb = tableView(o.rows, o.cols); fig.appendChild(tb); }
+          else { var o = (R.lastTableFig === fig && R.lastTable) || lastOut.table || out.table; tb = tableView(o.rows, o.cols); fig.appendChild(tb); }
         });
       }
-      R.lastTable = out.table;
+      R.lastTable = out.table; R.lastTableFig = fig; lastOut = out;
       if (spec.note) { var n = fig.querySelector('.vz-note') || h('p', { 'class': 'vz-note' }, null, fig); n.innerHTML = U().md(L(spec.note)); }
       return out;
     }
     var w0 = 0;
-    onEnter(fig, function (instant) { fig.classList.add('in'); draw(!instant); w0 = stage.clientWidth; });
+    // reserve the figure's height before it animates in, so mounting never shifts the page
+    // (sections are built detached, so measure once the current script has attached them)
+    if (!reduced && 'IntersectionObserver' in window) Promise.resolve().then(function () {
+      if (fig.classList.contains('in') || !stage.clientWidth) return;
+      try { draw(false); stage.style.minHeight = stage.offsetHeight + 'px'; } catch (e) { /* draw again on enter */ }
+      stage.innerHTML = '';
+    });
+    onEnter(fig, function (instant) { fig.classList.add('in'); draw(!instant); stage.style.minHeight = ''; w0 = stage.clientWidth; });
     if ('ResizeObserver' in window) {
       var t = null;
       new ResizeObserver(function () {
-        if (!fig.classList.contains('in')) return;
+        if (!fig.classList.contains('in') || !stage.clientWidth) return;
         if (Math.abs(stage.clientWidth - w0) < 24) return;
         clearTimeout(t); t = setTimeout(function () { w0 = stage.clientWidth; draw(false); }, 120);
       }).observe(stage);
@@ -228,6 +247,8 @@
     svg: svg, h: h, scale: scale, band: band, tip: tip, showTip: showTip, hideTip: hideTip, legend: legend,
     onEnter: onEnter, stagger: stagger, tableView: tableView, reduced: reduced, fmt: fmt, dateNum: dateNum, day: day,
     L: L, lang: lang, data: data, ui: UI, ease: EASE,
+    // the reader's local date, so the today marker and countdowns stay current
+    todayISO: function () { var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); },
     cites: function (s) { return U().cites(s); }, md: function (s) { return U().md(s); },
     color: function (i) { return 'var(--c' + ((i % 5) + 1) + ')'; }
   };

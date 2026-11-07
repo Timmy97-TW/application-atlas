@@ -42,7 +42,28 @@
     var view = el('div', { 'class': 'mk-view' });
     var bar = el('div', { 'class': 'mk-bar' });
     app.appendChild(side); app.appendChild(view);
-    main.appendChild(bar); main.appendChild(app);
+    var stepEl = el('ol', { 'class': 'mk-steps-bar', 'aria-label': t('navLabel') });
+    main.appendChild(bar); main.appendChild(stepEl); main.appendChild(app);
+    // where you are in the flow: dashboard → colleges → common tab → college parts → recommenders → review
+    function stepper(h) {
+      var first = S.colleges[0];
+      var steps = [
+        { k: 'dash', label: t('dashboard'), href: '#/dashboard', on: /^#\/dashboard/.test(h) || h === '' },
+        { k: 'col', label: t('myColleges'), href: '#/colleges', on: /^#\/colleges$/.test(h) },
+        { k: 'app', label: t('commonTab'), href: '#/app/' + M.sections[0].id, on: /^#\/app\//.test(h), done: M.sections.every(sectionDone) },
+        { k: 'q', label: t('questions') + ' · ' + t('supplement'), href: first ? '#/college/' + first + '/questions' : '#/colleges', on: /^#\/college\/[\w-]+(\/(questions|supplement))?$/.test(h) },
+        { k: 'rec', label: t('recommenders'), href: first ? '#/college/' + first + '/recommenders' : '#/colleges', on: /\/recommenders$/.test(h) },
+        { k: 'rev', label: t('review'), href: first ? '#/college/' + first + '/review' : '#/colleges', on: /\/review$/.test(h) }
+      ];
+      stepEl.innerHTML = '';
+      steps.forEach(function (s, i) {
+        var li = el('li', { 'class': (s.on ? 'on ' : '') + (s.done ? 'done' : '') });
+        li.appendChild(el('a', { href: s.href, 'aria-current': s.on ? 'step' : null }, '<span class="mk-step-n">' + (s.done ? '✓' : (i + 1)) + '</span><span>' + esc(s.label) + '</span>'));
+        stepEl.appendChild(li);
+      });
+      var on = stepEl.querySelector('li.on');
+      if (on && stepEl.scrollWidth > stepEl.clientWidth) stepEl.scrollTo({ left: on.offsetLeft - 20, behavior: 'smooth' });
+    }
     if (M.intro) main.insertBefore(el('p', { 'class': 'lead' }, md(L(M.intro))), bar);
 
     function toolbar() {
@@ -232,7 +253,7 @@
       requestAnimationFrame(function () {
         [].forEach.call(rings.querySelectorAll('.mk-ring-arc'), function (c, i) {
           var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-          if (!reduce) c.style.transition = 'stroke-dashoffset 800ms cubic-bezier(.2,.7,.2,1) ' + (i * 60) + 'ms';
+          if (!reduce) c.style.transition = 'stroke-dashoffset 600ms cubic-bezier(.2,.7,.2,1) ' + (i * 60) + 'ms';
           c.setAttribute('stroke-dashoffset', c.getAttribute('data-off'));
         });
       });
@@ -434,6 +455,7 @@
       view.innerHTML = '';
       sidebar(h);
       var m;
+      stepper(h);
       if ((m = h.match(/^#\/app\/([\w-]+)$/))) vSection(m[1]);
       else if ((m = h.match(/^#\/college\/([\w-]+)(?:\/(\w+))?$/))) vCollege(m[1], m[2]);
       else if (h === '#/colleges') vColleges();

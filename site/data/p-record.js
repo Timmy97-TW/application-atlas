@@ -364,6 +364,11 @@ window.ATLAS.pages = window.ATLAS.pages || {};
       {
         id: "ai",
         h: { zh: "AI 使用政策", en: "AI policy" },
+        viz: {
+          type: "waffle", field: "aiPolicy",
+          title: { zh: "30 校中 17 校在官方頁面寫了 AI 使用說明，4 校沒有，9 校只有次級來源或未讀到", en: "17 of the 30 schools state an AI policy on their own pages, 4 do not, and 9 rest on secondary reports or were not read" },
+          subtitle: { zh: "每一格是一所學校；停在格子上看學校與來源。虛線格代表官方頁面沒讀到明確說法。", en: "Each square is one school; hover a square for the school and its source. Dashed squares mean no clear statement was read on an official page." }
+        },
         judgment: {
           zh: "多數政策劃的線是「內容與最終文字是不是你的」，不是「有沒有碰過 AI」；30 校中 17 校的 AI 說明在官方頁直接讀到，Purdue 未能取得。",
           en: "Most policies draw the line at whether the content and final text are yours, not at whether AI was touched; 17 of the 30 schools have an AI statement read directly on an official page, and Purdue could not be retrieved."

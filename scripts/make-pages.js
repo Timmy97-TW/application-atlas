@@ -30,7 +30,16 @@ const pages = [
 for (const [file, page, data, extraJs = []] of pages) {
   const depth = file.split('/').length - 1;
   const root = '../'.repeat(depth);
-  const vizData = fs.readdirSync(path.join(site, 'data')).filter(f => f.startsWith('viz-') && f.endsWith('.js')).sort();
+  // load a chart dataset only on pages whose figures use it
+  const pageSrc = data.map(d => path.join(site, 'data', d)).filter(fs.existsSync).map(f => fs.readFileSync(f, 'utf8')).join('\n');
+  const uses = (re) => re.test(pageSrc);
+  const vizData = fs.readdirSync(path.join(site, 'data')).filter(f => f.startsWith('viz-') && f.endsWith('.js')).sort().filter(f => {
+    const name = f.slice(4, -3);
+    if (name === 'deadlines') return uses(/["']?type["']?\s*:\s*['"](timeline|density|ribbon|upcoming|school-mini)['"]/);
+    if (name === 'cds') return uses(/["']?type["']?\s*:\s*['"](cds-heatmap|admit-dumbbell|aid-bars|share-bars)['"]/);
+    if (name === 'schools') return uses(/["']?type["']?\s*:\s*['"](compare|waffle|matrix-grid|entry-strip)['"]/) && !/["']?dataset["']?\s*:\s*['"]more['"]/.test(pageSrc) || uses(/["']?type["']?\s*:\s*['"](compare|waffle|matrix-grid|entry-strip)['"](?![^}]*dataset)/);
+    return uses(new RegExp('["\']?dataset["\']?\\s*:\\s*[\'"]' + name + '[\'"]'));
+  });
   const vizJs = fs.readdirSync(path.join(site, 'assets/js')).filter(f => f.startsWith('viz-') && f.endsWith('.js'))
     .sort((a, b) => (a === 'viz-core.js' ? -1 : b === 'viz-core.js' ? 1 : a.localeCompare(b)));
   const scripts = [...common, ...vizData, ...data].filter(d => fs.existsSync(path.join(site, 'data', d)))
