@@ -6,7 +6,17 @@ window.ATLAS.pages['index'] = {
     zh: '一份附來源的研究：30 所美國大學的申請內容、期限與入口，深入整理工程與生物申請者的作品集和補充材料，以及校外多年紀錄能放進申請的哪些位置。',
     en: 'A sourced study of what 30 US universities ask for, by when, and through which portal, with depth on portfolios and supplementary materials for engineering and biology applicants, and on where a multi-year record built outside school can enter the application.'
   },
+  viz: { type: 'stats' },
   sections: [
+    {
+      id: 'next',
+      h: { zh: '接下來的截止日', en: 'The next deadlines' },
+      viz: {
+        type: 'upcoming', count: 4, lanes: ['apply'],
+        title: { zh: '從今天起，最近的四個申請截止日', en: 'The four nearest application deadlines from today' },
+        subtitle: { zh: '依各校官方頁面整理；點卡片看是哪些學校與來源。完整一年請看時程頁。', en: 'From each school\'s own pages; tap a card for the schools and sources. The full year is on the timeline page.' }
+      }
+    },
     {
       id: 'four',
       h: { zh: '學生要交的四類東西', en: 'The four things a student submits' },
@@ -25,6 +35,19 @@ window.ATLAS.pages['index'] = {
     {
       id: 'year',
       h: { zh: '申請年度縮圖', en: 'The application year in miniature' },
+      viz: {
+        type: 'ribbon', from: '2026-08-01', to: '2027-06-30',
+        title: { zh: '今天在申請年度的哪裡', en: 'Where today sits in the application year' },
+        subtitle: { zh: '藍色填滿到今天；空心點是還沒到的日期。點任一個點看來源。', en: 'The blue fill runs to today; hollow pins are still ahead. Tap any pin for its sources.' },
+        points: [
+          { date: '2026-08-01', big: { zh: '8/1', en: 'Aug 1' }, label: { zh: '申請系統開放', en: 'Applications open' }, sub: { zh: 'Common App 與 UC 申請開放填寫', en: 'Common App and the UC application open' }, src: ['A1-S4', 'A3b-S23'] },
+          { date: '2026-10-01', end: '2026-11-30', big: { zh: '10/1–11/30', en: 'Oct 1–Nov 30' }, label: { zh: 'UC 申請期', en: 'UC filing period' }, sub: { zh: 'UC 只在這段期間收件', en: 'UC accepts applications only in this window' }, src: ['A3b-S23'] },
+          { date: '2026-11-01', big: { zh: '11/1', en: 'Nov 1' }, label: { zh: '早申請高峰', en: 'Early-deadline peak' }, sub: { zh: '多數 ED、EA、REA 截止', en: 'Most ED, EA and REA deadlines' }, src: ['A3a-S1', 'A3a-S4', 'A3a-S71'] },
+          { date: '2027-01-01', end: '2027-01-06', big: { zh: '1/1–1/6', en: 'Jan 1–6' }, label: { zh: '一般申請截止', en: 'Regular deadlines' }, sub: { zh: '多數 RD 與 ED II 截止', en: 'Most RD and ED II deadlines' }, src: ['A3a-S26', 'A3a-S33', 'A3a-S1'] },
+          { date: '2027-03-15', end: '2027-04-01', big: { zh: '3–4 月', en: 'Mar–Apr' }, label: { zh: '放榜', en: 'Decisions' }, sub: { zh: 'UC 3 月；多數私校 3 月中到 4 月初', en: 'UC in March; most private schools mid-March to early April' }, src: ['A3b-S23', 'A3a-S69'] },
+          { date: '2027-05-01', big: { zh: '5/1', en: 'May 1' }, label: { zh: '回覆截止', en: 'Reply date' }, sub: { zh: '接著是 I-20、SEVIS 費用、F-1 簽證', en: 'Then the I-20, the SEVIS fee and the F-1 visa' }, src: ['A3a-S1', 'A3b-S45'] }
+        ]
+      },
       judgment: { zh: '11 月 1 日前後是早申請最集中的日期；1 月初是一般申請截止的高峰；3 月到 4 月初放榜；5 月 1 日回覆。', en: 'Early deadlines cluster around 1 November; regular deadlines peak in the first days of January; decisions come from March to early April; replies are due 1 May.' },
       cards: [
         { big: { zh: '8/1', en: 'Aug 1' }, h: { zh: '申請系統開放', en: 'Applications open' }, p: { zh: 'Common App 與 UC 申請開放填寫。', en: 'Common App and the UC application open.' }, src: ['A1-S4', 'A3b-S23'] },

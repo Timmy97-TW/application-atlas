@@ -141,6 +141,57 @@ window.ATLAS.pages = window.ATLAS.pages || {};
       {
         id: "map",
         h: { zh: "紀錄 → 欄位對照表", en: "Record-to-field map" },
+        viz: {
+          type: "flow", wide: true,
+          title: L("七種證據、七個欄位，只有少數路徑接得到證明人", "Seven kinds of evidence, seven fields, and few paths that reach someone who can vouch"),
+          subtitle: L("連線只畫下表與研究筆記有出處的對應。欄位右側沒有連線，表示該欄位本身沒有指定證明人。虛線：學校接受 Other Recommender 那個類型才行。", "Lines show only pairings that the table below and the research note give a source for. A field with no line on its right names no verifier of its own. Dashed: only where the college accepts that Other Recommender type."),
+          columns: [{ label: L("證據", "Evidence") }, { label: L("欄位", "Field") }, { label: L("誰能證明", "Who can vouch") }],
+          nodes: [
+            { id: "lab", col: 0, tone: "system", label: L("有時間戳的實驗時數", "Timestamped lab hours") },
+            { id: "cert", col: 0, tone: "system", label: L("技能認證（分數、等級）", "Skill certifications (score, level)") },
+            { id: "contrib", col: 0, tone: "system", label: L("公開貢獻紀錄（commit、wiki）", "Public contribution record (commits, wiki)") },
+            { id: "prepost", col: 0, tone: "system", label: L("前測／後測差異", "Pre/post test deltas") },
+            { id: "repl", col: 0, tone: "system", label: L("重現實驗紀錄", "Replication records") },
+            { id: "oral", col: 0, tone: "system", label: L("口頭答辯紀錄（錄影問答）", "Oral-defence records (recorded Q&A)") },
+            { id: "pub", col: 0, tone: "system", label: L("論文發表", "Publications") },
+            { id: "act", col: 1, tone: "container", label: L("Common App Activities（150 字元）", "Common App Activities (150 chars)"), sub: L("Position 50、Organization 100、Description 150 字元，最多 10 項。", "Position 50, Organization 100, Description 150 characters; up to 10 entries."), src: ["C1-S33", "C1-S34"] },
+            { id: "honors", col: 1, tone: "container", label: L("Common App Honors", "Common App Honors"), sub: L("最多 5 項：名稱、年級、層級。", "Up to 5: title, grade level, recognition level."), src: ["C1-S34"] },
+            { id: "addl", col: 1, tone: "container", label: L("Additional information（300 字）", "Additional information (300 words)"), sub: L("Common App 指向此處補充活動細節。", "Common App points here for more activity detail."), src: ["C1-S33", "C1-S50", "A1-S6", "A1-S12"] },
+            { id: "oe", col: 1, tone: "container", label: L("Other Recommender 推薦信", "Other Recommender letter"), sub: L("類型含 employer、college access counselor、other；各校自定是否接受。", "Types include employer, college access counselor, other; each college sets its own acceptance."), src: ["C1-S35", "C1-S36"] },
+            { id: "maker", col: 1, tone: "container", label: L("MIT Maker Portfolio", "MIT Maker Portfolio"), sub: L("SlideRoom，US$10；最多 25 個媒體檔；程式專案需附 codebase 與 demo。", "SlideRoom, US$10; up to 25 media items; code projects need the codebase and a working demo."), src: ["C1-S32"] },
+            { id: "portal", col: 1, tone: "container", label: L("SlideRoom／學校入口（MIT Research Supplement、Caltech 上傳）", "SlideRoom / college portal (MIT Research Supplement, Caltech uploads)"), src: ["C1-S32", "C1-S29", "C1-S30"] },
+            { id: "ucaa", col: 1, tone: "container", label: L("UC Activities & Awards", "UC Activities & Awards"), sub: L("最多 20 項、6 類；UC 要求內容可由獨立第三方驗證，但沒有指定是誰。", "Up to 20 entries in 6 categories; UC requires entries to be verifiable by an independent party but names no one."), src: ["C1-S39", "C1-S40", "C1-S41"] },
+            { id: "counselor", col: 2, tone: "person", label: L("學校輔導老師", "School counselor"), sub: L("從整個畢業班的角度寫，包括獎項。", "Writes from the view of the whole graduating class, including awards."), src: ["C1-S37"] },
+            { id: "mentor", col: 2, tone: "person", label: L("研究 mentor／校外教授", "Research mentor / outside professor"), src: ["C1-S32", "C1-S29"] },
+            { id: "judges", col: 2, tone: "person", label: L("競賽評審", "Competition judges"), src: ["C1-S43"] },
+            { id: "journal", col: 2, tone: "person", label: L("期刊", "Journal"), sub: L("審的是稿件；判定作者資格不是期刊編輯的職責。", "Vouches for the manuscript; deciding authorship is not the editors\' role."), src: ["C1-S47", "C1-S48"] },
+            { id: "organiser", col: 2, tone: "person", label: L("課程或競賽主辦方", "Programme or competition organiser"), src: ["C1-S35", "C1-S36", "C1-S42"] }
+          ],
+          links: [
+            { from: "lab", to: "act", src: ["C1-S33", "C1-S34"] },
+            { from: "lab", to: "portal", label: L("MIT Research Supplement；Caltech 研究上傳", "MIT Research Supplement; Caltech research upload"), src: ["C1-S32", "C1-S29"] },
+            { from: "cert", to: "honors", src: ["C1-S34"] },
+            { from: "cert", to: "ucaa", label: L("含「Award or honor」類", "Includes the \"Award or honor\" category"), src: ["C1-S39", "C1-S40"] },
+            { from: "contrib", to: "addl", src: ["C1-S33", "C1-S50"] },
+            { from: "contrib", to: "maker", src: ["C1-S32"] },
+            { from: "prepost", to: "portal", label: L("Caltech portfolio（選填）", "Caltech portfolio (optional)"), src: ["C1-S30"] },
+            { from: "repl", to: "oe", src: ["C1-S35", "C1-S36"] },
+            { from: "oral", to: "portal", label: L("Caltech portfolio 接受影片", "Caltech portfolio accepts video"), src: ["C1-S30"] },
+            { from: "pub", to: "portal", label: L("MIT abstract／poster；Caltech 偏好全文", "MIT abstract/poster; Caltech prefers the full paper"), src: ["C1-S32", "C1-S29"] },
+            { from: "act", to: "mentor", label: L("指導的成人；ISEF Form 2C 由指導成人填寫，是現成範本", "The supervising adult; ISEF Form 2C, filled by that adult, is an existing template"), src: ["C1-S45"] },
+            { from: "honors", to: "counselor", label: L("輔導老師信從全班角度提供脈絡，包括獎項", "The counselor letter gives class-wide context, including awards"), src: ["C1-S37"] },
+            { from: "addl", to: "organiser", label: L("團隊競賽：截止時凍結的公開 Wiki 與 Attributions Form", "Team competition: the public Wiki frozen at the deadline and the Attributions Form"), src: ["C1-S42", "C1-S43"] },
+            { from: "oe", to: "mentor", dashed: true, label: L("寫信的人；學校接受那個類型才行", "The letter writer; only where the college accepts the type"), src: ["C1-S35", "C1-S36"] },
+            { from: "oe", to: "organiser", dashed: true, label: L("主辦方可用 Other Recommender 身分寫信", "An organiser may write as an Other Recommender"), src: ["C1-S35", "C1-S36"] },
+            { from: "portal", to: "mentor", label: L("MIT：mentor 信在 SlideRoom 內提交；Caltech：研究場所的信須談具體貢獻", "MIT: mentor letter submitted inside SlideRoom; Caltech: research-site letter on specific contributions"), src: ["C1-S32", "C1-S29"] },
+            { from: "portal", to: "judges", label: L("錄影的評審場次", "A recorded judging session"), src: ["C1-S43", "C1-S30"] },
+            { from: "portal", to: "journal", label: L("期刊審稿件，不審作者份量", "The journal vouches for the manuscript, not the student\'s share"), src: ["C1-S47", "C1-S48"] }
+          ],
+          legend: [
+            { label: L("有出處的對應", "Sourced pairing"), shape: "line", color: "#b2b7bf" },
+            { label: L("學校接受才行", "Only if the college accepts it"), shape: "dash" }
+          ]
+        },
         judgment: {
           zh: "會自帶證明人的欄位只有三種（MIT Research Supplement、Caltech 研究信、Other Recommender）；其餘文字欄位只承載申請者自己的陳述，而 UC 的 Academic history 補充說明只有 550 個字元（不是字）。",
           en: "Only three kinds of field bring their own verifier (MIT Research Supplement, the Caltech research letter, Other Recommender); every other text field carries only the applicant's word, and UC's Academic history comments box holds 550 characters, not words."

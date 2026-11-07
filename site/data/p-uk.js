@@ -87,7 +87,21 @@ window.ATLAS.pages = window.ATLAS.pages || {};
       },
       // ---------------------------------------------------------------- DATES
       {
-        id: "dates",
+        id: 'dates',
+      viz: {
+        type: 'ribbon', from: '2026-05-01', to: '2027-07-31',
+        title: { zh: '英國申請年度：牛津劍橋與醫學在 10 月 15 日，其他多數科系在 1 月 13 日', en: 'The UK year: Oxford, Cambridge and medicine close on 15 October; most other courses on 13 January' },
+        subtitle: { zh: '截止時間都是英國時間 18:00。換算成台灣時間（本站自行換算，非來源原文）：10 月中英國夏令時間為隔天 01:00，1 月為隔天 02:00。', en: 'Deadlines are 18:00 UK time. In Taiwan time (our own time-zone arithmetic, not the source\'s words): 01:00 the next day in mid-October (British Summer Time), 02:00 the next day in January.' },
+        points: [
+          { date: '2026-05-12', big: { zh: '5/12', en: 'May 12' }, label: { zh: 'UCAS 開放', en: 'UCAS opens' }, sub: { zh: '在 UCAS Hub 註冊並開始填寫', en: 'Register and start in UCAS Hub' }, src: ['F1-S1', 'F1-S9'] },
+          { date: '2026-10-12', end: '2026-10-16', big: { zh: '10/12–16', en: 'Oct 12–16' }, label: { zh: 'ESAT／TMUA 主考期', en: 'Main ESAT/TMUA sitting' }, sub: { zh: '工程與自然科學常用的入學考試', en: 'Admissions tests used for engineering and natural sciences' }, src: ['F1-S27'] },
+          { date: '2026-10-15', big: { zh: '10/15', en: 'Oct 15' }, label: { zh: '牛津、劍橋、醫學截止', en: 'Oxford, Cambridge, medicine' }, sub: { zh: '英國時間 18:00', en: '18:00 UK time' }, src: ['F1-S1', 'F1-S9', 'F1-S39'] },
+          { date: '2026-12-07', end: '2026-12-18', big: { zh: '12 月', en: 'Dec' }, label: { zh: '劍橋面試期', en: 'Cambridge interviews' }, sub: { zh: '各學院自訂形式', en: 'Each College sets the format' }, src: ['F1-S22'] },
+          { date: '2027-01-13', big: { zh: '1/13', en: 'Jan 13' }, label: { zh: '多數科系截止', en: 'Most other courses' }, sub: { zh: '是 13 日，不是 14 日；英國時間 18:00', en: 'The 13th, not the 14th; 18:00 UK time' }, src: ['F1-S1', 'F1-S9', 'F3-S50'] },
+          { date: '2027-05-05', big: { zh: '5/5', en: 'May 5' }, label: { zh: '回覆截止（第一批）', en: 'First reply deadline' }, sub: { zh: '若 3 月 31 日前收齊所有決定', en: 'If all decisions arrived by 31 March' }, src: ['F1-S9', 'F1-S10'] },
+          { date: '2027-07-02', big: { zh: '7/2', en: 'Jul 2' }, label: { zh: 'Clearing 開放', en: 'Clearing opens' }, sub: { zh: '還有名額的課程開放申請', en: 'Courses with places left open to applicants' }, src: ['F1-S1', 'F1-S9'] }
+        ]
+      },
         h: s("2026–27 UCAS 年度時程（2027 年入學）", "The 2026–27 UCAS year (2027 entry)"),
         judgment: s(
           "牛劍與多數醫科在 2026-10-15 18:00 截止，其餘多數課程在 2027-01-13 18:00；ESAT／TMUA 成績 11-16 才出來，晚於 10 月截止日。",
@@ -434,6 +448,58 @@ window.ATLAS.pages = window.ATLAS.pages || {};
       {
         id: "taiwan",
         h: s("台灣學歷在英國申請中的位置", "How Taiwan qualifications are treated"),
+        viz: {
+          type: "flow",
+          title: s("只拿台灣高中畢業證書，讀得到的各校都沒有直接入學的路", "With the Taiwan diploma alone, no university page that could be read offers direct entry"),
+          subtitle: s("左邊是學歷路徑，右邊是各校頁面怎麼說；只畫各校頁面寫到的組合。Oxford、UCL 的頁面拒絕自動讀取。", "Routes on the left, what each university page says on the right; only combinations a page states are drawn. The Oxford and UCL pages refused automated reading."),
+          columns: [{ label: s("學歷路徑", "Route") }, { label: s("大學", "University") }],
+          nodes: [
+            { id: "dip", col: 0, tone: "person", label: s("台灣高中畢業證書（單獨）", "Taiwan senior high diploma alone"), sub: s("各頁都沒有提到學測或分科測驗。", "None of the pages mentions the GSAT or the Advanced Subjects Test."), src: ["F3-S3", "F3-S15", "F3-S22", "F3-S27", "F3-S29", "F3-S33", "F3-S37", "F3-S46"] },
+            { id: "ap", col: 0, tone: "person", label: s("＋AP", "+ AP") },
+            { id: "ib", col: 0, tone: "person", label: s("IB", "IB") },
+            { id: "alevel", col: 0, tone: "person", label: s("A-level", "A-level") },
+            { id: "found", col: 0, tone: "person", label: s("Foundation year", "Foundation year") },
+            { id: "imperial", col: 1, tone: "college", label: s("Imperial", "Imperial"), src: ["F3-S15", "F3-S14"] },
+            { id: "cambridge", col: 1, tone: "college", label: s("Cambridge", "Cambridge"), src: ["F3-S3"] },
+            { id: "warwick", col: 1, tone: "college", label: s("Warwick", "Warwick"), src: ["F3-S37"] },
+            { id: "edinburgh", col: 1, tone: "college", label: s("Edinburgh", "Edinburgh"), sub: s("理工學院的 selection test 是有限的例外，將逐步取消。", "A College of Science & Engineering selection test is a limited exception being phased out."), src: ["F3-S22", "F3-S24"] },
+            { id: "manchester", col: 1, tone: "college", label: s("Manchester", "Manchester"), src: ["F3-S29"] },
+            { id: "bristol", col: 1, tone: "college", label: s("Bristol", "Bristol"), src: ["F3-S33"] },
+            { id: "standrews", col: 1, tone: "college", label: s("St Andrews", "St Andrews"), src: ["F3-S46"] },
+            { id: "kcl", col: 1, tone: "college", label: s("KCL", "KCL"), src: ["F3-S27"] },
+            { id: "oxford", col: 1, tone: "muted", label: s("Oxford（頁面無法讀取）", "Oxford (page unreadable)"), sub: s("ox.ac.uk 回傳 HTTP 403。", "ox.ac.uk returned HTTP 403."), src: ["F3-S11"] },
+            { id: "ucl", col: 1, tone: "muted", label: s("UCL（頁面無法讀取）", "UCL (page unreadable)"), sub: s("ucl.ac.uk 回傳 HTTP 403。", "ucl.ac.uk returned HTTP 403."), src: ["F3-S17"] }
+          ],
+          links: [
+            { from: "dip", to: "imperial", tone: "no", label: s("列在「Qualifications that are not accepted for entry」", "Listed under \"Qualifications that are not accepted for entry\""), src: ["F3-S15"] },
+            { from: "dip", to: "cambridge", tone: "no", label: s("單獨「不具競爭力」", "Alone \"will not be competitive\""), src: ["F3-S3"] },
+            { from: "dip", to: "warwick", tone: "no", label: s("「Warwick IFP required」", "\"Warwick IFP required\""), src: ["F3-S37"] },
+            { from: "dip", to: "edinburgh", tone: "no", label: s("「通常不符合最低入學要求」", "\"Does not normally meet\" the minimum"), src: ["F3-S22"] },
+            { from: "dip", to: "manchester", tone: "no", label: s("須先完成學校認可的 foundation", "Must complete a University-recognised foundation first"), src: ["F3-S29"] },
+            { from: "dip", to: "standrews", tone: "no", label: s("需另有 foundation、美式課程、IB、A-level 或 SQA", "Expected to hold a foundation, US curriculum profile, IB, A-levels or SQA Highers as well"), src: ["F3-S46"] },
+            { from: "dip", to: "bristol", tone: "muted", label: s("未提到；台灣頁只寫大學一年級或五專畢業", "Not mentioned; the Taiwan page covers a university year or a junior-college diploma"), src: ["F3-S33"] },
+            { from: "dip", to: "kcl", tone: "muted", label: s("一般入學頁沒有台灣說明", "No Taiwan entry on the general page"), src: ["F3-S27"] },
+            { from: "ap", to: "cambridge", tone: "yes", label: s("5 科以上 AP 5 分，與畢業證書併用", "Five or more APs at 5, alongside the diploma"), src: ["F3-S3", "F1-S25"] },
+            { from: "ib", to: "cambridge", tone: "yes", label: s("建議另有 IB", "IB suggested alongside"), src: ["F3-S3"] },
+            { from: "ib", to: "warwick", tone: "yes", label: s("會考慮", "Will be considered"), src: ["F3-S37"] },
+            { from: "ib", to: "standrews", tone: "yes", src: ["F3-S46"] },
+            { from: "alevel", to: "cambridge", tone: "yes", label: s("建議另有 A Levels", "A Levels suggested alongside"), src: ["F3-S3"] },
+            { from: "alevel", to: "warwick", tone: "yes", label: s("會考慮", "Will be considered"), src: ["F3-S37"] },
+            { from: "alevel", to: "standrews", tone: "yes", src: ["F3-S46"] },
+            { from: "found", to: "imperial", tone: "yes", label: s("認可的 foundation 課程", "An accepted foundation programme"), src: ["F3-S15", "F3-S14"] },
+            { from: "found", to: "warwick", tone: "yes", label: s("Warwick IFP", "Warwick IFP"), src: ["F3-S37"] },
+            { from: "found", to: "edinburgh", tone: "no", label: s("自家 IFP 目前不接受此學歷直接入讀", "Its own IFP does not currently accept the diploma for direct entry"), src: ["F3-S22", "F3-S24"] },
+            { from: "found", to: "manchester", tone: "yes", label: s("理工整合預科：總平均與數學、物理各 80% 以上", "Integrated foundation year: 80%+ overall and in Maths and Physics"), src: ["F3-S29"] },
+            { from: "found", to: "bristol", tone: "yes", label: s("IFP（Kaplan）路徑", "IFP (Kaplan) route"), src: ["F3-S33"] },
+            { from: "found", to: "standrews", tone: "yes", label: s("foundation certificate", "Foundation certificate"), src: ["F3-S46"] },
+            { from: "found", to: "kcl", tone: "no", label: s("不接受非英國的 foundation 課程", "\"Cannot accept Non-UK Foundation courses\""), src: ["F3-S27"] }
+          ],
+          legend: [
+            { label: s("頁面寫可以或會考慮", "Page says accepted or considered"), shape: "line", color: "var(--c3)" },
+            { label: s("不接受或單獨不夠", "Not accepted, or not enough alone"), shape: "line", color: "var(--c2)" },
+            { label: s("頁面未說明", "Not stated on the page"), shape: "dash" }
+          ]
+        },
         judgment: s(
           "本次讀到的台灣相關頁面，沒有一頁提到學測或分科測驗；各校只評估高中畢業證書，且都認為不足以直接入學，或沒有涵蓋。",
           "None of the Taiwan-related pages read mentions the GSAT or the Advanced Subjects Test. Each assesses the senior high diploma alone and treats it as insufficient for direct entry, or does not cover it."

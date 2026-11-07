@@ -211,6 +211,31 @@
     function vDashboard() {
       view.appendChild(el('h2', null, esc(t('dashboard'))));
       view.appendChild(el('p', { 'class': 'mk-help' }, md(L(M.dashboardIntro))));
+      // completion rings: the common sections as one ring, then one per college
+      var rings = el('div', { 'class': 'mk-rings' });
+      function ring(done, total, label, href) {
+        var pct = total ? done / total : 0, R = 26, C = 2 * Math.PI * R;
+        var a = el(href ? 'a' : 'div', { 'class': 'mk-ring', href: href || null });
+        a.innerHTML = '<svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="' + R + '" fill="none" stroke="#eceef2" stroke-width="6"/>' +
+          '<circle class="mk-ring-arc" cx="32" cy="32" r="' + R + '" fill="none" stroke="' + (pct === 1 ? 'var(--official)' : 'var(--accent)') + '" stroke-width="6" stroke-linecap="round" transform="rotate(-90 32 32)" stroke-dasharray="' + C.toFixed(1) + '" stroke-dashoffset="' + C.toFixed(1) + '" data-off="' + (C * (1 - pct)).toFixed(1) + '"/>' +
+          '<text x="32" y="36" text-anchor="middle" style="font-size:13px;font-weight:700;fill:var(--fg)">' + done + '/' + total + '</text></svg><span>' + esc(label) + '</span>';
+        rings.appendChild(a);
+      }
+      ring(M.sections.filter(sectionDone).length, M.sections.length, t('commonTab'), '#/app/' + M.sections[0].id);
+      S.colleges.forEach(function (id) {
+        var c = collegeById(id); if (!c) return;
+        var parts = ['questions', 'supplement'].filter(function (p) { return c[p] && c[p].length; });
+        var done = parts.filter(function (p) { return collegeDone(c, p); }).length + (recsDone(c) ? 1 : 0) + (S.submitted[id] ? 1 : 0);
+        ring(done, parts.length + 2, L(c.name), '#/college/' + id);
+      });
+      view.appendChild(rings);
+      requestAnimationFrame(function () {
+        [].forEach.call(rings.querySelectorAll('.mk-ring-arc'), function (c, i) {
+          var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          if (!reduce) c.style.transition = 'stroke-dashoffset 800ms cubic-bezier(.2,.7,.2,1) ' + (i * 60) + 'ms';
+          c.setAttribute('stroke-dashoffset', c.getAttribute('data-off'));
+        });
+      });
       var tb = el('table', { 'class': 'mk-table' });
       tb.innerHTML = '<thead><tr><th>' + esc(t('college')) + '</th><th>' + esc(t('plan')) + '</th><th>' + esc(t('deadline')) + '</th><th>' + esc(t('commonTab')) + '</th><th>' + esc(t('questions')) + '</th><th>' + esc(t('supplement')) + '</th><th>' + esc(t('recommenders')) + '</th><th>' + esc(t('status')) + '</th></tr></thead>';
       var body = el('tbody');

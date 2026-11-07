@@ -172,6 +172,7 @@
     if (s.judgment) sec.appendChild(el('p', { 'class': 'judgment' }, md(L(s.judgment))));
     if (s.intro) sec.appendChild(el('p', { 'class': 'lead' }, md(L(s.intro))));
     if (s.pending) sec.appendChild(el('p', { 'class': 'notice' }, esc(ui('notYetWritten'))));
+    if (s.viz && window.ATLAS_VIZ) [].concat(s.viz).forEach(function (v) { window.ATLAS_VIZ.mount(sec, v); });
     if (s.cards) sec.appendChild(renderCards(s.cards));
     if (s.timeline) sec.appendChild(renderTimeline(s.timeline));
     if (s.items) sec.appendChild(renderItems(s.items));
@@ -180,6 +181,7 @@
       var h = el('h3', null, esc(L(x.h))); sec.appendChild(h);
       if (x.judgment) sec.appendChild(el('p', { 'class': 'judgment' }, md(L(x.judgment))));
       if (x.intro) sec.appendChild(el('p', { 'class': 'lead' }, md(L(x.intro))));
+      if (x.viz && window.ATLAS_VIZ) [].concat(x.viz).forEach(function (v) { window.ATLAS_VIZ.mount(sec, v); });
       if (x.items) sec.appendChild(renderItems(x.items));
       if (x.table) sec.appendChild(renderTable(x.table));
     });
@@ -291,6 +293,7 @@
       if (P.judgment) main.appendChild(el('p', { 'class': 'judgment' }, md(L(P.judgment))));
       if (P.intro) main.appendChild(el('p', { 'class': 'lead' }, md(L(P.intro))));
       if (P.pending) main.appendChild(el('p', { 'class': 'notice' }, esc(ui('notYetWritten'))));
+      if (P.viz && window.ATLAS_VIZ) [].concat(P.viz).forEach(function (v) { window.ATLAS_VIZ.mount(main, v); });
     }
     if (PAGE === 'index') {
       var sh = el('section', { 'class': 'reveal' }); sh.appendChild(el('h2', null, esc(ui('statusH')))); statusStrip(sh); main.appendChild(sh);
@@ -306,8 +309,40 @@
     if (PAGE === 'sources') sourcesList(main);
     if (window.ATLAS_PAGE_HOOK) window.ATLAS_PAGE_HOOK(main, { L: L, ui: ui, md: md, esc: esc, cites: cites, el: el, lang: lang, store: store });
     footer();
+    toc(main);
     if (location.hash) { var t = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (t) t.scrollIntoView(); }
     motion();
+  }
+
+  // On-page section index with scroll-spy, for pages with four or more sections
+  function toc(main) {
+    var secs = [].filter.call(main.querySelectorAll('section[id]'), function (s) { return s.querySelector('h2'); });
+    if (secs.length < 4) return;
+    var nav = el('nav', { 'class': 'toc', 'aria-label': ui('tocLabel') });
+    var links = secs.map(function (s) {
+      var a = el('a', { href: '#' + s.id }, esc(s.querySelector('h2').textContent));
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        s.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+        history.replaceState(null, '', '#' + s.id);
+      });
+      nav.appendChild(a);
+      return a;
+    });
+    document.body.appendChild(nav);
+    body.classList.add('has-toc');
+    if (!('IntersectionObserver' in window)) return;
+    var active = null;
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var i = secs.indexOf(e.target);
+        if (active) active.classList.remove('on');
+        active = links[i]; active.classList.add('on');
+        if (nav.scrollWidth > nav.clientWidth) nav.scrollTo({ left: active.offsetLeft - 16, behavior: 'smooth' });
+      });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+    secs.forEach(function (s) { io.observe(s); });
   }
 
   function motion() {

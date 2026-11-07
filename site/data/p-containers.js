@@ -209,6 +209,33 @@ window.ATLAS.pages = window.ATLAS.pages || {};
       {
         id: 'writing-changes',
         h: s('近兩季改了什麼（常被寫錯的地方）', 'What changed in the last two cycles (often misreported)'),
+        viz: {
+          type: 'budget',
+          title: s('學生能寫的最長一格是 650 字；一項活動的描述只有 150 字元', 'The longest box a student writes is 650 words; an activity description gets 150 characters'),
+          subtitle: s('字元與英文字數是不同單位，兩組各用自己的軸，不能互相比長短。數值只取官方頁查得到的。', 'Characters and words are different units, so each group has its own axis and the two should not be compared by length. Values are only those an official page states.'),
+          groups: [
+            {
+              label: s('以字元計的欄位', 'Fields counted in characters'), unit: 'chars',
+              items: [
+                { label: s('Activities：「What was your role?」', 'Activities: "What was your role?"'), value: 50, src: ['A1-S6', 'A1-S8', 'A1-S31'], note: s('2026–27 起為選填，先答是否有特定職位。', 'Optional from 2026–27, after a yes/no on whether there was a specific role.') },
+                { label: s('Activities：組織或團體', 'Activities: organization or group'), value: 100, src: ['A1-S6', 'A1-S31'] },
+                { label: s('Activities：活動描述', 'Activities: description'), value: 150, src: ['A1-S6', 'A1-S31'], note: s('最多 10 項，每項一格。', 'One box per entry, up to 10 entries.') },
+                { label: s('Honors：名稱', 'Honors: title'), value: 100, src: ['A1-S6', 'A1-S12', 'C1-S34', 'C1-S38'], note: s('出自 2026–27 Data Catalog；一般公開說明頁沒有印出這個數字。', 'From the 2026–27 Data Catalog; the general public pages checked do not print this figure.') },
+                { label: s('UC Activities & awards：描述', 'UC Activities & awards: description'), value: 350, src: ['A2-S6', 'A2-S3'], note: s('出自 UCSB 校區工作表（2026-06-11）；UC 系統層級頁面沒有寫上限。', 'From a UCSB campus worksheet dated 2026-06-11; the systemwide UC page states no limit.') },
+                { label: s('UC Additional comments（Academic history）', 'UC Additional comments (Academic history)'), value: 550, src: ['C1-S39', 'C1-S40'], note: s('是 550 字元，不是字；PIQ 後的一般 Additional comments 在 UC 頁面上沒有寫上限。', '550 characters, not words; the general Additional comments box after the PIQs has no limit on the UC pages checked.') }
+              ]
+            },
+            {
+              label: s('以英文字數計的欄位', 'Fields counted in words'), unit: 'words',
+              items: [
+                { label: s('Common App 個人主文', 'Common App personal essay'), value: 650, src: ['A1-S6', 'A1-S12'], note: s('250–650 字。', '250 to 650 words.') },
+                { label: s('Additional information', 'Additional information'), value: 300, src: ['A1-S6', 'A1-S12', 'A1-S10'], note: s('2024–25 是 650 字，2025–26 起改為 300。', '650 words in 2024–25; 300 from 2025–26.') },
+                { label: s('Challenges and circumstances', 'Challenges and circumstances'), value: 250, src: ['A1-S6', 'A1-S12', 'A1-S9'], note: s('2025–26 新增。', 'Introduced in 2025–26.') },
+                { label: s('UC PIQ（每題，共答 4 題）', 'UC PIQ (each; 4 answered)'), value: 350, src: ['A2-S1'], note: s('8 題選 4。', 'Answer 4 of 8 prompts.') }
+              ]
+            }
+          ]
+        },
         judgment: s('Additional information 從 2025–26 起就是 300 字，不是 650；仍寫 650 的指南說的是 2024–25 的欄位。', 'Additional information has been 300 words since 2025–26, not 650; guides that still say 650 describe the 2024–25 field.'),
         items: [
           f('**Additional information：300 字**（2025–26 起；2024–25 為 650 字）。2026–27 維持 300。', '**Additional information: 300 words** (since 2025–26; it was 650 in 2024–25). 2026–27 keeps 300.', ['A1-S10', 'A1-S9', 'A1-S6', 'A1-S12']),
@@ -344,6 +371,67 @@ window.ATLAS.pages = window.ATLAS.pages || {};
       {
         id: 'who-can-submit',
         h: s('學生與學校以外的人，能把東西交進哪裡？', 'Where can a party who is neither the student nor the school submit anything?'),
+        viz: {
+          type: 'flow', wide: true,
+          title: s('每條進到學校的路都要經過一張表單；校外的人只走虛線', 'Every path into a college runs through a form; adults from outside school enter only on the dashed lines'),
+          subtitle: s('把游標移到方塊上（手機上點一下）可看經過它的所有路徑；虛線表示「學校接受那個類型才行」。', 'Hover over a box (tap on a phone) to trace every path through it. Dashed lines work only where the college accepts that type.'),
+          columns: [{ label: s('誰', 'Who') }, { label: s('容器', 'Container') }, { label: s('申請系統', 'System') }, { label: s('學校', 'College') }],
+          nodes: [
+            { id: 'student', col: 0, tone: 'person', label: s('學生', 'Student'), sub: s('My Common Application 各區全部由學生填寫。', 'Fills every section of My Common Application.'), src: ['A1-S12', 'A1-S35'] },
+            { id: 'counselor', col: 0, tone: 'person', label: s('輔導老師', 'Counselor'), sub: s('School Report、Counselor Recommendation、Mid-Year 與 Final Report。', 'School Report, Counselor Recommendation, Mid-Year and Final Reports.'), src: ['A1-S14', 'A1-S20'] },
+            { id: 'teacher', col: 0, tone: 'person', label: s('老師', 'Teacher'), sub: s('教過學生學科的老師。', 'Someone who has taught the student an academic subject.'), src: ['A1-S13', 'A1-S20'] },
+            { id: 'otherrec', col: 0, tone: 'person', label: s('Other Recommender', 'Other Recommender'), sub: s('8 種類型：Arts Teacher、Clergy、Coach、College Access Counselor、Employer、Family Member、Peer、Other。', '8 types: Arts Teacher, Clergy, Coach, College Access Counselor, Employer, Family Member, Peer, Other.'), src: ['A1-S20', 'A1-S21'] },
+            { id: 'outside', col: 0, tone: 'person', label: s('校外指導者（實驗室、大學教授）', 'Outside mentor (lab, professor)'), sub: s('沒有自己的表單；研究指導者算不算可接受的 Other Recommender，未載明（查核 2026-11-07）。', 'Has no form of its own; whether a research mentor counts as an acceptable Other Recommender is not stated (checked 2026-11-07).'), src: ['A1-S20', 'A1-S21', 'A1-S22'] },
+            { id: 'ca', col: 1, tone: 'container', label: s('Common App 各區（活動描述 150 字元）', 'Common App sections (activity line 150 chars)'), src: ['A1-S12', 'A1-S6'] },
+            { id: 'addl', col: 1, tone: 'container', label: s('Additional information（300 字）', 'Additional information (300 words)'), src: ['A1-S6', 'A1-S12'] },
+            { id: 'supp', col: 1, tone: 'container', label: s('各校題目與 writing supplement', 'College questions and writing supplement'), sub: s('字數由各校自訂。', 'Each college sets its own counts.'), src: ['A1-S35', 'A1-S42'] },
+            { id: 'sr', col: 1, tone: 'container', label: s('School Report＋成績單', 'School Report + transcript'), src: ['A1-S14', 'A1-S20'] },
+            { id: 'te', col: 1, tone: 'container', label: s('推薦表：Teacher Evaluation', 'Recommendation form: Teacher Evaluation'), sub: s('16 列評分（選填）與上傳的信。', '16 optional ratings and an uploaded letter.'), src: ['A1-S13', 'A1-S6'] },
+            { id: 'oe', col: 1, tone: 'container', label: s('推薦表：Other Evaluation', 'Recommendation form: Other Evaluation'), sub: s('關係與認識多久各 20 字元、一封上傳的信；沒有評分表。', 'Relationship and length known, 20 characters each, plus one uploaded letter; no rating grid.'), src: ['A1-S15', 'A1-S6'] },
+            { id: 'ucapp', col: 1, tone: 'container', label: s('UC：PIQ 4 題＋Activities & awards', 'UC: 4 PIQs + Activities & awards'), sub: s('PIQ 8 題選 4，每題最多 350 字。', 'Answer 4 of 8 PIQs, up to 350 words each.'), src: ['A2-S1', 'A2-S7'] },
+            { id: 'mitapp', col: 1, tone: 'container', label: s('MIT 申請表：短文、4 項活動', 'MIT form: essays, 4 activities'), src: ['A2-S22'] },
+            { id: 'portal', col: 1, tone: 'container', label: s('SlideRoom／學校自己的入口', 'SlideRoom / college portal'), src: ['A2-S25', 'A2-S18'] },
+            { id: 'commonapp', col: 2, tone: 'system', label: s('Common App', 'Common App'), sub: s('每季最多送 20 所學校。', 'Up to 20 colleges per cycle.'), src: ['A1-S4', 'A1-S37'] },
+            { id: 'uc', col: 2, tone: 'system', label: s('UC Application', 'UC Application'), sub: s('申請時不收推薦信。', 'Takes no letters with the application.'), src: ['A2-S8'] },
+            { id: 'mit', col: 2, tone: 'system', label: s('MIT 自有申請', 'MIT\'s own application'), src: ['A2-S22'] },
+            { id: 'coalition', col: 2, tone: 'system', label: s('Coalition on Scoir', 'Coalition on Scoir'), sub: s('Part 1 送出後不能改；Part 2 在學校自己的入口完成。', 'Part 1 cannot be edited after submission; Part 2 is done on each college\'s portal.'), src: ['A2-S18'] },
+            { id: 'college', col: 3, tone: 'college', label: s('各校招生辦公室', 'Each college\'s admissions office'), sub: s('各校決定要求幾封老師推薦、接受哪些 Other Recommender 類型。', 'Each college sets how many teacher letters it requires and which Other Recommender types it accepts.'), src: ['A1-S20', 'A1-S22'] }
+          ],
+          links: [
+            { from: 'student', to: 'ca', src: ['A1-S12'] },
+            { from: 'student', to: 'addl', src: ['A1-S6', 'A1-S12'] },
+            { from: 'student', to: 'supp', src: ['A1-S35'] },
+            { from: 'student', to: 'ucapp', src: ['A2-S1'] },
+            { from: 'student', to: 'mitapp', src: ['A2-S22'] },
+            { from: 'student', to: 'portal', label: s('MIT 的作品集經 SlideRoom；Coalition 的 Part 2 在學校入口', 'MIT portfolios via SlideRoom; Coalition Part 2 on the college portal'), src: ['A2-S25', 'A2-S18'] },
+            { from: 'counselor', to: 'sr', src: ['A1-S14', 'A1-S20'] },
+            { from: 'teacher', to: 'te', src: ['A1-S13', 'A1-S20'] },
+            { from: 'otherrec', to: 'oe', dashed: true, label: s('學校接受那個類型才能指派', 'Assignable only where the college accepts that type'), src: ['A1-S22', 'A1-S20'] },
+            { from: 'outside', to: 'oe', dashed: true, label: s('以 8 種類型之一受邀；學校收不收由學校設定', 'Invited under one of the 8 types; the college\'s settings decide'), src: ['A1-S20', 'A1-S21', 'A1-S22'] },
+            { from: 'outside', to: 'te', dashed: true, label: s('只限教過學生的大學教師，以 Teacher 身分受邀', 'Only a college instructor who taught the student, invited as Teacher'), src: ['A1-S23', 'A1-S13'] },
+            { from: 'ca', to: 'commonapp', src: ['A1-S12'] },
+            { from: 'addl', to: 'commonapp', src: ['A1-S6'] },
+            { from: 'supp', to: 'commonapp', src: ['A1-S35'] },
+            { from: 'sr', to: 'commonapp', src: ['A1-S14'] },
+            { from: 'te', to: 'commonapp', src: ['A1-S20'] },
+            { from: 'oe', to: 'commonapp', src: ['A1-S20'] },
+            { from: 'sr', to: 'mit', label: s('SSR', 'SSR'), src: ['A2-S24'] },
+            { from: 'te', to: 'mit', label: s('兩位老師推薦', 'Two teacher letters'), src: ['A2-S24'] },
+            { from: 'sr', to: 'coalition', label: s('Scoir 高中在 Part 1 送出後寄送文件', 'Scoir high schools send documents after Part 1'), src: ['A2-S18'] },
+            { from: 'ucapp', to: 'uc', src: ['A2-S1'] },
+            { from: 'mitapp', to: 'mit', src: ['A2-S22'] },
+            { from: 'portal', to: 'mit', label: s('Maker、Research、藝術作品集', 'Maker, Research and arts portfolios'), src: ['A2-S25'] },
+            { from: 'portal', to: 'coalition', label: s('Part 2：各校補充題', 'Part 2: college questions'), src: ['A2-S18'] },
+            { from: 'commonapp', to: 'college', label: s('每封推薦信只有一個版本，寄給所有被指派的學校', 'One version of each letter goes to every assigned college'), src: ['A1-S20'] },
+            { from: 'uc', to: 'college', src: ['A2-S1'] },
+            { from: 'mit', to: 'college', src: ['A2-S22'] },
+            { from: 'coalition', to: 'college', src: ['A2-S18'] }
+          ],
+          legend: [
+            { label: s('一般路徑', 'Path'), shape: 'line', color: '#b2b7bf' },
+            { label: s('學校接受才行', 'Only if the college accepts it'), shape: 'dash' }
+          ]
+        },
         judgment: s('在 Common App 裡，校外的人只有一個通用入口：以 Other Recommender 身分交一封信，而且學校要接受那個類型；論文、專題紀錄、作品集沒有共同的容器。', 'Inside Common App, an outside party has one general entry point: one letter as an Other Recommender, and only where the college accepts that type. Papers, project records and portfolios have no shared container.'),
         table: {
           cols: [s('誰', 'Party'), s('容器', 'Container'), s('交什麼', 'What they submit'), s('上限', 'Limits'), s('門檻', 'Gate')],

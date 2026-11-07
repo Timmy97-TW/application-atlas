@@ -903,6 +903,14 @@ window.ATLAS.pages = window.ATLAS.pages || {};
           'Most schools use Common App, want two teacher letters and require SAT/ACT; the exceptions are in the detail, so filter to see where your schools fall.'),
         intro: s('「Other Recommender」欄記錄學校是否接受老師與 counselor 以外的推薦信（例如研究 mentor、教練、雇主）；下拉選單的「接受 Other Recommender」只標出頁面明說接受額外推薦信的學校。',
           'The Other Recommender column records whether a school accepts a letter from someone other than teachers and the counselor (a research mentor, coach or employer). The drop-down option "Other Recommender accepted" marks only schools whose pages say an extra letter is accepted.'),
+        viz: [
+          { type: 'waffle', field: 'testPolicy',
+            title: s('2026–27：12 校 SAT/ACT 必繳，12 校選繳，3 所 UC 完全不看', '2026–27: 12 schools require SAT/ACT, 12 make it optional, and the 3 UC campuses do not consider it'),
+            subtitle: s('每格一所學校，依各校官方頁面的 2026–27 政策分組；滑過或點一下看校名與來源。', 'One square per school, grouped by the 2026–27 policy on its official pages; hover or tap for the name and source.') },
+          { type: 'waffle', field: 'needPolicy',
+            title: s('對國際生 need-blind 的只有 6 校；8 校不給國際生 need-based 補助', 'Only 6 schools are need-blind for international applicants; 8 give them no need-based aid'),
+            subtitle: s('虛線格是頁面沒有明寫的 6 校，不代表沒有政策。', 'Dashed squares are the 6 schools whose pages do not say outright; that is not the same as having no policy.') }
+        ],
         table: {
           cols: COLS,
           rows: rows,
@@ -935,6 +943,9 @@ window.ATLAS.pages = window.ATLAS.pages || {};
           'About a third of the schools let you declare after you arrive; the rest fix the college or major on the application, and at UIUC, Berkeley and UW a student not admitted to CS at entry has almost no later route in.'),
         intro: s('本節依 2026-11-07 讀過的學校官方頁面整理。「有容量上限」只在頁面自己寫明取決於名額、容量或「space available」時才標，單純審查競爭不算。「未載明」只代表列出的頁面沒寫。Michigan、Williams 與 JHU 工學院網站對一般請求回 HTTP 403，全部以瀏覽器讀取。Michigan 與 Williams 的科系層級頁面已於 2026-11-07 08:00 補讀，兩校的格子不再是未核實；JHU 工學院仍未重讀。',
           'Compiled from the schools\' own pages, read on 2026-11-07. A major counts as capped only where the page itself ties entry to seats, capacity or "space available"; a competitive review alone does not count. "Not stated" means only that the listed pages are silent. Michigan, Williams and the JHU engineering site return HTTP 403 to plain requests and were all read in a browser. The major-level pages for Michigan and Williams were read at 08:00 on 2026-11-07, so those cells are no longer unverified; the JHU engineering site has still not been re-read.'),
+        viz: { type: 'entry-strip',
+          title: s('16 校在申請時就定下工程學院；生物則有 14 校的頁面沒寫', '16 schools fix the engineering college at application; for biology, 14 schools\' pages do not say'),
+          subtitle: s('每條 30 所學校；滑過色段看是哪些學校。虛線段是讀過的頁面沒寫的學校。', 'Each bar is all 30 schools; hover a segment to see which. The dashed segment is schools whose pages read do not say.') },
         table: {
           cols: [
             s('學校', 'School'),
@@ -1197,6 +1208,11 @@ window.ATLAS.pages = window.ATLAS.pages || {};
       // Section 'aid-numbers': research/2026-11-07_international-aid-numbers_v1.md (A7, local ids H01–H35).
       {
         id: 'aid-numbers',
+        viz: {
+          type: 'aid-bars', wide: true,
+          title: { zh: 'UT Austin 與 Harvard 受助非居民最多（832、805 人），平均補助卻分別占總花費 32.1% 與 87.3%。', en: 'UT Austin and Harvard aid the most nonresidents (832 and 805), but the average award covers 32.1% of cost at UT Austin and 87.3% at Harvard.' },
+          subtitle: { zh: '左：獲得學校補助的非居民人數（CDS H6，2025-26）。右：平均補助 ÷ 總花費（多為 2026-27）。兩邊學校順序相同。', en: 'Left: nonresidents receiving institutional grants (CDS H6, 2025-26). Right: average award ÷ cost of attendance (mostly 2026-27). Schools are in the same order in both.' }
+        },
         h: s('國際生實際拿到多少補助：CDS H6 與學費', 'How much aid international students actually receive: CDS H6 and cost'),
         judgment: s('讀到 H6 的 24 校中，14 所私校受助國際生的平均補助占校內總花費 74–94%；CMU、Georgia Tech、UW 勾選「not available」；UT Austin 受助人數最多（832 人），平均補助卻只占總花費 32.1%。',
           'Of the 24 schools whose H6 was read, 14 private schools gave aided nonresidents an average award equal to 74–94% of on-campus cost; CMU, Georgia Tech and UW mark aid "not available"; UT Austin aids the most nonresidents (832), but its average award covers 32.1% of cost.'),

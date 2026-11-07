@@ -17,6 +17,11 @@ window.ATLAS.pages['insights'] = {
  "sections": [
   {
    "id": "cds",
+   "viz": {
+    "type": "cds-heatmap", "wide": true,
+    "title": { "zh": "28 校中有 25 校把課程難度勾為「非常重要」；27 校不考慮宗教。", "en": "Course rigor is marked Very important at 25 of 28 schools; religious affiliation is not considered at 27." },
+    "subtitle": { "zh": "每一格是該校在自己的 Common Data Set（多為 2025-26）裡替一項 C7 因素勾的等級。點欄名可依該因素排序。", "en": "Each cell is the mark a school gave one C7 factor in its own Common Data Set (mostly 2025-26). Click a column name to sort by it." }
+   },
    "h": {
     "zh": "Common Data Set C7：各校自己勾選的審查因素",
     "en": "Common Data Set C7: the factors each school marks for itself"
@@ -5924,6 +5929,19 @@ window.ATLAS.pages['insights'] = {
   },
   {
    "id": "numbers",
+   "viz": [
+    {
+     "type": "admit-dumbbell",
+     "title": { "zh": "有公布 ED 人數的 9 校，ED 錄取率都高於整體錄取率。", "en": "At all 9 schools that report ED counts, the ED admit rate is above the overall admit rate." },
+     "subtitle": { "zh": "整體錄取率（空心圈）與 ED 錄取率（實心點），取自各校最新 CDS 的 C1 與 C21，畫在同一條從 0 起算的軸上。第二個檢視列出有 C1 數字的 27 校整體錄取率。", "en": "Overall admit rate (ring) and ED admit rate (dot) from C1 and C21 of each school's newest CDS, on one shared scale that starts at 0. The second view shows the overall rate for all 27 schools with C1 figures." },
+     "note": { "zh": "ED 申請池與整體申請池是不同的一群人：ED 申請者承諾錄取就入學，而 CDS 沒有拆開 ED 申請池的組成。兩個比例只並列、不相除；差距不能解讀成「選 ED 本身會提高機會」。", "en": "The ED pool and the overall pool are different groups of applicants: ED applicants commit to enrol if admitted, and the CDS does not report who makes up the ED pool. The two rates are shown side by side, never divided; the gap does not show that applying ED by itself raises an applicant's chances." }
+    },
+    {
+     "type": "share-bars", "metric": "nonresidentShare",
+     "title": { "zh": "有數字的 27 校中，非居民占新生的比例從 3.8%（UT Austin）到 18.1%（UC San Diego）。", "en": "Nonresidents make up between 3.8% (UT Austin) and 18.1% (UC San Diego) of first-years at the 27 schools with figures." },
+     "subtitle": { "zh": "B2 非居民新生 ÷ C1 入學新生。非居民（nonresident）依簽證身分區分，不是國籍。", "en": "B2 nonresident first-years ÷ C1 enrolled first-years. Nonresident is a visa category, not a nationality." }
+    }
+   ],
    "h": {
     "zh": "Common Data Set 數字：申請人數、錄取率、ED、候補、送分比例、國際生比例",
     "en": "Common Data Set numbers: applicants, admit rates, ED, waitlist, test submission, nonresident share"

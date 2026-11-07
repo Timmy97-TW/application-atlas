@@ -365,8 +365,8 @@ window.ATLAS.pages = window.ATLAS.pages || {};
   window.ATLAS.pages["portfolios"] = {
     title: s("作品集與補充材料：30 校 × 5 種材料", "Portfolios and supplementary materials: 30 schools × 5 kinds of material"),
     judgment: s(
-      "30 校中，明文設 maker／工程作品集類別的只有 MIT 與 Caltech，設研究管道的有 8 校；UC Berkeley、UW、UIUC 一律不收補充材料；另有 7 校網站拒絕自動讀取，格子留空待查。",
-      "Of the 30 schools, only MIT and Caltech name a maker or engineering portfolio, and 8 name a research channel. UC Berkeley, UW and UIUC take no supplementary material at all. Seven schools' sites refused automated reading, so their cells are open."
+      "30 校中，設有專門 maker／工程作品集上傳管道的只有 MIT 與 Caltech（Olin 歡迎以連結或 email 寄送，但不保證審閱），設研究管道的有 8 校；UC Berkeley、UW、UIUC 一律不收補充材料；另有 7 校網站拒絕自動讀取，格子留空待查。",
+      "Of the 30 schools, only MIT and Caltech have a dedicated upload for a maker or engineering portfolio (Olin welcomes one by link or email but does not promise review), and 8 name a research channel. UC Berkeley, UW and UIUC take no supplementary material at all. Seven schools' sites refused automated reading, so their cells are open."
     ),
     intro: s(
       "每一格都來自學校官方頁面，存取日 2026-11-07。格子裡的順序是：收不收、走哪個管道、上限、截止、誰審、學校自己怎麼說（引文 15 字以內）。頁面沒寫就標「未載明」，不以推測補上。引文是以自動擷取的文字抄錄，上線前應對照原頁再確認。「網站拒絕自動讀取」是工具限制，不是對該校政策的判斷。",
@@ -384,6 +384,11 @@ window.ATLAS.pages = window.ATLAS.pages || {};
           "篩選選單的意思是「該校接受這種材料」（含只限特定主修或只在作品集內）。色點標示來源類別，灰格為未載明。",
           "The filter menu means “the school accepts this material” (including major-specific or inside-a-portfolio cases). Dots mark the source class; grey cells are not stated."
         ),
+        viz: {
+          type: "matrix-grid",
+          title: s("只有 2 校有專門的 maker 作品集管道，藝術作品集則有 13 校", "Only 2 schools have a dedicated maker-portfolio channel; 13 accept an arts portfolio"),
+          subtitle: s("每列一校、每欄一種材料。滑過符號看該格全文與來源，點一列展開五格全文；下方表格保留完整文字。", "One row per school, one column per material. Hover a glyph for the cell in full with its source; click a row to open all five cells. The full-text table below stays as the reference.")
+        },
         table: {
           filter: true,
           facets: [
