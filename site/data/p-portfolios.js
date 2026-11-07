@@ -105,7 +105,21 @@ window.ATLAS.pages = window.ATLAS.pages || {};
     ns(["B2-S15"])
   ]);
 
-  row("Princeton", "", five(blocked("certificate rejected", ["B2-S16"])));
+  row("Princeton", "arts", [
+    f("接受，而且是唯一的選填補充項目：建築、創意寫作、舞蹈、音樂、音樂劇、戲劇、視覺藝術。要先在 Princeton 專屬問題裡宣告，再從 applicant status portal 交，而且只能在申請送出之後——截止 11/6（SCEA）與 1/8（RD），都落在申請日 11/1、1/1 之後。審閱者未載明。QuestBridge Match 參加者因時程不能交。",
+      "Yes, and it is the only optional supplement: architecture, creative writing, dance, music, music theater, theater, visual arts. Declared in the Princeton-specific questions and submitted through the applicant status portal, and only after the application itself — due Nov 6 (SCEA) and Jan 8 (RD), both after the Nov 1 and Jan 1 application dates. Reviewer not stated. QuestBridge Match participants cannot submit one, for timing reasons.",
+      ["V4-T3", "V4-T4"]),
+    f("未載明任何 maker 或工程作品集：申請清單上的選填項目只有藝術補充。反方向的事實是，全體必繳的 graded written paper 明寫偏好論說分析寫作，“rather than science research, creative writing, personal narratives or papers mostly focused on data analysis”——工程申請者手上最強的那份寫作，正好是這一格不要的。",
+      "No maker or engineering portfolio is stated: the only optional component on the application checklist is the arts supplement. The fact pointing the other way is that the graded written paper required of everyone is “most interested in seeing expository, thesis-driven analytical writing rather than science research, creative writing, personal narratives or papers mostly focused on data analysis” — the strongest piece of writing an engineering applicant holds is exactly what that slot does not want.",
+      ["V4-T1", "V4-T3"]),
+    f("未載明研究論文或摘要的管道：讀過的四頁上，選填項目只有藝術補充，沒有 research supplement。",
+      "No channel for a research paper or abstract is stated: on the four pages read, the arts supplement is the only optional component and no research supplement appears.",
+      ["V4-T3"]),
+    f("沒有影片管道。唯一跟錄製有關的規定是反方向的：選擇性校友面試 “must not be recorded in any way, either by the interviewer or the applicant”。",
+      "No video channel at all. The only rule about recording runs the other way: the optional alumni interview “must not be recorded in any way, either by the interviewer or the applicant”.",
+      ["V4-T3"]),
+    ns(["V4-T3"])
+  ]);
   row("Columbia", "", five(blocked("HTTP 403", ["B2-S18"])));
 
   row("UPenn", "arts video links", [
@@ -173,11 +187,23 @@ window.ATLAS.pages = window.ATLAS.pages || {};
   row("Georgia Tech", "", [ns(["B2-S32", "B2-S33"]), ns(["B2-S32", "B2-S33", "B3-S24"]), ns(["B2-S32", "B2-S33"]), ns(["B2-S32", "B2-S33"]), ns(["B2-S32", "B2-S33"])]);
 
   row("Purdue", "", five(f(
-    "B2 查的頁面拒絕自動讀取（2026-11-07，certificate rejected）；B3 讀到的 first-year 頁面只有截止日，未提作品集或連結。待人工查核。",
-    "The page checked for B2 refused automated reading on 2026-11-07 (certificate rejected); the first-year page read for B3 gives deadlines only and says nothing on portfolios or links. Needs a manual check.",
-    ["B2-S34", "B3-S34"])));
+    "2026-11-07 清晨四頁都讀到了（apply、first-year criteria、international、english-proficiency），上面沒有任何作品集、補充材料、影片或連結的管道，審查因素清單裡也沒有這類項目——那份清單只有修課要求、成績、考試成績（若有提供）、英語能力、在所選主修成功的能力、文書與 Purdue 專屬問題、課外活動與領導、申請者特有的機會。未載明，不是拒收。",
+    "Four pages were read on 2026-11-07 (apply, first-year criteria, international, english-proficiency) and none names a portfolio, a supplementary-material channel, a video or a link field; the review-factor list carries no such item either — it holds course expectations, grades, test scores if provided, English proficiency, ability to succeed in the intended major, the essay and Purdue questions, activities and leadership, and opportunities unique to the applicant. Not stated, not refused.",
+    ["V4-T8", "V4-T9", "V4-T10", "V4-T14"])));
 
-  row("Michigan", "", five(blocked("HTTP 403", ["B2-S35", "B3-S44"])));
+  row("Michigan", "", [
+    f("一般申請者沒有管道：“Do not submit additional documents unless specifically requested, as this may delay your decision.” 唯一的例外是自己另有申請流程的學院——音樂、戲劇與舞蹈學院的申請截止日是 12/1，不是 11/1 或 2/1。",
+      "No channel for the general applicant: “Do not submit additional documents unless specifically requested, as this may delay your decision.” The one exception is a school with its own process — the School of Music, Theatre & Dance applies by Dec 1, not Nov 1 or Feb 1.",
+      ["V4-T13"]),
+    f("未載明。requirements 頁的清單只有 Common App、報名費、成績單、School Report、一封老師推薦信、選繳的 SAT／ACT 與非母語者的英語考試；同一頁明寫除非特別要求不要補交文件。",
+      "Not stated. The requirements page lists only the Common Application, the fee, a transcript, the School Report, one teacher evaluation, optional SAT/ACT and an English test for non-native speakers; the same page says not to send extra documents unless specifically requested.",
+      ["V4-T13"]),
+    f("未載明；同樣落在「除非特別要求，不要補交其他文件」之下。",
+      "Not stated; it falls under the same line, “Do not submit additional documents unless specifically requested”.",
+      ["V4-T13"]),
+    ns(["V4-T13"]),
+    ns(["V4-T13"])
+  ]);
 
   row("UIUC", "arts", [
     f("只在有要求時：“An audition, portfolio, or interview may be required for Fine and Applied Arts applicants.” 管道、上限、截止未載明。",
@@ -236,7 +262,23 @@ window.ATLAS.pages = window.ATLAS.pages || {};
     f("未設連結欄位；額外資訊請放 Additional Information。", "No link field stated; extra information goes in Additional Information.", ["B2-S43", "B1-P17"])
   ]);
 
-  row("Northwestern", "", five(blocked("certificate rejected", ["B2-S44"])));
+  row("Northwestern", "video", [
+    f("未經要求的藝術作品集不收：“Northwestern does not accept unsolicited supplemental items, such as artwork, portfolios, recordings (CDs, DVDs, etc.) or websites (including social media). These items will not be reviewed and therefore should not be submitted.” 只有科系自己要求時才有管道：Bienen School of Music 的補充表、prescreening 或作品集材料與試奏（截止日早於一般申請），以及音樂劇。",
+      "Unsolicited arts portfolios are refused: “Northwestern does not accept unsolicited supplemental items, such as artwork, portfolios, recordings (CDs, DVDs, etc.) or websites (including social media). These items will not be reviewed and therefore should not be submitted.” A channel exists only where a programme asks for one: the Bienen School of Music supplement, its prescreening or portfolio materials and auditions (with deadlines earlier than the general application), and Musical Theater.",
+      ["V4-T5", "V4-T6"]),
+    f("不收。“portfolios” 直接寫在拒收清單上，而且那句以 “will not be reviewed” 結尾，不是「不建議」。",
+      "Not accepted. “Portfolios” is named in the refusal list, and the sentence ends “will not be reviewed”, not with a discouragement.",
+      ["V4-T6"]),
+    f("沒有研究補充管道，未經要求的補充材料一律不收。Integrated Science Program 是另一份獨立申請，不是研究作品的入口；錄取 Northwestern 不代表錄取 ISP，ISP 的結果也不影響一般錄取。",
+      "No research supplement channel, and unsolicited supplements are refused across the board. The Integrated Science Program is a separate application, not a route for research work; admission to Northwestern does not imply admission to ISP and the ISP outcome does not affect the general decision.",
+      ["V4-T5", "V4-T6"]),
+    f("接受，但只走指定管道，而且錄音錄影光碟這類未經要求的材料不收。Glimpse：60–90 秒影片，給從美國高中申請的人。InitialView：給從國際高中申請的人，而且 InitialView “does not review or rate the interviews”，評分只由招生委員會做。兩者都是選繳、不做也不吃虧，截止 ED 11/6、RD 1/16。",
+      "Accepted, but only through the named channels, while unsolicited recordings are refused. Glimpse: a 60–90 second video for applicants from US high schools. InitialView: for applicants from international high schools, and InitialView “does not review or rate the interviews” — evaluation is by the admissions committee only. Both are optional with no disadvantage for skipping them, due Nov 6 for ED and Jan 16 for RD.",
+      ["V4-T5", "V4-T6"]),
+    f("明文不收：拒收清單把 “websites (including social media)” 點名在內。對「校外多年紀錄怎麼進申請」這個問題，Northwestern 的答案是連結不行、作品集不行，只有活動表、文書與那封額外推薦信可以。",
+      "Refused in writing: the refusal list names “websites (including social media)”. On the question of how a multi-year outside record enters an application, Northwestern’s answer is that a link does not and a portfolio does not — only the activity chart, the essays and the supplemental letter do.",
+      ["V4-T6", "V4-T5"])
+  ]);
 
   row("Rice", "arts video links", [
     f("Architecture 作品集必交（PDF ≤15 MB，≤10 頁加封面）；Art 作品集選交（≤10 個檔案、每個 10 MB，動態影像合計 ≤5 分鐘，不收 PDF）。Rice Admission Student Portal。截止跟申請（ED I 11/1；RD／ED II 1/4）；Shepherd 音樂 12/1。“PDF documents should not be submitted and will not be reviewed”（Art）",
@@ -288,7 +330,21 @@ window.ATLAS.pages = window.ATLAS.pages || {};
     "No: applicants are asked not to send “supplemental materials such as drawings, links to websites”.",
     ["B2-S55"])));
 
-  row("Williams", "", five(blocked("HTTP 403", ["B2-S56"])));
+  row("Williams", "arts research video", [
+    f("接受：studio／performing arts 作品集走 SlideRoom，由教師（faculty）審閱。選繳。",
+      "Yes: a studio or performing arts portfolio through SlideRoom, reviewed by faculty. Optional.",
+      ["V4-T11"]),
+    f("未載明 maker 或工程作品集。選繳的學術寫作樣本可以是任何主題、不必有分數、可以是課堂手寫作業，但同一段後面接著 “Please do not submit lab reports.”",
+      "No maker or engineering portfolio is stated. The optional academic writing supplement may be on any topic, need not be graded and may be an in-class handwritten assignment, but the same passage continues: “Please do not submit lab reports.”",
+      ["V4-T11"]),
+    f("接受，而且是獨立的一條管道：“If you’ve pursued significant scientific or mathematical research and are considering a research or academic career, we welcome a brief description of your work”——可以寫在申請表裡，也可以 email。寫作樣本那一格不要實驗報告，科學研究卻在這裡有自己的位置。",
+      "Yes, and as a channel of its own: “If you’ve pursued significant scientific or mathematical research and are considering a research or academic career, we welcome a brief description of your work” — on the application or by email. The writing-sample slot refuses lab reports; scientific research has its own place here instead.",
+      ["V4-T11"]),
+    f("接受兩種：有研究的申請者可另附一段 VIVA 錄影，讓 Williams “can hear you speak about your research”；國際申請者可分享 InitialView 錄影，雖然 “Williams does not offer interviews”。兩者都是選繳。",
+      "Two kinds accepted: an applicant with research may add a VIVA recording so Williams “can hear you speak about your research”; international applicants may share an InitialView recording although “Williams does not offer interviews”. Both optional.",
+      ["V4-T11"]),
+    ns(["V4-T11"])
+  ]);
   row("Amherst", "", five(blocked("HTTP 405", ["B2-S57"])));
 
   row("Swarthmore", "arts research video", [
@@ -550,10 +606,11 @@ window.ATLAS.pages = window.ATLAS.pages || {};
               ns(["B3-S24", "B3-S26", "B3-S28"]),
               f("“we do not accept separate resumes”；推薦信最多 3 封（輔導老師與教師）；2026–27 取消補充作文。", "“we do not accept separate resumes”; up to 3 optional letters (counselor and teachers); supplemental essay dropped for 2026–27.", ["B3-S24", "B3-S25", "B3-S27"])],
             ["Purdue",
-              ns(["B3-S34"]), ns(["B3-S34"]), ns(["B3-S34"]),
-              f("讀到的頁面只有截止：EA 11/1（工程優先截止）、RD 1/15。", "The page read gives deadlines only: EA Nov 1 (engineering priority), RD Jan 15.", ["B3-S34"])],
+              ns(["B3-S34", "V4-T9"]), ns(["B3-S34", "V4-T9"]), ns(["B3-S34", "V4-T9"]),
+              f("2026-11-07 讀到四頁，沒有一頁提到作品集、研究材料或連結欄。審查因素清單也沒有推薦信。申請期 8/1–1/15；EA 11/1 是“the Nov. 1 Early Action deadline that encompasses scholarship consideration”，也是工程的優先截止；RD 1/15。所有主修都要四年數學與三年實驗科學。", "Four pages read on 2026-11-07, none of which mentions a portfolio, research material or a link field. The review-factor list carries no letters of recommendation either. The window is Aug 1 to Jan 15; EA Nov 1 is “the Nov. 1 Early Action deadline that encompasses scholarship consideration” and the engineering priority date; RD Jan 15. Four years of mathematics and three of laboratory science are required for every major.", ["B3-S34", "V4-T8", "V4-T9"])],
             ["Michigan",
-              blocked("HTTP 403", ["B3-S44"]), blocked("HTTP 403", ["B3-S44"]), blocked("HTTP 403", ["B3-S44"]), blocked("HTTP 403", ["B3-S44"])],
+              ns(["B3-S44", "V4-T13"]), ns(["B3-S44", "V4-T13"]), ns(["B3-S44", "V4-T13"]),
+              f("“Do not submit additional documents unless specifically requested, as this may delay your decision.” 清單上只有一封老師推薦信，但那一封可以來自核心學科老師“or other non-relative”，所以校外 mentor 的入口在推薦信這一格，不在補充材料。", "“Do not submit additional documents unless specifically requested, as this may delay your decision.” The checklist carries a single teacher evaluation, but it may come from a core academic teacher “or other non-relative”, so an outside mentor enters through the letter rather than through supplementary material.", ["V4-T13"])],
             ["UIUC",
               f("不收：“we don't accept letter of recommendation or other unsolicited materials”。", "No: “we don't accept letter of recommendation or other unsolicited materials”.", ["B3-S35"]),
               inf("同一條規則應適用於研究材料（頁面未特別點名）。", "The same rule would cover research material (the page does not name it).", ["B3-S35"]),
@@ -643,13 +700,18 @@ window.ATLAS.pages = window.ATLAS.pages || {};
                 ["Duke", "—", f("不收（點名 research abstracts）。", "Not accepted (names research abstracts).", ["B2-S43"])],
                 ["UC Berkeley, UW, UIUC", "—", f("不收任何補充或未要求的材料。", "No supplemental or unsolicited material accepted.", ["B2-S47", "B2-S55", "B2-S36"])],
                 ["Stanford, Cornell, Georgetown, Georgia Tech, Olin, Rice, UCLA, UC San Diego, UT Austin", "—", ns(["B2-S12", "B2-S28", "B2-S29", "B2-S32", "B2-S38", "B2-S46", "B2-S50", "B2-S51", "B2-S54"])],
-                ["Princeton, Columbia, Purdue, Michigan, Northwestern, Williams, Amherst", "—", blocked("certificate rejected / HTTP 403 / 405", ["B2-S16", "B2-S17", "B2-S18", "B2-S34", "B2-S35", "B2-S44", "B2-S56", "B2-S57"])]
+                ["Williams", "申請表或 email ／ application or email", f("“we welcome a brief description of your work”，給已投入 significant scientific or mathematical research 的人；可另附 VIVA 錄影講自己的研究。", "“we welcome a brief description of your work”, for an applicant who has pursued significant scientific or mathematical research; an optional VIVA recording may be added to talk about it.", ["V4-T11"])],
+                ["Northwestern", "—", f("不收未經要求的補充材料，拒收清單含 artwork、portfolios、recordings 與 websites。", "Unsolicited supplements are refused; the list names artwork, portfolios, recordings and websites.", ["V4-T6"])],
+                ["Princeton", "—", f("沒有研究管道：選填項目只有藝術補充。必繳的 graded written paper 不是這個欄位的東西，而且明寫偏好論說分析寫作而非 science research。", "No research channel: the arts supplement is the only optional component. The required graded written paper does not belong in this column, and it explicitly prefers expository analytical writing over science research.", ["V4-T1", "V4-T3"])],
+                ["Michigan", "—", f("“Do not submit additional documents unless specifically requested.”", "“Do not submit additional documents unless specifically requested.”", ["V4-T13"])],
+                ["Purdue", "—", ns(["V4-T8", "V4-T9", "V4-T10"])],
+                ["Columbia, Amherst", "—", blocked("HTTP 403 / 405", ["B2-S18", "B2-S57"])]
               ]
             },
             items: [
               f("Yale 說研究全文“generally the most helpful”；Harvey Mudd 請學生不要上傳全文。同一份東西，指示相反。", "Yale calls full research papers “generally the most helpful”; Harvey Mudd asks students not to upload them. Same artefact, opposite instruction.", ["B2-S15", "B2-S40"]),
               f("Caltech 的研究管道以實驗室隸屬與論文狀態為門檻；獨立研究改走 STEM 作品集。", "Caltech's research channel is gated on lab affiliation and paper status; independent work goes to the STEM portfolio.", ["B2-S5"]),
-              asm("Princeton 的 graded written paper 是學校課業的寫作樣本，與研究論文不同；頁面本次無法讀取，未查證，先不放進研究欄。", "Princeton's graded written paper is a school-coursework writing sample, not a research paper; its page could not be read, so this is unverified and kept out of the research column.", ["B2-S17"]),
+              f("Princeton 的 graded written paper 是學校課業的寫作樣本，不是研究論文——2026-11-07 讀到該頁後確認：它要英文、社會或歷史課的評分作業，並明寫偏好論說分析寫作而非 science research，所以不列入研究欄。", "Princeton's graded written paper is a school-coursework writing sample, not a research paper. Confirmed on reading the page on 2026-11-07: it asks for graded work from an English, social studies or history course and explicitly prefers expository analytical writing over science research, so it stays out of the research column.", ["V4-T1", "V4-T3"]),
               inf("讀到的學校沒有一所點名「實驗紀錄」（筆記本、原始數據）；被點名的是論文、摘要、海報與指導者推薦。實驗紀錄須整理成其中一種才放得進現有管道。", "No school read names a lab record (notebook, raw data); the named artefacts are paper, abstract, poster and mentor letter. A lab record has to be condensed into one of those to fit a stated channel.", ["B2-S1", "B2-S5", "B2-S15", "B2-S22"])
             ]
           },

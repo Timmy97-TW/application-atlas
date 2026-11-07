@@ -15,8 +15,8 @@ window.ATLAS.pages = window.ATLAS.pages || {};
       'The busiest point of the year is 1–2 November, when 19 of the 30 schools close an early round. International aid deadlines run from the same day as the application to about a month later, so no single rule covers them.'
     ),
     intro: s(
-      '本頁的日期全部取自各校官方頁面，存取日 2026-11-07；頁面沒寫的就標「未載明」，不以推測補上。讀者設定為人在台灣（UTC+8）的國際申請者：截止時間是「申請者當地時間」還是「學校所在地時間」，只在頁面有寫的學校註明（見下方「年度時程」的說明條目）。Michigan 的官方網域於存取當日回傳 HTTP 403，整列留空。',
-      'Every date on this page comes from the school\'s own pages, accessed 2026-11-07; where a page is silent the cell says "not stated" instead of guessing. The reader is assumed to be an international applicant based in Taiwan (UTC+8). Whether a deadline runs on the applicant\'s local clock or the school\'s clock is given only for schools whose pages say so (see the notes under the G12 timeline). Michigan\'s official domains returned HTTP 403 on the access date, so its row is empty.'
+      '本頁的日期全部取自各校官方頁面，存取日 2026-11-07；頁面沒寫的就標「未載明」，不以推測補上。讀者設定為人在台灣（UTC+8）的國際申請者：截止時間是「申請者當地時間」還是「學校所在地時間」，只在頁面有寫的學校註明（見下方「年度時程」的說明條目）。Michigan 的官方網域對一般請求回傳 HTTP 403，但 2026-11-07 清晨用瀏覽器讀到了 requirements 與 essay 兩頁，整列已填上。',
+      'Every date on this page comes from the school\'s own pages, accessed 2026-11-07; where a page is silent the cell says "not stated" instead of guessing. The reader is assumed to be an international applicant based in Taiwan (UTC+8). Whether a deadline runs on the applicant\'s local clock or the school\'s clock is given only for schools whose pages say so (see the notes under the G12 timeline). Michigan\'s official domains return HTTP 403 to plain requests, but its requirements and essay pages were read in a browser early on 2026-11-07, so its row is now filled in.'
     ),
     sections: [
       {
@@ -481,8 +481,8 @@ window.ATLAS.pages = window.ATLAS.pages || {};
           'Early rounds differ in what they bind you to: ED is binding, REA/SCEA restrict other early applications, Georgetown\'s EA bars binding ED elsewhere, and UC and UW have no early round at all.'
         ),
         intro: s(
-          '日期照頁面原樣寫：頁面有印年份才寫年份。用上方選單可只看某一種計畫（ED、EA、REA／SCEA、ED II、RD、UC）。Michigan、Williams、Amherst 的官方網站當日拒絕自動擷取，相關格子標「未載明」並附來源；Northwestern 的資料來自搜尋引擎對官方頁面的節錄，需以瀏覽器重查。',
-          'Dates are written as the page prints them, with a year only where the page gives one. Use the selector to show one plan type (ED, EA, REA/SCEA, ED II, RD, UC). Michigan, Williams and Amherst refused automated retrieval on the access date, so their cells say "not stated" with the source attached; Northwestern\'s rows come from a search engine\'s rendering of the official pages and need a browser re-check.'
+          '日期照頁面原樣寫：頁面有印年份才寫年份。用上方選單可只看某一種計畫（ED、EA、REA／SCEA、ED II、RD、UC）。Michigan、Williams、Northwestern 三列已於 2026-11-07 清晨改寫為學校自己頁面上的日期：Michigan 與 Williams 的站台對一般請求仍回 HTTP 403，但瀏覽器打得開；Northwestern 的主機恢復正常回應。Amherst 的日期取自 2026-11-07 的瀏覽器複查。',
+          'Dates are written as the page prints them, with a year only where the page gives one. Use the selector to show one plan type (ED, EA, REA/SCEA, ED II, RD, UC). The Michigan, Williams and Northwestern rows were rewritten from the schools\' own pages early on 2026-11-07: Michigan\'s and Williams\'s sites still return HTTP 403 to plain requests but open in a browser, and Northwestern\'s host answered normally again. Amherst\'s dates come from the browser pass of 2026-11-07.'
         ),
         table: {
           filter: true,
@@ -551,7 +551,7 @@ window.ATLAS.pages = window.ATLAS.pages || {};
             ] },
             { filter: 'REA RD', cells: [
               'Princeton',
-              f('SCEA 11/1（藝術補充 11/6）', 'Single-Choice Early Action, Nov 1 (arts supplement Nov 6)', ['A3a-S41']),
+              f('SCEA 11/1：申請、graded paper、School Report、輔導老師信、成績單與兩封老師推薦信同日；藝術補充 11/6，只能在申請送出之後從 portal 交', 'Single-Choice Early Action, Nov 1: the application, graded paper, School Report, counselor letter, transcript and both teacher evaluations are all due that day; the arts supplement is Nov 6 and can only be submitted through the portal after the application', ['A3a-S41', 'V4-T3', 'V4-T4']),
               f('1/1（藝術補充 1/8）', 'Jan 1 (arts supplement Jan 8)', ['A3a-S41']),
               f('SCEA 12 月中；RD 3 月下旬', 'SCEA mid-December; RD late March', ['A3a-S41']),
               f('PFAA：EA 11/9、RD 2/1。「Princeton admission is need-blind」，錄取國際生補足全額需求。', 'PFAA: Nov 9 (EA) / Feb 1 (RD). "Princeton admission is need-blind"; full need met for admitted international students.', ['A3a-S41', 'A3a-S43', 'A3a-S45']),
@@ -627,17 +627,17 @@ window.ATLAS.pages = window.ATLAS.pages || {};
               f('1/15', 'Jan 15', ['A3a-S80']),
               f('EA 1/15 公布；RD 3/31 前', 'EA decisions Jan 15; RD by Mar 31', ['A3a-S80']),
               ns(['A3a-S81', 'A3a-S83']),
-              f('「accepts SAT, ACT and CLT scores」，審查因素寫「(if provided)」；是否必繳頁面未寫', '"accepts SAT, ACT and CLT scores"; the factor list says "(if provided)"; whether tests are required is not stated', ['A3a-S82']),
+              f('「Purdue accepts SAT, ACT and CLT scores. We have no preference on which test you take.」審查因素寫「(if provided)」，是否必繳頁面未寫；同一種考試可跨考期組合最高分，成績須五年內，ACT 不需要單獨的 science 分數', '"Purdue accepts SAT, ACT and CLT scores. We have no preference on which test you take." The factor list says "(if provided)" and no requirement is stated; highest section scores may be combined across dates for a given test, scores must be within five years, and no separate ACT science score is needed', ['A3a-S82', 'V4-T9']),
               f('「Beginning in 2026」印第安納州法要求對持特定國籍者（含中國、香港、澳門）增加審查步驟', '"Beginning in 2026, Indiana law requires additional review steps" for holders of listed citizenships, including China (with Hong Kong and Macau)', ['A3a-S83'])
             ] },
-            { filter: '', cells: [
-              f('Michigan（Ann Arbor）：官方網域於 2026-11-07 回傳 HTTP 403，未讀到內容，所有欄位留空、不推測', 'Michigan (Ann Arbor): official domains returned HTTP 403 on 2026-11-07; nothing was read, so every cell is left empty and nothing is inferred', ['A3a-S84', 'A3a-S85']),
-              ns(['A3a-S84']),
-              ns(['A3a-S84']),
-              ns(['A3a-S84']),
-              ns(['A3a-S85']),
-              ns(['A3a-S84']),
-              ns(['A3a-S84'])
+            { filter: 'ED EA RD', cells: [
+              'Michigan（Ann Arbor）',
+              f('ED 11/1 與 EA 11/1（同一天，important-dates 清單上並列）；ED 補助 11/15；ED 訂金 1/6。ED 同意書要申請人、家長或監護人與輔導老師簽名，且「All three signatures must be together」。音樂、戲劇與舞蹈學院 12/1', 'ED Nov 1 and EA Nov 1 (the same day; both appear on the important-dates list); ED aid Nov 15; ED enrolment deposit Jan 6. The Early Decision Agreement must be signed by the applicant, a parent or guardian and the high school counselor, and "All three signatures must be together". School of Music, Theatre & Dance Dec 1', ['V4-T13']),
+              f('2/1（夏季半學期同日；冬季班 10/1）', 'Feb 1 (summer half term the same day; winter term Oct 1)', ['V4-T13']),
+              f('ED 12/24 前；EA 1/29 前；RD 4/2 前；訂金 5/1', 'ED by Dec 24; EA by Jan 29; RD by April 2; enrolment deposit May 1', ['V4-T13']),
+              f('EA／RD 補助 3/1，ED 補助 11/15。持臨時簽證者不符 need-based 補助，獎學金「very limited」', 'EA/RD aid Mar 1, ED aid Nov 15. Students on temporary visas are not eligible for need-based aid and scholarships are "very limited"', ['V4-T13', 'A5a-S85', 'A4-S66']),
+              f('選繳：想列入考慮才交；自填成績截止日 ED／EA 11/1、RD 2/1', 'Optional: submit only if you want scores considered; self-report deadlines Nov 1 for ED/EA and Feb 1 for RD', ['V4-T13', 'A4-S64']),
+              f('新增 Early Decision（先前本站只有搜尋摘要）；同頁並寫「We are modifying our admissions process and requirements.」', 'An Early Decision plan has been added (this site previously had only search summaries), and the same page says "We are modifying our admissions process and requirements."', ['V4-T13'])
             ] },
             { filter: 'EA RD', cells: [
               'UIUC',
@@ -686,12 +686,12 @@ window.ATLAS.pages = window.ATLAS.pages || {};
             ] },
             { filter: 'ED RD', cells: [
               'Northwestern',
-              f('ED 2026/11/1（搜尋節錄，待重查）', 'Early Decision, Nov 1, 2026 (search snippet; re-check)', ['A3b-S16']),
-              f('2027/1/4（搜尋節錄）', 'Jan 4, 2027 (search snippet)', ['A3b-S16']),
-              f('ED 2026 年 12 月；RD 2027 年 3 月（搜尋節錄）', 'ED December 2026; RD March 2027 (search snippet)', ['A3b-S16']),
-              f('國際生 need-aware，須在申請表勾選；CSS Profile（code 1565）或 ISAFA。補助截止日未在官方頁驗證（搜尋節錄）。', 'Need-aware for international aid applicants, opt-in on the application; CSS Profile (code 1565) or ISAFA. Aid deadlines not verified on an official page (search snippet).', ['A3b-S19']),
-              f('不要求 ACT／SAT（搜尋節錄）', 'ACT/SAT not required (search snippet)', ['A3b-S17', 'A3b-S18']),
-              f('2026 冬季 counselor update 表示 test-optional 延續（搜尋節錄）', 'Winter 2026 counselor update says test-optional continues (search snippet)', ['A3b-S18'])
+              f('ED 2026/11/1；QuestBridge 2026/10/1。Glimpse／InitialView 錄影 11/6', 'ED Nov 1, 2026; QuestBridge Oct 1, 2026. Glimpse / InitialView recordings Nov 6', ['V4-T7', 'V4-T5']),
+              f('2027/1/4；Glimpse／InitialView 錄影 1/16', 'Jan 4, 2027; Glimpse / InitialView recordings Jan 16', ['V4-T7', 'V4-T5']),
+              f('2026 年 12 月起放榜', 'Decisions from December 2026', ['V4-T7']),
+              f('ED 補助 2026/12/1；RD 補助 2027/2/1；兩種方案的補助政策相同。國際生 need-aware，須在申請表勾選；CSS Profile（code 1565）或 ISAFA', 'ED aid Dec 1, 2026; RD aid Feb 1, 2027; aid is the same under either plan. Need-aware for international aid applicants, opt-in on the application; CSS Profile (code 1565) or ISAFA', ['V4-T7', 'V4-T5', 'A3b-S19']),
+              f('一年級與轉學生皆選繳，SAT 與 ACT 無偏好；SAT superscore 自動處理，ACT superscore 必須是官方 MyACT 的，不能自己算', 'Optional for first-year and transfer applicants, with no preference between the SAT and ACT; SAT superscoring is automatic, while an ACT superscore must be the official MyACT one and must not be self-calculated', ['V4-T5']),
+              f('不再要求 Common App 主文書（頁面原文「the Common/Coalition Application personal essay, which we no longer require」）；上一季約 50% 新生來自 ED。本列原本全部是搜尋節錄，2026-11-07 已換成官方頁面', 'The Common App personal essay is no longer required ("the Common/Coalition Application personal essay, which we no longer require"); about 50% of last year\'s entering class came from ED. This row was entirely search snippets until 2026-11-07, when the school\'s own pages replaced them', ['V4-T5'])
             ] },
             { filter: 'ED EDII RD', cells: [
               'Rice',
@@ -747,14 +747,14 @@ window.ATLAS.pages = window.ATLAS.pages || {};
               f('已取消 SAT／ACT 要求（2020-06-11 宣布）', 'SAT/ACT requirement removed (announced 2020-06-11)', ['A3b-S37']),
               ns(['A3b-S35'])
             ] },
-            { filter: '', cells: [
-              f('Williams：官方網站於 2026-11-07 回傳 HTTP 403；Common App 頁面仍顯示 2025–26 日期（ED 2025/11/15、RD 2026/1/5）', 'Williams: official site returned HTTP 403 on 2026-11-07; its Common App listing still showed 2025–26 dates (ED Nov 15, 2025; RD Jan 5, 2026)', ['A3b-S48', 'A3b-S39']),
-              ns(['A3b-S39', 'A3b-S48']),
-              ns(['A3b-S39', 'A3b-S48']),
-              ns(['A3b-S39', 'A3b-S48']),
+            { filter: 'ED RD', cells: [
+              'Williams',
+              f('ED 11/15，須附 Early Decision Agreement Form', 'ED Nov 15, with the Early Decision Agreement Form', ['V4-T11']),
+              f('1/4（不綁約）', 'Jan 4 (non-binding)', ['V4-T11']),
+              f('ED 12/14 前；RD 4/1；5/1 前回覆', 'ED by Dec 14; RD April 1; reply by May 1', ['V4-T11']),
               f('Common App 頁面：提供國際生補助；need 政策與文件未寫', 'Common App listing: offers aid for international students; need policy and documents not stated', ['A3b-S39']),
-              f('Common App 頁面：「Test Optional/Flexible」（該頁可能未更新至 2026–27）', 'Common App listing: "Test Optional/Flexible" (the listing may not be updated for 2026–27)', ['A3b-S39']),
-              ns(['A3b-S48'])
+              f('「Williams is truly test optional」；SAT 與 ACT 都 superscore，新舊 ACT 之間也 superscore；新版 ACT 的 science 分項選繳；申請截止前都可以改變要不要送分', '"Williams is truly test optional"; it superscores the SAT and ACT, including across the legacy and enhanced ACT; the enhanced ACT science section is optional; an applicant may change their mind about submitting scores at any point before the deadline', ['V4-T11']),
+              f('RD 由 Common App 頁面上的 1/5 變成學校自己頁面的 1/4——該名錄到 2026-11-07 仍顯示 2025–26 的日期，不是改期', 'RD reads Jan 4 on the school\'s own page against Jan 5 on the Common App listing — that listing still showed 2025–26 dates on 2026-11-07, so this is a stale listing rather than a change', ['V4-T11', 'A3b-S39'])
             ] },
             { filter: 'ED RD', cells: [
               f('Amherst：官方網站於 2026-11-07 回傳 HTTP 405，未讀到內容', 'Amherst: official site returned HTTP 405 on 2026-11-07; nothing read', ['A3b-S49']),
@@ -811,8 +811,8 @@ window.ATLAS.pages = window.ATLAS.pages || {};
             '**Not used (test-free/blind)**: UC Berkeley, UCLA and UC San Diego do not use SAT/ACT in admission (UC Regents 2020 decision, extended to nonresidents in August 2020). UW removed its requirement in 2020 but still lists a Dec 31 score deadline.',
             ['A3b-S27', 'A3b-S30', 'A3b-S31', 'A3b-S25', 'A3b-S37', 'A3b-S36']),
           inf('UW 的 12/31 成績截止，適用於選擇提交成績的申請者。', 'UW\'s Dec 31 score deadline applies to applicants who choose to report scores.', ['A3b-S36', 'A3b-S37']),
-          f('**頁面未說清楚**：Purdue 說「accepts SAT, ACT and CLT scores」，審查因素寫「(if provided)」，未寫是否必繳。Williams、Amherst 只有 Common App 頁面的「Test Optional/Flexible」。Michigan 未讀到。',
-            '**Unclear on the page**: Purdue "accepts SAT, ACT and CLT scores" and lists them "(if provided)" without saying whether they are required. Williams and Amherst have only the Common App listing\'s "Test Optional/Flexible". Michigan was not read.',
+          f('**頁面未說清楚**：只剩 Purdue——它說「accepts SAT, ACT and CLT scores」，審查因素寫「(if provided)」，未寫是否必繳。Williams 自己的頁面寫「Williams is truly test optional」；Michigan 的 requirements 頁寫想列入考慮才交，自填截止 11/1 與 2/1；Amherst 由 2026-11-07 的瀏覽器複查確認選繳。',
+            '**Unclear on the page**: only Purdue is left — it "accepts SAT, ACT and CLT scores" and lists them "(if provided)" without saying whether they are required. Williams\'s own page says "Williams is truly test optional"; Michigan\'s requirements page says to submit only if you want scores considered, with self-report deadlines of Nov 1 and Feb 1; and Amherst was confirmed optional in the browser pass of 2026-11-07.',
             ['A3a-S82', 'A3b-S39', 'A3b-S40', 'A3a-S84'])
         ]
       },

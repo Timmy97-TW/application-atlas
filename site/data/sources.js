@@ -69,6 +69,14 @@ window.ATLAS.sourceGroups = {
   "zh": "B1 上傳入口分類",
   "en": "B1 Portal taxonomy"
  },
+ "V6": {
+  "zh": "princeton-wording-and-major-level",
+  "en": "princeton-wording-and-major-level"
+ },
+ "V5": {
+  "zh": "Purdue 推薦信政策與 Northwestern ISP",
+  "en": "Purdue letters policy and Northwestern ISP"
+ },
  "B5": {
   "zh": "B5 審查端（官方說法）",
   "en": "B5 Reader side, official statements"
@@ -13273,6 +13281,230 @@ window.ATLAS.sources = {
   "note": {
    "zh": "研究筆記：2026-11-07_portal-taxonomy_v1.md",
    "en": "Research note: 2026-11-07_portal-taxonomy_v1.md"
+  }
+ },
+ "V6-P1": {
+  "url": "https://admission.princeton.edu/blogs/authentically-you-application-essays-and-ai",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V6",
+  "title": {
+   "zh": "Princeton Dean of Admission, 1 Sept 2026: 'We are not looking for perfect. We're looking for authentic.' and what Princeton says it looks for",
+   "en": "Princeton Dean of Admission, 1 Sept 2026: 'We are not looking for perfect. We're looking for authentic.' and what Princeton says it looks for"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_princeton-wording-and-major-level_v1.md",
+   "en": "Research note: 2026-11-07_princeton-wording-and-major-level_v1.md"
+  }
+ },
+ "V6-P2": {
+  "url": "https://admission.princeton.edu/apply/before-you-apply/helpful-tips",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V6",
+  "title": {
+   "zh": "Princeton's actual what-we-look-for page: intellectual curiosity, academic excellence, personal and extracurricular accomplishment, write in your own voice",
+   "en": "Princeton's actual what-we-look-for page: intellectual curiosity, academic excellence, personal and extracurricular accomplishment, write in your own voice"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_princeton-wording-and-major-level_v1.md",
+   "en": "Research note: 2026-11-07_princeton-wording-and-major-level_v1.md"
+  }
+ },
+ "V6-M1": {
+  "url": "https://admissions.umich.edu/academics-majors/majors-degrees",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V6",
+  "title": {
+   "zh": "Michigan: applicants apply to one of 15 schools and colleges, not to the university; ten units accept first-year applications including Engineering; biology sits in LSA; major usually not indicated until end of sophomore year",
+   "en": "Michigan: applicants apply to one of 15 schools and colleges, not to the university; ten units accept first-year applications including Engineering; biology sits in LSA; major usually not indicated until end of sophomore year"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_princeton-wording-and-major-level_v1.md",
+   "en": "Research note: 2026-11-07_princeton-wording-and-major-level_v1.md"
+  }
+ },
+ "V6-M2": {
+  "url": "https://admissions.umich.edu/apply/first-year-applicants/essay-questions",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V6",
+  "title": {
+   "zh": "Michigan: the school/college-specific essay, 100-550 words, required of all applicants; the 100-300 word contribution essay",
+   "en": "Michigan: the school/college-specific essay, 100-550 words, required of all applicants; the 100-300 word contribution essay"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_princeton-wording-and-major-level_v1.md",
+   "en": "Research note: 2026-11-07_princeton-wording-and-major-level_v1.md"
+  }
+ },
+ "V6-M3": {
+  "url": "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V6",
+  "title": {
+   "zh": "Michigan: the list of schools and colleges with additional application requirements, which does not include Engineering; the banner saying the admissions process is being modified",
+   "en": "Michigan: the list of schools and colleges with additional application requirements, which does not include Engineering; the banner saying the admissions process is being modified"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_princeton-wording-and-major-level_v1.md",
+   "en": "Research note: 2026-11-07_princeton-wording-and-major-level_v1.md"
+  }
+ },
+ "V6-M5": {
+  "url": "https://www.engin.umich.edu/admissions/undergraduate-admissions/first-year-admissions/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V6",
+  "title": {
+   "zh": "Michigan Engineering: admission criteria based on preparation to pursue an engineering degree, emphasis on precalculus chemistry and physics, no single qualification assures admission, Integrated Business and Engineering needs the Ross portfolio",
+   "en": "Michigan Engineering: admission criteria based on preparation to pursue an engineering degree, emphasis on precalculus chemistry and physics, no single qualification assures admission, Integrated Business and Engineering needs the Ross portfolio"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_princeton-wording-and-major-level_v1.md",
+   "en": "Research note: 2026-11-07_princeton-wording-and-major-level_v1.md"
+  }
+ },
+ "V6-M6": {
+  "url": "https://www.engin.umich.edu/admissions/undergraduate-admissions/cross-campus-admissions/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V6",
+  "title": {
+   "zh": "Michigan Engineering cross-campus transfer: a year in the home unit first, prerequisites with C or better, GPA 2.5 does not guarantee admission, 55-credit ceiling",
+   "en": "Michigan Engineering cross-campus transfer: a year in the home unit first, prerequisites with C or better, GPA 2.5 does not guarantee admission, 55-credit ceiling"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_princeton-wording-and-major-level_v1.md",
+   "en": "Research note: 2026-11-07_princeton-wording-and-major-level_v1.md"
+  }
+ },
+ "V6-M7": {
+  "url": "https://lsa.umich.edu/lsa/prospective-students/undergraduate/admissions.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V6",
+  "title": {
+   "zh": "LSA tells applicants to apply specifically to the College of Literature, Science, and the Arts; biology is one of its 85+ majors",
+   "en": "LSA tells applicants to apply specifically to the College of Literature, Science, and the Arts; biology is one of its 85+ majors"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_princeton-wording-and-major-level_v1.md",
+   "en": "Research note: 2026-11-07_princeton-wording-and-major-level_v1.md"
+  }
+ },
+ "V6-W2": {
+  "url": "https://catalog.williams.edu/degree-requirements/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V6",
+  "title": {
+   "zh": "Williams: the B.A. is the only degree, the full majors list contains no engineering, and a major is declared in spring of sophomore year",
+   "en": "Williams: the B.A. is the only degree, the full majors list contains no engineering, and a major is declared in spring of sophomore year"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_princeton-wording-and-major-level_v1.md",
+   "en": "Research note: 2026-11-07_princeton-wording-and-major-level_v1.md"
+  }
+ },
+ "V6-W3": {
+  "url": "https://catalog.williams.edu/curricular-opportunities/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V6",
+  "title": {
+   "zh": "Williams combined programme in liberal arts and engineering: 3-2 with Columbia and 2-1-1-1 with Dartmouth, the engineering degree conferred by the partner",
+   "en": "Williams combined programme in liberal arts and engineering: 3-2 with Columbia and 2-1-1-1 with Dartmouth, the engineering degree conferred by the partner"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_princeton-wording-and-major-level_v1.md",
+   "en": "Research note: 2026-11-07_princeton-wording-and-major-level_v1.md"
+  }
+ },
+ "V6-W5": {
+  "url": "https://www.williams.edu/admission-aid/how-to-apply/first-year/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V6",
+  "title": {
+   "zh": "Williams first-year checklist in full; it contains no major, school or programme selection; two admission officers review every application",
+   "en": "Williams first-year checklist in full; it contains no major, school or programme selection; two admission officers review every application"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_princeton-wording-and-major-level_v1.md",
+   "en": "Research note: 2026-11-07_princeton-wording-and-major-level_v1.md"
+  }
+ },
+ "V5-U1": {
+  "url": "https://admissions.purdue.edu/support-your-student/counselors/need-to-know/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V5",
+  "title": {
+   "zh": "Purdue: letters of recommendation are not required, and one submitted is included in the review",
+   "en": "Purdue: letters of recommendation are not required, and one submitted is included in the review"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_purdue-letters-and-isp_v1.md",
+   "en": "Research note: 2026-11-07_purdue-letters-and-isp_v1.md"
+  }
+ },
+ "V5-U2": {
+  "url": "https://admissions.northwestern.edu/apply/requirements.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V5",
+  "title": {
+   "zh": "Northwestern: ISP needs a separate second application, admission to NU is not admission to ISP, materials list deferred to the ISP site, calculus and science preparation",
+   "en": "Northwestern: ISP needs a separate second application, admission to NU is not admission to ISP, materials list deferred to the ISP site, calculus and science preparation"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_purdue-letters-and-isp_v1.md",
+   "en": "Research note: 2026-11-07_purdue-letters-and-isp_v1.md"
+  }
+ },
+ "V5-U3": {
+  "url": "https://isp.northwestern.edu/admissions/applying/",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V5",
+  "title": {
+   "zh": "ISP: the two application processes are separate and sequential, this cycle described as closed, no materials enumerated",
+   "en": "ISP: the two application processes are separate and sequential, this cycle described as closed, no materials enumerated"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_purdue-letters-and-isp_v1.md",
+   "en": "Research note: 2026-11-07_purdue-letters-and-isp_v1.md"
+  }
+ },
+ "V5-U4": {
+  "url": "https://isp.northwestern.edu/admissions/deadlines.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V5",
+  "title": {
+   "zh": "ISP may be applied to under either early or regular decision, its deadline falls after Northwestern's, late applications considered but at a disadvantage",
+   "en": "ISP may be applied to under either early or regular decision, its deadline falls after Northwestern's, late applications considered but at a disadvantage"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_purdue-letters-and-isp_v1.md",
+   "en": "Research note: 2026-11-07_purdue-letters-and-isp_v1.md"
+  }
+ },
+ "V5-U5": {
+  "url": "https://isp.northwestern.edu/admissions/qualifications.html",
+  "accessed": "2026-11-07",
+  "cls": "official",
+  "group": "V5",
+  "title": {
+   "zh": "ISP: AP and IB scores must be reported to Northwestern or the ISP decision may be delayed",
+   "en": "ISP: AP and IB scores must be reported to Northwestern or the ISP decision may be delayed"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-07_purdue-letters-and-isp_v1.md",
+   "en": "Research note: 2026-11-07_purdue-letters-and-isp_v1.md"
   }
  },
  "B5-S01": {
