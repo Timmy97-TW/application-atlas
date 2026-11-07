@@ -42,6 +42,10 @@ prerequisites. Write for all three without naming anyone else.
    than the maintainer as repo owner. Personas are fictional composites and say
    so on their page. `private/` is gitignored; anything institution-specific
    lives there and is never referenced from site content.
+   A brief reports that the excluded-names check ran and what it found; it never
+   writes the pattern out. Spelling the excluded words into a brief puts them in
+   a committed file in a public repo, which is the thing the check exists to
+   prevent — a 2026-11-07 brief did exactly that and was redacted.
 8. No third-party logos, trademarks, or copyrighted screenshots as decoration.
    A cropped screenshot of an official public page is allowed only as evidence,
    captioned with source URL and access date. Prefer linking. Diagrams are our own SVG.

@@ -7,17 +7,30 @@ Which three of the 30 schools should the two personas target, so the examples
 stay concrete? (Default if unanswered: MIT, Stanford, UC Berkeley.)
 A: Use the default (maintainer, 2026-11-07).
 
-Q002 · 2026-11-07 · A3/A5 · closed 2026-11-07 (no longer needs you — see below)
+Q002 · 2026-11-07 · A3/A5 · applied 2026-11-07 (nothing left for you here)
 RESOLVED at about 05:45 on 2026-11-07: the three hosts answered ordinary
 requests again (HTTP 200), and all ten pages below were fetched and read
 directly — see research/2026-11-07_three-blocked-hosts-read_v1.md (V4). You do
 not need to open anything. The earlier "refuses at the TLS layer, retrying is
 pointless" was a transient failure of one fetching path, written up as a
-permanent property of the sites; that correction is in the note. Applying the
-newly-read facts to the site tables is BACKLOG E8. What is still genuinely
-missing is small and named at the end of V4: Purdue's letters policy and
-English-proficiency minimums, Princeton's "not looking for perfect" wording, and
-Northwestern's ISP requirements.
+permanent property of the sites; that correction is in the note. The newly-read
+facts were written into the schools, portfolios and timeline tables before 07:00
+on 2026-11-07 (BACKLOG E8), and Michigan's and Williams's rows with them (E9);
+Purdue's English-proficiency minimums are on the site too. What is still
+genuinely missing shrank again at 08:00 on 2026-11-07 (E10):
+- **Purdue's letters policy is found and on the site.** Purdue Undergraduate
+  Admissions states it in its own voice: "Letters of recommendation aren't
+  required, but if a student submits one, we'll include it in their review."
+  It sits on a page written for counselors, not on any requirements page an
+  applicant would reach, and that page carries no publication date (V5-U1).
+- **Northwestern's ISP: the structure is published, the materials are not.**
+  The separate application, the "admitted to Northwestern first" order, either
+  round being allowed, the ISP deadline falling after Northwestern's, and the
+  calculus and science expectations are all on the site now. What the ISP
+  application actually asks is stated nowhere: the requirements page defers to
+  the ISP site and the ISP site enumerates nothing (V5-U2 to V5-U5). That is
+  Q007, and it is a gap in the public record, not in this repo's reading.
+- Still open from this group: Princeton's "not looking for perfect" wording.
 
 The original question, kept for the record:
 Michigan and Williams refuse automated reading (HTTP 403 or a
@@ -49,8 +62,13 @@ Princeton
 - https://admission.princeton.edu/apply/application-checklist
   interviews required or optional; number of teacher letters and counselor
   forms; whether supplementary materials (research, portfolios) are accepted.
-- https://admission.princeton.edu/how-apply/what-we-look (or the equivalent page)
-  does a sentence beginning roughly "We are not looking for perfect..." appear?
+- RESOLVED 2026-11-07 08:00 (E11). The sentence exists, on the admission
+  office's own blog: "We are not looking for perfect. We're looking for
+  authentic." — Dean of Admission, 1 September 2026 (V6-P1). It appears on no
+  standing policy page; a search of all 1,248 URLs in the sitemap found it only
+  there. Also note the URL asked for here, /how-apply/what-we-look-for, does
+  not exist (HTTP 404); the real equivalent is
+  /apply/before-you-apply/helpful-tips (V6-P2). Nothing for you to open.
 
 Northwestern
 - https://admissions.northwestern.edu/apply/requirements.html
@@ -116,4 +134,27 @@ download these and drop them into private/ (or paste the figures here)?
   change; Activities field character limits).
 Until then every cell they would fill stays "not stated", and the Common App
 limits on the practice walkthrough rest on the help-centre articles only.
+A:
+
+Q007 · 2026-11-07 · E10 · open
+Northwestern publishes that the Integrated Science Program needs its own
+separate application, but not what that application asks. The requirements page
+says, under its own "Supplement materials:" heading, "For an updated list of
+required materials, please see the ISP website", and the ISP page it links to
+lists nothing — no prompts, no word limits, no form, no portal link, nothing
+about letters. The 2026-27 ISP deadlines are not stated either: the published
+table is last cycle's, every date on it has passed, and the ISP page describes
+the deadline as closed.
+
+A fillable ISP application form does exist on the official ISP domain and is
+the only document anywhere with real prompts. This repo deliberately cites
+nothing from it: its embedded metadata gives a 2015 creation date, it requires
+SAT Subject Tests (discontinued in 2021) and asks for a fax number, no current
+page links to it, and its stated March 1 deadline contradicts the published
+deadline table. Treating it as current would put an eleven-year-old form's
+requirements on the site as this cycle's.
+
+So the only route to the ISP requirements is the email address on the ISP
+applying page. Do you want to write to it and paste the reply here? Until then
+the ISP materials cells stay "not stated", which is accurate.
 A:

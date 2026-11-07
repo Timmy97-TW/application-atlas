@@ -99,17 +99,20 @@ Tier 4: Williams, Amherst, Swarthmore
       transient failure of one fetching path, reported as a permanent property. Q002 no
       longer needs the maintainer. Integration of the newly-read cells into the site tables
       is E8.
-- [ ] E9 Michigan and Williams were read too (V4, T11-T13): `curl` still gets 403 from both,
-      but the browser opened both with no challenge. Integrate the same way as E8 — Williams
-      (ED Nov 15 + Agreement, RD Jan 4, Coalition on Scoir confirmed from its own page, three
-      recommendations, $65, truly test optional with cross-ACT superscoring, the four optional
-      channels including "do not submit lab reports" and the research abstract + VIVA, no
-      interviews, two officers per file) and Michigan (the new Early Decision plan and all its
-      dates, $75, ONE teacher evaluation from a core teacher "or other non-relative", "do not
-      submit additional documents unless specifically requested", and the 2026-27 essay word
-      limits: 250-650 / 250 / 100-300 / 100-550). The schools page's blocked section now holds
-      these facts in prose; the matrix cells still say "not stated".
-- [ ] E8 Integrate the V4 facts into the site tables: Princeton (graded written paper as a
+- [x] E9 Michigan and Williams integrated  ✓ 2026-11-07: site/data/p-schools.js, p-portfolios.js,
+      p-process.js, p-insights.js (from V4, T11-T13)
+      Williams: ED Nov 15 + Agreement with a Dec 14 decision, RD Jan 4 / April 1 / May 1, Apply
+      Coalition with Scoir confirmed from its own page, three recommendations, $65, "truly test
+      optional" with cross-ACT superscoring, and the four optional channels written into the
+      matrix (arts via SlideRoom, the writing sample that says "do not submit lab reports", the
+      scientific research abstract with VIVA, InitialView) plus "no interviews" and two officers
+      per file. Michigan: the new Early Decision plan and every date, $75, ONE teacher evaluation
+      from a core teacher "or other non-relative", "do not submit additional documents unless
+      specifically requested", and the 2026-27 essay limits 250-650 / 250 / 100-300 / 100-550.
+      `curl` still gets 403 from both hosts; both were read in a browser.
+- [x] E8 V4 facts integrated into the site tables  ✓ 2026-11-07: site/data/p-schools.js,
+      p-portfolios.js, p-process.js, p-insights.js
+      Written in for all three: Princeton (graded written paper as a
       required component with its subject and format rules, the two-cycle test policy, two
       teacher letters from higher-level courses in different areas, SR plus separate
       counselor letter, arts-supplement-only with portal submission after the application,
@@ -120,8 +123,12 @@ Tier 4: Williams, Amherst, Swarthmore
       Bienen and ISP, dated 2026-27 deadlines, ~50% of the class from ED), Purdue (Nov 1
       Early Action as the scholarship deadline, Aug 1 to Jan 15 window, CLT accepted, the
       factor list with no letters in it, four years of maths and three of lab science for
-      all majors, admission to a specific major). The schools, portfolios, timeline and
-      containers pages all have cells that currently read "not stated" for these three.
+      all majors, admission to a specific major). The schools, portfolios and timeline
+      pages now carry these facts; containers had no cells for these three schools. Still
+      genuinely not stated and therefore left empty: Purdue's letters-of-recommendation policy
+      (absent from all four pages read and from its review-factor list), Princeton's "not
+      looking for perfect" wording, and Northwestern's ISP requirements, which live on the ISP
+      site rather than the admissions site.
 - [x] E4 Pages that load but do not hand over their text  ✓ 2026-11-07: research/2026-11-07_recovered-pages-round-3_v1.md (V3)
       Stanford's FAQ index turned out to be retired, not gated (39-byte empty document, no
       FAQ link in the site navigation); its answers now live in accordions on each Apply
@@ -141,6 +148,56 @@ Tier 4: Williams, Amherst, Swarthmore
       Harvard's 2026-27 supplement PDF, UC's PIQ guidance PDF, and the three Common App
       webinar decks (LEAD-B19 to B21). Nothing is cited from any of them. This needs one
       download decision from the maintainer, not more research — see Q006.
+- [x] E10 Purdue's letters policy, and what Northwestern publishes about ISP  ✓ 2026-11-07: research/2026-11-07_purdue-letters-and-isp_v1.md (V5) → site/data/p-schools.js
+      Two of the four gaps run 5 named. **Purdue closes**: Purdue Undergraduate Admissions
+      states "Letters of recommendation aren't required, but if a student submits one, we'll
+      include it in their review." - on a counselor-facing updates page with no publication
+      date, not on any applicant-facing requirements page, and consistent with letters being
+      absent from both the application checklist and the review-factor list. Both facts are on
+      the site. **Northwestern ISP closes halfway**: the separate application, the
+      admitted-to-Northwestern-first order, either round being allowed, the ISP deadline falling
+      after Northwestern's, late applications considered but at a disadvantage, and the calculus
+      and four-years-of-science expectations are all written in. What the ISP application asks is
+      stated on no current page - the requirements page defers to the ISP site and the ISP site
+      enumerates nothing - and the 2026-27 ISP deadlines are not published either. That is Q007.
+      A 2015 ISP form PDF with real prompts exists on the official domain and is deliberately not
+      cited; the note records why so a later run does not mistake it for current.
+      Still open from run 5's four: Princeton's "not looking for perfect" wording, and
+      major-level admission at Michigan and Williams.
+- [x] E11 Princeton's wording, and major-level admission at Michigan and Williams  ✓ 2026-11-07: research/2026-11-07_princeton-wording-and-major-level_v1.md (V6) → site/data/p-schools.js, p-insights.js
+      The last two of run 5's four gaps. **Princeton's sentence exists** and is on the admission
+      office's own blog, bylined by the Dean of Admission and dated 1 September 2026: "We are not
+      looking for perfect. We're looking for authentic." A search of all 1,248 URLs in the
+      admission sitemap found it only there, so it is cited as a dated blog post by a named dean
+      rather than as standing policy, and it is on the insights page that way. Two corrections
+      came with it: /how-apply/what-we-look-for returns HTTP 404 and does not exist (Q002 had
+      asked Timmy to open it), and the real equivalent is /apply/before-you-apply/helpful-tips.
+      **Michigan and Williams major-level admission is now verified.** Michigan admits to a
+      school or college, not to the university; Engineering is one of the ten units taking
+      first-year applications, so engineering is a direct admit, while biology has no major-level
+      admission and goes through LSA. Every applicant writes a college-specific essay of 100-550
+      words; Engineering sets none of its own and is absent from the additional-requirements list,
+      the one exception being Integrated Business and Engineering with its Ross portfolio. Moving
+      in later costs a year in the home unit, C-or-better prerequisites and a 55-credit ceiling,
+      and GPA 2.5 "is not guaranteed admission". Williams names no major at application (declared
+      spring of sophomore year) and confers no engineering degree of its own - the 3-2 with
+      Columbia and the 2-1-1-1 with Dartmouth have the partner confer the engineering degree.
+      Still not stated: whether Michigan's Common App asks for an intended major as distinct from
+      a college, LSA's own declaration deadline, the content of Michigan's announced admissions
+      changes (the page it points to is a 404, so Michigan's rows stay liable to move), and
+      whether Williams's dual-degree programmes can be elected at application.
+- [ ] E12 Render the per-school `extra` field. Every one of the 30 schools has an
+      `extra: [...]` array in site/data/p-schools.js and nothing reads it: site/assets/js/app.js
+      has no reader for the field and the strings are absent from the rendered DOM entirely,
+      not hidden or collapsed. Researched, cited, correctly tagged per-school material has
+      been accumulating there since the first run and has never reached a reader - Purdue's
+      "you apply for admission into a specific major" and its review-factor list,
+      Northwestern's Bienen and ISP items, Michigan's and Williams's extras. The content
+      exists and is verified, so the work is a design decision rather than research: where it
+      goes on an already dense schools page, how it behaves under the official-sources-only
+      and brief-mode toggles, and which items belong on insights.html instead. Found while
+      render-checking on 2026-11-07 (run 6) and deliberately not fixed then; it is the
+      highest-value change available to the site.
 - [ ] E6 Make the research notes fully bilingual (rule 6). They are English-first with
       Chinese summaries appended; the site data is bilingual, so this is notes-only debt.
 
