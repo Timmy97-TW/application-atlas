@@ -12,6 +12,7 @@ const pages = [
   ['process.html', 'process', ['p-process.js'], ['graph.js']],
   ['containers.html', 'containers', ['p-containers.js']],
   ['schools.html', 'schools', ['p-schools.js']],
+  ['compare.html', 'compare', ['p-compare.js']],
   ['more.html', 'more', ['p-more.js']],
   ['portfolios.html', 'portfolios', ['p-portfolios.js']],
   ['record.html', 'record', ['p-record.js']],

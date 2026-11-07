@@ -410,7 +410,7 @@ window.ATLAS = window.ATLAS || {}; window.ATLAS.viz = window.ATLAS.viz || {};
       interview: s('Candidates\' Weekend 必須參加，含個別面試', 'Candidates\' Weekend required, with an interview'),
       needPolicy: 'noAid', aidAvailable: false,
       engEntry: null, engCapped: null, bioEntry: null, transfer: null,
-      materials: { arts: 'yes', maker: 'yes', research: 'ns', video: 'ns', links: 'yes' },
+      materials: { arts: 'limited', maker: 'limited', research: 'ns', video: 'ns', links: 'yes' },
       aiPolicy: true,
       src: {
         type: [], system: ['A5b-S7', 'A5b-S8'], plans: ['A3b-S6'], testPolicy: ['A4-S72', 'A3b-S5'], english: ['A4-S72', 'A4-S73'],
