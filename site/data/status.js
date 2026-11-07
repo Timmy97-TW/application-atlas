@@ -4,7 +4,7 @@ window.ATLAS.status = {
  "generated": "2026-11-07",
  "units": {
   "done": 37,
-  "total": 40
+  "total": 41
  },
  "sections": {
   "A": {
@@ -25,7 +25,7 @@ window.ATLAS.status = {
   },
   "E": {
    "done": 8,
-   "total": 11
+   "total": 12
   },
   "F": {
    "done": 4,

@@ -5,30 +5,22 @@ window.ATLAS.log = {
   {
    "file": "briefs/2026-11-07_run.md",
    "date": "2026-11-07",
-   "unit": "kickoff + A1–A5, B1–B5, C1–C4, D1–D8, F1–F4, G1–G3",
-   "status": "done (first long run; see \"Not done\")",
-   "title_zh": "第一次長時間執行：30 校研究、網站上線、模擬練習頁",
-   "title_en": "First long run: 30-school research, site live, practice walkthrough",
+   "unit": "final brief for the night of 2026-11-07 (runs 1-7)",
+   "status": "final; one step left and it needs the maintainer (merge PR #17)",
+   "title_zh": "2026-11-07 夜間總結：研究與網站完成，最後一步要人來合併",
+   "title_en": "Final brief, night of 2026-11-07: research and site done; the last step needs the maintainer",
    "done": [
-    "Kickoff stages 1–4: repo scaffold, CLAUDE.md with the 2026-11-07 overrides (public repo, GitHub Pages workflow, self-merge after checks, UK and US 31–50 added), DECISIONS, QUESTIONS, BACKLOG with sections F and G.",
-    "Scripts: `check-links.js`, `build-log.js`, `import-sources.js` (collects every note's Sources table into `site/data/sources.js`), `check-data.js` (every cited id resolves, every fact has a source, no banned words), `make-pages.js` (page shells with cache-busting).",
-    "21 research notes in `research/`, about 1,000 cited sources, nearly all official: Common App anatomy from Common App's own 2026–27 data catalog (A1), other systems (A2), calendar for all 30 schools (A3), international specifics (A4), roster (A5), portal taxonomy (B1), 30 × 5 supplementary-materials matrix (B2/B4), engineering portfolios (B3), reader side with Common Data Set C7 for 28 schools (B5), outside-record frameworks (C1–C3), AI policy (C4), UCAS and tests (F1/F2), ten UK universities (F3), US schools 31–50 (G2/G3), a Michigan addendum, and a list of leads for blocked pages.",
-    "Site pages: overview, timeline (with the G9–G11 prerequisite graph, own SVG), fields, 30 schools, schools 31–50, portfolios matrix, outside record, insights, practice walkthrough, personas (bio, EE), UK, changes, log, sources, about (decisions rendered).",
-    "Practice walkthrough (maintainer priority): Dashboard → My Colleges → seven common sections with field labels, types, required flags and limits from the 2026–27 data catalog → per-college questions and writing supplements (Stanford, Johns Hopkins, Cornell, CMU, Harvard) → recommenders and FERPA → fee/fee waiver and signature → UC tab with PIQs. Live counters, ticks, fictional prefill, outside-record annotations. Labelled under rule 9.",
-    "Checks at every merge: `check-data.js` 0 problems; pages rendered in a browser with no console errors (zh and en; the walkthrough also at 375 px with no horizontal scroll).",
-    "Deep dives added after the first brief: Common Data Set numbers for 27 schools (admit rates, ED vs overall, waitlist, test submission, nonresident share — shown side by side, no multipliers), CDS H6 international aid for 24 schools, admissions offices in their own words across eight topics (about 190 cited items), and the counselor side plus Taiwan testing and fee logistics.",
-    "Browser verification of 43 claims that rested on search excerpts: 28 confirmed, 1 contradicted (Columbia abstract length, already correct on the site; note corrected), 4 not on the page, 10 still blocked (research/2026-11-07_browser-verification_v1.md).",
-    "Native Chinese summaries appended to 18 research notes (rule 6).",
-    "Major-level admission for engineering and biology at all 30 schools (direct admit, capped majors, internal transfer, second choice), added to schools.html.",
-    "Site-wide QA in zh and en: fixed horizontal scroll at 375 px on seven pages, hash jumps leaving content hidden, and the official-only toggle missing secondary cells."
+    "Research: 30 notes in `research/`, 1,477 cited sources of which 1,437 are official. Common App anatomy from the 2026-27 data catalog, the other application systems, the calendar for all 30 schools, international specifics, the roster, portal taxonomy, the 30 x 5 supplementary-materials matrix, engineering portfolios, the reader side with Common Data Set C7 for 28 schools and H6 international aid for 24, outside-record frameworks, AI policy, UCAS and the admissions tests, ten UK universities, US schools 31-50, and three rounds of recovery and verification work.",
+    "Site: 17 pages, bilingual, every factual element carrying a citation marker and a source class. All 16 public URLs returned HTTP 200 at 08:55, and the overview, practice and log pages rendered in a browser with no console errors.",
+    "Practice walkthrough, the 09:00 priority: live and verified on the live site rather than from source. Banner present, no application system named in the title, no login screen, nothing leaves the browser. Dashboard, My Colleges, the seven main-form sections in the real order, per-college questions and writing supplements, recommenders and FERPA, review and submit with the fee and signature steps, and the separate UC tab with the PIQs. The prefill button loads 243 field values and three colleges into localStorage and every completion tick turns. Live counters carry the citation that 650 words is a limit and not a target."
    ],
    "notDone": [
-    "E1 (monthly re-verification) is a standing unit; not due yet.",
-    "Michigan: every admissions page returns 403, including in a browser. Its cells rest on search-result summaries of official pages, labelled so.",
-    "Williams and Amherst: a human-verification page blocks reading. It was not bypassed. Cells are \"not stated\".",
-    "Northwestern, Princeton, Columbia, Purdue, UVA, Oxford, UCL, UCAT: partly blocked; gaps are marked on each page.",
-    "The web-search budget ran out partway through the night; later research used direct page fetches only, so some \"not stated\" cells may have an official page that was not found.",
-    "Some notes are English-first with Chinese summaries; the site data is written in both languages, but the notes themselves are not fully bilingual (rule 6)."
+    "E12, new this morning and the highest-value change available to the site: the per-school `extra` field never reaches a reader. Every one of the 30 schools has an `extra: [...]` array in `site/data/p-schools.js` and nothing renders it - the strings are absent from the DOM, not hidden. Researched, cited, correctly tagged per-school material has been accumulating there since run 1 and has never been on the site. It was deliberately not fixed at the end of a watchdog run with the merge blocked: where it goes on an already dense page, and how it behaves under the official-sources-only and brief-mode toggles, is a design decision for the maintainer's page. The content already exists and is already verified, so this is cheap work with a large payoff.",
+    "E1, monthly re-verification of every official URL: standing unit, not yet due.",
+    "E6, make the research notes fully bilingual: they are English-first with native Chinese summaries appended, and rule 6 wants more.",
+    "E7 and Q006, five sets of official documents that are published but served as file downloads: downloading is the maintainer's decision rather than a run's, so nothing is cited from them and the cells they would fill stay \"not stated\".",
+    "The excluded-names leak in one branch's git history: run 5's brief recorded that the check had passed by quoting the pattern it runs, which put those words into a committed file in a public repo. `main` and the site were never affected, the working tree was redacted in run 6, and rule 7 now forbids writing the pattern. The old text is still reachable in that branch's history; removing it needs a force-push, which rule 10 forbids and which is the maintainer's call.",
+    "Michigan, Williams, UVA, Oxford, UCL and about forty other URLs return HTTP 403 to a script and open in a browser. The site says so per cell rather than calling them unpublished."
    ],
    "by": "run"
   },

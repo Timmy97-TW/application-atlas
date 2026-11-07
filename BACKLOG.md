@@ -186,6 +186,18 @@ Tier 4: Williams, Amherst, Swarthmore
       a college, LSA's own declaration deadline, the content of Michigan's announced admissions
       changes (the page it points to is a 404, so Michigan's rows stay liable to move), and
       whether Williams's dual-degree programmes can be elected at application.
+- [ ] E12 Render the per-school `extra` field. Every one of the 30 schools has an
+      `extra: [...]` array in site/data/p-schools.js and nothing reads it: site/assets/js/app.js
+      has no reader for the field and the strings are absent from the rendered DOM entirely,
+      not hidden or collapsed. Researched, cited, correctly tagged per-school material has
+      been accumulating there since the first run and has never reached a reader - Purdue's
+      "you apply for admission into a specific major" and its review-factor list,
+      Northwestern's Bienen and ISP items, Michigan's and Williams's extras. The content
+      exists and is verified, so the work is a design decision rather than research: where it
+      goes on an already dense schools page, how it behaves under the official-sources-only
+      and brief-mode toggles, and which items belong on insights.html instead. Found while
+      render-checking on 2026-11-07 (run 6) and deliberately not fixed then; it is the
+      highest-value change available to the site.
 - [ ] E6 Make the research notes fully bilingual (rule 6). They are English-first with
       Chinese summaries appended; the site data is bilingual, so this is notes-only debt.
 
