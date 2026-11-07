@@ -405,6 +405,18 @@ window.ATLAS.pages = window.ATLAS.pages || {};
     sections: [
       {
         id: "roster",
+        viz: [
+          {
+            type: "waffle", dataset: "more", field: "testPolicy",
+            title: s("20 校中 16 校 2026–27 的 SAT/ACT 選繳，只有 Dartmouth 必繳", "16 of the 20 leave SAT/ACT optional for 2026–27; only Dartmouth requires it"),
+            subtitle: s("一格一校。兩所 UC 不看分數；UNC 依 GPA 決定要不要繳；UVA 的「選繳」取自 Common App 的 UVA 頁，未經 UVA 官網確認。", "One square per school. The two UCs do not consider scores; UNC's rule depends on GPA; UVA's “optional” comes from Common App's UVA page, not confirmed on UVA's own site.")
+          },
+          {
+            type: "waffle", dataset: "more", field: "needPolicy",
+            title: s("只有 8 校對國際生明寫 need 政策：2 校 need-blind、3 校 need-aware、3 校沒有 need-based 補助", "Only 8 of the 20 state an international need policy outright: 2 need-blind, 3 need-aware, 3 with no need-based aid"),
+            subtitle: s("灰格是讀到的頁面沒寫。WashU 說它的 need-blind 不含國際生，但沒寫國際生改用什麼方式。", "Grey squares: the pages read do not say. WashU says its need-blind policy excludes internationals without naming what applies instead.")
+          }
+        ],
         h: s("基本資料：20 校", "Roster: 20 schools"),
         judgment: s(
           "提前方案從 UNC 的 10/15 到 Pomona 的 11/8 不等；只有 Dartmouth 要求考試；推薦信從 UC 的「不收」到 NYU 的「任何有權威的人，最多三封」。",
@@ -445,6 +457,11 @@ window.ATLAS.pages = window.ATLAS.pages || {};
 
       {
         id: "matrix",
+        viz: {
+          type: "matrix-grid", dataset: "more",
+          title: s("Maker 作品：1 校明白邀請、5 校只能走通用或間接管道、4 校不收、9 校沒寫", "Maker work: 1 school invites it outright, 5 only through a generic or indirect channel, 4 refuse it, 9 are silent"),
+          subtitle: s("每列一校、每欄一種材料。滑過符號看該校說法與來源，點一列展開五格；斜線格是 UVA，官網拒絕自動讀取。下方表格保留完整文字。", "One row per school, one column per material. Hover a glyph for the school's wording and source; click a row to open all five. Hatched cells are UVA, whose site refused automated reading. The full-text table below stays as the reference.")
+        },
         h: s("補充材料：20 校 × 5 種材料", "Supplementary materials: 20 schools × 5 kinds of material"),
         judgment: s(
           "maker／工程作品在 20 校中沒有一校設專屬類別；研究成果有明文管道的只有 UChicago（摘要）、Dartmouth（一頁摘要）、Case Western（摘要）與 UCSB 的 CCS。",
@@ -470,6 +487,11 @@ window.ATLAS.pages = window.ATLAS.pages || {};
 
       {
         id: "engineering",
+        viz: {
+          type: "entry-strip", dataset: "more",
+          title: s("20 校中只有 5 校寫明工程怎麼進：3 校申請時就定學院，2 校先錄取到學校", "Only 5 of the 20 state how engineering entry works: 3 set it at application, 2 admit to the school first"),
+          subtitle: s("第二部分的十校逐校查了這一項，第一部分沒有，所以灰色占了大半。Maryland 走的是 Limited Enrollment Program；RPI 與 UC Davis 只有推論，不計入。", "Part 2's ten schools were checked for this field and part 1's were not, so grey fills most of the bar. Maryland's route is its Limited Enrollment Program; RPI and UC Davis are inferences only and are not counted.")
+        },
         h: s("工程：入學即錄取，還是之後再申請", "Engineering: admitted at entry, or declared later"),
         judgment: s(
           "明說入學即進工程的有 UW–Madison、UCSB 與 Maryland（LEP）；UNC 明說之後再申請；Case Western 錄取的是整個大學。",
