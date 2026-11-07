@@ -134,7 +134,18 @@ window.ATLAS.pages = window.ATLAS.pages || {};
           P("Description: " + C(DESC, 150), "Description: " + C(DESC, 150)),
           P("Grades 10, 11, 12 · 6 h/wk · 40 wk/yr", "Grades 10, 11, 12 · 6 h/wk · 40 wk/yr"),
           P("UC（送 Berkeley）描述：" + C(UCD, 350), "UC (for Berkeley) description: " + C(UCD, 350))
-        ]
+        ],
+        viz: {
+          type: "char-meter",
+          title: L("同一個專案，在 Common App 用掉 150 字元裡的大部分，在 UC 有 350 字元可用", "The same project uses most of Common App's 150 characters and has 350 to work with at UC"),
+          subtitle: L("細條是已用字元／上限，由頁面即時計算；UC 的 350 出自一個校區的工作表。", "Each bar is characters used / limit, counted by the page; UC's 350 comes from one campus worksheet."),
+          items: [
+            { label: L("Common App · Role", "Common App · Role"), text: ROLE, limit: 50, unit: "chars", src: ["A1-S6", "A1-S31"] },
+            { label: L("Common App · Organization", "Common App · Organization"), text: ORG, limit: 100, unit: "chars", src: ["A1-S6", "A1-S31"] },
+            { label: L("Common App · Description", "Common App · Description"), text: DESC, limit: 150, unit: "chars", src: ["A1-S6", "A1-S31"] },
+            { label: L("UC Activities & Awards · 描述", "UC Activities & Awards · Description"), text: UCD, limit: 350, unit: "chars", src: ["A2-S6"] }
+          ]
+        }
       },
       {
         id: "github",

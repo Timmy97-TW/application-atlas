@@ -100,6 +100,18 @@ window.ATLAS.pages = window.ATLAS.pages || {};
         table: {
           cols: [L("#", "#"), L("類型", "Type"), L("角色（≤50）", "Role (≤50)"), L("組織（≤100）", "Organization (≤100)"), L("描述（≤150）", "Description (≤150)"), L("年級", "Grades"), L("時數", "Time")],
           rows: actRows
+        },
+        viz: {
+          type: "char-meter",
+          title: (function () {
+            var mx = Math.max.apply(null, ACTS.map(function (a) { return a[3].length; }));
+            var mn = Math.min.apply(null, ACTS.map(function (a) { return a[3].length; }));
+            return L("10 段描述都在 150 字元內：最長 " + mx + "、最短 " + mn, "All 10 descriptions fit in 150 characters: longest " + mx + ", shortest " + mn);
+          })(),
+          subtitle: L("每條下方的細條是已用字元／上限，由頁面即時計算。", "The thin bar under each entry is characters used / limit, counted by the page."),
+          items: ACTS.map(function (a, i) {
+            return { label: L("第 " + (i + 1) + " 項 · " + a[0], "#" + (i + 1) + " · " + a[0]), text: a[3], limit: 150, unit: "chars", src: ["A1-S6", "A1-S31"] };
+          })
         }
       },
       {

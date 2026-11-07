@@ -357,4 +357,59 @@ window.ATLAS.pages = window.ATLAS.pages || {};
       }
     ]
   };
+
+  // ───────────────────────── board (built from the tables above, so the two never disagree)
+  (function () {
+    var P = window.ATLAS.pages["changes"];
+    var CANON = { "2025–26 (fall 2026 entry)": "c2526", "2026–27 (fall 2027 entry)": "c2627", "2027–28 (fall 2028 entry)": "c2728" };
+    // Non-canonical effective labels, placed by the cycle they first touch.
+    function cycleOf(cell) {
+      if (cell && cell.state === "not-stated") return "c2627";
+      var en = cell.en;
+      if (CANON[en]) return CANON[en];
+      if (/^(2022|Class of 2027|Class of 2029|From 2024|2026 entry onward)/.test(en)) return "c2526";
+      if (/^(2028–29)/.test(en)) return "c2728";
+      return "c2627";
+    }
+    var cards = [];
+    P.sections.forEach(function (s) {
+      if (!s.table) return;
+      s.table.rows.forEach(function (r) {
+        var eff = r.cells[0], it = r.cells[1];
+        var c = { cycle: cycleOf(eff), cat: s.id, t: it.t, tag: it.tag, src: it.src };
+        if (eff.state === "not-stated") c.when = L("起始時間未說明", "Start not stated");
+        else if (!CANON[eff.en]) c.when = eff;
+        cards.push(c);
+      });
+    });
+    var WATCH_CAT = ["tests", "tests", "tests", "tests", "systems", "plans", "uk", "systems", "systems", "uk"];
+    P.sections[P.sections.length - 1].items.forEach(function (it, i) {
+      cards.push({ cycle: "c2728", cat: WATCH_CAT[i] || "systems", t: it.t, tag: it.tag, src: it.src, watch: true });
+    });
+    P.sections.unshift({
+      id: "board",
+      h: L("三個申請季一覽", "Three cycles at a glance"),
+      judgment: L(
+        "已生效的變更集中在 Common App 欄位與考試；2027–28 那一欄大多是待查項目，其中已公告的事實只有各校恢復要求考試。",
+        "Changes already in force cluster in Common App fields and testing; the 2027–28 column is mostly items to re-check, and its only announced facts are schools returning to required testing."
+      ),
+      viz: {
+        type: "changes-board",
+        title: L("每一張卡是一項變更，依生效申請季排列", "Each card is one change, placed by the cycle it takes effect"),
+        subtitle: L("用類別篩選；虛線卡是 2027–28 待查的推論或假設，不是事實。", "Filter by category. Dashed cards are inferences or assumptions to re-check for 2027–28, not facts."),
+        columns: [
+          { id: "c2526", label: L("2025–26 與更早", "2025–26 and earlier"), sub: L("2026 秋入學以前", "Fall 2026 entry and before") },
+          { id: "c2627", label: L("2026–27", "2026–27"), sub: L("2027 秋入學 · 本季", "Fall 2027 entry · this cycle") },
+          { id: "c2728", label: L("2027–28 與待查", "2027–28 and to watch"), sub: L("2028 秋入學以後", "Fall 2028 entry onward") }
+        ],
+        cats: [
+          { v: "systems", label: L("申請系統", "Systems") },
+          { v: "tests", label: L("考試", "Tests") },
+          { v: "plans", label: L("方案與補助", "Plans and aid") },
+          { v: "uk", label: L("英國", "UK") }
+        ],
+        cards: cards
+      }
+    });
+  })();
 })();
