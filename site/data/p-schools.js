@@ -1197,6 +1197,11 @@ window.ATLAS.pages = window.ATLAS.pages || {};
       // Section 'aid-numbers': research/2026-11-07_international-aid-numbers_v1.md (A7, local ids H01–H35).
       {
         id: 'aid-numbers',
+        viz: {
+          type: 'aid-bars', wide: true,
+          title: { zh: 'UT Austin 與 Harvard 受助非居民最多（832、805 人），平均補助卻分別占總花費 32.1% 與 87.3%。', en: 'UT Austin and Harvard aid the most nonresidents (832 and 805), but the average award covers 32.1% of cost at UT Austin and 87.3% at Harvard.' },
+          subtitle: { zh: '左：獲得學校補助的非居民人數（CDS H6，2025-26）。右：平均補助 ÷ 總花費（多為 2026-27）。兩邊學校順序相同。', en: 'Left: nonresidents receiving institutional grants (CDS H6, 2025-26). Right: average award ÷ cost of attendance (mostly 2026-27). Schools are in the same order in both.' }
+        },
         h: s('國際生實際拿到多少補助：CDS H6 與學費', 'How much aid international students actually receive: CDS H6 and cost'),
         judgment: s('讀到 H6 的 24 校中，14 所私校受助國際生的平均補助占校內總花費 74–94%；CMU、Georgia Tech、UW 勾選「not available」；UT Austin 受助人數最多（832 人），平均補助卻只占總花費 32.1%。',
           'Of the 24 schools whose H6 was read, 14 private schools gave aided nonresidents an average award equal to 74–94% of on-campus cost; CMU, Georgia Tech and UW mark aid "not available"; UT Austin aids the most nonresidents (832), but its average award covers 32.1% of cost.'),
