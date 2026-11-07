@@ -28,6 +28,25 @@ window.ATLAS.log = {
    "by": "run"
   },
   {
+   "file": "briefs/2026-11-08_daily.md",
+   "date": "2026-11-08",
+   "unit": "A3 (near-term re-check)",
+   "status": "done locally; not pushed or merged",
+   "title_zh": "每日增量：未來 30 天的 40 個截止日逐一重查",
+   "title_en": "Daily increment: re-checked the 40 deadlines due in the next 30 days",
+   "done": [
+    "Re-read the official page behind each of the 40 dated items due between 2026-11-08 and 2026-12-08: 38 confirmed, 0 changed, 2 blocked (Princeton aid form for EA on Nov 9; Northwestern ED aid on Dec 1). Note: research/2026-11-08_near-term-deadline-check_v1.md (34 official sources, N01–N34).",
+    "Caltech REA test item reworded: scores must reach Caltech before Nov 30, 2026 (the page frames it as receipt, not test date).",
+    "Added Columbia's ED score-reporting cutoff, \"the fourth Wednesday in November\" — Nov 25, 2026 by calendar count (the date is our arithmetic; the wording is Columbia's).",
+    "check-data: 0 problems."
+   ],
+   "notDone": [
+    "Princeton and Northwestern pages refused both scripted and browser reading today; their two dates stay as previously cited.",
+    "Not pushed or merged: this increment was asked to publish nothing outward. The commit is on local branch `daily/2026-11-08`."
+   ],
+   "by": "run"
+  },
+  {
    "file": "briefs/2026-11-07_run.md",
    "date": "2026-11-07",
    "unit": "final brief for the night of 2026-11-07 (runs 1-7)",

@@ -70,8 +70,8 @@ window.ATLAS.sourceGroups = {
   "en": "B1 Portal taxonomy"
  },
  "V6": {
-  "zh": "princeton-wording-and-major-level",
-  "en": "princeton-wording-and-major-level"
+  "zh": "Princeton 院長原話與 Michigan／Williams 科系層級",
+  "en": "Princeton's dean in her own words, and major-level admission at Michigan and Williams"
  },
  "V5": {
   "zh": "Purdue 推薦信政策與 Northwestern ISP",
@@ -120,6 +120,10 @@ window.ATLAS.sourceGroups = {
  "V2": {
   "zh": "瀏覽器複查第二輪（仍讀不到的頁面）",
   "en": "Browser verification round 2 (pages still unreadable)"
+ },
+ "N": {
+  "zh": "近期截止日複查（2026-11-08）",
+  "en": "Near-term deadline re-check (2026-11-08)"
  }
 };
 window.ATLAS.sources = {
@@ -20799,6 +20803,482 @@ window.ATLAS.sources = {
   "note": {
    "zh": "研究筆記：2026-11-07_verification-round-2_v1.md",
    "en": "Research note: 2026-11-07_verification-round-2_v1.md"
+  }
+ },
+ "N01": {
+  "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "UC fall 2027 filing period Oct 1 – Nov 30",
+   "en": "UC fall 2027 filing period Oct 1 – Nov 30"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N02": {
+  "url": "https://admissions.berkeley.edu/apply-to-berkeley/dates-deadlines/",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Berkeley filing period Oct 1 – Nov 30",
+   "en": "Berkeley filing period Oct 1 – Nov 30"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N03": {
+  "url": "https://admission.ucla.edu/apply/first-year",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "UCLA: table Nov 30; body text Dec 1",
+   "en": "UCLA: table Nov 30; body text Dec 1"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N04": {
+  "url": "https://undergrad.admissions.columbia.edu/apply/process/testing",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Columbia ED tests as late as November 2026 (browser)",
+   "en": "Columbia ED tests as late as November 2026 (browser)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N05": {
+  "url": "https://admissions.upenn.edu/how-to-apply/first-year-applicants/application-requirements",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Penn ED last SAT November 2026",
+   "en": "Penn ED last SAT November 2026"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N06": {
+  "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/testing",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Penn ED latest SAT November 7, 2026",
+   "en": "Penn ED latest SAT November 7, 2026"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N07": {
+  "url": "https://admission.rice.edu/apply/international-applicants",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Rice InitialView ED by Nov 10",
+   "en": "Rice InitialView ED by Nov 10"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N08": {
+  "url": "https://finaid.yale.edu/faq",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Yale contacts international EA aid applicants from mid-November",
+   "en": "Yale contacts international EA aid applicants from mid-November"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N09": {
+  "url": "https://admissions.cornell.edu/how-to-apply/first-year-applicants",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Cornell ED other materials Nov 13; domestic aid priority Nov 15",
+   "en": "Cornell ED other materials Nov 13; domestic aid priority Nov 15"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N10": {
+  "url": "https://www.finaid.caltech.edu/applying/how/newinternationalrea",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Caltech REA international CSS Profile Nov 15, 2026",
+   "en": "Caltech REA international CSS Profile Nov 15, 2026"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N11": {
+  "url": "https://financialaid.stanford.edu/undergrad/apply/requirements/rea_international.html",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Stanford REA international priority filing Nov 15",
+   "en": "Stanford REA international priority filing Nov 15"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N12": {
+  "url": "https://undergrad.admissions.columbia.edu/apply/international",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Columbia InitialView/Vericant ED by Nov 15 (browser)",
+   "en": "Columbia InitialView/Vericant ED by Nov 15 (browser)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N13": {
+  "url": "https://undergrad.admissions.columbia.edu/apply/firstyear",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Columbia ED aid application Nov 15 (browser)",
+   "en": "Columbia ED aid application Nov 15 (browser)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N14": {
+  "url": "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Michigan ED aid Nov 15; SMTD Dec 1 (browser)",
+   "en": "Michigan ED aid Nov 15; SMTD Dec 1 (browser)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N15": {
+  "url": "https://www.hmc.edu/admission/apply/",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Harvey Mudd ED I dates Nov 15 / 20 / 30, Dec 1",
+   "en": "Harvey Mudd ED I dates Nov 15 / 20 / 30, Dec 1"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N16": {
+  "url": "https://www.hmc.edu/admission/afford/international-student-financial-aid/international-deadlines/early-decision-1-international-applicants/",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Harvey Mudd ED I intl CSS Nov 15, 2026; IDOC Dec 1, 2026",
+   "en": "Harvey Mudd ED I intl CSS Nov 15, 2026; IDOC Dec 1, 2026"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N17": {
+  "url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "JHU ED I aid Nov 15, 2026",
+   "en": "JHU ED I aid Nov 15, 2026"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N18": {
+  "url": "https://admissions.duke.edu/apply/",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Duke ED additional aid documents Nov 15",
+   "en": "Duke ED additional aid documents Nov 15"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N19": {
+  "url": "https://admit.washington.edu/apply/freshman/",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "UW autumn deadline Nov 15; no ED/EA",
+   "en": "UW autumn deadline Nov 15; no ED/EA"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N20": {
+  "url": "https://admit.washington.edu/apply/dates-deadlines/",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "UW Nov 15 deadline (no year printed)",
+   "en": "UW Nov 15 deadline (no year printed)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N21": {
+  "url": "https://www.williams.edu/admission-aid/how-to-apply/first-year/",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Williams ED deadline Nov 15 (browser)",
+   "en": "Williams ED deadline Nov 15 (browser)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N22": {
+  "url": "https://www.swarthmore.edu/admissions-aid/application-materials-deadlines",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Swarthmore Fall ED Nov 15",
+   "en": "Swarthmore Fall ED Nov 15"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N23": {
+  "url": "https://admission.gatech.edu/first-year/deadlines",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "GT EA1 scores Nov 16; EA2 documents Nov 16; EA2 scores Dec 8; 11:59 p.m. own time zone",
+   "en": "GT EA1 scores Nov 16; EA2 documents Nov 16; EA2 scores Dec 8; 11:59 p.m. own time zone"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N24": {
+  "url": "https://design.gatech.edu/portfolio-guidance-applicants",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "GT Design portfolio guidance: no deadlines stated",
+   "en": "GT Design portfolio guidance: no deadlines stated"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N25": {
+  "url": "https://mitadmissions.org/apply/firstyear/deadlines-requirements/",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "MIT EA tests before Nov 30",
+   "en": "MIT EA tests before Nov 30"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N26": {
+  "url": "https://sfs.mit.edu/undergraduate-students/apply-for-aid/deadlines-process/",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "MIT EA CSS Profile + IDOC Nov 30",
+   "en": "MIT EA CSS Profile + IDOC Nov 30"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N27": {
+  "url": "https://sfs.mit.edu/undergraduate-students/apply-for-aid/international/",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "MIT international aid page: no EA date stated",
+   "en": "MIT international aid page: no EA date stated"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N28": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/standardized-tests",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Caltech REA \"Before November 30, 2026\" (scores received)",
+   "en": "Caltech REA \"Before November 30, 2026\" (scores received)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N29": {
+  "url": "https://finaid.yale.edu/apply/prospective",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Yale EA international aid Dec 1, 2026",
+   "en": "Yale EA international aid Dec 1, 2026"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N30": {
+  "url": "https://www.cmu.edu/admission/admission/application-plans-deadlines",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "CMU Drama/Music RD Dec 1",
+   "en": "CMU Drama/Music RD Dec 1"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N31": {
+  "url": "https://www.cmu.edu/admission/admission/college-of-fine-arts-applicants",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "CMU Drama/Music prescreen and portfolio Dec 1",
+   "en": "CMU Drama/Music prescreen and portfolio Dec 1"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N32": {
+  "url": "https://admission.rice.edu/apply/first-year-applicants",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Rice Shepherd School all materials Dec 1; no ED",
+   "en": "Rice Shepherd School all materials Dec 1; no ED"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N33": {
+  "url": "https://admissions.utexas.edu/apply/freshman/",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "UT Austin regular deadline Dec 1",
+   "en": "UT Austin regular deadline Dec 1"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "N34": {
+  "url": "https://admission.stanford.edu/apply/first-year/",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "N",
+  "title": {
+   "zh": "Stanford RD with arts portfolio: Common App Dec 5",
+   "en": "Stanford RD with arts portfolio: Common App Dec 5"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
+   "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
   }
  }
 };
