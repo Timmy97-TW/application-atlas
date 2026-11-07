@@ -532,3 +532,13 @@ a.mk-ring:hover { text-decoration: none; box-shadow: var(--shadow-2); transform:
 .vz-stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 figure.viz.vz-stats { background: none; box-shadow: none; padding: 6px 2px 0; margin: 18px 0 8px; display: block; }
 @media (max-width: 640px) { .vz-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 18px; } }
+
+/* per-school mini strip: lighter frame */
+figure.viz.vz-school-mini { padding: 8px 12px 6px; margin: 6px 0 12px; border-radius: 12px; }
+figure.viz.vz-school-mini .vz-foot { margin-top: 2px; }
+
+/* smooth cross-page navigation where the browser supports it */
+@view-transition { navigation: auto; }
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: .22s; animation-timing-function: cubic-bezier(.2,.7,.2,1); }
+.top { view-transition-name: header; }
+@media (prefers-reduced-motion: reduce) { @view-transition { navigation: none; } }

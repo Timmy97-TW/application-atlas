@@ -330,3 +330,42 @@
     });
   });
 })();
+
+/* School mini strip: one school's dated items on a compact Aug–Jul line,
+   coloured by swimlane, with today. spec.school = short name in viz.deadlines. */
+(function () {
+  'use strict';
+  if (!window.ATLAS_VIZ) return;
+  ATLAS_VIZ.register('school-mini', function (el, spec, V, ctx) {
+    var D = V.data().deadlines; if (!D) return;
+    var L = V.L, fmt = V.fmt;
+    var evs = D.events.filter(function (e) { return e.school === spec.school; });
+    if (!evs.length) { V.h('p', { 'class': 'vz-sub' }, L({ zh: '沒有讀到這所學校的日期。', en: 'No dates were read for this school.' }), el); return; }
+    var from = V.dateNum('2026-08-01'), to = V.dateNum('2027-06-30');
+    var W = Math.max(el.clientWidth, 280), H = 58, cy = 22;
+    var x = V.scale(from, to, 10, W - 10);
+    var s = V.svg('svg', { width: W, height: H, viewBox: '0 0 ' + W + ' ' + H, role: 'img', 'aria-label': spec.school }, el);
+    V.svg('line', { x1: x(from), x2: x(to), y1: cy + .5, y2: cy + .5, 'class': 'vz-base' }, s);
+    var d0 = new Date(from);
+    for (var m = 0; m < 11; m++) {
+      var md = Date.UTC(d0.getUTCFullYear(), d0.getUTCMonth() + m, 1);
+      V.svg('line', { x1: x(md), x2: x(md), y1: cy - 3, y2: cy + 3, stroke: 'var(--viz-base)' }, s);
+      if (m % (W < 460 ? 2 : 1) === 0) { var t = V.svg('text', { x: x(md), y: H - 6, 'text-anchor': 'middle', style: 'font-size:10.5px' }, s); t.textContent = fmt.month(new Date(md).getUTCMonth()); }
+    }
+    var today = V.dateNum(D.today);
+    V.svg('line', { x1: x(today), x2: x(today), y1: cy - 12, y2: cy + 12, stroke: 'var(--accent)', 'stroke-width': 1.5, 'stroke-dasharray': '2 2' }, s);
+    var marks = [];
+    var li = function (id) { return D.lanes.findIndex(function (l) { return l.id === id; }); };
+    evs.sort(function (a, b) { return a.start < b.start ? -1 : 1; }).forEach(function (e) {
+      var i = li(e.lane), c = V.color(i < 0 ? 0 : i), x0 = x(V.dateNum(e.start));
+      var g = V.svg('g', null, s);
+      V.svg('rect', { x: x0 - 9, y: cy - 12, width: 18 + (e.end ? x(V.dateNum(e.end)) - x0 : 0), height: 24, fill: 'transparent' }, g);
+      if (e.end) V.svg('rect', { x: x0, y: cy - 2.5, width: Math.max(4, x(V.dateNum(e.end)) - x0), height: 5, rx: 2.5, fill: c, opacity: e.approx ? .35 : .8 }, g);
+      else V.svg('circle', { cx: x0, cy: cy, r: 4.5, fill: c, stroke: 'var(--viz-surface)', 'stroke-width': 1.5, opacity: e.approx ? .55 : 1 }, g);
+      V.tip(g, function () { return { title: fmt.date(e.start) + (e.end ? ' – ' + fmt.date(e.end) : ''), rows: [{ value: L(D.lanes[i].label), label: L(e.label), color: c, src: e.src }] }; });
+      marks.push(g);
+    });
+    if (ctx.first) V.stagger(marks, { from: 'scale(.3)', origin: 'center', step: 25 });
+    return { table: { cols: [{ zh: '日期', en: 'Date' }, { zh: '事項', en: 'Item' }, { zh: '來源', en: 'Sources' }], rows: evs.map(function (e) { return [e.start + (e.end ? ' – ' + e.end : ''), L(e.label), { html: V.cites(e.src || []) }]; }) } };
+  });
+})();
