@@ -148,6 +148,44 @@ Tier 4: Williams, Amherst, Swarthmore
       Harvard's 2026-27 supplement PDF, UC's PIQ guidance PDF, and the three Common App
       webinar decks (LEAD-B19 to B21). Nothing is cited from any of them. This needs one
       download decision from the maintainer, not more research — see Q006.
+- [x] E10 Purdue's letters policy, and what Northwestern publishes about ISP  ✓ 2026-11-07: research/2026-11-07_purdue-letters-and-isp_v1.md (V5) → site/data/p-schools.js
+      Two of the four gaps run 5 named. **Purdue closes**: Purdue Undergraduate Admissions
+      states "Letters of recommendation aren't required, but if a student submits one, we'll
+      include it in their review." - on a counselor-facing updates page with no publication
+      date, not on any applicant-facing requirements page, and consistent with letters being
+      absent from both the application checklist and the review-factor list. Both facts are on
+      the site. **Northwestern ISP closes halfway**: the separate application, the
+      admitted-to-Northwestern-first order, either round being allowed, the ISP deadline falling
+      after Northwestern's, late applications considered but at a disadvantage, and the calculus
+      and four-years-of-science expectations are all written in. What the ISP application asks is
+      stated on no current page - the requirements page defers to the ISP site and the ISP site
+      enumerates nothing - and the 2026-27 ISP deadlines are not published either. That is Q007.
+      A 2015 ISP form PDF with real prompts exists on the official domain and is deliberately not
+      cited; the note records why so a later run does not mistake it for current.
+      Still open from run 5's four: Princeton's "not looking for perfect" wording, and
+      major-level admission at Michigan and Williams.
+- [x] E11 Princeton's wording, and major-level admission at Michigan and Williams  ✓ 2026-11-07: research/2026-11-07_princeton-wording-and-major-level_v1.md (V6) → site/data/p-schools.js, p-insights.js
+      The last two of run 5's four gaps. **Princeton's sentence exists** and is on the admission
+      office's own blog, bylined by the Dean of Admission and dated 1 September 2026: "We are not
+      looking for perfect. We're looking for authentic." A search of all 1,248 URLs in the
+      admission sitemap found it only there, so it is cited as a dated blog post by a named dean
+      rather than as standing policy, and it is on the insights page that way. Two corrections
+      came with it: /how-apply/what-we-look-for returns HTTP 404 and does not exist (Q002 had
+      asked Timmy to open it), and the real equivalent is /apply/before-you-apply/helpful-tips.
+      **Michigan and Williams major-level admission is now verified.** Michigan admits to a
+      school or college, not to the university; Engineering is one of the ten units taking
+      first-year applications, so engineering is a direct admit, while biology has no major-level
+      admission and goes through LSA. Every applicant writes a college-specific essay of 100-550
+      words; Engineering sets none of its own and is absent from the additional-requirements list,
+      the one exception being Integrated Business and Engineering with its Ross portfolio. Moving
+      in later costs a year in the home unit, C-or-better prerequisites and a 55-credit ceiling,
+      and GPA 2.5 "is not guaranteed admission". Williams names no major at application (declared
+      spring of sophomore year) and confers no engineering degree of its own - the 3-2 with
+      Columbia and the 2-1-1-1 with Dartmouth have the partner confer the engineering degree.
+      Still not stated: whether Michigan's Common App asks for an intended major as distinct from
+      a college, LSA's own declaration deadline, the content of Michigan's announced admissions
+      changes (the page it points to is a 404, so Michigan's rows stay liable to move), and
+      whether Williams's dual-degree programmes can be elected at application.
 - [ ] E6 Make the research notes fully bilingual (rule 6). They are English-first with
       Chinese summaries appended; the site data is bilingual, so this is notes-only debt.
 

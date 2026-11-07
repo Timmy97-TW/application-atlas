@@ -9574,6 +9574,17 @@ window.ATLAS.pages['insights'] = {
       "en": "Offices that describe their process differ widely in detail; most say \"committee\" without numbers or times."
      },
      "items": [
+    {
+     "t": {
+      "zh": "Princeton 招生院長在 2026-09-01 的官方部落格上寫：「We are not looking for perfect. We're looking for authentic.」同一篇結尾還有「Remember that we are not looking for perfection but rather for you to be perfectly YOU.」這句話在 Princeton 招生網站的 1,248 個網址裡只出現在這一篇——它是院長的部落格文章，不是常設政策頁，引用時要連日期與作者一起引。順帶更正：常被引用的 /how-apply/what-we-look-for 這個網址不存在（HTTP 404），真正對應的頁是 /apply/before-you-apply/helpful-tips，開頭寫「We look for students with intellectual curiosity, who have pursued and achieved academic excellence.」",
+      "en": "Princeton's dean of admission wrote on the office's official blog on 1 September 2026: \"We are not looking for perfect. We're looking for authentic.\" The same post closes with \"Remember that we are not looking for perfection but rather for you to be perfectly YOU.\" Across all 1,248 URLs in Princeton's admission sitemap the phrase appears only here — it is the dean's blog post, not a standing policy page, so cite it with its date and author. A correction alongside it: the often-quoted /how-apply/what-we-look-for does not exist (HTTP 404). The real equivalent is /apply/before-you-apply/helpful-tips, which opens \"We look for students with intellectual curiosity, who have pursued and achieved academic excellence.\""
+     },
+     "tag": "f",
+     "src": [
+      "V6-P1",
+      "V6-P2"
+     ]
+    },
       {
        "t": {
         "zh": "MIT 現行說明：申請先由一位資深招生官讀；較強的申請再由其他招生官評估並摘要給選才委員會；錄取前「至少十幾個人」會實質討論一份申請。委員會成員包括招生人員與教授。頁面沒有說讀一份要多久，也沒說票怎麼算。",

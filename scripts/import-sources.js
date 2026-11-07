@@ -35,7 +35,9 @@ const CODES = {
   'three-blocked-hosts-read': ['V4', { zh: 'Princeton／Northwestern／Purdue 終於讀到', en: 'Princeton, Northwestern and Purdue finally read' }],
   'blocked-pages-browser-pass': ['LEAD', { zh: '待查線索（未讀到頁面本身）', en: 'Leads only (pages not read)' }],
   'michigan-addendum':['MI', { zh: 'Michigan 補充（網頁拒絕自動存取）', en: 'Michigan addendum (pages refuse automated access)' }],
-  'us-schools-31-50-part2':['G2', { zh: 'G 美國 41–50 校', en: 'G US schools 41–50' }]
+  'us-schools-31-50-part2':['G2', { zh: 'G 美國 41–50 校', en: 'G US schools 41–50' }],
+  'purdue-letters-and-isp': ['V5', { zh: 'Purdue 推薦信政策與 Northwestern ISP', en: 'Purdue letters policy and Northwestern ISP' }],
+  'princeton-wording-and-major-level': ['V6', { zh: 'Princeton 院長原話與 Michigan／Williams 科系層級', en: "Princeton's dean in her own words, and major-level admission at Michigan and Williams" }]
 };
 
 function cells(line) {
