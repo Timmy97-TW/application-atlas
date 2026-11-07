@@ -100,21 +100,40 @@
     host.insertBefore(wrapEl, after);
     host.insertBefore(cap, wrapEl.nextSibling);
 
-    // highlight a node's edges on hover or focus
-    var edges = wrapEl.querySelectorAll('.lg-edge');
-    function mark(id, on) {
-      [].forEach.call(edges, function (p) {
-        var hit = p.getAttribute('data-from') === id || p.getAttribute('data-to') === id;
-        p.style.strokeOpacity = on ? (hit ? '1' : '.12') : '.38';
-        p.style.strokeWidth = on && hit ? '2.2' : '1.4';
+    // hover or focus a node: light up everything it depends on (upstream)
+    // and everything that depends on it (downstream); fade the rest
+    var edges = [].slice.call(wrapEl.querySelectorAll('.lg-edge'));
+    var nodes = [].slice.call(wrapEl.querySelectorAll('.lg-node'));
+    var up = {}, down = {};
+    (G.edges || []).forEach(function (e) { (down[e[0]] = down[e[0]] || []).push(e[1]); (up[e[1]] = up[e[1]] || []).push(e[0]); });
+    function reach(id, map, seen) { (map[id] || []).forEach(function (n) { if (!seen[n]) { seen[n] = 1; reach(n, map, seen); } }); return seen; }
+    edges.concat(nodes).forEach(function (n) { n.style.transition = 'opacity .22s cubic-bezier(.2,.7,.2,1), stroke-opacity .22s, stroke-width .22s'; });
+    function mark(id) {
+      if (!id) {
+        edges.forEach(function (p) { p.style.strokeOpacity = '.38'; p.style.strokeWidth = '1.4'; });
+        nodes.forEach(function (g) { g.style.opacity = ''; });
+        return;
+      }
+      var set = {}; set[id] = 1;
+      var a = reach(id, up, {}), b = reach(id, down, {});
+      Object.keys(a).forEach(function (k) { set[k] = 1; }); Object.keys(b).forEach(function (k) { set[k] = 1; });
+      nodes.forEach(function (g) { g.style.opacity = set[g.getAttribute('data-id')] ? '1' : '.25'; });
+      edges.forEach(function (p) {
+        var f = p.getAttribute('data-from'), to = p.getAttribute('data-to');
+        var hit = set[f] && set[to] && ((a[f] || f === id) && (a[to] || to === id) || (b[f] || f === id) && (b[to] || to === id));
+        p.style.strokeOpacity = hit ? '1' : '.08';
+        p.style.strokeWidth = hit ? '2.2' : '1.4';
       });
     }
-    [].forEach.call(wrapEl.querySelectorAll('.lg-node'), function (g) {
+    nodes.forEach(function (g) {
       var id = g.getAttribute('data-id');
-      g.addEventListener('mouseenter', function () { mark(id, true); });
-      g.addEventListener('mouseleave', function () { mark(id, false); });
-      g.addEventListener('focus', function () { mark(id, true); });
-      g.addEventListener('blur', function () { mark(id, false); });
+      g.style.cursor = 'pointer';
+      g.addEventListener('pointerenter', function () { mark(id); });
+      g.addEventListener('pointerleave', function () { mark(null); });
+      g.addEventListener('focus', function () { mark(id); });
+      g.addEventListener('blur', function () { mark(null); });
+      g.addEventListener('click', function () { mark(id); });
     });
+    wrapEl.style.cssText = 'overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:18px;box-shadow:inset 0 0 0 1px rgba(16,24,40,.07);padding:14px;margin:12px 0 18px;background:var(--viz-surface, #fcfcfb)';
   };
 })();
