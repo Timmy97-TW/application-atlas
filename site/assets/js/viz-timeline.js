@@ -75,7 +75,13 @@
       V.svg('line', { x1: xx, x2: xx, y1: top - 6, y2: H - bottom }, g);
       var mo = new Date(md).getUTCMonth();
       var t = V.svg('text', { x: xx + 6, y: top - 12, 'class': mo === 0 ? 'strong' : null }, s);
-      t.textContent = fmt.month(mo) + (mo === 0 ? ' ' + new Date(md).getUTCFullYear() : '');
+      var mGap = x(Date.UTC(d0.getUTCFullYear(), d0.getUTCMonth() + m + 1, 1)) - x(md);
+      if (mo === 0 && mGap < 70) {
+        // narrow months: the year sits on its own line above January instead of running into February
+        t.textContent = fmt.month(mo);
+        var yt = V.svg('text', { x: xx + 6, y: top - 26, 'class': 'strong' }, s);
+        yt.textContent = String(new Date(md).getUTCFullYear());
+      } else t.textContent = fmt.month(mo) + (mo === 0 ? ' ' + new Date(md).getUTCFullYear() : '');
     }
 
     // today
@@ -238,7 +244,7 @@
     var fill = V.svg('rect', { x: x(from), y: ty - 5, width: fillW, height: 10, rx: 5, fill: 'url(#vzRib)' }, s);
     if (ctx.first && !V.reduced) {
       fill.setAttribute('width', 0);
-      requestAnimationFrame(function () { fill.style.transition = 'width 900ms ' + V.ease; fill.setAttribute('width', fillW); });
+      requestAnimationFrame(function () { fill.style.transition = 'width 600ms ' + V.ease; fill.setAttribute('width', fillW); });
     }
     // months
     var d0 = new Date(from);
@@ -253,7 +259,7 @@
       V.svg('circle', { cx: x(today), cy: ty, r: 9, fill: '#fff', stroke: 'var(--accent)', 'stroke-width': 3 }, s);
     }
     // pins, alternating above / below; on narrow screens labels shorten to dates
-    var pins = [];
+    var pins = [], placed = { up: [], down: [] }, extra = 0;
     (spec.points || []).forEach(function (p, i) {
       var px = x(V.dateNum(p.date)), up = i % 2 === 0;
       var g = V.svg('g', null, s);
@@ -263,15 +269,33 @@
       V.svg('circle', { cx: px, cy: ty, r: 5, fill: V.dateNum(p.date) <= today ? 'var(--accent)' : '#fff', stroke: 'var(--accent)', 'stroke-width': 2 }, g);
       V.svg('rect', { x: px - 36, y: Math.min(y1, y2) - 30, width: 72, height: Math.abs(y2 - y1) + 44, fill: 'transparent' }, g);
       var anchor = px < 60 ? 'start' : (px > W - 60 ? 'end' : 'middle');
+      var stem = g.querySelector('line');
       var lt = V.svg('text', { x: px, y: up ? y2 - 18 : y2 + 14, 'text-anchor': anchor, 'class': 'strong', style: 'font-size:13px' }, g);
       lt.textContent = L(p.big || { zh: fmt.date(p.date), en: fmt.date(p.date) });
+      var st = null;
       if (!narrow) {
-        var st = V.svg('text', { x: px, y: up ? y2 - 4 : y2 + 28, 'text-anchor': anchor, style: 'font-size:11.5px' }, g);
+        st = V.svg('text', { x: px, y: up ? y2 - 4 : y2 + 28, 'text-anchor': anchor, style: 'font-size:11.5px' }, g);
         st.textContent = L(p.label);
+      }
+      // a label that would run into the previous label on the same side moves one step further out
+      var lw = 0; [lt, st].forEach(function (t) { if (t) { try { lw = Math.max(lw, t.getComputedTextLength()); } catch (e) { lw = Math.max(lw, 60); } } });
+      var lx0 = anchor === 'start' ? px : anchor === 'end' ? px - lw : px - lw / 2, lx1 = lx0 + lw;
+      var side = placed[up ? 'up' : 'down'], level = 0;
+      while (side.some(function (b) { return b.level === level && lx0 < b.x1 + 6 && lx1 > b.x0 - 6; }) && level < 2) level++;
+      side.push({ x0: lx0, x1: lx1, level: level });
+      if (level) {
+        var dy = level * (narrow ? 17 : 32) * (up ? -1 : 1);
+        [lt, st].forEach(function (t) { if (t) t.setAttribute('y', +t.getAttribute('y') + dy); });
+        stem.setAttribute('y2', y2 + dy);
+        extra = Math.max(extra, Math.abs(dy));
       }
       V.tip(g, function () { return { title: L(p.label), rows: [{ value: fmt.date(p.date) + (p.end ? ' – ' + fmt.date(p.end) : ''), label: L(p.sub || ''), src: p.src }] }; });
       pins.push(g);
     });
+    if (extra) {
+      // grow the canvas evenly so shifted labels stay inside it
+      H += 2 * extra; s.setAttribute('height', H); s.setAttribute('viewBox', '0 ' + (-extra) + ' ' + W + ' ' + H);
+    }
     if (ctx.first) V.stagger(pins, { from: 'translateY(4px)', step: 70 });
     return { table: { cols: [{ zh: '日期', en: 'Date' }, { zh: '事項', en: 'Milestone' }, { zh: '來源', en: 'Sources' }], rows: (spec.points || []).map(function (p) { return [p.date + (p.end ? ' – ' + p.end : ''), L(p.label), { html: V.cites(p.src || []) }]; }) } };
   });
@@ -333,7 +357,7 @@
       var big = V.h('div', { 'class': 'vz-stat-v' }, (ctx.first && !V.reduced ? '0' : it.v.toLocaleString('en-US')) + (it.suffix || ''), c);
       V.h('div', { 'class': 'vz-stat-l' }, L(it.l), c);
       if (ctx.first && !V.reduced) {
-        var t0 = null, dur = 900;
+        var t0 = null, dur = 600;
         (function step(ts) {
           if (!t0) t0 = ts;
           var p = Math.min(1, (ts - t0) / dur), e = 1 - Math.pow(1 - p, 3);

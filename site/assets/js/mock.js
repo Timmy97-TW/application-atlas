@@ -253,7 +253,7 @@
       requestAnimationFrame(function () {
         [].forEach.call(rings.querySelectorAll('.mk-ring-arc'), function (c, i) {
           var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-          if (!reduce) c.style.transition = 'stroke-dashoffset 800ms cubic-bezier(.2,.7,.2,1) ' + (i * 60) + 'ms';
+          if (!reduce) c.style.transition = 'stroke-dashoffset 600ms cubic-bezier(.2,.7,.2,1) ' + (i * 60) + 'ms';
           c.setAttribute('stroke-dashoffset', c.getAttribute('data-off'));
         });
       });

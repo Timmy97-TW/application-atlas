@@ -225,10 +225,10 @@
     if (ctx.first && !V.reduced) {
       fills.forEach(function (f, i) {
         f.style.transform = 'scaleX(0)';
-        requestAnimationFrame(function () { f.style.transition = 'transform 700ms ' + EASE + ' ' + Math.min(i * 60, 480) + 'ms'; f.style.transform = ''; });
+        requestAnimationFrame(function () { f.style.transition = 'transform 560ms ' + EASE + ' ' + Math.min(i * 40, 240) + 'ms'; f.style.transform = ''; });
       });
       nums.forEach(function (o, i) {
-        var t0 = null, dur = 700, delay = Math.min(i * 60, 480);
+        var t0 = null, dur = 560, delay = Math.min(i * 40, 240);
         o.el.textContent = '0';
         (function step(ts) {
           if (!t0) t0 = ts + delay;
@@ -349,7 +349,7 @@
     });
     if (ctx.first && !V.reduced) {
       rail.style.transform = 'scaleY(0)';
-      requestAnimationFrame(function () { rail.style.transition = 'transform 900ms ' + EASE; rail.style.transform = ''; });
+      requestAnimationFrame(function () { rail.style.transition = 'transform 600ms ' + EASE; rail.style.transform = ''; });
       V.stagger(items, { from: 'translateY(8px)', step: 80 });
     }
     return {

@@ -368,7 +368,7 @@
     d.order.forEach(function (k, i) {
       var rec = d.data[k], mi = mIndex(k, i);
       var row = V.h('div', { 'class': 'mg-row', role: 'button', tabindex: '0', 'aria-expanded': 'false' }, null, body);
-      V.h('div', { 'class': 'mg-lab' }, k, row);
+      V.h('div', { 'class': 'mg-lab', title: k }, k, row);
       cols.forEach(function (c, j) {
         var v = rec.materials[c];
         var g = V.h('div', { 'class': 'mg-c' }, null, row);
