@@ -23,10 +23,341 @@ window.ATLAS.pages = window.ATLAS.pages || {};
       en: "None of the 30 schools' official pages says it accepts badges, CLRs or an outside programme's record as a formal document; in practice an outside record enters through existing fields plus a named third party who can vouch for it, not through a new transcript format."
     },
     intro: {
-      zh: "這頁處理一個具體問題：學生在學校以外、跨好幾年累積的紀錄（實驗時數、作品、比賽、口頭答辯），在美國大學一年級申請裡到底放得進哪裡、有多少字元、誰能替它作證。資料來自兩份 research note（C1–C3 與 C4），存取日期都是 2026-11-07。文中說的「outside programme」泛指任何非學校的課程或計畫，本頁不點名任何一個。標 [推論] 的段落是我們從事實推出來的，不是任何招生辦公室說過的話；維護者沒有招生辦公室的工作經驗。",
-      en: "This page answers one practical question: when a student builds a record outside school over several years (lab hours, built work, competitions, oral defences), where in a US first-year application can it go, how many characters does that field allow, and who can vouch for it? It draws on two research notes (C1–C3 and C4), all accessed 2026-11-07. \"An outside programme\" means any non-school programme; none is named here. Anything tagged as inference is our reasoning from the facts, not something an admissions office said, and the maintainer has no admissions-office experience."
+      zh: "這頁處理一個具體問題：學生在學校以外、跨好幾年累積的紀錄（實驗時數、作品、比賽、口頭答辯），在美國大學一年級申請裡到底放得進哪裡、有多少字元、誰能替它作證。資料來自三份 research note（L，2026-11-08；C1–C3 與 C4，2026-11-07）。文中說的「outside programme」泛指任何非學校的課程或計畫，本頁不點名任何一個。標 [推論] 的段落是我們從事實推出來的，不是任何招生辦公室說過的話；維護者沒有招生辦公室的工作經驗。",
+      en: "This page answers one practical question: when a student builds a record outside school over several years (lab hours, built work, competitions, oral defences), where in a US first-year application can it go, how many characters does that field allow, and who can vouch for it? It draws on three research notes (L, accessed 2026-11-08; C1–C3 and C4, accessed 2026-11-07). \"An outside programme\" means any non-school programme; none is named here. Anything tagged as inference is our reasoning from the facts, not something an admissions office said, and the maintainer has no admissions-office experience."
     },
     sections: [
+      // ───────────────────────── L: a three-year outside lab record, the whole answer
+      {
+        id: "lab",
+        h: { zh: "三年校外實驗室訓練，能交出什麼證明", en: "Three years of lab training outside school: what proof can reach the application" },
+        judgment: {
+          zh: "申請表收的是「成品加一個能為你的份量作證的人」，不是訓練紀錄本身：30 校中有研究管道的學校都只點名論文、摘要、海報與 mentor 的信；時數、技術清單與實驗記錄本沒有任何一校列為收件項目（Caltech portfolio 列「Personal notebooks」是唯一例外）。所以 programme 能做的，是把三年紀錄整理成那幾樣東西，並讓 mentor 可被聯絡。",
+          en: "The application receives an artefact plus a person who can speak to your share, not the training record itself: every school among the 30 with a research channel names papers, abstracts, posters and a mentor's letter; none lists hours, a techniques log or a lab notebook as a thing it receives (Caltech's portfolio item \"Personal notebooks\" is the one exception). What a programme can do is condense three years into those objects and make the mentor reachable."
+        },
+        intro: {
+          zh: "本節回答一個具體的問題：一位學生在校外、非學校課程的獨立分子生物學訓練計畫裡做了三年實驗，這個 programme 能提供哪些證明與紀錄，而 Common App 與這 30 校的申請系統實際收得下？四張圖依序回答：證據按「誰能查核」排序；三年紀錄在什麼時候進哪個欄位、各欄位的字數；30 校各自讓研究紀錄走哪條路；最後是一份虛構範例，把同一段紀錄寫進每個欄位的上限。事實與推論在圖中以實線與虛線區分。研究筆記 L（2026-11-08）。",
+          en: "This section answers one concrete question: a student has spent three years in an independent molecular-biology training programme outside school (not a school course, not a university post). What proof and record can that programme produce that Common App and these 30 schools' systems can actually receive? Four figures answer in order: the evidence ranked by who can check it; when each record item enters which container and the container's budget; which route each of the 30 schools gives a research record; and a fictional worked example that writes the same record into every container at its limit. Facts and inferences are drawn as solid and dashed. Research note L (2026-11-08)."
+        },
+        viz: {
+          type: "evidence-ladder",
+          title: L("六階證據裡，只有第 4 階以上有申請者以外的人保存紀錄；前三階全靠學生與 mentor 的說法", "Of six rungs of proof, only rung 4 and above leave a record someone other than the applicant holds; the first three rest on the student's and the mentor's word"),
+          subtitle: L("由弱到強，依「誰能查核」排序。每階列出能為它作證的人、是否存在獨立保存的紀錄，以及它能進入的欄位。實線標籤＝官方頁寫明該欄位收這種東西；虛線＝我們的推論。滑過或點一下看出處。", "Weakest to strongest, ranked by who can check it. Each rung names who can vouch, whether a record exists outside the applicant's hands, and the containers it can enter. Solid chips: an official page says the container takes this; dashed: our inference. Hover or tap for sources."),
+          legend: [
+            { label: L("官方頁寫明收此物的欄位", "Container named on an official page"), shape: "box", color: "#fff", border: "#2a78d6" },
+            { label: L("推論的欄位", "Inferred container"), shape: "dash" },
+            { label: L("獨立紀錄：公開或第三方保存", "Independent record: public or held by a third party"), shape: "dot", color: "#184f95" },
+            { label: L("獨立紀錄：programme 自己保存", "Independent record: held by the programme"), shape: "dot", color: "#6da7ec" }
+          ],
+          rungs: [
+            {
+              label: L("學生自己寫的文字", "The applicant's own text"),
+              sub: L("Activities 150 字元、Honors 一行、Additional Information 300 字。UC 要求這類陳述「true and verifiable by an independent party」，但只在抽查時才會去問。", "An Activities entry (150 characters), an Honors line, Additional Information (300 words). UC requires such statements to be \"true and verifiable by an independent party\", but asks only on a screening."),
+              verifier: L("沒有人；UC 抽查時才向第三方查證", "No one; UC checks with a third party only on a screening"),
+              independent: "no", tag: "f", src: ["L01", "L02", "A1-S6", "C1-S41"],
+              containers: [
+                { label: L("Activities（10 × 150 字元）", "Activities (10 × 150 chars)"), src: ["L01"] },
+                { label: L("Honors（5 × 100 字元）", "Honors (5 × 100 chars)"), src: ["L02", "A1-S6"] },
+                { label: L("Additional Information（300 字）", "Additional Information (300 words)"), src: ["A1-S6", "A1-S12", "L12"] }
+              ]
+            },
+            {
+              label: L("Mentor 的推薦信", "The mentor's letter"),
+              sub: L("Common App 的 Other Recommender 類型沒有「research mentor」；mentor 以 employer 或 other 身分受邀，學校要接受那個類型才送得到。MIT、Yale、Caltech 的研究表單都另外向 mentor 的 email 直接索信。", "Common App's Other Recommender types do not include \"research mentor\"; a mentor is invited as employer or other, and the letter arrives only where the college accepts that type. MIT's, Yale's and Caltech's research forms each request the letter directly from the mentor's email."),
+              verifier: L("Mentor 本人，透過學生填入的 email 可聯絡", "The mentor, reachable at the email the student enters"),
+              independent: "no", tag: "f", src: ["L03", "L06", "L09", "L11", "A1-S15"],
+              containers: [
+                { label: L("Other Recommender（≤1000 字，PDF 指引）", "Other Recommender (≤1000 words, PDF guidance)"), src: ["L03", "A1-S15"] },
+                { label: L("MIT Research Supplement 內的信", "Letter inside MIT's Research Supplement"), src: ["L09"] },
+                { label: L("Yale STEM Research Supplement 內的信", "Letter inside Yale's STEM Research Supplement"), src: ["L11"] },
+                { label: L("Caltech 研究場所的信（必須談具體貢獻）", "Caltech research-site letter (must speak to specific contributions)"), src: ["L06"] },
+                { label: L("Brown／Harvard：申請後另寄的信", "Brown / Harvard: extra letter sent after applying"), src: ["L13", "L14"] }
+              ]
+            },
+            {
+              label: L("有日期、簽名、見證的實驗記錄本與時數技術紀錄", "A dated, signed, witnessed notebook and an hours-and-techniques record"),
+              sub: L("NIH 的紀錄標準：每筆「Dated」、「Signed or assigned to a particular person」、定期由非共同發明人「witnessed with a signature and date」、連續頁碼，且第三者「should be able to reconstruct the experiment」。Caltech portfolio 列「Personal notebooks」為可交項目（每份文件 ≤75 頁）；其他學校沒有一所把記錄本列為收件項目。", "NIH's record standard: entries \"Dated\", \"Signed or assigned to a particular person\", periodically \"witnessed with a signature and date\" by someone who is not a co-inventor, consecutive pages, and a third party \"should be able to reconstruct the experiment\". Caltech's portfolio lists \"Personal notebooks\" as an item (documents ≤75 pages); no other school lists a notebook as something it receives."),
+              verifier: L("Programme 與見證人；記錄本由 programme 保存", "The programme and the witness; the notebook stays with the programme"),
+              independent: "held", tag: "f", src: ["L24", "L08"],
+              containers: [
+                { label: L("Caltech Portfolio：「Personal notebooks」", "Caltech Portfolio: \"Personal notebooks\""), src: ["L08"] },
+                { label: L("Additional Information 內的摘要（時數、技術、見證）", "Summary inside Additional Information (hours, techniques, witness)"), inferred: true, src: ["A1-S6", "L12"] },
+                { label: L("由 mentor 的信轉述", "Described in the mentor's letter"), inferred: true, src: ["L03"] }
+              ]
+            },
+            {
+              label: L("競賽文件：事前研究計畫、指導成人的事後表格、評審", "Competition paperwork: a research plan written beforehand, the supervising adult's after-the-fact form, judges"),
+              sub: L("ISEF：Research Plan「written BEFORE experimentation」，要分開寫學生做的步驟與指導成人做的步驟；Form 2C「To be completed by the Supervising Adult in the Setting (NOT the Student(s)) after experimentation」，勾選學生是「Mentored」、「Worked as a sub-set of our ongoing research」或「Had an independent project」；250 字摘要「must describe research conducted by the student(s), not by the supervising adult(s)」；一件作品最多 12 個月。Regeneron STS：20 頁論文、老師與 mentor 的推薦、須揭露付費 programme 與親屬關係。", "ISEF: the Research Plan is \"written BEFORE experimentation\" and separates the student's steps from the supervising adult's; Form 2C is \"To be completed by the Supervising Adult in the Setting (NOT the Student(s)) after experimentation\" and ticks whether the student was \"Mentored\", \"Worked as a sub-set of our ongoing research\" or \"Had an independent project\"; the 250-word abstract \"must describe research conducted by the student(s), not by the supervising adult(s)\"; one project covers at most 12 months. Regeneron STS: a 20-page paper, teacher and mentor recommendations, disclosure of paid programmes and family relationships."),
+              verifier: L("科展的 SRC／IRB 與評審；Form 2C 上的指導成人；STS 的博士級評審", "The fair's SRC/IRB and judges; the supervising adult on Form 2C; STS's PhD-level evaluators"),
+              independent: "yes", tag: "f", src: ["L17", "L18", "L19", "L20"],
+              containers: [
+                { label: L("Honors（名次、層級）", "Honors (placement, level)"), src: ["L02"] },
+                { label: L("Activities（專題本身）", "Activities (the project itself)"), src: ["L01"] },
+                { label: L("Additional Information（摘要、表格可提供）", "Additional Information (abstract; forms available on request)"), inferred: true, src: ["A1-S6"] },
+                { label: L("Caltech Portfolio：「Research posters」", "Caltech Portfolio: \"Research posters\""), src: ["L08"] }
+              ]
+            },
+            {
+              label: L("公開且有時間戳的成果：具名會議的海報或口頭報告、有 DOI 的預印本、ORCID 紀錄", "A public, timestamped artefact: a poster or talk at a named meeting, a preprint with a DOI, an ORCID record"),
+              sub: L("bioRxiv：「Manuscripts posted on bioRxiv receive DOI's」、送出時「screened … for plagiarism, non-scientific content」、「not certified by scientific peer review」、「papers cannot be removed」、送件人須「confirm you have approval from all co-authors」。ORCID 的項目標示「Validated – Added by a trusted ORCID member organization」或「Self asserted – Added directly by the author」。", "bioRxiv: \"Manuscripts posted on bioRxiv receive DOI's\", are \"screened … for plagiarism, non-scientific content\", are \"not certified by scientific peer review\", \"papers cannot be removed\", and the submitter must \"confirm you have approval from all co-authors\". ORCID items read \"Validated – Added by a trusted ORCID member organization\" or \"Self asserted – Added directly by the author\"."),
+              verifier: L("會議的議程；預印本伺服器（只篩查，不同儕審查）；ORCID 只標示來源", "The meeting's programme; the preprint server (screening, not peer review); ORCID marks provenance only"),
+              independent: "yes", tag: "f", src: ["L21", "L22", "L23", "L09", "L11", "L06"],
+              containers: [
+                { label: L("MIT Research Supplement（海報 PDF；已發表附 citation）", "MIT Research Supplement (poster PDF; citation if published)"), src: ["L09"] },
+                { label: L("Yale STEM supplement（論文、摘要或海報）", "Yale STEM supplement (paper, abstract or poster)"), src: ["L11"] },
+                { label: L("Harvard Upload Materials（須列合作者與本人貢獻）", "Harvard Upload Materials (list collaborators and own contribution)"), src: ["L14"] },
+                { label: L("Brown／JHU／Harvey Mudd：摘要", "Brown / JHU / Harvey Mudd: abstract"), src: ["L13", "L15", "L16"] },
+                { label: L("Additional Information：一行 DOI", "Additional Information: one DOI line"), inferred: true, src: ["A1-S6"] }
+              ]
+            },
+            {
+              label: L("同儕審查過、學生列為作者的論文", "A peer-reviewed paper with the student as an author"),
+              sub: L("期刊為稿件作證，不為學生的份量作證：ICMJE 說判定作者資格「is not the role of journal editors」。Caltech 的研究管道要求論文「published, submitted, or in preparation」，並且仍要研究場所的信談具體貢獻。", "The journal vouches for the manuscript, not the student's share: ICMJE says deciding authorship \"is not the role of journal editors\". Caltech's research channel requires a paper \"published, submitted, or in preparation\" and still requires the research-site letter on specific contributions."),
+              verifier: L("期刊（稿件）＋ mentor（份量）", "The journal (manuscript) plus the mentor (share)"),
+              independent: "yes", tag: "f", src: ["C1-S47", "L06"],
+              containers: [
+                { label: L("Caltech Research Papers and Publications（全文 strongly preferred）", "Caltech Research Papers and Publications (full paper strongly preferred)"), src: ["L06"] },
+                { label: L("MIT／Yale／Harvard 同上", "MIT / Yale / Harvard as above"), src: ["L09", "L11", "L14"] }
+              ]
+            }
+          ]
+        },
+        items: [
+          F("Caltech 把「研究」定義為三個條件同時成立：在「a university or research-affiliated organization」的實驗室、「reported to a senior researcher within the lab」、成果「resulted in a paper or publication that was published, submitted, or in preparation」。不符合的，包括「independent research」與「summer internship」，一律改交 Portfolio。",
+            "Caltech defines research as three conditions met together: a lab in \"a university or research-affiliated organization\", having \"reported to a senior researcher within the lab\", and work that \"resulted in a paper or publication that was published, submitted, or in preparation\". Anything else, including \"independent research\" and a \"summer internship\", goes to the Portfolio instead.", ["L06"]),
+          I("因此一個非大學附屬的校外訓練 programme，即使有三年紀錄，在 Caltech 走的是 Portfolio（海報、記錄本、影片、連結，文件 ≤75 頁），不是研究管道；除非成果已寫成投稿中的論文且該 programme 能被視為 research-affiliated。頁面沒有定義 research-affiliated。",
+            "So a training programme outside school that is not university-affiliated enters Caltech through the Portfolio (posters, notebooks, video, links; documents ≤75 pages), not the research channel, unless the work has become a submitted paper and the programme counts as research-affiliated. The page does not define research-affiliated.", ["L06", "L08"]),
+          F("MIT 的 Research Supplement 收的是「a significant research project outside of high school classes」，一人一份、一個專題：簡短問卷、「PDF of your abstract or research poster, if available」、已發表附 citation，並「Nominate your research advisor, mentor, or principal investigator to submit a letter of recommendation directly through the SlideRoom portfolio」。US$10，截止同申請。問卷內容不在公開頁上。",
+            "MIT's Research Supplement takes \"a significant research project outside of high school classes\", one per applicant, one project: a brief questionnaire, a \"PDF of your abstract or research poster, if available\", a citation if published, and \"Nominate your research advisor, mentor, or principal investigator to submit a letter of recommendation directly through the SlideRoom portfolio\". US$10, due with the application. The questionnaire's questions are not on the public page.", ["L09"]),
+          F("Yale 的 STEM Research Supplement Form 只在申請者於 Common App 表示要交補充材料時才出現在 Status Portal；「attach a research paper, abstract, or poster」、「Full research papers are generally the most helpful」、可「invite a research mentor to submit a letter of recommendation electronically」。同頁：「Most successful Yale applicants submit only the required application materials」。",
+            "Yale's STEM Research Supplement Form appears on the Status Portal only if the applicant indicated intent on the Common App; \"attach a research paper, abstract, or poster\", \"Full research papers are generally the most helpful\", and the applicant may \"invite a research mentor to submit a letter of recommendation electronically\". Same page: \"Most successful Yale applicants submit only the required application materials\".", ["L11"]),
+          F("Harvard 是 30 校中唯一在頁面上明說要「a list of any individuals with whom you collaborated」並「provide a short description of your particular contribution to the work」的學校；補充材料「may be reviewed by faculty」。",
+            "Harvard is the only one of the 30 whose page asks in so many words for \"a list of any individuals with whom you collaborated\" and \"a short description of your particular contribution to the work\"; supplements \"may be reviewed by faculty\".", ["L14"]),
+          F("官方頁面對「付費研究」唯一的句子來自 MIT 的暑期活動頁：「Most summer programs admit all or most students who can pay the (often high) tuition」。這句談的是暑期活動整體，不是研究 programme。30 校的官方部落格、FAQ 與 podcast 中，沒有找到「pay-to-play」、「ghost-written」或「paid research」字樣（2026-11-08 搜尋 mitadmissions.org、Georgia Tech admission blog、admissions.yale.edu、apply.jhu.edu）。",
+            "The only official sentence found that names paying for a programme is on MIT's summer page: \"Most summer programs admit all or most students who can pay the (often high) tuition\". It is about summer programmes in general, not research. No official blog, FAQ or podcast among the 30 was found using \"pay-to-play\", \"ghost-written\" or \"paid research\" (searched 2026-11-08 on mitadmissions.org, the Georgia Tech admission blog, admissions.yale.edu, apply.jhu.edu).", ["L10"]),
+          F("白紙黑字要求揭露付費 programme 的是競賽，不是大學：Regeneron STS「entrants AND mentors must disclose participation in paid programs」，並要求「obtain permission from their mentors before submitting their research」、學生與推薦人都要揭露「any prior familial or personal relationship」。",
+            "The body that requires disclosure of paid programmes in writing is a competition, not a university: Regeneron STS says \"entrants AND mentors must disclose participation in paid programs\", requires entrants to \"obtain permission from their mentors before submitting their research\", and requires both students and recommenders to disclose \"any prior familial or personal relationship\".", ["L20"]),
+          I("把上面幾條放在一起：有研究管道的學校都在收同樣兩樣東西，一件成品（論文、摘要或海報）加一位能談學生自己份量的 mentor。沒有一校說它收訓練紀錄、技術清單或時數表；Caltech 的「Personal notebooks」是唯一把記錄本列為可交項目的官方文字。這是欄位的事實；學校怎麼讀，沒有來源說。",
+            "Read together, the schools with a research channel all take the same two objects: an artefact (paper, abstract or poster) and a mentor who can speak to the student's own share. No school says it receives a training record, a techniques list or an hours table; Caltech's \"Personal notebooks\" is the only official text that lists a notebook as an item. That is a fact about the fields; how a school reads them is not stated anywhere.", ["L06", "L08", "L09", "L11", "L13", "L14", "L15", "L16"]),
+          A("「見證過的記錄本比沒有見證的更有說服力」是假設，沒有任何招生辦公室這樣說；NIH 的見證標準是為研究與智慧財產紀錄寫的，不是為申請寫的。",
+            "That a witnessed notebook persuades more than an unwitnessed one is an assumption; no admissions office says so, and NIH's witnessing standard was written for research and intellectual-property records, not for applications.", ["L24"])
+        ]
+      },
+
+      // ───────────────────────── L: three years → containers, with budgets
+      {
+        id: "lab-timeline",
+        h: { zh: "三年紀錄在什麼時候進哪個欄位", en: "When each record item enters which container" },
+        judgment: {
+          zh: "三年累積的東西，最後進申請表的窗口只有 G12 上學期的幾個月：Activities 與 Honors 在送出時凍結，Additional Information 300 字裝下整個結構，mentor 的信在送出後也還能到；只有 Caltech 的 portal 在送出後才開。",
+          en: "Three years of accumulation enter the application in one window of a few months in the autumn of G12: Activities and Honors freeze at submission, Additional Information's 300 words hold the whole structure, the mentor's letter can still arrive after submission, and Caltech's portal opens only after submission."
+        },
+        viz: {
+          type: "record-to-form", wide: true,
+          title: L("五種紀錄項目、六個欄位：150 字元與 300 字之外，能裝下細節的只有 mentor 的信與三所學校的研究表單", "Five record items, six containers: beyond 150 characters and 300 words, only the mentor's letter and three schools' research forms hold detail"),
+          subtitle: L("上方：訓練的三年（G9–G11）與申請窗口（G12 上學期）。每條橫桿是 programme 能持續產生的一種紀錄；下方是申請表的欄位與官方上限。連線從紀錄成形的時間點落到它進入的欄位。虛線＝我們推論的路徑。左右滑動可看全圖。", "Top: the three training years (G9–G11) and the application window (autumn of G12). Each bar is a record the programme can keep producing; below are the application's containers with their official budgets. A line drops from the point in time a record is ready to the container it enters. Dashed: a path we infer. Scroll sideways for the full width."),
+          years: [
+            { label: L("第 1 年（G9）", "Year 1 (G9)"), sub: L("基本技術", "Basic techniques") },
+            { label: L("第 2 年（G10）", "Year 2 (G10)"), sub: L("方法與重現", "Methods and replication") },
+            { label: L("第 3 年（G11）", "Year 3 (G11)"), sub: L("自己的專題", "Own project") },
+            { label: L("申請窗口（G12 秋）", "Application (autumn G12)"), sub: L("8/1 開放 → 1 月初", "Aug 1 → early Jan") }
+          ],
+          items: [
+            { id: "log", label: L("時數與技術紀錄", "Hours-and-techniques log"), from: 0, to: 3.4, sub: L("programme 逐年保存；申請表沒有欄位直接收", "Kept by the programme year by year; no field receives it directly"), src: ["L24"] },
+            { id: "nb", label: L("見證過的實驗記錄本", "Witnessed lab notebook"), from: 0, to: 3.4, sub: L("NIH 標準：有日期、簽名、定期見證、連續頁碼", "NIH standard: dated, signed, periodically witnessed, consecutive pages"), src: ["L24"] },
+            { id: "mentor", label: L("Mentor 關係", "Mentor relationship"), from: 0.3, to: 3.9, sub: L("Other Recommender 類型沒有 research mentor；以 employer 或 other 受邀", "No research-mentor type among Other Recommenders; invited as employer or other"), src: ["L03"] },
+            { id: "proj", label: L("第 3 年專題（摘要）", "Year-3 project (abstract)"), from: 2.0, to: 3.2, sub: L("ISEF：計畫寫在實驗前；一件作品 ≤12 個月", "ISEF: plan written before experimenting; one project ≤12 months"), src: ["L17", "L18"] },
+            { id: "poster", label: L("海報／科展／預印本", "Poster, fair entry or preprint"), from: 2.6, to: 3.3, sub: L("公開、有日期的成果；預印本有 DOI 但未同儕審查", "A public, dated artefact; a preprint has a DOI but no peer review"), src: ["L17", "L21"] }
+          ],
+          containers: [
+            { id: "act", label: L("Activities", "Activities"), budget: { n: 150, unit: "chars" }, sub: L("10 項；position 50、organization 100；時數／週 × 週／年", "10 entries; position 50, organization 100; hours/week × weeks/year"), src: ["L01"] },
+            { id: "hon", label: L("Honors", "Honors"), budget: { n: 100, unit: "chars" }, sub: L("5 項；年級與層級", "5 entries; grade and level"), src: ["L02", "A1-S6"] },
+            { id: "addl", label: L("Additional Information", "Additional Information"), budget: { n: 300, unit: "words" }, sub: L("2025–26 起由 650 減為 300；「not a space for another essay」", "Cut from 650 to 300 from 2025–26; \"not a space for another essay\""), src: ["A1-S6", "A1-S12", "L12"] },
+            { id: "oe", label: L("Other Recommender 信", "Other Recommender letter"), budget: { n: 1000, unit: "words" }, sub: L("PDF 指引「1000 words or less」；學校須接受該類型", "PDF guidance \"1000 words or less\"; the college must accept the type"), src: ["A1-S15", "L03"] },
+            { id: "sr", label: L("School Report（counselor）", "School Report (counselor)"), budget: null, sub: L("成績單與 school profile；是否能附校外紀錄：未載明", "Transcript and school profile; whether an outside record may be attached: not stated"), src: ["A1-S14", "L05"] },
+            { id: "res", label: L("學校研究表單", "School research form"), budget: { n: 1, unit: "file", text: L("份（MIT／Yale／Caltech）", "form (MIT / Yale / Caltech)") }, sub: L("摘要或海報 PDF＋mentor 的信；Caltech 全文 preferred，portal 送出後開", "Abstract or poster PDF plus the mentor's letter; Caltech prefers the full paper, portal opens after submission"), src: ["L09", "L11", "L06"] }
+          ],
+          links: [
+            { from: "log", to: "act", at: 3.1, label: L("總時數進 hours/week × weeks/year；150 字元寫角色與技術", "Total hours go into hours/week × weeks/year; 150 characters for role and techniques"), src: ["L01"] },
+            { from: "log", to: "addl", at: 3.2, label: L("逐年時數與技術清單，以條列寫", "Hours and techniques by year, as bullets"), dashed: true, src: ["A1-S6", "L12"] },
+            { from: "nb", to: "res", at: 3.3, label: L("只有 Caltech Portfolio 列「Personal notebooks」", "Only Caltech's Portfolio lists \"Personal notebooks\""), src: ["L08"] },
+            { from: "nb", to: "oe", at: 3.2, label: L("見證人即 mentor，在信中說明", "The witness is the mentor and says so in the letter"), dashed: true, src: ["L24", "L03"] },
+            { from: "mentor", to: "oe", at: 3.5, label: L("送出後仍可送達；20 字元關係、20 字元認識多久", "May arrive after submission; 20-character relationship, 20-character length known"), src: ["A1-S15", "L03"] },
+            { from: "mentor", to: "res", at: 3.6, label: L("MIT 由 SlideRoom 直接索信；Yale 由表單邀請；Caltech 由表單填 email", "MIT requests it through SlideRoom; Yale invites through the form; Caltech takes the email on its form"), src: ["L09", "L11", "L06"] },
+            { from: "mentor", to: "sr", at: 3.0, label: L("counselor 只能轉述；是否附文件未載明", "The counselor can only relay; attaching documents is not stated"), dashed: true, src: ["L05", "A1-S14"] },
+            { from: "proj", to: "addl", at: 3.2, label: L("專題一段：問題、自己做的、mentor 做的", "One paragraph: question, what you did, what the mentor did"), dashed: true, src: ["L18", "A1-S6"] },
+            { from: "proj", to: "res", at: 3.2, label: L("摘要或海報 PDF", "Abstract or poster PDF"), src: ["L09", "L11"] },
+            { from: "poster", to: "hon", at: 3.1, label: L("名次或獎項才算 honor", "Only a placement or award counts as an honor"), src: ["L02"] },
+            { from: "poster", to: "res", at: 3.3, label: L("MIT 海報 PDF；Caltech Portfolio「Research posters」", "MIT poster PDF; Caltech Portfolio \"Research posters\""), src: ["L09", "L08"] }
+          ],
+          legend: [
+            { label: L("官方頁寫明的路徑", "Path stated on an official page"), shape: "line", color: "#b2b7bf" },
+            { label: L("推論的路徑", "Inferred path"), shape: "dash" }
+          ]
+        },
+        items: [
+          F("Common App 的活動說明單自己示範把 256 字元的描述刪成 141 字元，並刪掉時數「because that information is reported elsewhere in the section」：每項活動另有 hours/week 與 weeks/year 欄位。",
+            "Common App's own activities handout cuts a 256-character description to 141 and drops the time spent \"because that information is reported elsewhere in the section\": each activity has its own hours/week and weeks/year fields.", ["L01"]),
+          F("Yale 的招生官在 2025-07-31 的 podcast 裡說明 Additional Information 由 650 字減為 300 字，並說「It's not a space for another essay」、「It doesn't have to be well-written prose」（條列可以）、沒有東西就「leave it blank」。",
+            "Yale's officers, in the podcast dated 2025-07-31, describe the Additional Information cut from 650 to 300 words and say \"It's not a space for another essay\", \"It doesn't have to be well-written prose\" (bullets are fine), and if there is nothing to add, \"leave it blank\".", ["L12"]),
+          F("Courses & Grades 只收「appearing on your high school transcript」的課程；沒有高中學分的大學課程「do not need to report」。校外 programme 的課不在這裡。Common App 的輔導老師簡報把「college courses taken」的清單指向 Writing → Additional Information。",
+            "Courses & Grades takes only courses \"appearing on your high school transcript\"; college courses without high-school credit \"do not need to report\". An outside programme's courses have no place here. Common App's counselor deck points a list of \"college courses taken\" to Writing → Additional Information.", ["L04"]),
+          F("Counselor 的角色（Common App 寫作指引）：從「an entire graduating class」的角度，提供「Context for and rationale behind specific awards and honors」。School Report 的欄位是成績單、school profile、評分與 500 字的 disruption 欄。counselor 能否附上或簽署校外 programme 的紀錄：未載明（2026-11-08 查核）。",
+            "The counselor's role (Common App writing guide): from the view of \"an entire graduating class\", give \"Context for and rationale behind specific awards and honors\". The School Report's fields are the transcript, the school profile, ratings and a 500-word disruption box. Whether a counselor may attach or countersign an outside programme's record: not stated (checked 2026-11-08).", ["L05", "A1-S14"]),
+          I("因此 counselor 能幫上的，是在知情的情況下，把校外獎項與 mentor 的存在寫進自己的信裡作為脈絡；沒有任何官方文字說 counselor 會為校外紀錄的真實性背書。",
+            "So what a counselor can do, if told, is place the outside award and the mentor's existence in their own letter as context; no official text says a counselor vouches for an outside record's truth.", ["L05"])
+        ]
+      },
+
+      // ───────────────────────── L: 30 schools, where a research record lands
+      {
+        id: "lab-routes",
+        h: { zh: "30 校各自讓研究紀錄走哪條路", en: "Where a research record lands at each of the 30 schools" },
+        judgment: {
+          zh: "有結構化研究表單（附 mentor 信）的只有 MIT、Yale、Caltech 三校；另有 Harvard、Brown、JHU、Swarthmore 收自由上傳或摘要；8 校明寫不收或沒有管道；其餘不是只剩 Common App 欄位，就是頁面沒寫。",
+          en: "Only MIT, Yale and Caltech have a structured research form with a mentor letter; Harvard, Brown, JHU and Swarthmore take a free upload or an abstract; eight schools say in writing they refuse or have no channel; the rest either leave only the Common App fields or say nothing."
+        },
+        viz: {
+          type: "school-research-routes", dataset: "schools",
+          title: L("30 校中 3 校有附 mentor 信的研究表單，8 校明寫不收；每校只接受一種形狀的研究紀錄", "Three of 30 schools have a research form with a mentor letter and eight refuse in writing; each school takes one shape of research record"),
+          subtitle: L("每列一校。四欄：是否收研究論文或摘要（來自 portfolios 矩陣）、研究紀錄能走的管道（本次分類）、是否接受 mentor 另寫一封信、是否接受 Common App 的 Other Recommender（來自學校資料）。虛線圈＝頁面未載明；斜紋＝網頁拒絕自動讀取。滑過或點一下看該格全文與出處。", "One row per school. Four columns: whether a research paper or abstract is accepted (from the portfolios matrix), the route a research record can take (classified in this note), whether a mentor's extra letter is accepted, and whether Common App's Other Recommender is accepted (from the school data). Dashed ring: not stated on the pages read; hatched: page refused automated reading. Hover or tap a cell for the full text and sources."),
+          legend: [
+            { label: L("接受", "Accepted"), shape: "dot", color: "#184f95" },
+            { label: L("有限或有條件", "Limited or conditional"), shape: "ring" },
+            { label: L("不收", "Refused"), shape: "ring", border: "#898781" },
+            { label: L("未載明", "Not stated"), shape: "dash" },
+            { label: L("網頁拒絕自動讀取", "Page refused automated reading"), shape: "hatch" },
+            { label: L("管道：SlideRoom 研究補充", "Route: SlideRoom research supplement"), shape: "box", color: "#184f95" },
+            { label: L("管道：學校 portal 上傳", "Route: school portal upload"), shape: "box", color: "#2a78d6" },
+            { label: L("管道：只走 Common App 欄位", "Route: Common App fields only"), shape: "box", color: "#b7d3f6", border: "#2a78d6" }
+          ],
+          rows: [
+            { school: "MIT", route: "slideroom", mentor: "yes", note: L("Research Supplement：問卷、摘要或海報 PDF、citation；mentor 經 SlideRoom 寫信。", "Research Supplement: questionnaire, abstract or poster PDF, citation; the mentor's letter comes through SlideRoom."), src: ["L09", "B2-S1"], mentorSrc: ["L09", "B7-O06"] },
+            { school: "Caltech", route: "portal", mentor: "yes", note: L("Research Papers and Publications（限大學或 research-affiliated 實驗室且有論文）；否則 Portfolio。Beaver Breakroom 送出後開。", "Research Papers and Publications (lab in a university or research-affiliated organization, with a paper); otherwise the Portfolio. Beaver Breakroom opens after submission."), src: ["L06", "L08"], mentorSrc: ["L06"], mentorNote: L("研究場所的信為必要，須談具體貢獻", "Research-site letter required; must speak to specific contributions") },
+            { school: "Stanford", route: "refused", mentor: "limited", note: L("「we do not offer an option for applicants to upload supplementary materials」；研究論文不加入檔案。", "\"we do not offer an option for applicants to upload supplementary materials\"; research papers are not added to the file."), src: ["B7-O50"], mentorSrc: ["B7-O49"], mentorNote: L("一位 Other Recommender，須能「provide new insights」", "One Other Recommender who can \"provide new insights\"") },
+            { school: "Harvard", route: "portal", mentor: "yes", note: L("Applicant Portal「Upload Materials」；須列合作者、mentor 與本人貢獻。", "Applicant Portal \"Upload Materials\"; list collaborators, the mentor and your own contribution."), src: ["L14"], mentorSrc: ["L14"] },
+            { school: "Yale", route: "portal", mentor: "yes", note: L("STEM Research Supplement Form（Status Portal，需事先表示意願）；論文、摘要或海報；邀請 mentor 寫信。", "STEM Research Supplement Form (Status Portal, intent indicated beforehand); paper, abstract or poster; invite the mentor to write."), src: ["L11"], mentorSrc: ["L11"] },
+            { school: "Princeton", route: "refused", mentor: "ns", note: L("沒有研究管道；選填項目只有藝術補充。", "No research channel; the arts supplement is the only optional component."), src: ["V4-T1", "V4-T3"] },
+            { school: "Columbia", route: "blocked", mentor: "limited", note: L("FAQ 頁 2026-11-08 仍回 HTTP 403；2026-11-07 的搜尋摘錄說額外的信只考慮 research supervisor 或大學課程教師。", "The FAQ returned HTTP 403 again on 2026-11-08; a 2026-11-07 search excerpt said extra letters are considered only from a research supervisor or college-course instructor."), src: ["L26", "B7-O73"], mentorSrc: ["B7-O73"], mentorNote: L("只有摘錄，未讀到頁面本文", "Excerpt only; page body not read") },
+            { school: "Penn", route: "commonapp", mentor: "ns", note: L("請寫在 Activities 或 Additional Information。", "Use the Activities or Additional Information sections."), src: ["B2-S19"] },
+            { school: "Brown", route: "portal", mentor: "yes", note: L("Brown Applicant Portal：研究摘要；不收 email 更新。", "Brown Applicant Portal: research abstract; no updates by email."), src: ["L13"], mentorSrc: ["L13"], mentorNote: L("一封選填的信走 Common App；其他由推薦人直接寄", "One optional letter via Common App; further letters sent directly by the recommender") },
+            { school: "Cornell", route: "limited", mentor: "ns", note: L("未設研究類別；Applicant Portal 可「upload supplemental materials to your application」。", "No research category; the Applicant Portal lets applicants \"upload supplemental materials to your application\"."), src: ["B2-S28"] },
+            { school: "Georgetown", route: "ns", mentor: "ns", src: ["B2-S29"] },
+            { school: "CMU", route: "limited", mentor: "ns", note: L("不收上傳；工學院與 CS 只有 VIVA 影片。", "No uploads; Engineering and CS take a VIVA video only."), src: ["B2-S30"] },
+            { school: "Georgia Tech", route: "ns", mentor: "ns", src: ["B2-S32"] },
+            { school: "Purdue", route: "ns", mentor: "ns", src: ["V4-T8"] },
+            { school: "Michigan", route: "refused", mentor: "no", note: L("「Do not submit additional documents unless specifically requested.」", "\"Do not submit additional documents unless specifically requested.\""), src: ["V4-T13"], mentorSrc: ["V4-T13"] },
+            { school: "UIUC", route: "refused", mentor: "no", note: L("不收任何未經要求的材料；未經要求的信在審查前移除。", "No unsolicited material; unsolicited letters are removed before review."), src: ["B2-S36", "B7-O86"], mentorSrc: ["B7-O86"] },
+            { school: "Olin", route: "ns", mentor: "ns", src: ["B2-S38"] },
+            { school: "Harvey Mudd", route: "commonapp", mentor: "limited", note: L("Common App 上傳；只要摘要，不要全文。", "Common App upload; abstract only, not the full paper."), src: ["L16"], mentorSrc: ["L16"], mentorNote: L("只多收一封，最好來自 supervisor、mentor 或 employer", "Only one additional letter, ideally from a supervisor, mentor or employer") },
+            { school: "Johns Hopkins", route: "portal", mentor: "yes", note: L("applicant portal 上傳；以研究摘要為例；須「contribute in a substantive way」。", "Applicant portal upload; research abstracts given as an example; must \"contribute in a substantive way\"."), src: ["L15"], mentorSrc: ["L15"], mentorNote: L("可作為選交材料上傳；候補名單階段不要再寄", "May be uploaded as optional material; not during the waitlist") },
+            { school: "Duke", route: "refused", mentor: "limited", note: L("點名不收 research abstracts。", "Names research abstracts as not accepted."), src: ["B2-S43"], mentorSrc: ["B7-O43"], mentorNote: L("接受一封額外推薦信", "Accepts one additional letter") },
+            { school: "Northwestern", route: "refused", mentor: "ns", note: L("不收未經要求的補充材料。", "Unsolicited supplements are refused."), src: ["V4-T6"] },
+            { school: "Rice", route: "ns", mentor: "limited", src: ["B2-S46"], mentorSrc: ["B7-O68"], mentorNote: L("「A supplemental letter is not required or expected.」", "\"A supplemental letter is not required or expected.\"") },
+            { school: "UC Berkeley", route: "refused", mentor: "no", note: L("UC 不收補充材料；活動須「true and verifiable by an independent party」，抽查時才查。", "UC takes no supplementary material; activities must be \"true and verifiable by an independent party\", checked on screening."), src: ["B2-S47", "C1-S41"], mentorSrc: ["C1-S40", "C1-S41"], mentorNote: L("UC 頁面未提推薦信", "UC pages do not mention letters") },
+            { school: "UCLA", route: "ns", mentor: "no", src: ["B2-S50"], mentorSrc: ["C1-S40"] },
+            { school: "UC San Diego", route: "ns", mentor: "no", src: ["B2-S51"], mentorSrc: ["C1-S40"] },
+            { school: "UT Austin", route: "ns", mentor: "limited", src: ["B2-S54"], mentorSrc: ["B7-O84", "B7-O85"], mentorNote: L("推薦信「although not required」會看；最多兩封（摘錄）", "Letters reviewed \"although not required\"; up to two (excerpt)") },
+            { school: "UW", route: "refused", mentor: "ns", note: L("不收補充材料，也請勿寄網站連結。", "No supplementary material; no website links."), src: ["B2-S55"] },
+            { school: "Williams", route: "limited", mentor: "ns", note: L("「we welcome a brief description of your work」；可另附 VIVA。", "\"we welcome a brief description of your work\"; optional VIVA."), src: ["V4-T11"] },
+            { school: "Amherst", route: "blocked", mentor: "blocked", src: ["B2-S57"] },
+            { school: "Swarthmore", route: "portal", mentor: "ns", note: L("portal：研究摘要，或 VIVA 影片介紹研究。", "Portal: research abstracts, or a VIVA video about the research."), src: ["B2-S58"] }
+          ]
+        },
+        items: [
+          F("Harvey Mudd：「do not upload entire research papers but instead include an abstract」；Yale：「Full research papers are generally the most helpful」。同一份東西，兩校要的形狀相反；因此同一段三年紀錄至少要備妥摘要與全文兩種版本。",
+            "Harvey Mudd: \"do not upload entire research papers but instead include an abstract\"; Yale: \"Full research papers are generally the most helpful\". The same artefact in opposite shapes, so one three-year record needs at least an abstract and a full-length version ready.", ["L16", "L11"]),
+          F("Brown 只收 portal 上傳、「We are not able to accept updates via email」；JHU 的 ED 延後者「may email the link to or document of your supplemental materials」。送件方式逐校不同。",
+            "Brown takes portal uploads only and says \"We are not able to accept updates via email\"; JHU's deferred ED applicants \"may email the link to or document of your supplemental materials\". The delivery route differs school by school.", ["L13", "L15"]),
+          I("「接受 mentor 的信」一欄中，標為「有限」的學校多半是只多收一封信的學校（Harvey Mudd、Duke、Stanford）：這一封若給了 lab mentor，就不能再給別人。這是欄位規則的推論，不是任何學校的建議。",
+            "In the mentor-letter column, most schools marked limited take exactly one extra letter (Harvey Mudd, Duke, Stanford): if that letter goes to the lab mentor it cannot go to anyone else. This is an inference from the field rules, not any school's advice.", ["L16", "B7-O43", "B7-O49"])
+        ]
+      },
+
+      // ───────────────────────── L: worked, fictional example
+      {
+        id: "lab-example",
+        h: { zh: "虛構範例：同一段三年紀錄，寫進每個欄位的上限", en: "A fictional example: the same three-year record written into each container at its limit" },
+        judgment: {
+          zh: "150 字元只放得下角色、技術清單與一個成果；300 字放得下整個結構；真正能說清「哪些是學生自己做的」的，只有 mentor 那封最多 1000 字的信。",
+          en: "150 characters hold a role, a techniques list and one output; 300 words hold the whole structure; the only place that can say which parts the student did alone is the mentor's letter of at most 1000 words."
+        },
+        intro: {
+          zh: "以下是虛構的合成範例，沒有真實人物、機構或資料；數字（時數、名次）為示意。英文是表單實際會填的文字（Common App 表單為英文）；中文為說明。字元數與字數由頁面即時計算。",
+          en: "A fictional composite follows: no real person, institution or data; the numbers (hours, placement) are illustrative. The English is what the form would actually receive (Common App forms are in English); the Chinese is a gloss. Character and word counts are computed live on the page."
+        },
+        viz: {
+          type: "filled-fields",
+          title: L("同一段紀錄的四種長度：45、137、76 字元與約 300 字的結構", "One record at four lengths: 45, 137 and 76 characters, and a structure of about 300 words"),
+          subtitle: L("虛構範例。每個欄位上方的計數器是該文字對照官方上限的用量；超過會以橘色標出。", "Fictional. The counter above each field shows the text's use of the official budget; an overrun turns orange."),
+          fictional: L("虛構範例 · 合成人物 · 無真實姓名、機構或資料", "Fictional example · composite persona · no real names, institutions or data"),
+          blocks: [
+            {
+              label: L("Activities：Position / Leadership description（50 字元）", "Activities: Position / Leadership description (50 chars)"),
+              limit: { n: 50, unit: "chars" },
+              text: { en: "Student researcher, molecular biology (3 yrs)", zh: "學生研究員，分子生物學（三年）" },
+              src: ["L01"]
+            },
+            {
+              label: L("Activities：Organization name（100 字元）", "Activities: Organization name (100 chars)"),
+              limit: { n: 100, unit: "chars" },
+              text: { en: "Independent molecular-biology training lab (outside school)", zh: "獨立的分子生物學訓練實驗室（校外）。不寫任何機構名稱；本站不點名。" },
+              src: ["L01"]
+            },
+            {
+              label: L("Activities：Description（150 字元）；另填 hours/week 6、weeks/year 40、年級 9–11", "Activities: Description (150 chars); plus hours/week 6, weeks/year 40, grades 9–11"),
+              limit: { n: 150, unit: "chars" },
+              text: { en: "720 h/3 yrs: PCR, cloning, Western, qPCR. Yr 3: own project on promoter variants in E. coli; poster at regional fair. Witnessed notebook.", zh: "三年 720 小時：PCR、選殖、Western、qPCR。第三年：自己的 E. coli 啟動子變異專題；地區科展海報。有見證的實驗記錄本。" },
+              note: L("時數不寫進描述，因為另有欄位；Common App 自己的範例也這樣刪。", "Hours stay out of the description because the section has its own fields; Common App's own example makes the same cut."),
+              src: ["L01"]
+            },
+            {
+              label: L("Honors：title（100 字元）；另選年級 11、層級 State/Regional", "Honors: title (100 chars); plus grade 11, level State/Regional"),
+              limit: { n: 100, unit: "chars" },
+              text: { en: "2nd place, Cellular & Molecular Biology, ISEF-affiliated regional fair (G11)", zh: "ISEF 附屬地區科展，細胞與分子生物學類第二名（11 年級）。只有名次或獎項能寫在這裡；時數與技術不是 honor。" },
+              src: ["L02", "A1-S6"]
+            },
+            {
+              label: L("Additional Information（300 字）：結構大綱，不是全文", "Additional Information (300 words): an outline of the structure, not the full text"),
+              limit: { n: 300, unit: "words" },
+              lines: [
+                { en: "What it is: an independent molecular-biology training lab outside school, not a school course; supervised by a named mentor (email given); G9–G11.", zh: "是什麼：校外的獨立分子生物學訓練實驗室，不是學校課程；由具名 mentor 指導（附 email）；G9–G11。", n: 45 },
+                { en: "Record kept: dated, witnessed lab notebook (N pages); hours by year, 180 / 240 / 300.", zh: "留下的紀錄：有日期、有見證的實驗記錄本（N 頁）；逐年時數 180／240／300。", n: 35 },
+                { en: "Techniques by year: Y1 sterile technique, pipetting, PCR, gel; Y2 plasmid prep, restriction cloning, transformation, replication of two published results; Y3 qPCR, Western blot, own project.", zh: "逐年技術：第一年無菌操作、移液、PCR、電泳；第二年質體製備、限制酶選殖、轉形、重現兩篇已發表結果；第三年 qPCR、Western blot、自己的專題。", n: 60 },
+                { en: "Year-3 project in one paragraph: question; what I designed and did myself; what the mentor did (strain, safety review, troubleshooting), in the manner of ISEF Form 2C.", zh: "第三年專題一段：問題；我自己設計與做的；mentor 做的（菌株、安全審查、除錯），仿 ISEF Form 2C 的寫法。", n: 70 },
+                { en: "Checkable anchors: poster at the regional fair (date, category); abstract available; notebook available on request; mentor writes as Other Recommender where accepted.", zh: "可查核的錨點：地區科展海報（日期、類別）；摘要可提供；記錄本可應要求提供；mentor 在接受的學校以 Other Recommender 身分寫信。", n: 50 },
+                { en: "What is not claimed: no publication; no authorship; nothing beyond the above.", zh: "不主張的：沒有發表；沒有作者身分；沒有上述以外的東西。", n: 25 }
+              ],
+              note: L("Yale 的招生官說這一欄「doesn't have to be well-written prose」，條列可以；也說它「not a space for another essay」。六條合計約 285 字。", "Yale's officers say this box \"doesn't have to be well-written prose\" and bullets are fine, and that it is \"not a space for another essay\". The six bullets total about 285 words."),
+              src: ["A1-S6", "L12", "L18"]
+            },
+            {
+              label: L("Other Recommender：mentor 需要的簡報（信由 mentor 寫，上限 1000 字；關係 20 字元；認識多久 20 字元）", "Other Recommender: the brief the mentor needs (the mentor writes the letter, ≤1000 words; relationship 20 chars; length known 20 chars)"),
+              limit: null,
+              lines: [
+                { en: "Relationship field (20 chars): \"Lab mentor\". How long known (20 chars): \"3 years\".", zh: "關係欄（20 字元）：「Lab mentor」。認識多久（20 字元）：「3 years」。" },
+                { en: "Which Other Recommender type the student invited you under (employer or other), and which colleges accept it; the letter goes only to those.", zh: "學生以哪個 Other Recommender 類型邀請你（employer 或 other），哪些學校接受；信只會送到那些學校。" },
+                { en: "Dates and hours you observed, by year; which techniques the student now performs unaided and which not yet.", zh: "你親眼看到的日期與時數，逐年；哪些技術學生已能獨立完成、哪些還不能。" },
+                { en: "The year-3 project in Form 2C terms: mentored / sub-set of ongoing work / independent; what the student decided and did; what you did.", zh: "第三年專題，以 Form 2C 的語言：受指導／屬於實驗室進行中工作的一部分／獨立專題；學生決定與做了什麼；你做了什麼。" },
+                { en: "One specific episode (a failed cloning and how the student troubleshot it), not adjectives.", zh: "一個具體事件（一次失敗的選殖與學生怎麼除錯），不要形容詞。" },
+                { en: "That you witnessed the notebook, how often, and that it can be produced on request; a letterhead and an email an office can reply to.", zh: "你見證了記錄本、多常見證、可應要求提供；有信頭，並附招生辦公室能回覆的 email。" },
+                { en: "For Caltech, Yale or MIT: the same letter is requested again through their own form; Caltech's must \"speak to your specific contributions\".", zh: "對 Caltech、Yale 或 MIT：同一封信會再經它們自己的表單索取；Caltech 的信「must speak to your specific contributions」。" }
+              ],
+              note: L("Common App 的 Other evaluation 沒有評分格，只有關係、認識多久與一份上傳的信。沒有官方文字要求信上有信頭或可回覆的 email；那兩項是推論，來自 Caltech、MIT、Yale 表單都向 mentor 的 email 索信這個事實。", "Common App's Other evaluation has no rating grid: relationship, length known and one uploaded letter. No official text requires a letterhead or a reply-able email; those two items are an inference from the fact that Caltech's, MIT's and Yale's forms all request the letter at the mentor's email."),
+              src: ["A1-S15", "L03", "L06", "L09", "L11", "L18"]
+            }
+          ]
+        },
+        items: [
+          I("這份範例刻意不寫發表：三年訓練 programme 最常見的終點是技術熟練與一個自己的小專題，不是論文；寫成有論文的樣子，就會撞上 Caltech「published, submitted, or in preparation」與 Harvard「your particular contribution」這類會被追問的條件。",
+            "The example deliberately claims no publication: the usual end point of a three-year training programme is technical fluency and one small project of the student's own, not a paper; dressing it as a paper runs into conditions that invite follow-up, such as Caltech's \"published, submitted, or in preparation\" and Harvard's \"your particular contribution\".", ["L06", "L14"]),
+          I("Programme 自己最值得先做的一件事，是把 ISEF Form 2C 的五個勾選項（用了設備／接觸很少／受指導／屬於進行中工作的一部分／獨立專題）逐年填好並由指導成人簽名。它不會直接進任何欄位，但它是 mentor 信、Additional Information 與任何研究表單共同的底稿。",
+            "The single most useful thing the programme itself can do is fill in ISEF Form 2C's five boxes (used equipment / minimal interaction / mentored / sub-set of ongoing work / independent project) for each year, signed by the supervising adult. It enters no field directly, but it is the shared draft under the mentor's letter, the Additional Information bullets and any research form.", ["L18"]),
+          A("範例中 mentor 以 Other Recommender 身分寫信的前提，是該校接受 employer 或 other 類型；本站未逐校讀取 Common App 內的接受設定，這是假設。",
+            "The example assumes the college accepts the employer or other type so the mentor can write as an Other Recommender; the per-college settings inside Common App were not read, so this is an assumption.", ["L03"])
+        ]
+      },
+
       // ───────────────────────── C1 frameworks
       {
         id: "frameworks",

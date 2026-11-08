@@ -1,6 +1,7 @@
 /* School figures: comparator ('compare'), enum waffle ('waffle'), supplementary-materials
    glyph matrix ('matrix-grid') and major-entry strip ('entry-strip').
-   Data: window.ATLAS.viz[spec.dataset || 'schools'] (same shape: viz-schools.js, viz-more.js); full cell text for
+   Data: window.ATLAS.viz[spec.dataset || 'schools'] (same shape: viz-schools.js, viz-more.js), or dataset 'all',
+   the two merged at load (compare across schools 1–50; see mergeAll); full cell text for
    the matrix: window.ATLAS.matrix when it has the school, else the dataset's own note['materials.*'], else none.
    Styles: site.css, block "School figures (viz-schools.js)". */
 (function () {
@@ -33,11 +34,42 @@
     eng: s('工程', 'Engineering'), bio: s('生物', 'Biology'),
     capNote: s('其中 {n} 所的工程頁面寫明有名額或容量限制', '{n} engineering pages state a seat or capacity limit'),
     entryUnknown: s('頁面未載明', 'Not stated on the pages read'),
-    cField: s('主修', 'Major'), cEntry: s('何時進入', 'When you enter')
+    cField: s('主修', 'Major'), cEntry: s('何時進入', 'When you enter'),
+    grp30: s('第 1–30 校', 'Schools 1–30'), grp50: s('第 31–50 校', 'Schools 31–50')
   };
+  // label for a field a school's dataset does not carry (dataset 'all'): from data/ui.js
+  function notCoveredT() { return ((window.ATLAS || {}).ui || {}).notCovered || s('此深度未涵蓋', 'Not covered at this depth'); }
   function fmtT(x, o) { var t = window.ATLAS_UTIL.L(x); for (var k in o) t = t.split('{' + k + '}').join(o[k]); return t; }
   function esc(x) { return window.ATLAS_UTIL.esc(x == null ? '' : x); }
-  function D(spec) { return ((window.ATLAS || {}).viz || {})[(spec && spec.dataset) || 'schools']; }
+  // dataset 'all' = viz.schools (1–30) + viz.more (31–50): fields in the schools order plus any the second
+  // set adds, enums merged key by key, rows from both. d.carries[school] lists the field ids that school's
+  // own dataset has; a field outside it renders as "not covered at this depth" (never as "not stated").
+  var ALL = null;
+  function mergeAll() {
+    var VZ = (window.ATLAS || {}).viz || {}, a = VZ.schools, b = VZ.more;
+    if (!a) return null;
+    if (!b) return a;
+    var fields = a.fields.slice(), seen = {};
+    a.fields.forEach(function (f) { seen[f.id] = 1; });
+    b.fields.forEach(function (f) { if (!seen[f.id]) { seen[f.id] = 1; fields.push(f); } });
+    var enums = {};
+    [a, b].forEach(function (d) {
+      Object.keys(d.enums || {}).forEach(function (e) {
+        enums[e] = enums[e] || {};
+        Object.keys(d.enums[e]).forEach(function (k) { if (!enums[e][k]) enums[e][k] = d.enums[e][k]; });
+      });
+    });
+    var data = {}, carries = {}, groups = {};
+    a.order.forEach(function (k) { data[k] = a.data[k]; carries[k] = a.fields.map(function (f) { return f.id; }); groups[k] = 0; });
+    b.order.forEach(function (k) { if (data[k]) return; data[k] = b.data[k]; carries[k] = b.fields.map(function (f) { return f.id; }); groups[k] = 1; });
+    var order = a.order.concat(b.order.filter(function (k) { return a.order.indexOf(k) < 0; }));
+    return { order: order, fields: fields, enums: enums, data: data, carries: carries, groups: groups, groupLabels: [T.grp30, T.grp50] };
+  }
+  function D(spec) {
+    var name = (spec && spec.dataset) || 'schools';
+    if (name === 'all') return ALL || (ALL = mergeAll());
+    return ((window.ATLAS || {}).viz || {})[name];
+  }
   function srcCls(ids) {
     var S = (window.ATLAS || {}).sources || {}, c = (ids || []).map(function (i) { return S[i] && S[i].cls; });
     return c.indexOf('official') >= 0 ? 'official' : (c.indexOf('secondary') >= 0 ? 'secondary' : '');
@@ -49,9 +81,12 @@
     return E && E[String(v)] ? E[String(v)] : String(v);
   }
   var NS_KEYS = { ns: 1, unclear: 1 };
-  // one value as {text, key, ns, src, cls}
+  // one value as {text, key, ns, src, cls}; nc = the school's dataset does not carry this field
   function cell(d, school, f, L) {
     var rec = d.data[school]; if (!rec) return null;
+    if (d.carries && d.carries[school] && d.carries[school].indexOf(f.id) < 0) {
+      return { src: [], cls: '', ns: false, nc: true, key: '__nc', text: L(notCoveredT()) };
+    }
     var v = get(rec, f.id), src = (rec.src || {})[f.id] || [];
     var out = { src: src, cls: srcCls(src), ns: false, key: '' };
     if (v == null || v === '') { out.ns = true; out.text = L(T.notStated); out.key = 'null'; return out; }
@@ -107,8 +142,16 @@
       V.h('span', { 'class': 'cmp-sr' }, fmtT(T.slot, { n: i + 1 }), wrap);
       var sel = V.h('select', { 'data-slot': i }, null, wrap);
       V.h('option', { value: '' }, L(T.none), sel);
+      // merged dataset: one optgroup per depth block, the 30 first
+      var ogs = [];
       d.order.forEach(function (k) {
-        var o = V.h('option', { value: k }, V.lang() === 'zh' ? L(d.data[k].name) : k, sel);
+        var parent = sel;
+        if (d.groups) {
+          var gi = d.groups[k] || 0;
+          if (!ogs[gi]) ogs[gi] = V.h('optgroup', { label: L(d.groupLabels[gi]) }, null, sel);
+          parent = ogs[gi];
+        }
+        var o = V.h('option', { value: k }, V.lang() === 'zh' ? L(d.data[k].name) : k, parent);
         if (st.picks[i] === k) o.selected = true;
       });
       sel.addEventListener('change', function () { pick(i, sel.value); });
@@ -118,6 +161,7 @@
     var root, rows = [], heads = [], cards = null;
     function valueHtml(c) {
       if (!c) return '<span class="cmp-empty">—</span>';
+      if (c.nc) return '<span class="cmp-v nc">' + esc(c.text) + '</span>';
       var dot = c.cls ? '<span class="dot ' + c.cls + '"></span>' : '';
       var body = '<span class="cmp-v' + (c.ns ? ' ns' : '') + (c.blocked ? ' blk' : '') + '"' + (c.cls === 'secondary' ? ' data-cls="secondary"' : '') + '>' + dot + esc(c.text) + citeHtml(V, c.src) + '</span>';
       return body;
@@ -189,9 +233,10 @@
       if (!cards.children.length) V.h('p', { 'class': 'cmp-emptycard' }, L(T.none), cards);
     }
 
-    // differences
+    // differences: a "not covered" cell is not a value, so it never makes a row differ
     function diffKeys(f) {
-      var ks = st.picks.filter(Boolean).map(function (k) { return cell(d, k, f, L).key; });
+      var ks = st.picks.filter(Boolean).map(function (k) { return cell(d, k, f, L); })
+        .filter(function (c) { return !c.nc; }).map(function (c) { return c.key; });
       return ks.length >= 2 && ks.some(function (x) { return x !== ks[0]; });
     }
     function applyDiff() {
@@ -238,7 +283,9 @@
       var cols = [T.field].concat(st.picks.filter(Boolean).map(function (k) { return d.data[k].name; }));
       var rowsT = d.fields.map(function (f) {
         return [L(f.label)].concat(st.picks.filter(Boolean).map(function (k) {
-          var c = cell(d, k, f, L); return { html: esc(c.text) + ' ' + V.cites(c.src) };
+          var c = cell(d, k, f, L);
+          if (c.nc) return { html: '<span class="cmp-v nc">' + esc(c.text) + '</span>' };
+          return { html: esc(c.text) + ' ' + V.cites(c.src) };
         }));
       });
       return { cols: cols, rows: rowsT };

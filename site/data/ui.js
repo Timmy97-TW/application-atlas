@@ -13,6 +13,7 @@ window.ATLAS.ui = {
   officialShort: { zh: '官方', en: 'official' },
   secondary: { zh: '次級來源', en: 'Secondary source' },
   notStated: { zh: '未說明', en: 'Not stated' },
+  notCovered: { zh: '此深度未涵蓋', en: 'Not covered at this depth' },
   checked: { zh: '查核於', en: 'checked' },
   accessed: { zh: '查閱日', en: 'accessed' },
   reverify: { zh: '待重查', en: 're-verify' },
@@ -42,21 +43,34 @@ window.ATLAS.ui = {
     en: 'Research notes, not official information and not admissions advice. Every fact carries its source and access date; the schools\' and application systems\' own pages govern. Source and notes: [GitHub](https://github.com/Timmy97-TW/application-atlas).'
   }
 };
+window.ATLAS.ui.menu = { zh: '選單', en: 'Menu' };
+window.ATLAS.ui.menuClose = { zh: '關閉選單', en: 'Close menu' };
+window.ATLAS.ui.mockCta = { zh: '開始模擬練習', en: 'Start the practice mock' };
+window.ATLAS.ui.tagline = { zh: '交什麼、何時交、從哪裡交', en: 'What, when, and through which portal' };
+// Two-level menu: groups of pages. `pages` lists the page keys a link counts as active for.
 window.ATLAS.nav = [
-  { page: 'index', href: 'index.html', label: { zh: '總覽', en: 'Overview' } },
-  { page: 'process', href: 'process.html', label: { zh: '時程', en: 'Timeline' } },
-  { page: 'containers', href: 'containers.html', label: { zh: '欄位', en: 'Fields' } },
-  { page: 'schools', href: 'schools.html', label: { zh: '30 校', en: '30 schools' } },
-  { page: 'compare', href: 'compare.html', label: { zh: '比較', en: 'Compare' } },
-  { page: 'more', href: 'more.html', label: { zh: '31–50 校', en: 'Schools 31–50' } },
-  { page: 'portfolios', href: 'portfolios.html', label: { zh: '作品集', en: 'Portfolios' } },
-  { page: 'record', href: 'record.html', label: { zh: '校外紀錄', en: 'Outside record' } },
-  { page: 'insights', href: 'insights.html', label: { zh: '洞察', en: 'Insights' } },
-  { page: 'mock', href: 'mock/index.html', label: { zh: '模擬練習', en: 'Practice mock' } },
-  { page: 'examples', href: 'examples/index.html', label: { zh: '人物範例', en: 'Personas' } },
-  { page: 'uk', href: 'uk/index.html', label: { zh: '英國', en: 'UK' } },
-  { page: 'changes', href: 'changes.html', label: { zh: '年度變更', en: 'Changes' } },
-  { page: 'log', href: 'log.html', label: { zh: '進度', en: 'Log' } },
-  { page: 'sources', href: 'sources.html', label: { zh: '來源', en: 'Sources' } },
-  { page: 'about', href: 'about.html', label: { zh: '關於', en: 'About' } }
+  { id: 'start', label: { zh: '開始', en: 'Start' }, items: [
+    { page: 'index', href: 'index.html', label: { zh: '總覽', en: 'Overview' } },
+    { page: 'mock', href: 'mock/index.html', label: { zh: '模擬練習', en: 'Practice mock' }, featured: true },
+    { page: 'examples', pages: ['examples', 'bio', 'ee'], href: 'examples/index.html', label: { zh: '人物範例', en: 'Personas' } }
+  ] },
+  { id: 'what', label: { zh: '要交什麼', en: 'What to submit' }, items: [
+    { page: 'containers', href: 'containers.html', label: { zh: '欄位', en: 'Fields' } },
+    { page: 'record', href: 'record.html', label: { zh: '校外紀錄', en: 'Outside record' } },
+    { page: 'portfolios', href: 'portfolios.html', label: { zh: '作品集', en: 'Portfolios' } }
+  ] },
+  { id: 'when', label: { zh: '何時交', en: 'When' }, items: [
+    { page: 'process', href: 'process.html', label: { zh: '時程', en: 'Timeline' } },
+    { page: 'changes', href: 'changes.html', label: { zh: '年度變更', en: 'Changes' } }
+  ] },
+  { id: 'where', label: { zh: '哪些學校', en: 'Which schools' }, items: [
+    { page: 'schools', pages: ['schools', 'compare', 'more'], href: 'schools.html', label: { zh: '學校 1–50', en: 'Schools 1–50' } },
+    { page: 'uk', href: 'uk/index.html', label: { zh: '英國', en: 'UK' } }
+  ] },
+  { id: 'research', label: { zh: '研究', en: 'Research' }, items: [
+    { page: 'insights', href: 'insights.html', label: { zh: '洞察', en: 'Insights' } },
+    { page: 'sources', href: 'sources.html', label: { zh: '來源', en: 'Sources' } },
+    { page: 'log', href: 'log.html', label: { zh: '進度', en: 'Log' } },
+    { page: 'about', href: 'about.html', label: { zh: '關於', en: 'About' } }
+  ] }
 ];

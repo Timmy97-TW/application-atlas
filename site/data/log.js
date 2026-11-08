@@ -3,6 +3,28 @@ window.ATLAS = window.ATLAS || {};
 window.ATLAS.log = {
  "entries": [
   {
+   "file": "briefs/2026-11-08_redesign.md",
+   "date": "2026-11-08",
+   "unit": "design (navigation, mock 30 schools, schools 1–50, fields page, lab record)",
+   "status": "done",
+   "title_zh": "總體更新：兩層選單、模擬練習擴到 30 校、學校 1–50 合併、欄位頁視覺化、校外實驗室紀錄",
+   "title_en": "General update: two-level menu, mock for all 30 schools, schools 1–50 merged, visual Fields page, outside-lab record",
+   "done": [
+    "**Menu.** Two rows: brand and a \"Start the practice mock\" button, then five groups (Start · What to submit · When · Which schools · Research) with their pages under captions. Under 900 px the groups become a drawer behind a Menu button, with a crumb naming the current place. The practice mock is starred in the menu and the home page opens with the three priority pages.",
+    "**Practice mock: 30 schools.** `site/data/p-mock-colleges-a.js` (MIT, Caltech, Yale, Princeton, Columbia, Penn, Brown, Georgetown, Georgia Tech, Purdue, Michigan) and `p-mock-colleges-b.js` (UIUC, Olin, Harvey Mudd, Duke, Northwestern, Rice, UC Berkeley, UCLA, UC San Diego, UT Austin, U Washington, Williams, Amherst, Swarthmore) join the five already modelled. Each entry carries the school's facts, every plan with its date, its own question fields, every published prompt with its stated word or character limit, and its letter rules; where a prompt text or limit is not published the field says \"not stated\" rather than guessing (Georgetown's 500-word prompts, Purdue Honors prompts, Olin's essay, Williams and Amherst, whose pages refused reading). MIT and the three UC campuses say what their own systems ask. The My Colleges view gets a filter box and keeps added schools first.",
+    "**Schools 1–50.** `schools.html` now composes the comparator, the 30 schools at full depth and schools 31–50 at roster-and-matrix depth, with a 50-chip jump row. The comparator takes any of the 50; a field a 31–50 school's research does not cover is drawn as \"not covered at this depth\" (dashed), never as \"not stated\". `more.html` and `compare.html` still work but left the menu.",
+    "**Fields page.** Four new figure types (`viz-fields.js`): the whole student form as one map (7 sections, 54 fields, each with its limit printed; 21 of 54 carry a character or word limit), mini replicas of an entry with live counters, writing budgets with characters and words on separate axes, and a four-role recommender matrix. Every existing fact, tag and source kept.",
+    "**Outside lab record.** New note `research/2026-11-08_outside-lab-record-to-application_v1.md` (27 sources, L01–L27, 20 official). Findings: no school receives a training record as such; every research channel names an artefact (paper, abstract, poster) plus a mentor who writes about the student's share; Caltech's channel is gated to a university or research-affiliated lab with a senior researcher; only MIT, Yale and Caltech carry the mentor's letter inside a research form; Additional Information is 300 words; Courses & Grades cannot hold outside courses; \"research mentor\" is not an Other Recommender type; no official voice among the 30 names paid programmes, only MIT's summer page and Regeneron STS's disclosure rule. Four figures on record.html (evidence ladder by who can verify; three-year record → containers with budgets; 30-school research routes; a fictional record written into each container at its limit) and the routes matrix on portfolios.html.",
+    "Checks: node --check on every js; check-data 0 problems (1,619 sources); make-pages and build-log run; every changed page opened at desktop and 375 px with a clean console; excluded-names check ran over the repo and found nothing."
+   ],
+   "notDone": [
+    "Per-college Other Recommender settings and the Common App form PDFs cannot be read without an account (Q009); the record page marks them as assumptions.",
+    "Columbia's FAQ still refuses automated reading; its extra-letter rule rests on a 2026-11-07 search excerpt.",
+    "The old `more.html` and `compare.html` are kept as working pages, not redirects."
+   ],
+   "by": "run"
+  },
+  {
    "file": "briefs/2026-11-08_design.md",
    "date": "2026-11-08",
    "unit": "design (interactive figures)",
@@ -250,6 +272,15 @@ window.ATLAS.log = {
    "stateNote": "2026-11-08",
    "q": "Three daily deadline re-checks (2026-11-08) are committed on stacked local\nbranches and not yet on the public site, because the daily runs were asked to\npublish nothing outward: `daily/2026-11-08` (dates due by Dec 8),\n`daily/2026-11-08-rd` (Dec 8 – Jan 8; Northwestern Bienen dates corrected) and\n`daily/2026-11-08-jan` (Jan 9 – Feb 8; Caltech RD materials date added). The\nlast branch contains all three. Merge it into the live site, or keep reviewing\nlocally first?",
    "a": "(2026-11-08) Publish them. Merged into main the same day."
+  },
+  {
+   "id": "Q009",
+   "date": "2026-11-08",
+   "unit": "L",
+   "state": "open",
+   "stateNote": "",
+   "q": "Two things about how a lab mentor's letter reaches a college can only be read\nfrom inside a Common App account: (1) which of the 30 colleges accept an Other\nRecommender at all, and which types (employer / other / coach …) each accepts,\nand (2) the exact wording of the Other Recommender form. The public PDFs are\nserved behind a JavaScript postback that plain requests cannot read. The record\npage marks these cells as assumptions. Can you open a Common App account (or\na counsellor's view) and read those two settings for the 30 colleges, or should\nthey stay as assumptions?",
+   "a": ""
   }
  ]
 };

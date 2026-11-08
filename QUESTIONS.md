@@ -168,3 +168,14 @@ publish nothing outward: `daily/2026-11-08` (dates due by Dec 8),
 last branch contains all three. Merge it into the live site, or keep reviewing
 locally first?
 A: (2026-11-08) Publish them. Merged into main the same day.
+
+Q009 · 2026-11-08 · L · open
+Two things about how a lab mentor's letter reaches a college can only be read
+from inside a Common App account: (1) which of the 30 colleges accept an Other
+Recommender at all, and which types (employer / other / coach …) each accepts,
+and (2) the exact wording of the Other Recommender form. The public PDFs are
+served behind a JavaScript postback that plain requests cannot read. The record
+page marks these cells as assumptions. Can you open a Common App account (or
+a counsellor's view) and read those two settings for the 30 colleges, or should
+they stay as assumptions?
+A:

@@ -3,6 +3,9 @@
 // research/2026-11-07_outside-record-frameworks_v1.md (C1, UC Additional comments only).
 // Every src id exists in data/sources.js. Field types and limits in the Common App tables come from
 // the 2026–27 First-year Data Catalog (A1-S6) unless another id is cited.
+// Figures (viz:) are drawn by assets/js/viz-fields.js and viz-flow.js; every value in a figure is also in
+// a table or item below it, with the same source ids. Totals in 'budget-stack' figures are limit × box
+// count, computed from the cited limits (an inference, said so in each subtitle).
 window.ATLAS = window.ATLAS || {};
 window.ATLAS.pages = window.ATLAS.pages || {};
 (function () {
@@ -11,9 +14,26 @@ window.ATLAS.pages = window.ATLAS.pages || {};
   function asm(zh, en, src) { var o = { t: { zh: zh, en: en }, tag: 'a' }; if (src) o.src = src; return o; }
   function ns(src) { return { state: 'not-stated', checked: '2026-11-07', src: src }; }
   function s(zh, en) { return { zh: zh, en: en }; }
+  // form-map field: label, kind, limit (or null), required state, sources, optional official wording
+  function fld(lzh, len, kind, limzh, limen, req, src, q) {
+    var o = { label: s(lzh, len), kind: kind, src: src };
+    if (limzh != null) o.limit = s(limzh, limen);
+    if (req) o.req = req;
+    if (q) o.q = q;
+    return o;
+  }
+  // field-card row
+  function row(lzh, len, kind, extra) {
+    var o = { label: s(lzh, len), kind: kind };
+    for (var k in extra) o[k] = extra[k];
+    return o;
+  }
 
   var STUDENT = s('學生', 'Student');
   var COLS = [s('欄位', 'Field'), s('類型', 'Type'), s('上限', 'Limit'), s('必填', 'Required'), s('誰填寫', 'Who fills it')];
+  var FIELD_LIST = s('逐欄清單', 'Field by field');
+  var YN = [s('是', 'Yes'), s('否', 'No')];
+  var GRADES = ['9', '10', '11', '12'];
 
   window.ATLAS.pages['containers'] = {
     title: s('申請表裡的每一個欄位：類型、上限、誰填寫', 'Every field in the application: type, limit, who fills it'),
@@ -22,14 +42,111 @@ window.ATLAS.pages = window.ATLAS.pages || {};
       'The space a student writes in is small: 150 characters per activity, 300 words of Additional information (not 650), 650 words of personal essay. On the recommender side the teacher form has 16 rating rows and the counselor form only 4, and an adult from outside school gets in only as an Other Recommender, one letter, and only where the college accepts that type.'
     ),
     intro: s(
-      '本頁把 2026–27 申請季（2027 秋季入學）Common App 第一年申請表逐區列出：每個欄位的類型、字數或字元上限、是否必填、由誰填。主要依據是 Common App 自己公布的 2026–27 First-year Data Catalog（試算表，檔名日期 2026-08-18）與 2026 年版的表單 PDF，存取日 2026-11-07。Data Catalog 中「Short」欄位的 Max Length 是字元數、「Long」欄位的 Min/Max 是英文字數，這個對應是我們從 2025–26 標籤與 2026 PDF 推得的（屬推論）。頁面沒寫的格子標「未載明」，不以常見說法補上。後半段整理推薦人表單、其他申請系統（UC、Coalition on Scoir、MIT、Georgetown、ApplyTexas），以及校外的人到底能把東西交進哪裡。',
-      'This page walks the 2026–27 Common App first-year application (entry fall 2027) section by section: each field\'s type, its word or character limit, whether it is required, and who fills it in. The main source is Common App\'s own 2026–27 First-year Data Catalog (a spreadsheet whose file name is dated 2026-08-18) and the 2026 form PDFs, accessed 2026-11-07. We read a catalog "Short" field\'s Max Length as characters and a "Long" field\'s Min/Max as words; that reading is our inference from the 2025–26 labels and the 2026 PDF. Cells the sources leave blank say "not stated" rather than repeating figures that circulate online. The second half covers recommender forms, the other application systems (UC, Coalition on Scoir, MIT, Georgetown, ApplyTexas), and where a party who is neither the student nor the school can submit anything at all.'
+      '本頁把 2026–27 申請季（2027 秋季入學）Common App 第一年申請表逐區列出：每個欄位的類型、字數或字元上限、是否必填、由誰填。主要依據是 Common App 自己公布的 2026–27 First-year Data Catalog（試算表，檔名日期 2026-08-18）與 2026 年版的表單 PDF，存取日 2026-11-07。Data Catalog 中「Short」欄位的 Max Length 是字元數、「Long」欄位的 Min/Max 是英文字數，這個對應是我們從 2025–26 標籤與 2026 PDF 推得的（屬推論）。頁面沒寫的格子標「未載明」，不以常見說法補上。每一區先用一張圖畫出欄位的形狀（可以在裡面試打字），接著才是逐欄的表。後半段整理推薦人表單、其他申請系統（UC、Coalition on Scoir、MIT、Georgetown、ApplyTexas），以及校外的人到底能把東西交進哪裡。',
+      'This page walks the 2026–27 Common App first-year application (entry fall 2027) section by section: each field\'s type, its word or character limit, whether it is required, and who fills it in. The main source is Common App\'s own 2026–27 First-year Data Catalog (a spreadsheet whose file name is dated 2026-08-18) and the 2026 form PDFs, accessed 2026-11-07. We read a catalog "Short" field\'s Max Length as characters and a "Long" field\'s Min/Max as words; that reading is our inference from the 2025–26 labels and the 2026 PDF. Cells the sources leave blank say "not stated" rather than repeating figures that circulate online. Each section opens with a figure that draws the shape of its fields (you can type into the replicas), then the field-by-field table. The second half covers recommender forms, the other application systems (UC, Coalition on Scoir, MIT, Georgetown, ApplyTexas), and where a party who is neither the student nor the school can submit anything at all.'
     ),
     sections: [
       {
         id: 'basics',
         h: s('先知道的幾件事', 'Ground rules'),
         judgment: s('「My Common Application」各區全部由學生本人填寫；推薦人表單另由輔導老師、老師、Other Recommender 填寫。', 'Every section of "My Common Application" is filled by the student; recommender forms are filled separately by the counselor, teachers, and Other Recommenders.'),
+        intro: s('下圖是整張學生表單的地圖：一個方塊是一區，方塊寬度隨欄位數變化，每個小格印出該欄位的上限。顏色區分字元、字數、數量與選項；虛線格是來源沒寫上限的欄位。把游標移到小格上看官方題目文字與來源，點方塊標題跳到該區。', 'The map below shows the whole student form: one block per section, wider when it has more fields, each small cell printing the field\'s limit. Colour tells characters from words, counts and choices; a dashed cell is a field whose limit the sources do not state. Hover a cell for the official wording and sources; click a block title to jump to that section.'),
+        viz: {
+          type: 'form-map',
+          title: s('學生要填 7 區 54 個欄位；以字元或字數計上限的不到一半，其餘是選項、數量與日期', 'The student fills 7 sections and 54 fields; fewer than half carry a character or word limit, the rest are choices, counts and dates'),
+          subtitle: s('欄位數照本頁下方各區表格計算；一格代表表格裡的一列，合併同類欄位。上限出自 2026–27 Data Catalog，除非另有標註。', 'Field counts follow the tables further down this page, one cell per table row, like fields merged. Limits come from the 2026–27 Data Catalog unless another source is cited.'),
+          blocks: [
+            {
+              id: 'profile', label: s('Profile', 'Profile'),
+              fields: [
+                fld('法定名／姓', 'Legal first / last name', 'chars', '各 50 字元', '50 chars each', 'req', ['A1-S6']),
+                fld('中間名、慣用名、曾用名', 'Middle, preferred, former names', 'chars', '各 50 字元', '50 chars each', 'opt', ['A1-S6']),
+                fld('出生日期', 'Date of birth', 'other', '1906–2027', '1906–2027', 'req', ['A1-S6']),
+                fld('地址', 'Address', 'ns', null, null, 'req', ['A1-S6']),
+                fld('電話', 'Phone', 'ns', null, null, 'req', ['A1-S6']),
+                fld('語言', 'Languages', 'count', '1–5 種', '1–5', 'req', ['A1-S6', 'A1-S12']),
+                fld('性別、公民身分、出生地', 'Gender, citizenship, birthplace', 'ns', null, null, 'req', ['A1-S12']),
+                fld('延伸人口統計', 'Additional demographics', 'ns', null, null, 'opt', ['A1-S12']),
+                fld('Fee waiver（簽名）', 'Fee waiver (signature)', 'chars', '簽名 50 字元', 'signature 50 chars', 'req', ['A1-S6', 'A1-S7'])
+              ]
+            },
+            {
+              id: 'family', label: s('Family', 'Family'),
+              fields: [
+                fld('其他居住情形', 'Other living situation', 'chars', '100 字元', '100 chars', 'ns', ['A1-S6']),
+                fld('子女數', 'Number of children', 'chars', '2 字元', '2 chars', 'ns', ['A1-S6']),
+                fld('父母／監護人', 'Parents / guardian', 'chars', '姓名 50 字元', 'names 50 chars', 'ns', ['A1-S6']),
+                fld('手足', 'Siblings', 'count', '0–10 人', '0–10', 'ns', ['A1-S1', 'A1-S7', 'A1-S6']),
+                fld('獨立生說明', 'Independent-learner detail', 'chars', '100 字元', '100 chars', 'ns', ['A1-S1', 'A1-S7'])
+              ]
+            },
+            {
+              id: 'education', label: s('Education', 'Education'),
+              fields: [
+                fld('目前就讀學校', 'Current school', 'ns', null, null, 'req', ['A1-S6']),
+                fld('未畢業說明', 'If not graduating', 'words', '250 字', '250 words', 'cond', ['A1-S6']),
+                fld('學程進度說明', 'Progression explanation', 'words', '250 字', '250 words', 'cond', ['A1-S6', 'A1-S12']),
+                fld('其他中學', 'Other secondary schools', 'count', '0–3 所', '0–3', 'req', ['A1-S6']),
+                fld('修過課的大學', 'Colleges attended', 'count', '0–3 所', '0–3', 'req', ['A1-S6', 'A1-S29']),
+                fld('畢業班人數', 'Class size', 'chars', '5 字元', '5 chars', 'req', ['A1-S6']),
+                fld('班排名', 'Class rank', 'chars', '5 字元', '5 chars', 'opt', ['A1-S6']),
+                fld('GPA', 'GPA', 'chars', '6 字元', '6 chars', 'opt', ['A1-S6', 'A1-S28']),
+                fld('本學年課程', 'Current-year courses', 'count', '1–15 門', '1–15', 'req', ['A1-S6']),
+                fld('Honors', 'Honors', 'count', '5 項 × 100 字元', '5 × 100 chars', 'opt', ['A1-S6', 'A1-S12']),
+                fld('社區組織（CBO）', 'Community-based organizations', 'count', '0–3 個', '0–3', 'req', ['A1-S6']),
+                fld('未來規劃', 'Future plans', 'choice', '「其他」100 字元', '"other" 100 chars', 'req', ['A1-S6'])
+              ]
+            },
+            {
+              id: 'testing', label: s('Testing', 'Testing'),
+              fields: [
+                fld('是否自填成績', 'Self-report scores?', 'choice', '是／否', 'Yes / no', 'req', ['A1-S6']),
+                fld('ACT／SAT', 'ACT / SAT', 'count', '過去 5 次＋未來 3 次', '5 past + 3 future', 'cond', ['A1-S6']),
+                fld('AP', 'AP', 'count', '15 科', '15', 'cond', ['A1-S6']),
+                fld('IB', 'IB', 'count', '10 科', '10', 'cond', ['A1-S6']),
+                fld('高中畢業會考', 'Leaving examinations', 'count', '10 筆', '10', 'cond', ['A1-S6', 'A1-S28'])
+              ]
+            },
+            {
+              id: 'activities', label: s('Activities and experiences', 'Activities and experiences'), sub: s('最多 10 項', 'Up to 10 entries'),
+              fields: [
+                fld('是否填寫活動', 'Report activities?', 'choice', '是／否', 'Yes / no', 'req', ['A1-S6'], 'Would you like to report any activities?'),
+                fld('類型', 'Type', 'choice', '31 種', '31 types', 'ns', ['A1-S6', 'A1-S7']),
+                fld('是否有特定職位', 'Specific position?', 'choice', '是／否', 'Yes / no', 'opt', ['A1-S6', 'A1-S7'], 'Did you have a specific position or leadership role'),
+                fld('職位', 'Role', 'chars', '50 字元', '50 chars', 'opt', ['A1-S6', 'A1-S8', 'A1-S31'], 'What was your role?'),
+                fld('組織或團體', 'Organization', 'chars', '100 字元', '100 chars', 'opt', ['A1-S6', 'A1-S31']),
+                fld('活動描述', 'Description', 'chars', '150 字元', '150 chars', 'ns', ['A1-S6', 'A1-S31']),
+                fld('參與年級', 'Grade levels', 'choice', '9–12、畢業後', '9–12, after HS', 'ns', ['A1-S6', 'A1-S7'], 'When did you participate?'),
+                fld('一年中何時', 'Time of year', 'choice', '3 種', '3 options', 'ns', ['A1-S6', 'A1-S7']),
+                fld('畢業後起訖日期', 'Post-HS dates', 'other', '1926–2027', '1926–2027', 'ns', ['A1-S6', 'A1-S7']),
+                fld('每週時數', 'Hours per week', 'chars', '5 字元', '5 chars', 'ns', ['A1-S6']),
+                fld('每年週數', 'Weeks per year', 'chars', '5 字元', '5 chars', 'ns', ['A1-S6']),
+                fld('大學是否繼續', 'Continue in college?', 'choice', 'Yes／No／Not sure', 'Yes / No / Not sure', 'ns', ['A1-S6', 'A1-S7'], 'Do you plan on participating in this activity in college?'),
+                fld('Responsibilities', 'Responsibilities', 'chars', '「其他」150 字元', '"other" 150 chars', 'req', ['A1-S6', 'A1-S12', 'A1-S32']),
+                fld('Circumstances', 'Circumstances', 'choice', '勾選清單', 'checklist', 'req', ['A1-S6', 'A1-S12'])
+              ]
+            },
+            {
+              id: 'writing', label: s('Writing', 'Writing'),
+              fields: [
+                fld('個人主文', 'Personal essay', 'words', '250–650 字', '250–650 words', 'college', ['A1-S6', 'A1-S12']),
+                fld('是否說明挑戰', 'Share challenges?', 'choice', '是／否', 'Yes / no', 'req', ['A1-S6'], 'Would you like to share any details about challenges or other circumstances you\'ve experienced?'),
+                fld('Challenges and circumstances', 'Challenges and circumstances', 'words', '250 字', '250 words', 'cond', ['A1-S6', 'A1-S12']),
+                fld('是否補充細節', 'Share additional details?', 'choice', '是／否', 'Yes / no', 'req', ['A1-S6'], 'Would you like to share any additional details or qualifications not reflected in the application?'),
+                fld('Additional information', 'Additional information', 'words', '300 字', '300 words', 'cond', ['A1-S6', 'A1-S12']),
+                fld('各校題目', 'College questions', 'other', '各校自訂', 'set by college', 'college', ['A1-S42', 'A1-S35'])
+              ]
+            },
+            {
+              id: 'courses-grades', label: s('Courses & Grades', 'Courses & Grades'), sub: s('只有名單上的學校要求', 'Only where a college requires it'),
+              fields: [
+                fld('學校、學年、量尺、學制', 'School, year, scale, schedule', 'ns', null, null, 'req', ['A1-S29']),
+                fld('每門課', 'Each course', 'ns', null, null, 'req', ['A1-S29', 'A1-S5']),
+                fld('Other Courses', 'Other Courses', 'ns', null, null, 'ns', ['A1-S29'])
+              ]
+            }
+          ]
+        },
         items: [
           f('Profile、Family、Education、Testing、Activities and experiences、Writing 都由學生填寫；推薦人表單由輔導老師、老師或 Other Recommender 填寫。', 'Profile, Family, Education, Testing, Activities and experiences, and Writing are all filled by the student; recommender forms are filled by the counselor, a teacher, or an Other Recommender.', ['A1-S12', 'A1-S35', 'A1-S20']),
           f('必填題以紅色星號標示，其餘為選填。', 'Required questions carry a red asterisk; the rest are optional.', ['A1-S28']),
@@ -44,38 +161,102 @@ window.ATLAS.pages = window.ATLAS.pages || {};
         id: 'profile',
         h: s('Profile（個人資料）', 'Profile'),
         judgment: s('姓名欄位 50 字元；語言最多 5 種；人口統計的延伸題全部選填。', 'Name fields take 50 characters; up to 5 languages; the additional demographic questions are all optional.'),
-        table: {
-          cols: COLS,
-          rows: [
-            [s('法定名／姓', 'Legal first / last name'), 'Short', f('各 50 字元', '50 characters each', ['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT],
-            [s('中間名、慣用名、曾用名', 'Middle, preferred, and former names'), 'Short', f('各 50 字元', '50 characters each', ['A1-S6']), f('選填（是否有曾用名的是／否題必填）', 'Optional (the former-name yes/no is required)', ['A1-S6']), STUDENT],
-            [s('出生日期', 'Date of birth'), 'Date', f('1906–2027', '1906–2027', ['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT],
-            [s('永久地址；另一郵寄地址（是／否＋日期）', 'Permanent address; alternate mailing address (yes/no + dates)'), 'Address / Radio', ns(['A1-S6']), f('必填（另一地址為是／否題）', 'Required (alternate address as yes/no)', ['A1-S6']), STUDENT],
-            [s('電話（含類型）；備用電話', 'Preferred phone (+ type); alternate phone'), 'Phone / Radio', ns(['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT],
-            [s('語言數量與各語言能力（母語、說、讀、寫、家中使用）', 'Number of languages and proficiency (first, speak, read, write, spoken at home)'), 'Radio / Checkbox', f('1–5 種；「其他語言」50 字元', '1–5 languages; "other language" 50 characters', ['A1-S6', 'A1-S12']), f('語言數量必填', 'Number of languages required', ['A1-S6']), STUDENT],
-            [s('性別、法定性別、代名詞、公民身分、出生地、在美年數', 'Gender, legal sex, pronouns, citizenship, birthplace, years in the US'), s('多種', 'various'), ns(['A1-S12']), f('依表單流程，公民身分區必填', 'Citizenship section required per form flow', ['A1-S12']), STUDENT],
-            [s('延伸人口統計（軍人身分、Hispanic/Latino、種族、部落登記）', 'Additional demographics (military, Hispanic/Latino, race, tribal enrolment)'), s('多種', 'various'), ns(['A1-S12']), f('選填', 'Optional', ['A1-S12']), STUDENT],
-            [s('Common App fee waiver（是／否＋新增的聲明勾選＋簽名）', 'Common App fee waiver (yes/no + new affirmation checkbox + signature)'), 'Radio / Checkbox / Short', f('簽名 50 字元', 'Signature 50 characters', ['A1-S6']), f('是／否題必填', 'Yes/no required', ['A1-S6', 'A1-S7']), STUDENT]
+        intro: s('三張卡片仿照表單上的輸入格畫出來：格子寬度按上限縮放，可以直接在裡面打字看計數。星號是必填。', 'Three cards redraw the form\'s own input boxes: each box is scaled to its limit, and you can type in it to watch the count. An asterisk marks a required field.'),
+        viz: {
+          type: 'field-card',
+          title: s('Profile 的文字格清一色 50 字元；其餘都是選項', 'Every free-text box in Profile is 50 characters; the rest are choices'),
+          subtitle: s('語言最多 5 種，每種勾能力；fee waiver 是一題是／否加一個簽名格。', 'Up to 5 languages, each with proficiency boxes; the fee waiver is one yes/no plus a signature box.'),
+          cards: [
+            {
+              label: s('姓名', 'Names'),
+              rows: [
+                row('法定名', 'Legal first name', 'text', { limit: 50, req: 'req', src: ['A1-S6'] }),
+                row('法定姓', 'Legal last name', 'text', { limit: 50, req: 'req', src: ['A1-S6'] }),
+                row('中間名', 'Middle name', 'text', { limit: 50, req: 'opt', src: ['A1-S6'] }),
+                row('慣用名', 'Preferred name', 'text', { limit: 50, req: 'opt', src: ['A1-S6'] }),
+                row('是否有曾用名', 'Any former name?', 'radio', { options: YN, req: 'req', src: ['A1-S6'] }),
+                row('曾用名', 'Former name', 'text', { limit: 50, req: 'cond', src: ['A1-S6'] })
+              ]
+            },
+            {
+              label: s('語言', 'Languages'),
+              rows: [
+                row('語言數量', 'Number of languages', 'select', { options: ['1', '2', '3', '4', '5'], req: 'req', src: ['A1-S6'] }),
+                row('每種語言的能力', 'Proficiency per language', 'check', { options: [s('母語', 'First language'), s('說', 'Speak'), s('讀', 'Read'), s('寫', 'Write'), s('家中使用', 'Spoken at home')], src: ['A1-S6', 'A1-S12'] }),
+                row('「其他語言」', '"Other language"', 'text', { limit: 50, req: 'cond', src: ['A1-S6', 'A1-S12'] })
+              ]
+            },
+            {
+              label: s('Common App fee waiver', 'Common App fee waiver'),
+              rows: [
+                row('是否申請', 'Request a waiver?', 'radio', { options: YN, req: 'req', src: ['A1-S6', 'A1-S7'] }),
+                row('聲明勾選（2026–27 新增）', 'Affirmation checkbox (new for 2026–27)', 'check', { options: [s('我確認符合資格', 'I affirm I qualify')], req: 'cond', src: ['A1-S6', 'A1-S7'] }),
+                row('簽名', 'Signature', 'text', { limit: 50, req: 'cond', src: ['A1-S6'] })
+              ]
+            }
           ]
         },
         items: [
           f('2026–27 公民身分選項「U.S. resident」改名為「U.S. resident with other status」。', 'For 2026–27 the citizenship option "U.S. resident" was renamed "U.S. resident with other status".', ['A1-S1', 'A1-S7', 'A1-S12']),
           f('各校現在分別標示是否接受 Common App fee waiver：全部學生、僅美國學生、或都不接受。', 'Each fee-charging college now shows whether it accepts the Common App fee waiver for all students, U.S. students only, or none.', ['A1-S1', 'A1-S7'])
-        ]
+        ],
+        subs: [{
+          h: FIELD_LIST,
+          table: {
+            cols: COLS,
+            rows: [
+              [s('法定名／姓', 'Legal first / last name'), 'Short', f('各 50 字元', '50 characters each', ['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT],
+              [s('中間名、慣用名、曾用名', 'Middle, preferred, and former names'), 'Short', f('各 50 字元', '50 characters each', ['A1-S6']), f('選填（是否有曾用名的是／否題必填）', 'Optional (the former-name yes/no is required)', ['A1-S6']), STUDENT],
+              [s('出生日期', 'Date of birth'), 'Date', f('1906–2027', '1906–2027', ['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT],
+              [s('永久地址；另一郵寄地址（是／否＋日期）', 'Permanent address; alternate mailing address (yes/no + dates)'), 'Address / Radio', ns(['A1-S6']), f('必填（另一地址為是／否題）', 'Required (alternate address as yes/no)', ['A1-S6']), STUDENT],
+              [s('電話（含類型）；備用電話', 'Preferred phone (+ type); alternate phone'), 'Phone / Radio', ns(['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT],
+              [s('語言數量與各語言能力（母語、說、讀、寫、家中使用）', 'Number of languages and proficiency (first, speak, read, write, spoken at home)'), 'Radio / Checkbox', f('1–5 種；「其他語言」50 字元', '1–5 languages; "other language" 50 characters', ['A1-S6', 'A1-S12']), f('語言數量必填', 'Number of languages required', ['A1-S6']), STUDENT],
+              [s('性別、法定性別、代名詞、公民身分、出生地、在美年數', 'Gender, legal sex, pronouns, citizenship, birthplace, years in the US'), s('多種', 'various'), ns(['A1-S12']), f('依表單流程，公民身分區必填', 'Citizenship section required per form flow', ['A1-S12']), STUDENT],
+              [s('延伸人口統計（軍人身分、Hispanic/Latino、種族、部落登記）', 'Additional demographics (military, Hispanic/Latino, race, tribal enrolment)'), s('多種', 'various'), ns(['A1-S12']), f('選填', 'Optional', ['A1-S12']), STUDENT],
+              [s('Common App fee waiver（是／否＋新增的聲明勾選＋簽名）', 'Common App fee waiver (yes/no + new affirmation checkbox + signature)'), 'Radio / Checkbox / Short', f('簽名 50 字元', 'Signature 50 characters', ['A1-S6']), f('是／否題必填', 'Yes/no required', ['A1-S6', 'A1-S7']), STUDENT]
+            ]
+          }
+        }]
       },
 
       {
         id: 'family',
         h: s('Family（家庭）', 'Family'),
         judgment: s('手足欄位從 5 人擴到 10 人；符合獨立生條件者不再回答父母與手足題。', 'The sibling count rose from 5 to 10; independent learners no longer answer the parent and sibling questions.'),
-        table: {
-          cols: COLS,
-          rows: [
-            [s('家庭狀況：父母婚姻狀態、永久居所、其他居住情形', 'Household: parents\' marital status, permanent home, other living situation'), 'Radio / Short', f('其他居住情形 100 字元', 'Other living situation 100 characters', ['A1-S6']), ns(['A1-S6']), STUDENT],
-            [s('子女數', 'Number of children'), 'Short', f('2 字元', '2 characters', ['A1-S6']), ns(['A1-S6']), STUDENT],
-            [s('Parent 1／Parent 2／法定監護人／繼父母', 'Parent 1 / Parent 2 / legal guardian / step-parent'), s('多種', 'various'), f('姓名 50 字元、中間名縮寫 2、其他稱謂 24、其他職業 50、雇主 30', 'Names 50 characters, middle initial 2, other prefix 24, other occupation 50, employer 30', ['A1-S6']), ns(['A1-S6']), STUDENT],
-            [s('手足人數；姓名、年齡', 'Number of siblings; name, age'), 'Dropdown / Short', f('0–10 人（2025–26 為 5）；姓名 50 字元、年齡 2 字元', '0–10 (5 in 2025–26); name 50 characters, age 2 characters', ['A1-S1', 'A1-S7', 'A1-S6']), ns(['A1-S6']), STUDENT],
-            [s('獨立生題組：適用身分、父母是否有學士以上學位、與誰同住（＋說明）', 'Independent-learner set: statuses, parent with a bachelor\'s degree or higher, who you live with (+ detail)'), 'Checkbox / Radio / Short', f('說明 100 字元', 'Detail 100 characters', ['A1-S1', 'A1-S7']), ns(['A1-S7']), STUDENT]
+        intro: s('左卡是一位家長的格子（每位家長各填一組），中卡是手足（上方的方格數就是人數上限），右卡是獨立生改答的題組。', 'Left: the boxes for one parent (each parent gets a set). Middle: siblings, with the row of squares showing the count limit. Right: the set an independent learner answers instead.'),
+        viz: {
+          type: 'field-card',
+          title: s('家長欄位最長 50 字元、雇主只有 30；手足最多 10 人', 'Parent boxes top out at 50 characters, employer at 30; siblings at 10'),
+          subtitle: s('Data Catalog 沒有標示 Family 各格是否必填，所以這裡不畫星號。', 'The Data Catalog does not flag which Family boxes are required, so no asterisks are drawn here.'),
+          cards: [
+            {
+              label: s('Parent 1／Parent 2／監護人／繼父母', 'Parent 1 / Parent 2 / guardian / step-parent'),
+              rows: [
+                row('名、姓', 'First and last name', 'text', { limit: 50, req: 'ns', src: ['A1-S6'] }),
+                row('中間名縮寫', 'Middle initial', 'text', { limit: 2, req: 'ns', src: ['A1-S6'] }),
+                row('其他稱謂', 'Other prefix', 'text', { limit: 24, req: 'ns', src: ['A1-S6'] }),
+                row('其他職業', 'Other occupation', 'text', { limit: 50, req: 'ns', src: ['A1-S6'] }),
+                row('雇主', 'Employer', 'text', { limit: 30, req: 'ns', src: ['A1-S6'] })
+              ]
+            },
+            {
+              label: s('手足', 'Siblings'),
+              count: { n: 10, label: s('0–10 人（2025–26 為 5）', '0–10 (5 in 2025–26)'), src: ['A1-S1', 'A1-S7', 'A1-S6'] },
+              rows: [
+                row('姓名', 'Name', 'text', { limit: 50, req: 'ns', src: ['A1-S6'] }),
+                row('年齡', 'Age', 'num', { limit: 2, req: 'ns', src: ['A1-S6'] })
+              ]
+            },
+            {
+              label: s('獨立生題組', 'Independent-learner set'),
+              sub: s('23 歲以上或自認符合 FAFSA 定義的獨立生，改答這組。', 'Answered instead by a student who is 23+ or self-identifies as FAFSA-independent.'),
+              rows: [
+                row('適用身分', 'Statuses that apply', 'check', { n: 0, options: [s('勾選清單', 'Checklist')], req: 'ns', src: ['A1-S1', 'A1-S7'] }),
+                row('父母是否有學士以上學位', 'Parent with a bachelor\'s or higher?', 'radio', { options: YN, req: 'ns', src: ['A1-S1', 'A1-S7'] }),
+                row('與誰同住（說明）', 'Who you live with (detail)', 'text', { limit: 100, req: 'ns', src: ['A1-S1', 'A1-S7'] }),
+                row('其他居住情形（家庭狀況題）', 'Other living situation (household question)', 'text', { limit: 100, req: 'ns', src: ['A1-S6'] })
+              ]
+            }
           ]
         },
         items: [
@@ -83,77 +264,165 @@ window.ATLAS.pages = window.ATLAS.pages || {};
           f('說明簡報寫「23 歲以上」，Data Catalog 的計算欄位卻是「申請季當年 12/31 滿 24 歲」，查到的頁面都未說明兩者如何對應。', 'The webinar deck says "23+", while the catalog\'s computed field is "24 or older on Dec 31 of the cycle year"; no page checked reconciles the two.', ['A1-S1', 'A1-S7']),
           f('2026 申請表 PDF 仍寫「超過 3 位手足請用 Additional information」，與 Data Catalog 的 10 人上限不一致。', 'The 2026 application PDF still tells students with "more than 3 siblings" to use Additional information, which conflicts with the catalog\'s 10-sibling limit.', ['A1-S12', 'A1-S6']),
           inf('兩者不一致時以 Data Catalog（2026-08-18）為準，因為它是較晚的文件。', 'Where they disagree, the catalog (2026-08-18) is the later document and is followed here.', ['A1-S6', 'A1-S12'])
-        ]
+        ],
+        subs: [{
+          h: FIELD_LIST,
+          table: {
+            cols: COLS,
+            rows: [
+              [s('家庭狀況：父母婚姻狀態、永久居所、其他居住情形', 'Household: parents\' marital status, permanent home, other living situation'), 'Radio / Short', f('其他居住情形 100 字元', 'Other living situation 100 characters', ['A1-S6']), ns(['A1-S6']), STUDENT],
+              [s('子女數', 'Number of children'), 'Short', f('2 字元', '2 characters', ['A1-S6']), ns(['A1-S6']), STUDENT],
+              [s('Parent 1／Parent 2／法定監護人／繼父母', 'Parent 1 / Parent 2 / legal guardian / step-parent'), s('多種', 'various'), f('姓名 50 字元、中間名縮寫 2、其他稱謂 24、其他職業 50、雇主 30', 'Names 50 characters, middle initial 2, other prefix 24, other occupation 50, employer 30', ['A1-S6']), ns(['A1-S6']), STUDENT],
+              [s('手足人數；姓名、年齡', 'Number of siblings; name, age'), 'Dropdown / Short', f('0–10 人（2025–26 為 5）；姓名 50 字元、年齡 2 字元', '0–10 (5 in 2025–26); name 50 characters, age 2 characters', ['A1-S1', 'A1-S7', 'A1-S6']), ns(['A1-S6']), STUDENT],
+              [s('獨立生題組：適用身分、父母是否有學士以上學位、與誰同住（＋說明）', 'Independent-learner set: statuses, parent with a bachelor\'s degree or higher, who you live with (+ detail)'), 'Checkbox / Radio / Short', f('說明 100 字元', 'Detail 100 characters', ['A1-S1', 'A1-S7']), ns(['A1-S7']), STUDENT]
+            ]
+          }
+        }]
       },
 
       {
         id: 'education',
         h: s('Education（教育背景）', 'Education'),
         judgment: s('說明類欄位都是 250 字；排名與 GPA 為選填；Honors 最多 5 項、名稱 100 字元。', 'Every explanation box is 250 words; rank and GPA are optional; Honors take up to 5 entries at 100 characters per title.'),
-        table: {
-          cols: COLS,
-          rows: [
-            [s('目前／最近就讀學校、入學日期、是否住宿、畢業或離校日期', 'Current or most recent school, entry date, boarding, graduation or exit date'), 'Lookup / Month / Radio', ns(['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT],
-            [s('未畢業說明', 'Explanation if not graduating'), 'Long', f('1–250 字', '1–250 words', ['A1-S6']), f('條件題', 'Conditional', ['A1-S6']), STUDENT],
-            [s('學程進度（提早／延後畢業、休學、gap year）＋說明', 'Progression (early / late graduation, time off, gap year) + explanation'), 'Checkbox / Long', f('1–250 字', '1–250 words', ['A1-S6', 'A1-S12']), f('條件題', 'Conditional', ['A1-S6']), STUDENT],
-            [s('其他就讀過的中學', 'Other secondary schools'), 'Radio + lookup', f('0–3 所；離校原因 1–250 字', '0–3 schools; reason for leaving 1–250 words', ['A1-S6']), f('數量必填', 'Number required', ['A1-S6']), STUDENT],
-            [s('修過課的大學（雙聯、暑期、直接修學分）', 'Colleges and universities (dual enrolment, summer, direct credit)'), 'Radio + lookup', f('0–3 所', '0–3 colleges', ['A1-S6', 'A1-S29']), f('數量必填', 'Number required', ['A1-S6']), STUDENT],
-            [s('畢業班人數', 'Graduating class size'), 'Short', f('5 字元', '5 characters', ['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT],
-            [s('班排名（精確／十分位／五分位／四分位／無）與加權', 'Class rank (exact / decile / quintile / quartile / none) and weighting'), 'Short / Dropdown', f('5 字元', '5 characters', ['A1-S6']), f('選填', 'Optional', ['A1-S6']), STUDENT],
-            [s('GPA 量尺、累計 GPA、加權', 'GPA scale, cumulative GPA, weighting'), 'Dropdown / Short', f('GPA 6 字元', 'GPA 6 characters', ['A1-S6']), f('選填', 'Optional', ['A1-S6', 'A1-S28']), STUDENT],
-            [s('本學年（或最近一年）課程', 'Current or most recent year courses'), 'Dropdown', f('1–15 門；課名 100 字元', '1–15 courses; course name 100 characters', ['A1-S6']), f('課程數與學制必填', 'Number of courses and schedule system required', ['A1-S6']), STUDENT],
-            [s('Honors', 'Honors'), 'Radio + Short', f('最多 5 項；名稱 100 字元；年級 9/10/11/12/PG；層級 School／State-Regional／National／International', 'Up to 5; title 100 characters; grade 9/10/11/12/PG; level School / State-Regional / National / International', ['A1-S6', 'A1-S12']), f('是／否題必填；各項選填', 'Yes/no required; entries optional', ['A1-S6']), STUDENT],
-            [s('社區組織（CBO）', 'Community-based organizations'), 'Radio + Dropdown', f('0–3 個；「其他」組織名 100 字元；聯絡人姓名各 20 字元', '0–3; "other" organization name 100 characters; contact first and last name 20 characters each', ['A1-S6']), f('數量必填', 'Number required', ['A1-S6']), STUDENT],
-            [s('未來規劃：入學年、最高學位目標、職涯興趣（其他 100 字元）', 'Future plans: start year, highest intended degree, career interest (other 100 characters)'), 'Dropdown', f('其他 100 字元', 'Other 100 characters', ['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT]
+        intro: s('第一張卡是一項 Honors 的格子（上方 5 個方格是項數上限），第二張是本學年課程，第三張是三個 250 字的說明框，只有答了對應的問題才出現。', 'The first card is one Honors entry (the 5 squares above it are the entry limit), the second the current-year course list, the third the three 250-word explanation boxes that open only after the matching answer.'),
+        viz: {
+          type: 'field-card',
+          title: s('Honors 只有名稱一格 100 字元；Education 真正能寫字的是三個 250 字的條件說明框', 'An Honors entry has one 100-character title box; the real writing room in Education is three conditional 250-word boxes'),
+          subtitle: s('層級四選一；年級可複選。課程層級的 17 種選項與 GPA 規則見下方清單。', 'Level is one of four; grade levels can be ticked together. The 17 course levels and the GPA rules are in the list below.'),
+          cards: [
+            {
+              label: s('Honors（一項）', 'Honors (one entry)'),
+              count: { n: 5, label: s('最多 5 項', 'Up to 5'), src: ['A1-S6', 'A1-S12'] },
+              rows: [
+                row('名稱', 'Title', 'text', { limit: 100, req: 'opt', src: ['A1-S6', 'A1-S12'] }),
+                row('年級', 'Grade level', 'check', { options: GRADES.concat(['PG']), req: 'opt', src: ['A1-S6', 'A1-S12'] }),
+                row('層級', 'Level', 'radio', { options: ['School', 'State/Regional', 'National', 'International'], req: 'opt', src: ['A1-S6', 'A1-S12'] })
+              ]
+            },
+            {
+              label: s('本學年課程', 'Current-year courses'),
+              count: { n: 15, label: s('1–15 門', '1–15 courses'), src: ['A1-S6'] },
+              rows: [
+                row('課名', 'Course name', 'text', { limit: 100, req: 'req', src: ['A1-S6'] }),
+                row('課程層級', 'Course level', 'select', { n: 17, options: ['Regular/Standard', 'AP', 'IB', 'AS/A-level', 'Dual Enrollment', 'GCSE/IGCSE', 'Honors'], src: ['A1-S6', 'A1-S29'] })
+              ]
+            },
+            {
+              label: s('條件說明框', 'Conditional explanation boxes'),
+              rows: [
+                row('未畢業說明', 'If not graduating', 'words', { limit: 250, req: 'cond', src: ['A1-S6'] }),
+                row('學程進度說明（提早／延後畢業、休學、gap year）', 'Progression (early / late graduation, time off, gap year)', 'words', { limit: 250, req: 'cond', src: ['A1-S6', 'A1-S12'] }),
+                row('離開其他中學的原因（每所一格，最多 3 所）', 'Reason for leaving another school (one per school, up to 3)', 'words', { limit: 250, req: 'cond', src: ['A1-S6'] })
+              ]
+            }
           ]
         },
         items: [
           f('學校同時提供加權與未加權排名／GPA 時，填加權；學校的 GPA 量尺不在下拉選單中時，GPA 留白。', 'If the school reports both weighted and unweighted rank or GPA, report the weighted one; if the school\'s scale is not in the dropdown, leave GPA blank.', ['A1-S28']),
           f('課程層級選項含 Regular/Standard、AP、IB、AS/A-level、Dual Enrollment、GCSE/IGCSE、Honors 等共 17 種。', 'Course levels on offer include Regular/Standard, AP, IB, AS/A-level, Dual Enrollment, GCSE/IGCSE, Honors and others, 17 in all.', ['A1-S6', 'A1-S29'])
-        ]
+        ],
+        subs: [{
+          h: FIELD_LIST,
+          table: {
+            cols: COLS,
+            rows: [
+              [s('目前／最近就讀學校、入學日期、是否住宿、畢業或離校日期', 'Current or most recent school, entry date, boarding, graduation or exit date'), 'Lookup / Month / Radio', ns(['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT],
+              [s('未畢業說明', 'Explanation if not graduating'), 'Long', f('1–250 字', '1–250 words', ['A1-S6']), f('條件題', 'Conditional', ['A1-S6']), STUDENT],
+              [s('學程進度（提早／延後畢業、休學、gap year）＋說明', 'Progression (early / late graduation, time off, gap year) + explanation'), 'Checkbox / Long', f('1–250 字', '1–250 words', ['A1-S6', 'A1-S12']), f('條件題', 'Conditional', ['A1-S6']), STUDENT],
+              [s('其他就讀過的中學', 'Other secondary schools'), 'Radio + lookup', f('0–3 所；離校原因 1–250 字', '0–3 schools; reason for leaving 1–250 words', ['A1-S6']), f('數量必填', 'Number required', ['A1-S6']), STUDENT],
+              [s('修過課的大學（雙聯、暑期、直接修學分）', 'Colleges and universities (dual enrolment, summer, direct credit)'), 'Radio + lookup', f('0–3 所', '0–3 colleges', ['A1-S6', 'A1-S29']), f('數量必填', 'Number required', ['A1-S6']), STUDENT],
+              [s('畢業班人數', 'Graduating class size'), 'Short', f('5 字元', '5 characters', ['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT],
+              [s('班排名（精確／十分位／五分位／四分位／無）與加權', 'Class rank (exact / decile / quintile / quartile / none) and weighting'), 'Short / Dropdown', f('5 字元', '5 characters', ['A1-S6']), f('選填', 'Optional', ['A1-S6']), STUDENT],
+              [s('GPA 量尺、累計 GPA、加權', 'GPA scale, cumulative GPA, weighting'), 'Dropdown / Short', f('GPA 6 字元', 'GPA 6 characters', ['A1-S6']), f('選填', 'Optional', ['A1-S6', 'A1-S28']), STUDENT],
+              [s('本學年（或最近一年）課程', 'Current or most recent year courses'), 'Dropdown', f('1–15 門；課名 100 字元', '1–15 courses; course name 100 characters', ['A1-S6']), f('課程數與學制必填', 'Number of courses and schedule system required', ['A1-S6']), STUDENT],
+              [s('Honors', 'Honors'), 'Radio + Short', f('最多 5 項；名稱 100 字元；年級 9/10/11/12/PG；層級 School／State-Regional／National／International', 'Up to 5; title 100 characters; grade 9/10/11/12/PG; level School / State-Regional / National / International', ['A1-S6', 'A1-S12']), f('是／否題必填；各項選填', 'Yes/no required; entries optional', ['A1-S6']), STUDENT],
+              [s('社區組織（CBO）', 'Community-based organizations'), 'Radio + Dropdown', f('0–3 個；「其他」組織名 100 字元；聯絡人姓名各 20 字元', '0–3; "other" organization name 100 characters; contact first and last name 20 characters each', ['A1-S6']), f('數量必填', 'Number required', ['A1-S6']), STUDENT],
+              [s('未來規劃：入學年、最高學位目標、職涯興趣（其他 100 字元）', 'Future plans: start year, highest intended degree, career interest (other 100 characters)'), 'Dropdown', f('其他 100 字元', 'Other 100 characters', ['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT]
+            ]
+          }
+        }]
       },
 
       {
         id: 'testing',
         h: s('Testing（考試成績自填）', 'Testing (self-report)'),
         judgment: s('只有一題必填的閘門題；自填不等於寄送正式成績，寄送仍是學生的責任。', 'One required gate question; self-reporting does not replace official score reports, which remain the student\'s job.'),
-        table: {
-          cols: COLS,
-          rows: [
-            [s('是否自填成績或未來考試日期（ACT、SAT、AP、IB、Cambridge、TOEFL、PTE、IELTS、Duolingo 等）', 'Self-report scores or future test dates (ACT, SAT, AP, IB, Cambridge, TOEFL, PTE, IELTS, Duolingo, etc.)?'), 'Radio', ns(['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT],
-            [s('ACT／SAT', 'ACT / SAT'), 'Dropdown / Short', f('過去最多 5 次、未來最多 3 次', 'Up to 5 past and 3 future sittings', ['A1-S6']), f('條件題', 'Conditional', ['A1-S6']), STUDENT],
-            [s('AP', 'AP'), 'Dropdown', f('最多 15 科', 'Up to 15 tests', ['A1-S6']), f('條件題', 'Conditional', ['A1-S6']), STUDENT],
-            [s('IB', 'IB'), 'Dropdown', f('最多 10 科', 'Up to 10', ['A1-S6']), f('條件題', 'Conditional', ['A1-S6']), STUDENT],
-            [s('高中畢業會考（Senior Secondary Leaving Examinations）', 'Senior Secondary Leaving Examinations'), 'Dropdown / Short', f('最多 10 筆；30 個考試局或「Other」；科目 30 字元、成績 5 字元', 'Up to 10; 30 boards or "Other"; subject 30 characters, score 5 characters', ['A1-S6', 'A1-S28']), f('條件題（升學是否以會考決定，選「是」才出現）', 'Conditional (opens when promotion depends on leaving exams)', ['A1-S28', 'A1-S6']), STUDENT]
+        intro: s('每一列的方格數就是能填的場次或科目數；只有第一題是必填，其餘都在答「是」之後才出現。', 'The squares in each row are the sittings or subjects that fit; only the first question is required, and the rest appear after a "yes".'),
+        viz: {
+          type: 'field-card',
+          title: s('Testing 幾乎沒有文字格：是一題閘門題加上 5＋3、15、10、10 個成績格', 'Testing has almost no text: one gate question, then 5 + 3, 15, 10 and 10 score slots'),
+          subtitle: s('會考那一列只有在「升學是否以會考決定」答「是」時才出現；科目 30 字元、成績 5 字元。', 'The leaving-examination row opens only when promotion depends on such exams; subject 30 characters, score 5 characters.'),
+          cards: [
+            {
+              label: s('成績自填', 'Self-reported scores'),
+              rows: [
+                row('是否自填成績或未來考試日期', 'Self-report scores or future test dates?', 'radio', { options: YN, req: 'req', src: ['A1-S6'] }),
+                row('ACT／SAT 過去場次', 'ACT / SAT past sittings', 'slots', { n: 5, req: 'cond', src: ['A1-S6'] }),
+                row('ACT／SAT 未來場次', 'ACT / SAT future sittings', 'slots', { n: 3, req: 'cond', src: ['A1-S6'] }),
+                row('AP', 'AP', 'slots', { n: 15, req: 'cond', src: ['A1-S6'] }),
+                row('IB', 'IB', 'slots', { n: 10, req: 'cond', src: ['A1-S6'] }),
+                row('高中畢業會考', 'Senior Secondary Leaving Examinations', 'slots', { n: 10, req: 'cond', src: ['A1-S6', 'A1-S28'] }),
+                row('會考科目', 'Leaving-exam subject', 'text', { limit: 30, req: 'cond', src: ['A1-S6', 'A1-S28'] }),
+                row('會考成績', 'Leaving-exam score', 'num', { limit: 5, req: 'cond', src: ['A1-S6', 'A1-S28'] })
+              ]
+            }
           ]
         },
         items: [
           f('不論 Score Choice，自填最佳成績；學校要求的正式成績單仍須由學生安排寄送。', 'Self-report your best scores regardless of Score Choice; sending official reports where required remains the applicant\'s responsibility.', ['A1-S41']),
           f('2026–27 更新 Duolingo（總分＋分項）、PTE（Academic 與 Express）、TOEFL iBT（加入 1–6 級分）欄位；AP 新增 Business with Personal Finance、Cybersecurity、Networking。', '2026–27 updated the Duolingo (overall + subscores), PTE (Academic and Express) and TOEFL iBT (1–6 band scores) fields, and added AP Business with Personal Finance, Cybersecurity and Networking.', ['A1-S1', 'A1-S7'])
-        ]
+        ],
+        subs: [{
+          h: FIELD_LIST,
+          table: {
+            cols: COLS,
+            rows: [
+              [s('是否自填成績或未來考試日期（ACT、SAT、AP、IB、Cambridge、TOEFL、PTE、IELTS、Duolingo 等）', 'Self-report scores or future test dates (ACT, SAT, AP, IB, Cambridge, TOEFL, PTE, IELTS, Duolingo, etc.)?'), 'Radio', ns(['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT],
+              [s('ACT／SAT', 'ACT / SAT'), 'Dropdown / Short', f('過去最多 5 次、未來最多 3 次', 'Up to 5 past and 3 future sittings', ['A1-S6']), f('條件題', 'Conditional', ['A1-S6']), STUDENT],
+              [s('AP', 'AP'), 'Dropdown', f('最多 15 科', 'Up to 15 tests', ['A1-S6']), f('條件題', 'Conditional', ['A1-S6']), STUDENT],
+              [s('IB', 'IB'), 'Dropdown', f('最多 10 科', 'Up to 10', ['A1-S6']), f('條件題', 'Conditional', ['A1-S6']), STUDENT],
+              [s('高中畢業會考（Senior Secondary Leaving Examinations）', 'Senior Secondary Leaving Examinations'), 'Dropdown / Short', f('最多 10 筆；30 個考試局或「Other」；科目 30 字元、成績 5 字元', 'Up to 10; 30 boards or "Other"; subject 30 characters, score 5 characters', ['A1-S6', 'A1-S28']), f('條件題（升學是否以會考決定，選「是」才出現）', 'Conditional (opens when promotion depends on leaving exams)', ['A1-S28', 'A1-S6']), STUDENT]
+            ]
+          }
+        }]
       },
 
       {
         id: 'activities',
         h: s('Activities and experiences（活動與經歷）', 'Activities and experiences'),
         judgment: s('10 項、每項 50／100／150 字元，2026–27 沒有放寬；改變的是職位欄變選填、畢業後經歷有起訖日期。', '10 entries at 50 / 100 / 150 characters each, unchanged for 2026–27; what changed is that the role field is optional and post-high-school experiences get start and end dates.'),
-        table: {
-          cols: COLS,
-          rows: [
-            [s('是否填寫活動', '"Would you like to report any activities?"'), 'Radio', ns(['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT],
-            [s('活動或經歷類型', 'Activity or experience type'), 'Dropdown', f('31 種', '31 types', ['A1-S6', 'A1-S7']), ns(['A1-S6']), STUDENT],
-            [s('是否有特定職位或領導角色', '"Did you have a specific position or leadership role"'), 'Radio', f('是／否', 'Yes / no', ['A1-S6']), f('選填（2026–27 新增）', 'Optional (new for 2026–27)', ['A1-S6', 'A1-S7']), STUDENT],
-            [s('「What was your role?」（原 Position/Leadership description）', '"What was your role?" (was "Position/Leadership description")'), 'Short', f('**50 字元**', '**50 characters**', ['A1-S6', 'A1-S8', 'A1-S31']), f('選填', 'Optional', ['A1-S6', 'A1-S1']), STUDENT],
-            [s('組織或團體（如有）', 'Organization or group (if applicable)'), 'Short', f('**100 字元**', '**100 characters**', ['A1-S6', 'A1-S31']), f('選填', 'Optional', ['A1-S6']), STUDENT],
-            [s('活動描述（含成果與獲得的肯定）', 'Description, including what you accomplished and any recognition'), 'Short', f('**150 字元**', '**150 characters**', ['A1-S6', 'A1-S31']), ns(['A1-S6']), STUDENT],
-            [s('參與年級', '"When did you participate?"'), 'Checkbox', f('9、10、11、12 年級、高中畢業後', '9th, 10th, 11th, 12th, after graduating high school', ['A1-S6', 'A1-S7']), ns(['A1-S6']), STUDENT],
-            [s('高中期間：一年中何時', 'During high school: time of year'), 'Checkbox', f('學期中／假期／全年', 'School year / school break / all year', ['A1-S6', 'A1-S7']), ns(['A1-S6']), STUDENT],
-            [s('高中畢業後：開始日期、是否仍在進行、結束日期', 'After high school: start date, still participating, end date'), 'Month / Radio', f('1926–2027', '1926–2027', ['A1-S6', 'A1-S7']), ns(['A1-S6']), STUDENT],
-            [s('每週時數', 'Hours per week'), 'Short', f('5 字元', '5 characters', ['A1-S6']), ns(['A1-S6']), STUDENT],
-            [s('每年週數', 'Weeks per year'), 'Short', f('5 字元', '5 characters', ['A1-S6']), ns(['A1-S6']), STUDENT],
-            [s('大學是否繼續參與', '"Do you plan on participating in this activity in college?"'), 'Radio', f('Yes／No／Not sure', 'Yes / No / Not sure', ['A1-S6', 'A1-S7']), ns(['A1-S6']), STUDENT],
-            [s('Responsibilities：每週 4 小時以上的家庭或經濟責任清單', 'Responsibilities taking 4+ hours a week (checklist)'), 'Checkbox / Short', f('「其他」說明 150 字元', '"Other" description 150 characters', ['A1-S6', 'A1-S12']), f('必填', 'Required', ['A1-S6', 'A1-S32']), STUDENT],
-            [s('Circumstances：通勤 60 分鐘以上、居住不穩定、缺水電網路等清單', 'Circumstances: 60+ minute commute, unstable housing, no reliable utilities or internet, etc.'), 'Checkbox', ns(['A1-S6']), f('必填', 'Required', ['A1-S6', 'A1-S12']), STUDENT]
+        intro: s('左卡是一項活動的完整格子，三個文字格的寬度就是 50、100、150 字元的比例，可以試打；上方 10 個方格是項數上限。右卡是 2024–25 起加入的 Responsibilities and circumstances，每位申請者都要答。', 'Left: the full set of boxes for one activity; the three text boxes are drawn in the 50 : 100 : 150 ratio of their limits, and you can type in them. The 10 squares above are the entry limit. Right: the Responsibilities and circumstances questions every applicant answers.'),
+        viz: {
+          type: 'field-card',
+          title: s('一項活動只有 300 字元可寫：職位 50、組織 100、描述 150，其餘全是勾選', 'One activity holds 300 characters of writing: 50 for the role, 100 for the organization, 150 for the description; everything else is a tick'),
+          subtitle: s('2026–27 先問是否有特定職位，答「是」才出現職位格；畢業後的經歷改填起訖月份。', 'For 2026–27 a yes/no on having a specific position comes first and the role box opens on "yes"; post-high-school experiences take start and end months instead of grade levels.'),
+          cards: [
+            {
+              label: s('一項活動或經歷', 'One activity or experience'),
+              count: { n: 10, label: s('最多 10 項', 'Up to 10 entries'), src: ['A1-S6', 'A1-S12', 'A1-S31'] },
+              rows: [
+                row('類型', 'Type', 'select', { n: 31, req: 'ns', src: ['A1-S6', 'A1-S7'] }),
+                row('是否有特定職位或領導角色', 'Specific position or leadership role?', 'radio', { q: 'Did you have a specific position or leadership role', options: YN, req: 'opt', src: ['A1-S6', 'A1-S7'] }),
+                row('職位', 'Role', 'text', { q: 'What was your role?', limit: 50, req: 'opt', src: ['A1-S6', 'A1-S8', 'A1-S31'] }),
+                row('組織或團體（如有）', 'Organization or group (if applicable)', 'text', { limit: 100, req: 'opt', src: ['A1-S6', 'A1-S31'] }),
+                row('活動描述（含成果與獲得的肯定）', 'Description, including what you accomplished and any recognition', 'text', { limit: 150, req: 'ns', src: ['A1-S6', 'A1-S31'] }),
+                row('參與年級', 'Grade levels', 'check', { q: 'When did you participate?', options: GRADES.concat([s('高中畢業後', 'After graduating high school')]), req: 'ns', src: ['A1-S6', 'A1-S7'] }),
+                row('高中期間：一年中何時', 'During high school: time of year', 'check', { options: [s('學期中', 'School year'), s('假期', 'School break'), s('全年', 'All year')], req: 'ns', src: ['A1-S6', 'A1-S7'] }),
+                row('高中畢業後：開始、是否仍在進行、結束', 'After high school: start, still participating, end', 'date', { range: '1926–2027', req: 'ns', src: ['A1-S6', 'A1-S7'] }),
+                row('每週時數', 'Hours per week', 'num', { limit: 5, req: 'ns', src: ['A1-S6'] }),
+                row('每年週數', 'Weeks per year', 'num', { limit: 5, req: 'ns', src: ['A1-S6'] }),
+                row('大學是否繼續參與', 'Continue in college?', 'radio', { q: 'Do you plan on participating in this activity in college?', options: ['Yes', 'No', 'Not sure'], req: 'ns', src: ['A1-S6', 'A1-S7'] })
+              ]
+            },
+            {
+              label: s('Responsibilities and circumstances', 'Responsibilities and circumstances'),
+              sub: s('每位申請者都答，與活動項數無關。', 'Answered by every applicant, separate from the activity entries.'),
+              rows: [
+                row('每週 4 小時以上的家庭或經濟責任', 'Responsibilities taking 4+ hours a week', 'check', { options: [s('勾選清單', 'Checklist'), s('其他', 'Other')], req: 'req', src: ['A1-S6', 'A1-S32'] }),
+                row('「其他」說明', '"Other" description', 'text', { limit: 150, req: 'cond', src: ['A1-S6', 'A1-S12'] }),
+                row('處境：通勤 60 分鐘以上、居住不穩定、缺水電網路等', 'Circumstances: 60+ minute commute, unstable housing, no reliable utilities or internet', 'check', { options: [s('勾選清單', 'Checklist')], req: 'req', src: ['A1-S6', 'A1-S12'] })
+              ]
+            }
           ]
         },
         items: [
@@ -161,41 +430,115 @@ window.ATLAS.pages = window.ATLAS.pages || {};
           f('新說明文字：可以填自學或不屬於正式團體的活動，以高中期間及之後為主。', 'New instruction text: self-taught activities and ones outside any official group are welcome; focus on high school and later.', ['A1-S6', 'A1-S12']),
           f('每週時數與每年週數可接受的數值範圍：除了 5 字元欄位長度之外未載明。', 'Accepted numeric range for hours/week and weeks/year: not stated beyond the 5-character field length.', ['A1-S6']),
           f('Responsibilities and circumstances 原是試行的「Student Context Inventory」；2024–25 試行時 31% 第一年申請者看到這題，其中 65% 至少勾一項。', 'Responsibilities and circumstances began as the "Student Context Inventory" pilot; in 2024–25, 31% of first-year applicants saw it and 65% of those ticked at least one item.', ['A1-S32'])
-        ]
+        ],
+        subs: [{
+          h: FIELD_LIST,
+          table: {
+            cols: COLS,
+            rows: [
+              [s('是否填寫活動', '"Would you like to report any activities?"'), 'Radio', ns(['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT],
+              [s('活動或經歷類型', 'Activity or experience type'), 'Dropdown', f('31 種', '31 types', ['A1-S6', 'A1-S7']), ns(['A1-S6']), STUDENT],
+              [s('是否有特定職位或領導角色', '"Did you have a specific position or leadership role"'), 'Radio', f('是／否', 'Yes / no', ['A1-S6']), f('選填（2026–27 新增）', 'Optional (new for 2026–27)', ['A1-S6', 'A1-S7']), STUDENT],
+              [s('「What was your role?」（原 Position/Leadership description）', '"What was your role?" (was "Position/Leadership description")'), 'Short', f('**50 字元**', '**50 characters**', ['A1-S6', 'A1-S8', 'A1-S31']), f('選填', 'Optional', ['A1-S6', 'A1-S1']), STUDENT],
+              [s('組織或團體（如有）', 'Organization or group (if applicable)'), 'Short', f('**100 字元**', '**100 characters**', ['A1-S6', 'A1-S31']), f('選填', 'Optional', ['A1-S6']), STUDENT],
+              [s('活動描述（含成果與獲得的肯定）', 'Description, including what you accomplished and any recognition'), 'Short', f('**150 字元**', '**150 characters**', ['A1-S6', 'A1-S31']), ns(['A1-S6']), STUDENT],
+              [s('參與年級', '"When did you participate?"'), 'Checkbox', f('9、10、11、12 年級、高中畢業後', '9th, 10th, 11th, 12th, after graduating high school', ['A1-S6', 'A1-S7']), ns(['A1-S6']), STUDENT],
+              [s('高中期間：一年中何時', 'During high school: time of year'), 'Checkbox', f('學期中／假期／全年', 'School year / school break / all year', ['A1-S6', 'A1-S7']), ns(['A1-S6']), STUDENT],
+              [s('高中畢業後：開始日期、是否仍在進行、結束日期', 'After high school: start date, still participating, end date'), 'Month / Radio', f('1926–2027', '1926–2027', ['A1-S6', 'A1-S7']), ns(['A1-S6']), STUDENT],
+              [s('每週時數', 'Hours per week'), 'Short', f('5 字元', '5 characters', ['A1-S6']), ns(['A1-S6']), STUDENT],
+              [s('每年週數', 'Weeks per year'), 'Short', f('5 字元', '5 characters', ['A1-S6']), ns(['A1-S6']), STUDENT],
+              [s('大學是否繼續參與', '"Do you plan on participating in this activity in college?"'), 'Radio', f('Yes／No／Not sure', 'Yes / No / Not sure', ['A1-S6', 'A1-S7']), ns(['A1-S6']), STUDENT],
+              [s('Responsibilities：每週 4 小時以上的家庭或經濟責任清單', 'Responsibilities taking 4+ hours a week (checklist)'), 'Checkbox / Short', f('「其他」說明 150 字元', '"Other" description 150 characters', ['A1-S6', 'A1-S12']), f('必填', 'Required', ['A1-S6', 'A1-S32']), STUDENT],
+              [s('Circumstances：通勤 60 分鐘以上、居住不穩定、缺水電網路等清單', 'Circumstances: 60+ minute commute, unstable housing, no reliable utilities or internet, etc.'), 'Checkbox', ns(['A1-S6']), f('必填', 'Required', ['A1-S6', 'A1-S12']), STUDENT]
+            ]
+          }
+        }]
       },
 
       {
         id: 'writing',
         h: s('Writing（寫作）', 'Writing'),
         judgment: s('寫作只有三個共同欄位：主文 250–650 字、Challenges and circumstances 250 字、Additional information 300 字；其餘都是各校自己的題目。', 'There are three shared writing boxes: the personal essay at 250–650 words, Challenges and circumstances at 250, Additional information at 300. Everything else is each college\'s own question.'),
-        table: {
-          cols: COLS,
-          rows: [
-            [s('個人主文（7 題選 1）', 'Personal essay (choose 1 of 7 prompts)'), 'Long', f('250–650 字', '250–650 words', ['A1-S6', 'A1-S12']), f('由各校決定；不要求的學校，送出時學生可選擇附或不附', 'Set by each college; where not required, the student chooses at submission whether to include it', ['A1-S6', 'A1-S35']), STUDENT],
-            [s('是否說明遭遇的挑戰或處境', '"Would you like to share any details about challenges or other circumstances you\'ve experienced?"'), 'Radio', f('是／否', 'Yes / no', ['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT],
-            [s('Challenges and circumstances 說明', 'Challenges and circumstances details'), 'Long', f('**1–250 字**', '**1–250 words**', ['A1-S6', 'A1-S12']), f('條件題', 'Conditional', ['A1-S6']), STUDENT],
-            [s('是否補充申請表未呈現的細節', '"Would you like to share any additional details or qualifications not reflected in the application?"'), 'Radio', f('是／否', 'Yes / no', ['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT],
-            [s('Additional information', 'Additional information'), 'Long', f('**1–300 字**', '**1–300 words**', ['A1-S6', 'A1-S12']), f('條件題', 'Conditional', ['A1-S6']), STUDENT],
-            [s('各校題目與 writing supplement', 'College-specific questions and writing supplements'), s('各校自訂', 'set by college'), f('各校自訂字數，系統會擋超出範圍的答案；部分短答的上限未列出', 'Each college sets its own counts; the system flags answers outside the limit; some short answers have unlisted limits', ['A1-S42']), f('各校自訂', 'Set by each college', ['A1-S35']), STUDENT]
+        intro: s('下圖把學生在 Common App 各區能寫的總量疊起來：一段是一種格子，長度是「每格上限 × 格數」。字元與英文字數是不同單位，分成兩組、各用自己的軸。橘色段是本頁推論中校外做的事能寫進去的格子；斜紋段是答「是」才出現的條件題。', 'The figure stacks all the writing room a student has in each Common App section: one segment per box type, sized as limit × number of boxes. Characters and words are different units, so they sit in two groups with separate axes. Orange segments are the boxes where, by this page\'s inference, work done outside school can be described; striped segments open only after a "yes".'),
+        viz: {
+          type: 'budget-stack',
+          title: s('學生在 Common App 自己動手寫的空間：活動區最多 3,000 字元，Writing 區最多 1,200 字', 'All the writing a student does in Common App adds up to 3,000 characters in Activities and 1,200 words in Writing'),
+          subtitle: s('合計是「上限 × 格數」的算術，屬推論；每格上限出自 2026–27 Data Catalog。主文字數由各校決定是否要求；條件框只在答「是」後出現，所以上限是天花板，不是常態。', 'Totals are limit × box count, our arithmetic; each limit comes from the 2026–27 Data Catalog. Whether the essay is required is each college\'s call, and conditional boxes open only after a "yes", so the totals are ceilings, not typical lengths.'),
+          groups: [
+            {
+              unit: 'chars', label: s('以字元計的區', 'Sections counted in characters'),
+              bars: [
+                { label: s('Activities and experiences（10 項）', 'Activities and experiences (10 entries)'), segs: [
+                  { label: s('職位「What was your role?」', 'Role, "What was your role?"'), value: 50, times: 10, outside: true, src: ['A1-S6', 'A1-S8', 'A1-S31'], note: s('2026–27 起為選填。', 'Optional from 2026–27.') },
+                  { label: s('組織或團體', 'Organization or group'), value: 100, times: 10, outside: true, src: ['A1-S6', 'A1-S31'] },
+                  { label: s('活動描述', 'Description'), value: 150, times: 10, outside: true, src: ['A1-S6', 'A1-S31'] }
+                ] },
+                { label: s('Education：Honors（5 項）', 'Education: Honors (5 entries)'), segs: [
+                  { label: s('名稱', 'Title'), value: 100, times: 5, src: ['A1-S6', 'A1-S12'] }
+                ] },
+                { label: s('Responsibilities「其他」', 'Responsibilities, "other"'), segs: [
+                  { label: s('「其他」說明', '"Other" description'), value: 150, cond: true, src: ['A1-S6', 'A1-S12'] }
+                ] }
+              ]
+            },
+            {
+              unit: 'words', label: s('以英文字數計的區', 'Sections counted in words'),
+              bars: [
+                { label: s('Writing', 'Writing'), segs: [
+                  { label: s('個人主文', 'Personal essay'), value: 650, src: ['A1-S6', 'A1-S12'], note: s('250–650 字；是否要求由各校決定。', '250–650 words; whether it is required is each college\'s call.') },
+                  { label: s('Challenges and circumstances', 'Challenges and circumstances'), value: 250, cond: true, src: ['A1-S6', 'A1-S12'] },
+                  { label: s('Additional information', 'Additional information'), value: 300, cond: true, outside: true, src: ['A1-S6', 'A1-S12'] }
+                ] },
+                { label: s('Education：條件說明框', 'Education: conditional explanations'), segs: [
+                  { label: s('未畢業說明', 'If not graduating'), value: 250, cond: true, src: ['A1-S6'] },
+                  { label: s('學程進度說明', 'Progression'), value: 250, cond: true, src: ['A1-S6', 'A1-S12'] },
+                  { label: s('離開其他中學的原因', 'Reason for leaving another school'), value: 250, times: 3, cond: true, src: ['A1-S6'] }
+                ] }
+              ]
+            }
           ]
         },
         items: [
           f('2026–27 主文題目與 2025–26 相同。2025–26 的選題比例：自選題 28%、逆境 23%、成長 20%、背景 18%、好奇心 5%、感謝 3%、挑戰既有想法 3%。', '2026–27 essay prompts are unchanged from 2025–26. 2025–26 choice shares: topic of choice 28%, adversity 23%, growth 20%, background 18%, curiosity 5%, gratitude 3%, challenging an idea 3%.', ['A1-S1', 'A1-S3', 'A1-S2']),
           f('寫作出現在三個地方：個人主文、各校題目、部分學校另設的 writing supplement（有時由其他答案觸發）。', 'Writing appears in three places: the personal essay, college-specific questions, and a separate writing supplement some colleges use (sometimes triggered by other answers).', ['A1-S35']),
           f('2026–27 新增：學校可以依約 30 題 My Common Application 答案決定顯示或隱藏自己的題目。', 'New in 2026–27: colleges can show or hide their own questions based on answers to about 30 My Common Application questions.', ['A1-S1'])
-        ]
+        ],
+        subs: [{
+          h: FIELD_LIST,
+          table: {
+            cols: COLS,
+            rows: [
+              [s('個人主文（7 題選 1）', 'Personal essay (choose 1 of 7 prompts)'), 'Long', f('250–650 字', '250–650 words', ['A1-S6', 'A1-S12']), f('由各校決定；不要求的學校，送出時學生可選擇附或不附', 'Set by each college; where not required, the student chooses at submission whether to include it', ['A1-S6', 'A1-S35']), STUDENT],
+              [s('是否說明遭遇的挑戰或處境', '"Would you like to share any details about challenges or other circumstances you\'ve experienced?"'), 'Radio', f('是／否', 'Yes / no', ['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT],
+              [s('Challenges and circumstances 說明', 'Challenges and circumstances details'), 'Long', f('**1–250 字**', '**1–250 words**', ['A1-S6', 'A1-S12']), f('條件題', 'Conditional', ['A1-S6']), STUDENT],
+              [s('是否補充申請表未呈現的細節', '"Would you like to share any additional details or qualifications not reflected in the application?"'), 'Radio', f('是／否', 'Yes / no', ['A1-S6']), f('必填', 'Required', ['A1-S6']), STUDENT],
+              [s('Additional information', 'Additional information'), 'Long', f('**1–300 字**', '**1–300 words**', ['A1-S6', 'A1-S12']), f('條件題', 'Conditional', ['A1-S6']), STUDENT],
+              [s('各校題目與 writing supplement', 'College-specific questions and writing supplements'), s('各校自訂', 'set by college'), f('各校自訂字數，系統會擋超出範圍的答案；部分短答的上限未列出', 'Each college sets its own counts; the system flags answers outside the limit; some short answers have unlisted limits', ['A1-S42']), f('各校自訂', 'Set by each college', ['A1-S35']), STUDENT]
+            ]
+          }
+        }]
       },
 
       {
         id: 'courses-grades',
         h: s('Courses & Grades（課程與成績，僅部分學校要求）', 'Courses & Grades (only where a college requires it)'),
         judgment: s('只有名單上的學校要求；依高中成績單逐門填，沒列在高中成績單上的大學課不填在這裡。', 'Only colleges on Common App\'s list require it; courses are entered as they appear on the high school transcript, and college courses not on that transcript do not go here.'),
-        table: {
-          cols: COLS,
-          rows: [
-            [s('學校名稱、學年、評分量尺、學制', 'School name, school year, grading scale, schedule'), s('多種', 'various'), ns(['A1-S29']), f('必填', 'Required', ['A1-S29']), STUDENT],
-            [s('每門課：科目、課名、層級、至少一個成績、至少一個學分', 'Each course: subject, course name, level, at least one grade, at least one credit'), s('多種', 'various'), ns(['A1-S29', 'A1-S5']), f('必填', 'Required', ['A1-S29']), STUDENT],
-            [s('Other Courses（國中、12 年級後、暑期，且出現在高中成績單上的課）', 'Other Courses (middle school, post-12th, or summer courses that appear on the HS transcript)'), s('多種', 'various'), ns(['A1-S29']), ns(['A1-S29']), STUDENT]
+        intro: s('這一區的格子本頁畫不出寬度：每門課要填的五樣東西都查得到，字元上限卻在另一份本次未下載的 Data Catalog 裡，所以全部是虛線框。', 'This section\'s boxes cannot be drawn to width: the five things entered per course are known, but their character limits sit in a separate Data Catalog not downloaded this run, so every box is dashed.'),
+        viz: {
+          type: 'field-card',
+          title: s('Courses & Grades 每門課填五樣東西，但每一格的字元上限都還查不到', 'Each Courses & Grades course takes five entries, and none of their character limits has been checked yet'),
+          subtitle: s('虛線框表示「未載明」，不是沒有上限。76 筆學校名單見下方。', 'A dashed box means "not stated", not "no limit". The 76-entry list of colleges is below.'),
+          cards: [
+            {
+              label: s('一門課（依高中成績單）', 'One course (as on the high school transcript)'),
+              rows: [
+                row('科目', 'Subject', 'ns', { req: 'req', src: ['A1-S29', 'A1-S5'] }),
+                row('課名', 'Course name', 'ns', { req: 'req', src: ['A1-S29', 'A1-S5'] }),
+                row('層級', 'Level', 'ns', { req: 'req', src: ['A1-S29', 'A1-S5'] }),
+                row('成績（至少一個）', 'Grade (at least one)', 'ns', { req: 'req', src: ['A1-S29', 'A1-S5'] }),
+                row('學分（至少一個）', 'Credit (at least one)', 'ns', { req: 'req', src: ['A1-S29', 'A1-S5'] })
+              ]
+            }
           ]
         },
         items: [
@@ -203,12 +546,25 @@ window.ATLAS.pages = window.ATLAS.pages || {};
           f('Common App 目前的要求名單共 76 筆（「不在名單上就不用填」），其中有 Carnegie Mellon、Purdue、Stanford、Amherst 等。', 'Common App\'s current list has 76 entries ("If your college is not on this list, you do not need to complete the Courses & Grades section"), including Carnegie Mellon, Purdue, Stanford and Amherst.', ['A1-S30']),
           inf('名單中有一筆是獎學金基金會而非學校，所以頒授學位的機構是 76 筆中的 75 筆。', 'One entry is a scholarship foundation rather than a college, so 75 of the 76 entries grant degrees.', ['A1-S30']),
           f('Courses & Grades 各欄位的字元上限：本頁未列（另有一份 2026–2027 Courses & Grades Data Catalog，本次未下載）。', 'Per-field character limits for Courses & Grades are not given here (a separate 2026–2027 Courses & Grades Data Catalog exists but was not downloaded this run).', ['A1-S5'])
-        ]
+        ],
+        subs: [{
+          h: FIELD_LIST,
+          table: {
+            cols: COLS,
+            rows: [
+              [s('學校名稱、學年、評分量尺、學制', 'School name, school year, grading scale, schedule'), s('多種', 'various'), ns(['A1-S29']), f('必填', 'Required', ['A1-S29']), STUDENT],
+              [s('每門課：科目、課名、層級、至少一個成績、至少一個學分', 'Each course: subject, course name, level, at least one grade, at least one credit'), s('多種', 'various'), ns(['A1-S29', 'A1-S5']), f('必填', 'Required', ['A1-S29']), STUDENT],
+              [s('Other Courses（國中、12 年級後、暑期，且出現在高中成績單上的課）', 'Other Courses (middle school, post-12th, or summer courses that appear on the HS transcript)'), s('多種', 'various'), ns(['A1-S29']), ns(['A1-S29']), STUDENT]
+            ]
+          }
+        }]
       },
 
       {
         id: 'writing-changes',
         h: s('近兩季改了什麼（常被寫錯的地方）', 'What changed in the last two cycles (often misreported)'),
+        judgment: s('Additional information 從 2025–26 起就是 300 字，不是 650；仍寫 650 的指南說的是 2024–25 的欄位。', 'Additional information has been 300 words since 2025–26, not 650; guides that still say 650 describe the 2024–25 field.'),
+        intro: s('下圖把最常被引用錯的幾個上限排在一起，字元一組、字數一組；每一條都只畫官方頁查得到的數字。', 'The figure lines up the limits most often misquoted, characters in one group and words in another; each bar draws only a figure an official page states.'),
         viz: {
           type: 'budget',
           title: s('學生能寫的最長一格是 650 字；一項活動的描述只有 150 字元', 'The longest box a student writes is 650 words; an activity description gets 150 characters'),
@@ -236,7 +592,6 @@ window.ATLAS.pages = window.ATLAS.pages || {};
             }
           ]
         },
-        judgment: s('Additional information 從 2025–26 起就是 300 字，不是 650；仍寫 650 的指南說的是 2024–25 的欄位。', 'Additional information has been 300 words since 2025–26, not 650; guides that still say 650 describe the 2024–25 field.'),
         items: [
           f('**Additional information：300 字**（2025–26 起；2024–25 為 650 字）。2026–27 維持 300。', '**Additional information: 300 words** (since 2025–26; it was 650 in 2024–25). 2026–27 keeps 300.', ['A1-S10', 'A1-S9', 'A1-S6', 'A1-S12']),
           f('**Challenges and circumstances：250 字**，2025–26 新增，取代原本的 community disruption 題。2026–27 例句中「care-taking」改為「caregiving」。', '**Challenges and circumstances: 250 words**, introduced in 2025–26 in place of the community-disruption question. 2026–27 changes the example wording "care-taking" to "caregiving".', ['A1-S9', 'A1-S6', 'A1-S1', 'A1-S12']),
@@ -253,6 +608,55 @@ window.ATLAS.pages = window.ATLAS.pages || {};
         id: 'recommenders',
         h: s('推薦人：誰可以寫、寫幾封、填哪些表', 'Recommenders: who qualifies, how many, which forms'),
         judgment: s('老師表有 16 列評分、8 級量尺，最高一級是「職涯中僅見的少數幾位」；輔導老師只評 4 列，外加一個課程難度量尺。每封推薦信只有一個版本，寄給所有被指派的學校，送出後不能改。', 'The teacher form has 16 rating rows on an 8-point scale topped by "One of the top few encountered in my career"; the counselor rates only 4 rows plus a course-rigor scale. Each letter is a single version sent to every assigned college and cannot be changed once submitted.'),
+        intro: s('下表一列一種角色、一欄一種東西：交幾張表、評幾列分、有哪些短答格與上限、信怎麼交、學生的 FERPA 選擇是否涵蓋。大數字是可以直接數的；「—」是這個角色沒有這一項。', 'One row per role, one column per thing asked: how many forms, how many rating rows, which short boxes and limits, how the letter is delivered, and whether the student\'s FERPA choice covers it. A big number is a countable quantity; a dash means the role has none of that item.'),
+        viz: {
+          type: 'recommender-matrix',
+          title: s('老師評 16 列、輔導老師評 4 列、Other Recommender 一列都不評；Advisor 什麼表都不交', 'Teachers rate 16 rows, counselors 4, Other Recommenders none; advisors submit no form at all'),
+          subtitle: s('同一套 8 級量尺；評分列都可以不填，推薦人的個人檔案就先問填不填。學生的 FERPA 選擇一次適用所有推薦與文件。', 'The same 8-point scale throughout; every rating row is optional, and each recommender\'s profile asks first whether they fill ratings at all. The student\'s single FERPA choice applies to every recommendation and document.'),
+          roles: [
+            { label: s('輔導老師', 'Counselor'), sub: s('也可由自學督導以 counselor 身分擔任', 'A home school supervisor can act as counselor'), src: ['A1-S14', 'A1-S20'] },
+            { label: s('老師', 'Teacher'), sub: s('教過學生學科的老師；大學教師勾 college/university instructor', 'Taught the student an academic subject; a college instructor marks "college/university instructor"'), src: ['A1-S13', 'A1-S20', 'A1-S23'] },
+            { label: s('Other Recommender', 'Other Recommender'), sub: s('8 種類型，「在校外與你共事過的人」', '8 types, "individuals you have worked with outside of school"'), src: ['A1-S20', 'A1-S21', 'A1-S15'] },
+            { label: s('Advisor', 'Advisor'), sub: s('任何協助學生的人', 'Anyone helping the student'), src: ['A1-S21', 'A1-S28', 'A1-S36'] }
+          ],
+          cols: [
+            { label: s('交幾張表', 'Forms') },
+            { label: s('評分列數', 'Rating rows') },
+            { label: s('短答格與上限', 'Short boxes and limits') },
+            { label: s('推薦信', 'Letter') },
+            { label: s('學生的 FERPA 選擇涵蓋', 'Covered by the student\'s FERPA choice') }
+          ],
+          cells: [
+            [
+              { n: 5, t: s('School Report、Counselor Recommendation、Mid-Year、Optional、Final Report', 'School Report, Counselor Recommendation, Mid-Year, Optional and Final Report'), src: ['A1-S14', 'A1-S16', 'A1-S17', 'A1-S18', 'A1-S19', 'A1-S20'] },
+              { n: 4, t: s('同一 8 級量尺；另有課程難度量尺與 5 級「I recommend this student」', 'Same 8-point scale; plus a course-rigor scale and a 5-level "I recommend this student"'), src: ['A1-S14', 'A1-S6'] },
+              { t: s('認識多久 100 字元；第一印象 150 字元；community disruption 500 字；Mid-Year 更新說明 250', 'How long known 100 characters; first words 150 characters; community disruption 500 words; Mid-Year "changes or updates" 250'), src: ['A1-S16', 'A1-S14', 'A1-S17', 'A1-S6'] },
+              { t: s('評語上傳或文字框，上限 1000 字；或勾「不寄評語」並附最多 250 字', 'Evaluation upload or text, max 1000 words; or "I will not be sending an evaluation" plus up to 250 words'), src: ['A1-S16', 'A1-S6'] },
+              { t: s('是：「all recommendations and supporting documents」', 'Yes: "all recommendations and supporting documents"'), src: ['A1-S14'] }
+            ],
+            [
+              { n: 1, t: s('Teacher Evaluation（含 college/university instructor 版本）', 'Teacher Evaluation (including the college/university instructor variant)'), src: ['A1-S13', 'A1-S23', 'A1-S6'] },
+              { n: 16, t: s('8 級量尺，可不填；最高一級「One of the top few encountered in my career」', '8-point scale, optional; topped by "One of the top few encountered in my career"'), src: ['A1-S13', 'A1-S6'] },
+              { t: s('認識多久、第一印象、任教課程各 1000；instructor 版另有系所 30 字元、短答 150 字元', 'How long known, first words, courses taught, 1000 each; the instructor variant adds a department field (30 characters) and 150-character short answers'), src: ['A1-S13', 'A1-S6'] },
+              { t: s('上傳，PDF 建議 1000 字以內', 'Uploaded; PDF guidance 1000 words or less'), src: ['A1-S13', 'A1-S6'] },
+              { t: s('是', 'Yes'), src: ['A1-S14'] }
+            ],
+            [
+              { n: 1, t: s('Other Evaluation；學校接受該類型才能指派', 'Other Evaluation; assignable only where the college accepts the type'), src: ['A1-S15', 'A1-S20', 'A1-S22'] },
+              { n: 0, t: s('沒有評分表', 'No rating grid'), src: ['A1-S15', 'A1-S6'] },
+              { t: s('與申請者的關係 20 字元、認識多久 20 字元，皆必填', 'Relationship 20 characters, length known 20 characters, both required'), src: ['A1-S15', 'A1-S6'] },
+              { t: s('上傳，必填；PDF 建議 1000 字以內', 'Uploaded, required; PDF guidance 1000 words or less'), src: ['A1-S15', 'A1-S6'] },
+              { t: s('是', 'Yes'), src: ['A1-S14'] }
+            ],
+            [
+              { n: 0, t: s('不能交任何表單', 'Submits no forms'), src: ['A1-S21', 'A1-S28', 'A1-S36'] },
+              { kind: 'none', src: ['A1-S21', 'A1-S36'] },
+              { kind: 'none', src: ['A1-S21', 'A1-S36'] },
+              { kind: 'none', t: s('只能追蹤進度；學生允許下看 PDF 預覽', 'Tracks progress; sees a PDF preview with the student\'s permission'), src: ['A1-S21', 'A1-S28', 'A1-S36'] },
+              { kind: 'none', src: ['A1-S36'] }
+            ]
+          ]
+        },
         subs: [
           {
             h: s('四種角色與數量', 'Four roles and the counts'),
@@ -321,6 +725,42 @@ window.ATLAS.pages = window.ATLAS.pages || {};
         id: 'other-systems',
         h: s('其他申請系統', 'Other application systems'),
         judgment: s('UC 不收推薦信、寫作是 4 題各 350 字；MIT 的活動欄只放得下 4 項；Coalition on Scoir 的活動數與字元上限在官方說明頁上找不到。', 'UC takes no letters with the application and asks for 4 answers of 350 words; MIT\'s activity form holds only 4 entries; Coalition on Scoir\'s activity count and character limits are not on its official help page.'),
+        intro: s('下圖只比能精確算的：上組是各系統活動描述的總字元（每格上限 × 項數），下組是共同寫作題的總字數。MIT 與 ApplyTexas 的短答只有約略字數，Coalition 的活動上限未載明，所以畫成虛線框而不是長條。', 'The figure compares only what can be computed exactly: the top group totals the characters of each system\'s activity descriptions (limit × entries), the bottom the words of its shared essay questions. MIT and ApplyTexas give only approximate short-answer lengths and Coalition states no activity limit, so those are dashed boxes rather than bars.'),
+        viz: {
+          type: 'budget-stack',
+          title: s('UC 活動區能寫 7,000 字元，是 Common App 活動描述的四倍多；三個系統的共同寫作題則都落在 1,200–1,650 字', 'UC\'s activity section holds 7,000 characters, more than four times Common App\'s descriptions; shared essay totals in three systems all fall between 1,200 and 1,650 words'),
+          subtitle: s('合計是「上限 × 格數」的算術，屬推論。UC 的 350 字元出自一份校區工作表，系統層級頁面沒寫；Georgetown 的 Essay 2 依學院而定。', 'Totals are limit × box count, our arithmetic. UC\'s 350 characters come from one campus worksheet and are absent from the systemwide page; Georgetown\'s Essay 2 depends on the school applied to.'),
+          groups: [
+            {
+              unit: 'chars', label: s('活動描述的總字元', 'Activity descriptions, total characters'),
+              bars: [
+                { label: s('Common App（10 項）', 'Common App (10 entries)'), segs: [{ label: s('活動描述', 'Description'), value: 150, times: 10, src: ['A1-S6', 'A1-S31'] }] },
+                { label: s('UC Activities & awards（20 項）', 'UC Activities & awards (20 entries)'), segs: [{ label: s('描述', 'Description'), value: 350, times: 20, src: ['A2-S7', 'A2-S3', 'A2-S6'], note: s('350 字元出自 UCSB 校區工作表（2026-06-11）。', 'The 350 characters come from a UCSB campus worksheet dated 2026-06-11.') }] },
+                { label: s('UC Additional comments（Academic history）', 'UC Additional comments (Academic history)'), segs: [{ label: s('一格', 'One box'), value: 550, src: ['C1-S39', 'C1-S40'], note: s('550 字元，不是字。', '550 characters, not words.') }] },
+                { label: s('MIT（4 項）', 'MIT (4 entries)'), ns: true, src: ['A2-S22'] },
+                { label: s('Coalition on Scoir', 'Coalition on Scoir'), ns: true, src: ['A2-S18'] }
+              ]
+            },
+            {
+              unit: 'words', label: s('共同寫作題的總字數', 'Shared essay questions, total words'),
+              bars: [
+                { label: s('Common App', 'Common App'), segs: [
+                  { label: s('個人主文', 'Personal essay'), value: 650, src: ['A1-S6', 'A1-S12'] },
+                  { label: s('Challenges and circumstances', 'Challenges and circumstances'), value: 250, cond: true, src: ['A1-S6', 'A1-S12'] },
+                  { label: s('Additional information', 'Additional information'), value: 300, cond: true, src: ['A1-S6', 'A1-S12'] }
+                ] },
+                { label: s('UC Application', 'UC Application'), segs: [{ label: s('PIQ（8 題選 4）', 'PIQ (4 of 8)'), value: 350, times: 4, src: ['A2-S1'] }] },
+                { label: s('Georgetown Application', 'Georgetown Application'), segs: [
+                  { label: s('短文', 'Short essays'), value: 250, times: 2, src: ['A2-S28'] },
+                  { label: s('Essay 1', 'Essay 1'), value: 650, src: ['A2-S28'] },
+                  { label: s('Essay 2（依學院）', 'Essay 2 (by school)'), value: 500, src: ['A2-S28'] }
+                ] },
+                { label: s('MIT 自有申請', 'MIT\'s own application'), ns: true, src: ['A2-S22'] },
+                { label: s('ApplyTexas', 'ApplyTexas'), ns: true, src: ['A2-S30'] }
+              ]
+            }
+          ]
+        },
         table: {
           cols: [s('系統', 'System'), s('寫作', 'Essays'), s('活動', 'Activities'), s('推薦信', 'Letters'), s('備註', 'Notes')],
           rows: [

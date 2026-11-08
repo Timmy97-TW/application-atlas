@@ -753,6 +753,79 @@ window.ATLAS.pages = window.ATLAS.pages || {};
             ]
           }
         ]
+      },
+
+      // ───────────────────────── L: a research record from a lab outside school
+      {
+        id: "lab-record",
+        h: s("校外實驗室的研究紀錄：30 校各自收什麼形狀", "A research record from a lab outside school: the shape each of the 30 schools takes"),
+        judgment: s(
+          "三年校外實驗室訓練的紀錄，沒有任何一校以「紀錄」的形式收；收的是摘要、海報、論文與 mentor 的信。能附 mentor 信的研究表單只有 MIT（SlideRoom）、Yale（Status Portal）、Caltech（Beaver Breakroom，且限大學或 research-affiliated 實驗室）三校。",
+          "No school receives three years of outside-lab training as a record; it receives an abstract, a poster, a paper and a mentor's letter. Only three schools have a research form that carries the mentor's letter: MIT (SlideRoom), Yale (Status Portal) and Caltech (Beaver Breakroom, and only for a lab in a university or research-affiliated organization)."
+        ),
+        intro: s(
+          "本節把上表的研究欄與推薦信規則併成一張矩陣，回答一個問題：一位在校外獨立分子生物學訓練 programme 做了三年實驗的學生，研究紀錄在每一校能走哪條路。證據的強弱排序、三年時間線與逐欄填寫的虛構範例在 [record.html](record.html#lab)。研究筆記 L（2026-11-08）。",
+          "This section folds the research column above and the letter rules into one matrix to answer one question: for a student with three years in an independent molecular-biology training programme outside school, which route can the research record take at each school. The ranking of proofs, the three-year timeline and the fictional field-by-field example are on [record.html](record.html#lab). Research note L (2026-11-08)."
+        ),
+        viz: {
+          type: "school-research-routes", dataset: "schools",
+          title: s("30 校中 3 校有附 mentor 信的研究表單，8 校明寫不收；每校只接受一種形狀的研究紀錄", "Three of 30 schools have a research form with a mentor letter and eight refuse in writing; each school takes one shape of research record"),
+          subtitle: s("每列一校。四欄：是否收研究論文或摘要（上表）、研究紀錄能走的管道（本次分類）、是否接受 mentor 另寫一封信、是否接受 Common App 的 Other Recommender（學校資料）。虛線圈＝頁面未載明；斜紋＝網頁拒絕自動讀取。滑過或點一下看該格全文與出處。", "One row per school. Four columns: whether a research paper or abstract is accepted (the table above), the route a research record can take (classified in this note), whether a mentor's extra letter is accepted, and whether Common App's Other Recommender is accepted (school data). Dashed ring: not stated; hatched: page refused automated reading. Hover or tap a cell for the full text and sources."),
+          legend: [
+            { label: s("接受", "Accepted"), shape: "dot", color: "#184f95" },
+            { label: s("有限或有條件", "Limited or conditional"), shape: "ring" },
+            { label: s("不收", "Refused"), shape: "ring", border: "#898781" },
+            { label: s("未載明", "Not stated"), shape: "dash" },
+            { label: s("網頁拒絕自動讀取", "Page refused automated reading"), shape: "hatch" },
+            { label: s("管道：SlideRoom 研究補充", "Route: SlideRoom research supplement"), shape: "box", color: "#184f95" },
+            { label: s("管道：學校 portal 上傳", "Route: school portal upload"), shape: "box", color: "#2a78d6" },
+            { label: s("管道：只走 Common App 欄位", "Route: Common App fields only"), shape: "box", color: "#b7d3f6", border: "#2a78d6" }
+          ],
+          rows: [
+            { school: "MIT", route: "slideroom", mentor: "yes", note: s("Research Supplement：問卷、摘要或海報 PDF、citation；mentor 經 SlideRoom 寫信。", "Research Supplement: questionnaire, abstract or poster PDF, citation; the mentor's letter comes through SlideRoom."), src: ["L09", "B2-S1"], mentorSrc: ["L09", "B7-O06"] },
+            { school: "Caltech", route: "portal", mentor: "yes", note: s("Research Papers and Publications（限大學或 research-affiliated 實驗室且有論文）；否則 Portfolio。", "Research Papers and Publications (lab in a university or research-affiliated organization, with a paper); otherwise the Portfolio."), src: ["L06", "L08"], mentorSrc: ["L06"], mentorNote: s("研究場所的信為必要，須談具體貢獻", "Research-site letter required; must speak to specific contributions") },
+            { school: "Stanford", route: "refused", mentor: "limited", note: s("不提供補充材料上傳；研究論文不加入檔案。", "No supplementary uploads; research papers are not added to the file."), src: ["B7-O50"], mentorSrc: ["B7-O49"], mentorNote: s("一位 Other Recommender，須能「provide new insights」", "One Other Recommender who can \"provide new insights\"") },
+            { school: "Harvard", route: "portal", mentor: "yes", note: s("Applicant Portal「Upload Materials」；須列合作者、mentor 與本人貢獻。", "Applicant Portal \"Upload Materials\"; list collaborators, the mentor and your own contribution."), src: ["L14"], mentorSrc: ["L14"] },
+            { school: "Yale", route: "portal", mentor: "yes", note: s("STEM Research Supplement Form（Status Portal）；論文、摘要或海報；邀請 mentor 寫信。", "STEM Research Supplement Form (Status Portal); paper, abstract or poster; invite the mentor to write."), src: ["L11"], mentorSrc: ["L11"] },
+            { school: "Princeton", route: "refused", mentor: "ns", note: s("沒有研究管道；選填項目只有藝術補充。", "No research channel; the arts supplement is the only optional component."), src: ["V4-T1", "V4-T3"] },
+            { school: "Columbia", route: "blocked", mentor: "limited", note: s("FAQ 頁 2026-11-08 仍回 HTTP 403；2026-11-07 的搜尋摘錄說額外的信只考慮 research supervisor 或大學課程教師。", "FAQ returned HTTP 403 again on 2026-11-08; a 2026-11-07 excerpt said extra letters are considered only from a research supervisor or college-course instructor."), src: ["L26", "B7-O73"], mentorSrc: ["B7-O73"], mentorNote: s("只有摘錄，未讀到頁面本文", "Excerpt only; page body not read") },
+            { school: "Penn", route: "commonapp", mentor: "ns", note: s("請寫在 Activities 或 Additional Information。", "Use the Activities or Additional Information sections."), src: ["B2-S19"] },
+            { school: "Brown", route: "portal", mentor: "yes", note: s("Brown Applicant Portal：研究摘要；不收 email 更新。", "Brown Applicant Portal: research abstract; no updates by email."), src: ["L13"], mentorSrc: ["L13"], mentorNote: s("一封選填的信走 Common App；其他由推薦人直接寄", "One optional letter via Common App; further letters sent directly by the recommender") },
+            { school: "Cornell", route: "limited", mentor: "ns", note: s("未設研究類別；Applicant Portal 可「upload supplemental materials to your application」。", "No research category; the Applicant Portal lets applicants \"upload supplemental materials to your application\"."), src: ["B2-S28"] },
+            { school: "Georgetown", route: "ns", mentor: "ns", src: ["B2-S29"] },
+            { school: "CMU", route: "limited", mentor: "ns", note: s("不收上傳；工學院與 CS 只有 VIVA 影片。", "No uploads; Engineering and CS take a VIVA video only."), src: ["B2-S30"] },
+            { school: "Georgia Tech", route: "ns", mentor: "ns", src: ["B2-S32"] },
+            { school: "Purdue", route: "ns", mentor: "ns", src: ["V4-T8"] },
+            { school: "Michigan", route: "refused", mentor: "no", note: s("「Do not submit additional documents unless specifically requested.」", "\"Do not submit additional documents unless specifically requested.\""), src: ["V4-T13"], mentorSrc: ["V4-T13"] },
+            { school: "UIUC", route: "refused", mentor: "no", note: s("不收任何未經要求的材料；未經要求的信在審查前移除。", "No unsolicited material; unsolicited letters are removed before review."), src: ["B2-S36", "B7-O86"], mentorSrc: ["B7-O86"] },
+            { school: "Olin", route: "ns", mentor: "ns", src: ["B2-S38"] },
+            { school: "Harvey Mudd", route: "commonapp", mentor: "limited", note: s("Common App 上傳；只要摘要，不要全文。", "Common App upload; abstract only, not the full paper."), src: ["L16"], mentorSrc: ["L16"], mentorNote: s("只多收一封，最好來自 supervisor、mentor 或 employer", "Only one additional letter, ideally from a supervisor, mentor or employer") },
+            { school: "Johns Hopkins", route: "portal", mentor: "yes", note: s("applicant portal 上傳；以研究摘要為例。", "Applicant portal upload; research abstracts given as an example."), src: ["L15"], mentorSrc: ["L15"], mentorNote: s("可作為選交材料上傳；候補名單階段不要再寄", "May be uploaded as optional material; not during the waitlist") },
+            { school: "Duke", route: "refused", mentor: "limited", note: s("點名不收 research abstracts。", "Names research abstracts as not accepted."), src: ["B2-S43"], mentorSrc: ["B7-O43"], mentorNote: s("接受一封額外推薦信", "Accepts one additional letter") },
+            { school: "Northwestern", route: "refused", mentor: "ns", note: s("不收未經要求的補充材料。", "Unsolicited supplements are refused."), src: ["V4-T6"] },
+            { school: "Rice", route: "ns", mentor: "limited", src: ["B2-S46"], mentorSrc: ["B7-O68"], mentorNote: s("「A supplemental letter is not required or expected.」", "\"A supplemental letter is not required or expected.\"") },
+            { school: "UC Berkeley", route: "refused", mentor: "no", note: s("UC 不收補充材料；活動須可由獨立第三方查證。", "UC takes no supplementary material; activities must be verifiable by an independent party."), src: ["B2-S47", "C1-S41"], mentorSrc: ["C1-S40", "C1-S41"], mentorNote: s("UC 頁面未提推薦信", "UC pages do not mention letters") },
+            { school: "UCLA", route: "ns", mentor: "no", src: ["B2-S50"], mentorSrc: ["C1-S40"] },
+            { school: "UC San Diego", route: "ns", mentor: "no", src: ["B2-S51"], mentorSrc: ["C1-S40"] },
+            { school: "UT Austin", route: "ns", mentor: "limited", src: ["B2-S54"], mentorSrc: ["B7-O84", "B7-O85"], mentorNote: s("推薦信「although not required」會看；最多兩封（摘錄）", "Letters reviewed \"although not required\"; up to two (excerpt)") },
+            { school: "UW", route: "refused", mentor: "ns", note: s("不收補充材料，也請勿寄網站連結。", "No supplementary material; no website links."), src: ["B2-S55"] },
+            { school: "Williams", route: "limited", mentor: "ns", note: s("「we welcome a brief description of your work」；可另附 VIVA。", "\"we welcome a brief description of your work\"; optional VIVA."), src: ["V4-T11"] },
+            { school: "Amherst", route: "blocked", mentor: "blocked", src: ["B2-S57"] },
+            { school: "Swarthmore", route: "portal", mentor: "ns", note: s("portal：研究摘要，或 VIVA 影片介紹研究。", "Portal: research abstracts, or a VIVA video about the research."), src: ["B2-S58"] }
+          ]
+        },
+        items: [
+          f("Caltech 的研究管道有三個同時成立的門檻：在「a university or research-affiliated organization」的實驗室、「reported to a senior researcher within the lab」、成果是「published, submitted, or in preparation」的論文；不符合者（含「independent research」）改交 Portfolio，Portfolio 的可交項目列有「Research posters」與「Personal notebooks」。",
+            "Caltech's research channel has three conditions met together: a lab in \"a university or research-affiliated organization\", having \"reported to a senior researcher within the lab\", and a paper \"published, submitted, or in preparation\"; anything else, including \"independent research\", goes to the Portfolio, whose item list includes \"Research posters\" and \"Personal notebooks\".", ["L06", "L08"]),
+          f("MIT 的 Research Supplement 收「a significant research project outside of high school classes」：一人一份、一個專題；摘要或海報 PDF「if available」；已發表附 citation；由 mentor 經 SlideRoom 直接寫信；US$10。",
+            "MIT's Research Supplement takes \"a significant research project outside of high school classes\": one per applicant, one project; an abstract or poster PDF \"if available\"; a citation if published; the mentor writes directly through SlideRoom; US$10.", ["L09"]),
+          f("Yale 的 STEM Research Supplement Form 只在申請者於 Common App 表示要交補充材料時出現；「Full research papers are generally the most helpful」；Harvey Mudd 則「do not upload entire research papers but instead include an abstract」。",
+            "Yale's STEM Research Supplement Form appears only if the applicant indicated intent on the Common App; \"Full research papers are generally the most helpful\"; Harvey Mudd instead says \"do not upload entire research papers but instead include an abstract\".", ["L11", "L16"]),
+          f("Common App 的 Other Recommender 類型是 arts teacher、clergy、coach、college access counselor、employer、family member、peer、other；沒有 research mentor。「Each college can choose which types of other recommenders they accept.」",
+            "Common App's Other Recommender types are arts teacher, clergy, coach, college access counselor, employer, family member, peer and other; there is no research mentor. \"Each college can choose which types of other recommenders they accept.\"", ["L03"]),
+          inf("對一個非大學附屬的校外訓練 programme，三年紀錄能走的路實際上是：MIT 與 Yale 的研究表單（摘要或海報＋mentor 信）、Caltech 的 Portfolio（海報、記錄本）、Harvard／Brown／JHU／Swarthmore 的 portal 上傳（摘要），以及所有學校都有的 Activities 150 字元與 Additional Information 300 字。這是欄位規則的推論；哪一條路對哪一校最有用，沒有來源說。",
+            "For a training programme outside school that is not university-affiliated, the routes a three-year record can actually take are: MIT's and Yale's research forms (abstract or poster plus the mentor's letter), Caltech's Portfolio (posters, notebooks), the portal uploads at Harvard, Brown, JHU and Swarthmore (an abstract), and, at every school, the 150-character Activities entry and the 300-word Additional Information. This is an inference from the field rules; which route helps most at which school is not stated anywhere.", ["L06", "L08", "L09", "L11", "L13", "L14", "L15", "A1-S6"])
+        ]
       }
     ]
   };
