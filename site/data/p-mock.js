@@ -24,8 +24,8 @@ window.ATLAS.pages = window.ATLAS.pages || {};
     title: z('模擬練習：一年級申請表全流程', 'Practice walkthrough: the full first-year application'),
     mock: true,
     judgment: z(
-      '這一頁依 2026–27 公開資料重建 Common App first-year 申請表的結構：七個主表區塊、五所學校的題目與補充文章、推薦人與 FERPA、繳費與簽名，外加另一套系統的 UC 申請。欄位、字數與數量上限都附來源。',
-      'This page rebuilds the structure of the Common App first-year application as published for 2026–27: seven common sections, five colleges’ questions and writing supplements, recommenders and FERPA, fee and signature, plus the separate UC application. Every field limit and count carries a source.'
+      '這一頁依 2026–27 公開資料重建 Common App first-year 申請表的結構：七個主表區塊、30 所學校各自的題目與補充文章、推薦人與 FERPA、繳費與簽名，外加另一套系統的 UC 申請。欄位、字數與數量上限都附來源。',
+      'This page rebuilds the structure of the Common App first-year application as published for 2026–27: seven common sections, the 30 schools’ own questions and writing supplements, recommenders and FERPA, fee and signature, plus the separate UC application. Every field limit and count carries a source.'
     ),
     intro: z(
       '這是練習用的模擬頁，模擬的是 Common App 2026–27 first-year 申請表的結構，不是官方系統，也不會送出任何資料。你輸入的內容只存在這台裝置瀏覽器的 localStorage。正式申請請到各系統的官方網站。',
@@ -95,8 +95,8 @@ window.ATLAS.pages = window.ATLAS.pages || {};
     'This table models the Dashboard: for each college, the plan, deadline, and completion of the common sections and the college-specific parts. The common sections are filled once and go to every college on the list; questions, writing supplements and recommender assignments are per college. Among this site’s 30 schools, MIT uses its own application and does not appear here; the UC campuses (Berkeley, UCLA, San Diego) use the UC application, a separate system, which is why the left column has a separate UC tab.'
   );
   M.collegesIntro = z(
-    '以下 5 所學校都收 Common App，資料取自本站逐校研究筆記。正式系統每個申請季最多可加 20 所（A1-S37）。',
-    'These five colleges all accept the Common App; their data come from this site’s school roster notes. The real system allows at most 20 colleges per cycle (A1-S37).'
+    '本站 30 所學校都在這裡；選了哪一所，左欄就出現那所學校的題目、補充文章與推薦信規定，資料取自本站逐校研究筆記。MIT 與三所 UC 不走 Common App，條目裡會說明它們自己的系統。正式系統每個申請季最多可加 20 所（A1-S37）。',
+    'All 30 of this site’s schools are listed; add one and its own questions, writing supplements and letter rules appear in the left column, drawn from this site’s roster notes. MIT and the three UC campuses do not use the Common App; their entries say what their own systems ask. The real system allows at most 20 colleges per cycle (A1-S37).'
   );
 
   // ================================================================ SECTIONS
@@ -427,8 +427,8 @@ window.ATLAS.pages = window.ATLAS.pages || {};
   M.sections.push({
     id: 'courses',
     label: z('Courses & Grades 課程與成績', 'Courses & Grades'),
-    blurb: z('只有要求它的學校才需要。本頁五校中只有 Stanford 在名單上。', 'Needed only for colleges that require it. Of this page’s five colleges, only Stanford is on the list.'),
-    intro: z('Common App 目前的名單共 76 筆；不在名單上的學校不用填（A1-S30）。本頁五校中 Stanford 在名單上；Harvard、Johns Hopkins、Cornell、Carnegie Mellon 不在。依高中成績單原樣填寫；不在高中成績單上的大學課程不填這裡（A1-S29）。各欄字元上限在另一份 Courses & Grades data catalog，本站尚未下載，所以這裡不設上限（A1 §3a）。', 'Common App’s current list has 76 entries; colleges not on it do not need this section (A1-S30). Of this page’s five colleges, Stanford is on the list; Harvard, Johns Hopkins, Cornell and Carnegie Mellon are not. Report courses as they appear on your high-school transcript; college courses not on that transcript do not go here (A1-S29). Per-field character limits are in a separate Courses & Grades data catalog this site has not downloaded, so no limits are set here (A1 §3a).'),
+    blurb: z('只有要求它的學校才需要。本站 30 校中在名單上的是 Stanford、Carnegie Mellon、Purdue、Amherst。', 'Needed only for colleges that require it. Of this site’s 30 schools, Stanford, Carnegie Mellon, Purdue and Amherst are on the list.'),
+    intro: z('Common App 目前的名單共 76 筆；不在名單上的學校不用填（A1-S30）。本站 30 校中在名單上的是 Stanford、Carnegie Mellon、Purdue、Amherst；其餘 26 校不在（A1-S30）。依高中成績單原樣填寫；不在高中成績單上的大學課程不填這裡（A1-S29）。各欄字元上限在另一份 Courses & Grades data catalog，本站尚未下載，所以這裡不設上限（A1 §3a）。', 'Common App’s current list has 76 entries; colleges not on it do not need this section (A1-S30). Of this site’s 30 schools, Stanford, Carnegie Mellon, Purdue and Amherst are on the list; the other 26 are not (A1-S30). Report courses as they appear on your high-school transcript; college courses not on that transcript do not go here (A1-S29). Per-field character limits are in a separate Courses & Grades data catalog this site has not downloaded, so no limits are set here (A1 §3a).'),
     src: ['A1-S29', 'A1-S30'],
     groups: [
       { id: 'school', label: z('學校與學制', 'School and scale'), fields: [

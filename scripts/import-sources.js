@@ -20,6 +20,7 @@ const CODES = {
   'engineering-portfolios': ['B3', { zh: 'B3 工程作品集', en: 'B3 Engineering portfolios' }],
   'reader-side-reality': ['B5', { zh: 'B5 審查端（官方說法）', en: 'B5 Reader side, official statements' }],
   'outside-record-frameworks': ['C1', { zh: 'C1–C3 校外紀錄框架', en: 'C1–C3 Outside-record frameworks' }],
+  'outside-lab-record-to-application': ['L', { zh: 'L 校外實驗室紀錄如何進入申請', en: 'L An outside lab record into the application' }],
   'ai-policy': ['C4', { zh: 'C4 AI 政策', en: 'C4 AI policy' }],
   'ucas-system-and-tests': ['F1', { zh: 'F1／F2 UCAS 與入學考試', en: 'F1/F2 UCAS and admissions tests' }],
   'uk-universities-engineering-biology': ['F3', { zh: 'F3 英國十校', en: 'F3 Ten UK universities' }],

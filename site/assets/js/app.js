@@ -248,13 +248,38 @@
   function header() {
     var top = el('header', { 'class': 'top' });
     var inner = el('div', { 'class': 'top-in' });
-    inner.appendChild(el('a', { 'class': 'brand', href: ROOT + 'index.html' }, esc(ui('brand'))));
+    inner.appendChild(el('a', { 'class': 'brand', href: ROOT + 'index.html' }, esc(ui('brand')) + '<small>' + esc(ui('tagline')) + '</small>'));
+    // Two-level menu: groups (captions) over their pages. Desktop shows all groups in one
+    // row; narrow screens get a menu button that opens the same groups as a drawer.
+    var groups = A.nav || [];
+    function isOn(it) { return it.page === PAGE || (it.pages || []).indexOf(PAGE) >= 0; }
+    var current = null;
+    groups.forEach(function (g) { g.items.forEach(function (it) { if (isOn(it)) current = { g: g, it: it }; }); });
     var nav = el('nav', { 'class': 'nav', 'aria-label': ui('navLabel') });
-    (A.nav || []).forEach(function (n) {
-      nav.appendChild(el('a', { href: ROOT + n.href, 'class': n.page === PAGE ? 'on' : null }, esc(L(n.label))));
+    groups.forEach(function (g) {
+      var on = current && current.g === g;
+      var col = el('div', { 'class': 'nav-g' + (on ? ' on' : '') });
+      col.appendChild(el('div', { 'class': 'nav-cap' }, esc(L(g.label))));
+      var row = el('div', { 'class': 'nav-row' });
+      g.items.forEach(function (it) {
+        row.appendChild(el('a', { href: ROOT + it.href, 'class': (isOn(it) ? 'on' : '') + (it.featured ? ' feat' : ''), 'aria-current': isOn(it) ? 'page' : null }, esc(L(it.label))));
+      });
+      col.appendChild(row);
+      nav.appendChild(col);
     });
-    inner.appendChild(nav);
+    // narrow screens: a menu button and a crumb that names where the reader is
+    var mb = el('button', { 'class': 'tg menu-btn', type: 'button', 'aria-expanded': 'false', 'aria-controls': 'sitenav' }, esc(ui('menu')));
+    nav.id = 'sitenav';
+    mb.addEventListener('click', function () {
+      var open = top.classList.toggle('menu-open');
+      mb.setAttribute('aria-expanded', String(open));
+      mb.textContent = open ? ui('menuClose') : ui('menu');
+    });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && top.classList.contains('menu-open')) mb.click(); });
+    var crumb = el('div', { 'class': 'crumb' }, current ? esc(L(current.g.label)) + ' <span>›</span> ' + esc(L(current.it.label)) : '');
+    var cta = el('a', { 'class': 'cta', href: ROOT + 'mock/index.html' }, esc(ui('mockCta')) + ' →');
     var tg = el('div', { 'class': 'toggles' });
+    tg.appendChild(mb);
     function toggle(key, label, cls) {
       var on = store(key) === '1';
       var b = el('button', { 'class': 'tg', 'aria-pressed': String(on), type: 'button' }, esc(ui(label)));
@@ -269,8 +294,13 @@
     var lb = el('button', { 'class': 'tg', type: 'button', 'aria-label': ui('langLabel') }, lang === 'zh' ? 'EN' : '中文');
     lb.addEventListener('click', function () { store('atlas.lang', lang === 'zh' ? 'en' : 'zh'); location.reload(); });
     tg.appendChild(lb);
+    if (PAGE !== 'mock') inner.appendChild(cta);
     inner.appendChild(tg);
     top.appendChild(inner);
+    var bar = el('div', { 'class': 'top-nav' });
+    bar.appendChild(crumb);
+    bar.appendChild(nav);
+    top.appendChild(bar);
     body.insertBefore(top, body.firstChild);
   }
   function footer() {

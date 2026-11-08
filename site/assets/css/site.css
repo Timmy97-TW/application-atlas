@@ -24,14 +24,6 @@ img, svg { max-width: 100%; }
 
 /* header */
 .top { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.94); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
-.top-in { max-width: var(--max); margin: 0 auto; padding: 10px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
-.brand { font-weight: 700; color: var(--fg); white-space: nowrap; }
-.brand small { font-weight: 400; color: var(--muted); margin-left: 6px; }
-.nav { display: flex; flex-wrap: wrap; gap: 2px 12px; font-size: 14px; flex: 1 1 auto; }
-.nav a { color: var(--muted); padding: 2px 0; border-bottom: 2px solid transparent; }
-.nav a.on { color: var(--fg); border-color: var(--accent); }
-.nav a:hover { text-decoration: none; color: var(--fg); }
-.toggles { display: flex; gap: 6px; flex-wrap: wrap; }
 .tg { font: inherit; font-size: 13px; border: 1px solid var(--line); background: #fff; color: var(--muted); border-radius: 999px; padding: 3px 10px; cursor: pointer; }
 .tg[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
 
@@ -128,8 +120,6 @@ body.brief h2 { margin-top: 18px; }
 }
 @media (max-width: 640px) {
   h1 { font-size: 23px; }
-  .nav { order: 3; flex-basis: 100%; overflow-x: auto; flex-wrap: nowrap; }
-  .nav a { white-space: nowrap; }
 }
 @media print {
   .top, .toggles { display: none; }
@@ -394,19 +384,47 @@ a.mk-ring:hover { text-decoration: none; box-shadow: var(--shadow-2); transform:
 }
 @media print { .toc { display: none; } }
 
-/* compact header: one row, nav scrolls horizontally with an edge fade */
-.top-in { flex-wrap: nowrap; gap: 14px; padding: 8px 16px; }
-.nav { flex: 1 1 auto; min-width: 0; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; gap: 2px 14px;
-  -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent); }
-.nav::-webkit-scrollbar { display: none; }
-.nav a { white-space: nowrap; flex: none; padding: 6px 0; }
-.toggles { flex: none; flex-wrap: nowrap; }
-@media (max-width: 860px) {
-  .top-in { flex-wrap: wrap; row-gap: 6px; }
-  .brand { flex: 1 1 auto; }
-  .nav { order: 3; flex-basis: 100%; }
+/* header: row 1 = brand, practice-mock call to action, toggles; row 2 = grouped menu.
+   Desktop shows every group (caption over its pages) in one row; under 900px a menu
+   button opens the same groups as a drawer and a crumb names the current place. */
+.top-in { max-width: var(--max); margin: 0 auto; padding: 10px 16px 6px; display: flex; flex-wrap: nowrap; gap: 12px; align-items: center; }
+.brand { font-weight: 700; color: var(--fg); white-space: nowrap; flex: 1 1 auto; min-width: 0; display: flex; align-items: baseline; gap: 10px; }
+.brand small { font-weight: 400; color: var(--muted); font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cta { flex: none; font-size: 13.5px; font-weight: 600; color: #fff; background: var(--accent); border-radius: 999px; padding: 6px 14px; white-space: nowrap;
+  transition: background .12s, transform .12s; }
+.cta:hover { text-decoration: none; background: #184f9f; transform: translateY(-1px); }
+.toggles { display: flex; gap: 6px; flex: none; flex-wrap: nowrap; }
+.top-nav { max-width: var(--max); margin: 0 auto; padding: 0 16px; }
+.crumb { display: none; }
+.nav { display: flex; gap: 0 4px; font-size: 14px; align-items: stretch; }
+.nav-g { display: flex; flex-direction: column; justify-content: flex-end; padding: 4px 14px 0 12px; border-left: 1px solid var(--line); }
+.nav-g:first-child { border-left: 0; padding-left: 0; }
+.nav-cap { font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--notstated); line-height: 1.2; margin-bottom: 2px; white-space: nowrap; }
+.nav-g.on .nav-cap { color: var(--accent); }
+.nav-row { display: flex; gap: 0 12px; }
+.nav a { color: var(--muted); padding: 5px 0 8px; border-bottom: 2px solid transparent; white-space: nowrap; line-height: 1.3; transition: color .12s, border-color .12s; }
+.nav a:hover { text-decoration: none; color: var(--fg); }
+.nav a.on { color: var(--fg); border-color: var(--accent); font-weight: 600; }
+.nav a.feat { color: var(--accent); font-weight: 600; }
+.nav a.feat::before { content: '★ '; font-size: 11px; }
+.menu-btn { display: none; }
+@media (max-width: 900px) {
+  .top-in { flex-wrap: wrap; row-gap: 8px; padding-bottom: 8px; }
+  .brand small { display: none; }
+  .cta { order: 3; flex: 1 1 100%; text-align: center; }
+  .menu-btn { display: inline-block; }
   .tg { padding: 3px 8px; font-size: 12px; }
+  .top-nav { padding: 0; }
+  .crumb { display: block; padding: 6px 16px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); }
+  .crumb span { color: var(--notstated); }
+  .nav { display: none; flex-direction: column; gap: 0; padding: 4px 16px 10px; border-top: 1px solid var(--line); background: #fff; }
+  .menu-open .nav { display: flex; }
+  .nav-g { border-left: 0; padding: 8px 0 2px; border-top: 1px solid var(--soft); }
+  .nav-g:first-child { border-top: 0; }
+  .nav-row { flex-wrap: wrap; gap: 0 18px; }
+  .nav a { padding: 8px 0; min-height: 24px; }
 }
+@media (max-width: 480px) { .cta { font-size: 13px; } .brand { font-size: 15px; } }
 .reveal { transition-duration: .38s, .45s; transform: translateY(6px); }
 
 /* School figures (viz-schools.js) */
@@ -678,3 +696,6 @@ figure.vz-source-mix > .vz-stage > .vz-btn { margin-top: 8px; }
 .wfi .wf-g.empty .wf-n { color: var(--viz-muted); }
 .wfi-zero { width: 44px; height: 0; border-top: 1.5px dotted var(--viz-base); margin-top: 11px; }
 @media (prefers-reduced-motion: reduce) { .fm-c, .fm-ch, .fm-cl, .fm-g, .fm-bar i { transition: none; } }
+
+/* mock: a college already added to the file */
+.card.mk-on { border-color: var(--accent); box-shadow: inset 3px 0 0 var(--accent); }

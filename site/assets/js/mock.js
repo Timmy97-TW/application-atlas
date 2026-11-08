@@ -282,10 +282,21 @@
     function vColleges() {
       view.appendChild(el('h2', null, esc(t('myColleges'))));
       view.appendChild(el('p', { 'class': 'mk-help' }, md(L(M.collegesIntro))));
+      // 30 schools: a filter box, and the ones already added sort first
+      var f = el('div', { 'class': 'filters' });
+      var inp = el('input', { type: 'search', placeholder: ui('filterPlaceholder'), 'aria-label': ui('filterPlaceholder') });
+      f.appendChild(inp); view.appendChild(f);
       var list = el('div', { 'class': 'grid' });
-      (M.colleges || []).forEach(function (c) {
+      var cols = (M.colleges || []).slice().sort(function (a, b) {
+        var ia = S.colleges.indexOf(a.id) >= 0 ? 0 : 1, ib = S.colleges.indexOf(b.id) >= 0 ? 0 : 1; return ia - ib;
+      });
+      inp.addEventListener('input', function () {
+        var q = inp.value.trim().toLowerCase();
+        [].forEach.call(list.children, function (card) { card.style.display = !q || card.textContent.toLowerCase().indexOf(q) >= 0 ? '' : 'none'; });
+      });
+      cols.forEach(function (c) {
         var on = S.colleges.indexOf(c.id) >= 0;
-        var card = el('div', { 'class': 'card' }, '<h3>' + esc(L(c.name)) + '</h3><p>' + md(L(c.blurb || '')) + (c.src ? cites(c.src) : '') + '</p>');
+        var card = el('div', { 'class': 'card' + (on ? ' mk-on' : '') }, '<h3>' + esc(L(c.name)) + '</h3><p>' + md(L(c.blurb || '')) + (c.src ? cites(c.src) : '') + '</p>');
         var b = el('button', { 'class': 'tg', type: 'button', 'aria-pressed': String(on) }, esc(on ? t('removeCollege') : t('addCollege')));
         b.addEventListener('click', function () {
           if (on) S.colleges = S.colleges.filter(function (x) { return x !== c.id; }); else S.colleges.push(c.id);

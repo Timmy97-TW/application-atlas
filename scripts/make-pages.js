@@ -11,7 +11,7 @@ const pages = [
   ['index.html', 'index', ['p-index.js']],
   ['process.html', 'process', ['p-process.js'], ['graph.js']],
   ['containers.html', 'containers', ['p-containers.js']],
-  ['schools.html', 'schools', ['p-schools.js']],
+  ['schools.html', 'schools', ['p-schools.js', 'p-more.js', 'p-compare.js', 'p-schools-all.js']],
   ['compare.html', 'compare', ['p-compare.js']],
   ['more.html', 'more', ['p-more.js']],
   ['portfolios.html', 'portfolios', ['p-portfolios.js']],
@@ -21,12 +21,14 @@ const pages = [
   ['about.html', 'about', ['p-about.js']],
   ['log.html', 'log', ['p-log.js']],
   ['sources.html', 'sources', ['p-sources.js']],
-  ['mock/index.html', 'mock', ['p-mock.js'], ['mock.js']],
+  ['mock/index.html', 'mock', ['p-mock.js', 'p-mock-colleges-a.js', 'p-mock-colleges-b.js'], ['mock.js']],
   ['examples/index.html', 'examples', ['p-examples.js']],
   ['examples/bio.html', 'bio', ['p-bio.js']],
   ['examples/ee.html', 'ee', ['p-ee.js']],
   ['uk/index.html', 'uk', ['p-uk.js']]
 ];
+// site.css first, then every other stylesheet in assets/css (one per feature, e.g. fields.css)
+const css = ['site.css', ...fs.readdirSync(path.join(site, 'assets/css')).filter(f => f.endsWith('.css') && f !== 'site.css').sort()];
 for (const [file, page, data, extraJs = []] of pages) {
   const depth = file.split('/').length - 1;
   const root = '../'.repeat(depth);
@@ -51,7 +53,7 @@ for (const [file, page, data, extraJs = []] of pages) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Application Atlas</title>
-<link rel="stylesheet" href="${root}assets/css/site.css?v=${V}">
+${css.map(c => `<link rel="stylesheet" href="${root}assets/css/${c}?v=${V}">`).join('\n')}
 <link rel="icon" href="${root}assets/favicon.svg" type="image/svg+xml">
 </head>
 <body data-page="${page}" data-root="${root}">

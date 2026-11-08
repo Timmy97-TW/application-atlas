@@ -129,6 +129,10 @@ window.ATLAS.sourceGroups = {
   "zh": "近期截止日複查（2026-11-08）",
   "en": "Near-term deadline re-check (2026-11-08)"
  },
+ "L": {
+  "zh": "L 校外實驗室紀錄如何進入申請",
+  "en": "L An outside lab record into the application"
+ },
  "R": {
   "zh": "一般申請截止期複查（2026-11-08）",
   "en": "Regular-decision window re-check (2026-11-08)"
@@ -21749,6 +21753,384 @@ window.ATLAS.sources = {
   "note": {
    "zh": "研究筆記：2026-11-08_near-term-deadline-check_v1.md",
    "en": "Research note: 2026-11-08_near-term-deadline-check_v1.md"
+  }
+ },
+ "L01": {
+  "url": "https://www.commonapp.org/static/f45949473bb80a91c80aface729d83df/Approaching-Activities.pdf",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "L",
+  "title": {
+   "zh": "Activities: up to ten; 50 / 100 / 150 characters; hours/week and weeks/year; \"additional information question in the writing section\"; example cut from 256 to 141 characters (handout dated September 2026)",
+   "en": "Activities: up to ten; 50 / 100 / 150 characters; hours/week and weeks/year; \"additional information question in the writing section\"; example cut from 256 to 141 characters (handout dated September 2026)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L02": {
+  "url": "https://www.commonapp.org/static/72c7fb82f0c0c0b7832c341d2d5cb486/Gather-Materials-First-Year_3.pdf",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "L",
+  "title": {
+   "zh": "Honors: up to 5; title, when received, level of recognition; Activities: up to 10 with years, hours/week, weeks/year, position, description",
+   "en": "Honors: up to 5; title, when received, level of recognition; Activities: up to 10 with years, hours/week, weeks/year, position, description"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L03": {
+  "url": "https://www.commonapp.org/static/bd27e890c7338673cbde71a9ce883bef/Understanding-Rec-Process.pdf",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "L",
+  "title": {
+   "zh": "Four recommender types; Other Recommender defined as \"individuals you have worked with outside of school\"; eight types; \"Each college can choose which types of other recommenders they accept\"; advisors submit no forms (September 2026)",
+   "en": "Four recommender types; Other Recommender defined as \"individuals you have worked with outside of school\"; eight types; \"Each college can choose which types of other recommenders they accept\"; advisors submit no forms (September 2026)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L04": {
+  "url": "https://www.commonapp.org/files/webinar_decks/Academic-Record-Reporting.pdf",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "L",
+  "title": {
+   "zh": "Courses & Grades takes only courses with high-school credit \"exactly as they appear on their high school transcript\"; college courses without HS credit not reported there; Colleges & Universities section; list of college courses may go in Writing → Additional Information (counselor deck, © 2025)",
+   "en": "Courses & Grades takes only courses with high-school credit \"exactly as they appear on their high school transcript\"; college courses without HS credit not reported there; Colleges & Universities section; list of college courses may go in Writing → Additional Information (counselor deck, © 2025)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L05": {
+  "url": "https://commonapp.org/files/recommender-resources/Writing-Guide.pdf",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "L",
+  "title": {
+   "zh": "Counselor letters: context \"of an entire graduating class\", \"Context for and rationale behind specific awards and honors\"; teacher letters from the classroom (September 2026)",
+   "en": "Counselor letters: context \"of an entire graduating class\", \"Context for and rationale behind specific awards and honors\"; teacher letters from the classroom (September 2026)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L06": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-materials/research-papers-and-publications",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "L",
+  "title": {
+   "zh": "Research criteria (lab in a university or research-affiliated organization; reported to a senior researcher; paper published, submitted or in preparation); full paper strongly preferred; description form (how obtained, time frame, recommender email); research-site letter \"must speak to your specific",
+   "en": "Research criteria (lab in a university or research-affiliated organization; reported to a senior researcher; paper published, submitted or in preparation); full paper strongly preferred; description form (how obtained, time frame, recommender email); research-site letter \"must speak to your specific"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L07": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-materials",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "L",
+  "title": {
+   "zh": "\"only 42% of admitted students have participated in research prior to Caltech\"; supplements \"completely optional\"; \"only if they meaningfully add\"; types: Research papers and Publications, Portfolio",
+   "en": "\"only 42% of admitted students have participated in research prior to Caltech\"; supplements \"completely optional\"; \"only if they meaningfully add\"; types: Research papers and Publications, Portfolio"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L08": {
+  "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/supplemental-materials/portfolio",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "L",
+  "title": {
+   "zh": "Portfolio items incl. \"Research posters\", \"Personal notebooks\", videos, \"Links and URLs\"; no item limit; media ≤5 GB; documents ≤75 pages; group projects: \"understand your individual part\"; \"not just the end result\"; optional VIVA",
+   "en": "Portfolio items incl. \"Research posters\", \"Personal notebooks\", videos, \"Links and URLs\"; no item limit; media ≤5 GB; documents ≤75 pages; group projects: \"understand your individual part\"; \"not just the end result\"; optional VIVA"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L09": {
+  "url": "https://mitadmissions.org/apply/firstyear/portfolios-additional-material/",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "L",
+  "title": {
+   "zh": "Research Supplement via SlideRoom: \"significant research project outside of high school classes\"; one per applicant; brief questionnaire; abstract or poster PDF if available; citation if published; nominate advisor/mentor/PI to submit a letter through SlideRoom; $10; same deadline as the application",
+   "en": "Research Supplement via SlideRoom: \"significant research project outside of high school classes\"; one per applicant; brief questionnaire; abstract or poster PDF if available; citation if published; nominate advisor/mentor/PI to submit a letter through SlideRoom; $10; same deadline as the application"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L10": {
+  "url": "https://mitadmissions.org/apply/prepare/summer/",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "L",
+  "title": {
+   "zh": "\"Most summer programs admit all or most students who can pay the (often high) tuition\"; \"spend your summers in the way that best suits your personal needs and goals\"; MITES free",
+   "en": "\"Most summer programs admit all or most students who can pay the (often high) tuition\"; \"spend your summers in the way that best suits your personal needs and goals\"; MITES free"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L11": {
+  "url": "https://admissions.yale.edu/supplementary",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "L",
+  "title": {
+   "zh": "STEM Research Supplement Form on the Status Portal, shown only if intent indicated; \"attach a research paper, abstract, or poster\"; \"Full research papers are generally the most helpful\"; invite a research mentor to submit a letter; \"Most successful Yale applicants submit only the required applicatio",
+   "en": "STEM Research Supplement Form on the Status Portal, shown only if intent indicated; \"attach a research paper, abstract, or poster\"; \"Full research papers are generally the most helpful\"; invite a research mentor to submit a letter; \"Most successful Yale applicants submit only the required applicatio"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L12": {
+  "url": "https://admissions.yale.edu/posts/episode-49",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "L",
+  "title": {
+   "zh": "Podcast \"Application Update 2025-2026\" (2025-07-31): Additional Information cut from 650 to 300 words; \"not a space for another essay\"; bullets fine; \"leave it blank\" if nothing to add; challenges question 250 words",
+   "en": "Podcast \"Application Update 2025-2026\" (2025-07-31): Additional Information cut from 650 to 300 words; \"not a space for another essay\"; bullets fine; \"leave it blank\" if nothing to add; challenges question 250 words"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L13": {
+  "url": "https://admission.brown.edu/ask/supplementary-materials",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "L",
+  "title": {
+   "zh": "Research abstract accepted; all material via Brown Applicant Portal; no updates by email; one optional recommendation via Common App, further letters sent directly by the recommender; required letters \"provide all we need\"",
+   "en": "Research abstract accepted; all material via Brown Applicant Portal; no updates by email; one optional recommendation via Common App, further letters sent directly by the recommender; required letters \"provide all we need\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L14": {
+  "url": "https://college.harvard.edu/admissions/apply/application-requirements",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "L",
+  "title": {
+   "zh": "Upload Materials in the Applicant Portal for research \"primarily authored\" by the applicant; list collaborators; identify \"research sponsor, mentor, or lab leader\" and \"your particular contribution\"; supplements may be reviewed by faculty; extra letters after submission; \"standard application materi",
+   "en": "Upload Materials in the Applicant Portal for research \"primarily authored\" by the applicant; list collaborators; identify \"research sponsor, mentor, or lab leader\" and \"your particular contribution\"; supplements may be reviewed by faculty; extra letters after submission; \"standard application materi"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L15": {
+  "url": "https://apply.jhu.edu/frequently-asked-questions/",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "L",
+  "title": {
+   "zh": "Additional materials incl. \"research abstracts\" via applicant portal; \"contribute in a substantive way or provide new information\"; deferred ED may add letters; waitlist: no additional letters or research papers",
+   "en": "Additional materials incl. \"research abstracts\" via applicant portal; \"contribute in a substantive way or provide new information\"; deferred ED may add letters; waitlist: no additional letters or research papers"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L16": {
+  "url": "https://www.hmc.edu/admission/apply/faqs/",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "L",
+  "title": {
+   "zh": "\"do not upload entire research papers but instead include an abstract\"; \"only one additional letter of recommendation\", ideally a supervisor, mentor or employer; no attachments on the update form",
+   "en": "\"do not upload entire research papers but instead include an abstract\"; \"only one additional letter of recommendation\", ideally a supervisor, mentor or employer; no attachments on the update form"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L17": {
+  "url": "https://sspcdn.blob.core.windows.net/files/Documents/SEP/ISEF/2027/Rules/Book.pdf",
+  "accessed": "2026-11-08",
+  "cls": "secondary",
+  "group": "L",
+  "title": {
+   "zh": "ISEF 2026–27 rules: ≤12 months continuous research, none before January 2026; 250-word abstract by the student \"not by the supervising adult(s)\"; data book and paper \"strongly recommended for judging\"; mentor/institution named only in acknowledgement and Form 2C; published papers only inside a lab n",
+   "en": "ISEF 2026–27 rules: ≤12 months continuous research, none before January 2026; 250-word abstract by the student \"not by the supervising adult(s)\"; data book and paper \"strongly recommended for judging\"; mentor/institution named only in acknowledgement and Form 2C; published papers only inside a lab n"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L18": {
+  "url": "https://sspcdn.blob.core.windows.net/files/Documents/SEP/ISEF/2027/Forms/All.pdf",
+  "accessed": "2026-11-08",
+  "cls": "secondary",
+  "group": "L",
+  "title": {
+   "zh": "Research Plan written \"BEFORE experimentation\", separating the student's steps from the supervising adult's; acknowledgements incl. AI prompt log; Form 2C \"To be completed by the Supervising Adult in the Setting (NOT the Student(s)) after experimentation\", five tick-boxes on the student's role; Form",
+   "en": "Research Plan written \"BEFORE experimentation\", separating the student's steps from the supervising adult's; acknowledgements incl. AI prompt log; Form 2C \"To be completed by the Supervising Adult in the Setting (NOT the Student(s)) after experimentation\", five tick-boxes on the student's role; Form"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L19": {
+  "url": "https://www.societyforscience.org/regeneron-sts/application-requirements/",
+  "accessed": "2026-11-08",
+  "cls": "secondary",
+  "group": "L",
+  "title": {
+   "zh": "STS components: research report on \"an original, independent research project\"; three recommendation types (Educator, Project, High School Report); \"Disclosures of all support received … are required\"; research in any high-school year eligible; 2027 application closed, 2028 opens 2027-06-01",
+   "en": "STS components: research report on \"an original, independent research project\"; three recommendation types (Educator, Project, High School Report); \"Disclosures of all support received … are required\"; research in any high-school year eligible; 2027 application closed, 2028 opens 2027-06-01"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L20": {
+  "url": "https://www.societyforscience.org/regeneron-sts/frequently-asked-questions/",
+  "accessed": "2026-11-08",
+  "cls": "secondary",
+  "group": "L",
+  "title": {
+   "zh": "\"maximum 20-page original scientific paper\"; \"obtain permission from their mentors\"; \"entrants AND mentors must disclose participation in paid programs\"; \"only independent, individual research is eligible\"; research at school, institution, field or home; familial/personal relationship disclosure by ",
+   "en": "\"maximum 20-page original scientific paper\"; \"obtain permission from their mentors\"; \"entrants AND mentors must disclose participation in paid programs\"; \"only independent, individual research is eligible\"; research at school, institution, field or home; familial/personal relationship disclosure by "
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L21": {
+  "url": "https://www.biorxiv.org/about/FAQ",
+  "accessed": "2026-11-08",
+  "cls": "secondary",
+  "group": "L",
+  "title": {
+   "zh": "Preprints receive DOIs; screened for plagiarism and non-scientific content, \"not certified by scientific peer review\"; \"papers cannot be removed\" (withdrawal statement instead); submitter confirms approval from all co-authors",
+   "en": "Preprints receive DOIs; screened for plagiarism and non-scientific content, \"not certified by scientific peer review\"; \"papers cannot be removed\" (withdrawal statement instead); submitter confirms approval from all co-authors"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L22": {
+  "url": "https://info.orcid.org/what-is-orcid/",
+  "accessed": "2026-11-08",
+  "cls": "secondary",
+  "group": "L",
+  "title": {
+   "zh": "ORCID iD \"a unique, persistent identifier free of charge to researchers\"",
+   "en": "ORCID iD \"a unique, persistent identifier free of charge to researchers\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L23": {
+  "url": "https://info.orcid.org/ufaqs/orcid-record-summaries-trust-markers/",
+  "accessed": "2026-11-08",
+  "cls": "secondary",
+  "group": "L",
+  "title": {
+   "zh": "Record items marked \"Validated – Added by a trusted ORCID member organization\" or \"Self asserted – Added directly by the author\"",
+   "en": "Record items marked \"Validated – Added by a trusted ORCID member organization\" or \"Self asserted – Added directly by the author\""
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L24": {
+  "url": "https://oir.nih.gov/system/files/media/file/2026-09/guidelines-conduct_research.pdf",
+  "accessed": "2026-11-08",
+  "cls": "secondary",
+  "group": "L",
+  "title": {
+   "zh": "NIH Guidelines for the Conduct of Research, 9th ed. (approved 2025-07-30): records \"Dated\", \"Signed or assigned to a particular person\"; \"another person … should be able to reproduce or reconstruct your research from your records\"; for IP: \"Each entry should be signed and dated\", \"periodically witne",
+   "en": "NIH Guidelines for the Conduct of Research, 9th ed. (approved 2025-07-30): records \"Dated\", \"Signed or assigned to a particular person\"; \"another person … should be able to reproduce or reconstruct your research from your records\"; for IP: \"Each entry should be signed and dated\", \"periodically witne"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L25": {
+  "url": "https://help.scoir.com/article/8ud7xzuwya-how-to-send-application-documents-for-non-scoir-high-school-students",
+  "accessed": "2026-11-08",
+  "cls": "secondary",
+  "group": "L",
+  "title": {
+   "zh": "A \"school official or supporter\" uploads recommendations, transcripts, reports or \"Other\" as PDF through an emailed portal link without a Scoir account; \"supporter\" undefined; mentors not mentioned",
+   "en": "A \"school official or supporter\" uploads recommendations, transcripts, reports or \"Other\" as PDF through an emailed portal link without a Scoir account; \"supporter\" undefined; mentors not mentioned"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L26": {
+  "url": "https://undergrad.admissions.columbia.edu/faq",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "L",
+  "title": {
+   "zh": "not read today (HTTP 403); the 2026-11-07 excerpt (B7-O73) said extra letters are considered only from a research supervisor or college-course instructor",
+   "en": "not read today (HTTP 403); the 2026-11-07 excerpt (B7-O73) said extra letters are considered only from a research supervisor or college-course instructor"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
+  }
+ },
+ "L27": {
+  "url": "https://www.commonapp.org/fraud-policy",
+  "accessed": "2026-11-08",
+  "cls": "official",
+  "group": "L",
+  "title": {
+   "zh": "not read today (client-rendered; only headings returned); body text carried from A1-S33 (browser, 2026-11-07)",
+   "en": "not read today (client-rendered; only headings returned); body text carried from A1-S33 (browser, 2026-11-07)"
+  },
+  "note": {
+   "zh": "研究筆記：2026-11-08_outside-lab-record-to-application_v1.md",
+   "en": "Research note: 2026-11-08_outside-lab-record-to-application_v1.md"
   }
  },
  "R01": {
