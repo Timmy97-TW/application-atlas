@@ -159,7 +159,7 @@ applying page. Do you want to write to it and paste the reply here? Until then
 the ISP materials cells stay "not stated", which is accurate.
 A:
 
-Q008 · 2026-11-08 · A3 · open
+Q008 · 2026-11-08 · A3 · applied 2026-11-08
 Three daily deadline re-checks (2026-11-08) are committed on stacked local
 branches and not yet on the public site, because the daily runs were asked to
 publish nothing outward: `daily/2026-11-08` (dates due by Dec 8),
@@ -167,4 +167,4 @@ publish nothing outward: `daily/2026-11-08` (dates due by Dec 8),
 `daily/2026-11-08-jan` (Jan 9 – Feb 8; Caltech RD materials date added). The
 last branch contains all three. Merge it into the live site, or keep reviewing
 locally first?
-A:
+A: (2026-11-08) Publish them. Merged into main the same day.

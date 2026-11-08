@@ -47,6 +47,6 @@ window.ATLAS.status = {
   "secondary": 40
  },
  "oldestAccess": "2026-11-07",
- "openQuestions": 6,
+ "openQuestions": 5,
  "notes": 33
 };

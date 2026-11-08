@@ -58,10 +58,12 @@ window.ATLAS.log = {
     "Added Caltech's RD materials date: all required and supplemental materials by January 10 (quoted from Caltech's deadlines page); this was left as a lead in increment 2.",
     "Recorded that Caltech's page prints \"May 1, 2026\" in one place where the rest says 2027; the site already uses 2027.",
     "Wrote the publish decision down as Q008 in QUESTIONS.md.",
-    "check-data: 0 problems. Excluded-names check: ran over the repo, nothing found."
+    "check-data: 0 problems. Excluded-names check: ran over the repo, nothing found.",
+    "Published after the maintainer approved (Q008): the three stacked daily re-checks were merged into main the same day.",
+    "Link check over all 953 cited URLs: 887 load, 50 refuse automated reading (403), 7 return 202, 1 no response, 8 return 404. None of the 404s is a source added today; they are logged here and left in place (rule: log, do not delete): Princeton arts-supplement page, an older Northwestern first-year page, the AIT nonimmigrant-visa page, two Amherst pages (cost of attendance, CDS), an archived UIUC dates page, an Olin CDS PDF, the UCAT key-dates page."
    ],
    "notDone": [
-    "Not pushed or merged (publish nothing outward). Commit is on local branch `daily/2026-11-08-jan`, stacked on `daily/2026-11-08-rd` and `daily/2026-11-08`."
+    "The eight dead links above still need replacement sources; a later run should find each page's new address."
    ],
    "by": "run"
   },
@@ -244,10 +246,10 @@ window.ATLAS.log = {
    "id": "Q008",
    "date": "2026-11-08",
    "unit": "A3",
-   "state": "open",
-   "stateNote": "",
+   "state": "applied",
+   "stateNote": "2026-11-08",
    "q": "Three daily deadline re-checks (2026-11-08) are committed on stacked local\nbranches and not yet on the public site, because the daily runs were asked to\npublish nothing outward: `daily/2026-11-08` (dates due by Dec 8),\n`daily/2026-11-08-rd` (Dec 8 – Jan 8; Northwestern Bienen dates corrected) and\n`daily/2026-11-08-jan` (Jan 9 – Feb 8; Caltech RD materials date added). The\nlast branch contains all three. Merge it into the live site, or keep reviewing\nlocally first?",
-   "a": ""
+   "a": "(2026-11-08) Publish them. Merged into main the same day."
   }
  ]
 };
