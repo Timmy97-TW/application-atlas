@@ -31,6 +31,7 @@ const CODES = {
   'major-level-admission': ['A8', { zh: 'A5 補充：工程與生物科系層級的錄取規則', en: 'A5 supplement: major-level admission for engineering and biology' }],
   'near-term-deadline-check': ['N', { zh: '近期截止日複查（2026-11-08）', en: 'Near-term deadline re-check (2026-11-08)' }],
   'rd-window-deadline-check': ['R', { zh: '一般申請截止期複查（2026-11-08）', en: 'Regular-decision window re-check (2026-11-08)' }],
+  'january-window-deadline-check': ['J', { zh: '一月截止期複查（2026-11-08）', en: 'January window re-check (2026-11-08)' }],
   'browser-verification': ['V', { zh: '瀏覽器複查（先前只靠搜尋摘要的項目）', en: 'Browser verification of excerpt-only items' }],
   'verification-round-2': ['V2', { zh: '瀏覽器複查第二輪（仍讀不到的頁面）', en: 'Browser verification round 2 (pages still unreadable)' }],
   'recovered-pages-round-3': ['V3', { zh: '瀏覽器複查第三輪（救回來的頁面）', en: 'Browser verification round 3 (pages recovered)' }],

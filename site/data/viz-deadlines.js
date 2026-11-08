@@ -50,6 +50,7 @@ window.ATLAS.viz = window.ATLAS.viz || {};
     'Caltech': [
       ['cal-rea', 'apply', 'REA', '2026-11-01', null, 0, 'Caltech REA 截止', 'Caltech Restrictive Early Action deadline', ['A3a-S10', 'A3a-S12'], 0],
       ['cal-rd', 'apply', 'RD', '2027-01-04', null, 0, 'Caltech RD 截止', 'Caltech Regular Decision deadline', ['A3a-S10', 'A3a-S16'], 0],
+      ['cal-mat-rd', 'materials', 'priority', '2027-01-10', null, 0, 'Caltech RD 所有必交與補充資料最後期限（申請本身 1/4 截止）', 'Caltech RD: all required and supplemental materials (application itself due Jan 4)', ['J29'], 1],
       ['cal-test-qb', 'materials', 'test', '2026-10-31', null, 0, 'Caltech QuestBridge 考試須在此日前', 'Caltech QuestBridge: tests before this date', ['A3a-S11'], 0],
       ['cal-test-rea', 'materials', 'test', '2026-11-30', null, 0, 'Caltech REA：成績須在此日前送達 Caltech', 'Caltech REA: scores must reach Caltech before this date', ['A3a-S11', 'N28'], 0],
       ['cal-test-rd', 'materials', 'test', '2026-12-31', null, 0, 'Caltech RD 考試須在此日前', 'Caltech RD: tests before this date', ['A3a-S11'], 0],

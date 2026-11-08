@@ -47,6 +47,25 @@ window.ATLAS.log = {
    "by": "run"
   },
   {
+   "file": "briefs/2026-11-08_daily-3.md",
+   "date": "2026-11-08",
+   "unit": "A3 (deadline re-verification, January window)",
+   "status": "done",
+   "title_zh": "每日進度 3：複查 1/9 至 2/8 的 40 個日期，補上 Caltech RD 資料截止日",
+   "title_en": "Daily increment 3: re-checked the 40 dates due Jan 9 – Feb 8; added Caltech's RD materials date",
+   "done": [
+    "Re-read the official page behind each of the 40 dated items falling 2027-01-09 to 2027-02-08 (late RD materials, aid documents, early-round replies and decisions): 40 confirmed, 0 changed, 0 blocked. Note: research/2026-11-08_january-window-deadline-check_v1.md (33 official sources, J01–J33).",
+    "Added Caltech's RD materials date: all required and supplemental materials by January 10 (quoted from Caltech's deadlines page); this was left as a lead in increment 2.",
+    "Recorded that Caltech's page prints \"May 1, 2026\" in one place where the rest says 2027; the site already uses 2027.",
+    "Wrote the publish decision down as Q008 in QUESTIONS.md.",
+    "check-data: 0 problems. Excluded-names check: ran over the repo, nothing found."
+   ],
+   "notDone": [
+    "Not pushed or merged (publish nothing outward). Commit is on local branch `daily/2026-11-08-jan`, stacked on `daily/2026-11-08-rd` and `daily/2026-11-08`."
+   ],
+   "by": "run"
+  },
+  {
    "file": "briefs/2026-11-08_daily-2.md",
    "date": "2026-11-08",
    "unit": "A3 (deadline re-verification, regular-decision window)",
@@ -219,6 +238,15 @@ window.ATLAS.log = {
    "state": "open",
    "stateNote": "",
    "q": "Northwestern publishes that the Integrated Science Program needs its own\nseparate application, but not what that application asks. The requirements page\nsays, under its own \"Supplement materials:\" heading, \"For an updated list of\nrequired materials, please see the ISP website\", and the ISP page it links to\nlists nothing — no prompts, no word limits, no form, no portal link, nothing\nabout letters. The 2026-27 ISP deadlines are not stated either: the published\ntable is last cycle's, every date on it has passed, and the ISP page describes\nthe deadline as closed.\n\nA fillable ISP application form does exist on the official ISP domain and is\nthe only document anywhere with real prompts. This repo deliberately cites\nnothing from it: its embedded metadata gives a 2015 creation date, it requires\nSAT Subject Tests (discontinued in 2021) and asks for a fax number, no current\npage links to it, and its stated March 1 deadline contradicts the published\ndeadline table. Treating it as current would put an eleven-year-old form's\nrequirements on the site as this cycle's.\n\nSo the only route to the ISP requirements is the email address on the ISP\napplying page. Do you want to write to it and paste the reply here? Until then\nthe ISP materials cells stay \"not stated\", which is accurate.",
+   "a": ""
+  },
+  {
+   "id": "Q008",
+   "date": "2026-11-08",
+   "unit": "A3",
+   "state": "open",
+   "stateNote": "",
+   "q": "Three daily deadline re-checks (2026-11-08) are committed on stacked local\nbranches and not yet on the public site, because the daily runs were asked to\npublish nothing outward: `daily/2026-11-08` (dates due by Dec 8),\n`daily/2026-11-08-rd` (Dec 8 – Jan 8; Northwestern Bienen dates corrected) and\n`daily/2026-11-08-jan` (Jan 9 – Feb 8; Caltech RD materials date added). The\nlast branch contains all three. Merge it into the live site, or keep reviewing\nlocally first?",
    "a": ""
   }
  ]
